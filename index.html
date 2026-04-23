@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Teams Production Monitor — Daily Reports</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 780px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.5; }
+  h1 { margin-bottom: 0.25rem; }
+  .sub { color: #666; margin-top: 0; }
+  .latest { background: #f5f7fa; border: 1px solid #dde3ea; border-radius: 10px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+  .latest a { font-size: 1.15rem; font-weight: 600; }
+  ul.reports { list-style: none; padding: 0; }
+  ul.reports li { padding: 0.55rem 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+  ul.reports li:last-child { border-bottom: 0; }
+  ul.reports a { text-decoration: none; }
+  ul.reports a:hover { text-decoration: underline; }
+  .day { color: #888; font-variant-numeric: tabular-nums; }
+  footer { margin-top: 3rem; font-size: 0.85rem; color: #888; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a1a; color: #e6e6e6; }
+    .sub, .day, footer { color: #aaa; }
+    .latest { background: #242424; border-color: #333; }
+    ul.reports li { border-bottom-color: #2a2a2a; }
+  }
+</style>
+</head>
+<body>
+<h1>Teams Production Monitor</h1>
+<p class="sub">Daily production briefing compiled from Microsoft Teams chats. Refreshed every morning at 8:00 AM Mountain.</p>
+
+<div class="latest" id="latest">
+  <div>Latest report: <span id="latest-link">loading&hellip;</span></div>
+</div>
+
+<h2>Archive</h2>
+<ul class="reports" id="reports"></ul>
+
+<footer>Generated automatically. Each report is preserved so prior days can be reviewed.</footer>
+
+<script>
+const dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+fetch("reports/manifest.json", { cache: "no-store" })
+  .then(r => r.ok ? r.json() : { reports: [] })
+  .then(data => {
+    const reports = (data.reports || []).slice().sort().reverse();
+    const listEl = document.getElementById("reports");
+    const latestEl = document.getElementById("latest-link");
+    if (!reports.length) {
+      latestEl.textContent = "no reports yet — the first will appear tomorrow morning.";
+      return;
+    }
+    const [latest, ...rest] = reports;
+    const latestDate = new Date(latest + "T12:00:00");
+    latestEl.innerHTML = `<a href="reports/${latest}.html">${dayNames[latestDate.getDay()]}, ${latest}</a>`;
+    for (const d of reports) {
+      const dt = new Date(d + "T12:00:00");
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="reports/${d}.html">${d}</a><span class="day">${dayNames[dt.getDay()]}</span>`;
+      listEl.appendChild(li);
+    }
+  })
+  .catch(err => {
+    document.getElementById("latest-link").textContent = "unable to load manifest.";
+    console.error(err);
+  });
+</script>
+</body>
+</html>
