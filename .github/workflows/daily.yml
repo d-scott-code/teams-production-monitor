@@ -1,0 +1,37 @@
+name: Daily Teams Production Monitor
+
+# 8:00 AM MDT (14:00 UTC). GitHub Actions cron is UTC-only — in MST (winter)
+# this fires at 7:00 AM local. Acceptable for a daily ops report; if you want
+# a hard 8 AM clock time, run two crons and gate one on the date.
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: "Follow the routine in .claude/schedule-prompt.md"
+          claude_args: "--max-turns 80"
+        env:
+          GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
+          GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
+          GRAPH_CLIENT_SECRET: ${{ secrets.GRAPH_CLIENT_SECRET }}
+          GRAPH_USER_UPN: ${{ secrets.GRAPH_USER_UPN }}
