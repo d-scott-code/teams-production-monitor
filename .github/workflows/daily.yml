@@ -32,6 +32,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           prompt: "Follow the routine in .claude/schedule-prompt.md"
           claude_args: "--permission-mode bypassPermissions"
+          show_full_output: "true"
         env:
           GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
           GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
