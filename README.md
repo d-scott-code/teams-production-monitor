@@ -4,12 +4,13 @@ Daily automated reports of Microsoft Teams activity for CandyCo's three Lindon p
 
 **Live site:** https://d-scott-code.github.io/teams-production-monitor/
 
-Every morning at 08:00 America/Denver, a scheduled Claude Code task runs the
-`teams-production-monitor` skill: it pulls the last 24 hours of messages
-from every Teams chat whose topic contains `L1`, `L2`, or `L3`, reconciles
-them against the open issue ledger (GitHub Issues in this repo), and commits
-an HTML briefing to [`reports/`](reports/). GitHub Pages serves the archive
-so any browser can read it — no login required.
+Every morning at 14:00 UTC (08:00 MDT / 07:00 MST), a GitHub Actions workflow
+runs a Claude Code agent against the `teams-production-monitor` skill: it
+pulls the last 24 hours of messages from every Teams chat whose topic
+contains `L1`, `L2`, or `L3`, reconciles them against the open issue ledger
+(GitHub Issues in this repo), and commits an HTML briefing to
+[`reports/`](reports/). GitHub Pages serves the archive so any browser can
+read it — no login required.
 
 ## What each report covers
 
@@ -31,8 +32,9 @@ source of truth for weekly/monthly/quarterly roll-ups.
 - `data/messages-<YYYY-MM-DD>.json` — raw Teams dump for the day
 - `data/ledger-<YYYY-MM-DD>.json` — closed/opened/still-open snapshot
 - `.claude/skills/teams-production-monitor/SKILL.md` — the skill itself
-- `.claude/schedule-prompt.md` — the prompt the 8am scheduled task follows
+- `.claude/schedule-prompt.md` — the prompt the daily workflow follows
 - `.claude/hooks/session-start.sh` — installs `requests` for the skill
+- `.github/workflows/daily.yml` — the GitHub Actions cron that runs it
 
 ## One-time setup
 
@@ -71,30 +73,28 @@ you have to link an Azure subscription first.
 3. **Branch:** `main` / `/ (root)` → Save.
 4. First build finishes in ~1 minute.
 
-### 4. Add secrets to the Claude Code scheduled task
+### 4. Add repo secrets
 
-When you create the schedule in Claude Code on the web (step 5), attach
-these as repo-level secrets so the cloud container can read them:
+Go to https://github.com/d-scott-code/teams-production-monitor/settings/secrets/actions
+and add:
 
 | Secret | Value |
 |---|---|
+| `ANTHROPIC_API_KEY` | From https://console.anthropic.com/settings/keys |
 | `GRAPH_TENANT_ID` | Directory (tenant) ID from step 1.6 |
 | `GRAPH_CLIENT_ID` | Application (client) ID from step 1.6 |
 | `GRAPH_CLIENT_SECRET` | Client secret value from step 1.5 |
 | `GRAPH_USER_UPN` | Your email (the account that's in every L1/L2/L3 chat) |
-| `GITHUB_TOKEN` | A PAT with `repo` scope (only needed if Claude Code's built-in token can't write issues) |
 
-### 5. Create the scheduled task (Claude Code on the web)
+`GITHUB_TOKEN` is auto-provided by Actions — no need to add. The workflow
+declares `contents: write` and `issues: write` permissions so the agent can
+commit reports and write to the issue ledger.
 
-1. https://claude.ai/code → open this repo.
-2. Scheduler → New schedule:
-   - Repo: `d-scott-code/teams-production-monitor`, branch `main`
-   - Cron: `0 8 * * *`, timezone `America/Denver`
-   - Prompt: *"Follow the routine in `.claude/schedule-prompt.md`."*
-   - Env: attach the secrets from step 4.
-3. Turn on notifications so you get the link in your inbox each morning.
+### 5. Done
 
-That's it — runs in the cloud, laptop can stay off.
+The workflow at `.github/workflows/daily.yml` runs daily at 14:00 UTC
+(08:00 MDT / 07:00 MST). To run it manually, go to **Actions** → **Daily
+Teams Production Monitor** → **Run workflow**.
 
 ## Reading the reports
 
@@ -105,13 +105,17 @@ That's it — runs in the cloud, laptop can stay off.
 
 ## Running it manually
 
-In a Claude Code session with the secrets in your environment:
+**From GitHub:** Actions tab → **Daily Teams Production Monitor** → **Run
+workflow**. Same path the cron uses.
+
+**From a Claude Code session** (with the secrets exported in your shell):
 
 ```
 /teams-production-monitor
 ```
 
-Or from a shell, just the fetch half (writes a JSON dump, doesn't touch issues):
+**From a shell, just the fetch half** (writes a JSON dump, doesn't touch
+issues):
 
 ```bash
 export GRAPH_TENANT_ID=...
