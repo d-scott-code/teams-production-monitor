@@ -1,0 +1,771 @@
+/* ============================================================
+   CandyCo Design System — Report stylesheet
+   Default for any HTML report, briefing, or analysis.
+
+   Layout: discrete 8.5"×11" sheets in portrait. Each sheet is its
+   own visual page on screen and prints as one page on Letter paper.
+
+   Use:
+     1. Place this file alongside `colors_and_type.css` (already
+        @imported below), or copy its contents into your report.
+     2. Wrap each section in <section class="sheet">...</section>.
+     3. End each sheet with the `.sheet-footer` block for page numbers.
+     4. Place the official logo in the cover header.
+   ============================================================ */
+
+@import url('../colors_and_type.css');
+
+/* ---------- Page setup ----------
+   All pages print as Letter portrait. Wide content (e.g., 15-column appendix
+   tables) is rotated -90deg via CSS for print rather than using landscape @page
+   rules, which are unreliable across browsers and print drivers.
+*/
+@page { size: letter portrait; margin: 0.5in; }
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+  font-size: 9.5pt;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- Typography (sentence case, weight + size hierarchy) ---------- */
+h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 24pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 4pt 0;
+  color: var(--fg-1);
+}
+h2 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 14pt;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin: 0 0 6pt 0;
+  color: var(--fg-1);
+  page-break-after: avoid;
+}
+h3 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 11pt;
+  margin: 10pt 0 4pt 0;
+  color: var(--fg-1);
+  page-break-after: avoid;
+}
+h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 10pt;
+  margin: 4pt 0 3pt 0;
+  color: var(--fg-1);
+}
+p { margin: 3pt 0 7pt 0; }
+.editorial { font-family: var(--font-serif); font-weight: 400; }
+
+.eyebrow {
+  font-size: 8pt;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-3);
+  font-family: var(--font-sans);
+}
+
+.lead {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-2);
+  margin: 4pt 0 10pt 0;
+  font-weight: 400;
+  text-wrap: pretty;
+}
+
+/* ---------- Cover header (logo lockup + doc meta) ---------- */
+.cover-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt;
+  margin-bottom: 12pt;
+}
+.cover-head .brand img {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+.cover-head .doc-meta {
+  font-size: 8.5pt;
+  color: var(--fg-2);
+  text-align: right;
+  line-height: 1.4;
+}
+
+/* ---------- Meta strip (4 columns of doc context) ---------- */
+.meta-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12pt;
+  padding: 8pt 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 12pt;
+}
+.meta-strip .item .eyebrow { margin-bottom: 2pt; font-size: 7.5pt; }
+.meta-strip .item .v { font-size: 9.5pt; font-weight: 600; color: var(--fg-1); }
+
+/* ---------- Hero callout (light bg, dark text — print-safe) ----------
+   Note: Earlier versions used Shadow Grey (var(--primary)) bg + white text.
+   That gets stripped by browser print color economy and ends up white-on-white
+   in print/PDF. The light-cream bg + Shadow Grey text + forced color preservation
+   prints reliably and reads identically on screen.
+   Use the .hero.dark modifier if you specifically need the inverse-Shadow-Grey
+   look (e.g., a digital-only artifact that won't be printed).
+*/
+.hero {
+  background: #F5F4EE;
+  color: var(--fg-1);
+  border-left: 6pt solid var(--primary);
+  border-radius: var(--radius);
+  padding: 14pt 18pt;
+  margin: 8pt 0 14pt 0;
+  page-break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.hero .eyebrow { color: var(--fg-3); margin-bottom: 6pt; }
+.hero .headline {
+  font-family: var(--font-display);
+  font-size: 14pt;
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+  margin: 0;
+  color: var(--fg-1);
+  font-weight: 600;
+}
+.hero .headline strong { color: var(--fg-1); font-weight: 800; }
+.hero .headline .accent { color: var(--error); font-weight: 800; }
+
+/* Optional inverse-Shadow-Grey hero for digital-only contexts */
+.hero.dark {
+  background: var(--primary);
+  color: var(--fg-inverse);
+  border-left: none;
+}
+.hero.dark .eyebrow { color: rgba(255,255,255,0.55); }
+.hero.dark .headline { color: var(--fg-inverse); }
+.hero.dark .headline strong { color: var(--fg-inverse); }
+.hero.dark .headline .accent { color: var(--golden-yellow); }
+
+/* ---------- Stat cards (numbers strip) ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10pt;
+  margin: 6pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 12pt 12pt 10pt 12pt;
+  box-shadow: var(--shadow-sm);
+}
+.stat .eyebrow { font-size: 7.5pt; margin-bottom: 6pt; }
+.stat .num {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 24pt;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-1);
+}
+.stat .sub {
+  margin-top: 6pt;
+  font-size: 8pt;
+  color: var(--fg-2);
+  line-height: 1.35;
+}
+
+/* ---------- Capsules (status pills with optional dot) ---------- */
+.cap {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-sans);
+  font-size: 8pt;
+  font-weight: 600;
+  padding: 1pt 7pt;
+  border-radius: var(--radius-pill);
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.cap .dot { width: 5px; height: 5px; border-radius: 50%; display: inline-block; }
+.cap.success { background: var(--success-bg); color: #176B3A; }
+.cap.warning { background: var(--warning-bg); color: #7A5800; }
+.cap.error   { background: var(--error-bg);   color: #A30016; }
+.cap.info    { background: var(--info-bg);    color: #0B5180; }
+.cap.neutral { background: var(--shadow-grey-50); color: var(--shadow-grey-700); }
+.cap.dark    { background: var(--primary); color: #fff; }
+.cap .dot.success { background: var(--success); }
+.cap .dot.warning { background: var(--warning); }
+.cap .dot.error   { background: var(--error); }
+.cap .dot.info    { background: var(--info); }
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 4pt 0 10pt 0;
+  font-size: 8.5pt;
+  page-break-inside: avoid;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+thead th {
+  background: var(--shadow-grey-50);
+  color: var(--fg-1);
+  text-align: left;
+  font-weight: 600;
+  font-size: 8pt;
+  padding: 5pt 7pt;
+  border-bottom: 1px solid var(--border-default);
+}
+tbody td {
+  padding: 4pt 7pt;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+  color: var(--fg-1);
+}
+tbody tr:last-child td { border-bottom: none; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr.totals td {
+  background: var(--shadow-grey-50);
+  font-weight: 700;
+  border-top: 1px solid var(--border-default);
+}
+.pos { color: #176B3A; font-weight: 600; }
+.neg { color: #A30016; font-weight: 600; }
+.neu { color: #7A5800; font-weight: 600; }
+
+/* ---------- Cards (charts, generic content blocks) ---------- */
+.card {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 10pt 12pt 8pt 12pt;
+  margin: 6pt 0 10pt 0;
+  page-break-inside: avoid;
+}
+.card h4 { margin-top: 0; }
+.card .caption {
+  font-size: 7.5pt;
+  color: var(--fg-2);
+  margin-top: 4pt;
+  line-height: 1.4;
+}
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; }
+canvas { max-width: 100%; }
+
+/* ---------- Audience grid (multi-team callouts) ---------- */
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10pt;
+  margin: 6pt 0 10pt 0;
+}
+.audience {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 10pt 12pt;
+  box-shadow: var(--shadow-sm);
+  page-break-inside: avoid;
+}
+.audience .head {
+  display: flex;
+  align-items: center;
+  gap: 6pt;
+  margin-bottom: 6pt;
+  padding-bottom: 5pt;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.audience .head .icon { width: 18px; height: 18px; color: var(--fg-1); flex-shrink: 0; }
+.audience .head .title { font-weight: 700; font-size: 10pt; color: var(--fg-1); }
+.audience ul { margin: 4pt 0 0 0; padding-left: 14pt; font-size: 8.5pt; line-height: 1.5; }
+.audience li { margin-bottom: 3pt; color: var(--fg-1); }
+.audience li::marker { color: var(--shadow-grey-300); }
+
+/* ---------- Action assignment table ---------- */
+.actions thead th {
+  background: var(--primary);
+  color: var(--fg-inverse);
+  border-bottom-color: var(--primary);
+}
+.actions td.priority {
+  width: 22pt;
+  text-align: center;
+  font-weight: 800;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+}
+.actions td.owner { font-weight: 600; color: var(--primary); }
+
+/* ---------- Footnote (sources, confidence, notes) ---------- */
+.footnote {
+  font-family: var(--font-serif);
+  font-size: 8pt;
+  color: var(--fg-2);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 6pt;
+  margin-top: 12pt;
+  line-height: 1.5;
+}
+.footnote strong { color: var(--fg-1); font-family: var(--font-sans); font-weight: 600; }
+
+/* ============================================================
+   SHEET (PAGE) — discrete 8.5×11 page on screen, one page in print.
+   This is the load-bearing layout pattern for every CandyCo report.
+   ============================================================ */
+.sheet {
+  background: var(--bg-1);
+  width: 8.5in;
+  min-height: 11in;
+  padding: 0.5in;
+  box-sizing: border-box;
+  page-break-after: always;
+  page-break-inside: avoid;
+  overflow: hidden;
+  position: relative;
+}
+.sheet:last-child { page-break-after: auto; }
+
+.sheet-footer {
+  position: absolute;
+  bottom: 0.25in;
+  left: 0.5in;
+  right: 0.5in;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 7.5pt;
+  color: var(--fg-3);
+  font-family: var(--font-sans);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 6pt;
+}
+.sheet-footer .doc { color: var(--fg-2); }
+.sheet-footer .page-no {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--fg-1);
+}
+
+/* ---------- Print ---------- */
+@media print {
+  body { font-size: 9.5pt; background: white; padding: 0; margin: 0; }
+  .no-print { display: none; }
+  .hero, .stat, .card, .audience { box-shadow: none; }
+  /* Every sheet is exactly one Letter portrait page. height + overflow:hidden
+     prevents content from spilling onto an extra blank page. */
+  .sheet {
+    width: 8.5in;
+    height: 11in;
+    min-height: 11in;
+    max-height: 11in;
+    padding: 0.5in;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 0;
+    page-break-after: always;
+    page-break-inside: avoid;
+    overflow: hidden;
+  }
+  .sheet:last-child { page-break-after: auto; }
+  .sheet-footer { bottom: 0.25in; left: 0.5in; right: 0.5in; }
+}
+
+/* ---------- Screen (paged preview) ---------- */
+@media screen {
+  body { background: var(--shadow-grey-50); padding: 24px 0; }
+  .doc-frame {
+    width: 8.5in;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .sheet {
+    box-shadow: 0 4px 18px rgba(39, 40, 56, 0.16);
+    border-radius: 4px;
+  }
+}
+
+/* ============================================================
+   LANDSCAPE-CONTENT SHEET — wide content (15-column appendix tables,
+   side-by-side comparisons) on a portrait page.
+
+   Strategy:
+   - Screen: 14" wide sheet so the table reads comfortably left-to-right
+   - Print:  sheet collapses to portrait Letter, the wide content area is
+             rotated -90deg (counter-clockwise) so it fits the portrait page.
+             The reader rotates the printed page or tilts their head 90° CW.
+
+   This approach is more reliable than CSS landscape @page rules, which
+   inconsistently rotate paper across browsers / print drivers / dialogs.
+
+   Required HTML pattern:
+     <section class="sheet landscape">
+       <h2>...</h2>
+       <p>Intro / context...</p>
+       <div class="print-rotated-region">
+         <div class="print-rotated-inner">
+           <div class="run-meta-strip">...</div>
+           <table class="appendix-wide">...</table>
+           <div class="goal-box">...</div>
+           <p class="caption">...</p>
+         </div>
+       </div>
+       <div class="sheet-footer">...</div>
+     </section>
+   ============================================================ */
+.sheet.landscape {
+  width: 14in;
+  min-height: 8.5in;
+  padding: 0.5in 0.55in;
+}
+.sheet.landscape h2 { font-size: 13pt; }
+
+@media screen {
+  .doc-frame:has(.sheet.landscape) { width: auto; }
+  .sheet.landscape { box-shadow: 0 4px 18px rgba(39, 40, 56, 0.16); border-radius: 4px; }
+}
+
+/* Screen: rotation wrappers are passthrough — children flow normally */
+.print-rotated-region,
+.print-rotated-inner {
+  /* No-op on screen */
+}
+
+@media print {
+  /* Force the document frame to portrait Letter dimensions — this is
+     critical because the screen .sheet.landscape is 14" wide; without
+     these overrides, Chrome's print engine treats each landscape sheet
+     as too wide for Letter and splits it across multiple physical pages. */
+  html, body { width: 8.5in !important; margin: 0 !important; }
+  .doc-frame { width: 8.5in !important; margin: 0 !important; }
+
+  /* Sheet collapses to portrait Letter — every page prints as portrait */
+  .sheet.landscape {
+    width: 8.5in !important;
+    max-width: 8.5in !important;
+    height: 11in !important;
+    min-height: 11in !important;
+    max-height: 11in !important;
+    padding: 0.5in !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    page: auto;
+    page-break-before: always !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+    overflow: hidden !important;
+    position: relative;
+  }
+
+  /* Rotation frame: full usable portrait area (7.5" × 10"). overflow:hidden
+     contains anything that visually overflows after the rotation transform. */
+  .sheet.landscape .print-rotated-region {
+    width: 7.5in !important;
+    height: 10in !important;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  /* Inner: positioned at parent's bottom-left, then rotated -90deg around its
+     own top-left corner. After transform the visual exactly fills the 7.5" × 10"
+     parent. Width 10" maps to rotated height; height 7.5" maps to rotated width.
+     Optional `--print-table-font` CSS variable (set inline by the build script
+     based on table row count) sizes the table text so the table always fits
+     regardless of how many ingredient + pouch rows are present. */
+  .sheet.landscape .print-rotated-inner {
+    width: 10in;
+    height: 7.5in;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    padding: 14pt 16pt;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  /* All font sizes inside the rotated print scale together via --print-scale,
+     so a longer table doesn't cause the goal-box or footer to fall off the page.
+     Default is 1.0; build script sets a smaller scale (e.g., 0.78) on runs with
+     more rows. */
+  .sheet.landscape .print-rotated-inner h2 {
+    font-size: calc(13pt * var(--print-scale, 1)) !important;
+    margin: 0 0 calc(5pt * var(--print-scale, 1)) 0 !important;
+  }
+  .sheet.landscape .print-rotated-inner > p:not(.caption) {
+    font-size: calc(9pt * var(--print-scale, 1)) !important;
+    margin: 0 0 calc(8pt * var(--print-scale, 1)) 0 !important;
+  }
+  .sheet.landscape .print-rotated-inner .run-meta-strip {
+    margin: 0 0 calc(8pt * var(--print-scale, 1)) 0 !important;
+    padding: calc(6pt * var(--print-scale, 1)) calc(10pt * var(--print-scale, 1)) !important;
+  }
+  .sheet.landscape .print-rotated-inner .run-meta-strip .meta-item {
+    font-size: calc(9pt * var(--print-scale, 1)) !important;
+  }
+  .sheet.landscape .print-rotated-inner table.appendix-wide {
+    font-size: calc(7pt * var(--print-scale, 1)) !important;
+    margin: 0 0 calc(8pt * var(--print-scale, 1)) 0 !important;
+  }
+  .sheet.landscape .print-rotated-inner table.appendix-wide thead th {
+    font-size: calc(6pt * var(--print-scale, 1)) !important;
+    padding: calc(3pt * var(--print-scale, 1)) calc(3pt * var(--print-scale, 1)) !important;
+  }
+  .sheet.landscape .print-rotated-inner table.appendix-wide tbody td {
+    padding: calc(3pt * var(--print-scale, 1)) calc(3pt * var(--print-scale, 1)) !important;
+  }
+  .sheet.landscape .print-rotated-inner .goal-box {
+    padding: calc(8pt * var(--print-scale, 1)) calc(12pt * var(--print-scale, 1)) !important;
+    margin: 0 0 calc(8pt * var(--print-scale, 1)) 0 !important;
+  }
+  .sheet.landscape .print-rotated-inner .goal-value {
+    font-size: calc(14pt * var(--print-scale, 1)) !important;
+  }
+  .sheet.landscape .print-rotated-inner .goal-cell.goal-headline .goal-value {
+    font-size: calc(20pt * var(--print-scale, 1)) !important;
+  }
+  .sheet.landscape .print-rotated-inner p.caption {
+    font-size: calc(7.5pt * var(--print-scale, 1)) !important;
+    margin: 0 0 calc(6pt * var(--print-scale, 1)) 0 !important;
+  }
+  .sheet.landscape .print-rotated-inner .sheet-footer {
+    font-size: calc(7.5pt * var(--print-scale, 1)) !important;
+  }
+
+  /* Header content gets a comfortable size for fill */
+  .sheet.landscape .print-rotated-inner h2 {
+    font-size: 13pt;
+    margin: 0 0 5pt 0;
+  }
+  .sheet.landscape .print-rotated-inner > p:not(.caption) {
+    font-size: 9pt;
+    margin: 0 0 8pt 0;
+  }
+  .sheet.landscape .print-rotated-inner .run-meta-strip {
+    margin: 0 0 8pt 0;
+    padding: 6pt 10pt;
+  }
+  .sheet.landscape .print-rotated-inner .run-meta-strip .meta-item {
+    font-size: 9pt;
+  }
+
+  /* Table is sized DOWN to fit 10" wide (15 columns × ~0.66" each).
+     Smaller font + tighter padding here is necessary — going bigger overflows
+     the page horizontally and content gets clipped. */
+  .sheet.landscape .print-rotated-inner table.appendix-wide {
+    font-size: 6.5pt;
+    margin: 0 0 8pt 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .sheet.landscape .print-rotated-inner table.appendix-wide thead th {
+    font-size: 6pt;
+    padding: 3pt 3pt;
+    line-height: 1.15;
+    word-wrap: break-word;
+  }
+  .sheet.landscape .print-rotated-inner table.appendix-wide tbody td {
+    padding: 3pt 3pt;
+    word-wrap: break-word;
+  }
+
+  /* Goal box stays prominent — it's the headline number on this sheet */
+  .sheet.landscape .print-rotated-inner .goal-box {
+    padding: 8pt 12pt;
+    margin: 0 0 8pt 0;
+  }
+  .sheet.landscape .print-rotated-inner .goal-value {
+    font-size: 14pt;
+  }
+  .sheet.landscape .print-rotated-inner .goal-cell.goal-headline .goal-value {
+    font-size: 20pt;
+  }
+  .sheet.landscape .print-rotated-inner p.caption {
+    font-size: 7.5pt;
+    margin: 0 0 6pt 0;
+    line-height: 1.35;
+  }
+
+  /* Footer moved inside the rotation: flows in normal block at the bottom
+     of the inner content. */
+  .sheet.landscape .print-rotated-inner .sheet-footer {
+    position: static;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 8pt;
+    padding-top: 5pt;
+    font-size: 7.5pt;
+  }
+}
+
+/* ============================================================
+   RUN META STRIP — context band showing run / batch metadata
+   (e.g., produced units, revenue, period). Pairs with appendix tables.
+   ============================================================ */
+.run-meta-strip {
+  display: flex;
+  gap: 30pt;
+  margin: 4pt 0 10pt 0;
+  padding: 6pt 10pt;
+  background: #FAF9F4;
+  border-left: 3pt solid var(--primary);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.run-meta-strip .meta-item { font-size: 9pt; }
+.run-meta-strip .meta-label { color: var(--fg-3); font-weight: 600; margin-right: 4pt; }
+.run-meta-strip .meta-val { color: var(--fg-1); font-weight: 700; }
+
+/* ============================================================
+   APPENDIX-WIDE TABLE — dense numeric reporting (15+ columns)
+   matched to the format used by the cycle count team. Light blue
+   header band with grouped column heads. Use inside .sheet.landscape.
+   ============================================================ */
+table.appendix-wide {
+  width: 100%;
+  font-size: 7.5pt;
+  border-collapse: collapse;
+  margin: 4pt 0;
+}
+table.appendix-wide thead th {
+  background: #DDE5F0;
+  padding: 3pt 4pt;
+  vertical-align: bottom;
+  border: 0.5pt solid #B8C5DA;
+  font-weight: 700;
+  font-size: 7pt;
+  line-height: 1.2;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+table.appendix-wide thead th.ap-grouphead {
+  background: #C5D4E8;
+  text-align: center;
+}
+table.appendix-wide tbody td {
+  padding: 4pt 4pt;
+  border-bottom: 0.5pt solid var(--border-subtle);
+  vertical-align: middle;
+}
+table.appendix-wide tbody td.ap-input { font-weight: 700; color: var(--fg-1); }
+table.appendix-wide tbody td.ap-desc { font-weight: 600; }
+table.appendix-wide tbody tr.totals td {
+  background: #F5F4EE;
+  border-top: 1pt solid var(--primary);
+  border-bottom: 1pt solid var(--primary);
+  font-weight: 700;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+/* ============================================================
+   GOAL BOX — bold-bordered KPI callout that frames a result
+   against an operational target (e.g., scrap %, OEE, on-time %).
+   Three cells: two context numbers + one headline % with color band.
+   Color modifiers: .goal-good (green), .goal-warn (amber), .goal-bad (red).
+   ============================================================ */
+.goal-box {
+  margin: 12pt 0 8pt 0;
+  padding: 10pt 14pt;
+  border: 2.5pt solid var(--primary);
+  border-radius: var(--radius);
+  background: #FAFAF6;
+  page-break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.goal-row {
+  display: flex;
+  gap: 24pt;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.goal-cell { flex: 1; }
+.goal-cell.goal-headline {
+  flex: 1.3;
+  padding-left: 18pt;
+  border-left: 2pt solid var(--primary);
+}
+.goal-label {
+  font-size: 8pt;
+  color: var(--fg-3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4pt;
+}
+.goal-value {
+  font-size: 14pt;
+  font-weight: 800;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+}
+.goal-cell.goal-headline .goal-value { font-size: 18pt; }
+.goal-box.goal-good .goal-cell.goal-headline .goal-value { color: #15803d; }
+.goal-box.goal-warn .goal-cell.goal-headline .goal-value { color: #b45309; }
+.goal-box.goal-bad  .goal-cell.goal-headline .goal-value { color: #b91c1c; }
+
+/* ============================================================
+   VARIANCE TINTING — semantic cell colors for tabular data
+   that compares actual vs. target. Apply to <td> elements.
+   ----
+   .pos        — green: under target (savings) or favorable variance
+   .neg        — amber: small unfavorable variance
+   .neg-strong — red, bold: large unfavorable variance (>10% rule of thumb)
+   ============================================================ */
+td.pos        { color: #15803d; }
+td.neg        { color: #b45309; }
+td.neg-strong { color: #b91c1c; font-weight: 600; }
+
+/* ============================================================
+   ACCOUNTING NUMBER CONVENTIONS
+   ----
+   When formatting numbers in tables, follow these conventions for
+   readability and consistency with cycle-count / finance team reports:
+     - Negative values:  parentheses, e.g. (1,234)
+     - Zero / no value:  em-dash —  (avoid 0 / N/A / blank)
+     - Currency:         $-prefix on positives, $(...) on negatives
+     - Percentages:      always show sign on variance, e.g. +0.1%, -12.4%
+     - Use tabular-nums (font-variant-numeric: tabular-nums) for column alignment
+   These conventions live in code (not CSS) but are documented here so every
+   future report uses the same formatting helpers.
+   ============================================================ */

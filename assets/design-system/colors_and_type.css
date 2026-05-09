@@ -1,0 +1,269 @@
+/* ============================================================
+   CandyCo Design System — Colors & Typography
+   Source of truth for visual foundations.
+   ============================================================ */
+
+/* ---------- BRAND FONTS (uploaded TTFs/OTF) ---------- */
+@font-face { font-family: "Assistant"; font-weight: 200; font-style: normal; font-display: swap;
+  src: url("fonts/Assistant-ExtraLight.ttf") format("truetype"); }
+@font-face { font-family: "Assistant"; font-weight: 300; font-style: normal; font-display: swap;
+  src: url("fonts/Assistant-Light.ttf") format("truetype"); }
+@font-face { font-family: "Assistant"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("fonts/Assistant-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Assistant"; font-weight: 600; font-style: normal; font-display: swap;
+  src: url("fonts/Assistant-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Assistant"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("fonts/Assistant-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Assistant"; font-weight: 800; font-style: normal; font-display: swap;
+  src: url("fonts/Assistant-ExtraBold.ttf") format("truetype"); }
+
+@font-face { font-family: "Frank Ruhl Libre"; font-weight: 300; font-style: normal; font-display: swap;
+  src: url("fonts/FrankRuhlLibre-Light.ttf") format("truetype"); }
+@font-face { font-family: "Frank Ruhl Libre"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("fonts/FrankRuhlLibre-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Frank Ruhl Libre"; font-weight: 500; font-style: normal; font-display: swap;
+  src: url("fonts/FrankRuhlLibre-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Frank Ruhl Libre"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("fonts/FrankRuhlLibre-Bold.ttf") format("truetype"); }
+
+@font-face { font-family: "Yeseva One"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("fonts/YesevaOne-Regular.ttf") format("truetype"); }
+
+@font-face { font-family: "Minion Pro"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("fonts/MinionPro-Regular.otf") format("opentype"); }
+
+:root {
+  /* ---------- PRIMARY — SHADOW GREY ---------- */
+  --primary: #272838;
+  --primary-light: #3A3D50;
+  --primary-dark: #1A1C27;
+
+  /* ---------- SHADOW GREY SCALE ---------- */
+  --shadow-grey-50:  #F2F2F4;
+  --shadow-grey-100: #E0E1E6;
+  --shadow-grey-200: #C1C3CC;
+  --shadow-grey-300: #A2A5B3;
+  --shadow-grey-400: #83879A;
+  --shadow-grey-500: #646981;
+  --shadow-grey-600: #4E5268;
+  --shadow-grey-700: #3A3D50;
+  --shadow-grey-800: #272838;
+  --shadow-grey-900: #1A1C27;
+
+  /* ---------- BRAND ACCENTS ("The Four Candies") ---------- */
+  --emerald:        #23CE6B;  /* Sour apple / mint */
+  --steel-blue:     #1982C4;  /* Blue raspberry */
+  --golden-yellow:  #FFCA3A;  /* Lemon drop / butterscotch */
+  --racing-red:     #FF0022;  /* Cinnamon / cherry */
+
+  /* ---------- SURFACES & NEUTRALS ---------- */
+  --background:   #FFFFFF;
+  --secondary:    #F5F5F5;
+  --muted:        #E8E8E8;
+  --foreground:   #1E293B;
+  --muted-text:   #64748B;
+  --on-primary:   #FFFFFF;
+
+  /* ---------- SEMANTIC FG / BG ALIASES ---------- */
+  --fg-1: var(--foreground);          /* primary text */
+  --fg-2: var(--shadow-grey-600);     /* secondary text */
+  --fg-3: var(--muted-text);          /* tertiary / hints */
+  --fg-inverse: var(--on-primary);
+
+  --bg-1: var(--background);          /* page */
+  --bg-2: var(--secondary);           /* cards / panels */
+  --bg-3: var(--muted);               /* deep wells */
+  --bg-inverse: var(--primary);
+
+  --border-subtle: var(--shadow-grey-100);
+  --border-default: var(--shadow-grey-200);
+  --border-strong: var(--shadow-grey-300);
+
+  /* ---------- SEMANTIC STATUS ---------- */
+  --success: #23CE6B;
+  --warning: #FFCA3A;
+  --error:   #FF0022;
+  --info:    #1982C4;
+
+  --success-bg: #E8FAF0;
+  --warning-bg: #FFF7DB;
+  --error-bg:   #FFE5E9;
+  --info-bg:    #E3F1FB;
+
+  /* ---------- CAPACITY / UTILIZATION ---------- */
+  --util-ramping:     #1982C4;  /* < 40% capacity, ramping production */
+  --util-growing:     #23CE6B;  /* 40–70%, healthy growth */
+  --util-approaching: #FFCA3A;  /* 70–90%, capacity warning */
+  --util-full:        #FF0022;  /* > 90%, at/over capacity */
+
+  /* ---------- CHART PALETTE ---------- */
+  --chart-1: #272838;
+  --chart-2: #1982C4;
+  --chart-3: #23CE6B;
+  --chart-4: #FFCA3A;
+  --chart-5: #FF0022;
+
+  /* ---------- TYPOGRAPHY ---------- */
+  /* Brand fonts: Assistant (sans, UI), Frank Ruhl Libre (serif, body/editorial),
+     Yeseva One (display headlines), Minion Pro (legacy long-form serif). */
+  --font-sans:    "Assistant", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif:   "Frank Ruhl Libre", Georgia, "Times New Roman", serif;
+  --font-display: "Yeseva One", "Frank Ruhl Libre", Georgia, serif;
+  --font-mono:    ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --font-family: var(--font-sans);  /* legacy alias */
+  --font-size-base: 16px;
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  /* Type scale — modular, factory-floor legible */
+  --fs-display: 4rem;       /* 64px — hero numbers, marketing display */
+  --fs-h1:      2.5rem;     /* 40px */
+  --fs-h2:      2rem;       /* 32px */
+  --fs-h3:      1.5rem;     /* 24px */
+  --fs-h4:      1.25rem;    /* 20px */
+  --fs-body:    1rem;       /* 16px */
+  --fs-small:   0.875rem;   /* 14px — table & form labels */
+  --fs-xs:      0.75rem;    /* 12px — captions, eyebrows */
+
+  --lh-tight: 1.05;
+  --lh-snug:  1.25;
+  --lh-base:  1.5;
+  --lh-loose: 1.7;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-eyebrow: 0.14em;  /* ALL-CAPS section labels */
+
+  /* ---------- SPACING ---------- */
+  --spacing-xs: 0.25rem;   /* 4 */
+  --spacing-sm: 0.5rem;    /* 8 */
+  --spacing-md: 1rem;      /* 16 */
+  --spacing-lg: 1.5rem;    /* 24 */
+  --spacing-xl: 2rem;      /* 32 */
+  --spacing-2xl: 3rem;     /* 48 */
+  --spacing-3xl: 4rem;     /* 64 */
+  --spacing-4xl: 6rem;     /* 96 */
+
+  /* ---------- RADII ---------- */
+  --radius-xs: 0.25rem;    /* 4px — tags, dots */
+  --radius-sm: 0.375rem;   /* 6px — inputs, small buttons */
+  --radius:    0.625rem;   /* 10px — default cards, buttons */
+  --radius-lg: 0.875rem;   /* 14px — feature cards */
+  --radius-xl: 1.25rem;    /* 20px — modals, hero panels */
+  --radius-pill: 999px;
+
+  /* ---------- ELEVATION ---------- */
+  --shadow-xs: 0 1px 2px rgba(39, 40, 56, 0.06);
+  --shadow-sm: 0 2px 4px rgba(39, 40, 56, 0.08), 0 1px 2px rgba(39, 40, 56, 0.04);
+  --shadow:    0 4px 12px rgba(39, 40, 56, 0.10), 0 2px 4px rgba(39, 40, 56, 0.06);
+  --shadow-lg: 0 12px 28px rgba(39, 40, 56, 0.12), 0 4px 8px rgba(39, 40, 56, 0.06);
+  --shadow-xl: 0 24px 48px rgba(39, 40, 56, 0.16), 0 8px 16px rgba(39, 40, 56, 0.08);
+  --shadow-inset: inset 0 1px 2px rgba(39, 40, 56, 0.08);
+  --shadow-focus: 0 0 0 3px rgba(25, 130, 196, 0.25);
+
+  /* ---------- MOTION ---------- */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasis: cubic-bezier(0.3, 0, 0, 1.2);
+  --ease-out:      cubic-bezier(0, 0, 0.2, 1);
+  --duration-fast:   120ms;
+  --duration-base:   200ms;
+  --duration-slow:   320ms;
+}
+
+/* ============================================================
+   SEMANTIC ELEMENT STYLES
+   ============================================================ */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-base);
+  color: var(--fg-1);
+  background: var(--bg-1);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+}
+h2, .h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+}
+h3, .h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--lh-snug);
+}
+h4, .h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--lh-snug);
+}
+
+.display, .display-serif {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  font-weight: 400;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+}
+.editorial {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-base);
+  color: var(--fg-1);
+  text-wrap: pretty;
+}
+
+small, .small {
+  font-size: var(--fs-small);
+  color: var(--fg-2);
+}
+
+.eyebrow {
+  font-size: var(--fs-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+
+code, kbd, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+a {
+  color: var(--steel-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+a:hover { color: var(--primary); }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+}
+
+::selection {
+  background: var(--golden-yellow);
+  color: var(--primary);
+}
