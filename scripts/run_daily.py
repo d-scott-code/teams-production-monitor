@@ -43,6 +43,10 @@ Your job: given today's messages and the currently-open issues, decide which iss
 
 **Close an existing issue when** someone says it's fixed, back online, cleared, resolved, etc. Capture the resolution language verbatim in the closing comment.
 
+**Same-window resolution** — if a problem is *both* raised and resolved within today's messages (a chat reports a line down at 14:00, then says "line is running" at 14:20), include `resolved_in_window` on the create item with the resolution comment quoted verbatim. The orchestrator will create the issue and immediately close it so the lifecycle is captured for the archive.
+
+Resolution signals: "fixed", "running", "back online", "back up", "resolved", "cleared", "good now", "working properly", etc. Be conservative: "running for now" or "running again" without a clear root-cause fix is partial — leave it open. When in doubt, leave it open.
+
 ## Title quality bar
 
 Short, concrete, scannable on a phone. "L2 hopper #3 jamming on 0.5in crumb" not "hopper problem". Leave the plant out of the title — it's carried by the label.
@@ -80,6 +84,14 @@ PLAN_TOOL = {
                         "plant": {"type": "string", "enum": ["L1", "L2", "L3"]},
                         "title": {"type": "string"},
                         "body": {"type": "string"},
+                        "resolved_in_window": {
+                            "type": "object",
+                            "description": "Set ONLY when the issue was both raised AND resolved within today's messages. The orchestrator will create the issue and immediately close it with the resolution comment.",
+                            "properties": {
+                                "resolution_comment": {"type": "string"},
+                            },
+                            "required": ["resolution_comment"],
+                        },
                     },
                     "required": ["plant", "title", "body"],
                 },
@@ -258,8 +270,17 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
             "labels": [f"plant:{plant}"],
         })
         assert isinstance(new, dict)
-        created.append({"number": new["number"], "title": c["title"], "plant": plant})
-        print(f"  created #{new['number']}: {c['title']}")
+        n = new["number"]
+        created.append({"number": n, "title": c["title"], "plant": plant})
+        print(f"  created #{n}: {c['title']}")
+
+        resolved = c.get("resolved_in_window")
+        if resolved and resolved.get("resolution_comment"):
+            gh("POST", f"/repos/{REPO}/issues/{n}/comments",
+               json={"body": resolved["resolution_comment"]})
+            gh("PATCH", f"/repos/{REPO}/issues/{n}", json={"state": "closed"})
+            closed.append({"number": n, "title": c["title"], "plant": plant})
+            print(f"  closed #{n} (resolved in same window)")
     return closed, [], created
 
 
@@ -277,6 +298,8 @@ def build_ledger(today: str, closed: list, created: list,
             "plant": i["plant"], "age_days": age,
         })
     for c in created:
+        if c["number"] in closed_nums:
+            continue
         still_open.append({
             "number": c["number"], "title": c["title"],
             "plant": c["plant"], "age_days": 0,
