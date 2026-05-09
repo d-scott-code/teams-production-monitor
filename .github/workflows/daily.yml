@@ -11,8 +11,6 @@ on:
 permissions:
   contents: write
   issues: write
-  pull-requests: write
-  id-token: write
 
 jobs:
   briefing:
@@ -26,15 +24,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - uses: anthropics/claude-code-action@v1
-        with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          prompt: "Follow the routine in .claude/schedule-prompt.md"
-          claude_args: "--permission-mode bypassPermissions"
-          show_full_output: "true"
+      - name: Install dependencies
+        run: pip install --quiet --disable-pip-version-check requests anthropic
+
+      - name: Run daily briefing
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GRAPH_TENANT_ID: ${{ secrets.GRAPH_TENANT_ID }}
           GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
           GRAPH_CLIENT_SECRET: ${{ secrets.GRAPH_CLIENT_SECRET }}
           GRAPH_USER_UPN: ${{ secrets.GRAPH_USER_UPN }}
+        run: python3 scripts/run_daily.py

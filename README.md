@@ -4,13 +4,13 @@ Daily automated reports of Microsoft Teams activity for CandyCo's three Lindon p
 
 **Live site:** https://d-scott-code.github.io/teams-production-monitor/
 
-Every morning at 14:00 UTC (08:00 MDT / 07:00 MST), a GitHub Actions workflow
-runs a Claude Code agent against the `teams-production-monitor` skill: it
-pulls the last 24 hours of messages from every Teams chat whose topic
-contains `L1`, `L2`, or `L3`, reconciles them against the open issue ledger
-(GitHub Issues in this repo), and commits an HTML briefing to
-[`reports/`](reports/). GitHub Pages serves the archive so any browser can
-read it — no login required.
+Every morning at 14:00 UTC (08:00 MDT / 07:00 MST), a GitHub Actions
+workflow runs `scripts/run_daily.py`: it pulls the last 24 hours of
+messages from every Teams chat whose topic contains `L1`, `L2`, or `L3`,
+makes one Anthropic API call to reconcile them against the open issue
+ledger (GitHub Issues in this repo), applies the resulting plan, renders
+an HTML briefing, and commits everything to `main`. GitHub Pages serves
+the archive so any browser can read it — no login required.
 
 ## What each report covers
 
@@ -31,9 +31,12 @@ source of truth for weekly/monthly/quarterly roll-ups.
 - `reports/manifest.json` — list of dates, rebuilt by `scripts/update_manifest.py`
 - `data/messages-<YYYY-MM-DD>.json` — raw Teams dump for the day
 - `data/ledger-<YYYY-MM-DD>.json` — closed/opened/still-open snapshot
-- `.claude/skills/teams-production-monitor/SKILL.md` — the skill itself
-- `.claude/schedule-prompt.md` — the prompt the daily workflow follows
-- `.claude/hooks/session-start.sh` — installs `requests` for the skill
+- `scripts/fetch_teams_messages.py` — Graph API client (called by orchestrator)
+- `scripts/run_daily.py` — the orchestrator the workflow invokes
+- `scripts/render_report.py` — HTML report generator
+- `scripts/update_manifest.py` — rebuilds `reports/manifest.json`
+- `.claude/skills/teams-production-monitor/SKILL.md` — manual-run skill (Claude Code sessions only)
+- `.claude/hooks/session-start.sh` — installs `requests` when the skill is used interactively
 - `.github/workflows/daily.yml` — the GitHub Actions cron that runs it
 
 ## One-time setup
@@ -87,7 +90,7 @@ and add:
 | `GRAPH_USER_UPN` | Your email (the account that's in every L1/L2/L3 chat) |
 
 `GITHUB_TOKEN` is auto-provided by Actions — no need to add. The workflow
-declares `contents: write` and `issues: write` permissions so the agent can
+declares `contents: write` and `issues: write` so the orchestrator can
 commit reports and write to the issue ledger.
 
 ### 5. Done
@@ -108,19 +111,29 @@ Teams Production Monitor** → **Run workflow**.
 **From GitHub:** Actions tab → **Daily Teams Production Monitor** → **Run
 workflow**. Same path the cron uses.
 
-**From a Claude Code session** (with the secrets exported in your shell):
+**From a shell** (full pipeline, with all six secrets exported):
 
-```
-/teams-production-monitor
+```bash
+pip install requests anthropic
+export ANTHROPIC_API_KEY=...
+export GITHUB_TOKEN=...   # PAT with repo + issues scope
+export GRAPH_TENANT_ID=...
+export GRAPH_CLIENT_ID=...
+export GRAPH_CLIENT_SECRET=...
+export GRAPH_USER_UPN=you@candyco.example
+python3 scripts/run_daily.py
 ```
 
 **From a shell, just the fetch half** (writes a JSON dump, doesn't touch
 issues):
 
 ```bash
-export GRAPH_TENANT_ID=...
-export GRAPH_CLIENT_ID=...
-export GRAPH_CLIENT_SECRET=...
-export GRAPH_USER_UPN=you@candyco.example
 python3 scripts/fetch_teams_messages.py --out data/messages-$(TZ=America/Denver date +%F).json
+```
+
+**From a Claude Code session** (interactive, agent-driven — useful for
+ad-hoc investigation, not the daily cron):
+
+```
+/teams-production-monitor
 ```
