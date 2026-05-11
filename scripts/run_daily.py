@@ -29,13 +29,21 @@ PLANT_LABELS = ["plant:L1", "plant:L2", "plant:L3"]
 ROOT = Path(__file__).resolve().parent.parent
 MODEL = "claude-sonnet-4-5-20250929"
 
-SYSTEM_PROMPT = """You are the issue reconciliation engine for CandyCo's daily production monitor.
+SYSTEM_PROMPT = """You are the daily production-briefing engine for CandyCo.
 
 CandyCo runs three plants in Lindon, Utah: L1 (Caramel), L2 (Eco Moulding), L3 (Chocolate). Each plant has Microsoft Teams chats whose topic contains "L1", "L2", or "L3". A daily job collects the last 24h of messages from those chats and tracks production issues as GitHub Issues labeled plant:L1, plant:L2, or plant:L3.
 
-Your job: given today's messages and the currently-open issues, decide which issues to create, comment on, or close. Return a strict JSON plan via the submit_plan tool.
+Your job has two halves:
+  1. **Reconcile** — decide which issues to create, comment on, or close based on today's messages and the current open-issues snapshot.
+  2. **Narrate** — pick the day's headline and write a 1–2 sentence summary per plant that the daily report will display verbatim.
 
-## Rules
+Return both via the submit_plan tool.
+
+## Reasoning approach
+
+You have extended thinking enabled. Use it. Before writing the plan, work through the messages systematically: for each plant, scan every message, group related threads, identify problems and resolutions, and match against the open-issue snapshot. Only commit to the plan once you've reconciled every signal you noticed.
+
+## Reconciliation rules
 
 **Create a new issue when** the messages raise a problem that isn't already tracked. Good signals: explicit problem statements, blocker questions, safety/quality flags, machine-down reports.
 
@@ -45,7 +53,7 @@ Your job: given today's messages and the currently-open issues, decide which iss
 
 **Same-window resolution** — if a problem is *both* raised and resolved within today's messages (a chat reports a line down at 14:00, then says "line is running" at 14:20), include `resolved_in_window` on the create item with the resolution comment quoted verbatim. The orchestrator will create the issue and immediately close it so the lifecycle is captured for the archive.
 
-Resolution signals: "fixed", "running", "back online", "back up", "resolved", "cleared", "good now", "working properly", etc. Be conservative: "running for now" or "running again" without a clear root-cause fix is partial — leave it open. When in doubt, leave it open.
+Resolution signals: "fixed", "running", "back online", "back up", "resolved", "cleared", "good now", "working properly". Be conservative: "running for now" or "running again" without a root-cause fix is partial — leave it open. When in doubt, leave it open.
 
 ## Title quality bar
 
@@ -55,6 +63,8 @@ Short, concrete, scannable on a phone. "L2 hopper #3 jamming on 0.5in crumb" not
 
 ```
 **Plant:** L{1,2,3}
+**Priority:** P{1,2,3}
+**Category:** <one of: Machine, Quality, Safety, Materials, Staffing, Other>
 **First raised:** <timestamp> by <author>
 **Source chat:** <topic>
 
@@ -66,16 +76,208 @@ Source messages:
 — <author>, <time>
 ```
 
+## Priority rubric (P1 / P2 / P3)
+
+Set `priority` on every create item.
+
+- **P1** — Line down, safety incident or near-miss, customer-impacting quality miss, or anything that needs an answer *inside the current shift*. If the floor is bleeding throughput or someone could get hurt, it's P1.
+- **P2** — Elevated. Recurring or escalating issue, partial workaround in place, FSQA flag without an immediate hold, or a problem that will eat capacity if it isn't fixed in the next day or two.
+- **P3** — Routine or informational. Maintenance notes, "FYI" mentions, minor quality variances, non-blocking questions, supplier scheduling.
+
+When unsure between P1 and P2, prefer P2. When unsure between P2 and P3, prefer P3. Save P1 for the genuinely urgent.
+
+## Category rubric
+
+Set `category` on every create item — exactly one of:
+
+- **Machine** — Equipment problems. Examples: "hopper jam," "conveyor stopped," "enrober down," "moulder skipping," "cooling tunnel temp out."
+- **Quality** — Spec misses, FSQA flags, scrap spikes, holds. Examples: "out of spec," "weight check failing," "FSQA hold on lot," "color off."
+- **Safety** — Near-miss, injury, lockout/tagout, PPE flag, ergonomics. Examples: "operator slipped," "guard removed," "lock-out issue."
+- **Materials** — Inbound supply, off-spec ingredients, packaging shortages, vendor problems. Examples: "out of corrugate," "supplier shipped wrong SKU," "ingredient short."
+- **Staffing** — Headcount, callouts, OT, training. Examples: "two callouts on B-shift," "no certified operator," "OT over plan."
+- **Other** — Genuine catch-all. Use sparingly; if you reach for Other twice, reconsider whether one of the above fits.
+
+## Headline
+
+The daily report has a single hero callout. Pick what *one thing* belongs there based on today's activity.
+
+`headline.eyebrow` is a short 2-3 word label categorizing what kind of day it was:
+  - "Line down" — there's an active P1 machine outage
+  - "Safety flag" — there's an active safety item
+  - "Long-running issue" — something has been open for many days and matters most today
+  - "Net closure" — meaningful resolutions, net favorable vs. opens
+  - "New volume" — a notable burst of new issues
+  - "Quiet 24 hours" — nothing notable happened
+  - Or invent your own when none of those fit.
+
+`headline.text` is one sentence that reads cleanly on a phone. Lead with the gap. Include the one concrete number that matters most. The renderer will wrap any token surrounded by *asterisks* in an accent color, so write `*3 days open*` to emphasize "3 days open." Use this sparingly — one accent per headline.
+
+Good: "L2 enrober has been down *3 hours* — Maintenance is on-site, no ETA yet."
+Bad: "Several issues today across the plants, some resolved, some not." (vague, no number, no accent)
+
+## Per-plant summaries
+
+`per_plant_summary.L1`, `.L2`, `.L3` — 1 or 2 sentences each describing what *actually happened* at that plant in the window. The renderer prints these verbatim as the intro to each plant's section.
+
+If a plant had no activity, write something like "No activity in the last 24 hours." — short and honest. Don't invent narrative.
+
+Good: "L1 ran caramel cluster all shift with no breaks. Hopper #3 needed a quick clear at 14:20 but came back inside ten minutes."
+Bad: "L1 had a busy day with lots going on across multiple lines." (vague, no facts)
+
+## Voice rules (CandyCo design system)
+
+These apply to `headline.text`, `per_plant_summary.*`, all issue bodies, and resolution comments.
+
+- Sentence case. Title case only for proper nouns (line names, vendor names).
+- Concrete numbers. Never "lots of" or "several" — always the count. Times in 24-hour HH:MM, durations as "3 hours" or "20 minutes," ages as "3 days open."
+- "We" for CandyCo, "you" for the reader. Never "I." Never "the user."
+- No emoji. Status is conveyed via priority and category.
+- No exclamation points.
+- Lead with the gap. State the problem and the number before the explanation.
+
+## Watchlist (optional)
+
+`watchlist` is an array of existing open issues that didn't have any messages today but you want to keep on the reader's radar — typically because they've been open a while or are blocking something. Each entry: `{ "issue_number": N, "reason": "one sentence why this matters" }`. Use sparingly; if you list more than 3, you're diluting.
+
+## Floor notes (optional)
+
+`notes` is an array of non-issue color from the floor that's worth reading but doesn't warrant a GitHub issue: vendor visits, capacity moves, schedule changes, supplier news. Each entry: `{ "plant": "L1|L2|L3", "text": "one sentence" }`. Optional; default to empty if nothing fits.
+
+## Worked example 1 — modest day at L2
+
+Messages (excerpt):
+```
+[L2 Floor] 09:14 Mike R: line 2 down — hopper #3 jammed on a crumb cluster
+[L2 Floor] 09:31 Mike R: cleared, running again
+[L2 Floor] 11:02 Sarah K: anyone seen the second pallet of foil wrap? supposed to be here yesterday
+[L2 Floor] 13:45 Mike R: foil arrived, back on schedule
+[L2 Floor] 15:10 Sarah K: FSQA flagged 4 pouches for weight on the 14:00 check, isolated and reworked
+```
+
+Plan fragment:
+```json
+{
+  "headline": {
+    "eyebrow": "Same-day recovery",
+    "text": "L2 cleared a hopper jam in *17 minutes* and rebalanced after a late foil delivery — no carry-over."
+  },
+  "per_plant_summary": {
+    "L2": "L2 had a 17-minute hopper jam at 09:14 that cleared cleanly. Foil supply ran late but arrived at 13:45 and the line stayed on schedule. FSQA caught 4 underweight pouches at the 14:00 check; isolated and reworked."
+  },
+  "create": [
+    {
+      "plant": "L2", "title": "L2 hopper #3 jam on crumb cluster",
+      "priority": "P3", "category": "Machine",
+      "body": "...",
+      "resolved_in_window": {"resolution_comment": "Cleared at 09:31 — \"cleared, running again\""}
+    },
+    {
+      "plant": "L2", "title": "L2 foil wrap pallet arrived a day late",
+      "priority": "P3", "category": "Materials",
+      "body": "...",
+      "resolved_in_window": {"resolution_comment": "Foil arrived at 13:45 — \"back on schedule\""}
+    },
+    {
+      "plant": "L2", "title": "L2 underweight pouches caught at 14:00 weight check (4 ct)",
+      "priority": "P2", "category": "Quality",
+      "body": "..."
+    }
+  ]
+}
+```
+
+## Worked example 2 — active P1 at L3
+
+Messages (excerpt):
+```
+[L3 Floor] 06:42 Tom W: enrober down, drive belt slipping
+[L3 Floor] 07:05 Tom W: tried tensioning, no luck, calling maintenance
+[L3 Floor] 08:20 Tom W: maintenance on-site, ordering belt
+[L3 Floor] 13:11 Tom W: still waiting on belt, line idle 6+ hours now
+```
+
+Plan fragment:
+```json
+{
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 enrober has been down *over 6 hours* on a belt failure — maintenance on-site, waiting on parts."
+  },
+  "per_plant_summary": {
+    "L3": "L3 enrober drive belt failed at 06:42. Tensioning didn't hold. Maintenance is on-site since 08:20 and waiting on the replacement belt; line idle for the rest of the window."
+  },
+  "create": [
+    {
+      "plant": "L3", "title": "L3 enrober drive belt failure — line down",
+      "priority": "P1", "category": "Machine",
+      "body": "..."
+    }
+  ]
+}
+```
+
 ## Output
 
-Call submit_plan with three lists. Use empty lists when nothing applies. Be conservative: when in doubt about whether a chat references an existing issue, comment rather than create. Don't invent activity that isn't in the messages."""
+Call submit_plan with every required field populated. Use empty arrays for optional fields (`watchlist`, `notes`) when nothing applies. Be conservative: when in doubt about whether a chat references an existing issue, comment rather than create. Don't invent activity that isn't in the messages — short summaries are fine if the day was quiet."""
+
+CATEGORIES = ["Machine", "Quality", "Safety", "Materials", "Staffing", "Other"]
+PRIORITIES = ["P1", "P2", "P3"]
 
 PLAN_TOOL = {
     "name": "submit_plan",
-    "description": "Submit the issue reconciliation plan for today's messages.",
+    "description": "Submit the daily briefing plan: reconciliation actions + narrative for the report.",
     "input_schema": {
         "type": "object",
         "properties": {
+            "headline": {
+                "type": "object",
+                "description": "The single most important thing about today, rendered in the report's hero callout.",
+                "properties": {
+                    "eyebrow": {
+                        "type": "string",
+                        "description": "Short 2-3 word label, e.g. 'Line down', 'Quiet 24 hours', 'Long-running issue'.",
+                    },
+                    "text": {
+                        "type": "string",
+                        "description": "One sentence. Lead with the gap, include the one number that matters. Wrap a single accent token in *asterisks*.",
+                    },
+                },
+                "required": ["eyebrow", "text"],
+            },
+            "per_plant_summary": {
+                "type": "object",
+                "description": "1-2 sentences per plant of what actually happened. Printed verbatim above each plant's issue lists.",
+                "properties": {
+                    "L1": {"type": "string"},
+                    "L2": {"type": "string"},
+                    "L3": {"type": "string"},
+                },
+                "required": ["L1", "L2", "L3"],
+            },
+            "watchlist": {
+                "type": "array",
+                "description": "Existing open issues with no activity today that still deserve attention. Use sparingly (<= 3).",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "issue_number": {"type": "integer"},
+                        "reason": {"type": "string"},
+                    },
+                    "required": ["issue_number", "reason"],
+                },
+            },
+            "notes": {
+                "type": "array",
+                "description": "Non-issue floor color (vendor visits, capacity moves, schedule changes). Optional.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "plant": {"type": "string", "enum": ["L1", "L2", "L3"]},
+                        "text": {"type": "string"},
+                    },
+                    "required": ["plant", "text"],
+                },
+            },
             "create": {
                 "type": "array",
                 "items": {
@@ -84,16 +286,26 @@ PLAN_TOOL = {
                         "plant": {"type": "string", "enum": ["L1", "L2", "L3"]},
                         "title": {"type": "string"},
                         "body": {"type": "string"},
+                        "priority": {
+                            "type": "string",
+                            "enum": PRIORITIES,
+                            "description": "P1 = urgent (line down, safety, customer-impacting); P2 = elevated; P3 = routine.",
+                        },
+                        "category": {
+                            "type": "string",
+                            "enum": CATEGORIES,
+                            "description": "Exactly one of Machine, Quality, Safety, Materials, Staffing, Other.",
+                        },
                         "resolved_in_window": {
                             "type": "object",
-                            "description": "Set ONLY when the issue was both raised AND resolved within today's messages. The orchestrator will create the issue and immediately close it with the resolution comment.",
+                            "description": "Set ONLY when the issue was both raised AND resolved within today's messages. The orchestrator will create the issue and immediately close it.",
                             "properties": {
                                 "resolution_comment": {"type": "string"},
                             },
                             "required": ["resolution_comment"],
                         },
                     },
-                    "required": ["plant", "title", "body"],
+                    "required": ["plant", "title", "body", "priority", "category"],
                 },
             },
             "comment": {
@@ -119,7 +331,7 @@ PLAN_TOOL = {
                 },
             },
         },
-        "required": ["create", "comment", "close"],
+        "required": ["headline", "per_plant_summary", "create", "comment", "close"],
     },
 }
 
@@ -211,7 +423,8 @@ def call_claude_for_plan(messages: dict, open_issues: list[dict]) -> dict:
     )
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=4096,
+        max_tokens=8192,
+        thinking={"type": "enabled", "budget_tokens": 5000},
         system=[
             {
                 "type": "text",
@@ -220,7 +433,6 @@ def call_claude_for_plan(messages: dict, open_issues: list[dict]) -> dict:
             }
         ],
         tools=[PLAN_TOOL],
-        tool_choice={"type": "tool", "name": "submit_plan"},
         messages=[{"role": "user", "content": user_payload}],
     )
     print(
@@ -247,7 +459,8 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
            json={"body": c["resolution_comment"]})
         gh("PATCH", f"/repos/{REPO}/issues/{n}", json={"state": "closed"})
         closed.append({"number": n, "title": open_by_num[n]["title"],
-                       "plant": open_by_num[n]["plant"]})
+                       "plant": open_by_num[n]["plant"],
+                       "priority": None, "category": None})
         print(f"  closed #{n}")
 
     for c in plan.get("comment", []):
@@ -264,6 +477,8 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
         if plant not in {"L1", "L2", "L3"}:
             print(f"  skip create (bad plant: {plant})")
             continue
+        priority = c.get("priority") if c.get("priority") in PRIORITIES else None
+        category = c.get("category") if c.get("category") in CATEGORIES else None
         new = gh("POST", f"/repos/{REPO}/issues", json={
             "title": c["title"],
             "body": c["body"],
@@ -271,20 +486,26 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
         })
         assert isinstance(new, dict)
         n = new["number"]
-        created.append({"number": n, "title": c["title"], "plant": plant})
-        print(f"  created #{n}: {c['title']}")
+        created.append({
+            "number": n, "title": c["title"], "plant": plant,
+            "priority": priority, "category": category,
+        })
+        print(f"  created #{n} [{priority or '–'}/{category or '–'}]: {c['title']}")
 
         resolved = c.get("resolved_in_window")
         if resolved and resolved.get("resolution_comment"):
             gh("POST", f"/repos/{REPO}/issues/{n}/comments",
                json={"body": resolved["resolution_comment"]})
             gh("PATCH", f"/repos/{REPO}/issues/{n}", json={"state": "closed"})
-            closed.append({"number": n, "title": c["title"], "plant": plant})
+            closed.append({
+                "number": n, "title": c["title"], "plant": plant,
+                "priority": priority, "category": category,
+            })
             print(f"  closed #{n} (resolved in same window)")
     return closed, [], created
 
 
-def build_ledger(today: str, closed: list, created: list,
+def build_ledger(today: str, plan: dict, closed: list, created: list,
                  open_issues: list[dict], created_nums: set[int],
                  closed_nums: set[int]) -> dict:
     now = dt.datetime.now(dt.timezone.utc)
@@ -296,6 +517,7 @@ def build_ledger(today: str, closed: list, created: list,
         still_open.append({
             "number": i["number"], "title": i["title"],
             "plant": i["plant"], "age_days": age,
+            "priority": None, "category": None,
         })
     for c in created:
         if c["number"] in closed_nums:
@@ -303,11 +525,21 @@ def build_ledger(today: str, closed: list, created: list,
         still_open.append({
             "number": c["number"], "title": c["title"],
             "plant": c["plant"], "age_days": 0,
+            "priority": c.get("priority"), "category": c.get("category"),
         })
     plant_order = {"L1": 0, "L2": 1, "L3": 2}
-    still_open.sort(key=lambda x: (plant_order.get(x["plant"], 9), -x["age_days"]))
+    priority_rank = {"P1": 0, "P2": 1, "P3": 2, None: 3}
+    still_open.sort(key=lambda x: (
+        plant_order.get(x["plant"], 9),
+        priority_rank.get(x.get("priority"), 3),
+        -x["age_days"],
+    ))
     return {
         "date": today,
+        "headline": plan.get("headline") or {},
+        "per_plant_summary": plan.get("per_plant_summary") or {},
+        "watchlist": plan.get("watchlist") or [],
+        "notes": plan.get("notes") or [],
         "closed_today": closed,
         "opened_today": created,
         "still_open": still_open,
@@ -365,7 +597,7 @@ def main() -> None:
     created_nums = {c["number"] for c in created}
 
     print("\n--- 5. Build & write ledger ---")
-    ledger = build_ledger(today, closed, created, open_issues, created_nums, closed_nums)
+    ledger = build_ledger(today, plan, closed, created, open_issues, created_nums, closed_nums)
     ledger_path.write_text(json.dumps(ledger, indent=2) + "\n")
     print(f"wrote {ledger_path}")
 
