@@ -36,7 +36,7 @@ PAGE_LOCAL_CSS = """
 }
 .plant-block .plant-head {
   display: flex; justify-content: space-between; align-items: baseline;
-  gap: 12pt; margin-bottom: 6pt;
+  gap: 12pt; margin-bottom: 4pt;
 }
 .plant-block .plant-head h3 {
   margin: 0; font-size: 12pt; color: var(--fg-1);
@@ -45,6 +45,13 @@ PAGE_LOCAL_CSS = """
   font-size: 8.5pt; color: var(--fg-2); font-variant-numeric: tabular-nums;
 }
 .plant-block .plant-head .stat-line strong { color: var(--fg-1); }
+.plant-block .plant-narrative {
+  font-family: var(--font-serif);
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: var(--fg-2);
+  margin: 0 0 10pt 0;
+}
 .plant-block .lists {
   display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12pt;
 }
@@ -54,16 +61,24 @@ PAGE_LOCAL_CSS = """
   font-size: 8.5pt; line-height: 1.45;
 }
 .plant-block .lists .col li {
-  padding: 3pt 0; border-bottom: 1px dashed var(--border-subtle);
-  display: flex; gap: 6pt; align-items: baseline;
+  padding: 4pt 0; border-bottom: 1px dashed var(--border-subtle);
+  display: grid; grid-template-columns: 26pt 1fr auto;
+  gap: 4pt; align-items: baseline;
 }
 .plant-block .lists .col li:last-child { border-bottom: none; }
 .plant-block .lists .col .num {
-  color: var(--fg-3); font-variant-numeric: tabular-nums;
-  min-width: 26pt; font-size: 8pt;
+  color: var(--fg-3); font-variant-numeric: tabular-nums; font-size: 8pt;
+}
+.plant-block .lists .col .meta {
+  grid-column: 1 / -1;
+  display: flex; gap: 4pt; margin-top: 2pt;
+  padding-left: 30pt;
+}
+.plant-block .lists .col .meta .cap {
+  font-size: 6.5pt; padding: 0 5pt; line-height: 1.4;
 }
 .plant-block .lists .col .age {
-  margin-left: auto; color: var(--fg-3); font-size: 7.5pt; white-space: nowrap;
+  color: var(--fg-3); font-size: 7.5pt; white-space: nowrap;
 }
 .plant-block .lists .col .empty {
   color: var(--fg-3); font-style: italic; font-size: 8.5pt;
@@ -86,8 +101,33 @@ PAGE_LOCAL_CSS = """
 .plant-card .scale { font-size: 7.5pt; color: var(--fg-3); }
 .plant-card .row { display: flex; justify-content: space-between; padding: 2pt 0; font-size: 8.5pt; }
 .plant-card .row .v { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1); }
+.floor-notes {
+  margin: 10pt 0 14pt 0;
+  padding: 8pt 12pt;
+  background: #FAF9F4;
+  border-left: 3pt solid var(--primary);
+  border-radius: var(--radius-sm);
+  font-size: 8.5pt;
+  page-break-inside: avoid;
+}
+.floor-notes .eyebrow { margin-bottom: 4pt; }
+.floor-notes ul { margin: 0; padding-left: 14pt; }
+.floor-notes li { padding: 1pt 0; color: var(--fg-1); }
+.floor-notes li .plant-tag {
+  font-weight: 700; color: var(--fg-2); margin-right: 4pt;
+}
+.watchlist-strip {
+  margin: 8pt 0 12pt 0;
+  font-size: 8pt; color: var(--fg-2);
+  padding: 6pt 10pt;
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+}
+.watchlist-strip .eyebrow { display: inline-block; margin-right: 8pt; }
 .archive-link { color: var(--steel-blue); }
 """
+
+ACCENT_RE = __import__("re").compile(r"\*([^*]+)\*")
 
 
 def esc(s: str) -> str:
@@ -110,8 +150,28 @@ def fmt_window(window: dict) -> str:
     return f"{s} → {e}"
 
 
+def render_accents(text: str) -> str:
+    """Wrap *asterisk-tokens* in an accent span. Claude marks the one number
+    that matters in *asterisks*; everything else escapes normally."""
+    parts: list[str] = []
+    last = 0
+    for m in ACCENT_RE.finditer(text):
+        parts.append(esc(text[last:m.start()]))
+        parts.append(f'<span class="accent">{esc(m.group(1))}</span>')
+        last = m.end()
+    parts.append(esc(text[last:]))
+    return "".join(parts)
+
+
 def headline(ledger: dict) -> tuple[str, str]:
-    """Return (eyebrow, headline_html) for the hero callout."""
+    """Return (eyebrow, headline_html) for the hero callout.
+
+    Prefer ledger["headline"] (Claude-written) when present. Fall back to a
+    deterministic 6-mode picker for pre-change ledgers and crash safety."""
+    h = ledger.get("headline") or {}
+    if h.get("eyebrow") and h.get("text"):
+        return (h["eyebrow"], render_accents(h["text"]))
+
     open_issues = ledger.get("still_open", [])
     closed = ledger.get("closed_today", [])
     opened = ledger.get("opened_today", [])
@@ -154,6 +214,28 @@ def headline(ledger: dict) -> tuple[str, str]:
     ))
 
 
+PRIORITY_CAP = {"P1": "error", "P2": "warning", "P3": "neutral"}
+
+
+def cap(text: str, kind: str = "neutral") -> str:
+    return f'<span class="cap {kind}">{esc(text)}</span>'
+
+
+def issue_meta_row(item: dict) -> str:
+    """Render a row of priority + category capsules below an issue line.
+    Returns "" when the issue has neither (pre-change carry-overs)."""
+    priority = item.get("priority")
+    category = item.get("category")
+    caps: list[str] = []
+    if priority in PRIORITY_CAP:
+        caps.append(cap(priority, PRIORITY_CAP[priority]))
+    if category:
+        caps.append(cap(category, "neutral"))
+    if not caps:
+        return ""
+    return f'<div class="meta">{"".join(caps)}</div>'
+
+
 def stat_card(eyebrow: str, value: str, sub: str) -> str:
     return (
         f'<div class="stat">'
@@ -187,14 +269,20 @@ def plant_block(plant: dict, ledger: dict) -> str:
     closed = [i for i in ledger.get("closed_today", []) if i.get("plant") == p]
     opened = [i for i in ledger.get("opened_today", []) if i.get("plant") == p]
     open_now = [i for i in ledger.get("still_open", []) if i.get("plant") == p]
+    narrative = (ledger.get("per_plant_summary") or {}).get(p, "")
 
     def li(i: dict, show_age: bool = False) -> str:
         age = ""
         if show_age and (d := i.get("age_days")) is not None:
             age = f'<span class="age">{d}d open</span>'
+        else:
+            age = '<span></span>'
         return (
             f'<li><span class="num">#{i["number"]}</span>'
-            f'<span>{issue_link(i["number"], i["title"])}</span>{age}</li>'
+            f'<span>{issue_link(i["number"], i["title"])}</span>'
+            f'{age}'
+            f'{issue_meta_row(i)}'
+            f'</li>'
         )
 
     def col(label: str, items: list, *, show_age: bool, empty_text: str) -> str:
@@ -214,18 +302,63 @@ def plant_block(plant: dict, ledger: dict) -> str:
         f'<strong>{len(open_now)}</strong> still open'
     )
 
+    narrative_html = (
+        f'<p class="plant-narrative">{esc(narrative)}</p>' if narrative else ""
+    )
+
     return f"""
 <section class="plant-block" style="--plant-accent: {plant["accent"]};">
   <div class="plant-head">
     <h3>{esc(plant["name"])}</h3>
     <div class="stat-line">{stat}</div>
   </div>
+  {narrative_html}
   <div class="lists">
     {col("What went well", closed, show_age=False, empty_text="No resolutions in the last 24 hours.")}
     {col("What didn't", opened, show_age=False, empty_text="No new issues opened in the last 24 hours.")}
     {col("Today's priorities", open_now, show_age=True, empty_text="No open issues. Clean slate.")}
   </div>
 </section>"""
+
+
+def floor_notes_block(ledger: dict) -> str:
+    notes = ledger.get("notes") or []
+    if not notes:
+        return ""
+    items = "".join(
+        f'<li><span class="plant-tag">{esc(n.get("plant", "—"))}</span>'
+        f'{esc(n.get("text", ""))}</li>'
+        for n in notes
+    )
+    return (
+        '<div class="floor-notes">'
+        '<div class="eyebrow">Floor notes</div>'
+        f'<ul>{items}</ul>'
+        '</div>'
+    )
+
+
+def watchlist_strip(ledger: dict) -> str:
+    wl = ledger.get("watchlist") or []
+    if not wl:
+        return ""
+    pieces: list[str] = []
+    for w in wl:
+        n = w.get("issue_number")
+        reason = w.get("reason", "")
+        if n:
+            pieces.append(
+                f'<a class="archive-link" href="{ISSUE_URL.format(n=n)}">#{n}</a> '
+                f'{esc(reason)}'
+            )
+    if not pieces:
+        return ""
+    return (
+        '<div class="watchlist-strip">'
+        '<span class="eyebrow">Watchlist</span>'
+        + " · ".join(pieces) +
+        "</div>"
+    )
 
 
 def render(ledger: dict, messages: dict, date: str) -> str:
@@ -306,6 +439,9 @@ def render(ledger: dict, messages: dict, date: str) -> str:
 <section class="sheet">
   <h2>Plant detail</h2>
   <p class="lead">What went well, what didn't, and where to focus today.</p>
+
+  {floor_notes_block(ledger)}
+  {watchlist_strip(ledger)}
 
   {blocks}
 
