@@ -19,7 +19,7 @@
 }
 .plant-block .plant-head {
   display: flex; justify-content: space-between; align-items: baseline;
-  gap: 12pt; margin-bottom: 6pt;
+  gap: 12pt; margin-bottom: 4pt;
 }
 .plant-block .plant-head h3 {
   margin: 0; font-size: 12pt; color: var(--fg-1);
@@ -28,6 +28,13 @@
   font-size: 8.5pt; color: var(--fg-2); font-variant-numeric: tabular-nums;
 }
 .plant-block .plant-head .stat-line strong { color: var(--fg-1); }
+.plant-block .plant-narrative {
+  font-family: var(--font-serif);
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: var(--fg-2);
+  margin: 0 0 10pt 0;
+}
 .plant-block .lists {
   display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12pt;
 }
@@ -37,16 +44,24 @@
   font-size: 8.5pt; line-height: 1.45;
 }
 .plant-block .lists .col li {
-  padding: 3pt 0; border-bottom: 1px dashed var(--border-subtle);
-  display: flex; gap: 6pt; align-items: baseline;
+  padding: 4pt 0; border-bottom: 1px dashed var(--border-subtle);
+  display: grid; grid-template-columns: 26pt 1fr auto;
+  gap: 4pt; align-items: baseline;
 }
 .plant-block .lists .col li:last-child { border-bottom: none; }
 .plant-block .lists .col .num {
-  color: var(--fg-3); font-variant-numeric: tabular-nums;
-  min-width: 26pt; font-size: 8pt;
+  color: var(--fg-3); font-variant-numeric: tabular-nums; font-size: 8pt;
+}
+.plant-block .lists .col .meta {
+  grid-column: 1 / -1;
+  display: flex; gap: 4pt; margin-top: 2pt;
+  padding-left: 30pt;
+}
+.plant-block .lists .col .meta .cap {
+  font-size: 6.5pt; padding: 0 5pt; line-height: 1.4;
 }
 .plant-block .lists .col .age {
-  margin-left: auto; color: var(--fg-3); font-size: 7.5pt; white-space: nowrap;
+  color: var(--fg-3); font-size: 7.5pt; white-space: nowrap;
 }
 .plant-block .lists .col .empty {
   color: var(--fg-3); font-style: italic; font-size: 8.5pt;
@@ -69,6 +84,29 @@
 .plant-card .scale { font-size: 7.5pt; color: var(--fg-3); }
 .plant-card .row { display: flex; justify-content: space-between; padding: 2pt 0; font-size: 8.5pt; }
 .plant-card .row .v { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1); }
+.floor-notes {
+  margin: 10pt 0 14pt 0;
+  padding: 8pt 12pt;
+  background: #FAF9F4;
+  border-left: 3pt solid var(--primary);
+  border-radius: var(--radius-sm);
+  font-size: 8.5pt;
+  page-break-inside: avoid;
+}
+.floor-notes .eyebrow { margin-bottom: 4pt; }
+.floor-notes ul { margin: 0; padding-left: 14pt; }
+.floor-notes li { padding: 1pt 0; color: var(--fg-1); }
+.floor-notes li .plant-tag {
+  font-weight: 700; color: var(--fg-2); margin-right: 4pt;
+}
+.watchlist-strip {
+  margin: 8pt 0 12pt 0;
+  font-size: 8pt; color: var(--fg-2);
+  padding: 6pt 10pt;
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+}
+.watchlist-strip .eyebrow { display: inline-block; margin-right: 8pt; }
 .archive-link { color: var(--steel-blue); }
 </style>
 </head>
@@ -91,29 +129,29 @@
   <p class="lead">Last 24 hours across Lindon 1 — Caramel, Lindon 2 — Eco Moulding, Lindon 3 — Chocolate. Distribution: Operations, FSQA, plant leadership.</p>
 
   <div class="meta-strip">
-    <div class="item"><div class="eyebrow">Window</div><div class="v">May 10 16:34 UTC → May 11 16:34 UTC</div></div>
-    <div class="item"><div class="eyebrow">Messages</div><div class="v">268 across 12 chats</div></div>
+    <div class="item"><div class="eyebrow">Window</div><div class="v">May 10 22:05 UTC → May 11 22:05 UTC</div></div>
+    <div class="item"><div class="eyebrow">Messages</div><div class="v">526 across 14 chats</div></div>
     <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
-    <div class="item"><div class="eyebrow">Issues touched</div><div class="v">9 today</div></div>
+    <div class="item"><div class="eyebrow">Issues touched</div><div class="v">4 today</div></div>
   </div>
 
   <h2>Executive summary</h2>
 
   <div class="hero">
-    <div class="eyebrow">Today</div>
-    <p class="headline"><strong>4</strong> resolved · <strong>5</strong> newly raised · <strong>23</strong> still open across L1/L2/L3.</p>
+    <div class="eyebrow">Line down</div>
+    <p class="headline">L2 ML2 has been down <span class="accent">all shift</span> after HMI froze - motor swap suggests the problem isn&#x27;t the motor itself.</p>
   </div>
 
   <div class="stats">
-    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">4</div><div class="sub">Closed in the last 24 hours</div></div>
-    <div class="stat"><div class="eyebrow">Newly raised</div><div class="num">5</div><div class="sub">New issues opened today</div></div>
-    <div class="stat"><div class="eyebrow">Still open</div><div class="num">23</div><div class="sub">Across L1, L2, L3</div></div>
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">1</div><div class="sub">Closed in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Newly raised</div><div class="num">3</div><div class="sub">New issues opened today</div></div>
+    <div class="stat"><div class="eyebrow">Still open</div><div class="num">25</div><div class="sub">Across L1, L2, L3</div></div>
     <div class="stat"><div class="eyebrow">Oldest open</div><div class="num">2d</div><div class="sub">Longest-running issue</div></div>
   </div>
 
   <h3>By plant</h3>
   <div class="audience-grid" style="grid-template-columns: 1fr 1fr 1fr;">
-    <div class="plant-card" style="--plant-accent: #FFCA3A;">  <div class="head"><div class="title">Lindon 1 — Caramel</div>    <div class="scale">L1</div></div>  <div class="row"><span>Resolved</span><span class="v">0</span></div>  <div class="row"><span>Newly raised</span><span class="v">0</span></div>  <div class="row"><span>Still open</span><span class="v">6</span></div>  <div class="row"><span>Oldest open</span><span class="v">2d</span></div></div><div class="plant-card" style="--plant-accent: #23CE6B;">  <div class="head"><div class="title">Lindon 2 — Eco Moulding</div>    <div class="scale">L2</div></div>  <div class="row"><span>Resolved</span><span class="v">0</span></div>  <div class="row"><span>Newly raised</span><span class="v">0</span></div>  <div class="row"><span>Still open</span><span class="v">9</span></div>  <div class="row"><span>Oldest open</span><span class="v">2d</span></div></div><div class="plant-card" style="--plant-accent: #1982C4;">  <div class="head"><div class="title">Lindon 3 — Chocolate</div>    <div class="scale">L3</div></div>  <div class="row"><span>Resolved</span><span class="v">4</span></div>  <div class="row"><span>Newly raised</span><span class="v">5</span></div>  <div class="row"><span>Still open</span><span class="v">8</span></div>  <div class="row"><span>Oldest open</span><span class="v">0d</span></div></div>
+    <div class="plant-card" style="--plant-accent: #FFCA3A;">  <div class="head"><div class="title">Lindon 1 — Caramel</div>    <div class="scale">L1</div></div>  <div class="row"><span>Resolved</span><span class="v">0</span></div>  <div class="row"><span>Newly raised</span><span class="v">1</span></div>  <div class="row"><span>Still open</span><span class="v">7</span></div>  <div class="row"><span>Oldest open</span><span class="v">2d</span></div></div><div class="plant-card" style="--plant-accent: #23CE6B;">  <div class="head"><div class="title">Lindon 2 — Eco Moulding</div>    <div class="scale">L2</div></div>  <div class="row"><span>Resolved</span><span class="v">0</span></div>  <div class="row"><span>Newly raised</span><span class="v">1</span></div>  <div class="row"><span>Still open</span><span class="v">10</span></div>  <div class="row"><span>Oldest open</span><span class="v">2d</span></div></div><div class="plant-card" style="--plant-accent: #1982C4;">  <div class="head"><div class="title">Lindon 3 — Chocolate</div>    <div class="scale">L3</div></div>  <div class="row"><span>Resolved</span><span class="v">1</span></div>  <div class="row"><span>Newly raised</span><span class="v">1</span></div>  <div class="row"><span>Still open</span><span class="v">8</span></div>  <div class="row"><span>Oldest open</span><span class="v">0d</span></div></div>
   </div>
 
   <div class="sheet-footer">
@@ -127,38 +165,44 @@
   <h2>Plant detail</h2>
   <p class="lead">What went well, what didn't, and where to focus today.</p>
 
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li><span class="plant-tag">L1</span>Contractors cutting concrete on Line 1 for drain work - area taped off and tent in place per Marco Rodriguez at 16:55</li><li><span class="plant-tag">L1</span>Pretzel supply constraint - scheduled to run until May 18 but only have pretzels through Wednesday; 3 loads (27,000 lb each) arriving this week</li><li><span class="plant-tag">L2</span>Jay Alba has 2 servo motors inbound for ML2 - one from UK, one from Sparks NV (expected tomorrow) - though motor swap suggests issue may not be motor</li></ul></div>
+  <div class="watchlist-strip"><span class="eyebrow">Watchlist</span><a class="archive-link" href="https://github.com/d-scott-code/teams-production-monitor/issues/20">#20</a> Batch 20009 still too soft to run on TW since Friday - scheduled to run Monday but no update on product readiness · <a class="archive-link" href="https://github.com/d-scott-code/teams-production-monitor/issues/12">#12</a> S3 jar filling conveyor still failing allergen test for Level 4 clean since 2026-05-09 - blocks production</div>
+
   
 <section class="plant-block" style="--plant-accent: #FFCA3A;">
   <div class="plant-head">
     <h3>Lindon 1 — Caramel</h3>
-    <div class="stat-line"><strong>0</strong> resolved · <strong>0</strong> newly raised · <strong>6</strong> still open</div>
+    <div class="stat-line"><strong>0</strong> resolved · <strong>1</strong> newly raised · <strong>7</strong> still open</div>
   </div>
+  <p class="plant-narrative">S3 fought piece count issues all shift with multiple temper adjustments and an accidental buffer depletion, back running by 20:36. S2 found metal in a jar that X-ray caught but the metal detector missed; maintenance inspected all equipment and cleared the line to restart at 17:44.</p>
   <div class="lists">
     <div class="col"><div class="eyebrow">What went well</div><p class="empty">No resolutions in the last 24 hours.</p></div>
-    <div class="col"><div class="eyebrow">What didn&#x27;t</div><p class="empty">No new issues opened in the last 24 hours.</p></div>
-    <div class="col"><div class="eyebrow">Today&#x27;s priorities</div><ul><li><span class="num">#20</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/20">Batch 20009 too soft to run on TW - delayed to Monday</a></span><span class="age">2d open</span></li><li><span class="num">#13</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/13">No proper electrical connection for steamer in S3 enrober area</a></span><span class="age">2d open</span></li><li><span class="num">#12</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/12">S3 jar filling conveyor failing allergen test</a></span><span class="age">2d open</span></li><li><span class="num">#11</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/11">Sanitizer sprayers contaminated by drain use</a></span><span class="age">2d open</span></li><li><span class="num">#31</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/31">S3 unable to hit 85 piece count target in pouches</a></span><span class="age">0d open</span></li><li><span class="num">#30</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/30">S3 red brush bristles fell into Matrix 3 during clean and rezero</a></span><span class="age">0d open</span></li></ul></div>
+    <div class="col"><div class="eyebrow">What didn&#x27;t</div><ul><li><span class="num">#45</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/45">S2 metal piece found in jar - X-ray detected, metal detector did not</a></span><span></span><div class="meta"><span class="cap warning">P2</span><span class="cap neutral">Quality</span></div></li></ul></div>
+    <div class="col"><div class="eyebrow">Today&#x27;s priorities</div><ul><li><span class="num">#45</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/45">S2 metal piece found in jar - X-ray detected, metal detector did not</a></span><span class="age">0d open</span><div class="meta"><span class="cap warning">P2</span><span class="cap neutral">Quality</span></div></li><li><span class="num">#20</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/20">Batch 20009 too soft to run on TW - delayed to Monday</a></span><span class="age">2d open</span></li><li><span class="num">#13</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/13">No proper electrical connection for steamer in S3 enrober area</a></span><span class="age">2d open</span></li><li><span class="num">#12</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/12">S3 jar filling conveyor failing allergen test</a></span><span class="age">2d open</span></li><li><span class="num">#11</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/11">Sanitizer sprayers contaminated by drain use</a></span><span class="age">2d open</span></li><li><span class="num">#31</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/31">S3 unable to hit 85 piece count target in pouches</a></span><span class="age">0d open</span></li><li><span class="num">#30</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/30">S3 red brush bristles fell into Matrix 3 during clean and rezero</a></span><span class="age">0d open</span></li></ul></div>
   </div>
 </section>
 <section class="plant-block" style="--plant-accent: #23CE6B;">
   <div class="plant-head">
     <h3>Lindon 2 — Eco Moulding</h3>
-    <div class="stat-line"><strong>0</strong> resolved · <strong>0</strong> newly raised · <strong>9</strong> still open</div>
+    <div class="stat-line"><strong>0</strong> resolved · <strong>1</strong> newly raised · <strong>10</strong> still open</div>
   </div>
+  <p class="plant-narrative">ML2 down all shift after HMI froze at 15:59 - motor swap with ML3 suggests the issue isn&#x27;t the motor but something else on the Theegarten. FFS had two brief printer stoppages and a checkweigher fault, all recovered same-shift.</p>
   <div class="lists">
     <div class="col"><div class="eyebrow">What went well</div><p class="empty">No resolutions in the last 24 hours.</p></div>
-    <div class="col"><div class="eyebrow">What didn&#x27;t</div><p class="empty">No new issues opened in the last 24 hours.</p></div>
-    <div class="col"><div class="eyebrow">Today&#x27;s priorities</div><ul><li><span class="num">#18</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/18">ML2 encoder position causing print issues on sticky film</a></span><span class="age">2d open</span></li><li><span class="num">#17</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/17">ML2 flow wrap tension arm and forming plate fault</a></span><span class="age">2d open</span></li><li><span class="num">#16</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/16">ML2 flow wrap intermittent missing lot codes</a></span><span class="age">2d open</span></li><li><span class="num">#10</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/10">Main vacuum for ML3 flow wrap faulting - motor stuck</a></span><span class="age">2d open</span></li><li><span class="num">#9</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/9">Belt issue stopped ML3 for 15 minutes overnight</a></span><span class="age">2d open</span></li><li><span class="num">#8</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/8">Film issues causing line stops on ML3</a></span><span class="age">2d open</span></li><li><span class="num">#33</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/33">FFS checkweigher blowing all pouches off line - multiple faults</a></span><span class="age">0d open</span></li><li><span class="num">#32</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/32">FFS box printer repeatedly failing - not printing lot code</a></span><span class="age">0d open</span></li><li><span class="num">#23</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/23">ML2 HMI froze during recipe change, hard reset required</a></span><span class="age">0d open</span></li></ul></div>
+    <div class="col"><div class="eyebrow">What didn&#x27;t</div><ul><li><span class="num">#43</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/43">ML2 Theegarten down all shift - HMI freeze and motor fault unresolved</a></span><span></span><div class="meta"><span class="cap error">P1</span><span class="cap neutral">Machine</span></div></li></ul></div>
+    <div class="col"><div class="eyebrow">Today&#x27;s priorities</div><ul><li><span class="num">#43</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/43">ML2 Theegarten down all shift - HMI freeze and motor fault unresolved</a></span><span class="age">0d open</span><div class="meta"><span class="cap error">P1</span><span class="cap neutral">Machine</span></div></li><li><span class="num">#18</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/18">ML2 encoder position causing print issues on sticky film</a></span><span class="age">2d open</span></li><li><span class="num">#17</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/17">ML2 flow wrap tension arm and forming plate fault</a></span><span class="age">2d open</span></li><li><span class="num">#16</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/16">ML2 flow wrap intermittent missing lot codes</a></span><span class="age">2d open</span></li><li><span class="num">#10</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/10">Main vacuum for ML3 flow wrap faulting - motor stuck</a></span><span class="age">2d open</span></li><li><span class="num">#9</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/9">Belt issue stopped ML3 for 15 minutes overnight</a></span><span class="age">2d open</span></li><li><span class="num">#8</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/8">Film issues causing line stops on ML3</a></span><span class="age">2d open</span></li><li><span class="num">#33</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/33">FFS checkweigher blowing all pouches off line - multiple faults</a></span><span class="age">0d open</span></li><li><span class="num">#32</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/32">FFS box printer repeatedly failing - not printing lot code</a></span><span class="age">0d open</span></li><li><span class="num">#23</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/23">ML2 HMI froze during recipe change, hard reset required</a></span><span class="age">0d open</span></li></ul></div>
   </div>
 </section>
 <section class="plant-block" style="--plant-accent: #1982C4;">
   <div class="plant-head">
     <h3>Lindon 3 — Chocolate</h3>
-    <div class="stat-line"><strong>4</strong> resolved · <strong>5</strong> newly raised · <strong>8</strong> still open</div>
+    <div class="stat-line"><strong>1</strong> resolved · <strong>1</strong> newly raised · <strong>8</strong> still open</div>
   </div>
+  <p class="plant-narrative">ML1 metal detector belt shifted repeatedly due to loose set screws on the pulley shaft - fixed at 18:09, line back running at 22:02. ML4 gondola lost position three times requiring re-zeroing; root cause appears to be bent carriage slats and ramp misalignment. MF Matrix scale vibration resolved after Nathan found three linear feeders set up incorrectly.</p>
   <div class="lists">
-    <div class="col"><div class="eyebrow">What went well</div><ul><li><span class="num">#37</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/37">ML4 gondola fault - bent carriage causing alarm</a></span></li><li><span class="num">#38</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/38">Truffle Line chocolate return valve failed - buffer overflowed to 107%</a></span></li><li><span class="num">#39</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/39">Truffle Line guillotine servo drive faulted</a></span></li><li><span class="num">#40</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/40">Truffle Line bottomer main scraper falling when lever opened</a></span></li></ul></div>
-    <div class="col"><div class="eyebrow">What didn&#x27;t</div><ul><li><span class="num">#37</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/37">ML4 gondola fault - bent carriage causing alarm</a></span></li><li><span class="num">#38</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/38">Truffle Line chocolate return valve failed - buffer overflowed to 107%</a></span></li><li><span class="num">#39</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/39">Truffle Line guillotine servo drive faulted</a></span></li><li><span class="num">#40</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/40">Truffle Line bottomer main scraper falling when lever opened</a></span></li><li><span class="num">#41</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/41">ML1 mixing water jacket not remaining stable</a></span></li></ul></div>
-    <div class="col"><div class="eyebrow">Today&#x27;s priorities</div><ul><li><span class="num">#36</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/36">Truffle Line broken conveyor cover found during chocolate removal</a></span><span class="age">0d open</span></li><li><span class="num">#35</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/35">MF Matrix combination and scale vibration causing frequent pauses</a></span><span class="age">0d open</span></li><li><span class="num">#34</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/34">MF Matrix bucket errors causing bag re-injection issues</a></span><span class="age">0d open</span></li><li><span class="num">#29</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/29">Truffle Line separator table making constant noise</a></span><span class="age">0d open</span></li><li><span class="num">#27</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/27">ML1 metal detector belt repeatedly shifting - multiple stoppages</a></span><span class="age">0d open</span></li><li><span class="num">#26</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/26">ML1 hopper heat left off during shutdown - chocolate hardened</a></span><span class="age">0d open</span></li><li><span class="num">#25</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/25">ML4 multiple mold jams during recirculation; Swecos installed upside down</a></span><span class="age">0d open</span></li><li><span class="num">#41</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/41">ML1 mixing water jacket not remaining stable</a></span><span class="age">0d open</span></li></ul></div>
+    <div class="col"><div class="eyebrow">What went well</div><ul><li><span class="num">#35</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/35">MF Matrix combination and scale vibration causing frequent pauses</a></span><span></span></li></ul></div>
+    <div class="col"><div class="eyebrow">What didn&#x27;t</div><ul><li><span class="num">#44</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/44">ML4 gondola losing position - repeated re-zeroing required</a></span><span></span><div class="meta"><span class="cap warning">P2</span><span class="cap neutral">Machine</span></div></li></ul></div>
+    <div class="col"><div class="eyebrow">Today&#x27;s priorities</div><ul><li><span class="num">#44</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/44">ML4 gondola losing position - repeated re-zeroing required</a></span><span class="age">0d open</span><div class="meta"><span class="cap warning">P2</span><span class="cap neutral">Machine</span></div></li><li><span class="num">#41</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/41">ML1 mixing water jacket not remaining stable</a></span><span class="age">0d open</span></li><li><span class="num">#36</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/36">Truffle Line broken conveyor cover found during chocolate removal</a></span><span class="age">0d open</span></li><li><span class="num">#34</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/34">MF Matrix bucket errors causing bag re-injection issues</a></span><span class="age">0d open</span></li><li><span class="num">#29</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/29">Truffle Line separator table making constant noise</a></span><span class="age">0d open</span></li><li><span class="num">#27</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/27">ML1 metal detector belt repeatedly shifting - multiple stoppages</a></span><span class="age">0d open</span></li><li><span class="num">#26</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/26">ML1 hopper heat left off during shutdown - chocolate hardened</a></span><span class="age">0d open</span></li><li><span class="num">#25</span><span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/25">ML4 multiple mold jams during recirculation; Swecos installed upside down</a></span><span class="age">0d open</span></li></ul></div>
   </div>
 </section>
 

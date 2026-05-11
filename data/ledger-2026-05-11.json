@@ -1,192 +1,270 @@
 {
   "date": "2026-05-11",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML2 has been down *all shift* after HMI froze - motor swap suggests the problem isn't the motor itself."
+  },
+  "per_plant_summary": {
+    "L1": "S3 fought piece count issues all shift with multiple temper adjustments and an accidental buffer depletion, back running by 20:36. S2 found metal in a jar that X-ray caught but the metal detector missed; maintenance inspected all equipment and cleared the line to restart at 17:44.",
+    "L2": "ML2 down all shift after HMI froze at 15:59 - motor swap with ML3 suggests the issue isn't the motor but something else on the Theegarten. FFS had two brief printer stoppages and a checkweigher fault, all recovered same-shift.",
+    "L3": "ML1 metal detector belt shifted repeatedly due to loose set screws on the pulley shaft - fixed at 18:09, line back running at 22:02. ML4 gondola lost position three times requiring re-zeroing; root cause appears to be bent carriage slats and ramp misalignment. MF Matrix scale vibration resolved after Nathan found three linear feeders set up incorrectly."
+  },
+  "watchlist": [
+    {
+      "issue_number": 20,
+      "reason": "Batch 20009 still too soft to run on TW since Friday - scheduled to run Monday but no update on product readiness"
+    },
+    {
+      "issue_number": 12,
+      "reason": "S3 jar filling conveyor still failing allergen test for Level 4 clean since 2026-05-09 - blocks production"
+    }
+  ],
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Contractors cutting concrete on Line 1 for drain work - area taped off and tent in place per Marco Rodriguez at 16:55"
+    },
+    {
+      "plant": "L1",
+      "text": "Pretzel supply constraint - scheduled to run until May 18 but only have pretzels through Wednesday; 3 loads (27,000 lb each) arriving this week"
+    },
+    {
+      "plant": "L2",
+      "text": "Jay Alba has 2 servo motors inbound for ML2 - one from UK, one from Sparks NV (expected tomorrow) - though motor swap suggests issue may not be motor"
+    }
+  ],
   "closed_today": [
     {
-      "number": 37,
-      "title": "ML4 gondola fault - bent carriage causing alarm",
-      "plant": "L3"
-    },
-    {
-      "number": 38,
-      "title": "Truffle Line chocolate return valve failed - buffer overflowed to 107%",
-      "plant": "L3"
-    },
-    {
-      "number": 39,
-      "title": "Truffle Line guillotine servo drive faulted",
-      "plant": "L3"
-    },
-    {
-      "number": 40,
-      "title": "Truffle Line bottomer main scraper falling when lever opened",
-      "plant": "L3"
+      "number": 35,
+      "title": "MF Matrix combination and scale vibration causing frequent pauses",
+      "plant": "L3",
+      "priority": null,
+      "category": null
     }
   ],
   "opened_today": [
     {
-      "number": 37,
-      "title": "ML4 gondola fault - bent carriage causing alarm",
-      "plant": "L3"
+      "number": 43,
+      "title": "ML2 Theegarten down all shift - HMI freeze and motor fault unresolved",
+      "plant": "L2",
+      "priority": "P1",
+      "category": "Machine"
     },
     {
-      "number": 38,
-      "title": "Truffle Line chocolate return valve failed - buffer overflowed to 107%",
-      "plant": "L3"
+      "number": 44,
+      "title": "ML4 gondola losing position - repeated re-zeroing required",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine"
     },
     {
-      "number": 39,
-      "title": "Truffle Line guillotine servo drive faulted",
-      "plant": "L3"
-    },
-    {
-      "number": 40,
-      "title": "Truffle Line bottomer main scraper falling when lever opened",
-      "plant": "L3"
-    },
-    {
-      "number": 41,
-      "title": "ML1 mixing water jacket not remaining stable",
-      "plant": "L3"
+      "number": 45,
+      "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
+      "plant": "L1",
+      "priority": "P2",
+      "category": "Quality"
     }
   ],
   "still_open": [
     {
+      "number": 45,
+      "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Quality"
+    },
+    {
       "number": 20,
       "title": "Batch 20009 too soft to run on TW - delayed to Monday",
       "plant": "L1",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 13,
       "title": "No proper electrical connection for steamer in S3 enrober area",
       "plant": "L1",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 12,
       "title": "S3 jar filling conveyor failing allergen test",
       "plant": "L1",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 11,
       "title": "Sanitizer sprayers contaminated by drain use",
       "plant": "L1",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 31,
       "title": "S3 unable to hit 85 piece count target in pouches",
       "plant": "L1",
-      "age_days": 0
+      "age_days": 0,
+      "priority": null,
+      "category": null
     },
     {
       "number": 30,
       "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
       "plant": "L1",
-      "age_days": 0
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 43,
+      "title": "ML2 Theegarten down all shift - HMI freeze and motor fault unresolved",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": "P1",
+      "category": "Machine"
     },
     {
       "number": 18,
       "title": "ML2 encoder position causing print issues on sticky film",
       "plant": "L2",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 17,
       "title": "ML2 flow wrap tension arm and forming plate fault",
       "plant": "L2",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 16,
       "title": "ML2 flow wrap intermittent missing lot codes",
       "plant": "L2",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 10,
       "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
       "plant": "L2",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 9,
       "title": "Belt issue stopped ML3 for 15 minutes overnight",
       "plant": "L2",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 8,
       "title": "Film issues causing line stops on ML3",
       "plant": "L2",
-      "age_days": 2
+      "age_days": 2,
+      "priority": null,
+      "category": null
     },
     {
       "number": 33,
       "title": "FFS checkweigher blowing all pouches off line - multiple faults",
       "plant": "L2",
-      "age_days": 0
+      "age_days": 0,
+      "priority": null,
+      "category": null
     },
     {
       "number": 32,
       "title": "FFS box printer repeatedly failing - not printing lot code",
       "plant": "L2",
-      "age_days": 0
+      "age_days": 0,
+      "priority": null,
+      "category": null
     },
     {
       "number": 23,
       "title": "ML2 HMI froze during recipe change, hard reset required",
       "plant": "L2",
-      "age_days": 0
+      "age_days": 0,
+      "priority": null,
+      "category": null
     },
     {
-      "number": 36,
-      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "number": 44,
+      "title": "ML4 gondola losing position - repeated re-zeroing required",
       "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 35,
-      "title": "MF Matrix combination and scale vibration causing frequent pauses",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 34,
-      "title": "MF Matrix bucket errors causing bag re-injection issues",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 29,
-      "title": "Truffle Line separator table making constant noise",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 27,
-      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 26,
-      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 25,
-      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
-      "plant": "L3",
-      "age_days": 0
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Machine"
     },
     {
       "number": 41,
       "title": "ML1 mixing water jacket not remaining stable",
       "plant": "L3",
-      "age_days": 0
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 34,
+      "title": "MF Matrix bucket errors causing bag re-injection issues",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
     }
   ]
 }
