@@ -135,6 +135,18 @@ These apply to `headline.text`, `per_plant_summary.*`, all issue bodies, and res
 - No exclamation points.
 - Lead with the gap. State the problem and the number before the explanation.
 
+## Per-issue summary and attribution
+
+On every `create` item, set:
+
+- `summary` — one sentence in plain English describing the problem (not the title). This is what someone needs to know to act, not just a label. Goes under the title in the printed priorities table; the issue title is the headline, the summary is the read. Examples:
+  - Good: "Drive belt slipping under load — tensioning didn't hold, maintenance is on-site and waiting on the replacement belt."
+  - Bad: "Belt failure on the enrober." (just restates the title)
+- `first_raised.author` — the Teams display name of the person who first mentioned the problem in the window. Use the `from` field on the source message exactly as it appears.
+- `first_raised.time_utc` — the `sent_utc` timestamp of that same first message, copied verbatim (ISO-8601 with `Z` or `+00:00` — whichever Teams returned).
+
+Pick the *first* message that surfaces the problem, not the most recent. If the same person mentioned it twice, use the earlier one. Both fields are required on every create item.
+
 ## Watchlist (optional)
 
 `watchlist` is an array of existing open issues that didn't have any messages today but you want to keep on the reader's radar — typically because they've been open a while or are blocking something. Each entry: `{ "issue_number": N, "reason": "one sentence why this matters" }`. Use sparingly; if you list more than 3, you're diluting.
@@ -168,18 +180,24 @@ Plan fragment:
     {
       "plant": "L2", "title": "L2 hopper #3 jam on crumb cluster",
       "priority": "P3", "category": "Machine",
+      "summary": "Crumb cluster jammed hopper #3; cleared by hand in 17 minutes with no rework needed.",
+      "first_raised": {"author": "Mike R", "time_utc": "2026-05-11T09:14:00Z"},
       "body": "...",
       "resolved_in_window": {"resolution_comment": "Cleared at 09:31 — \"cleared, running again\""}
     },
     {
       "plant": "L2", "title": "L2 foil wrap pallet arrived a day late",
       "priority": "P3", "category": "Materials",
+      "summary": "Second pallet of foil wrap was a day late from the supplier; line stayed on schedule once it landed at 13:45.",
+      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T11:02:00Z"},
       "body": "...",
       "resolved_in_window": {"resolution_comment": "Foil arrived at 13:45 — \"back on schedule\""}
     },
     {
       "plant": "L2", "title": "L2 underweight pouches caught at 14:00 weight check (4 ct)",
       "priority": "P2", "category": "Quality",
+      "summary": "Four pouches flagged underweight at the 14:00 FSQA check, isolated and reworked; need to review checkweigher calibration on the next shift.",
+      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T15:10:00Z"},
       "body": "..."
     }
   ]
@@ -210,6 +228,8 @@ Plan fragment:
     {
       "plant": "L3", "title": "L3 enrober drive belt failure — line down",
       "priority": "P1", "category": "Machine",
+      "summary": "Drive belt slipping under load — tensioning didn't hold, maintenance is on-site since 08:20 and waiting on the replacement belt.",
+      "first_raised": {"author": "Tom W", "time_utc": "2026-05-11T06:42:00Z"},
       "body": "..."
     }
   ]
@@ -296,6 +316,25 @@ PLAN_TOOL = {
                             "enum": CATEGORIES,
                             "description": "Exactly one of Machine, Quality, Safety, Materials, Staffing, Other.",
                         },
+                        "summary": {
+                            "type": "string",
+                            "description": "One sentence in plain English. What someone needs to know to act, not a restatement of the title. Printed under the title in the priorities table.",
+                        },
+                        "first_raised": {
+                            "type": "object",
+                            "description": "Author + timestamp of the Teams message that first surfaced the problem in today's window. Used for printed attribution.",
+                            "properties": {
+                                "author": {
+                                    "type": "string",
+                                    "description": "Display name from the source message's `from` field.",
+                                },
+                                "time_utc": {
+                                    "type": "string",
+                                    "description": "ISO-8601 timestamp from the source message's `sent_utc` field, verbatim.",
+                                },
+                            },
+                            "required": ["author", "time_utc"],
+                        },
                         "resolved_in_window": {
                             "type": "object",
                             "description": "Set ONLY when the issue was both raised AND resolved within today's messages. The orchestrator will create the issue and immediately close it.",
@@ -305,7 +344,7 @@ PLAN_TOOL = {
                             "required": ["resolution_comment"],
                         },
                     },
-                    "required": ["plant", "title", "body", "priority", "category"],
+                    "required": ["plant", "title", "body", "priority", "category", "summary", "first_raised"],
                 },
             },
             "comment": {
@@ -460,7 +499,9 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
         gh("PATCH", f"/repos/{REPO}/issues/{n}", json={"state": "closed"})
         closed.append({"number": n, "title": open_by_num[n]["title"],
                        "plant": open_by_num[n]["plant"],
-                       "priority": None, "category": None})
+                       "priority": None, "category": None,
+                       "summary": None, "first_raised": None,
+                       "resolution_comment": c["resolution_comment"]})
         print(f"  closed #{n}")
 
     for c in plan.get("comment", []):
@@ -479,6 +520,8 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
             continue
         priority = c.get("priority") if c.get("priority") in PRIORITIES else None
         category = c.get("category") if c.get("category") in CATEGORIES else None
+        summary = c.get("summary") or None
+        first_raised = c.get("first_raised") if isinstance(c.get("first_raised"), dict) else None
         new = gh("POST", f"/repos/{REPO}/issues", json={
             "title": c["title"],
             "body": c["body"],
@@ -489,6 +532,7 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
         created.append({
             "number": n, "title": c["title"], "plant": plant,
             "priority": priority, "category": category,
+            "summary": summary, "first_raised": first_raised,
         })
         print(f"  created #{n} [{priority or '–'}/{category or '–'}]: {c['title']}")
 
@@ -500,6 +544,8 @@ def apply_plan(plan: dict, open_issues: list[dict]) -> tuple[list, list, list]:
             closed.append({
                 "number": n, "title": c["title"], "plant": plant,
                 "priority": priority, "category": category,
+                "summary": summary, "first_raised": first_raised,
+                "resolution_comment": resolved["resolution_comment"],
             })
             print(f"  closed #{n} (resolved in same window)")
     return closed, [], created
