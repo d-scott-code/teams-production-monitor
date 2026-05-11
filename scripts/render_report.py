@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 """Render the daily Teams production monitor HTML report.
 
-Produces a 2-sheet 8.5"x11" paged document using the CandyCo Design System
-(vendored at assets/design-system/). Sheet 1 is the cover + executive
-summary; sheet 2 is per-plant detail.
+Produces a 4-sheet 8.5"x11" paged document using the CandyCo Design System
+(vendored at assets/design-system/):
+
+  Sheet 1 — Org-wide briefing summary (cover, hero, stats, plant cards,
+            cross-plant floor notes + watchlist)
+  Sheet 2 — Lindon 1 (Caramel) self-contained brief
+  Sheet 3 — Lindon 2 (Eco Moulding) self-contained brief
+  Sheet 4 — Lindon 3 (Chocolate) self-contained brief
+
+Each plant sheet is designed to print on its own so a plant leader can tear
+off their page and walk the floor with it.
 """
 from __future__ import annotations
 
@@ -11,6 +19,7 @@ import argparse
 import datetime as dt
 import html
 import json
+import re
 from pathlib import Path
 
 REPO = "d-scott-code/teams-production-monitor"
@@ -22,67 +31,24 @@ PLANTS = [
     {"id": "L2", "name": "Lindon 2 — Eco Moulding", "accent": "#23CE6B"},
     {"id": "L3", "name": "Lindon 3 — Chocolate",    "accent": "#1982C4"},
 ]
+TOTAL_SHEETS = 1 + len(PLANTS)
+
+PRIORITY_CAP = {"P1": "error", "P2": "warning", "P3": "neutral"}
+PRIORITY_RANK = {"P1": 0, "P2": 1, "P3": 2, None: 3}
+
+CATEGORY_ICON = {
+    "Machine":   "cog",
+    "Quality":   "shield-check",
+    "Safety":    "triangle-alert",
+    "Materials": "package",
+    "Staffing":  "users",
+    "Other":     "info",
+}
+
+ACCENT_RE = re.compile(r"\*([^*]+)\*")
 
 PAGE_LOCAL_CSS = """
-.plant-block {
-  margin: 10pt 0 14pt 0;
-  padding: 10pt 12pt 12pt 14pt;
-  background: var(--bg-1);
-  border: 1px solid var(--border-subtle);
-  border-left: 4pt solid var(--plant-accent, var(--primary));
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  page-break-inside: avoid;
-}
-.plant-block .plant-head {
-  display: flex; justify-content: space-between; align-items: baseline;
-  gap: 12pt; margin-bottom: 4pt;
-}
-.plant-block .plant-head h3 {
-  margin: 0; font-size: 12pt; color: var(--fg-1);
-}
-.plant-block .plant-head .stat-line {
-  font-size: 8.5pt; color: var(--fg-2); font-variant-numeric: tabular-nums;
-}
-.plant-block .plant-head .stat-line strong { color: var(--fg-1); }
-.plant-block .plant-narrative {
-  font-family: var(--font-serif);
-  font-size: 9.5pt;
-  line-height: 1.5;
-  color: var(--fg-2);
-  margin: 0 0 10pt 0;
-}
-.plant-block .lists {
-  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12pt;
-}
-.plant-block .lists .col .eyebrow { margin-bottom: 4pt; }
-.plant-block .lists .col ul {
-  list-style: none; margin: 0; padding: 0;
-  font-size: 8.5pt; line-height: 1.45;
-}
-.plant-block .lists .col li {
-  padding: 4pt 0; border-bottom: 1px dashed var(--border-subtle);
-  display: grid; grid-template-columns: 26pt 1fr auto;
-  gap: 4pt; align-items: baseline;
-}
-.plant-block .lists .col li:last-child { border-bottom: none; }
-.plant-block .lists .col .num {
-  color: var(--fg-3); font-variant-numeric: tabular-nums; font-size: 8pt;
-}
-.plant-block .lists .col .meta {
-  grid-column: 1 / -1;
-  display: flex; gap: 4pt; margin-top: 2pt;
-  padding-left: 30pt;
-}
-.plant-block .lists .col .meta .cap {
-  font-size: 6.5pt; padding: 0 5pt; line-height: 1.4;
-}
-.plant-block .lists .col .age {
-  color: var(--fg-3); font-size: 7.5pt; white-space: nowrap;
-}
-.plant-block .lists .col .empty {
-  color: var(--fg-3); font-style: italic; font-size: 8.5pt;
-}
+/* ---------- Sheet 1 — plant cards (audience grid) ---------- */
 .plant-card {
   background: var(--bg-1);
   border: 1px solid var(--border-subtle);
@@ -99,8 +65,142 @@ PAGE_LOCAL_CSS = """
 }
 .plant-card .title { font-weight: 700; font-size: 10pt; color: var(--fg-1); }
 .plant-card .scale { font-size: 7.5pt; color: var(--fg-3); }
-.plant-card .row { display: flex; justify-content: space-between; padding: 2pt 0; font-size: 8.5pt; }
-.plant-card .row .v { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1); }
+.plant-card .row {
+  display: flex; justify-content: space-between;
+  padding: 2pt 0; font-size: 8.5pt;
+}
+.plant-card .row .v {
+  font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1);
+}
+
+/* ---------- Per-plant sheet — cover band ---------- */
+.plant-sheet-head {
+  margin: -0.5in -0.5in 14pt -0.5in;
+  padding: 0.5in 0.5in 14pt 0.5in;
+  border-bottom: 1px solid var(--border-default);
+  position: relative;
+}
+.plant-sheet-head::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 8pt;
+  background: var(--plant-accent, var(--primary));
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.plant-sheet-head .head-row {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt; margin-top: 14pt;
+}
+.plant-sheet-head .plant-name {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.plant-sheet-head .plant-id {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+}
+.plant-sheet-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.plant-sheet-head .meta img {
+  height: 22px; width: auto; display: block; margin-left: auto;
+  margin-bottom: 4pt;
+}
+
+/* ---------- Plant narrative ---------- */
+.plant-narrative {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 12pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Priorities table (extends .actions from the design system) ---------- */
+.priorities-table {
+  margin-top: 4pt;
+}
+.priorities-table thead th {
+  font-size: 7.5pt;
+  vertical-align: bottom;
+  padding: 5pt 6pt;
+}
+.priorities-table tbody td {
+  vertical-align: top;
+  padding: 5pt 6pt;
+  font-size: 8.5pt;
+}
+.priorities-table .pri-col { width: 22pt; text-align: center; }
+.priorities-table .pri-num {
+  font-weight: 800; color: var(--fg-1); font-variant-numeric: tabular-nums;
+}
+.priorities-table .issue-cell .title-line {
+  display: block; font-weight: 600; color: var(--fg-1);
+}
+.priorities-table .issue-cell .num {
+  color: var(--fg-3); font-variant-numeric: tabular-nums; margin-right: 4pt;
+}
+.priorities-table .issue-cell .summary {
+  display: block;
+  font-size: 8pt; color: var(--fg-2);
+  line-height: 1.35; margin-top: 2pt;
+  text-wrap: pretty;
+}
+.priorities-table .cat-cell { white-space: nowrap; }
+.priorities-table .cat-cell .cat-icon {
+  display: inline-block; width: 12px; height: 12px;
+  vertical-align: -2px; margin-right: 4pt;
+  color: var(--fg-2);
+}
+.priorities-table .age-col, .priorities-table .age-cell {
+  text-align: right; font-variant-numeric: tabular-nums;
+  white-space: nowrap; color: var(--fg-2);
+}
+.priorities-table .raised-cell {
+  white-space: nowrap; color: var(--fg-2); font-size: 8pt;
+}
+.priorities-table .raised-cell .author { color: var(--fg-1); font-weight: 600; }
+.priorities-table .pri-cell { text-align: center; }
+
+/* ---------- Resolved list ---------- */
+.resolved-list {
+  margin: 8pt 0 12pt 0;
+  padding-left: 14pt;
+  font-size: 8.5pt; line-height: 1.55;
+  list-style: none;
+}
+.resolved-list li {
+  position: relative;
+  padding: 2pt 0 2pt 12pt;
+  color: var(--fg-1);
+}
+.resolved-list li::before {
+  content: "✓";
+  position: absolute; left: -2pt; top: 2pt;
+  color: #15803d; font-weight: 700;
+}
+.resolved-list .num {
+  color: var(--fg-3); font-variant-numeric: tabular-nums; margin-right: 4pt;
+}
+.resolved-list .title { font-weight: 600; color: var(--fg-1); }
+.resolved-list .resolution {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  color: var(--fg-2); font-size: 8pt; margin-top: 1pt;
+}
+
+/* ---------- Floor notes (sheet 1 + plant sheets) ---------- */
 .floor-notes {
   margin: 10pt 0 14pt 0;
   padding: 8pt 12pt;
@@ -109,6 +209,9 @@ PAGE_LOCAL_CSS = """
   border-radius: var(--radius-sm);
   font-size: 8.5pt;
   page-break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
 }
 .floor-notes .eyebrow { margin-bottom: 4pt; }
 .floor-notes ul { margin: 0; padding-left: 14pt; }
@@ -116,19 +219,39 @@ PAGE_LOCAL_CSS = """
 .floor-notes li .plant-tag {
   font-weight: 700; color: var(--fg-2); margin-right: 4pt;
 }
+
+/* ---------- Watchlist ---------- */
 .watchlist-strip {
   margin: 8pt 0 12pt 0;
-  font-size: 8pt; color: var(--fg-2);
-  padding: 6pt 10pt;
+  padding: 8pt 12pt;
   background: var(--shadow-grey-50);
   border-radius: var(--radius-sm);
+  font-size: 8.5pt; color: var(--fg-1);
+  page-break-inside: avoid;
 }
-.watchlist-strip .eyebrow { display: inline-block; margin-right: 8pt; }
+.watchlist-strip .eyebrow { margin-bottom: 4pt; }
+.watchlist-strip ul { margin: 0; padding-left: 14pt; }
+.watchlist-strip li { padding: 1pt 0; color: var(--fg-1); }
+.watchlist-strip li .num {
+  color: var(--fg-3); font-variant-numeric: tabular-nums;
+  font-weight: 600; margin-right: 4pt;
+}
+
+/* ---------- Empty state for sections with no content ---------- */
+.empty-state {
+  padding: 8pt 0;
+  color: var(--fg-3); font-style: italic; font-size: 9pt;
+}
+
+/* ---------- Misc ---------- */
 .archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
 """
 
-ACCENT_RE = __import__("re").compile(r"\*([^*]+)\*")
 
+# ---------------------------------------------------------------------
+# Utilities
+# ---------------------------------------------------------------------
 
 def esc(s: str) -> str:
     return html.escape(s or "", quote=True)
@@ -151,8 +274,7 @@ def fmt_window(window: dict) -> str:
 
 
 def render_accents(text: str) -> str:
-    """Wrap *asterisk-tokens* in an accent span. Claude marks the one number
-    that matters in *asterisks*; everything else escapes normally."""
+    """Wrap *asterisk-tokens* in an accent span."""
     parts: list[str] = []
     last = 0
     for m in ACCENT_RE.finditer(text):
@@ -162,6 +284,54 @@ def render_accents(text: str) -> str:
     parts.append(esc(text[last:]))
     return "".join(parts)
 
+
+def cap(text: str, kind: str = "neutral") -> str:
+    return f'<span class="cap {kind}">{esc(text)}</span>'
+
+
+def fmt_first_raised(item: dict) -> str:
+    """Render the 'First raised' cell. Prefers Claude's `first_raised` (author +
+    time_utc from the source Teams message) over GitHub's `created_at`. Falls
+    back gracefully for carry-over items that have neither."""
+    fr = item.get("first_raised") or {}
+    author = fr.get("author")
+    time_utc = fr.get("time_utc")
+    if author and time_utc:
+        try:
+            t = dt.datetime.fromisoformat(time_utc.replace("Z", "+00:00"))
+            return (
+                f'<span class="author">{esc(author)}</span><br>'
+                f'<span>{t.strftime("%H:%M UTC")}</span>'
+            )
+        except ValueError:
+            return f'<span class="author">{esc(author)}</span>'
+    created = item.get("created_at")
+    if created:
+        try:
+            t = dt.datetime.fromisoformat(created.replace("Z", "+00:00"))
+            return f'<span>{t.strftime("%b %-d")}</span>'
+        except ValueError:
+            pass
+    age = item.get("age_days")
+    if age is not None:
+        return f'<span>{age}d ago</span>'
+    return '<span>—</span>'
+
+
+def category_glyph(category: str | None) -> str:
+    """Inline Lucide icon for the category. Renders as <i data-lucide=…>;
+    the design system's lucide.createIcons() swaps it to an SVG on load."""
+    if not category:
+        return ""
+    icon = CATEGORY_ICON.get(category)
+    if not icon:
+        return ""
+    return f'<i class="cat-icon" data-lucide="{icon}"></i>'
+
+
+# ---------------------------------------------------------------------
+# Sheet 1: headline, stats, plant cards
+# ---------------------------------------------------------------------
 
 def headline(ledger: dict) -> tuple[str, str]:
     """Return (eyebrow, headline_html) for the hero callout.
@@ -214,28 +384,6 @@ def headline(ledger: dict) -> tuple[str, str]:
     ))
 
 
-PRIORITY_CAP = {"P1": "error", "P2": "warning", "P3": "neutral"}
-
-
-def cap(text: str, kind: str = "neutral") -> str:
-    return f'<span class="cap {kind}">{esc(text)}</span>'
-
-
-def issue_meta_row(item: dict) -> str:
-    """Render a row of priority + category capsules below an issue line.
-    Returns "" when the issue has neither (pre-change carry-overs)."""
-    priority = item.get("priority")
-    category = item.get("category")
-    caps: list[str] = []
-    if priority in PRIORITY_CAP:
-        caps.append(cap(priority, PRIORITY_CAP[priority]))
-    if category:
-        caps.append(cap(category, "neutral"))
-    if not caps:
-        return ""
-    return f'<div class="meta">{"".join(caps)}</div>'
-
-
 def stat_card(eyebrow: str, value: str, sub: str) -> str:
     return (
         f'<div class="stat">'
@@ -264,102 +412,218 @@ def plant_card(plant: dict, ledger: dict) -> str:
     )
 
 
-def plant_block(plant: dict, ledger: dict) -> str:
-    p = plant["id"]
-    closed = [i for i in ledger.get("closed_today", []) if i.get("plant") == p]
-    opened = [i for i in ledger.get("opened_today", []) if i.get("plant") == p]
-    open_now = [i for i in ledger.get("still_open", []) if i.get("plant") == p]
-    narrative = (ledger.get("per_plant_summary") or {}).get(p, "")
-
-    def li(i: dict, show_age: bool = False) -> str:
-        age = ""
-        if show_age and (d := i.get("age_days")) is not None:
-            age = f'<span class="age">{d}d open</span>'
-        else:
-            age = '<span></span>'
-        return (
-            f'<li><span class="num">#{i["number"]}</span>'
-            f'<span>{issue_link(i["number"], i["title"])}</span>'
-            f'{age}'
-            f'{issue_meta_row(i)}'
-            f'</li>'
-        )
-
-    def col(label: str, items: list, *, show_age: bool, empty_text: str) -> str:
-        if not items:
-            body = f'<p class="empty">{esc(empty_text)}</p>'
-        else:
-            body = "<ul>" + "".join(li(i, show_age=show_age) for i in items) + "</ul>"
-        return (
-            f'<div class="col">'
-            f'<div class="eyebrow">{esc(label)}</div>{body}'
-            f'</div>'
-        )
-
-    stat = (
-        f'<strong>{len(closed)}</strong> resolved · '
-        f'<strong>{len(opened)}</strong> newly raised · '
-        f'<strong>{len(open_now)}</strong> still open'
-    )
-
-    narrative_html = (
-        f'<p class="plant-narrative">{esc(narrative)}</p>' if narrative else ""
-    )
-
-    return f"""
-<section class="plant-block" style="--plant-accent: {plant["accent"]};">
-  <div class="plant-head">
-    <h3>{esc(plant["name"])}</h3>
-    <div class="stat-line">{stat}</div>
-  </div>
-  {narrative_html}
-  <div class="lists">
-    {col("What went well", closed, show_age=False, empty_text="No resolutions in the last 24 hours.")}
-    {col("What didn't", opened, show_age=False, empty_text="No new issues opened in the last 24 hours.")}
-    {col("Today's priorities", open_now, show_age=True, empty_text="No open issues. Clean slate.")}
-  </div>
-</section>"""
-
-
-def floor_notes_block(ledger: dict) -> str:
+def floor_notes_block(ledger: dict, plant_id: str | None = None) -> str:
+    """Render the floor-notes block. When plant_id is None, include all notes
+    with a plant tag. When plant_id is set, filter to just that plant and
+    drop the tag (the surrounding sheet already labels the plant)."""
     notes = ledger.get("notes") or []
+    if plant_id is not None:
+        notes = [n for n in notes if n.get("plant") == plant_id]
     if not notes:
         return ""
-    items = "".join(
-        f'<li><span class="plant-tag">{esc(n.get("plant", "—"))}</span>'
-        f'{esc(n.get("text", ""))}</li>'
-        for n in notes
-    )
+    def item(n: dict) -> str:
+        text = esc(n.get("text", ""))
+        if plant_id is None:
+            return f'<li><span class="plant-tag">{esc(n.get("plant", "—"))}</span>{text}</li>'
+        return f'<li>{text}</li>'
     return (
         '<div class="floor-notes">'
         '<div class="eyebrow">Floor notes</div>'
-        f'<ul>{items}</ul>'
+        f'<ul>{"".join(item(n) for n in notes)}</ul>'
         '</div>'
     )
 
 
-def watchlist_strip(ledger: dict) -> str:
+def watchlist_block(ledger: dict, plant_id: str | None,
+                    open_by_num: dict[int, dict]) -> str:
+    """Render the watchlist. When plant_id is set, include only items whose
+    issue belongs to that plant (matched via the open-issues snapshot)."""
     wl = ledger.get("watchlist") or []
+    if plant_id is not None:
+        wl = [w for w in wl
+              if open_by_num.get(w.get("issue_number", 0), {}).get("plant") == plant_id]
     if not wl:
         return ""
-    pieces: list[str] = []
+    items = []
     for w in wl:
         n = w.get("issue_number")
-        reason = w.get("reason", "")
-        if n:
-            pieces.append(
-                f'<a class="archive-link" href="{ISSUE_URL.format(n=n)}">#{n}</a> '
-                f'{esc(reason)}'
-            )
-    if not pieces:
+        reason = esc(w.get("reason", ""))
+        if not n:
+            continue
+        items.append(
+            f'<li><a class="archive-link num" href="{ISSUE_URL.format(n=n)}">#{n}</a>'
+            f'<span>{reason}</span></li>'
+        )
+    if not items:
         return ""
     return (
         '<div class="watchlist-strip">'
-        '<span class="eyebrow">Watchlist</span>'
-        + " · ".join(pieces) +
-        "</div>"
+        '<div class="eyebrow">Watchlist</div>'
+        f'<ul>{"".join(items)}</ul>'
+        '</div>'
     )
 
+
+# ---------------------------------------------------------------------
+# Per-plant sheet
+# ---------------------------------------------------------------------
+
+def _sort_priority(items: list[dict]) -> list[dict]:
+    return sorted(
+        items,
+        key=lambda i: (PRIORITY_RANK.get(i.get("priority"), 3), -i.get("age_days", 0)),
+    )
+
+
+def priorities_table(plant_id: str, ledger: dict) -> str:
+    open_now = _sort_priority([i for i in ledger.get("still_open", [])
+                               if i.get("plant") == plant_id])
+    if not open_now:
+        return (
+            '<p class="empty-state">No open issues. Clean slate.</p>'
+        )
+
+    rows: list[str] = []
+    for n_idx, it in enumerate(open_now, 1):
+        priority = it.get("priority")
+        priority_cell = (
+            cap(priority, PRIORITY_CAP[priority])
+            if priority in PRIORITY_CAP else '<span class="cap neutral">—</span>'
+        )
+        category = it.get("category")
+        cat_cell = (
+            f'{category_glyph(category)}{esc(category)}'
+            if category else '<span style="color: var(--fg-3);">—</span>'
+        )
+        summary = it.get("summary")
+        summary_html = (
+            f'<span class="summary">{esc(summary)}</span>' if summary else ""
+        )
+        age = it.get("age_days")
+        age_cell = f'{age}d' if age is not None else '—'
+        rows.append(
+            f'<tr>'
+            f'<td class="pri-col pri-num">{n_idx}</td>'
+            f'<td class="issue-cell">'
+            f'<span class="title-line"><span class="num">#{it["number"]}</span>'
+            f'{issue_link(it["number"], it["title"])}</span>'
+            f'{summary_html}'
+            f'</td>'
+            f'<td class="cat-cell">{cat_cell}</td>'
+            f'<td class="pri-cell">{priority_cell}</td>'
+            f'<td class="age-cell">{age_cell}</td>'
+            f'<td class="raised-cell">{fmt_first_raised(it)}</td>'
+            f'</tr>'
+        )
+
+    return f"""
+<table class="actions priorities-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th class="age-col">Age</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody>{"".join(rows)}</tbody>
+</table>"""
+
+
+def resolved_list(plant_id: str, ledger: dict) -> str:
+    closed = [i for i in ledger.get("closed_today", []) if i.get("plant") == plant_id]
+    if not closed:
+        return ""
+
+    def truncate(s: str, n: int = 120) -> str:
+        s = (s or "").strip()
+        if len(s) <= n:
+            return s
+        return s[: n - 1].rstrip() + "…"
+
+    items: list[str] = []
+    for it in closed:
+        resolution = truncate(it.get("resolution_comment") or "")
+        resolution_html = (
+            f'<span class="resolution">"{esc(resolution)}"</span>'
+            if resolution else ""
+        )
+        items.append(
+            f'<li><span class="num">#{it["number"]}</span>'
+            f'<span class="title">{esc(it["title"])}</span>'
+            f'{resolution_html}</li>'
+        )
+    return (
+        '<h3 class="section-label">Resolved in the last 24 hours</h3>'
+        f'<ul class="resolved-list">{"".join(items)}</ul>'
+    )
+
+
+def plant_sheet(plant: dict, ledger: dict, page_num: int, total: int,
+                long_date: str, open_by_num: dict[int, dict]) -> str:
+    p = plant["id"]
+    closed_n = sum(1 for i in ledger.get("closed_today", []) if i.get("plant") == p)
+    opened_n = sum(1 for i in ledger.get("opened_today", []) if i.get("plant") == p)
+    open_items = [i for i in ledger.get("still_open", []) if i.get("plant") == p]
+    oldest = max((i.get("age_days", 0) for i in open_items), default=0)
+    narrative = (ledger.get("per_plant_summary") or {}).get(p, "")
+    narrative_html = (
+        f'<p class="plant-narrative">{esc(narrative)}</p>'
+        if narrative else
+        '<p class="plant-narrative" style="color: var(--fg-3); font-style: italic;">'
+        'No activity in the last 24 hours.</p>'
+    )
+
+    priorities = priorities_table(p, ledger)
+    resolved = resolved_list(p, ledger)
+    plant_watch = watchlist_block(ledger, p, open_by_num)
+    plant_notes_html = floor_notes_block(ledger, p)
+
+    return f"""
+<!-- ========== SHEET {page_num} — {esc(plant["name"])} ========== -->
+<section class="sheet" style="--plant-accent: {plant["accent"]};">
+  <div class="plant-sheet-head">
+    <div class="head-row">
+      <div>
+        <h1 class="plant-name">{esc(plant["name"])}</h1>
+        <div class="plant-id">{esc(p)} · Production briefing</div>
+      </div>
+      <div class="meta">
+        <img src="{DS}/assets/logo/candyco-logo-black.png" alt="CandyCo">
+        <div>{esc(long_date)}</div>
+        <div>08:00 America/Denver</div>
+      </div>
+    </div>
+  </div>
+
+  {narrative_html}
+
+  <div class="stats">
+    {stat_card("Resolved", str(closed_n), "Closed in the last 24 hours")}
+    {stat_card("Newly raised", str(opened_n), "New issues opened today")}
+    {stat_card("Still open", str(len(open_items)), "Items on the floor")}
+    {stat_card("Oldest open", f"{oldest}d", "Longest-running issue")}
+  </div>
+
+  <h3 class="section-label">Today's priorities</h3>
+  {priorities}
+
+  {resolved}
+  {plant_watch}
+  {plant_notes_html}
+
+  <div class="sheet-footer">
+    <span class="doc">{esc(plant["name"])} · Production briefing · {esc(ledger.get("date", ""))}</span>
+    <span class="page-no">Page {page_num} of {total}</span>
+  </div>
+</section>"""
+
+
+# ---------------------------------------------------------------------
+# Top-level render
+# ---------------------------------------------------------------------
 
 def render(ledger: dict, messages: dict, date: str) -> str:
     eyebrow_text, headline_html = headline(ledger)
@@ -372,8 +636,15 @@ def render(ledger: dict, messages: dict, date: str) -> str:
     chat_count = messages.get("chat_count", 0)
     long_date = fmt_date(date)
 
+    # Index open issues by number so the watchlist filter can match plant
+    open_by_num = {i["number"]: i for i in still_open}
+
     cards = "".join(plant_card(p, ledger) for p in PLANTS)
-    blocks = "".join(plant_block(p, ledger) for p in PLANTS)
+    plant_sheets = "".join(
+        plant_sheet(p, ledger, page_num=2 + idx, total=TOTAL_SHEETS,
+                    long_date=long_date, open_by_num=open_by_num)
+        for idx, p in enumerate(PLANTS)
+    )
 
     return f"""<!doctype html>
 <html lang="en">
@@ -383,12 +654,13 @@ def render(ledger: dict, messages: dict, date: str) -> str:
 <title>Production briefing — {esc(date)} · CandyCo</title>
 <link rel="stylesheet" href="{DS}/colors_and_type.css">
 <link rel="stylesheet" href="{DS}/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <style>{PAGE_LOCAL_CSS}</style>
 </head>
 <body>
 <div class="doc-frame">
 
-<!-- ========== SHEET 1 — COVER + EXECUTIVE SUMMARY ========== -->
+<!-- ========== SHEET 1 — ORG-WIDE BRIEFING SUMMARY ========== -->
 <section class="sheet">
   <div class="cover-head">
     <div class="brand">
@@ -424,26 +696,13 @@ def render(ledger: dict, messages: dict, date: str) -> str:
     {stat_card("Oldest open", f"{oldest_age}d", "Longest-running issue")}
   </div>
 
-  <h3>By plant</h3>
+  <h3 class="section-label">By plant</h3>
   <div class="audience-grid" style="grid-template-columns: 1fr 1fr 1fr;">
     {cards}
   </div>
 
-  <div class="sheet-footer">
-    <span class="doc">Production briefing · {esc(date)}</span>
-    <span class="page-no">Page 1 of 2</span>
-  </div>
-</section>
-
-<!-- ========== SHEET 2 — BY-PLANT DETAIL ========== -->
-<section class="sheet">
-  <h2>Plant detail</h2>
-  <p class="lead">What went well, what didn't, and where to focus today.</p>
-
   {floor_notes_block(ledger)}
-  {watchlist_strip(ledger)}
-
-  {blocks}
+  {watchlist_block(ledger, None, open_by_num)}
 
   <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 14pt;">
     Issue ledger:
@@ -453,11 +712,14 @@ def render(ledger: dict, messages: dict, date: str) -> str:
 
   <div class="sheet-footer">
     <span class="doc">Production briefing · {esc(date)}</span>
-    <span class="page-no">Page 2 of 2</span>
+    <span class="page-no">Page 1 of {TOTAL_SHEETS}</span>
   </div>
 </section>
 
+{plant_sheets}
+
 </div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
 </body>
 </html>
 """
