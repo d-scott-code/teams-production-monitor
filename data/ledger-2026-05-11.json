@@ -1,0 +1,221 @@
+{
+  "date": "2026-05-11",
+  "closed_today": [
+    {
+      "number": 24,
+      "title": "ML4 gondola alarm: bent carriage and pusher fault for TG4",
+      "plant": "L3"
+    },
+    {
+      "number": 28,
+      "title": "Truffle Line buffer valve damaged, guillotine and bottomer issues",
+      "plant": "L3"
+    }
+  ],
+  "opened_today": [
+    {
+      "number": 23,
+      "title": "ML2 HMI froze during recipe change, hard reset required",
+      "plant": "L2"
+    },
+    {
+      "number": 24,
+      "title": "ML4 gondola alarm: bent carriage and pusher fault for TG4",
+      "plant": "L3"
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3"
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3"
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3"
+    },
+    {
+      "number": 28,
+      "title": "Truffle Line buffer valve damaged, guillotine and bottomer issues",
+      "plant": "L3"
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3"
+    },
+    {
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "plant": "L1"
+    },
+    {
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
+      "plant": "L1"
+    },
+    {
+      "number": 32,
+      "title": "FFS box printer repeatedly failing - not printing lot code",
+      "plant": "L2"
+    },
+    {
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "plant": "L2"
+    },
+    {
+      "number": 34,
+      "title": "MF Matrix bucket errors causing bag re-injection issues",
+      "plant": "L3"
+    },
+    {
+      "number": 35,
+      "title": "MF Matrix combination and scale vibration causing frequent pauses",
+      "plant": "L3"
+    },
+    {
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3"
+    }
+  ],
+  "still_open": [
+    {
+      "number": 20,
+      "title": "Batch 20009 too soft to run on TW - delayed to Monday",
+      "plant": "L1",
+      "age_days": 2
+    },
+    {
+      "number": 13,
+      "title": "No proper electrical connection for steamer in S3 enrober area",
+      "plant": "L1",
+      "age_days": 2
+    },
+    {
+      "number": 12,
+      "title": "S3 jar filling conveyor failing allergen test",
+      "plant": "L1",
+      "age_days": 2
+    },
+    {
+      "number": 11,
+      "title": "Sanitizer sprayers contaminated by drain use",
+      "plant": "L1",
+      "age_days": 2
+    },
+    {
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "plant": "L1",
+      "age_days": 0
+    },
+    {
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
+      "plant": "L1",
+      "age_days": 0
+    },
+    {
+      "number": 18,
+      "title": "ML2 encoder position causing print issues on sticky film",
+      "plant": "L2",
+      "age_days": 2
+    },
+    {
+      "number": 17,
+      "title": "ML2 flow wrap tension arm and forming plate fault",
+      "plant": "L2",
+      "age_days": 2
+    },
+    {
+      "number": 16,
+      "title": "ML2 flow wrap intermittent missing lot codes",
+      "plant": "L2",
+      "age_days": 2
+    },
+    {
+      "number": 10,
+      "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
+      "plant": "L2",
+      "age_days": 2
+    },
+    {
+      "number": 9,
+      "title": "Belt issue stopped ML3 for 15 minutes overnight",
+      "plant": "L2",
+      "age_days": 2
+    },
+    {
+      "number": 8,
+      "title": "Film issues causing line stops on ML3",
+      "plant": "L2",
+      "age_days": 2
+    },
+    {
+      "number": 23,
+      "title": "ML2 HMI froze during recipe change, hard reset required",
+      "plant": "L2",
+      "age_days": 0
+    },
+    {
+      "number": 32,
+      "title": "FFS box printer repeatedly failing - not printing lot code",
+      "plant": "L2",
+      "age_days": 0
+    },
+    {
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "plant": "L2",
+      "age_days": 0
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 34,
+      "title": "MF Matrix bucket errors causing bag re-injection issues",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 35,
+      "title": "MF Matrix combination and scale vibration causing frequent pauses",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3",
+      "age_days": 0
+    }
+  ]
+}
