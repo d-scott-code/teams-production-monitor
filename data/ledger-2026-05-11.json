@@ -2,85 +2,50 @@
   "date": "2026-05-11",
   "closed_today": [
     {
-      "number": 24,
-      "title": "ML4 gondola alarm: bent carriage and pusher fault for TG4",
+      "number": 37,
+      "title": "ML4 gondola fault - bent carriage causing alarm",
       "plant": "L3"
     },
     {
-      "number": 28,
-      "title": "Truffle Line buffer valve damaged, guillotine and bottomer issues",
+      "number": 38,
+      "title": "Truffle Line chocolate return valve failed - buffer overflowed to 107%",
+      "plant": "L3"
+    },
+    {
+      "number": 39,
+      "title": "Truffle Line guillotine servo drive faulted",
+      "plant": "L3"
+    },
+    {
+      "number": 40,
+      "title": "Truffle Line bottomer main scraper falling when lever opened",
       "plant": "L3"
     }
   ],
   "opened_today": [
     {
-      "number": 23,
-      "title": "ML2 HMI froze during recipe change, hard reset required",
-      "plant": "L2"
-    },
-    {
-      "number": 24,
-      "title": "ML4 gondola alarm: bent carriage and pusher fault for TG4",
+      "number": 37,
+      "title": "ML4 gondola fault - bent carriage causing alarm",
       "plant": "L3"
     },
     {
-      "number": 25,
-      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "number": 38,
+      "title": "Truffle Line chocolate return valve failed - buffer overflowed to 107%",
       "plant": "L3"
     },
     {
-      "number": 26,
-      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "number": 39,
+      "title": "Truffle Line guillotine servo drive faulted",
       "plant": "L3"
     },
     {
-      "number": 27,
-      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "number": 40,
+      "title": "Truffle Line bottomer main scraper falling when lever opened",
       "plant": "L3"
     },
     {
-      "number": 28,
-      "title": "Truffle Line buffer valve damaged, guillotine and bottomer issues",
-      "plant": "L3"
-    },
-    {
-      "number": 29,
-      "title": "Truffle Line separator table making constant noise",
-      "plant": "L3"
-    },
-    {
-      "number": 30,
-      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
-      "plant": "L1"
-    },
-    {
-      "number": 31,
-      "title": "S3 unable to hit 85 piece count target in pouches",
-      "plant": "L1"
-    },
-    {
-      "number": 32,
-      "title": "FFS box printer repeatedly failing - not printing lot code",
-      "plant": "L2"
-    },
-    {
-      "number": 33,
-      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
-      "plant": "L2"
-    },
-    {
-      "number": 34,
-      "title": "MF Matrix bucket errors causing bag re-injection issues",
-      "plant": "L3"
-    },
-    {
-      "number": 35,
-      "title": "MF Matrix combination and scale vibration causing frequent pauses",
-      "plant": "L3"
-    },
-    {
-      "number": 36,
-      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "number": 41,
+      "title": "ML1 mixing water jacket not remaining stable",
       "plant": "L3"
     }
   ],
@@ -110,14 +75,14 @@
       "age_days": 2
     },
     {
-      "number": 30,
-      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
       "plant": "L1",
       "age_days": 0
     },
     {
-      "number": 31,
-      "title": "S3 unable to hit 85 piece count target in pouches",
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
       "plant": "L1",
       "age_days": 0
     },
@@ -158,8 +123,8 @@
       "age_days": 2
     },
     {
-      "number": 23,
-      "title": "ML2 HMI froze during recipe change, hard reset required",
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
       "plant": "L2",
       "age_days": 0
     },
@@ -170,38 +135,14 @@
       "age_days": 0
     },
     {
-      "number": 33,
-      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "number": 23,
+      "title": "ML2 HMI froze during recipe change, hard reset required",
       "plant": "L2",
       "age_days": 0
     },
     {
-      "number": 25,
-      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 26,
-      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 27,
-      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 29,
-      "title": "Truffle Line separator table making constant noise",
-      "plant": "L3",
-      "age_days": 0
-    },
-    {
-      "number": 34,
-      "title": "MF Matrix bucket errors causing bag re-injection issues",
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
       "plant": "L3",
       "age_days": 0
     },
@@ -212,8 +153,38 @@
       "age_days": 0
     },
     {
-      "number": 36,
-      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "number": 34,
+      "title": "MF Matrix bucket errors causing bag re-injection issues",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 0
+    },
+    {
+      "number": 41,
+      "title": "ML1 mixing water jacket not remaining stable",
       "plant": "L3",
       "age_days": 0
     }

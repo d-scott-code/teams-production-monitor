@@ -1,57 +1,13 @@
 {
   "window": {
-    "start_utc": "2026-05-10T16:26:18.050941+00:00",
-    "end_utc": "2026-05-11T16:26:18.050941+00:00",
+    "start_utc": "2026-05-10T16:34:19.236762+00:00",
+    "end_utc": "2026-05-11T16:34:19.236762+00:00",
     "tz": "America/Denver",
     "hours": 24
   },
-  "chat_count": 11,
-  "message_count": 262,
+  "chat_count": 12,
+  "message_count": 268,
   "chats": [
-    {
-      "id": "19:8c43a11f48b84dea809ff223b8ab344d@thread.v2",
-      "topic": "L2 ML2 Information Exchange",
-      "plant": "L2",
-      "web_url": "https://teams.microsoft.com/l/chat/19%3A8c43a11f48b84dea809ff223b8ab344d%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
-      "messages": [
-        {
-          "id": "1778514230870",
-          "from": "ML2 Depositor",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T15:43:50.87Z",
-          "text": "9:30 am",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778515178006",
-          "from": "Alex Mendoza",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T15:59:38.006Z",
-          "text": "We tried changing the recipe and HMI froze up. Maintenance is going to do a hard reset.",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778516415083",
-          "from": "Alex Mendoza",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T16:20:15.083Z",
-          "text": "Line remains down. Maintenance continues to troubleshoot.",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778516732345",
-          "from": "Alex Mendoza",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T16:25:32.345Z",
-          "text": "We changed the recipe and we are still seeing the same issue.",
-          "importance": "normal",
-          "web_url": null
-        }
-      ]
-    },
     {
       "id": "19:cfccea066d034acba94704d396eb0481@thread.v2",
       "topic": "L3 ML4 Start up",
@@ -714,6 +670,353 @@
           "text": "Back up and running at 10:20am.",
           "importance": "normal",
           "web_url": null
+        },
+        {
+          "id": "1778517105051",
+          "from": "Rose Smuin",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:31:45.051Z",
+          "text": "Preston Elmer\nwill you give us an update of what the root cause was on this?",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:17cdef05e40440a6a7d64757067ca624@thread.v2",
+      "topic": "L1 Plant Standards",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A17cdef05e40440a6a7d64757067ca624%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1778509264907",
+          "from": "Charity Young",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:21:04.907Z",
+          "text": "Who’s responsible for the contractors working today?  Matt Hatch Jorge Carrillo Marco Rodriguez",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778509865853",
+          "from": "Matt Hatch",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:31:05.853Z",
+          "text": "Marco Rodriguez  for anything happening on Line 1.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778510615428",
+          "from": "Marco Rodriguez",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:43:35.428Z",
+          "text": "Is there something we need",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778513686741",
+          "from": "Tiffanee Taylor",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T15:34:46.741Z",
+          "text": "I spoke with Nick on Friday about it, he was having some trouble getting it from the supplier but is hopeful it will be here sometime this week. I will follow up with him again today. Thanks.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778516162285",
+          "from": "Jorel Gourdin",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:16:02.285Z",
+          "text": "The secondary door must always remain closed please!",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:0f56b879729240b79098dbb5b52b9c0e@thread.v2",
+      "topic": "L1 Sollich 2 information exchange",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A0f56b879729240b79098dbb5b52b9c0e%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1778505322550",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T13:15:22.55Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778505600176",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T13:20:00.176Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778505706223",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T13:21:46.223Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778505759784",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T13:22:39.784Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778505896877",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T13:24:56.877Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778505872960",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T13:24:32.96Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778507214009",
+          "from": "Ingrid Moreno Angarita",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T13:46:54.009Z",
+          "text": "The operator has just been informed to make adjustments, as the center pieces are arriving open at the bottom.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778508620847",
+          "from": "Ingrid Moreno Angarita",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:10:20.847Z",
+          "text": "Thank you very much—the bottom part of the final piece has improved.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778509565884",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:26:05.884Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778509587922",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:26:27.922Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778510337365",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:38:57.365Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778510665698",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:44:25.698Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778510958176",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:49:18.176Z",
+          "text": "Justin Garner",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778510947561",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T14:49:07.561Z",
+          "text": "The line started running at a speed of 65; right now, it has increased to 67.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778512266684",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T15:11:06.684Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778512347099",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T15:12:27.099Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778512388157",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T15:13:08.157Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778512687885",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T15:18:07.885Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778516052293",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:14:12.293Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778516076064",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:14:36.064Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778516095747",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:14:55.747Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778517084607",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:31:24.607Z",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:8c43a11f48b84dea809ff223b8ab344d@thread.v2",
+      "topic": "L2 ML2 Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A8c43a11f48b84dea809ff223b8ab344d%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1778514230870",
+          "from": "ML2 Depositor",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T15:43:50.87Z",
+          "text": "9:30 am",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778515178006",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T15:59:38.006Z",
+          "text": "We tried changing the recipe and HMI froze up. Maintenance is going to do a hard reset.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778516415083",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:20:15.083Z",
+          "text": "Line remains down. Maintenance continues to troubleshoot.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778516732345",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:25:32.345Z",
+          "text": "We changed the recipe and we are still seeing the same issue.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778516823978",
+          "from": "Justin Halladay",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:27:03.978Z",
+          "text": "Yeah we tried that",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1778517073789",
+          "from": "ML2 Depositor",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:31:13.789Z",
+          "text": "10:30 am",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:0767c447cdb841f296fa0b0e3ff8c82e@thread.v2",
+      "topic": "L1 Schedule",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A0767c447cdb841f296fa0b0e3ff8c82e%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1778517054784",
+          "from": "Jazmin Vazquez",
+          "from_upn": null,
+          "sent_utc": "2026-05-11T16:30:54.784Z",
+          "text": "Good morning Team, just a heads up: the pretzel thins is scheduled to run until Monday the 18th, but we only have enough pretzels to last until Wednesday. Do we have any updates on getting more? Martin Carlos Ethan Bean Sunny Jagtiani Daniel Bringas Maria Moron Quintero",
+          "importance": "high",
+          "web_url": null
         }
       ]
     },
@@ -1172,57 +1475,13 @@
           "text": "",
           "importance": "normal",
           "web_url": null
-        }
-      ]
-    },
-    {
-      "id": "19:17cdef05e40440a6a7d64757067ca624@thread.v2",
-      "topic": "L1 Plant Standards",
-      "plant": "L1",
-      "web_url": "https://teams.microsoft.com/l/chat/19%3A17cdef05e40440a6a7d64757067ca624%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
-      "messages": [
-        {
-          "id": "1778509264907",
-          "from": "Charity Young",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:21:04.907Z",
-          "text": "Who’s responsible for the contractors working today?  Matt Hatch Jorge Carrillo Marco Rodriguez",
-          "importance": "normal",
-          "web_url": null
         },
         {
-          "id": "1778509865853",
-          "from": "Matt Hatch",
+          "id": "1778516992852",
+          "from": "Imperial",
           "from_upn": null,
-          "sent_utc": "2026-05-11T14:31:05.853Z",
-          "text": "Marco Rodriguez  for anything happening on Line 1.",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778510615428",
-          "from": "Marco Rodriguez",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:43:35.428Z",
-          "text": "Is there something we need",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778513686741",
-          "from": "Tiffanee Taylor",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T15:34:46.741Z",
-          "text": "I spoke with Nick on Friday about it, he was having some trouble getting it from the supplier but is hopeful it will be here sometime this week. I will follow up with him again today. Thanks.",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778516162285",
-          "from": "Jorel Gourdin",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T16:16:02.285Z",
-          "text": "The secondary door must always remain closed please!",
+          "sent_utc": "2026-05-11T16:29:52.852Z",
+          "text": "",
           "importance": "normal",
           "web_url": null
         }
@@ -1950,203 +2209,6 @@
           "from_upn": null,
           "sent_utc": "2026-05-11T16:14:05.339Z",
           "text": "I will need to wait for a few minutes for the change to come out.",
-          "importance": "normal",
-          "web_url": null
-        }
-      ]
-    },
-    {
-      "id": "19:0f56b879729240b79098dbb5b52b9c0e@thread.v2",
-      "topic": "L1 Sollich 2 information exchange",
-      "plant": "L1",
-      "web_url": "https://teams.microsoft.com/l/chat/19%3A0f56b879729240b79098dbb5b52b9c0e%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
-      "messages": [
-        {
-          "id": "1778505322550",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T13:15:22.55Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778505600176",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T13:20:00.176Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778505706223",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T13:21:46.223Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778505759784",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T13:22:39.784Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778505896877",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T13:24:56.877Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778505872960",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T13:24:32.96Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778507214009",
-          "from": "Ingrid Moreno Angarita",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T13:46:54.009Z",
-          "text": "The operator has just been informed to make adjustments, as the center pieces are arriving open at the bottom.",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778508620847",
-          "from": "Ingrid Moreno Angarita",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:10:20.847Z",
-          "text": "Thank you very much—the bottom part of the final piece has improved.",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778509565884",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:26:05.884Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778509587922",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:26:27.922Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778510337365",
-          "from": "S2 Pack",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:38:57.365Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778510665698",
-          "from": "S2 Pack",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:44:25.698Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778510958176",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:49:18.176Z",
-          "text": "Justin Garner",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778510947561",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T14:49:07.561Z",
-          "text": "The line started running at a speed of 65; right now, it has increased to 67.",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778512266684",
-          "from": "S2 Pack",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T15:11:06.684Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778512347099",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T15:12:27.099Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778512388157",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T15:13:08.157Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778512687885",
-          "from": "S2 Pack",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T15:18:07.885Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778516052293",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T16:14:12.293Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778516076064",
-          "from": "S2 Enrober",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T16:14:36.064Z",
-          "text": "",
-          "importance": "normal",
-          "web_url": null
-        },
-        {
-          "id": "1778516095747",
-          "from": "S2 Pack",
-          "from_upn": null,
-          "sent_utc": "2026-05-11T16:14:55.747Z",
-          "text": "",
           "importance": "normal",
           "web_url": null
         }
