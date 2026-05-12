@@ -1,102 +1,198 @@
 {
   "date": "2026-05-12",
   "headline": {
-    "eyebrow": "Long-running issue",
-    "text": "L3 ML4 gondola lost position *3 times* during the shift \u2014 maintenance found a reset workaround but root cause remains unresolved."
+    "eyebrow": "Construction contamination",
+    "text": "L1 S2 shut down at *15:52* after contractors breached production area \u2014 construction debris tracked across equipment."
   },
   "per_plant_summary": {
-    "L1": "L1 ran smoothly with minor issues. Twist Wrap cutter gear broke overnight and was replaced with the last spare in stock. S3 will run out of 10257 chocolate tomorrow and requested a switch to 10227. Pretzel supply for the week is confirmed with three loads inbound.",
-    "L2": "L2 ML3 was down most of the afternoon on film issues \u2014 a broken bolt on the dancing arm was found at 15:16 and maintenance is extracting it for replacement. FFS box printer failed again at 15:37, the same issue that caused stoppages yesterday. ML2 had two quick film rips that were cleared inside 5 minutes each.",
-    "L3": "L3 ML4 gondola lost position three separate times, requiring line stops and re-zeroing each time. Maintenance identified that opening a door resets the ramp, but the root cause (suspected bowed carriage slats) is not addressed. MF Matrix scale vibration was resolved \u2014 three linear feeders were found installed incorrectly. ML1 had a broken chain tooth that was replaced quickly."
+    "L1": "L1 shut down S2 at 15:52 when FSQA found construction contamination in production walkways and contractors attempting to exit into the plant without protocols. Twist Wrap replaced the last spare cutter gear overnight \u2014 part will only last 2-3 more racks and no inventory remains. S3 is requesting approval to switch chocolate from 10257 to 10227 as supply runs out tomorrow.",
+    "L2": "L2 ML2 Theegarten is back online after Preston resolved yesterday's motor fault. ML3 dancing arm bolt broke at 15:16 causing repeated film breaks \u2014 maintenance still extracting the broken piece as of 16:02. Grinding found 2 burnt Graham pieces in one incoming tote during inspection.",
+    "L3": "L3 ML1 had two separate Cavanna chain teeth fall off during the shift \u2014 the second at 15:32 is still active. Truffle Line discovered a new crack in a Tunnel 3 cover, separate from the prior break. MFM resolved scale vibration faults by correcting 3 incorrectly positioned linear feeders."
   },
   "watchlist": [
     {
-      "issue_number": 43,
-      "reason": "ML2 Theegarten was down all of yesterday's shift with an unresolved HMI/motor fault. Zero messages in today's window \u2014 unclear if resolved or still down, but needs follow-up."
+      "issue_number": 45,
+      "reason": "S2 metal detector failure from 2026-05-11 \u2014 X-ray caught metal piece but MD did not; no activity today but still no root cause identified."
+    },
+    {
+      "issue_number": 11,
+      "reason": "Sanitizer sprayers contaminated by drain use \u2014 4 days open, no replacement sprayers available in plant; blocks proper sanitation protocols."
+    },
+    {
+      "issue_number": 27,
+      "reason": "ML1 metal detector belt repeatedly shifting \u2014 2 days open with multiple stoppages on 2026-05-11; no activity today but pattern suggests alignment or tensioning problem."
     }
   ],
   "notes": [
     {
       "plant": "L1",
-      "text": "Erandy posted RCA action from previous salt issue: hourly check now added to Line Lead LSW for tunnel 3 belt slipping due to excess salt."
+      "text": "Ray from L2 walked the new Theegarten flow wrap installation with Chris and operators \u2014 first section cleaning started at 16:03."
     },
     {
-      "plant": "L2",
-      "text": "Erandy coordinating with L2 maintenance to train L1 team on new TG flow-wrap disassembly tomorrow at 9am."
+      "plant": "L1",
+      "text": "Volker (Italu consultant) cooking 2-3 test batches of Classic Vanilla Caramel in Sollich 4 Kitchen to validate equipment before his departure."
+    },
+    {
+      "plant": "L1",
+      "text": "Three pretzel loads (27,000 lb each) scheduled to arrive this week to support Pretzel Thins run through May 18."
     }
   ],
   "closed_today": [
     {
-      "number": 34,
-      "title": "MF Matrix bucket errors causing bag re-injection issues",
-      "plant": "L3",
+      "number": 43,
+      "title": "ML2 Theegarten down all shift - HMI freeze and motor fault unresolved",
+      "plant": "L2",
       "priority": null,
       "category": null,
       "summary": null,
       "first_raised": null,
-      "resolution_comment": "Resolved 2026-05-12. Nathan Ruiz found the root cause at 20:17: three linear feeders were installed incorrectly, causing the vibration faults and bucket errors. After re-zeroing, the system is working well. Source: \"After inspection I found 3 linear feeders set up like this which was causing the vibration faults.\""
+      "resolution_comment": "Preston resolved the Theegarten issue. Justin thanked him at 12:27 on 2026-05-12 \u2014 \"Thanks Preston Elmer for fixing the FW yesterday!!\" Line is running normally today."
+    },
+    {
+      "number": 23,
+      "title": "ML2 HMI froze during recipe change, hard reset required",
+      "plant": "L2",
+      "priority": null,
+      "category": null,
+      "summary": null,
+      "first_raised": null,
+      "resolution_comment": "Duplicate of issue #43. Preston resolved the HMI/motor fault and the line is running. Closed 2026-05-12."
+    },
+    {
+      "number": 55,
+      "title": "MFM scale vibration faults from incorrectly positioned linear feeders",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Machine",
+      "summary": "Scale vibration traced to 3 incorrectly positioned linear feeders \u2014 maintenance corrected setup and re-zeroed at 20:13, vibration resolved.",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-05-11T19:42:35.893Z"
+      },
+      "resolution_comment": "Re-zeroed scales at 20:13 after Nathan corrected 3 incorrectly positioned linear feeders \u2014 \"we did the rezero and its working very well\""
+    },
+    {
+      "number": 56,
+      "title": "MFM print quality issue \u2014 suction cup positioned too low",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Machine",
+      "summary": "Bad print from suction cup positioned too low causing ink smear \u2014 line paused at 21:30, adjusted, resumed at 21:46.",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-05-11T21:30:23.108Z"
+      },
+      "resolution_comment": "Suction cup adjusted at 21:46 \u2014 \"Lines running issue was suction cup was too low causing the ink to smear\""
     }
   ],
   "opened_today": [
     {
-      "number": 47,
-      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
-      "plant": "L2",
-      "priority": "P2",
-      "category": "Machine",
-      "summary": "Broken bolt on the dancing arm causing repeated film breaks \u2014 maintenance extracting the broken piece and replacing with a new bolt.",
+      "number": 50,
+      "title": "S2 line shut down for construction contamination in production area",
+      "plant": "L1",
+      "priority": "P1",
+      "category": "Safety",
+      "summary": "Construction contractors breached production area with debris tracked across walkways \u2014 drain tent hole exposed, foot protocols ignored, conveyors left running; line shut down for contamination control.",
       "first_raised": {
-        "author": "Molding Line 3 Pack",
-        "time_utc": "2026-05-12T13:40:28.076Z"
+        "author": "Miriah Manzanares",
+        "time_utc": "2026-05-12T15:38:26.220Z"
       }
     },
     {
-      "number": 48,
-      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "number": 51,
+      "title": "Twist Wrap overfilled caramel trays causing inconsistent cuts and weights",
       "plant": "L1",
       "priority": "P2",
-      "category": "Machine",
-      "summary": "Cutter gear broke overnight and was replaced with the last spare in stock \u2014 no additional inventory available and this gear only needs to last 2-3 more racks.",
+      "category": "Quality",
+      "summary": "Caramel trays overfilled by second shift kitchen \u2014 causing inconsistent cuts and piece weights that affect final pouch specs; operator re-trained.",
       "first_raised": {
         "author": "Victor Mejia",
-        "time_utc": "2026-05-12T01:25:53.649Z"
+        "time_utc": "2026-05-11T21:19:20.652Z"
       }
     },
     {
-      "number": 49,
-      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
-      "plant": "L1",
+      "number": 52,
+      "title": "ML1 Cavanna chain teeth falling off \u2014 two incidents in one shift",
+      "plant": "L3",
       "priority": "P2",
-      "category": "Materials",
-      "summary": "S3 will exhaust 10257 chocolate tomorrow \u2014 requesting approval to switch to 10227 to avoid a line stoppage.",
+      "category": "Machine",
+      "summary": "Two Cavanna chain teeth fell off in one shift at 14:17 and 15:32 \u2014 first was replaced, second is active; recurring failures suggest chain wear or alignment.",
       "first_raised": {
-        "author": "Jazmin Vazquez",
-        "time_utc": "2026-05-12T15:15:00.289Z"
+        "author": "Imperial",
+        "time_utc": "2026-05-12T14:17:24.469Z"
+      }
+    },
+    {
+      "number": 53,
+      "title": "Grinding line found 2 burnt Graham pieces in incoming tote #17",
+      "plant": "L2",
+      "priority": "P3",
+      "category": "Materials",
+      "summary": "Two burnt Graham pieces found in incoming tote #17 (lot FEB1627T3A) \u2014 carbonized material discovered during third-shift inspection; previous 16 totes were clean.",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-05-12T08:55:32.518Z"
+      }
+    },
+    {
+      "number": 54,
+      "title": "Truffle Line Tunnel 3 cover has new crack \u2014 separate from prior break",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Quality",
+      "summary": "New crack found on a different Tunnel 3 cover \u2014 no loose plastic detected, being monitored for progression; separate from issue #36.",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-05-11T21:05:44.316Z"
+      }
+    },
+    {
+      "number": 55,
+      "title": "MFM scale vibration faults from incorrectly positioned linear feeders",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Machine",
+      "summary": "Scale vibration traced to 3 incorrectly positioned linear feeders \u2014 maintenance corrected setup and re-zeroed at 20:13, vibration resolved.",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-05-11T19:42:35.893Z"
+      }
+    },
+    {
+      "number": 56,
+      "title": "MFM print quality issue \u2014 suction cup positioned too low",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Machine",
+      "summary": "Bad print from suction cup positioned too low causing ink smear \u2014 line paused at 21:30, adjusted, resumed at 21:46.",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-05-11T21:30:23.108Z"
       }
     }
   ],
   "still_open": [
     {
-      "number": 48,
-      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "number": 50,
+      "title": "S2 line shut down for construction contamination in production area",
       "plant": "L1",
       "age_days": 0,
-      "priority": "P2",
-      "category": "Machine"
+      "priority": "P1",
+      "category": "Safety"
     },
     {
-      "number": 49,
-      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
+      "number": 51,
+      "title": "Twist Wrap overfilled caramel trays causing inconsistent cuts and weights",
       "plant": "L1",
       "age_days": 0,
       "priority": "P2",
-      "category": "Materials"
+      "category": "Quality"
     },
     {
       "number": 20,
       "title": "Batch 20009 too soft to run on TW - delayed to Monday",
       "plant": "L1",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -104,7 +200,7 @@
       "number": 13,
       "title": "No proper electrical connection for steamer in S3 enrober area",
       "plant": "L1",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -112,7 +208,7 @@
       "number": 12,
       "title": "S3 jar filling conveyor failing allergen test",
       "plant": "L1",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -120,7 +216,23 @@
       "number": 11,
       "title": "Sanitizer sprayers contaminated by drain use",
       "plant": "L1",
-      "age_days": 2,
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 49,
+      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 48,
+      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "plant": "L1",
+      "age_days": 0,
       "priority": null,
       "category": null
     },
@@ -149,18 +261,18 @@
       "category": null
     },
     {
-      "number": 47,
-      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
+      "number": 53,
+      "title": "Grinding line found 2 burnt Graham pieces in incoming tote #17",
       "plant": "L2",
       "age_days": 0,
-      "priority": "P2",
-      "category": "Machine"
+      "priority": "P3",
+      "category": "Materials"
     },
     {
       "number": 18,
       "title": "ML2 encoder position causing print issues on sticky film",
       "plant": "L2",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -168,7 +280,7 @@
       "number": 17,
       "title": "ML2 flow wrap tension arm and forming plate fault",
       "plant": "L2",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -176,7 +288,7 @@
       "number": 16,
       "title": "ML2 flow wrap intermittent missing lot codes",
       "plant": "L2",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -184,7 +296,7 @@
       "number": 10,
       "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
       "plant": "L2",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -192,7 +304,7 @@
       "number": 9,
       "title": "Belt issue stopped ML3 for 15 minutes overnight",
       "plant": "L2",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
@@ -200,13 +312,13 @@
       "number": 8,
       "title": "Film issues causing line stops on ML3",
       "plant": "L2",
-      "age_days": 2,
+      "age_days": 3,
       "priority": null,
       "category": null
     },
     {
-      "number": 43,
-      "title": "ML2 Theegarten down all shift - HMI freeze and motor fault unresolved",
+      "number": 47,
+      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
       "plant": "L2",
       "age_days": 0,
       "priority": null,
@@ -229,12 +341,20 @@
       "category": null
     },
     {
-      "number": 23,
-      "title": "ML2 HMI froze during recipe change, hard reset required",
-      "plant": "L2",
+      "number": 52,
+      "title": "ML1 Cavanna chain teeth falling off \u2014 two incidents in one shift",
+      "plant": "L3",
       "age_days": 0,
-      "priority": null,
-      "category": null
+      "priority": "P2",
+      "category": "Machine"
+    },
+    {
+      "number": 54,
+      "title": "Truffle Line Tunnel 3 cover has new crack \u2014 separate from prior break",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P3",
+      "category": "Quality"
     },
     {
       "number": 44,
