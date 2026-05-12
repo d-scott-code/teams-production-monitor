@@ -1,0 +1,296 @@
+{
+  "date": "2026-05-12",
+  "headline": {
+    "eyebrow": "Long-running issue",
+    "text": "L3 ML4 gondola lost position *3 times* during the shift \u2014 maintenance found a reset workaround but root cause remains unresolved."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran smoothly with minor issues. Twist Wrap cutter gear broke overnight and was replaced with the last spare in stock. S3 will run out of 10257 chocolate tomorrow and requested a switch to 10227. Pretzel supply for the week is confirmed with three loads inbound.",
+    "L2": "L2 ML3 was down most of the afternoon on film issues \u2014 a broken bolt on the dancing arm was found at 15:16 and maintenance is extracting it for replacement. FFS box printer failed again at 15:37, the same issue that caused stoppages yesterday. ML2 had two quick film rips that were cleared inside 5 minutes each.",
+    "L3": "L3 ML4 gondola lost position three separate times, requiring line stops and re-zeroing each time. Maintenance identified that opening a door resets the ramp, but the root cause (suspected bowed carriage slats) is not addressed. MF Matrix scale vibration was resolved \u2014 three linear feeders were found installed incorrectly. ML1 had a broken chain tooth that was replaced quickly."
+  },
+  "watchlist": [
+    {
+      "issue_number": 43,
+      "reason": "ML2 Theegarten was down all of yesterday's shift with an unresolved HMI/motor fault. Zero messages in today's window \u2014 unclear if resolved or still down, but needs follow-up."
+    }
+  ],
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Erandy posted RCA action from previous salt issue: hourly check now added to Line Lead LSW for tunnel 3 belt slipping due to excess salt."
+    },
+    {
+      "plant": "L2",
+      "text": "Erandy coordinating with L2 maintenance to train L1 team on new TG flow-wrap disassembly tomorrow at 9am."
+    }
+  ],
+  "closed_today": [
+    {
+      "number": 34,
+      "title": "MF Matrix bucket errors causing bag re-injection issues",
+      "plant": "L3",
+      "priority": null,
+      "category": null,
+      "summary": null,
+      "first_raised": null,
+      "resolution_comment": "Resolved 2026-05-12. Nathan Ruiz found the root cause at 20:17: three linear feeders were installed incorrectly, causing the vibration faults and bucket errors. After re-zeroing, the system is working well. Source: \"After inspection I found 3 linear feeders set up like this which was causing the vibration faults.\""
+    }
+  ],
+  "opened_today": [
+    {
+      "number": 47,
+      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
+      "plant": "L2",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Broken bolt on the dancing arm causing repeated film breaks \u2014 maintenance extracting the broken piece and replacing with a new bolt.",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-05-12T13:40:28.076Z"
+      }
+    },
+    {
+      "number": 48,
+      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "plant": "L1",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Cutter gear broke overnight and was replaced with the last spare in stock \u2014 no additional inventory available and this gear only needs to last 2-3 more racks.",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-05-12T01:25:53.649Z"
+      }
+    },
+    {
+      "number": 49,
+      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
+      "plant": "L1",
+      "priority": "P2",
+      "category": "Materials",
+      "summary": "S3 will exhaust 10257 chocolate tomorrow \u2014 requesting approval to switch to 10227 to avoid a line stoppage.",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-05-12T15:15:00.289Z"
+      }
+    }
+  ],
+  "still_open": [
+    {
+      "number": 48,
+      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Machine"
+    },
+    {
+      "number": 49,
+      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Materials"
+    },
+    {
+      "number": 20,
+      "title": "Batch 20009 too soft to run on TW - delayed to Monday",
+      "plant": "L1",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 13,
+      "title": "No proper electrical connection for steamer in S3 enrober area",
+      "plant": "L1",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 12,
+      "title": "S3 jar filling conveyor failing allergen test",
+      "plant": "L1",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 11,
+      "title": "Sanitizer sprayers contaminated by drain use",
+      "plant": "L1",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 45,
+      "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 47,
+      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Machine"
+    },
+    {
+      "number": 18,
+      "title": "ML2 encoder position causing print issues on sticky film",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 17,
+      "title": "ML2 flow wrap tension arm and forming plate fault",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 16,
+      "title": "ML2 flow wrap intermittent missing lot codes",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 10,
+      "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 9,
+      "title": "Belt issue stopped ML3 for 15 minutes overnight",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 8,
+      "title": "Film issues causing line stops on ML3",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 43,
+      "title": "ML2 Theegarten down all shift - HMI freeze and motor fault unresolved",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 32,
+      "title": "FFS box printer repeatedly failing - not printing lot code",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 23,
+      "title": "ML2 HMI froze during recipe change, hard reset required",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 44,
+      "title": "ML4 gondola losing position - repeated re-zeroing required",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 41,
+      "title": "ML1 mixing water jacket not remaining stable",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    }
+  ]
+}
