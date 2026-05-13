@@ -1,19 +1,269 @@
 {
   "date": "2026-05-13",
   "headline": {
-    "eyebrow": "Quality flag",
-    "text": "L3 ML4 found metal shavings past cleaning rollers from damaged blade \u2014 area cleaned, *2 sensors* replaced on Cavanna 1 same shift."
+    "eyebrow": "Materials pressure",
+    "text": "L1 PECO pallet inventory fell to *72 pallets* against a 1,620 minimum \u2014 FTL delivery arrived but supply chain remains strained."
   },
   "per_plant_summary": {
-    "L1": "L1 ML1 cleared three machine issues inside the window: C6 belt tearing (fixed by 14:38), rice hopper vacuum leak (bent flap replaced by 15:46), and metal detector scraper reinstalled properly by 15:18. S3 had an operator-error milk chocolate cross-contamination into dark enrober at 01:30, diluted and resumed. PECO pallet inventory dropped to 72 pallets with one FTL delivering today.",
-    "L2": "L2 ML3 dancing arm bolt replacement completed (issue #47 closed). ML2 had another dancing arm sensor fault at 14:56, maintenance moved sensor up 1mm and line resumed by 15:06 \u2014 same fix as yesterday. ML3 ramp belt tracked off at 07:35, required CIL cleaning and restarted by 08:06. FFS down 30 minutes at 13:43 for film tracking issue and missing roll, back up by 14:14.",
-    "L3": "L3 ML4 had a busy shift: damaged cleaning roller blade discovered at 09:51 with metal shavings found past the rollers, QA flagged and area cleaned. Gondola continued intermittent faults (issue #44), including TG5 dirty sensor at 08:45 (fixed by 09:14) and gondola full at 14:58 (restarted by 15:05). Truffle Line replaced two broken Cavanna 1 speed sensors (B141, B142) and found duplicate/incorrect chocolate pallet labels \u2014 IMS corrected."
+    "L1": "L1 hit critical low on PECO pallets (down to 72 from a 1,620 standard) before an FTL arrived midday. Construction tent on S2 developed a new hole at 10:24 and was sealed within minutes. S3 and Twist Wrap ran clean with routine ATP passes.",
+    "L2": "L2 FFS went down at 07:43 for film tracking and a missing roll, back online by 08:14. ML2 dancing arm sensor caused a brief stop at 08:56; maintenance adjusted sensor position by 1mm and resolved it. ML3 ran steady with routine inventory adjustments.",
+    "L3": "L3 ML1 metal detector rejected all test cards repeatedly throughout third and first shifts despite multiple maintenance visits and reports of electric current when removing trays \u2014 issue unresolved. ML1 also had a C6 belt tear (fixed by 08:38) and rice hopper vacuum failure (flap bent, fixed by 09:46). Truffle Line replaced two broken Cavanna sensors in 34 minutes. ML4 gondola went down twice, and cleaning crew found a damaged licking roller blade with possible metal shavings \u2014 QA did not collect samples."
   },
   "watchlist": [],
   "notes": [],
-  "closed_today": [],
-  "opened_today": [],
+  "closed_today": [
+    {
+      "number": 59,
+      "title": "S2 construction tent hole \u2014 contamination risk",
+      "plant": "L1",
+      "priority": "P2",
+      "category": "Safety",
+      "summary": "New hole discovered in S2 construction tent at 10:24 \u2014 sealed by maintenance within minutes, QA monitoring hourly.",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-05-13T16:24:05.934Z"
+      },
+      "resolution_comment": "Sealed by 10:31 MT \u2014 \"Your good we're getting it done right now\" \u2014 QA monitoring hourly."
+    },
+    {
+      "number": 61,
+      "title": "ML1 C6 belt tearing \u2014 piece found in tray",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "C6 belt found splitting with broken piece in tray at 03:16 \u2014 belt repositioned and tear repaired by maintenance, running properly as of 08:38.",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-05-13T09:16:21.116Z"
+      },
+      "resolution_comment": "Fixed by 08:38 MT \u2014 \"The c6 belt is fixed\" (Imperial)"
+    },
+    {
+      "number": 62,
+      "title": "ML1 rice hopper vacuum failure \u2014 bent flap causing leak",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Rice hopper vacuum not suctioning at 09:27 \u2014 maintenance tore down unit, found bent flap causing vacuum leak, fixed by 09:46.",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-13T15:27:28.523Z"
+      },
+      "resolution_comment": "Fixed by 09:46 MT \u2014 flap bent causing vacuum leak, maintenance tore down and repaired (Nathan Ruiz)"
+    },
+    {
+      "number": 63,
+      "title": "Truffle Line Cavanna 1 speed sensors broken (B142, B141)",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Both speed sensors on Cavanna 1 broken at 06:44 \u2014 maintenance replaced sensors and machine back online by 07:18, 34-minute stoppage.",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-05-13T12:44:07.862Z"
+      },
+      "resolution_comment": "Sensors replaced by 07:18 MT \u2014 \"Cavanna 1 is now back in operation after replacing the sensors\" (Nathan Ruiz)"
+    },
+    {
+      "number": 65,
+      "title": "Truffle Line salt pallet mislabeled with two item numbers",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Materials",
+      "summary": "Salt pallet had both 10001 and 10002 labels; IMS reviewed and corrected within 2 minutes.",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-05-13T13:37:41.156Z"
+      },
+      "resolution_comment": "Corrected by 07:39 MT \u2014 \"we reviewed and corrected, thank you\" (Fredy Montalvan)"
+    },
+    {
+      "number": 68,
+      "title": "FFS film tracking issue with missing roll",
+      "plant": "L2",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "FFS down at 07:43 for film tracking problems and missing roll \u2014 maintenance troubleshooting, back up by 08:14, 31-minute stoppage.",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-05-13T13:43:16.883Z"
+      },
+      "resolution_comment": "Back up at 08:14 MT \u2014 \"Line is up and running\" (Alan Todd)"
+    },
+    {
+      "number": 69,
+      "title": "ML2 flow wrap dancing arm sensor fault",
+      "plant": "L2",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Dancing arm sensor caused line stop at 08:56 \u2014 maintenance adjusted sensor position up 1mm, resolved by 09:06.",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-05-13T14:56:52.38Z"
+      },
+      "resolution_comment": "Fixed by 09:06 MT \u2014 maintenance moved sensor up 1mm (Alan Todd)"
+    }
+  ],
+  "opened_today": [
+    {
+      "number": 58,
+      "title": "PECO pallet inventory at critical low \u2014 72 available vs 1,620 minimum",
+      "plant": "L1",
+      "priority": "P1",
+      "category": "Materials",
+      "summary": "PECO pallet count dropped to 72 (need 1,620 per standard) \u2014 one FTL delivered today but supply chain remains constrained and production at risk of line stoppages.",
+      "first_raised": {
+        "author": "Ricardo Tovar",
+        "time_utc": "2026-05-13T06:28:43.239Z"
+      }
+    },
+    {
+      "number": 59,
+      "title": "S2 construction tent hole \u2014 contamination risk",
+      "plant": "L1",
+      "priority": "P2",
+      "category": "Safety",
+      "summary": "New hole discovered in S2 construction tent at 10:24 \u2014 sealed by maintenance within minutes, QA monitoring hourly.",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-05-13T16:24:05.934Z"
+      }
+    },
+    {
+      "number": 60,
+      "title": "ML1 metal detector rejecting all test cards \u2014 electric current present",
+      "plant": "L3",
+      "priority": "P1",
+      "category": "Quality",
+      "summary": "Metal detector continuously rejecting all NFE/S/S test cards since 22:13 last night; operators report electric current when removing trays; maintenance inspected multiple times but issue persists as of 06:23 this morning.",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-05-13T05:27:54.979Z"
+      }
+    },
+    {
+      "number": 61,
+      "title": "ML1 C6 belt tearing \u2014 piece found in tray",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "C6 belt found splitting with broken piece in tray at 03:16 \u2014 belt repositioned and tear repaired by maintenance, running properly as of 08:38.",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-05-13T09:16:21.116Z"
+      }
+    },
+    {
+      "number": 62,
+      "title": "ML1 rice hopper vacuum failure \u2014 bent flap causing leak",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Rice hopper vacuum not suctioning at 09:27 \u2014 maintenance tore down unit, found bent flap causing vacuum leak, fixed by 09:46.",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-13T15:27:28.523Z"
+      }
+    },
+    {
+      "number": 63,
+      "title": "Truffle Line Cavanna 1 speed sensors broken (B142, B141)",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Both speed sensors on Cavanna 1 broken at 06:44 \u2014 maintenance replaced sensors and machine back online by 07:18, 34-minute stoppage.",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-05-13T12:44:07.862Z"
+      }
+    },
+    {
+      "number": 64,
+      "title": "Truffle Line duplicate chocolate pallet labels \u2014 wrong item numbers",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Materials",
+      "summary": "Two identical labels found on different chocolate pallets that didn't match product in use \u2014 handed to IMS for resolution.",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-05-13T12:59:07.252Z"
+      }
+    },
+    {
+      "number": 65,
+      "title": "Truffle Line salt pallet mislabeled with two item numbers",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Materials",
+      "summary": "Salt pallet had both 10001 and 10002 labels; IMS reviewed and corrected within 2 minutes.",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-05-13T13:37:41.156Z"
+      }
+    },
+    {
+      "number": 66,
+      "title": "ML4 licking roller blade damaged \u2014 possible metal shavings past cleaning station",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Quality",
+      "summary": "Damaged blade found on cleaning roller 2 during startup at 03:51 with possible metal shavings past the rollers \u2014 QA did not collect samples, area cleaned manually.",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-05-13T09:51:53.247Z"
+      }
+    },
+    {
+      "number": 67,
+      "title": "ML4 TG machines handed off in manual mode instead of auto",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Other",
+      "summary": "All TG machines received from second shift in manual mode rather than auto \u2014 switching to auto resolved issues, procedural gap in shift handoff.",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-13T15:03:17.454Z"
+      }
+    },
+    {
+      "number": 68,
+      "title": "FFS film tracking issue with missing roll",
+      "plant": "L2",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "FFS down at 07:43 for film tracking problems and missing roll \u2014 maintenance troubleshooting, back up by 08:14, 31-minute stoppage.",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-05-13T13:43:16.883Z"
+      }
+    },
+    {
+      "number": 69,
+      "title": "ML2 flow wrap dancing arm sensor fault",
+      "plant": "L2",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Dancing arm sensor caused line stop at 08:56 \u2014 maintenance adjusted sensor position up 1mm, resolved by 09:06.",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-05-13T14:56:52.38Z"
+      }
+    }
+  ],
   "still_open": [
+    {
+      "number": 58,
+      "title": "PECO pallet inventory at critical low \u2014 72 available vs 1,620 minimum",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": "P1",
+      "category": "Materials",
+      "summary": "PECO pallet count dropped to 72 (need 1,620 per standard) \u2014 one FTL delivered today but supply chain remains constrained and production at risk of line stoppages.",
+      "first_raised": {
+        "author": "Ricardo Tovar",
+        "time_utc": "2026-05-13T06:28:43.239Z"
+      }
+    },
     {
       "number": 20,
       "title": "Batch 20009 too soft to run on TW - delayed to Monday",
@@ -43,6 +293,22 @@
       "title": "Sanitizer sprayers contaminated by drain use",
       "plant": "L1",
       "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
+      "plant": "L1",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "plant": "L1",
+      "age_days": 2,
       "priority": null,
       "category": null
     },
@@ -81,22 +347,6 @@
     {
       "number": 45,
       "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
-      "plant": "L1",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 31,
-      "title": "S3 unable to hit 85 piece count target in pouches",
-      "plant": "L1",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 30,
-      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
       "plant": "L1",
       "age_days": 1,
       "priority": null,
@@ -151,6 +401,22 @@
       "category": null
     },
     {
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 32,
+      "title": "FFS box printer repeatedly failing - not printing lot code",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
       "number": 53,
       "title": "Grinding line found 2 burnt Graham pieces in incoming tote #17",
       "plant": "L2",
@@ -167,18 +433,102 @@
       "category": null
     },
     {
-      "number": 33,
-      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
-      "plant": "L2",
-      "age_days": 1,
+      "number": 60,
+      "title": "ML1 metal detector rejecting all test cards \u2014 electric current present",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P1",
+      "category": "Quality",
+      "summary": "Metal detector continuously rejecting all NFE/S/S test cards since 22:13 last night; operators report electric current when removing trays; maintenance inspected multiple times but issue persists as of 06:23 this morning.",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-05-13T05:27:54.979Z"
+      }
+    },
+    {
+      "number": 66,
+      "title": "ML4 licking roller blade damaged \u2014 possible metal shavings past cleaning station",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Quality",
+      "summary": "Damaged blade found on cleaning roller 2 during startup at 03:51 with possible metal shavings past the rollers \u2014 QA did not collect samples, area cleaned manually.",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-05-13T09:51:53.247Z"
+      }
+    },
+    {
+      "number": 64,
+      "title": "Truffle Line duplicate chocolate pallet labels \u2014 wrong item numbers",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P3",
+      "category": "Materials",
+      "summary": "Two identical labels found on different chocolate pallets that didn't match product in use \u2014 handed to IMS for resolution.",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-05-13T12:59:07.252Z"
+      }
+    },
+    {
+      "number": 67,
+      "title": "ML4 TG machines handed off in manual mode instead of auto",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P3",
+      "category": "Other",
+      "summary": "All TG machines received from second shift in manual mode rather than auto \u2014 switching to auto resolved issues, procedural gap in shift handoff.",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-13T15:03:17.454Z"
+      }
+    },
+    {
+      "number": 41,
+      "title": "ML1 mixing water jacket not remaining stable",
+      "plant": "L3",
+      "age_days": 2,
       "priority": null,
       "category": null
     },
     {
-      "number": 32,
-      "title": "FFS box printer repeatedly failing - not printing lot code",
-      "plant": "L2",
-      "age_days": 1,
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 2,
       "priority": null,
       "category": null
     },
@@ -201,54 +551,6 @@
     {
       "number": 44,
       "title": "ML4 gondola losing position - repeated re-zeroing required",
-      "plant": "L3",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 41,
-      "title": "ML1 mixing water jacket not remaining stable",
-      "plant": "L3",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 36,
-      "title": "Truffle Line broken conveyor cover found during chocolate removal",
-      "plant": "L3",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 29,
-      "title": "Truffle Line separator table making constant noise",
-      "plant": "L3",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 27,
-      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
-      "plant": "L3",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 26,
-      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
-      "plant": "L3",
-      "age_days": 1,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 25,
-      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
       "plant": "L3",
       "age_days": 1,
       "priority": null,
