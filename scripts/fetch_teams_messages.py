@@ -17,6 +17,7 @@ import re
 import sys
 from typing import Any, Iterable
 from urllib.parse import quote
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -24,7 +25,7 @@ GRAPH = "https://graph.microsoft.com/v1.0"
 TOKEN_URL_TMPL = "https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token"
 PLANT_RE = re.compile(r"\bL([123])\b", re.IGNORECASE)
 TAG_RE = re.compile(r"<[^>]+>")
-DENVER = dt.timezone(dt.timedelta(hours=-6))  # MDT; close enough for the window label
+DENVER = ZoneInfo("America/Denver")  # DST-aware; resolves to MDT or MST per date
 
 
 def env(key: str) -> str:
@@ -123,12 +124,14 @@ def fetch_messages(
         if msg.get("messageType") != "message":
             continue  # skip systemEventMessage, etc.
         sender = (msg.get("from") or {}).get("user") or {}
+        sent_mt = sent_dt.astimezone(DENVER).isoformat(timespec="seconds")
         collected.append(
             {
                 "id": msg.get("id"),
                 "from": sender.get("displayName") or "(system)",
                 "from_upn": sender.get("userPrincipalName"),
                 "sent_utc": sent,
+                "sent_mt": sent_mt,
                 "text": strip_html(msg.get("body")),
                 "importance": msg.get("importance"),
                 "web_url": msg.get("webUrl"),
@@ -178,6 +181,8 @@ def main() -> None:
         "window": {
             "start_utc": since_utc.isoformat(),
             "end_utc": now_utc.isoformat(),
+            "start_mt": since_utc.astimezone(DENVER).isoformat(timespec="seconds"),
+            "end_mt": now_utc.astimezone(DENVER).isoformat(timespec="seconds"),
             "tz": "America/Denver",
             "hours": args.hours,
         },
