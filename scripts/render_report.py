@@ -21,6 +21,9 @@ import html
 import json
 import re
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+MT = ZoneInfo("America/Denver")
 
 REPO = "d-scott-code/teams-production-monitor"
 ISSUE_URL = f"https://github.com/{REPO}/issues/{{n}}"
@@ -265,12 +268,32 @@ def fmt_date(date: str) -> str:
     return dt.datetime.strptime(date, "%Y-%m-%d").strftime("%B %-d, %Y")
 
 
+def _to_mt(iso: str) -> dt.datetime | None:
+    """Parse an ISO-8601 timestamp (any offset, including 'Z') and return it
+    converted to Mountain Time. Returns None if the string is unparseable or
+    naive (no offset)."""
+    try:
+        d = dt.datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    except (ValueError, AttributeError):
+        return None
+    if d.tzinfo is None:
+        return None
+    return d.astimezone(MT)
+
+
 def fmt_window(window: dict) -> str:
-    if not window.get("start_utc") or not window.get("end_utc"):
+    """Render the report window in Mountain Time. Prefer `start_mt`/`end_mt`
+    (pre-computed by the fetcher) and fall back to converting the UTC values
+    on old ledgers."""
+    start = window.get("start_mt") or window.get("start_utc")
+    end = window.get("end_mt") or window.get("end_utc")
+    if not start or not end:
         return ""
-    s = dt.datetime.fromisoformat(window["start_utc"]).strftime("%b %-d %H:%M UTC")
-    e = dt.datetime.fromisoformat(window["end_utc"]).strftime("%b %-d %H:%M UTC")
-    return f"{s} → {e}"
+    s = _to_mt(start)
+    e = _to_mt(end)
+    if not s or not e:
+        return ""
+    return f'{s.strftime("%b %-d %H:%M MT")} → {e.strftime("%b %-d %H:%M MT")}'
 
 
 def render_accents(text: str) -> str:
@@ -290,28 +313,26 @@ def cap(text: str, kind: str = "neutral") -> str:
 
 
 def fmt_first_raised(item: dict) -> str:
-    """Render the 'First raised' cell. Prefers Claude's `first_raised` (author +
-    time_utc from the source Teams message) over GitHub's `created_at`. Falls
-    back gracefully for carry-over items that have neither."""
+    """Render the 'First raised' cell in Mountain Time. Prefers Claude's
+    `first_raised` (author + time_utc from the source Teams message) over
+    GitHub's `created_at`. Falls back gracefully for carry-over items that
+    have neither."""
     fr = item.get("first_raised") or {}
     author = fr.get("author")
     time_utc = fr.get("time_utc")
     if author and time_utc:
-        try:
-            t = dt.datetime.fromisoformat(time_utc.replace("Z", "+00:00"))
+        t = _to_mt(time_utc)
+        if t:
             return (
                 f'<span class="author">{esc(author)}</span><br>'
-                f'<span>{t.strftime("%H:%M UTC")}</span>'
+                f'<span>{t.strftime("%H:%M MT")}</span>'
             )
-        except ValueError:
-            return f'<span class="author">{esc(author)}</span>'
+        return f'<span class="author">{esc(author)}</span>'
     created = item.get("created_at")
     if created:
-        try:
-            t = dt.datetime.fromisoformat(created.replace("Z", "+00:00"))
+        t = _to_mt(created)
+        if t:
             return f'<span>{t.strftime("%b %-d")}</span>'
-        except ValueError:
-            pass
     age = item.get("age_days")
     if age is not None:
         return f'<span>{age}d ago</span>'

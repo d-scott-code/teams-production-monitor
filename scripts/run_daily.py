@@ -135,6 +135,19 @@ These apply to `headline.text`, `per_plant_summary.*`, all issue bodies, and res
 - No exclamation points.
 - Lead with the gap. State the problem and the number before the explanation.
 
+## Time zone — critical
+
+CandyCo's plants are in Lindon, Utah (America/Denver). Every Teams message in the input carries two timestamps:
+
+- `sent_utc` — UTC, machine-readable
+- `sent_mt` — the same moment in Mountain Time, what the floor crew actually saw on their phones
+
+**All human-facing times in your output must be Mountain Time** — the headline, per-plant summaries, summaries, resolution comments, and any time mentioned in the issue body. Read `sent_mt` to determine when something happened. Do not try to convert `sent_utc` yourself; DST math is error-prone and `sent_mt` is pre-computed for you.
+
+Format as 24-hour `HH:MM` in narrative text. The renderer adds the "MT" label where the surrounding context doesn't already imply Mountain Time, so do not append "MT" yourself in narrative prose.
+
+For `first_raised.time_utc` on create items: copy the source message's `sent_utc` verbatim (this field is machine-readable; the renderer converts to Mountain Time for display).
+
 ## Per-issue summary and attribution
 
 On every `create` item, set:
@@ -157,13 +170,13 @@ Pick the *first* message that surfaces the problem, not the most recent. If the 
 
 ## Worked example 1 — modest day at L2
 
-Messages (excerpt):
+Messages (excerpt, times shown are Mountain Time — `sent_mt`):
 ```
-[L2 Floor] 09:14 Mike R: line 2 down — hopper #3 jammed on a crumb cluster
-[L2 Floor] 09:31 Mike R: cleared, running again
-[L2 Floor] 11:02 Sarah K: anyone seen the second pallet of foil wrap? supposed to be here yesterday
-[L2 Floor] 13:45 Mike R: foil arrived, back on schedule
-[L2 Floor] 15:10 Sarah K: FSQA flagged 4 pouches for weight on the 14:00 check, isolated and reworked
+[L2 Floor] 09:14 MT Mike R: line 2 down — hopper #3 jammed on a crumb cluster
+[L2 Floor] 09:31 MT Mike R: cleared, running again
+[L2 Floor] 11:02 MT Sarah K: anyone seen the second pallet of foil wrap? supposed to be here yesterday
+[L2 Floor] 13:45 MT Mike R: foil arrived, back on schedule
+[L2 Floor] 15:10 MT Sarah K: FSQA flagged 4 pouches for weight on the 14:00 check, isolated and reworked
 ```
 
 Plan fragment:
@@ -181,7 +194,7 @@ Plan fragment:
       "plant": "L2", "title": "L2 hopper #3 jam on crumb cluster",
       "priority": "P3", "category": "Machine",
       "summary": "Crumb cluster jammed hopper #3; cleared by hand in 17 minutes with no rework needed.",
-      "first_raised": {"author": "Mike R", "time_utc": "2026-05-11T09:14:00Z"},
+      "first_raised": {"author": "Mike R", "time_utc": "2026-05-11T15:14:00Z"},
       "body": "...",
       "resolved_in_window": {"resolution_comment": "Cleared at 09:31 — \"cleared, running again\""}
     },
@@ -189,7 +202,7 @@ Plan fragment:
       "plant": "L2", "title": "L2 foil wrap pallet arrived a day late",
       "priority": "P3", "category": "Materials",
       "summary": "Second pallet of foil wrap was a day late from the supplier; line stayed on schedule once it landed at 13:45.",
-      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T11:02:00Z"},
+      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T17:02:00Z"},
       "body": "...",
       "resolved_in_window": {"resolution_comment": "Foil arrived at 13:45 — \"back on schedule\""}
     },
@@ -197,7 +210,7 @@ Plan fragment:
       "plant": "L2", "title": "L2 underweight pouches caught at 14:00 weight check (4 ct)",
       "priority": "P2", "category": "Quality",
       "summary": "Four pouches flagged underweight at the 14:00 FSQA check, isolated and reworked; need to review checkweigher calibration on the next shift.",
-      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T15:10:00Z"},
+      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T21:10:00Z"},
       "body": "..."
     }
   ]
@@ -206,12 +219,12 @@ Plan fragment:
 
 ## Worked example 2 — active P1 at L3
 
-Messages (excerpt):
+Messages (excerpt, times are Mountain Time):
 ```
-[L3 Floor] 06:42 Tom W: enrober down, drive belt slipping
-[L3 Floor] 07:05 Tom W: tried tensioning, no luck, calling maintenance
-[L3 Floor] 08:20 Tom W: maintenance on-site, ordering belt
-[L3 Floor] 13:11 Tom W: still waiting on belt, line idle 6+ hours now
+[L3 Floor] 06:42 MT Tom W: enrober down, drive belt slipping
+[L3 Floor] 07:05 MT Tom W: tried tensioning, no luck, calling maintenance
+[L3 Floor] 08:20 MT Tom W: maintenance on-site, ordering belt
+[L3 Floor] 13:11 MT Tom W: still waiting on belt, line idle 6+ hours now
 ```
 
 Plan fragment:
@@ -229,7 +242,7 @@ Plan fragment:
       "plant": "L3", "title": "L3 enrober drive belt failure — line down",
       "priority": "P1", "category": "Machine",
       "summary": "Drive belt slipping under load — tensioning didn't hold, maintenance is on-site since 08:20 and waiting on the replacement belt.",
-      "first_raised": {"author": "Tom W", "time_utc": "2026-05-11T06:42:00Z"},
+      "first_raised": {"author": "Tom W", "time_utc": "2026-05-11T12:42:00Z"},
       "body": "..."
     }
   ]
@@ -572,6 +585,7 @@ def build_ledger(today: str, plan: dict, closed: list, created: list,
             "number": c["number"], "title": c["title"],
             "plant": c["plant"], "age_days": 0,
             "priority": c.get("priority"), "category": c.get("category"),
+            "summary": c.get("summary"), "first_raised": c.get("first_raised"),
         })
     plant_order = {"L1": 0, "L2": 1, "L3": 2}
     priority_rank = {"P1": 0, "P2": 1, "P3": 2, None: 3}
