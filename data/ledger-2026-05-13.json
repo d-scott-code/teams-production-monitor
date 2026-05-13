@@ -1,0 +1,258 @@
+{
+  "date": "2026-05-13",
+  "headline": {
+    "eyebrow": "Quality flag",
+    "text": "L3 ML4 found metal shavings past cleaning rollers from damaged blade \u2014 area cleaned, *2 sensors* replaced on Cavanna 1 same shift."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ML1 cleared three machine issues inside the window: C6 belt tearing (fixed by 14:38), rice hopper vacuum leak (bent flap replaced by 15:46), and metal detector scraper reinstalled properly by 15:18. S3 had an operator-error milk chocolate cross-contamination into dark enrober at 01:30, diluted and resumed. PECO pallet inventory dropped to 72 pallets with one FTL delivering today.",
+    "L2": "L2 ML3 dancing arm bolt replacement completed (issue #47 closed). ML2 had another dancing arm sensor fault at 14:56, maintenance moved sensor up 1mm and line resumed by 15:06 \u2014 same fix as yesterday. ML3 ramp belt tracked off at 07:35, required CIL cleaning and restarted by 08:06. FFS down 30 minutes at 13:43 for film tracking issue and missing roll, back up by 14:14.",
+    "L3": "L3 ML4 had a busy shift: damaged cleaning roller blade discovered at 09:51 with metal shavings found past the rollers, QA flagged and area cleaned. Gondola continued intermittent faults (issue #44), including TG5 dirty sensor at 08:45 (fixed by 09:14) and gondola full at 14:58 (restarted by 15:05). Truffle Line replaced two broken Cavanna 1 speed sensors (B141, B142) and found duplicate/incorrect chocolate pallet labels \u2014 IMS corrected."
+  },
+  "watchlist": [],
+  "notes": [],
+  "closed_today": [],
+  "opened_today": [],
+  "still_open": [
+    {
+      "number": 20,
+      "title": "Batch 20009 too soft to run on TW - delayed to Monday",
+      "plant": "L1",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 13,
+      "title": "No proper electrical connection for steamer in S3 enrober area",
+      "plant": "L1",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 12,
+      "title": "S3 jar filling conveyor failing allergen test",
+      "plant": "L1",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 11,
+      "title": "Sanitizer sprayers contaminated by drain use",
+      "plant": "L1",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 51,
+      "title": "Twist Wrap overfilled caramel trays causing inconsistent cuts and weights",
+      "plant": "L1",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 50,
+      "title": "S2 line shut down for construction contamination in production area",
+      "plant": "L1",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 49,
+      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
+      "plant": "L1",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 48,
+      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "plant": "L1",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 45,
+      "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
+      "plant": "L1",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
+      "plant": "L1",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "plant": "L1",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 18,
+      "title": "ML2 encoder position causing print issues on sticky film",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 17,
+      "title": "ML2 flow wrap tension arm and forming plate fault",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 16,
+      "title": "ML2 flow wrap intermittent missing lot codes",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 10,
+      "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 9,
+      "title": "Belt issue stopped ML3 for 15 minutes overnight",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 8,
+      "title": "Film issues causing line stops on ML3",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 53,
+      "title": "Grinding line found 2 burnt Graham pieces in incoming tote #17",
+      "plant": "L2",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 47,
+      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
+      "plant": "L2",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "plant": "L2",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 32,
+      "title": "FFS box printer repeatedly failing - not printing lot code",
+      "plant": "L2",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 54,
+      "title": "Truffle Line Tunnel 3 cover has new crack \u2014 separate from prior break",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 52,
+      "title": "ML1 Cavanna chain teeth falling off \u2014 two incidents in one shift",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 44,
+      "title": "ML4 gondola losing position - repeated re-zeroing required",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 41,
+      "title": "ML1 mixing water jacket not remaining stable",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 1,
+      "priority": null,
+      "category": null
+    }
+  ]
+}
