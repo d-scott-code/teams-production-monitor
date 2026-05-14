@@ -627,13 +627,26 @@ def main() -> None:
     today = today_in_denver()
     print(f"=== Daily Teams Production Monitor — {today} ===")
 
+    report_path = ROOT / "reports" / f"{today}.html"
+
+    # Idempotency guard for the backup cron slot. The workflow runs twice
+    # in a row (primary + backup ~20 minutes later) so a slipped primary
+    # gets a second chance; on days where the primary lands, the backup
+    # is a no-op. Manual `workflow_dispatch` runs always proceed —
+    # rerunning by hand should always produce a fresh report.
+    if (
+        os.environ.get("GITHUB_EVENT_NAME") == "schedule"
+        and report_path.exists()
+    ):
+        print(f"already published {report_path.name} — backup slot skipping")
+        return
+
     for k in ("GRAPH_TENANT_ID", "GRAPH_CLIENT_ID", "GRAPH_CLIENT_SECRET",
               "GRAPH_USER_UPN", "ANTHROPIC_API_KEY", "GITHUB_TOKEN"):
         env(k)
 
     messages_path = ROOT / "data" / f"messages-{today}.json"
     ledger_path = ROOT / "data" / f"ledger-{today}.json"
-    report_path = ROOT / "reports" / f"{today}.html"
     messages_path.parent.mkdir(parents=True, exist_ok=True)
 
     print("\n--- 1. Fetch Teams messages ---")
