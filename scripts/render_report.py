@@ -17,8 +17,11 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
+import hmac
 import html
 import json
+import os
 import re
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -28,6 +31,13 @@ MT = ZoneInfo("America/Denver")
 REPO = "d-scott-code/teams-production-monitor"
 ISSUE_URL = f"https://github.com/{REPO}/issues/{{n}}"
 DS = "../assets/design-system"
+
+# Plant leaders read the report on their phone. When CLOSE_BUTTON_WORKER_URL
+# and CLOSE_BUTTON_HMAC_SECRET are both set, each open priority gets a "Mark
+# resolved" button that hits a Cloudflare Worker (see cloudflare/worker.js)
+# which closes the GitHub issue. Links carry an HMAC bound to (issue_number,
+# expiry-epoch) so they can't be forged and naturally rot after 7 days.
+CLOSE_LINK_TTL_DAYS = 7
 
 PLANTS = [
     {"id": "L1", "name": "Lindon 1 — Caramel",      "accent": "#FFCA3A"},
@@ -175,6 +185,29 @@ PAGE_LOCAL_CSS = """
 }
 .priorities-table .raised-cell .author { color: var(--fg-1); font-weight: 600; }
 .priorities-table .pri-cell { text-align: center; }
+.priorities-table .action-col, .priorities-table .action-cell {
+  width: 84pt; text-align: right; white-space: nowrap;
+}
+.priorities-table a.close-btn {
+  display: inline-flex; align-items: center; gap: 4pt;
+  padding: 4pt 8pt;
+  font-size: 8pt; font-weight: 600;
+  color: #fff;
+  background: #15803d;
+  border-radius: 4pt;
+  text-decoration: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.priorities-table a.close-btn::before {
+  content: "✓"; font-weight: 700;
+}
+@media print {
+  /* Print copies don't have a tappable surface — hide the buttons and the
+     column entirely so the rest of the table reflows wider. */
+  .priorities-table .action-col, .priorities-table .action-cell { display: none; }
+}
 
 /* ---------- Resolved list ---------- */
 .resolved-list {
@@ -339,6 +372,33 @@ def fmt_first_raised(item: dict) -> str:
     return '<span>—</span>'
 
 
+def close_button_html(issue_num: int, report_date: str) -> str:
+    """Render a signed 'Mark resolved' button for an open issue. Returns ''
+    when the worker URL or HMAC secret isn't configured (e.g., local renders),
+    so the table simply omits the button.
+
+    The HMAC binds (issue, expiry) to a shared secret so plant leaders can
+    close issues without a GitHub account, while a leaked URL only ever
+    affects the issue it was minted for and only until its expiry.
+    """
+    worker_url = os.environ.get("CLOSE_BUTTON_WORKER_URL", "").rstrip("/")
+    secret = os.environ.get("CLOSE_BUTTON_HMAC_SECRET", "")
+    if not worker_url or not secret:
+        return ""
+    try:
+        d = dt.datetime.strptime(report_date, "%Y-%m-%d").replace(tzinfo=MT)
+    except ValueError:
+        return ""
+    expiry = int((d + dt.timedelta(days=CLOSE_LINK_TTL_DAYS)).timestamp())
+    msg = f"{issue_num}.{expiry}".encode()
+    token = hmac.new(secret.encode(), msg, hashlib.sha256).hexdigest()[:32]
+    href = f"{worker_url}/close?i={issue_num}&e={expiry}&t={token}"
+    return (
+        f'<a class="close-btn" href="{esc(href)}" target="_blank" '
+        f'rel="noopener noreferrer">Mark resolved</a>'
+    )
+
+
 def category_glyph(category: str | None) -> str:
     """Inline Lucide icon for the category. Renders as <i data-lucide=…>;
     the design system's lucide.createIcons() swaps it to an SVG on load."""
@@ -496,13 +556,18 @@ def _sort_priority(items: list[dict]) -> list[dict]:
     )
 
 
-def priorities_table(plant_id: str, ledger: dict) -> str:
+def priorities_table(plant_id: str, ledger: dict, report_date: str) -> str:
     open_now = _sort_priority([i for i in ledger.get("still_open", [])
                                if i.get("plant") == plant_id])
     if not open_now:
         return (
             '<p class="empty-state">No open issues. Clean slate.</p>'
         )
+
+    show_actions = bool(
+        os.environ.get("CLOSE_BUTTON_WORKER_URL")
+        and os.environ.get("CLOSE_BUTTON_HMAC_SECRET")
+    )
 
     rows: list[str] = []
     for n_idx, it in enumerate(open_now, 1):
@@ -522,6 +587,10 @@ def priorities_table(plant_id: str, ledger: dict) -> str:
         )
         age = it.get("age_days")
         age_cell = f'{age}d' if age is not None else '—'
+        action_cell = (
+            f'<td class="action-cell">{close_button_html(it["number"], report_date)}</td>'
+            if show_actions else ""
+        )
         rows.append(
             f'<tr>'
             f'<td class="pri-col pri-num">{n_idx}</td>'
@@ -534,9 +603,11 @@ def priorities_table(plant_id: str, ledger: dict) -> str:
             f'<td class="pri-cell">{priority_cell}</td>'
             f'<td class="age-cell">{age_cell}</td>'
             f'<td class="raised-cell">{fmt_first_raised(it)}</td>'
+            f'{action_cell}'
             f'</tr>'
         )
 
+    action_th = '<th class="action-col">Action</th>' if show_actions else ""
     return f"""
 <table class="actions priorities-table">
   <thead>
@@ -547,6 +618,7 @@ def priorities_table(plant_id: str, ledger: dict) -> str:
       <th class="pri-cell">Priority</th>
       <th class="age-col">Age</th>
       <th>First raised</th>
+      {action_th}
     </tr>
   </thead>
   <tbody>{"".join(rows)}</tbody>
@@ -583,7 +655,8 @@ def resolved_list(plant_id: str, ledger: dict) -> str:
 
 
 def plant_sheet(plant: dict, ledger: dict, page_num: int, total: int,
-                long_date: str, open_by_num: dict[int, dict]) -> str:
+                long_date: str, open_by_num: dict[int, dict],
+                report_date: str) -> str:
     p = plant["id"]
     closed_n = sum(1 for i in ledger.get("closed_today", []) if i.get("plant") == p)
     opened_n = sum(1 for i in ledger.get("opened_today", []) if i.get("plant") == p)
@@ -597,7 +670,7 @@ def plant_sheet(plant: dict, ledger: dict, page_num: int, total: int,
         'No activity in the last 24 hours.</p>'
     )
 
-    priorities = priorities_table(p, ledger)
+    priorities = priorities_table(p, ledger, report_date)
     resolved = resolved_list(p, ledger)
     plant_watch = watchlist_block(ledger, p, open_by_num)
     plant_notes_html = floor_notes_block(ledger, p)
@@ -663,7 +736,8 @@ def render(ledger: dict, messages: dict, date: str) -> str:
     cards = "".join(plant_card(p, ledger) for p in PLANTS)
     plant_sheets = "".join(
         plant_sheet(p, ledger, page_num=2 + idx, total=TOTAL_SHEETS,
-                    long_date=long_date, open_by_num=open_by_num)
+                    long_date=long_date, open_by_num=open_by_num,
+                    report_date=date)
         for idx, p in enumerate(PLANTS)
     )
 
