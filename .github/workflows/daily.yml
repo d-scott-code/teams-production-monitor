@@ -44,4 +44,10 @@ jobs:
           GRAPH_CLIENT_ID: ${{ secrets.GRAPH_CLIENT_ID }}
           GRAPH_CLIENT_SECRET: ${{ secrets.GRAPH_CLIENT_SECRET }}
           GRAPH_USER_UPN: ${{ secrets.GRAPH_USER_UPN }}
+          # "Mark resolved" buttons in the report. Both must be set for the
+          # button column to render; missing values just omit the column, so
+          # the report keeps working before the Cloudflare worker is deployed.
+          # See cloudflare/README.md for setup.
+          CLOSE_BUTTON_WORKER_URL: ${{ secrets.CLOSE_BUTTON_WORKER_URL }}
+          CLOSE_BUTTON_HMAC_SECRET: ${{ secrets.CLOSE_BUTTON_HMAC_SECRET }}
         run: python3 scripts/run_daily.py

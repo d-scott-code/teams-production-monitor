@@ -1,0 +1,14 @@
+name = "teams-monitor-close"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+# The repo the worker is allowed to close issues in. Override here if you
+# fork. The worker also accepts the value via env, but baking it into the
+# config keeps the worker URL self-describing.
+[vars]
+GITHUB_REPO = "d-scott-code/teams-production-monitor"
+
+# Required secrets (set via `wrangler secret put`, never committed):
+#   GITHUB_TOKEN   fine-grained PAT, Issues: read & write on this repo only
+#   HMAC_SECRET    random 32+ char string, must match CLOSE_BUTTON_HMAC_SECRET
+#                  in the daily.yml workflow secrets
