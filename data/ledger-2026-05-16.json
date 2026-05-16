@@ -1,0 +1,445 @@
+{
+  "date": "2026-05-16",
+  "headline": {
+    "eyebrow": "Line capacity down",
+    "text": "L3 ML4 running at *half speed* for the window \u2014 main chiller compressor trips every 2 hours, no resolution yet."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran routine production with no major incidents. Curt Willis posted a detailed plan to remove the S2 construction tent over the weekend with multiple cleaning cycles. S2 schedule shifted to run MMK pecan jars until Sunday 03:00, then clean and start BET Pecans Monday morning before the Level 4 allergen clean.",
+    "L2": "L2 completed York depositor installation and testing on ML3 \u2014 Alan Todd purged both chocolate and cream sides successfully, though one programming plate doesn't fit correctly. ML2 ran steady after a film break cleared at 17:55. Grinding found no burnt Graham pieces in three separate inspections.",
+    "L3": "L3 ML4 main chiller compressor tripped repeatedly throughout the window \u2014 every ~2 hours \u2014 forcing Chad Stone to throttle line speed to 12 MPM and shut off depositor #1. Preston Elmer and maintenance kept one compressor running; second motor trips immediately. ML1 metal detector belt drifted north multiple times despite maintenance adjustments. Nathan Ruiz fixed Cavanna jaw alignment with a shim."
+  },
+  "watchlist": [],
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Alan Todd completed York depositor installation and testing on ML3 \u2014 both chocolate and cream sides purged successfully, though one programming plate doesn't fit properly and will need follow-up."
+    },
+    {
+      "plant": "L1",
+      "text": "S2 schedule updated: MMK pecan jars run until Sunday 03:00, then 4-hour clean, then BET Pecans Monday morning before Level 4 allergen clean starts mid-shift on second shift."
+    }
+  ],
+  "closed_today": [
+    {
+      "number": 44,
+      "title": "ML4 gondola losing position - repeated re-zeroing required",
+      "plant": "L3",
+      "priority": null,
+      "category": null,
+      "summary": null,
+      "first_raised": null,
+      "resolution_comment": "Gondola issue resolved at 09:15 MT on 05/15 \u2014 Itzel Chavez: \"Gondola issue got resolved at 9:15am.\""
+    },
+    {
+      "number": 52,
+      "title": "ML1 Cavanna chain teeth falling off \u2014 two incidents in one shift",
+      "plant": "L3",
+      "priority": null,
+      "category": null,
+      "summary": null,
+      "first_raised": null,
+      "resolution_comment": "Nathan Ruiz fixed Cavanna cutting issues at 10:06 MT on 05/15 by adding shim to level the jaws \u2014 \"Had cutting issues causing jams on the Cavanna. Found that the jaws were not level and had to add another shim. The machine is now operational.\""
+    },
+    {
+      "number": 82,
+      "title": "ML1 M230 diverter belt slide not raising",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "M230 diverter belt slide wouldn't raise at 18:52; maintenance fixed within 3 minutes.",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-16T00:52:02.516Z"
+      },
+      "resolution_comment": "Fixed by maintenance at 18:55 MT \u2014 \"Diverter belt slide M230 is fixed\""
+    }
+  ],
+  "opened_today": [
+    {
+      "number": 80,
+      "title": "ML4 main chiller compressor 1 tripping every 2 hours \u2014 line at half capacity",
+      "plant": "L3",
+      "priority": "P1",
+      "category": "Machine",
+      "summary": "Compressor 1 trips every ~2 hours with sparks observed in cabinet; second motor won't run. Chad Stone throttled line to 12 MPM and stopped depositor #1 to manage cooling load. No root cause identified yet.",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-05-15T23:31:05.054Z"
+      }
+    },
+    {
+      "number": 81,
+      "title": "ML4 back-off plow return pump clogging \u2014 bin overfilling",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Back-off plow catch bin filled and pump stopped suctioning chocolate to return pipe at 07:13; Nathan Ruiz cleared and pump working again at 07:27.",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-16T13:13:04.781Z"
+      }
+    },
+    {
+      "number": 82,
+      "title": "ML1 M230 diverter belt slide not raising",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "M230 diverter belt slide wouldn't raise at 18:52; maintenance fixed within 3 minutes.",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-16T00:52:02.516Z"
+      }
+    },
+    {
+      "number": 83,
+      "title": "ML1 Cavanna roller came loose during second shift",
+      "plant": "L3",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Cavanna roller came loose at 21:10; maintenance working on it, status unclear at end of window.",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-16T03:10:49.98Z"
+      }
+    }
+  ],
+  "still_open": [
+    {
+      "number": 20,
+      "title": "Batch 20009 too soft to run on TW - delayed to Monday",
+      "plant": "L1",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 13,
+      "title": "No proper electrical connection for steamer in S3 enrober area",
+      "plant": "L1",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 12,
+      "title": "S3 jar filling conveyor failing allergen test",
+      "plant": "L1",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 11,
+      "title": "Sanitizer sprayers contaminated by drain use",
+      "plant": "L1",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 45,
+      "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
+      "plant": "L1",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
+      "plant": "L1",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "plant": "L1",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 51,
+      "title": "Twist Wrap overfilled caramel trays causing inconsistent cuts and weights",
+      "plant": "L1",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 50,
+      "title": "S2 line shut down for construction contamination in production area",
+      "plant": "L1",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 49,
+      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
+      "plant": "L1",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 48,
+      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "plant": "L1",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 58,
+      "title": "PECO pallet inventory at critical low \u2014 72 available vs 1,620 minimum",
+      "plant": "L1",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 18,
+      "title": "ML2 encoder position causing print issues on sticky film",
+      "plant": "L2",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 17,
+      "title": "ML2 flow wrap tension arm and forming plate fault",
+      "plant": "L2",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 16,
+      "title": "ML2 flow wrap intermittent missing lot codes",
+      "plant": "L2",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 10,
+      "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
+      "plant": "L2",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 9,
+      "title": "Belt issue stopped ML3 for 15 minutes overnight",
+      "plant": "L2",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 8,
+      "title": "Film issues causing line stops on ML3",
+      "plant": "L2",
+      "age_days": 6,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 32,
+      "title": "FFS box printer repeatedly failing - not printing lot code",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 53,
+      "title": "Grinding line found 2 burnt Graham pieces in incoming tote #17",
+      "plant": "L2",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 47,
+      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
+      "plant": "L2",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 73,
+      "title": "ML2 ingredient mixer shortage \u2014 3 of 4 mixers failed",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 80,
+      "title": "ML4 main chiller compressor 1 tripping every 2 hours \u2014 line at half capacity",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P1",
+      "category": "Machine",
+      "summary": "Compressor 1 trips every ~2 hours with sparks observed in cabinet; second motor won't run. Chad Stone throttled line to 12 MPM and stopped depositor #1 to manage cooling load. No root cause identified yet.",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-05-15T23:31:05.054Z"
+      }
+    },
+    {
+      "number": 81,
+      "title": "ML4 back-off plow return pump clogging \u2014 bin overfilling",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Back-off plow catch bin filled and pump stopped suctioning chocolate to return pipe at 07:13; Nathan Ruiz cleared and pump working again at 07:27.",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-16T13:13:04.781Z"
+      }
+    },
+    {
+      "number": 83,
+      "title": "ML1 Cavanna roller came loose during second shift",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "Cavanna roller came loose at 21:10; maintenance working on it, status unclear at end of window.",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-16T03:10:49.98Z"
+      }
+    },
+    {
+      "number": 41,
+      "title": "ML1 mixing water jacket not remaining stable",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 54,
+      "title": "Truffle Line Tunnel 3 cover has new crack \u2014 separate from prior break",
+      "plant": "L3",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 67,
+      "title": "ML4 TG machines handed off in manual mode instead of auto",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 66,
+      "title": "ML4 licking roller blade damaged \u2014 possible metal shavings past cleaning station",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 64,
+      "title": "Truffle Line duplicate chocolate pallet labels \u2014 wrong item numbers",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 60,
+      "title": "ML1 metal detector rejecting all test cards \u2014 electric current present",
+      "plant": "L3",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 79,
+      "title": "ML1 tempering issues overnight \u2014 80+ molds stuck with chocolate",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 77,
+      "title": "ML4 back-off plow return pump left in manual mode causing bin overflow",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 76,
+      "title": "ML4 cardboard found in back-off plow bin blocking chocolate flow",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": null,
+      "category": null
+    }
+  ]
+}
