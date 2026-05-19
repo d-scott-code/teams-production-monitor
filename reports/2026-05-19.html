@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Production briefing — 2026-05-19 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* ---------- Sheet 1 — plant cards (audience grid) ---------- */
+.plant-card {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-top: 4pt solid var(--plant-accent, var(--primary));
+  border-radius: var(--radius);
+  padding: 10pt 12pt;
+  box-shadow: var(--shadow-sm);
+  page-break-inside: avoid;
+}
+.plant-card .head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 5pt; margin-bottom: 6pt;
+}
+.plant-card .title { font-weight: 700; font-size: 10pt; color: var(--fg-1); }
+.plant-card .scale { font-size: 7.5pt; color: var(--fg-3); }
+.plant-card .row {
+  display: flex; justify-content: space-between;
+  padding: 2pt 0; font-size: 8.5pt;
+}
+.plant-card .row .v {
+  font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1);
+}
+
+/* ---------- Per-plant sheet — cover band ---------- */
+.plant-sheet-head {
+  margin: -0.5in -0.5in 14pt -0.5in;
+  padding: 0.5in 0.5in 14pt 0.5in;
+  border-bottom: 1px solid var(--border-default);
+  position: relative;
+}
+.plant-sheet-head::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 8pt;
+  background: var(--plant-accent, var(--primary));
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.plant-sheet-head .head-row {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt; margin-top: 14pt;
+}
+.plant-sheet-head .plant-name {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.plant-sheet-head .plant-id {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+}
+.plant-sheet-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.plant-sheet-head .meta img {
+  height: 22px; width: auto; display: block; margin-left: auto;
+  margin-bottom: 4pt;
+}
+
+/* ---------- Plant narrative ---------- */
+.plant-narrative {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 12pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Priorities table (extends .actions from the design system) ---------- */
+.priorities-table {
+  margin-top: 4pt;
+}
+.priorities-table thead th {
+  font-size: 7.5pt;
+  vertical-align: bottom;
+  padding: 5pt 6pt;
+}
+.priorities-table tbody td {
+  vertical-align: top;
+  padding: 5pt 6pt;
+  font-size: 8.5pt;
+}
+.priorities-table .pri-col { width: 22pt; text-align: center; }
+.priorities-table .pri-num {
+  font-weight: 800; color: var(--fg-1); font-variant-numeric: tabular-nums;
+}
+.priorities-table .issue-cell .title-line {
+  display: block; font-weight: 600; color: var(--fg-1);
+}
+.priorities-table .issue-cell .num {
+  color: var(--fg-3); font-variant-numeric: tabular-nums; margin-right: 4pt;
+}
+.priorities-table .issue-cell .summary {
+  display: block;
+  font-size: 8pt; color: var(--fg-2);
+  line-height: 1.35; margin-top: 2pt;
+  text-wrap: pretty;
+}
+.priorities-table .cat-cell { white-space: nowrap; }
+.priorities-table .cat-cell .cat-icon {
+  display: inline-block; width: 12px; height: 12px;
+  vertical-align: -2px; margin-right: 4pt;
+  color: var(--fg-2);
+}
+.priorities-table .age-col, .priorities-table .age-cell {
+  text-align: right; font-variant-numeric: tabular-nums;
+  white-space: nowrap; color: var(--fg-2);
+}
+.priorities-table .raised-cell {
+  white-space: nowrap; color: var(--fg-2); font-size: 8pt;
+}
+.priorities-table .raised-cell .author { color: var(--fg-1); font-weight: 600; }
+.priorities-table .pri-cell { text-align: center; }
+.priorities-table .action-col, .priorities-table .action-cell {
+  width: 84pt; text-align: right; white-space: nowrap;
+}
+.priorities-table a.close-btn {
+  display: inline-flex; align-items: center; gap: 4pt;
+  padding: 4pt 8pt;
+  font-size: 8pt; font-weight: 600;
+  color: #fff;
+  background: #15803d;
+  border-radius: 4pt;
+  text-decoration: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.priorities-table a.close-btn::before {
+  content: "✓"; font-weight: 700;
+}
+@media print {
+  /* Print copies don't have a tappable surface — hide the buttons and the
+     column entirely so the rest of the table reflows wider. */
+  .priorities-table .action-col, .priorities-table .action-cell { display: none; }
+}
+
+/* ---------- Resolved list ---------- */
+.resolved-list {
+  margin: 8pt 0 12pt 0;
+  padding-left: 14pt;
+  font-size: 8.5pt; line-height: 1.55;
+  list-style: none;
+}
+.resolved-list li {
+  position: relative;
+  padding: 2pt 0 2pt 12pt;
+  color: var(--fg-1);
+}
+.resolved-list li::before {
+  content: "✓";
+  position: absolute; left: -2pt; top: 2pt;
+  color: #15803d; font-weight: 700;
+}
+.resolved-list .num {
+  color: var(--fg-3); font-variant-numeric: tabular-nums; margin-right: 4pt;
+}
+.resolved-list .title { font-weight: 600; color: var(--fg-1); }
+.resolved-list .resolution {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  color: var(--fg-2); font-size: 8pt; margin-top: 1pt;
+}
+
+/* ---------- Floor notes (sheet 1 + plant sheets) ---------- */
+.floor-notes {
+  margin: 10pt 0 14pt 0;
+  padding: 8pt 12pt;
+  background: #FAF9F4;
+  border-left: 3pt solid var(--primary);
+  border-radius: var(--radius-sm);
+  font-size: 8.5pt;
+  page-break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.floor-notes .eyebrow { margin-bottom: 4pt; }
+.floor-notes ul { margin: 0; padding-left: 14pt; }
+.floor-notes li { padding: 1pt 0; color: var(--fg-1); }
+.floor-notes li .plant-tag {
+  font-weight: 700; color: var(--fg-2); margin-right: 4pt;
+}
+
+/* ---------- Watchlist ---------- */
+.watchlist-strip {
+  margin: 8pt 0 12pt 0;
+  padding: 8pt 12pt;
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  font-size: 8.5pt; color: var(--fg-1);
+  page-break-inside: avoid;
+}
+.watchlist-strip .eyebrow { margin-bottom: 4pt; }
+.watchlist-strip ul { margin: 0; padding-left: 14pt; }
+.watchlist-strip li { padding: 1pt 0; color: var(--fg-1); }
+.watchlist-strip li .num {
+  color: var(--fg-3); font-variant-numeric: tabular-nums;
+  font-weight: 600; margin-right: 4pt;
+}
+
+/* ---------- Empty state for sections with no content ---------- */
+.empty-state {
+  padding: 8pt 0;
+  color: var(--fg-3); font-style: italic; font-size: 9pt;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<!-- ========== SHEET 1 — ORG-WIDE BRIEFING SUMMARY ========== -->
+<section class="sheet">
+  <div class="cover-head">
+    <div class="brand">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+    </div>
+    <div class="doc-meta">
+      <div class="eyebrow" style="font-size: 7pt;">Production briefing</div>
+      <div>May 19, 2026 &nbsp;·&nbsp; 08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <h1>Production briefing</h1>
+  <p class="lead">Last 24 hours across Lindon 1 — Caramel, Lindon 2 — Eco Moulding, Lindon 3 — Chocolate. Distribution: Operations, FSQA, plant leadership.</p>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">May 18 10:31 MT → May 19 10:31 MT</div></div>
+    <div class="item"><div class="eyebrow">Messages</div><div class="v">558 across 16 chats</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Issues touched</div><div class="v">6 today</div></div>
+  </div>
+
+  <h2>Executive summary</h2>
+
+  <div class="hero">
+    <div class="eyebrow">Line at half capacity</div>
+    <p class="headline">ML4 chiller compressor tripped <span class="accent">5+ times</span> in 24 hours — line stuck at 20 MPM, vendor support requested.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">0</div><div class="sub">Closed in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Newly raised</div><div class="num">6</div><div class="sub">New issues opened today</div></div>
+    <div class="stat"><div class="eyebrow">Still open</div><div class="num">46</div><div class="sub">Across L1, L2, L3</div></div>
+    <div class="stat"><div class="eyebrow">Oldest open</div><div class="num">10d</div><div class="sub">Longest-running issue</div></div>
+  </div>
+
+  <h3 class="section-label">By plant</h3>
+  <div class="audience-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="plant-card" style="--plant-accent: #FFCA3A;">  <div class="head"><div class="title">Lindon 1 — Caramel</div>    <div class="scale">L1</div></div>  <div class="row"><span>Resolved</span><span class="v">0</span></div>  <div class="row"><span>Newly raised</span><span class="v">2</span></div>  <div class="row"><span>Still open</span><span class="v">13</span></div>  <div class="row"><span>Oldest open</span><span class="v">10d</span></div></div><div class="plant-card" style="--plant-accent: #23CE6B;">  <div class="head"><div class="title">Lindon 2 — Eco Moulding</div>    <div class="scale">L2</div></div>  <div class="row"><span>Resolved</span><span class="v">0</span></div>  <div class="row"><span>Newly raised</span><span class="v">3</span></div>  <div class="row"><span>Still open</span><span class="v">15</span></div>  <div class="row"><span>Oldest open</span><span class="v">10d</span></div></div><div class="plant-card" style="--plant-accent: #1982C4;">  <div class="head"><div class="title">Lindon 3 — Chocolate</div>    <div class="scale">L3</div></div>  <div class="row"><span>Resolved</span><span class="v">0</span></div>  <div class="row"><span>Newly raised</span><span class="v">1</span></div>  <div class="row"><span>Still open</span><span class="v">18</span></div>  <div class="row"><span>Oldest open</span><span class="v">8d</span></div></div>
+  </div>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li><span class="plant-tag">L1</span>S2 finished the jar run with 26 boxes of caramel leftover; leftover 10200 chocolate (37% melting tank, 25% decorator buffer) will be transferred to S3 and mixed with 10226 for the next pretzel thins run per Candon&#x27;s approval.</li><li><span class="plant-tag">L2</span>ML3 replaced sweco screen at first shift startup after discovering holes; new screen ATP passed at 11:02.</li></ul></div>
+  <div class="watchlist-strip"><div class="eyebrow">Watchlist</div><ul><li><a class="archive-link num" href="https://github.com/d-scott-code/teams-production-monitor/issues/73">#73</a><span>ML2 ingredient mixer shortage (3 of 4 failed) — no update in window but impacts line capacity if mixers fail again</span></li><li><a class="archive-link num" href="https://github.com/d-scott-code/teams-production-monitor/issues/51">#51</a><span>Twist Wrap overfilled trays causing weight issues — 8 days open, kitchen operator re-trained but no confirmation of sustained fix</span></li></ul></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 14pt;">
+    Issue ledger:
+    <a class="archive-link" href="https://github.com/d-scott-code/teams-production-monitor/issues?q=is%3Aopen+label%3Aplant%3AL1%2Cplant%3AL2%2Cplant%3AL3">open issues on GitHub</a> ·
+    <a class="archive-link" href="../index.html">archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">Production briefing · 2026-05-19</span>
+    <span class="page-no">Page 1 of 4</span>
+  </div>
+</section>
+
+
+<!-- ========== SHEET 2 — Lindon 1 — Caramel ========== -->
+<section class="sheet" style="--plant-accent: #FFCA3A;">
+  <div class="plant-sheet-head">
+    <div class="head-row">
+      <div>
+        <h1 class="plant-name">Lindon 1 — Caramel</h1>
+        <div class="plant-id">L1 · Production briefing</div>
+      </div>
+      <div class="meta">
+        <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+        <div>May 19, 2026</div>
+        <div>08:00 America/Denver</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">S3 ran all shift with a Matrix 3 printer clog at 10:19 driving scrap to 127 bags by 10:00. S2 finished the jar run with 26 boxes leftover and a leaking depositor nozzle. ML1 completed the rice crispy bar run after multiple tempering issues overnight, then started changeover cleaning. PECO pallet count remains tight at 48 for S3.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">0</div><div class="sub">Closed in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Newly raised</div><div class="num">2</div><div class="sub">New issues opened today</div></div>
+    <div class="stat"><div class="eyebrow">Still open</div><div class="num">13</div><div class="sub">Items on the floor</div></div>
+    <div class="stat"><div class="eyebrow">Oldest open</div><div class="num">10d</div><div class="sub">Longest-running issue</div></div>
+  </div>
+
+  <h3 class="section-label">Today's priorities</h3>
+  
+<table class="actions priorities-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th class="age-col">Age</th>
+      <th>First raised</th>
+      
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line"><span class="num">#91</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/91">S2 caramel depositor nozzle leaking</a></span><span class="summary">One nozzle on the caramel depositor is leaking; needs repair before next run.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="age-cell">0d</td><td class="raised-cell"><span class="author">Joseph Scott</span><br><span>06:17 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line"><span class="num">#92</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/92">S3 Matrix 3 printer clogged — 127 bags scrap by 10:00</a></span><span class="summary">Matrix 3 printer clogged at 10:19 and had to be cleaned, driving scrap to 127 bags by 10:00 vs. normal run rates.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="age-cell">0d</td><td class="raised-cell"><span class="author">S3 Pack</span><br><span>10:19 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line"><span class="num">#20</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/20">Batch 20009 too soft to run on TW - delayed to Monday</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line"><span class="num">#13</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/13">No proper electrical connection for steamer in S3 enrober area</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line"><span class="num">#12</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/12">S3 jar filling conveyor failing allergen test</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line"><span class="num">#11</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/11">Sanitizer sprayers contaminated by drain use</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line"><span class="num">#31</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/31">S3 unable to hit 85 piece count target in pouches</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line"><span class="num">#30</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/30">S3 red brush bristles fell into Matrix 3 during clean and rezero</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line"><span class="num">#51</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/51">Twist Wrap overfilled caramel trays causing inconsistent cuts and weights</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">10</td><td class="issue-cell"><span class="title-line"><span class="num">#49</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/49">S3 chocolate 10257 running out tomorrow — requesting switch to 10227</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">11</td><td class="issue-cell"><span class="title-line"><span class="num">#48</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/48">Twist Wrap cutter gear broken — last spare used for replacement</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">12</td><td class="issue-cell"><span class="title-line"><span class="num">#45</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/45">S2 metal piece found in jar - X-ray detected, metal detector did not</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">13</td><td class="issue-cell"><span class="title-line"><span class="num">#58</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/58">PECO pallet inventory at critical low — 72 available vs 1,620 minimum</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">5d</td><td class="raised-cell"><span>5d ago</span></td></tr></tbody>
+</table>
+
+  
+  <div class="watchlist-strip"><div class="eyebrow">Watchlist</div><ul><li><a class="archive-link num" href="https://github.com/d-scott-code/teams-production-monitor/issues/51">#51</a><span>Twist Wrap overfilled trays causing weight issues — 8 days open, kitchen operator re-trained but no confirmation of sustained fix</span></li></ul></div>
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>S2 finished the jar run with 26 boxes of caramel leftover; leftover 10200 chocolate (37% melting tank, 25% decorator buffer) will be transferred to S3 and mixed with 10226 for the next pretzel thins run per Candon&#x27;s approval.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 1 — Caramel · Production briefing · 2026-05-19</span>
+    <span class="page-no">Page 2 of 4</span>
+  </div>
+</section>
+<!-- ========== SHEET 3 — Lindon 2 — Eco Moulding ========== -->
+<section class="sheet" style="--plant-accent: #23CE6B;">
+  <div class="plant-sheet-head">
+    <div class="head-row">
+      <div>
+        <h1 class="plant-name">Lindon 2 — Eco Moulding</h1>
+        <div class="plant-id">L2 · Production briefing</div>
+      </div>
+      <div class="meta">
+        <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+        <div>May 19, 2026</div>
+        <div>08:00 America/Denver</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">ML2 PTL pump stopped at 00:26, was cleaned and reinstalled twice (first time improperly causing a leak), then seized again at 09:52 with buffer at 67%. ML3 found a broken depositor auger blade at 22:53 that allowed water to drip onto the sweco; tank drained as precaution, no foreign material found, line restarted at 05:30. Last pallet of cookies delivered; ML2 will likely go short on current order.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">0</div><div class="sub">Closed in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Newly raised</div><div class="num">3</div><div class="sub">New issues opened today</div></div>
+    <div class="stat"><div class="eyebrow">Still open</div><div class="num">15</div><div class="sub">Items on the floor</div></div>
+    <div class="stat"><div class="eyebrow">Oldest open</div><div class="num">10d</div><div class="sub">Longest-running issue</div></div>
+  </div>
+
+  <h3 class="section-label">Today's priorities</h3>
+  
+<table class="actions priorities-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th class="age-col">Age</th>
+      <th>First raised</th>
+      
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line"><span class="num">#88</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/88">ML2 PTL pump failed twice in 8 hours — seized after reinstall</a></span><span class="summary">PTL pump stopped at 00:26, was cleaned and reinstalled improperly (leaked), reinstalled correctly, then seized again at 09:52 — buffer now at 67% and falling.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="age-cell">0d</td><td class="raised-cell"><span class="author">ML2 Depositor</span><br><span>00:26 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line"><span class="num">#89</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/89">ML3 depositor auger blade broke — water contamination risk</a></span><span class="summary">Depositor auger blade broke at 22:53 with water dripping onto sweco; tank drained as precaution, no foreign material found, blade replaced, line restarted at 05:30.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="age-cell">0d</td><td class="raised-cell"><span class="author">Molding Line 3 Pack</span><br><span>22:53 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line"><span class="num">#90</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/90">ML2 running short on cookies — 1,050 lbs left, need 1,180 cases</a></span><span class="summary">Last pallet of cookies delivered; only 1,050 lbs left but need material for 1,180 cases — line will go short on current order.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="age-cell">0d</td><td class="raised-cell"><span class="author">Maria Moron Quintero</span><br><span>08:59 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line"><span class="num">#18</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/18">ML2 encoder position causing print issues on sticky film</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line"><span class="num">#17</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/17">ML2 flow wrap tension arm and forming plate fault</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line"><span class="num">#16</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/16">ML2 flow wrap intermittent missing lot codes</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line"><span class="num">#10</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/10">Main vacuum for ML3 flow wrap faulting - motor stuck</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line"><span class="num">#9</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/9">Belt issue stopped ML3 for 15 minutes overnight</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line"><span class="num">#8</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/8">Film issues causing line stops on ML3</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">10d</td><td class="raised-cell"><span>10d ago</span></td></tr><tr><td class="pri-col pri-num">10</td><td class="issue-cell"><span class="title-line"><span class="num">#33</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/33">FFS checkweigher blowing all pouches off line - multiple faults</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">11</td><td class="issue-cell"><span class="title-line"><span class="num">#32</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/32">FFS box printer repeatedly failing - not printing lot code</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">12</td><td class="issue-cell"><span class="title-line"><span class="num">#53</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/53">Grinding line found 2 burnt Graham pieces in incoming tote #17</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">13</td><td class="issue-cell"><span class="title-line"><span class="num">#47</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/47">ML3 dancing arm bolt broken — extracting and replacing</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">14</td><td class="issue-cell"><span class="title-line"><span class="num">#73</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/73">ML2 ingredient mixer shortage — 3 of 4 mixers failed</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">4d</td><td class="raised-cell"><span>4d ago</span></td></tr><tr><td class="pri-col pri-num">15</td><td class="issue-cell"><span class="title-line"><span class="num">#86</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/86">ML3 socks down — minimal detail provided</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">2d</td><td class="raised-cell"><span>2d ago</span></td></tr></tbody>
+</table>
+
+  
+  <div class="watchlist-strip"><div class="eyebrow">Watchlist</div><ul><li><a class="archive-link num" href="https://github.com/d-scott-code/teams-production-monitor/issues/73">#73</a><span>ML2 ingredient mixer shortage (3 of 4 failed) — no update in window but impacts line capacity if mixers fail again</span></li></ul></div>
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>ML3 replaced sweco screen at first shift startup after discovering holes; new screen ATP passed at 11:02.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 2 — Eco Moulding · Production briefing · 2026-05-19</span>
+    <span class="page-no">Page 3 of 4</span>
+  </div>
+</section>
+<!-- ========== SHEET 4 — Lindon 3 — Chocolate ========== -->
+<section class="sheet" style="--plant-accent: #1982C4;">
+  <div class="plant-sheet-head">
+    <div class="head-row">
+      <div>
+        <h1 class="plant-name">Lindon 3 — Chocolate</h1>
+        <div class="plant-id">L3 · Production briefing</div>
+      </div>
+      <div class="meta">
+        <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+        <div>May 19, 2026</div>
+        <div>08:00 America/Denver</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">ML4 main chiller compressor 1 tripped 5+ times across all three shifts; line remains at 20 MPM with depositor #1 shut off to reduce cooling demand. Matt Hatch contacted Weisshaar for vendor support. TG3 down 2 hours overnight for film ripping, back up at 04:17 after switching film twice and a CIL.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">0</div><div class="sub">Closed in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Newly raised</div><div class="num">1</div><div class="sub">New issues opened today</div></div>
+    <div class="stat"><div class="eyebrow">Still open</div><div class="num">18</div><div class="sub">Items on the floor</div></div>
+    <div class="stat"><div class="eyebrow">Oldest open</div><div class="num">8d</div><div class="sub">Longest-running issue</div></div>
+  </div>
+
+  <h3 class="section-label">Today's priorities</h3>
+  
+<table class="actions priorities-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th class="age-col">Age</th>
+      <th>First raised</th>
+      
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line"><span class="num">#93</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/93">MF Matrix label typo — &#x27;sea salk&#x27; instead of &#x27;sea salt&#x27;</a></span><span class="summary">Packaging label shows &quot;sea salk&quot; instead of &quot;sea salt&quot; — IMS reports they cannot modify; needs escalation to correct labeling.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="age-cell">0d</td><td class="raised-cell"><span class="author">David Zuniaga</span><br><span>10:05 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line"><span class="num">#36</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/36">Truffle Line broken conveyor cover found during chocolate removal</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line"><span class="num">#29</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/29">Truffle Line separator table making constant noise</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line"><span class="num">#27</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/27">ML1 metal detector belt repeatedly shifting - multiple stoppages</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line"><span class="num">#26</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/26">ML1 hopper heat left off during shutdown - chocolate hardened</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line"><span class="num">#25</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/25">ML4 multiple mold jams during recirculation; Swecos installed upside down</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">8d</td><td class="raised-cell"><span>8d ago</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line"><span class="num">#54</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/54">Truffle Line Tunnel 3 cover has new crack — separate from prior break</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line"><span class="num">#41</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/41">ML1 mixing water jacket not remaining stable</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">7d</td><td class="raised-cell"><span>7d ago</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line"><span class="num">#67</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/67">ML4 TG machines handed off in manual mode instead of auto</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">5d</td><td class="raised-cell"><span>5d ago</span></td></tr><tr><td class="pri-col pri-num">10</td><td class="issue-cell"><span class="title-line"><span class="num">#66</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/66">ML4 licking roller blade damaged — possible metal shavings past cleaning station</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">5d</td><td class="raised-cell"><span>5d ago</span></td></tr><tr><td class="pri-col pri-num">11</td><td class="issue-cell"><span class="title-line"><span class="num">#64</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/64">Truffle Line duplicate chocolate pallet labels — wrong item numbers</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">5d</td><td class="raised-cell"><span>5d ago</span></td></tr><tr><td class="pri-col pri-num">12</td><td class="issue-cell"><span class="title-line"><span class="num">#60</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/60">ML1 metal detector rejecting all test cards — electric current present</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">5d</td><td class="raised-cell"><span>5d ago</span></td></tr><tr><td class="pri-col pri-num">13</td><td class="issue-cell"><span class="title-line"><span class="num">#79</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/79">ML1 tempering issues overnight — 80+ molds stuck with chocolate</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">4d</td><td class="raised-cell"><span>4d ago</span></td></tr><tr><td class="pri-col pri-num">14</td><td class="issue-cell"><span class="title-line"><span class="num">#77</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/77">ML4 back-off plow return pump left in manual mode causing bin overflow</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">4d</td><td class="raised-cell"><span>4d ago</span></td></tr><tr><td class="pri-col pri-num">15</td><td class="issue-cell"><span class="title-line"><span class="num">#76</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/76">ML4 cardboard found in back-off plow bin blocking chocolate flow</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">4d</td><td class="raised-cell"><span>4d ago</span></td></tr><tr><td class="pri-col pri-num">16</td><td class="issue-cell"><span class="title-line"><span class="num">#83</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/83">ML1 Cavanna roller came loose during second shift</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">3d</td><td class="raised-cell"><span>3d ago</span></td></tr><tr><td class="pri-col pri-num">17</td><td class="issue-cell"><span class="title-line"><span class="num">#81</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/81">ML4 back-off plow return pump clogging — bin overfilling</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">3d</td><td class="raised-cell"><span>3d ago</span></td></tr><tr><td class="pri-col pri-num">18</td><td class="issue-cell"><span class="title-line"><span class="num">#80</span><a href="https://github.com/d-scott-code/teams-production-monitor/issues/80">ML4 main chiller compressor 1 tripping every 2 hours — line at half capacity</a></span></td><td class="cat-cell"><span style="color: var(--fg-3);">—</span></td><td class="pri-cell"><span class="cap neutral">—</span></td><td class="age-cell">3d</td><td class="raised-cell"><span>3d ago</span></td></tr></tbody>
+</table>
+
+  
+  
+  
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 3 — Chocolate · Production briefing · 2026-05-19</span>
+    <span class="page-no">Page 4 of 4</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

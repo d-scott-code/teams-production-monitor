@@ -1,0 +1,507 @@
+{
+  "date": "2026-05-19",
+  "headline": {
+    "eyebrow": "Line at half capacity",
+    "text": "ML4 chiller compressor tripped *5+ times* in 24 hours \u2014 line stuck at 20 MPM, vendor support requested."
+  },
+  "per_plant_summary": {
+    "L1": "S3 ran all shift with a Matrix 3 printer clog at 10:19 driving scrap to 127 bags by 10:00. S2 finished the jar run with 26 boxes leftover and a leaking depositor nozzle. ML1 completed the rice crispy bar run after multiple tempering issues overnight, then started changeover cleaning. PECO pallet count remains tight at 48 for S3.",
+    "L2": "ML2 PTL pump stopped at 00:26, was cleaned and reinstalled twice (first time improperly causing a leak), then seized again at 09:52 with buffer at 67%. ML3 found a broken depositor auger blade at 22:53 that allowed water to drip onto the sweco; tank drained as precaution, no foreign material found, line restarted at 05:30. Last pallet of cookies delivered; ML2 will likely go short on current order.",
+    "L3": "ML4 main chiller compressor 1 tripped 5+ times across all three shifts; line remains at 20 MPM with depositor #1 shut off to reduce cooling demand. Matt Hatch contacted Weisshaar for vendor support. TG3 down 2 hours overnight for film ripping, back up at 04:17 after switching film twice and a CIL."
+  },
+  "watchlist": [
+    {
+      "issue_number": 73,
+      "reason": "ML2 ingredient mixer shortage (3 of 4 failed) \u2014 no update in window but impacts line capacity if mixers fail again"
+    },
+    {
+      "issue_number": 51,
+      "reason": "Twist Wrap overfilled trays causing weight issues \u2014 8 days open, kitchen operator re-trained but no confirmation of sustained fix"
+    }
+  ],
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S2 finished the jar run with 26 boxes of caramel leftover; leftover 10200 chocolate (37% melting tank, 25% decorator buffer) will be transferred to S3 and mixed with 10226 for the next pretzel thins run per Candon's approval."
+    },
+    {
+      "plant": "L2",
+      "text": "ML3 replaced sweco screen at first shift startup after discovering holes; new screen ATP passed at 11:02."
+    }
+  ],
+  "closed_today": [],
+  "opened_today": [
+    {
+      "number": 88,
+      "title": "ML2 PTL pump failed twice in 8 hours \u2014 seized after reinstall",
+      "plant": "L2",
+      "priority": "P1",
+      "category": "Machine",
+      "summary": "PTL pump stopped at 00:26, was cleaned and reinstalled improperly (leaked), reinstalled correctly, then seized again at 09:52 \u2014 buffer now at 67% and falling.",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-05-19T06:26:41.483Z"
+      }
+    },
+    {
+      "number": 89,
+      "title": "ML3 depositor auger blade broke \u2014 water contamination risk",
+      "plant": "L2",
+      "priority": "P1",
+      "category": "Quality",
+      "summary": "Depositor auger blade broke at 22:53 with water dripping onto sweco; tank drained as precaution, no foreign material found, blade replaced, line restarted at 05:30.",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-05-19T04:53:30.234Z"
+      }
+    },
+    {
+      "number": 90,
+      "title": "ML2 running short on cookies \u2014 1,050 lbs left, need 1,180 cases",
+      "plant": "L2",
+      "priority": "P2",
+      "category": "Materials",
+      "summary": "Last pallet of cookies delivered; only 1,050 lbs left but need material for 1,180 cases \u2014 line will go short on current order.",
+      "first_raised": {
+        "author": "Maria Moron Quintero",
+        "time_utc": "2026-05-19T14:59:39.663Z"
+      }
+    },
+    {
+      "number": 91,
+      "title": "S2 caramel depositor nozzle leaking",
+      "plant": "L1",
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "One nozzle on the caramel depositor is leaking; needs repair before next run.",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-05-19T12:17:52.186Z"
+      }
+    },
+    {
+      "number": 92,
+      "title": "S3 Matrix 3 printer clogged \u2014 127 bags scrap by 10:00",
+      "plant": "L1",
+      "priority": "P3",
+      "category": "Machine",
+      "summary": "Matrix 3 printer clogged at 10:19 and had to be cleaned, driving scrap to 127 bags by 10:00 vs. normal run rates.",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-05-19T16:19:39.867Z"
+      }
+    },
+    {
+      "number": 93,
+      "title": "MF Matrix label typo \u2014 'sea salk' instead of 'sea salt'",
+      "plant": "L3",
+      "priority": "P3",
+      "category": "Quality",
+      "summary": "Packaging label shows \"sea salk\" instead of \"sea salt\" \u2014 IMS reports they cannot modify; needs escalation to correct labeling.",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-05-19T16:05:59.218Z"
+      }
+    }
+  ],
+  "still_open": [
+    {
+      "number": 91,
+      "title": "S2 caramel depositor nozzle leaking",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Machine",
+      "summary": "One nozzle on the caramel depositor is leaking; needs repair before next run.",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-05-19T12:17:52.186Z"
+      }
+    },
+    {
+      "number": 92,
+      "title": "S3 Matrix 3 printer clogged \u2014 127 bags scrap by 10:00",
+      "plant": "L1",
+      "age_days": 0,
+      "priority": "P3",
+      "category": "Machine",
+      "summary": "Matrix 3 printer clogged at 10:19 and had to be cleaned, driving scrap to 127 bags by 10:00 vs. normal run rates.",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-05-19T16:19:39.867Z"
+      }
+    },
+    {
+      "number": 20,
+      "title": "Batch 20009 too soft to run on TW - delayed to Monday",
+      "plant": "L1",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 13,
+      "title": "No proper electrical connection for steamer in S3 enrober area",
+      "plant": "L1",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 12,
+      "title": "S3 jar filling conveyor failing allergen test",
+      "plant": "L1",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 11,
+      "title": "Sanitizer sprayers contaminated by drain use",
+      "plant": "L1",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 31,
+      "title": "S3 unable to hit 85 piece count target in pouches",
+      "plant": "L1",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 30,
+      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
+      "plant": "L1",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 51,
+      "title": "Twist Wrap overfilled caramel trays causing inconsistent cuts and weights",
+      "plant": "L1",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 49,
+      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
+      "plant": "L1",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 48,
+      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
+      "plant": "L1",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 45,
+      "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
+      "plant": "L1",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 58,
+      "title": "PECO pallet inventory at critical low \u2014 72 available vs 1,620 minimum",
+      "plant": "L1",
+      "age_days": 5,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 88,
+      "title": "ML2 PTL pump failed twice in 8 hours \u2014 seized after reinstall",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": "P1",
+      "category": "Machine",
+      "summary": "PTL pump stopped at 00:26, was cleaned and reinstalled improperly (leaked), reinstalled correctly, then seized again at 09:52 \u2014 buffer now at 67% and falling.",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-05-19T06:26:41.483Z"
+      }
+    },
+    {
+      "number": 89,
+      "title": "ML3 depositor auger blade broke \u2014 water contamination risk",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": "P1",
+      "category": "Quality",
+      "summary": "Depositor auger blade broke at 22:53 with water dripping onto sweco; tank drained as precaution, no foreign material found, blade replaced, line restarted at 05:30.",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-05-19T04:53:30.234Z"
+      }
+    },
+    {
+      "number": 90,
+      "title": "ML2 running short on cookies \u2014 1,050 lbs left, need 1,180 cases",
+      "plant": "L2",
+      "age_days": 0,
+      "priority": "P2",
+      "category": "Materials",
+      "summary": "Last pallet of cookies delivered; only 1,050 lbs left but need material for 1,180 cases \u2014 line will go short on current order.",
+      "first_raised": {
+        "author": "Maria Moron Quintero",
+        "time_utc": "2026-05-19T14:59:39.663Z"
+      }
+    },
+    {
+      "number": 18,
+      "title": "ML2 encoder position causing print issues on sticky film",
+      "plant": "L2",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 17,
+      "title": "ML2 flow wrap tension arm and forming plate fault",
+      "plant": "L2",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 16,
+      "title": "ML2 flow wrap intermittent missing lot codes",
+      "plant": "L2",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 10,
+      "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
+      "plant": "L2",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 9,
+      "title": "Belt issue stopped ML3 for 15 minutes overnight",
+      "plant": "L2",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 8,
+      "title": "Film issues causing line stops on ML3",
+      "plant": "L2",
+      "age_days": 10,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 33,
+      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
+      "plant": "L2",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 32,
+      "title": "FFS box printer repeatedly failing - not printing lot code",
+      "plant": "L2",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 53,
+      "title": "Grinding line found 2 burnt Graham pieces in incoming tote #17",
+      "plant": "L2",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 47,
+      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
+      "plant": "L2",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 73,
+      "title": "ML2 ingredient mixer shortage \u2014 3 of 4 mixers failed",
+      "plant": "L2",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 86,
+      "title": "ML3 socks down \u2014 minimal detail provided",
+      "plant": "L2",
+      "age_days": 2,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 93,
+      "title": "MF Matrix label typo \u2014 'sea salk' instead of 'sea salt'",
+      "plant": "L3",
+      "age_days": 0,
+      "priority": "P3",
+      "category": "Quality",
+      "summary": "Packaging label shows \"sea salk\" instead of \"sea salt\" \u2014 IMS reports they cannot modify; needs escalation to correct labeling.",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-05-19T16:05:59.218Z"
+      }
+    },
+    {
+      "number": 36,
+      "title": "Truffle Line broken conveyor cover found during chocolate removal",
+      "plant": "L3",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 29,
+      "title": "Truffle Line separator table making constant noise",
+      "plant": "L3",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 27,
+      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
+      "plant": "L3",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 26,
+      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
+      "plant": "L3",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 25,
+      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
+      "plant": "L3",
+      "age_days": 8,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 54,
+      "title": "Truffle Line Tunnel 3 cover has new crack \u2014 separate from prior break",
+      "plant": "L3",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 41,
+      "title": "ML1 mixing water jacket not remaining stable",
+      "plant": "L3",
+      "age_days": 7,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 67,
+      "title": "ML4 TG machines handed off in manual mode instead of auto",
+      "plant": "L3",
+      "age_days": 5,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 66,
+      "title": "ML4 licking roller blade damaged \u2014 possible metal shavings past cleaning station",
+      "plant": "L3",
+      "age_days": 5,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 64,
+      "title": "Truffle Line duplicate chocolate pallet labels \u2014 wrong item numbers",
+      "plant": "L3",
+      "age_days": 5,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 60,
+      "title": "ML1 metal detector rejecting all test cards \u2014 electric current present",
+      "plant": "L3",
+      "age_days": 5,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 79,
+      "title": "ML1 tempering issues overnight \u2014 80+ molds stuck with chocolate",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 77,
+      "title": "ML4 back-off plow return pump left in manual mode causing bin overflow",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 76,
+      "title": "ML4 cardboard found in back-off plow bin blocking chocolate flow",
+      "plant": "L3",
+      "age_days": 4,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 83,
+      "title": "ML1 Cavanna roller came loose during second shift",
+      "plant": "L3",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 81,
+      "title": "ML4 back-off plow return pump clogging \u2014 bin overfilling",
+      "plant": "L3",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    },
+    {
+      "number": 80,
+      "title": "ML4 main chiller compressor 1 tripping every 2 hours \u2014 line at half capacity",
+      "plant": "L3",
+      "age_days": 3,
+      "priority": null,
+      "category": null
+    }
+  ]
+}
