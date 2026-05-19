@@ -7,22 +7,26 @@ Daily automated reports of Microsoft Teams activity for CandyCo's three Lindon p
 Every morning at 14:00 UTC (08:00 MDT / 07:00 MST), a GitHub Actions
 workflow runs `scripts/run_daily.py`: it pulls the last 24 hours of
 messages from every Teams chat whose topic contains `L1`, `L2`, or `L3`,
-makes one Anthropic API call to reconcile them against the open issue
-ledger (GitHub Issues in this repo), applies the resulting plan, renders
-an HTML briefing, and commits everything to `main`. GitHub Pages serves
-the archive so any browser can read it — no login required.
+makes one Anthropic API call to classify the activity, renders an HTML
+briefing, and commits everything to `main`. GitHub Pages serves the
+archive so any browser can read it — no login required.
+
+Each report is **window-only**: it reflects what happened in the last 24
+hours and nothing else. There is no cumulative tracking, no carry-over,
+no aging issue queue. If a problem from earlier in the week is still
+live, the floor will mention it again today and it'll show up. If
+they don't, it won't. Trends are something to extract from the report
+archive, not bake into the report.
 
 ## What each report covers
 
 Per plant (L1, L2, L3):
 
-- **What went well** — issues resolved in the last 24 hours
-- **What didn't** — new issues raised in the last 24 hours
-- **Today's priorities** — every still-open issue, oldest first
+- **Needs attention** — problems raised in the last 24h that didn't clear
+- **Resolved in the last 24 hours** — problems raised AND cleared in the window
 
-The issue ledger lives as GitHub Issues in this repo, labeled `plant:L1`,
-`plant:L2`, or `plant:L3`. Raw message dumps land in [`data/`](data/) — the
-source of truth for weekly/monthly/quarterly roll-ups.
+Raw message dumps land in [`data/`](data/) — the source of truth if you
+want to build weekly/monthly/quarterly roll-ups with a separate tool.
 
 ## Repo layout
 
@@ -30,7 +34,7 @@ source of truth for weekly/monthly/quarterly roll-ups.
 - `reports/<YYYY-MM-DD>.html` — one briefing per day
 - `reports/manifest.json` — list of dates, rebuilt by `scripts/update_manifest.py`
 - `data/messages-<YYYY-MM-DD>.json` — raw Teams dump for the day
-- `data/ledger-<YYYY-MM-DD>.json` — closed/opened/still-open snapshot
+- `data/ledger-<YYYY-MM-DD>.json` — classified resolved + needs_attention for the day
 - `scripts/fetch_teams_messages.py` — Graph API client (called by orchestrator)
 - `scripts/run_daily.py` — the orchestrator the workflow invokes
 - `scripts/render_report.py` — HTML report generator
@@ -90,8 +94,7 @@ and add:
 | `GRAPH_USER_UPN` | Your email (the account that's in every L1/L2/L3 chat) |
 
 `GITHUB_TOKEN` is auto-provided by Actions — no need to add. The workflow
-declares `contents: write` and `issues: write` so the orchestrator can
-commit reports and write to the issue ledger.
+declares `contents: write` so the orchestrator can commit reports.
 
 ### 5. Done
 
@@ -104,19 +107,17 @@ Teams Production Monitor** → **Run workflow**.
 - **Latest:** https://d-scott-code.github.io/teams-production-monitor/ auto-links to today.
 - **Specific day:** `https://d-scott-code.github.io/teams-production-monitor/reports/YYYY-MM-DD.html`
 - **Archive:** the homepage lists every past report, newest first.
-- **Open issues:** https://github.com/d-scott-code/teams-production-monitor/issues?q=is%3Aopen+label%3Aplant%3AL1%2Cplant%3AL2%2Cplant%3AL3
 
 ## Running it manually
 
 **From GitHub:** Actions tab → **Daily Teams Production Monitor** → **Run
 workflow**. Same path the cron uses.
 
-**From a shell** (full pipeline, with all six secrets exported):
+**From a shell** (full pipeline, with the five secrets exported):
 
 ```bash
 pip install requests anthropic
 export ANTHROPIC_API_KEY=...
-export GITHUB_TOKEN=...   # PAT with repo + issues scope
 export GRAPH_TENANT_ID=...
 export GRAPH_CLIENT_ID=...
 export GRAPH_CLIENT_SECRET=...
