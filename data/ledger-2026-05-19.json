@@ -1,507 +1,342 @@
 {
   "date": "2026-05-19",
   "headline": {
-    "eyebrow": "Line at half capacity",
-    "text": "ML4 chiller compressor tripped *5+ times* in 24 hours \u2014 line stuck at 20 MPM, vendor support requested."
+    "eyebrow": "PTL pump down",
+    "text": "L2 ML2 PTL pump seized twice in the window \u2014 cleared by 11:18 but compounding reliability risk, while L3 ML1 needs *immediate drain* for foreign metal in buffer tank."
   },
   "per_plant_summary": {
-    "L1": "S3 ran all shift with a Matrix 3 printer clog at 10:19 driving scrap to 127 bags by 10:00. S2 finished the jar run with 26 boxes leftover and a leaking depositor nozzle. ML1 completed the rice crispy bar run after multiple tempering issues overnight, then started changeover cleaning. PECO pallet count remains tight at 48 for S3.",
-    "L2": "ML2 PTL pump stopped at 00:26, was cleaned and reinstalled twice (first time improperly causing a leak), then seized again at 09:52 with buffer at 67%. ML3 found a broken depositor auger blade at 22:53 that allowed water to drip onto the sweco; tank drained as precaution, no foreign material found, line restarted at 05:30. Last pallet of cookies delivered; ML2 will likely go short on current order.",
-    "L3": "ML4 main chiller compressor 1 tripped 5+ times across all three shifts; line remains at 20 MPM with depositor #1 shut off to reduce cooling demand. Matt Hatch contacted Weisshaar for vendor support. TG3 down 2 hours overnight for film ripping, back up at 04:17 after switching film twice and a CIL."
+    "L1": "L1 ran caramel through Sollich 3 with a 12-minute belt tracking stop at 01:18 and a printer clog at 10:19, both cleared. Sollich 2 has a leaking caramel nozzle at 06:17 and a damaged gasket leak discovered at 12:10. Sollich 4 is in startup with missing cooling tunnel parts flagged at 13:01.",
+    "L2": "L2 ML2 PTL pump failed twice \u2014 first at 00:26, cleared by 04:59 after a leaking reinstall, then seized again at 09:52 and cleared by 11:18. FW sealing bar stopped the line at 07:14 for 31 minutes and twins belt replacement at 08:24 for 14 minutes, both resolved. ML3 had brief belt sensor stops (all under 20 minutes) and a foreign material scare from a broken auger blade at 22:50 \u2014 inspected and cleared by 00:38.",
+    "L3": "L3 ML1 ran bars with recurring temper spikes causing multiple pauses through second and third shift, all cleared but pattern unresolved. A brass fitting fell into the buffer tank at 12:15 \u2014 Robert flagged immediate drain required to prevent pump or temper damage. A broken belt at 04:46 and camera alarm at 01:41 both cleared same shift. ML4 ramped from 10 to 20 mpm during first shift with three gondola jams early (cleared by 04:27), TG3 film ripping at 02:02 (resolved by 04:17), and compressor faulting five times between 21:21 and 07:35. Label typo on MF Matrix corrected by 12:57."
   },
-  "watchlist": [
-    {
-      "issue_number": 73,
-      "reason": "ML2 ingredient mixer shortage (3 of 4 failed) \u2014 no update in window but impacts line capacity if mixers fail again"
-    },
-    {
-      "issue_number": 51,
-      "reason": "Twist Wrap overfilled trays causing weight issues \u2014 8 days open, kitchen operator re-trained but no confirmation of sustained fix"
-    }
-  ],
   "notes": [
     {
-      "plant": "L1",
-      "text": "S2 finished the jar run with 26 boxes of caramel leftover; leftover 10200 chocolate (37% melting tank, 25% decorator buffer) will be transferred to S3 and mixed with 10226 for the next pretzel thins run per Candon's approval."
+      "plant": "L2",
+      "text": "Last pallet of cookies delivered at 23:53; estimated 1,050 lbs remain as of 09:36, may run short of 1,180 case target."
     },
     {
-      "plant": "L2",
-      "text": "ML3 replaced sweco screen at first shift startup after discovering holes; new screen ATP passed at 11:02."
+      "plant": "L3",
+      "text": "Chiller procedure clarified \u2014 leave on during shutdown to prevent PTL chocolate freeze per Preston at 10:42."
+    },
+    {
+      "plant": "L1",
+      "text": "Cereal 2pm transfer missed at 16:02; requested out-of-FIFO from L2 to continue running."
     }
   ],
-  "closed_today": [],
-  "opened_today": [
+  "resolved": [
     {
-      "number": 88,
-      "title": "ML2 PTL pump failed twice in 8 hours \u2014 seized after reinstall",
-      "plant": "L2",
-      "priority": "P1",
-      "category": "Machine",
-      "summary": "PTL pump stopped at 00:26, was cleaned and reinstalled improperly (leaked), reinstalled correctly, then seized again at 09:52 \u2014 buffer now at 67% and falling.",
-      "first_raised": {
-        "author": "ML2 Depositor",
-        "time_utc": "2026-05-19T06:26:41.483Z"
-      }
-    },
-    {
-      "number": 89,
-      "title": "ML3 depositor auger blade broke \u2014 water contamination risk",
-      "plant": "L2",
-      "priority": "P1",
-      "category": "Quality",
-      "summary": "Depositor auger blade broke at 22:53 with water dripping onto sweco; tank drained as precaution, no foreign material found, blade replaced, line restarted at 05:30.",
-      "first_raised": {
-        "author": "Molding Line 3 Pack",
-        "time_utc": "2026-05-19T04:53:30.234Z"
-      }
-    },
-    {
-      "number": 90,
-      "title": "ML2 running short on cookies \u2014 1,050 lbs left, need 1,180 cases",
-      "plant": "L2",
-      "priority": "P2",
-      "category": "Materials",
-      "summary": "Last pallet of cookies delivered; only 1,050 lbs left but need material for 1,180 cases \u2014 line will go short on current order.",
-      "first_raised": {
-        "author": "Maria Moron Quintero",
-        "time_utc": "2026-05-19T14:59:39.663Z"
-      }
-    },
-    {
-      "number": 91,
-      "title": "S2 caramel depositor nozzle leaking",
       "plant": "L1",
-      "priority": "P2",
-      "category": "Machine",
-      "summary": "One nozzle on the caramel depositor is leaking; needs repair before next run.",
-      "first_raised": {
-        "author": "Joseph Scott",
-        "time_utc": "2026-05-19T12:17:52.186Z"
-      }
-    },
-    {
-      "number": 92,
-      "title": "S3 Matrix 3 printer clogged \u2014 127 bags scrap by 10:00",
-      "plant": "L1",
+      "title": "S3 belt C21 tracking off, 12-minute stop",
+      "summary": "Belt C21 tracking off due to dirty rollers, stopped 12 minutes to clean at 01:18.",
       "priority": "P3",
       "category": "Machine",
-      "summary": "Matrix 3 printer clogged at 10:19 and had to be cleaned, driving scrap to 127 bags by 10:00 vs. normal run rates.",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-05-19T07:18:06.906Z"
+      },
+      "resolution": "Rollers cleaned, belt tracking properly by 04:06 (S3 Pack)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Matrix 3 printer clogged",
+      "summary": "Matrix 3 printer clogged at 10:19, had to clean, caused extra scrap.",
+      "priority": "P3",
+      "category": "Machine",
       "first_raised": {
         "author": "S3 Pack",
         "time_utc": "2026-05-19T16:19:39.867Z"
-      }
+      },
+      "resolution": "Printer cleaned, resolved by 10:19 (S3 Pack)."
     },
     {
-      "number": 93,
-      "title": "MF Matrix label typo \u2014 'sea salk' instead of 'sea salt'",
+      "plant": "L2",
+      "title": "ML3 broken auger blade foreign material scare",
+      "summary": "Water leak discovered on sweco at 22:50, broken tank blade found; depositor drained to check for foreign material.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-05-19T04:52:18.741Z"
+      },
+      "resolution": "Tank drained, damaged end replaced, no FM found in chocolate or tank by 00:38 \u2014 \"No FM was found\" (Victor Leandro)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 FW 082 alarm after screen power loss",
+      "summary": "FW screen went off at 01:22, threw 082 fault that wouldn't clear; maintenance power-cycled multiple times, fault cleared at 02:15.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-05-19T07:22:56.24Z"
+      },
+      "resolution": "Fault cleared after another power cycle at 02:15 \u2014 \"FW is ready\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 FW sealing bar stop",
+      "summary": "Line stopped at 07:14 for sealing bar issue, down 31 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-05-19T13:14:40.021Z"
+      },
+      "resolution": "Line running again at 07:45 \u2014 \"Line start running\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 FW twins belt replacement",
+      "summary": "Line stopped at 08:24, twins belt one needed replacement, ATP passed at 08:34.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-05-19T14:24:33.443Z"
+      },
+      "resolution": "Belt replaced, ATP passed, line running at 08:38 \u2014 \"Star line running up\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 belt sensor at 15:25 needed replacement",
+      "summary": "Belt stopped moving at 15:25, needed replacement.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-05-18T21:25:58.304Z"
+      },
+      "resolution": "Belt replaced, QA swabbed and passed, line running by 15:38 (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 cross conveyor sensor S3-B30 adjusted",
+      "summary": "Cross conveyor belt after down ramp not working, maintenance adjusted sensor.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-05-18T21:46:26.183Z"
+      },
+      "resolution": "Sensor S3-B30 adjusted by maintenance at 15:46 (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 belt sensor S4-M1 8-minute stop",
+      "summary": "Belt sensor issue at 20:37, line down 8 minutes from 20:32 to 20:40.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-05-19T02:37:35.747Z"
+      },
+      "resolution": "Sensor S4-M1 fixed, line up by 20:40 \u2014 down 8 minutes total (Brandon Lance at 20:59)."
+    },
+    {
       "plant": "L3",
+      "title": "ML4 TG3 film ripping, couldn't get machine up",
+      "summary": "TG3 down at 02:02, film kept ripping and throwing errors; maintenance working.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-05-19T08:02:43.787Z"
+      },
+      "resolution": "TG3 back up at 04:17 after switching film twice and a CIL \u2014 \"TG3 is back up\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jams from leftover test product",
+      "summary": "Three product jams on gondola caused by leftover testing product at 21:03.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-05-19T03:03:17.726Z"
+      },
+      "resolution": "Gondola cleared and cleaned by 04:27, no further jams reported (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 broken belt at 04:46",
+      "summary": "Belt broken at 04:46, maintenance working on it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-05-19T10:46:04.156Z"
+      },
+      "resolution": "Belt appears resolved; C6 and metal detector running correctly by 05:13 (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera alarm at 01:41",
+      "summary": "Camera alarm triggered, QA called to inspect.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-05-19T07:41:00.723Z"
+      },
+      "resolution": "QA, maintenance, and manager inspected at 01:47 \u2014 \"No issues found\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix label typo 'sea salk' instead of 'sea salt'",
+      "summary": "Label read 'utt truf bite sea salk' instead of 'sea salt'; IMS couldn't modify, decision to label and fix later.",
       "priority": "P3",
       "category": "Quality",
-      "summary": "Packaging label shows \"sea salk\" instead of \"sea salt\" \u2014 IMS reports they cannot modify; needs escalation to correct labeling.",
       "first_raised": {
         "author": "David Zuniaga",
         "time_utc": "2026-05-19T16:05:59.218Z"
-      }
+      },
+      "resolution": "Laura closed out of file and corrected label by 12:57 \u2014 \"Anything they print from here on will be correct\" (Laura Brady)."
     }
   ],
-  "still_open": [
+  "needs_attention": [
     {
-      "number": 91,
-      "title": "S2 caramel depositor nozzle leaking",
       "plant": "L1",
-      "age_days": 0,
+      "title": "S4 missing cooling tunnel rail pins and parts",
+      "summary": "Missing pins to hold rails in cooling tunnel 1 at 13:01; Jakob raised concerns at 16:19 about parts getting lost during disassembly.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-05-18T19:01:44.117Z"
+      },
+      "status": "Curt identified spare parts on table at 13:49; Jakob flagged broader parts-management concern at 16:19, no resolution posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 caramel depositor nozzle leaking",
+      "summary": "One nozzle on caramel depositor leaking as of 06:17.",
       "priority": "P2",
       "category": "Machine",
-      "summary": "One nozzle on the caramel depositor is leaking; needs repair before next run.",
       "first_raised": {
         "author": "Joseph Scott",
         "time_utc": "2026-05-19T12:17:52.186Z"
-      }
+      },
+      "status": "Leak reported at 06:17, no follow-up on repair by window close."
     },
     {
-      "number": 92,
-      "title": "S3 Matrix 3 printer clogged \u2014 127 bags scrap by 10:00",
       "plant": "L1",
-      "age_days": 0,
-      "priority": "P3",
-      "category": "Machine",
-      "summary": "Matrix 3 printer clogged at 10:19 and had to be cleaned, driving scrap to 127 bags by 10:00 vs. normal run rates.",
+      "title": "S3 Matrix 5 intermittent date/lot printing",
+      "summary": "Matrix 5 experiencing intermittent blurry or missing date and lot printing at 10:58, then resumes correct printing.",
+      "priority": "P2",
+      "category": "Quality",
       "first_raised": {
-        "author": "S3 Pack",
-        "time_utc": "2026-05-19T16:19:39.867Z"
-      }
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-05-19T16:58:32.946Z"
+      },
+      "status": "Nathan confirmed addressed and printer head cleaned at 11:02, but original report flagged need for continuous monitoring."
     },
     {
-      "number": 20,
-      "title": "Batch 20009 too soft to run on TW - delayed to Monday",
       "plant": "L1",
-      "age_days": 10,
-      "priority": null,
-      "category": null
+      "title": "S2 return pipe gasket damaged, chocolate leaking",
+      "summary": "During return pipe clean at 12:10, chocolate leaking from non-allergen side; gasket damaged and needs replacement.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-05-19T18:10:45.645Z"
+      },
+      "status": "Maintenance looking into damaged gasket at 12:10, no resolution posted by window close."
     },
     {
-      "number": 13,
-      "title": "No proper electrical connection for steamer in S3 enrober area",
       "plant": "L1",
-      "age_days": 10,
-      "priority": null,
-      "category": null
+      "title": "S2 drain cover possible mold",
+      "summary": "Drain cover appears to have mold on it at 12:26, QA investigating.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-05-19T18:26:39.451Z"
+      },
+      "status": "QA to investigate mold-like appearance on drain cover as of 12:26, no follow-up by window close."
     },
     {
-      "number": 12,
-      "title": "S3 jar filling conveyor failing allergen test",
-      "plant": "L1",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 11,
-      "title": "Sanitizer sprayers contaminated by drain use",
-      "plant": "L1",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 31,
-      "title": "S3 unable to hit 85 piece count target in pouches",
-      "plant": "L1",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 30,
-      "title": "S3 red brush bristles fell into Matrix 3 during clean and rezero",
-      "plant": "L1",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 51,
-      "title": "Twist Wrap overfilled caramel trays causing inconsistent cuts and weights",
-      "plant": "L1",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 49,
-      "title": "S3 chocolate 10257 running out tomorrow \u2014 requesting switch to 10227",
-      "plant": "L1",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 48,
-      "title": "Twist Wrap cutter gear broken \u2014 last spare used for replacement",
-      "plant": "L1",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 45,
-      "title": "S2 metal piece found in jar - X-ray detected, metal detector did not",
-      "plant": "L1",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 58,
-      "title": "PECO pallet inventory at critical low \u2014 72 available vs 1,620 minimum",
-      "plant": "L1",
-      "age_days": 5,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 88,
-      "title": "ML2 PTL pump failed twice in 8 hours \u2014 seized after reinstall",
       "plant": "L2",
-      "age_days": 0,
+      "title": "ML2 PTL pump seized twice in 24 hours",
+      "summary": "Pump shut off at 00:26, disassembled and cleaned; reinstalled but leaking at 03:21, torn down again; reinstalled at 04:43 and running by 04:59. Seized again at 09:52, cleared by 11:18.",
       "priority": "P1",
       "category": "Machine",
-      "summary": "PTL pump stopped at 00:26, was cleaned and reinstalled improperly (leaked), reinstalled correctly, then seized again at 09:52 \u2014 buffer now at 67% and falling.",
       "first_raised": {
         "author": "ML2 Depositor",
         "time_utc": "2026-05-19T06:26:41.483Z"
-      }
+      },
+      "status": "Pump reinstalled and ATP passed at 11:18, running as of window close. Two failures in 11 hours indicates compounding reliability risk."
     },
     {
-      "number": 89,
-      "title": "ML3 depositor auger blade broke \u2014 water contamination risk",
       "plant": "L2",
-      "age_days": 0,
-      "priority": "P1",
-      "category": "Quality",
-      "summary": "Depositor auger blade broke at 22:53 with water dripping onto sweco; tank drained as precaution, no foreign material found, blade replaced, line restarted at 05:30.",
+      "title": "ML3 depositor gasket seal failing",
+      "summary": "Gasket seal issue flagged at 08:27, Alex looking for replacement gasket.",
+      "priority": "P2",
+      "category": "Machine",
       "first_raised": {
-        "author": "Molding Line 3 Pack",
-        "time_utc": "2026-05-19T04:53:30.234Z"
-      }
+        "author": "Miriah Manzanares",
+        "time_utc": "2026-05-19T14:27:04.079Z"
+      },
+      "status": "Alex confirmed looking for replacement gasket as of 08:29, no follow-up on install by window close."
     },
     {
-      "number": 90,
-      "title": "ML2 running short on cookies \u2014 1,050 lbs left, need 1,180 cases",
       "plant": "L2",
-      "age_days": 0,
+      "title": "Plant door retractable arm broken",
+      "summary": "Retractable arm broken on door going to back parking lot at 19:09.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-05-19T01:09:31.604Z"
+      },
+      "status": "Brandon notified maintenance at 19:11, no follow-up on repair posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 compressor faulting 5+ times",
+      "summary": "Compressor faulted 4 times during second shift starting at 21:21, then 5th time at 04:33, even running on single compressor.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-05-19T03:31:04.285Z"
+      },
+      "status": "Matt flagged vendor outreach for today; compressor tripped again at 07:35. Pattern suggests underlying issue not yet resolved."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 brass fitting in buffer tank requires drain",
+      "summary": "Brass cap/fitting from pump sprayer fell into buffer tank at 12:15 during cleaning; Robert flagged immediate risk to pump and temper unit if not removed.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-05-19T18:15:49.333Z"
+      },
+      "status": "Tank must be drained to remove metal nozzle tip as of 12:55 \u2014 \"will absolutely destroy anything it encounters in the temper unit\" per Robert."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 recurring temper control issues",
+      "summary": "Multiple high temper readings (1.1, 1.4, 1.7 slope) caused line pauses at 18:07, 20:09, 21:20 through second and third shift; adjustments to crystallization and mixing water providing temporary relief only.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-05-18T23:59:41.278Z"
+      },
+      "status": "Line running as of window close but pattern unresolved; Nathan and Robert experimenting with crystallization and mixing water settings."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 missing chicane belt roller",
+      "summary": "During chicane belt reinstall at 11:27, one roller missing; third shift performed disassembly but roller cannot be found.",
       "priority": "P2",
       "category": "Materials",
-      "summary": "Last pallet of cookies delivered; only 1,050 lbs left but need material for 1,180 cases \u2014 line will go short on current order.",
       "first_raised": {
-        "author": "Maria Moron Quintero",
-        "time_utc": "2026-05-19T14:59:39.663Z"
-      }
-    },
-    {
-      "number": 18,
-      "title": "ML2 encoder position causing print issues on sticky film",
-      "plant": "L2",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 17,
-      "title": "ML2 flow wrap tension arm and forming plate fault",
-      "plant": "L2",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 16,
-      "title": "ML2 flow wrap intermittent missing lot codes",
-      "plant": "L2",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 10,
-      "title": "Main vacuum for ML3 flow wrap faulting - motor stuck",
-      "plant": "L2",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 9,
-      "title": "Belt issue stopped ML3 for 15 minutes overnight",
-      "plant": "L2",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 8,
-      "title": "Film issues causing line stops on ML3",
-      "plant": "L2",
-      "age_days": 10,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 33,
-      "title": "FFS checkweigher blowing all pouches off line - multiple faults",
-      "plant": "L2",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 32,
-      "title": "FFS box printer repeatedly failing - not printing lot code",
-      "plant": "L2",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 53,
-      "title": "Grinding line found 2 burnt Graham pieces in incoming tote #17",
-      "plant": "L2",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 47,
-      "title": "ML3 dancing arm bolt broken \u2014 extracting and replacing",
-      "plant": "L2",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 73,
-      "title": "ML2 ingredient mixer shortage \u2014 3 of 4 mixers failed",
-      "plant": "L2",
-      "age_days": 4,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 86,
-      "title": "ML3 socks down \u2014 minimal detail provided",
-      "plant": "L2",
-      "age_days": 2,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 93,
-      "title": "MF Matrix label typo \u2014 'sea salk' instead of 'sea salt'",
-      "plant": "L3",
-      "age_days": 0,
-      "priority": "P3",
-      "category": "Quality",
-      "summary": "Packaging label shows \"sea salk\" instead of \"sea salt\" \u2014 IMS reports they cannot modify; needs escalation to correct labeling.",
-      "first_raised": {
-        "author": "David Zuniaga",
-        "time_utc": "2026-05-19T16:05:59.218Z"
-      }
-    },
-    {
-      "number": 36,
-      "title": "Truffle Line broken conveyor cover found during chocolate removal",
-      "plant": "L3",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 29,
-      "title": "Truffle Line separator table making constant noise",
-      "plant": "L3",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 27,
-      "title": "ML1 metal detector belt repeatedly shifting - multiple stoppages",
-      "plant": "L3",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 26,
-      "title": "ML1 hopper heat left off during shutdown - chocolate hardened",
-      "plant": "L3",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 25,
-      "title": "ML4 multiple mold jams during recirculation; Swecos installed upside down",
-      "plant": "L3",
-      "age_days": 8,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 54,
-      "title": "Truffle Line Tunnel 3 cover has new crack \u2014 separate from prior break",
-      "plant": "L3",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 41,
-      "title": "ML1 mixing water jacket not remaining stable",
-      "plant": "L3",
-      "age_days": 7,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 67,
-      "title": "ML4 TG machines handed off in manual mode instead of auto",
-      "plant": "L3",
-      "age_days": 5,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 66,
-      "title": "ML4 licking roller blade damaged \u2014 possible metal shavings past cleaning station",
-      "plant": "L3",
-      "age_days": 5,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 64,
-      "title": "Truffle Line duplicate chocolate pallet labels \u2014 wrong item numbers",
-      "plant": "L3",
-      "age_days": 5,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 60,
-      "title": "ML1 metal detector rejecting all test cards \u2014 electric current present",
-      "plant": "L3",
-      "age_days": 5,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 79,
-      "title": "ML1 tempering issues overnight \u2014 80+ molds stuck with chocolate",
-      "plant": "L3",
-      "age_days": 4,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 77,
-      "title": "ML4 back-off plow return pump left in manual mode causing bin overflow",
-      "plant": "L3",
-      "age_days": 4,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 76,
-      "title": "ML4 cardboard found in back-off plow bin blocking chocolate flow",
-      "plant": "L3",
-      "age_days": 4,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 83,
-      "title": "ML1 Cavanna roller came loose during second shift",
-      "plant": "L3",
-      "age_days": 3,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 81,
-      "title": "ML4 back-off plow return pump clogging \u2014 bin overfilling",
-      "plant": "L3",
-      "age_days": 3,
-      "priority": null,
-      "category": null
-    },
-    {
-      "number": 80,
-      "title": "ML4 main chiller compressor 1 tripping every 2 hours \u2014 line at half capacity",
-      "plant": "L3",
-      "age_days": 3,
-      "priority": null,
-      "category": null
+        "author": "Imperial",
+        "time_utc": "2026-05-19T17:27:26.326Z"
+      },
+      "status": "Searched but cannot find roller as of 11:27, may need to order replacement."
     }
   ]
 }
