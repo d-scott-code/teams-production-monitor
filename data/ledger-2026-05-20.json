@@ -1,0 +1,185 @@
+{
+  "date": "2026-05-20",
+  "headline": {
+    "eyebrow": "Depositor down",
+    "text": "L2 ML3 depositor pulled at *10:31* for recurring piston faults after seized rotary slider \u2014 still down at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 cleared routine cleaning flags on S2 and S3, then hit a tree nut residue find in the T3 washing equipment at 08:32 that triggered a level 4 re-clean still in progress at window close. S2 ultrasonic blade faulted at 10:13, maintenance reset by 10:29 and line is running. S4 continued commissioning tests with German techs on-site.",
+    "L2": "L2 ML2 ran cookies on white chocolate paste with no issues. ML3 completed a full oil flush by 07:09, pushed chocolate, then hit a seized rotary slider A at 08:45. Maintenance helped remove it, sliders washed and reinstalled by 10:00, but piston faults returned at 10:10. Depositor pulled for full wash at 10:31 and still down at window close.",
+    "L3": "L3 ML1 worked through an almond changeover with multiple setbacks: brass fitting fell in buffer tank at 12:15 (found intact at 13:34), frozen pipe at 19:17 (cleared by 19:35), belt damaged heater at 23:03 (heater survived), and at window close the depositor water pipe is bent, buffer tank won't drain under pressure, and two nozzle plate parts are missing. ML4 cleared a PTL2 melter reset at 03:58 and a mold jam at 05:31, running through window close aside from a feed door latch issue flagged at 01:57."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 ultrasonic blade faulted, caramel sticking",
+      "summary": "Ultrasonic blades faulted while processing caramel at the cutter; maintenance performed hard reset and line returned to operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-05-20T16:13:07.321Z"
+      },
+      "resolution": "Maintenance reset blades at 10:23, line running by 10:29 \u2014 \"Line is running\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L3",
+      "title": "Brass fitting fell into ML1 buffer tank",
+      "summary": "Brass cap from pump sprayer fell into buffer tank during wall cleaning; crew used mesh screens over buckets to search.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-05-19T18:15:49.333Z"
+      },
+      "resolution": "Found intact at 13:34 \u2014 \"The missing brass fitting was found intact\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 pipe frozen during oil flush",
+      "summary": "Pipe froze at 19:17 during flushing process; maintenance worked to unclog using heat.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-05-20T01:17:39.929Z"
+      },
+      "resolution": "Unclogged by 19:35 \u2014 \"finally got it unclogged...draining from the bottom\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 PTL2 not melting chocolate",
+      "summary": "PTL2 melter stopped heating at 03:34; maintenance called to investigate program fault.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Greer",
+        "time_utc": "2026-05-20T09:34:44.801Z"
+      },
+      "resolution": "Program reset at 03:58 \u2014 \"Maintenance reset the program- melter is back on\" (Alan Greer)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix checkweigher rejecting underweight",
+      "summary": "Checkweigher minimum weight set 10 grams higher than spec required, rejecting all underweight pieces.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-05-20T13:00:45.4Z"
+      },
+      "resolution": "Leader adjusted checkweigher by 08:52 to match spec \u2014 \"this has effectively resolved the issue\" (David Zuniaga)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at depositor",
+      "summary": "Mold jammed at 04:07 during deposit operation, line stopped to clear.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-05-20T10:07:44.277Z"
+      },
+      "resolution": "Cleared by 05:31 \u2014 \"Jam cleared, continuing to deposit\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 down for TG gondola inspection",
+      "summary": "Line stopped at 07:06 for Preston to check something in the gondola.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-20T13:06:08.227Z"
+      },
+      "resolution": "Back running at 07:23 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 rice hose installed instead of almond hose",
+      "summary": "During changeover, rice product hose was found installed when almond hose should have been in place.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-20T14:50:39.625Z"
+      },
+      "resolution": "Switched at 08:50 \u2014 \"The hose has already been switched from rice to almonds\" (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 tree nut scrap found in T3 washing equipment",
+      "summary": "QA found tree nut residue accumulation in Tunnel 3 washing machine during post-clean inspection; level 4 re-clean in progress with ATP and allergen testing.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-05-20T14:32:53.343Z"
+      },
+      "status": "Level 4 cleaning in progress as of 09:10, line not running, ATP and allergen tests pending."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 depositor pulled for recurring piston faults",
+      "summary": "Rotary slider A seized at 08:45, was washed and reinstalled by 10:00, but piston faults returned at 10:10 when trying to purge chocolate. Depositor pulled for complete wash.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-05-20T14:05:06.665Z"
+      },
+      "status": "Depositor pulled and being washed as of 10:31, line down at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor water pipe bent and damaged",
+      "summary": "Depositor water pipe found bent with damage during changeover; maintenance called to assess and repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Robert Villarreal",
+        "time_utc": "2026-05-20T13:47:36.736Z"
+      },
+      "status": "Maintenance called at 07:47, pipe confirmed \"a lot damaged\" per Preston at 08:05, heater survived but no repair ETA."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank oil not draining under pressure",
+      "summary": "While draining buffer tank during flush at 10:26, oil is not coming out under pressure as expected.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-20T16:26:38.213Z"
+      },
+      "status": "Maintenance working on pressure issue as of 10:26, still unresolved at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 two nozzle plate parts missing",
+      "summary": "While installing nozzle plate at 10:31, operator realized two parts are missing \u2014 the pieces that hold the blades in place.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-20T16:31:15.853Z"
+      },
+      "status": "Parts missing as of 10:31, names unknown, searching for parts at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 entryway feed door latch broken",
+      "summary": "TG4 entryway feed door near metal detector won't close; latch may be broken and door appears bent.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-05-20T07:57:34.564Z"
+      },
+      "status": "Maintenance aware of issue as of 04:23, door still won't close at window close."
+    }
+  ]
+}
