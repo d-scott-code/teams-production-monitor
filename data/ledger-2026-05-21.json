@@ -1,0 +1,173 @@
+{
+  "date": "2026-05-21",
+  "headline": {
+    "eyebrow": "L3 startup struggle",
+    "text": "L3 ML1 fought nozzle clogs and a cooler trip for *5 hours* overnight before clearing at 06:01 \u2014 inclusion vacuum seized at *10:22* and is still down."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel on S2 and S3 with routine breaks. S2 had a checkweigher sensor adjusted at 10:44, a heavy cream valve gasket replaced by 09:14, and a pipe leak reported at 13:50 with no follow-up. S3 caught a screw in an X-ray reject at 14:47, traced it to C22, and was back running at 14:59. S4 trial runs continued with Bequet caramel.",
+    "L2": "L2 is short on Hershey ZS Dark chocolate \u2014 needs 10k pounds, only has 8k in-house, waiting on a truck ETA from Blomer as of 10:09. ML3 went down at 08:42 on broken film and heavy glue residue with no resolution posted by window close. Hershey tour completed successfully at 10:07.",
+    "L3": "L3 ML1 had a rough overnight startup: nozzle clogs at 04:20 forced multiple cleaning cycles, mold cooling tripped at 06:40 (cleared by 06:45), and the line finally ran clean at 06:01. At 10:22 the inclusion vacuum stopped suctioning \u2014 maintenance is working it and it's still down. MFM stopped at 16:29 waiting for boxes 40951 in receiving with no update."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 C22 bolt missing, foreign object in Matrix 4 bag",
+      "summary": "X-ray detected screw with washer in a Matrix 4 bag at 14:47; traced to missing bolt on C22 conveyor.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-05-20T20:47:00.273Z"
+      },
+      "resolution": "Line stopped, maintenance replaced bolt on C22, line back up at 14:59 \u2014 \"Line is back up and running\" (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 heavy cream valve leaking",
+      "summary": "Kitchen valve for heavy cream was leaking, blocking caramel cook start at 08:52.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-05-21T14:52:10.346Z"
+      },
+      "resolution": "Maintenance replaced gasket by 09:14, production cleaned pipes/kettles, quality inspected \u2014 \"Maintenance replaced the gasket\" (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 checkweigher photo eye not reading",
+      "summary": "Photo eye sensor was not reading at the checkweigher; maintenance adjusted the sensor.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-05-20T16:44:14.753Z"
+      },
+      "resolution": "Maintenance adjusted sensor at 10:44 \u2014 \"maintenance adjusted the sensor\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 guard door at risk of falling",
+      "summary": "Guard door was not secure and at risk of falling down at 12:12.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-05-20T18:12:53.586Z"
+      },
+      "resolution": "Operators secured the door by 12:37 \u2014 \"The door was not secure. Operators took care of it\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C-20 belt fraying",
+      "summary": "Belt on Line C-20 showed fraying threads and lint during inspection at 13:32.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-05-20T19:32:48.997Z"
+      },
+      "resolution": "Maintenance took care of belt during a short line pause at 13:44 \u2014 \"Maintenance has taken care of this while we did a short pause\" (Nathan Topham)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 nozzle clogging repeatedly",
+      "summary": "Nozzles clogged starting at 04:20, forcing multiple cleaning cycles and hopper emptying; line couldn't deposit cleanly until 06:01.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-21T10:20:46.05Z"
+      },
+      "resolution": "Nozzles and cylinders cleaned, temperature raised to 120, line up and running at 06:01 \u2014 \"We are up and running\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 mold cooling tripped out",
+      "summary": "Mold cooling system tripped at 06:40, all molds full of product, chocolate came out liquid.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-21T12:40:33.375Z"
+      },
+      "resolution": "Cooling system back running by 06:45 \u2014 \"Mold cooling was tripped out but is now running\" (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 pipe leaking",
+      "summary": "One of the pipes is leaking, reported to maintenance at 13:50.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-05-20T19:50:01.696Z"
+      },
+      "status": "Reported to maintenance at 13:50, no follow-up posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 label machine wrinkled labels",
+      "summary": "Label machine producing wrinkled labels at 15:03, Troy working on fix.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-05-20T21:03:02.197Z"
+      },
+      "status": "Troy fixing at 15:03, no resolution posted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 line down on broken film and heavy glue residue",
+      "summary": "Line down at 08:42 due to broken film and heavy glue residue requiring cleanup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-05-21T14:42:09.689Z"
+      },
+      "status": "Down as of 08:42, cleaning glue residue, no update posted."
+    },
+    {
+      "plant": "L2",
+      "title": "Hershey ZS Dark chocolate shortage",
+      "summary": "Scheduled for 10k pounds item 10228, only have 6k in system plus 2 totes to load \u2014 need 2k more pounds.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-05-21T15:04:27.113Z"
+      },
+      "status": "FTL due today per Martin Carlos at 10:09, waiting for ETA from Blomer \u2014 truck on the road but no arrival time."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 inclusion vacuum not suctioning",
+      "summary": "Inclusion vacuum stopped suctioning at 10:22, maintenance pulled to work on it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-21T16:22:43.98Z"
+      },
+      "status": "Maintenance working on it as of 10:22, no resolution by window close at 10:23."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM waiting for boxes 40951",
+      "summary": "Multi-format matrix stopped at 16:29 waiting for boxes 40951, which are in the receiving process.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Andrea Diaz",
+        "time_utc": "2026-05-20T22:29:44.663Z"
+      },
+      "status": "Line stopped at 16:29 waiting on boxes in receiving, no update on arrival."
+    }
+  ]
+}
