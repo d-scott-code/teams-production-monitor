@@ -1,0 +1,186 @@
+{
+  "date": "2026-05-23",
+  "headline": {
+    "eyebrow": "L3 startup progress",
+    "text": "L3 ML4 startup pushed through *2 depositor issues* and completed temper flushes overnight \u2014 TG3 belt damage and TG4 ATP failure remain for Tuesday."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel lines through the shift with a ten-minute caramel buildup clean on S2 at 15:55 and film tearing resolved by 16:05. Vitamin E shortage limited one-shot production to 9,320 lbs instead of plan. S'mores pouches arrived and staged at 01:23.",
+    "L2": "L2 ML2 cleared a mold jam in 15 minutes at 18:27 and ran well otherwise. High-pressure clamps were replaced on ML3 after a walk with maintenance; more clamps ordered for ML2 and depositors. A temperature gauge fell off the curtain on ML3 and needs re-mounting.",
+    "L3": "L3 ML4 startup cleared a caddy adapter hunt, a depositor #3 communication fault (L2 maintenance assist), and completed temper unit oil flushes by 21:30. PTL3 pump was fixed at 03:10 by adjusting the minimum level setting. TG3 belt is damaged and TG4 failed ATP \u2014 both flagged for first shift Tuesday."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S2 operator trained on new TW machine, scheduled to come in early when 2nd shift runs next week."
+    },
+    {
+      "plant": "L2",
+      "text": "Dave Ruff requested to order more high-pressure clamps for ML2 and depositor areas after ML3 clamp replacement."
+    },
+    {
+      "plant": "L3",
+      "text": "Videojet confirmed 1 unit ships today for Tuesday install; 2 remaining units ship next week for truffle line install Friday."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S'mores pouches late delivery",
+      "summary": "16 pallets of S'mores pouches (256k total) scheduled to arrive around 12:30 am for staging.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Sunny Jagtiani",
+        "time_utc": "2026-05-23T03:56:41.912Z"
+      },
+      "resolution": "Pouches arrived and staged in warehouse at 01:23 \u2014 \"The pouches for s'mores have arrived and staged\" (Ricardo Tovar)."
+    },
+    {
+      "plant": "L2",
+      "title": "Mold jam in ML2 demolder",
+      "summary": "Mold jammed in demolder at 18:27, line down waiting for maintenance clear.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-05-23T00:27:22.66Z"
+      },
+      "resolution": "Maintenance cleared jam at 18:42 \u2014 \"Maintenance cleared the jam. We are running again\" (Mathew Draper). Fifteen-minute downtime."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 high-pressure clamps over product",
+      "summary": "Two bottom clamps directly over product needed replacement due to risk; maintenance walked through replacement process.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-05-22T20:17:55.718Z"
+      },
+      "resolution": "New clamps installed by 13:55 \u2014 \"New clamps are on\" (Raymond Fleming). Dave Ruff requested to order more for ML2 and depositors."
+    },
+    {
+      "plant": "L2",
+      "title": "Caramel buildup on ML2 forming plates",
+      "summary": "Caramel buildup forced line down at 15:55 for plate cleaning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-05-22T21:55:08.666Z"
+      },
+      "resolution": "Cleaned and running again at 16:05 \u2014 \"Line is running again\" (Mathew Draper). Ten-minute clean."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film tearing on startup",
+      "summary": "Film tearing when trying to start up after forming plate clean at 16:00.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-05-22T22:00:35.109Z"
+      },
+      "resolution": "Line running again at 16:05 \u2014 \"Line is running again\" (Mathew Draper). Five-minute resolution."
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor #3 won't slide out, communication error",
+      "summary": "Depositor #3 wouldn't move into automatic mode for cleaning; door sensors faulting after multiple troubleshooting attempts.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-05-22T23:22:37.887Z"
+      },
+      "resolution": "L2 maintenance (Raymond Fleming and Efrain Rodriguez) replaced all safety covers, adjusted heating cabinet door safety, power cycled main disconnect, and cleared faults at 21:27 \u2014 \"were able to get it going\" (Preston Elmer)."
+    },
+    {
+      "plant": "L3",
+      "title": "PTL3 pump not turning on",
+      "summary": "PTL3 pump wouldn't start during ML4 startup; maintenance troubleshooting through early morning.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-05-23T07:30:55.238Z"
+      },
+      "resolution": "Fixed at 03:10 by changing minimum level setting from 10% to 0% \u2014 \"After changing it to 0% minimum it started up\" (Kavin Ayala)."
+    },
+    {
+      "plant": "L3",
+      "title": "Caddy adapter missing for temper unit 1 flush",
+      "summary": "Hose and adapters for larger DIN size were missing; adapter located in L2 and retrieved by 13:14, flush started at 13:22.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-22T16:24:42.794Z"
+      },
+      "resolution": "Adapter retrieved from L2 at 13:14 \u2014 \"The team has the adapter for the caddy\" (Rich Brierley). Flush started at 13:22."
+    },
+    {
+      "plant": "L3",
+      "title": "Temper unit 1 oil flush taking multiple cycles",
+      "summary": "Oil still dirty after third flush at 18:46; needed additional flushes to clear system before chocolate push.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-05-23T00:46:17.316Z"
+      },
+      "resolution": "Oil flush completed at 21:30 \u2014 \"Oil flush on temper unit 1 has being completed\" (Erandy Garcilazo Ceja). Chocolate push approved by QA at 23:24."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Vitamin E shortage limited one-shot production",
+      "summary": "Ran out of vitamin E during one-shot batch runs; only completed 19 barrels and one partial (9,320 lbs) instead of planned volume.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-05-23T04:08:02.279Z"
+      },
+      "status": "Shortage identified at 22:08, corrected count to 9,320 lbs at 23:02. Sunny Jagtiani asked if running more next week due to inaccurate MRP data; no response by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 temperature gauge fell off curtain",
+      "summary": "Temperature gauge fell off the curtain and was found on the floor; placed on cart for re-installation.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-05-23T02:07:52.261Z"
+      },
+      "status": "Gauge placed on cart at 20:07, needs to be re-mounted on ML3 curtain."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 belt damaged",
+      "summary": "Belt on TG3 discovered damaged during startup inspection at 01:29.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-05-23T07:29:03.811Z"
+      },
+      "status": "Damaged belt flagged at 01:29, no repair or replacement mentioned by window close. Escalated to Jose Vasquez and Kavin Ayala for Tuesday first shift."
+    },
+    {
+      "plant": "L3",
+      "title": "TG4 failed ATP",
+      "summary": "TG4 belt section failed ATP during ML4 startup final checks.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-05-23T13:56:11.447Z"
+      },
+      "status": "Failed ATP at 07:56, flagged for first shift to address Tuesday. Cooling cabinet 3 and floors also need completion."
+    }
+  ]
+}
