@@ -1,0 +1,268 @@
+{
+  "date": "2026-05-28",
+  "headline": {
+    "eyebrow": "Equipment day",
+    "text": "L1 MM4 *shut down at 09:05* for silver visibility \u2014 L3 TG4 unstable since midnight \u2014 but most issues cleared including two L1 caramel outages and L3 bolt failure."
+  },
+  "per_plant_summary": {
+    "L1": "S3 ran out of caramel twice overnight (20:59 and 00:29), both cleared and line restarted. S2 slowed to 1.1 at 20:12 on cold corn syrup, resolved by running dual kettles and back to 1.4 at 21:06. X-ray test card failures on MM3 and MM5 at 18:20 were traced to bad cards, not machines \u2014 4 pallets reworked successfully. MM4 shut down at 09:05 for excessive silver visibility and remains down.",
+    "L2": "ML3 launched caramel cups successfully \u2014 client approved product at 10:04, line running 10 mpm. ML2 had two cooler mold jams from bent rail #75, both cleared but rail needs replacement during next clean. FFS ran out of WIP 21101 at 07:02 and stopped, waiting on transfer from L3. Grinding found blue glove foreign material in Brookies at 00:16, pallet on hold.",
+    "L3": "ML1 C6 roller bolt broke at 15:15, metal debris cleaned and sanitized, line back at 16:35. ML4 running 2 of 4 TGs \u2014 TG4 keeps going down on chocolate blow-off since 00:49, TG5 lot code issue fixed at 00:48. Crew managing Gondola manually to reduce scrap (~1,000 lbs total). Bar quality improved through shift after bottom bubble adjustments. Countdown board had 47k-piece error at 08:49, corrected."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 C1 conveyor belt stopped",
+      "summary": "C1 belt stopped at 12:04, operations paused; broken cable wasn't making contact.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-05-27T18:03:28.449Z"
+      },
+      "resolution": "Maintenance fixed broken cable at 12:21 \u2014 \"already fixed the problem C1, A cable was broken\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 cold corn syrup slowing production",
+      "summary": "All corn syrup totes cold despite being plugged in; line at risk of slowing or stopping.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-05-27T22:06:19.263Z"
+      },
+      "resolution": "Slowed to 1.1 at 20:12, ran both kitchen sides A and B to maintain caramel, back to 1.4 at 21:06 \u2014 \"going to increase it to 1.4 now\" (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 X-ray failures on MM3 and MM5",
+      "summary": "MM3 failed to reject stainless steel 2.0 test card at 18:20; MM5 failed non-ferrous 2mm card at 18:57.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-05-28T00:31:41.403Z"
+      },
+      "resolution": "Root cause was bad test card, not x-rays; new cards passed all three machines. Four pallets (MM3: 18:20\u201319:00, MM5: 18:50\u201319:10) reworked successfully by 19:42 \u2014 \"Pallets reworked successfully\" (Victor Mejia)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 ran out of caramel, line stopped at 20:59",
+      "summary": "Reserve kettle empty, depositor out of caramel at 20:59 on 5/27.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-05-28T03:06:38.685Z"
+      },
+      "resolution": "Line resumed at 21:23 \u2014 \"Line was paused from 9:01pm\u20139:23pm\" (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 ran out of caramel again at 00:29",
+      "summary": "Depositor ran out of caramel at 00:29; caustic clean started at 01:04.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-05-28T06:50:14.768Z"
+      },
+      "resolution": "Heavy wash, reheat, and cleaning complete; line restarted at 04:01 \u2014 \"Line already started\" (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector belt stopped at 09:20",
+      "summary": "MD belt suddenly stopped, unable to restart even after reset; line paused.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-05-28T15:20:38.278Z"
+      },
+      "resolution": "Two hard resets (30 and 40 seconds) brought it back; QA cards passed, line running at 09:24 \u2014 \"The line is back up and running\" (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 high APC results requiring level 1 clean",
+      "summary": "Post-3rd-clean APC sponge samples came back high; conducted level 1 clean on all belts including T7-1, T9-1, and guillotine belt.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Miriah Manzanares",
+        "time_utc": "2026-05-28T00:03:08.001Z"
+      },
+      "resolution": "ATP tests passed satisfactorily at 22:35 \u2014 \"all belts on the line, and they passed satisfactorily\" (Alfonsina Gil)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caramel spec missing piece dimensions",
+      "summary": "Theegarten caramel spec showed only 12g weight target with no height, width, or length \u2014 line couldn't proceed without clarity.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-05-28T14:17:08.728Z"
+      },
+      "resolution": "Agreed at 08:35 to run at current piece size and update specs to match Theegarten output \u2014 \"samples will be kept and reviewed to determine those specs\" (Miriah Manzanares)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 cardboard under white paper at MM4 and MM5",
+      "summary": "Cardboard placed underneath matrix paper, not allowed by quality; unclear who placed it.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-05-28T14:35:46.98Z"
+      },
+      "resolution": "Removed and replaced with fresh paper at 08:35 \u2014 \"She removed it and replaced the paper\" (Mariela Gudino)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 new caramel cups product launch",
+      "summary": "Launch day for new caramel cup product with client on-site; recipe adjustments needed for deposit quality.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-05-28T02:29:47.405Z"
+      },
+      "resolution": "Client approved product at 10:04; running at 10 mpm with good weight and appearance \u2014 \"Client is happy. And best thing, we are running at 10mpm\" (Erandy Garcilazo Ceja)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 printer not working at start of shift",
+      "summary": "Printer down, delaying BBD placement verification and production start.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-05-28T09:11:03.132Z"
+      },
+      "resolution": "Maintenance fixed printer; QA confirmed BBD placement correct at 06:03 \u2014 \"Printer is good and the BBD place is set\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jam in cooler at 05:52",
+      "summary": "Mold jam stopped line at 05:52; maintenance called.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-05-28T11:52:56.724Z"
+      },
+      "resolution": "Bent rail caused jam; line back up at 06:54 \u2014 \"Bent rail in the cooler caused the jam\" (Dave Ruff)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 second mold jam in cooler at 07:42",
+      "summary": "Another mold jam in cooler; maintenance notified.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-28T13:42:09.689Z"
+      },
+      "resolution": "Line back up at 08:03 \u2014 \"Line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "BEQ FW wrap material shortage",
+      "summary": "Only 4 of 5 cases of flow wrap arrived with overnight shipment; additional wrap needed for production.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ira Robison",
+        "time_utc": "2026-05-27T18:47:29.387Z"
+      },
+      "resolution": "Team truck arrived at 05:30 as scheduled; wrap received into RF Smart by 06:42 \u2014 \"BEQ FW has arrived & will be received\" (Joey Michael Dudney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 temper meter probe damaged",
+      "summary": "Probe broke earlier in the week; maintenance temporarily repaired it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-05-28T05:09:19.363Z"
+      },
+      "resolution": "Raymond Fleming has new probe; maintenance got it back together \u2014 \"Maintenance was able to get it back together\" (Alan Todd at 23:10)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 roller bolt broke at 15:15",
+      "summary": "Screw rubbing roller guard caused squeaky noise; bolt broke, creating metal particles and dust in product zone.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-27T21:15:19.827Z"
+      },
+      "resolution": "Area cleaned and sanitized by 16:07, QA inspection passed, line running at 16:35 \u2014 \"Line is running\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna infeed sensor causing jams",
+      "summary": "Frequent jams on Cavanna infeed at 19:06; cleaned rails but issue persisted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-05-28T01:06:12.009Z"
+      },
+      "resolution": "Sensor not reading correctly; fixed and running better by 19:06 \u2014 \"the issue ended up being the sensor not reading correctly it's been fixed\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt tracking off at 23:18",
+      "summary": "C6 belt moving to south side; maintenance working on alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-05-28T05:18:14.153Z"
+      },
+      "resolution": "Corrected by maintenance \u2014 belt running correctly by 00:26 (next check-in shows \"running correctly\")."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 lot code time stuck at midnight",
+      "summary": "TG5 lot code time set to midnight and won't change; maintenance looking for password.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-05-28T06:17:40.205Z"
+      },
+      "resolution": "Fixed at 00:48 and working properly \u2014 \"TG5 lot code time was fixed and is working properly\" (Frederick Peairs)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 shakers 3 and 4 alarm at 08:27",
+      "summary": "Alarm triggered on shakers 3 and 4; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-28T14:27:34.395Z"
+      },
+      "resolution": "Motors tripped, VFD power cycled; no physical adjustments needed \u2014 cleared by 08:32 (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 countdown board error",
+      "summary": "Countdown numbers didn't match NetSuite; extra 47,127 pieces added that weren't produced.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-05-28T14:49:47.223Z"
+      },
+      "resolution": "Reviewed with Fredy Montalvan, corrected at 08:49 \u2014 \"The countdown board has now been corrected\" (Grey Boscan)."
+    }
+  ],
+  "needs_attention": []
+}

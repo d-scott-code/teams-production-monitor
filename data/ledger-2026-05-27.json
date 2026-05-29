@@ -1,0 +1,246 @@
+{
+  "date": "2026-05-27",
+  "headline": {
+    "eyebrow": "Matrix down",
+    "text": "L3 MF Matrix has been intermittently faulting since *09:26* \u2014 maintenance still troubleshooting at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran S2 and S3 all shift. S2 belt C1 stopped three times overnight; scraper assembly found disassembled at 06:47 and fixed. S3 MM4 went down 07:00 to 09:00 on bursting pouches from worn gripper pads; maintenance replaced pads and adjusted settings, line running well by 09:54.",
+    "L2": "L2 ML3 load cells lost accuracy at 15:59, recalibrated and back online by 16:27. Urshel grinder wouldn't start at 16:42 due to a stuck lock, cleared in 19 minutes. Dark chocolate flush completed after new barrels arrived at 10:17.",
+    "L3": "L3 ML1 Cavanna wrapper has been problematic all shift \u2014 film sealing issues, jaws loose, product opening. Scott (Cavanna tech) on-site making adjustments; running better by 09:49 but still opening intermittently at window close. ML4 depositor 1 faulted overnight on leaky nozzles, pulled and cleaned; startup resumed at 06:22 after inclusion hopper was found off, depositing by 10:36. MF Matrix faulting on and off since 09:26, maintenance still troubleshooting."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "First batch of XR80 caramel cooked on S4 at 09:35 with Volker (Chocotech tech) on his last day on-site."
+    },
+    {
+      "plant": "L2",
+      "text": "Bequet molds on-site; waiting on FW delivery to complete ML3 changeover testing."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 TG4 lacks the correct printer and remains non-operational; bearing frame snapped during hopper adjustment but process still works, new part on order."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 MM4 bursting pouches due to worn gripper pads",
+      "summary": "MM4 down 07:00 to 09:00 with 234 bags of scrap from bursting pouches caused by worn gripper pads and silver coating issue.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-05-27T15:04:24.234Z"
+      },
+      "resolution": "Maintenance replaced all gripper pads, adjusted sealer bar timing from 1.2 to 1.7, corrected fill station and guide rail, turned on hopper vibration, and added pouch tension; line running well by 09:54 \u2014 \"MM4 is running good\" (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 belt C1 stopped three times overnight",
+      "summary": "Belt C1 stopped at 17:33, 22:54, and 02:05; scraper assembly found disassembled at 06:47 and reassembled.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-05-26T23:33:35.323Z"
+      },
+      "resolution": "Scraper assembly issue identified and resolved at 06:47 \u2014 \"C1 scraper assembly found first thing this morning not assembled issue has been resolved\" (Lolo Bencomo)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector rejecting repeatedly",
+      "summary": "Metal detector went off more than three times in a row at 15:21; cards accepted without issues.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-05-26T21:21:10.022Z"
+      },
+      "resolution": "Sensitivity raised from 700 to 800 at 15:23 \u2014 \"We raised the sensitivity from 700 to 800\" (Caleb York)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 load cells not reading accurately",
+      "summary": "Load cell lost accuracy at 15:59, preventing line operation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-05-26T21:59:39.548Z"
+      },
+      "resolution": "Load cells recalibrated, line started back up at 16:19 \u2014 \"Line running again\" (Molding Line 3 Pack, 16:27)."
+    },
+    {
+      "plant": "L2",
+      "title": "Urshel grinder would not turn on",
+      "summary": "Grinder wouldn't start at 16:42 due to a safety lock stuck in the unlocked position.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-05-26T22:42:05.169Z"
+      },
+      "resolution": "Maintenance turned lock to locked position with vice grips, running at 17:01 \u2014 \"Urshel is running now\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "New barrels needed for dark chocolate flush",
+      "summary": "Requested new barrels from SV at 07:28 to flush dark chocolate from ML3 line, PTL at 74% and buffer tank at 40%.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-27T13:28:40.35Z"
+      },
+      "resolution": "New barrels arrived and staged at 10:17 \u2014 \"New barrels have arrived & are being staged now\" (Joey Michael Dudney)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS x-ray machine needed reset",
+      "summary": "Line stopped at 09:47 because x-ray machine needed a reset.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-05-27T15:48:25.575Z"
+      },
+      "resolution": "Reset completed, line running at 09:49 \u2014 \"The line is running\" (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 inclusion hopper not heating",
+      "summary": "Inclusion system heating unit not working at 08:08, team troubleshooting with WDS.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-05-27T14:08:04.782Z"
+      },
+      "resolution": "Hopper was not turned on; switched on at 08:44 \u2014 \"The inclusion hopper was not turned on\" (Rose Smuin)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna jaws too low, dropping good pieces",
+      "summary": "Good chocolate pieces dropping after being cut at 15:27 due to jaws sitting too low.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-26T21:27:16.046Z"
+      },
+      "resolution": "Maintenance adjusted jaw height at 15:43 \u2014 \"Maintenance adjusted where the jaws sat, they were too low\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 shakers 3 and 4 alarm triggered",
+      "summary": "Alarm for shakers 3 and 4 triggered at 07:07, depositing stopped.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-27T13:07:26.008Z"
+      },
+      "resolution": "Maintenance adjusted shakers at 07:26 \u2014 \"Maintenance adjusted the shakers\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix 5 pallets assembled incorrectly",
+      "summary": "3rd shift built 5 pallets with mixed horizontal and vertical boxes, labels on both sides.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-05-27T13:41:28.694Z"
+      },
+      "resolution": "All 5 pallets organized correctly by 08:54 \u2014 \"The 5 pallets were organized correctly\" (Isis Oses)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sensor bracket bent on auger door",
+      "summary": "Sensor for auger door wasn't registering closed at 15:35, bracket was bent.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-05-26T21:35:33.577Z"
+      },
+      "resolution": "Bracket straightened at 15:48 \u2014 \"Bracket of the sensor on the door was bent causing it not to read correctly\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle melting tank in Chinese language",
+      "summary": "Melting tank HMI switched to Chinese at 02:24, operator unable to navigate.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-05-27T08:24:27.586Z"
+      },
+      "resolution": "Frederick used AI to navigate menus and switch back to English at 02:24, then turned stirring on at 02:41 \u2014 \"I was able to navigate to the correct screen and turn the stirring on\" (Frederick Peairs)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix rejecting high-weight pouches",
+      "summary": "Line rejecting many pouches for high weight despite correct piece count at 07:48.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-05-27T13:48:25.357Z"
+      },
+      "resolution": "QA approved raising maximum weight limit to 211g at 07:48 \u2014 \"QA has approved fix the maximum weight limit to 211 g\" (Isis Oses)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 MM3 production time display issue",
+      "summary": "Production time stuck at 05:42 and not updating during pouch check at 10:22; supervisor adjusted it to show real time.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-05-27T16:22:47.181Z"
+      },
+      "status": "Display corrected at 10:22, QA reviewing impact as of 10:46 \u2014 \"message received, will review impact\" (Charity Young)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 craters on top of bars",
+      "summary": "Still seeing craters on bars at 08:34; cooler temp reduced from 48F to 44F and shakers brought down.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-27T14:34:00.088Z"
+      },
+      "status": "Adjustments made at 08:34 and 08:44, no follow-up confirmation that craters resolved by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna wrapper sealing issues ongoing",
+      "summary": "Cavanna has had intermittent sealing and mechanical issues since 11:02; film opening, jaws loose, broken film. Scott (Cavanna tech) on-site all shift making adjustments.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-26T17:02:22.263Z"
+      },
+      "status": "Running better as of 09:49 after Scott installed temporary guides, but film still opening intermittently at window close. Scott continues adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix faulting on perfect combination error",
+      "summary": "Machine turning off by itself since 09:26 despite being full of product and no open buckets; reducing speed to 38 PPM did not resolve.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-05-27T15:26:17.97Z"
+      },
+      "status": "Line stopped again at 10:36, maintenance still on line troubleshooting at window close."
+    }
+  ]
+}

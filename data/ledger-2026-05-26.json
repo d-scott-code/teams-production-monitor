@@ -1,0 +1,245 @@
+{
+  "date": "2026-05-26",
+  "headline": {
+    "eyebrow": "Safety flag",
+    "text": "L1 Sollich 3 found *non-detectable metal* on Matrix 5 at 09:00 \u2014 line down, all product scrapped, visual inspection of full line underway at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 Sollich 3 found a small piece of metal on Matrix 5 belt at 09:00 that neither the metal detector nor X-ray could detect; line stopped, all product scrapped, and floor is conducting a full visual inspection from C19 through end of line. Sollich 2 cleared an X-ray reject handling issue by adding trays to catch pouches and retraining operators.",
+    "L2": "L2 cleared six machine stops in the window \u2014 ML2 reheated a solidified chocolate line in 18 minutes, fixed a backwards nose piece, cleared a flow-wrap jam, replaced speed belt #3, and power-cycled a mold warmer. ML3 is running low on chocolate from L1 with about 2 hours of run time left in the melter at 09:44.",
+    "L3": "L3 ML1 cleared a misaligned mixing auger sensor in 19 minutes and unclogged 3 nozzles, but the Cavanna flow-wrap is still stopping intermittently on paper splits despite changing rolls and adjusting rollers. ML4 startup found a loose screw inside the north Sweco at 08:44, cleaned and inspected the area, and is monitoring a re-cleaned cream tank for odor; depositor #4 needs a re-clean."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "X-ray reject pouches hitting floor, operators re-sending",
+      "summary": "Pouches missing reject bin and hitting floor; operators were re-sending through X-ray against protocol.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-05-26T16:03:39.433Z"
+      },
+      "resolution": "Cleared at 10:50 \u2014 trays and bins placed under X-ray reject to catch pouches, operators retrained on protocol (Victor Romero Sr., Mary Montilla)."
+    },
+    {
+      "plant": "L1",
+      "title": "Roof patching work left hole exposed",
+      "summary": "Roofers working on roof left hole exposed over production area.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-05-26T15:33:27.673Z"
+      },
+      "resolution": "Cleared at 09:55 \u2014 \"Area is being taken care of right now\" at 09:39, roofers patching holes (Katya Farnsworth, William Lopez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 chocolate line solidified from branch pump to depositor",
+      "summary": "Chocolate pipe completely solid overnight; team reheated and unclogged.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-26T11:36:17.205Z"
+      },
+      "resolution": "Cleared at 05:54 \u2014 \"Pipe is unclogged. We are back tempering\" in 18 minutes, depositing at 06:16 (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cross conveyor not tracking, nose piece backwards",
+      "summary": "Cross conveyor failed to track because nose piece was installed backwards.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-26T13:10:34.094Z"
+      },
+      "resolution": "Cleared at 07:18 \u2014 \"Line back up running\" in 8 minutes (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars going sideways into flow-wrap causing jams",
+      "summary": "Bars entering FW at wrong angle, jamming the wrapper; maintenance on-site.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-26T13:30:07.419Z"
+      },
+      "resolution": "Cleared at 07:36 \u2014 maintenance tightened drive side belt, \"Line is back up\" in 6 minutes (Alex Mendoza, Dave Ruff)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 belt rubbing causing film",
+      "summary": "One of the speed belts was rubbing on something, causing film buildup; maintenance investigating.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-26T14:41:23.625Z"
+      },
+      "resolution": "Cleared at 08:48 \u2014 maintenance replaced speed belt #3, line back up (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 waiting for chocolate delivery from L1",
+      "summary": "Line ready but waiting for chocolate to be brought over from L1 warehouse.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-26T11:04:38.856Z"
+      },
+      "resolution": "Cleared at 05:26 \u2014 chocolate staged by warehouse, depositing at 06:13 (Joey Michael Dudney, Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold temperature controller stopped heating",
+      "summary": "Mold warmer controller stopped heating molds mid-run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-05-26T16:30:30.37Z"
+      },
+      "resolution": "Cleared at 10:36 \u2014 power-cycled mold warmer, \"It has corrected itself with the power down,\" line running (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 clean-in-line downtime",
+      "summary": "Scheduled CIL took line down mid-shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-26T15:29:04.506Z"
+      },
+      "resolution": "Cleared at 09:53 \u2014 \"Line is back up\" after 24 minutes (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "Mixing auger sensor not reading",
+      "summary": "Sensor failed to read; maintenance found it was misaligned and corrected it on-site.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-05-26T11:33:25.221Z"
+      },
+      "resolution": "Cleared at 05:52 \u2014 sensor realigned, \"it wasn't all the way aligned. It's on now\" (Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "North Sweco loose screw/metal found inside",
+      "summary": "Sweco made noise on startup; disassembled, found loose piece inside, area inspected and cleared by QA.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-26T14:44:35.57Z"
+      },
+      "resolution": "Cleared at 09:44 \u2014 area inspected, no metal residues found, production cleaned to ensure no foreign material (Mirella Mamani)."
+    },
+    {
+      "plant": "L3",
+      "title": "3 clogged nozzles on ML1",
+      "summary": "Three depositor nozzles clogged during run; cleared by hand on-shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-05-26T12:42:36.947Z"
+      },
+      "resolution": "Cleared at 06:58 \u2014 \"The nozzles have already been unclogged\" (Grey Boscan)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Non-detectable metal found on Sollich 3 Matrix 5 belt",
+      "summary": "Small piece of metal found on belt C26 at Matrix 5; passed through both metal detector and X-ray undetected; line stopped, all product scrapped, full visual inspection of belts and matrices underway.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-05-26T15:00:49.771Z"
+      },
+      "status": "Line down as of 09:35, visual inspection with flashlights from C19 through X-ray in progress, all product scrapped, tunnel 2 filters checked and clear as of 10:32."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 bowed guarding hitting on every lug",
+      "summary": "Guarding bolts over-tightened with tools instead of hand-tight; bowed guarding now hitting lugs on every rotation.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-05-26T14:59:06.904Z"
+      },
+      "status": "Plan to remove all guarding so maintenance can fix bowed sections; raised at 08:59, no update by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Curtain not sealed at production boundary",
+      "summary": "Environmental curtain between production zones not properly sealed.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-05-26T16:09:51.223Z"
+      },
+      "status": "Raised at 10:09, Justin committed to fix at 10:26."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 running low on chocolate, 2 hours left",
+      "summary": "All available chocolate on the line is in the melter; approximately 2 hours of run time remaining as of 09:44.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-26T15:44:35.932Z"
+      },
+      "status": "Alan Todd instructed at 10:27 to leave 10% in buffer tank to avoid reheat if supply runs out."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cream tank odor monitoring after re-clean",
+      "summary": "Cream tank re-cleaned at 08:52, left with lid open to air out and monitor for lingering odor.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-26T14:52:56.837Z"
+      },
+      "status": "Re-cleaned at 09:40, lids left open for natural air circulation, monitoring smell as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna flow-wrap paper splitting intermittently",
+      "summary": "Cavanna wrapper stopping frequently as paper keeps splitting open; maintenance adjusting rollers and changing roll sides.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-26T15:17:20.932Z"
+      },
+      "status": "Nathan Ruiz on-site since 09:48, ran better at 09:55, paper opened again at 10:28, changed roll side and adjusting rollers as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor #4 needs re-clean",
+      "summary": "Depositor #4 failed QA inspection during startup prep; 3rd shift cleaned it last week.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-26T16:13:55.706Z"
+      },
+      "status": "Raised at 10:13, team identified 3rd shift as original cleaners, no ETA on re-clean by window close."
+    }
+  ]
+}
