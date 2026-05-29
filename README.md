@@ -4,12 +4,22 @@ Daily automated reports of Microsoft Teams activity for CandyCo's three Lindon p
 
 **Live site:** https://d-scott-code.github.io/teams-production-monitor/
 
-Every morning at 14:00 UTC (08:00 MDT / 07:00 MST), a GitHub Actions
-workflow runs `scripts/run_daily.py`: it pulls the last 24 hours of
-messages from every Teams chat whose topic contains `L1`, `L2`, or `L3`,
-makes one Anthropic API call to classify the activity, renders an HTML
-briefing, and commits everything to `main`. GitHub Pages serves the
-archive so any browser can read it — no login required.
+Every morning at 13:15 UTC (7:15 AM MDT / 6:15 AM MST), a Cloudflare
+Worker fires the GitHub Actions workflow via the `workflow_dispatch`
+API. The workflow runs `scripts/run_daily.py`: it pulls the last 24
+hours of messages from every Teams chat whose topic contains `L1`,
+`L2`, or `L3`, makes one Anthropic API call to classify the activity,
+renders an HTML briefing, and commits everything to `main`. GitHub
+Pages serves the archive so any browser can read it — no login
+required.
+
+The Worker exists because GitHub Actions scheduled events are
+best-effort and routinely run hours late under peak load.
+`workflow_dispatch` isn't subject to the same queueing, so the Worker
+gets the report on Pages by ~7:25 AM Mountain reliably. See
+[`cloudflare/README.md`](cloudflare/README.md) for setup. The
+GitHub-scheduled cron in `.github/workflows/daily.yml` stays in place
+as a fallback.
 
 Each report is **window-only**: it reflects what happened in the last 24
 hours and nothing else. There is no cumulative tracking, no carry-over,
@@ -41,7 +51,8 @@ want to build weekly/monthly/quarterly roll-ups with a separate tool.
 - `scripts/update_manifest.py` — rebuilds `reports/manifest.json`
 - `.claude/skills/teams-production-monitor/SKILL.md` — manual-run skill (Claude Code sessions only)
 - `.claude/hooks/session-start.sh` — installs `requests` when the skill is used interactively
-- `.github/workflows/daily.yml` — the GitHub Actions cron that runs it
+- `.github/workflows/daily.yml` — the GitHub Actions workflow (triggered by the Worker, with a cron fallback)
+- `cloudflare/` — Worker that triggers the daily workflow at 13:15 UTC (see its README for deploy steps)
 
 ## One-time setup
 
