@@ -1,19 +1,24 @@
 name: Daily Teams Production Monitor
 
-# Schedule. GitHub Actions cron is UTC-only. We run two slots ~20 minutes
-# apart so the backup catches anything the primary misses (the :00 UTC slot
-# was getting skipped under platform load; see scripts/run_daily.py for the
-# idempotency guard that makes the second slot a no-op when the first lands).
+# Schedule. The primary trigger is a Cloudflare Worker that calls the
+# workflow_dispatch API at 13:15 UTC daily (see cloudflare/README.md) —
+# workflow_dispatch isn't subject to the cron queueing that routinely
+# delays GitHub-scheduled events by hours.
 #
-#   Primary (13:15 UTC):   7:15 AM MDT / 6:15 AM MST
-#   Backup  (13:35 UTC):   7:35 AM MDT / 6:35 AM MST
+# These cron entries are a fallback. If the Worker is misconfigured or
+# Cloudflare has an outage, GitHub's scheduler will still eventually fire
+# this workflow (late). The run_daily.py idempotency guard prevents
+# duplicate reports on days when both trigger paths succeed.
 #
-# DST shifts mean winter runs ~1 hour earlier in local time. Acceptable for
-# a daily ops report.
+#   Fallback primary (13:20 UTC):   7:20 AM MDT / 6:20 AM MST
+#   Fallback backup  (13:40 UTC):   7:40 AM MDT / 6:40 AM MST
+#
+# DST shifts mean winter runs ~1 hour earlier in local time. Acceptable
+# for a fallback that's only used when the Worker is broken.
 on:
   schedule:
-    - cron: "15 13 * * *"
-    - cron: "35 13 * * *"
+    - cron: "20 13 * * *"
+    - cron: "40 13 * * *"
   workflow_dispatch:
 
 permissions:
