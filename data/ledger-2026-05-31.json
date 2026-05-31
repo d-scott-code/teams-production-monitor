@@ -1,0 +1,233 @@
+{
+  "date": "2026-05-31",
+  "headline": {
+    "eyebrow": "Quality holds",
+    "text": "L1 put *125,440 pieces* on hold for defective label backing, L3 held one display pallet for missing lot box, plus a live water leak at L3 ML1 since 06:48."
+  },
+  "per_plant_summary": {
+    "L1": "L1 S2 cleared a labeler jam quickly at 09:09 but discovered defective label backing throughout the shift \u2014 83 rolls holding 125,440 pieces were pulled by 23:02. S3 ran pretzel through the night but exceeded doubles spec at 37.58% by window close. A missing nut near MM4 paused the line at 17:01 for investigation; determined to be a spare from earlier maintenance, cleared by 17:12.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "L3 ML1 has a water pipe leak since 06:48, maintenance working with no ETA. ML4 cleared a sticker applicator jam at 09:04 but it went down again at 13:36 and remained problematic through shift change. A pallet of V2 display boxes was held at 14:58 for missing lot identification; enough inventory remains to complete the order. TG5 conveyor belt tore during post-clean startup at 06:09, cause identified as edge damage but repair status unclear."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 high temper reading at startup",
+      "summary": "Line could not start due to high temper; enrober return pump had been left in manual mode, draining the sump.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-05-30T21:51:56.65Z"
+      },
+      "resolution": "Cleared at 16:13 \u2014 pump corrected, temper normalized, line started."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 missing nut found near MM4",
+      "summary": "Nut found on MM4 top cover during production, line paused to investigate source and inspect for missing hardware.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-05-30T22:56:09.881Z"
+      },
+      "resolution": "Cleared at 17:12 \u2014 determined to be spare nut brought by 1st shift maintenance for earlier C21 repair, not a missing part from equipment."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar labeling machine buildup",
+      "summary": "Labeling machine experienced significant product buildup, paused for mechanical adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-05-30T14:38:13.19Z"
+      },
+      "resolution": "Cleared at 09:09 \u2014 Troy configured capper within centerlines, labeler working well."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Matrix air pressure alarm at restart",
+      "summary": "All three Matrix machines showed air pressure alarm after lunch rotation; x-ray belts also required login.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-05-31T01:22:47.503Z"
+      },
+      "resolution": "Cleared at 19:25 \u2014 Caleb York assisted, compressor at 115 psi, operator restarted Matrixes successfully."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 CW1 belt skipping and clattering",
+      "summary": "Belt on CW1 in jar area appeared broken; team routed jars around it until inspection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-05-31T07:44:20.05Z"
+      },
+      "resolution": "Cleared at 01:50 \u2014 belt was out of track with excess slack, not broken; Jordan re-ran belt at 05:22 to remove slack."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna jaws outputting doubles",
+      "summary": "Cavanna jaws began outputting doubles at 09:50; Nathan Ruiz shimmed all three blades and leveled the head.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-30T15:50:51.666Z"
+      },
+      "resolution": "Cleared at 10:25 \u2014 Nathan shimmed blades, tightened outfeed belt, leveled head; no more doubles or sealing issues observed."
+    },
+    {
+      "plant": "L3",
+      "title": "Sweco screen north side broken",
+      "summary": "Sweco screen on north side broke during overnight cleaning; team replaced with new screen.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luisiana Castro",
+        "time_utc": "2026-05-31T09:41:08.482Z"
+      },
+      "resolution": "Replaced and ATP passed at 04:27 \u2014 \"ATP passed\" (Luisiana Castro)."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate jammed on conveyor to TG3",
+      "summary": "Line ran 10 minutes at 19 mpm before chocolate jammed on the TG3 infeed conveyor.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-30T16:41:46.533Z"
+      },
+      "resolution": "Cleared at 10:43 \u2014 team reduced speed back to 18 mpm, line resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor #4 sensors chocolate buildup",
+      "summary": "Sensors on depositor #4 accumulated chocolate buildup; white chocolate side agitator also had hard buildup.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-30T17:11:40.008Z"
+      },
+      "resolution": "Cleaned and running at 11:22 \u2014 \"Running\" (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 defective label backing, 83 rolls on hold",
+      "summary": "Label backing plastic tears easily, causing labeler to jam; QA identified 5 rolls by 12:34, escalated to 83 rolls (125,440 pcs) on hold by 23:02.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-05-30T17:38:59.712Z"
+      },
+      "status": "First 5 rolls flagged at 12:34; pallet of 83 rolls placed on hold by 22:16, confirmed in schedule chat at 23:02."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 doubles exceeding 10% spec",
+      "summary": "MM3 measured 37.58% doubles at 00:34, well over the 10% maximum specification.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-05-31T06:34:28.512Z"
+      },
+      "status": "Victor flagged at 00:34 that doubles hit 37.58%, asked Luis and Ebrima to separate pretzels further; no follow-up by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 water pipe leak, glycol shut off",
+      "summary": "Water pipe leak detected at 06:48, maintenance shut off glycol and began work.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-31T12:48:37.268Z"
+      },
+      "status": "Maintenance working on leak as of 07:07, no ETA provided by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator recurring failures",
+      "summary": "Sticker applicator jammed at 07:54, Nathan Ruiz cleared; went down again at 13:36 causing heavy accumulation, issues persisted into 2nd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-05-30T13:54:23.377Z"
+      },
+      "status": "Cleared once at 09:04; failed again at 13:36 with 10-minute pause to clear accumulation; Tyson reported ongoing sticker issues at 15:58."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bottom of bar bubbles consistently",
+      "summary": "Approximately 2 pieces per mold showing bottom-of-bar bubbles; operators working to reduce defect rate.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-05-30T14:05:34.862Z"
+      },
+      "status": "Bubbles first noted at 08:05; Preston asked team to improve at 08:52; updates at 10:55 and 11:28 show defect persisting, adjustments ongoing through 15:54."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 display box V2 pallet on hold, missing lot",
+      "summary": "One pallet of V2 display boxes missing lot identification box, placed on hold; switched to V3 caddies.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-05-30T20:58:50.976Z"
+      },
+      "status": "Pallet held at 14:58; Andrea confirmed at 17:55 enough V3 displays to complete order, V2 separated by 16:20."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 silver lining defects",
+      "summary": "Silver lining issues on TG4, operator and maintenance tried multiple rolls without resolution.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-05-30T22:30:04.545Z"
+      },
+      "status": "Operator and maintenance working on TG4 silver lining at 16:30, tried multiple rolls, no resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 conveyor belt damaged post-clean",
+      "summary": "TG5 conveyor belt tore after level 2 clean completed and belts ran; maintenance investigating cause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-05-31T12:09:42.778Z"
+      },
+      "status": "Belt damaged at 06:09; Frederick reported at 06:44 maintenance found 3 initial tears, believes edge in that section caused it; repair status unclear."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 HMI alarm overnight",
+      "summary": "HMI alarm posted at 18:44 on 30th, no context or resolution provided.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-31T00:44:54.127Z"
+      },
+      "status": "Alarm reported at 18:44, Nathan Gevenois acknowledged, no follow-up by window close."
+    }
+  ]
+}
