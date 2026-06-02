@@ -1,0 +1,197 @@
+{
+  "date": "2026-06-02",
+  "headline": {
+    "eyebrow": "L3 piston down",
+    "text": "L3 ML1 piston faulted *3 times overnight* \u2014 hopper plate clogged with almonds, maintenance working at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel and chocolate lines with three quick fixes. Sollich 2 labeler roller slipped due to loose set screws at 15:24, tightened and back in 4 minutes. Sollich 3 metal detector belt broke at 22:46, replaced by 02:51. Sollich 4 vanilla pump reset after Friday's power outage.",
+    "L2": "L2 cleared three machine faults inside 30 minutes. ML2 air compressor tripped at 17:49, reset by 18:17. ML2 mold jam on rail 16 at 01:55, cleared by 02:16. FFS line paused at 06:26 to build new recipe for weight adjustment, running by 06:30.",
+    "L3": "L3 ML1 piston faulted three times between 01:54 and 06:30, still down at window close with hopper plate clogged by almonds. ML4 scraper sensor cleaned in 14 minutes at 04:34. Truffle line Cute Cavanna repaired by 08:38. Truffle conveyor motor failed at 14:08 and remains out of service \u2014 undersized for load. Truffle roller to belt #2 bent at 04:36, no replacement available."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 labeling machine roller not rotating",
+      "summary": "Blue roller that pulls labels stopped rotating at 15:24, set screws were loose.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-01T21:24:43.162Z"
+      },
+      "resolution": "Fixed at 15:28 \u2014 \"The set screws were loose and allowing it to slip. Maintenance adjusted the blue roller, and it is now working correctly\" (Caleb York / Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 metal detector belt broken",
+      "summary": "Metal detector belt broke at 22:46, line stopped at 02:38 to replace belt.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-02T04:46:29.836Z"
+      },
+      "resolution": "Fixed at 02:51 \u2014 \"Line is back to run\" (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 vanilla pump config wrong after power outage",
+      "summary": "Vanilla pump settings incorrect due to Friday power outage, operator reset it.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-06-01T14:08:56.499Z"
+      },
+      "resolution": "Reset at 08:09 \u2014 \"the vanilla pump configuration was not correct due to the power outage on Friday. I reset it, and it is now working properly\" (Marcos Jimenez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 air compressor faulted",
+      "summary": "Air compressor tripped at 17:49, Raymond Fleming reset it and line resumed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-01T23:49:46.165Z"
+      },
+      "resolution": "Cleared at 18:17 \u2014 \"Air compressor was faulted out. Maintenance reset it and the line is running\" (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 roller PG20 pulling fill too thick on silver side",
+      "summary": "Roller PG20 was dispensing fill too thick, maintenance corrected it.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-02T00:27:55.126Z"
+      },
+      "resolution": "Maintenance resolved by 18:27 \u2014 \"Ya mantenimiento lo soluciono\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jam on rail 16",
+      "summary": "Mold jammed on rail 16 at 01:55, maintenance cleared it with no bent parts found.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-02T07:55:04.619Z"
+      },
+      "resolution": "Line up at 02:16 \u2014 \"Jam is on rail 16, maintenance did not see any bent parts. Line is up\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line down for recipe adjustment",
+      "summary": "Line paused to create new recipe because QA specified different weight for caramel and almond.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-06-02T12:26:11.237Z"
+      },
+      "resolution": "Running at 06:30 \u2014 \"Line is running\" (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 conveyor belt misaligned",
+      "summary": "C6 belt misaligned at 14:54, caused chocolate spillage and scrap while maintenance realigned it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-01T20:54:55.804Z"
+      },
+      "resolution": "Maintenance realigned belt by end of shift \u2014 \"conveyor belt C6 became misaligned...maintenance team worked to realign the belt\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 broken door stopping machine",
+      "summary": "TG3 had a broken door that wouldn't close and stopped the machine, maintenance fixed it this morning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-02T12:58:30.57Z"
+      },
+      "resolution": "Fixed by maintenance \u2014 \"TG3 had issues this morning with a broken door not closing and stopping the machine. Maintenance fixed that\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cute Cavanna error at startup",
+      "summary": "Cute Cavanna showed error at 08:14, part repaired and sanitized.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-01T14:14:51.447Z"
+      },
+      "resolution": "Fixed at 08:38 \u2014 \"The part has been repaired and is being sanitized\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 scraper fault",
+      "summary": "Line down at 04:34 for scraper fault, sensor cleaned and line restarted.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-02T10:34:10.726Z"
+      },
+      "resolution": "Back up at 04:48 \u2014 \"Sensor cleaned, line is back up\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 sensor not detecting wraps",
+      "summary": "Sensor on Cavanna 1 failing to detect wraps, throwing labels off center.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-02T11:47:42.311Z"
+      },
+      "resolution": "Calibrated at 06:39 \u2014 \"This sensor is now calibrated and good to go\" (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L3",
+      "title": "ML1 piston faulting repeatedly, hopper plate clogged",
+      "summary": "Piston failed at 01:54, fixed at 02:11, faulted again at 02:19, back up at 05:48, down again at 06:04; hopper plate clogged with almonds as of 06:45.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-02T07:54:28.004Z"
+      },
+      "status": "Maintenance checking clogged hopper plate as of 07:01, third piston fault since 01:54."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line conveyor motor undersized and out of service",
+      "summary": "Conveyor motor overheating under load at 09:54, swapped motor at 14:08 but still can't handle weight; needs more powerful motor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-01T15:54:03.642Z"
+      },
+      "status": "Out of service as of 14:08, Nathan Ruiz reports motor too small for belt size and weight, \"can't handle it\" even at 100% power."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle roller to belt #2 bent, no replacement",
+      "summary": "Roller bent at 04:36, cannot be put back into place properly; maintenance has no replacement available.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-02T10:37:50.385Z"
+      },
+      "status": "Maintenance reported no replacement available as of 05:35 \u2014 \"Maintenance said they don't have replacement for it\" (Raoul Lubain)."
+    }
+  ]
+}
