@@ -1,0 +1,161 @@
+{
+  "date": "2026-06-06",
+  "headline": {
+    "eyebrow": "L1 & L3 machine issues",
+    "text": "L1 Sollich 2 fought Cavanna 4 accumulation all day \u2014 *still jamming* at window close \u2014 while L3 ML4 mold jams and chain sync remain unresolved after *12 hours*."
+  },
+  "per_plant_summary": {
+    "L1": "L1 Sollich 2 had a rough startup with Cavanna issues and wrong seal carriers, then ran above attainment at 1300 ppm by midday. Third shift hit recurring accumulation and Cavanna 4 rail problems. Sollich 3 ran out caramel at 01:14, caustic cleaned, and restarted at 04:21 but saw cooking times jump 10-16 minutes post-clean. Sollich 4 is recleaning after XR80 failed ACP testing \u2014 ATP now passed.",
+    "L2": "L2 had a quiet 24 hours. FFS cleared a bag-seal jam in 9 minutes at 08:31. ML2 and ML3 completed level 2 cleanings and temper flushes overnight with no issues. All lines running on schedule.",
+    "L3": "L3 Truffle cleared an accidental E-stop in 20 minutes and a belt bearing failure in under 2 hours, but most of the line failed ATP at 07:08 \u2014 reclean underway. ML4 startup hit mold jams at the scraper starting at 20:02, chain sync is off by -280, still jamming at window close. MF Matrix battled weight and throughput issues all day, funnel clogged 4 times, max speed dropped to 27 ppm."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 ATP failures on covers 9-11",
+      "summary": "ATP swabs on covers 9-11 and one area failed at 23:09, required re-rinse and sanitization.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-06-06T05:09:11.17Z"
+      },
+      "resolution": "Re-rinse completed, all areas passed ATP at 23:26 and final sanitization at 05:55 \u2014 \"all areas cleaned passed the ATP tests\" (Ebrima Dibba)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 ran out caramel on depositor",
+      "summary": "Depositor ran out caramel at 01:14, crew initiated caustic clean.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-06T07:14:30Z"
+      },
+      "resolution": "Caustic clean started at 01:34, line back to run at 04:21 \u2014 \"line is back to run\" (Luis Falcon)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bags coming out open",
+      "summary": "Bags opened during sealing at 08:31, cleared and line running by 08:40.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-06-05T14:31:12.776Z"
+      },
+      "resolution": "Cleared at 08:40 \u2014 \"line is running\" (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line belt motor bearing seized",
+      "summary": "Belt motor bearing seized at 17:46, maintenance sourced replacement from L1 and installed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-05T23:46:21.983Z"
+      },
+      "resolution": "Bearing replaced, temper checked good at 19:37, line started \u2014 \"temper is good we are starting up\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line E-stop accidentally pressed",
+      "summary": "Operator pressed E-stop at 09:29, required three temper readings per restart protocol before resuming.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-05T15:29:59.381Z"
+      },
+      "resolution": "Third temper reading good at 09:49, line restarted \u2014 \"restarted the line\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at cooling cabinet 2",
+      "summary": "Mold jam at cooling cabinet 2 upper level at 10:32, operators and Alex clearing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-05T16:32:33.569Z"
+      },
+      "resolution": "Jam fixed at 11:27, 400 molds with plain bars entering cooling cabinet 3 \u2014 \"mold jam is fixed\" (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Cavanna 4 turning chocolates, causing doubles and accumulation",
+      "summary": "Chocolates turning in Cavanna 4 rails at 01:03, massive doubles and 50+ bins accumulation, paused multiple times through third shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-06T07:03:10.749Z"
+      },
+      "status": "Maintenance troubleshooting at 01:03, accumulation requiring 40-minute pause at 06:25, issue ongoing at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 cooking time increased 10-16 minutes after caustic clean",
+      "summary": "After caustic clean, C2 cooking time increased from 31 to 47 minutes over 3 batches, C1 from 31 to 41 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-06T12:25:14.571Z"
+      },
+      "status": "Increase observed at 06:25, Jody Howse and Curt Willis notified, no root cause or corrective action posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jams at scraper, chain out of sync",
+      "summary": "Mold jams recurring near scraper starting at 20:02, missing piece from last week contributing, drive chain diff at -280.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-06T02:02:29.996Z"
+      },
+      "status": "Still getting jams at 20:59, chain sync issue identified, no resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix weight issues and low throughput",
+      "summary": "Weight problems starting at 08:00, funnel clogged 4 times during day shift, running 43 ppm but only 28-35 coming out, recipe changes made.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-05T14:00:41.566Z"
+      },
+      "status": "Max speed 27 ppm after recipe changes at 16:15, cleaning completed and ATP passed overnight, but throughput degraded from target."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line failed ATP after level 2 cleaning",
+      "summary": "Most sections of truffle line failed ATP at 07:08, Kevin working on list for Raoul to reclean.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-06-06T13:08:17.151Z"
+      },
+      "status": "Raoul working plan to bring employees in to reclean failed sections as of 07:08."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle temper unit magnet vibrating loose, bolt damaged",
+      "summary": "Magnet on temper unit buffer tank vibrating and moving, bolt not holding well, screen missing stopper, backup screen has broken bolt mount.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-06-05T19:35:12.383Z"
+      },
+      "status": "Preston Elmer and Preston Tregaskis discussed at 16:07, have plans to address, no timeline given."
+    }
+  ]
+}
