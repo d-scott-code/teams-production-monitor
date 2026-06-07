@@ -1,0 +1,209 @@
+{
+  "date": "2026-06-07",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 Cavanna 3 was down *4.5 hours* on sensor faults \u2014 cleared at 16:11, then MM6 issues stopped the line early overnight."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 cleared a 4.5-hour Cavanna 3 outage at 16:11 after turning off the reject sensor and adjusting film/jaw position. Overnight, MM6 sensor failures and matrix issues across all three units forced the line to stop early and send caramel to rework. Sollich 3 ran with frequent pauses for caramel \u2014 cook times spiked to 94 minutes, requiring multiple line stops to replenish reserve.",
+    "L2": "FFS cleared a brief high-weight reject spike by realigning the incline belt. QA flagged a supersack with mixed lots (61AUC label, 61BUC product inside) and placed it on hold for rework. Grinding reported high waste on Brookie pieces under 1 inch; RCA meeting scheduled for Tuesday.",
+    "L3": "Truffle Line failed Level 2 clean on Friday (cooling tunnels, belts) \u2014 team re-cleaned overnight and passed ATP by 01:04. ML1 chain ran well all shift. ML4 WDS cleared errors and ran at 20 mpm with no issues by midday."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Cavanna 3 down on sensor faults and film/jaw errors",
+      "summary": "Cavanna 3 threw OMAC alarms and belt faults at 11:38, tried multiple resets and reject air adjustments with vendor support, finally cleared by turning off reject sensor, adjusting film/jaw position, and reducing speed from 700 to 600.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-06T17:38:29.312Z"
+      },
+      "resolution": "Cleared at 16:11 \u2014 \"seems to be running well, the OMAC alarm hasn't returned\" after turning off reject sensor, adjusting film/jaw, and lowering speed to 600 (Caleb York). Both Cavannas confirmed running well by 21:27."
+    },
+    {
+      "plant": "L1",
+      "title": "Chocolate feet on caramels from tunnel/enrober settings",
+      "summary": "Water table and fans for tunnel 2 were turned off, and enrober blower was on when it should be off, preventing chocolate from solidifying before enrobing.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-06T13:44:52.254Z"
+      },
+      "resolution": "Settings corrected (water table/fans on, blower off) \u2014 \"product looks good\" by 08:46 (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "Guide rail falling before Cavanna 4, loose bolt causing jams",
+      "summary": "Operator saw guide rail repeatedly falling and pieces on the floor; inspection found a loose bolt.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-06T14:27:55.649Z"
+      },
+      "resolution": "Bolt tightened at 08:27 \u2014 \"everything is running well right now\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 ran out of caramel at 16:15, reduced line speed",
+      "summary": "Caramel reserve depleted due to rising cook times (C2 at 76 minutes); line paused and speed reduced from 58 to 56.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-06T22:15:31.306Z"
+      },
+      "resolution": "Caramel sent to line by 16:51 \u2014 \"Line 3 is running with caramel\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "6 pallets of MM678 with incorrect box labels (item 30892)",
+      "summary": "IMS and QA confusion led to wrong item number printed on 6 pallets of MM678 pouches.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-06-07T00:24:46.62Z"
+      },
+      "resolution": "All 6 pallets re-labeled by 19:07 and tagged to prevent warehouse movement \u2014 \"I identified them with a Tag so that Warehouse wouldn't move them\" (Angelica Perez). Rework confirmed complete at 23:23."
+    },
+    {
+      "plant": "L1",
+      "title": "Double-sided tape shortage delayed Cavanna roll change",
+      "summary": "Ran out of double-sided tape for a quick Cavanna roll change, triggering a 30-minute pause to pass accumulation.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-06T13:19:04.472Z"
+      },
+      "resolution": "Joey delivered tape by 07:27 \u2014 \"Done!\" (Joey Michael Dudney)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS high-weight rejects on incline belt",
+      "summary": "Checkweigher rejected a burst of high-weight bags; QA verified all were normal weight.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-06-07T01:14:18.263Z"
+      },
+      "resolution": "All bags passed second check at 19:24; incline belt found slightly south, realigned \u2014 \"bags seem to be centered on the incline belt for the most part\" (Mathew Draper)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Level 2 clean failed ATP on tunnels and belts",
+      "summary": "QA did not pass sections on Cavanna and north tunnel after Friday's Level 2 clean; team had already left for the day.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Kevin Del Valle",
+        "time_utc": "2026-06-06T13:24:18.781Z"
+      },
+      "resolution": "Re-clean completed overnight, passed ATP by 01:04 \u2014 \"Level 2 clean completed and passed off ATP\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS errors during recirculation",
+      "summary": "WDS threw errors during startup testing with Alex (Theegarten tech) on-site.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ray Garcia",
+        "time_utc": "2026-06-06T17:46:19.349Z"
+      },
+      "resolution": "Errors cleared by 13:43 \u2014 \"WDS is now running at 20mpm for 10min with no issues\" (Itzel Chavez). Shutdown checklist completed by 14:59."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "MM6 sensor failure, all three matrixes causing scrap and jams",
+      "summary": "MM6 sensor on top not functioning correctly; all three matrixes (especially MM6) caused heavy accumulation, pouch scrap, and forced early line stop with caramel sent to rework buckets.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-07T11:54:10.995Z"
+      },
+      "status": "Maintenance worked all night but could not fix MM6. Line stopped early at 06:57 and caramel sent to rework. Needs attention before Monday production \u2014 flagged to Justin Garner and Chris Givens."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 caramel cook times spiked to 94 minutes, multiple pauses",
+      "summary": "Cook times climbed from 47/66 minutes to 94/91 minutes over the shift, forcing three separate line pauses to replenish caramel reserve and progressive speed reductions from 58 to 50.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-06T20:11:49.125Z"
+      },
+      "status": "Line restarted at 40 dpm at 00:31 after final pause. Cook times remain elevated; third shift noted possible caustic wash needed for second shift Monday."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 valve gasket blown out, cap workaround failed",
+      "summary": "Gasket on valve under the reserve tank blew out; capping solution caused another blowout.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-06-06T22:36:16.925Z"
+      },
+      "status": "Temporary fix in place; valve gasket replacement needed when able. Last mention at 16:56, still on workaround at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Leak under S3 C2 kettle water valve",
+      "summary": "Water valve directly under C2 kettle is leaking.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-06T15:00:36.175Z"
+      },
+      "status": "Maintenance informed and aware at 09:00. No resolution posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 kitchen Tempek chiller loud noise and water leak",
+      "summary": "Tempek chiller making unfamiliar loud noise with water leaking from underneath; all kitchen temperatures and caramel temps reading normal.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-06T18:23:44.974Z"
+      },
+      "status": "Maintenance informed at 12:23, no update by window close. Temps stable, line running."
+    },
+    {
+      "plant": "L2",
+      "title": "Brookie pieces under 1 inch driving high waste in Grinding",
+      "summary": "Grinding reported elevated waste on Brookie pieces smaller than 1 inch, spec compliance concern.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Miriah Manzanares",
+        "time_utc": "2026-06-06T16:48:45.146Z"
+      },
+      "status": "Team coaching in progress on verifying correct grinder settings. RCA meeting scheduled no later than Tuesday with Brandon Lance, Gustavo Rodas, Hervin Herrera, and Alan Todd."
+    },
+    {
+      "plant": "L2",
+      "title": "Supersack with two different lot labels (61AUC / 61BUC mixed)",
+      "summary": "Supersack brought for Lot 61AUC line had two labels; inspection revealed product inside is actually Lot 61BUC, not 61AUC.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-06-07T04:07:43.091Z"
+      },
+      "status": "QA placed entire supersack on hold/rework at 22:07. Alan Todd escalated to Rose Smuin at 22:12 \u2014 \"We can't mix lots in supersacks.\" Verification in progress."
+    }
+  ]
+}
