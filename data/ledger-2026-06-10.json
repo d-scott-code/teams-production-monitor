@@ -1,0 +1,365 @@
+{
+  "date": "2026-06-10",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 tempering unit *down 4+ hours* \u2014 still offline at window close, Robert and Chris called in early to assist."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel cluster and jars with no major breaks. Sollich 2 buffer overfilled with dark chocolate at 22:19 but was cleaned. Sollich 3 ran out of caramel at 06:23, pausing depositing. Level 2 cleaning on Sollich 2 Cavanna 4 still incomplete at shift end \u2014 chicanes and conveyors need finishing.",
+    "L2": "L2 ML3 and ML2 had brief line stops for sensor adjustments and missing print on boxes, both cleared inside 30 minutes. FFS line cycled through film tracking and Z-conveyor sensor faults, all resolved same-shift. Panning conveyor motor housing broke at 20:28 but was rewired and running by 23:34.",
+    "L3": "L3 ML1 ran a 12g startup that turned into a multi-hour fight. Metal detector belt tracking failed at 21:33, then tempering unit faulted at 02:59 and stayed down through window close despite Preston E and early callouts for Robert and Chris. ML4 had a chiller fault at 06:52 with 100 molds paused in cooler. Truffle Line guillotine seized at 03:22 and remained down at 07:15, preventing temper recovery."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Cavanna 4 cleaning incomplete from prior shift",
+      "summary": "Cavanna 4 appeared uncleaned; 2nd shift re-cleaned and passed ATP, though chicanes and aligner belt still need work for Level 2 sign-off.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-09T22:29:21.409Z"
+      },
+      "resolution": "Re-cleaned and passed ATP at 22:44 \u2014 \"Cavanna 4 is clean and passed the ATP test\" (Elizabeth Hernandez). Chicanes and cross conveyors flagged for completion."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 caramel supply ran out mid-shift",
+      "summary": "Depositor ran out of caramel at 22:37; crew prepared for caustic clean but was redirected to continue cooking instead.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-10T04:37:19.815Z"
+      },
+      "resolution": "Crew redirected to continue cooking at 22:44 \u2014 \"spoke with Dakota Adair, and we will continue cooking\" (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 checkweigher tare misconfigured",
+      "summary": "Checkweigher was set to 68 grams instead of the correct 69 grams for jar product.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-06-09T14:11:15.275Z"
+      },
+      "resolution": "Troy adjusted the tare setting to 69 grams at 08:32 \u2014 \"adjusted the tare setting\" (Ingrid Moreno Angarita)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS machine not dispensing product",
+      "summary": "VFFS stopped dispensing at 21:11; maintenance worked on funnel setup.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-06-10T03:11:38.071Z"
+      },
+      "resolution": "Cleared at 21:28 \u2014 \"The machine is working!\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 laser not printing lot number on wrappers",
+      "summary": "Laser failed, producing wrappers without lot numbers; one box affected and being inspected to remove bad wrappers.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-09T20:45:09.405Z"
+      },
+      "resolution": "Cleared at 14:50 \u2014 \"Problem resolved, the movie comes with its batch\" (Marlenis Fernandez). Affected box isolated and inspected."
+    },
+    {
+      "plant": "L2",
+      "title": "Panning conveyor belt bracket and motor housing damage",
+      "summary": "Belt assembly bracket broke, screws fell; when moving panner it hit conveyor motor and broke housing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-06-10T02:12:07.067Z"
+      },
+      "resolution": "Power cord rewired and conveyor working at 23:34 \u2014 \"Conveyor is working\" (Fernando Flores)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 missing 'BEST IF' text on box laser print",
+      "summary": "Video jet missing letters on cases; line stopped at 20:59 to add the required print.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-10T02:59:49.592Z"
+      },
+      "resolution": "Text added and line restarted at 21:08 \u2014 \"problem resolved, words added\" (Victor Leandro)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS Z-conveyor A shutting off intermittently",
+      "summary": "Z-conveyor A kept tripping off; maintenance adjusted the top sensor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-10T05:23:17.017Z"
+      },
+      "resolution": "Sensor adjusted at 23:36 \u2014 \"adjusted the sensor on top, seems to be working well\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS film tracking fault",
+      "summary": "Line stopped at 03:49 for film tracking issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-06-10T09:49:59.352Z"
+      },
+      "resolution": "Film tracked and line running at 03:59 \u2014 \"Line is running\" (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector belt tracking off (first occurrence)",
+      "summary": "Metal detector belt drifted and was down from 21:33 through multiple rounds of maintenance work.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-10T03:46:59.223Z"
+      },
+      "resolution": "Belt fixed at 02:37 \u2014 \"Metal detector good\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector belt tracking off (second occurrence)",
+      "summary": "Metal detector belt failed again at 03:13 after earlier repair.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-10T09:13:38.011Z"
+      },
+      "resolution": "Belts fixed at 03:59 \u2014 \"Belts fixed\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line double pieces and poor appearance",
+      "summary": "Center of line producing double pieces and poor chocolate coating at 07:58.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-09T13:58:34.028Z"
+      },
+      "resolution": "Appearance, double-feeding, and weight improved exponentially by 08:48 \u2014 \"issues improved exponentially\" (David Zuniaga)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M6 belt tracking issues",
+      "summary": "M6 belt continuously moving/tracking incorrectly during startup at 09:15.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-09T15:15:35.352Z"
+      },
+      "resolution": "M6 belt running correctly at 16:24 \u2014 \"M6 belt running correctly\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix suction cups not detecting bag opening",
+      "summary": "Machine failed to detect when bags opened, so funnel would not dispense product; suction cups misaligned.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-09T18:02:56.91Z"
+      },
+      "resolution": "Suction cups aligned and running good at 12:37 \u2014 \"adjusted the top suction cups and it is running good now\" (Ray Garcia)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line flow wrapper issues",
+      "summary": "Flow wrapper having unspecified issues at 14:56, maintenance working.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-09T20:56:39.55Z"
+      },
+      "resolution": "Problem solved at 15:18 \u2014 \"Problem solved; the line is running fine\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt tracking north continuously",
+      "summary": "C6 belt prior to Cavanna drifted north and would not track correctly, delaying first deposit.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-06-10T00:41:31.136Z"
+      },
+      "resolution": "Tracking corrected and depositing started at 19:04 \u2014 \"They got it now and we started depositing\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna open packages and doubles",
+      "summary": "Cavanna flow wrapper producing open seals and double-feeding at 22:12.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-10T04:12:02.904Z"
+      },
+      "resolution": "Not explicitly stated as resolved, but line continued running and no further mentions after early shift updates."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 belt broke",
+      "summary": "TG4 conveyor belt broke at 23:37 and needed replacement.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-06-10T05:37:40.099Z"
+      },
+      "resolution": "Belt replaced by 04:02 \u2014 \"This one was the solution of the belt broke\" (ML4 TG)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna chain broke",
+      "summary": "Cavanna chain broke during test run at 02:34.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-10T08:35:31.774Z"
+      },
+      "resolution": "Chain fixed at 04:56 \u2014 \"Cavanna chain is fixed\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor pucks missing",
+      "summary": "Crew could not locate the pucks needed for depositor setup.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-09T21:02:29.717Z"
+      },
+      "resolution": "Pucks located at 15:14 \u2014 \"The pucks have been located\" (Nathan Gevenois)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 return valve leaking dark chocolate into milk buffer",
+      "summary": "Return pipe valve leaking, causing dark chocolate to contaminate milk buffer tank; needs 1 hour downtime to replace valve.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-10T06:06:16.167Z"
+      },
+      "status": "Valve identified as bad at 00:06, crew plans to go down 1 hour early before scheduled reheat to replace."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 depositor ran out of caramel",
+      "summary": "Caramel depositor ran dry at 06:23, pausing production at window close.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-10T12:23:37.118Z"
+      },
+      "status": "Depositor out of caramel as of 06:23, no further updates before window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Tunnel 1 belt has bugs",
+      "summary": "Bugs found on Sollich 4 tunnel 1 belt at 07:15; QA notified and operators will clean.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-10T13:15:17.352Z"
+      },
+      "status": "Reported at 07:15, QA notified, operators assigned to clean."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Level 2 cleaning incomplete",
+      "summary": "Cavanna 4 re-cleaned and passed ATP, but chicanes, aligner belt, and cross conveyors still need cleaning before Level 2 sign-off.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-10T05:28:18.793Z"
+      },
+      "status": "Cavanna 4 passed re-clean at 23:28, remaining areas flagged for completion."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 tempering unit down",
+      "summary": "Tempering unit faulted at 02:59 and remained offline through multiple attempts; Preston E unable to restart, Robert Villarreal and Chris Givens called in early.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-10T08:59:20.472Z"
+      },
+      "status": "Down since 02:59, Preston E unable to recover by 05:25, Robert and Chris called in at 05:26 \u2014 still down at window close 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line guillotine seized",
+      "summary": "Guillotine stopped working at 03:22 and remained down through window close; troubleshooting keeps resetting temper process, preventing temper recovery.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-10T09:22:50.844Z"
+      },
+      "status": "Down since 03:22, still offline at 05:47. Temper at 76.4\u00b0F at 05:47 and dropping. Preston E assigned one tech, Jakob reaching out to Vallarie for remote support."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chiller faulted out during first 100 molds",
+      "summary": "Chiller faulted at 06:52 while first 100 molds were in cooler #1; molds paused, waiting on Alex to arrive.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-10T12:52:01.257Z"
+      },
+      "status": "Chiller down at 06:52, Nelson on-site, 100 molds paused in cooler waiting on Alex as of 06:59."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M6 belt damaged",
+      "summary": "Damaged M6 belt discovered at 06:56; maintenance called to address.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-10T12:56:48.71Z"
+      },
+      "status": "Damaged belt found at 06:56, maintenance called, no resolution posted before window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch Donner belt 2 misaligned and tore",
+      "summary": "Belt 2 became misaligned and tore at 07:00; maintenance on line working to replace.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-10T13:00:40.307Z"
+      },
+      "status": "Belt torn at 07:00, maintenance working on replacement as of 07:01."
+    }
+  ]
+}
