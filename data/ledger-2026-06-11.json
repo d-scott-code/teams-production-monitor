@@ -1,0 +1,293 @@
+{
+  "date": "2026-06-11",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 gondola ramp lost homing position *twice in 15 minutes* late on 3rd shift \u2014 depositing stopped, tech returning today."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran BET caramel trials on Sollich 4 with successful gripper tests on both wrap styles. Sollich 2 cleared a morning USB delay and label-machine wrinkle issue. Recipe discrepancies flagged for Bequet (conflicting temps and invert codes) remain open. Tunnel 1 cover arms won't hold and forming-box markings need attention.",
+    "L2": "L2 cleared ML2 flowwrap chicane and sealing issues by 07:00 after overnight maintenance and a centerline correction. ML3 ran with multiple brief belt stops, all cleared same-shift. FFS dialed in Hershey pouch gusset punch and recovered from a QA USB-drive loss. Quiet 24 hours overall.",
+    "L3": "L3 Truffle Line cleared a 2.5-hour guillotine PLC issue and multiple M6 belt alignments but closed the window with C6 nose-bar roller still down and a metal-detector switch that can't lock. ML4 Hershey trial deposited full production but stopped at 23:01 when the gondola ramp lost position repeatedly; 3rd shift emptied depositor 1 and techs return today. King-size mold contamination caused three jams across shifts. ML1 tempering cycled through multiple reheats; Preston and Robert adjusted water-jacket setpoints and saw improvement but real test is calling for product without mass-pressure faults."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Bequet production scheduled for today with customer on-site at 10:00 for Celtic salt application dial-in; first 2\u20133 batches will use test film and be scrapped."
+    },
+    {
+      "plant": "L1",
+      "text": "Pest control called for bugs found near Sollich 4; warehouse asked to inspect for source."
+    },
+    {
+      "plant": "L1",
+      "text": "Water cups out across all three plants; Walmart run planned."
+    },
+    {
+      "plant": "L2",
+      "text": "Hershey snack-size pouch now approved with gusset punch and centered tear notch; reference photos posted as gold standard."
+    },
+    {
+      "plant": "L3",
+      "text": "Hershey client requested lot-code format change (removed BBD, added flow-wrapper designator); TG3 centering still pending final adjustment."
+    },
+    {
+      "plant": "L3",
+      "text": "WIP case weight updated to 28 lbs / 905 pieces after multiple counts; IMS adjusting pallets."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 jar pallets without labels due to USB delay",
+      "summary": "Jar pallets accumulating without labels; waiting for USB drive from L2 to program labeler.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-10T13:19:03.473Z"
+      },
+      "resolution": "Cleared at 09:05 \u2014 \"We have finished passing all the jars that did not have label\" after USB arrived from L2 at 07:39 (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 label machine producing wrinkled labels",
+      "summary": "Labeling machine producing wrinkled labels on jars; Troy and maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-10T16:02:22.283Z"
+      },
+      "resolution": "Cleared at 10:47 \u2014 Troy \"made adjustments to the feed length and the wrapper pad\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 belt and support rollers installed wrong",
+      "summary": "Nathan found belt and support rollers installed incorrectly during inspection; could have caused belt replacement if started.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Coles",
+        "time_utc": "2026-06-11T07:42:09.302Z"
+      },
+      "resolution": "Caught during inspection before startup \u2014 \"we fixed the issues and all is good\" (Nathan Coles)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 return valve seal blown during changeover",
+      "summary": "Seal on return valve blew during chocolate changeover on Sollich 2.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-11T10:31:30.216Z"
+      },
+      "resolution": "Cleared at 05:03 \u2014 \"Maintenance has fixed the issue. Chocolate changeover is complete and enrobers are tempering\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "Plant totes and floor needed cleanup",
+      "summary": "Charity flagged totes and floor needing cleanup near production areas.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-06-10T17:05:58.791Z"
+      },
+      "resolution": "Cleared at 17:00 \u2014 Conner \"got those areas all taken care of\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 big hopper roller tapped hole stripped",
+      "summary": "Tapped hole for the big hopper roller stripped on Sollich 3.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-11T02:33:03.252Z"
+      },
+      "resolution": "Cleared at 21:07 \u2014 \"It's been fixed\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 BOM/spec mismatch on MMK thins film version",
+      "summary": "Spec sheet shows V2 FW for MMK thins but BOM shows V1; no V1 on hand.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-11T12:19:06.774Z"
+      },
+      "resolution": "Cleared at 06:30 \u2014 \"it has been changed to the correct version 40861-V2\" in BOM (Russell Smith)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flowwrap chicane belts and sealing issues",
+      "summary": "Chicane belt centerlines not working for new recipe; maintenance and TG support dialed in positions overnight, then found fold along fin causing seal failures.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-11T09:01:11.863Z"
+      },
+      "resolution": "Cleared at 07:00 \u2014 \"Line is up and running\" after Alan found setting out of centerline, moved it back, and resolved issue (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 long belt S4M1 stopping itself",
+      "summary": "Long belt S4M1 and belt S3M1 stopped multiple times; belts out of sensor scan.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-10T21:01:39.847Z"
+      },
+      "resolution": "Cleared at 15:15 \u2014 \"Line up at 3:11, it continues running well\" after fixing belt position and sensor alignment (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouch alignment off due to wrong arbor spacer",
+      "summary": "New roll put on FFS with arbor that had different spacer, caused pouch material to be spaced off and pouches not sealing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-06-11T02:54:42.253Z"
+      },
+      "resolution": "Cleared at 21:04 \u2014 \"A new roll was put on with an arbor that had a different spacer on it that caused the pouch material to be spaced off\" \u2014 issue identified and corrected (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS QA lost USB drive, couldn't change lot code",
+      "summary": "QA lost USB drive needed to change lot code on FFS, line down at 22:25.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-11T04:24:29.536Z"
+      },
+      "resolution": "Cleared at 22:56 \u2014 \"Hello team, the USB was found\" and line back up (Wilson Amaris Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 scraper needed adjustment",
+      "summary": "One scraper on ML3 needed adjustment, causing brief line stop.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-10T20:25:53.336Z"
+      },
+      "resolution": "Cleared at 14:29 \u2014 \"Line up at 2:29\" after maintenance adjusted (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap film getting cut",
+      "summary": "Flow wrap film cut on ML3, causing brief stop.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-10T20:34:04.223Z"
+      },
+      "resolution": "Cleared at 14:40 \u2014 \"Line running again\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line guillotine PLC corrupted",
+      "summary": "Guillotine faulted on door-close alarm; power cycling corrupted Rexroth PLC program, took line down 2.5 hours until Sollich programmer restored it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-10T13:27:56.729Z"
+      },
+      "resolution": "Cleared at 09:52 \u2014 \"guillotine is already up and running, ready to start\" after program correction; working theory is doors trigger safety alarm if shut wrong, use HMI reset button instead of power cycling (Matt Hatch)."
+    },
+    {
+      "plant": "L3",
+      "title": "M6 belt misalignment and broken nose piece",
+      "summary": "M6 belt found out of position multiple times; 11:39 Nathan reported broken nose piece preventing alignment, maintenance pulled it for repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-10T13:23:02.348Z"
+      },
+      "resolution": "Cleared at 14:59 \u2014 \"We have started up on TL\" after 14:06 Nathan reported \"M6 is good to go now\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 lot code out of center",
+      "summary": "TG3 flow-wrapper lot code illegible and not passing inspection on 3rd shift.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-11T05:32:58.622Z"
+      },
+      "resolution": "Cleared at 23:54 \u2014 \"I was able to center lot code, it's now running\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 & C2 belt stopping intermittently",
+      "summary": "C1 and C2 conveyor belts kept stopping; maintenance worked on it through early morning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-11T08:01:30.254Z"
+      },
+      "resolution": "Cleared at 03:00 \u2014 Alan reported \"waiting for maintenance to center the C2 belt,\" issue resolved after centering (Alan Greer)."
+    },
+    {
+      "plant": "L3",
+      "title": "M5 belt running off track at startup",
+      "summary": "M5 belt ran off track and halted Truffle Line startup at 05:42.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-11T11:42:52.428Z"
+      },
+      "resolution": "Cleared at 05:56 \u2014 \"The belt is fixed. Starting up now\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 licking roller over-tightened on molds",
+      "summary": "Licking roller 1 too tight, making excessive pressure on molds; Alex adjusted and re-synchronized.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-10T20:36:05.449Z"
+      },
+      "resolution": "Cleared at 14:40 \u2014 \"Back up and running\" after adjustment (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector belt down",
+      "summary": "Metal detector belt not running on ML1 early in window.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-11T06:08:28.576Z"
+      },
+      "resolution": "Cleared at 00:08 \u2014 \"Metal detector belt is back up\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Small cavanna belt wear and tear",
+      "summary": "Small cavanna belt on Truffle Line showing signs of wear at 00:13, maintenance called.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-11T06:13:47.525Z"
+      },
+      "resolution": "Cleared at 05:02 \u2014 \"Cavana belt is fixed\" (TruffleLine Enrober)."
+    }
+  ],
+  "needs_attention": []
+}
