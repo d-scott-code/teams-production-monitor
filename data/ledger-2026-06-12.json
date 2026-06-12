@@ -1,0 +1,318 @@
+{
+  "date": "2026-06-12",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML2 has been down *since 03:13* troubleshooting print centering and open bars \u2014 maintenance still working at window close with no clear ETA."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel all three shifts. S3 scrapped a watery batch at 22:04 and stopped cooking early. S2 had a tray printer cable disconnect at 21:40, Troy came in and cleared it by 00:15. S4 started Bequet sea salt caramel production at 09:50 after tunnel rail adjustments.",
+    "L2": "L2 ML2 went down at 03:13 for print image and centering issues and remained down through window close. ML3 had two brief flow wrap stoppages on 2nd shift, both under 10 minutes. FFS ran pouches all three shifts with a 34-minute web tracking stop at 09:25.",
+    "L3": "L3 Truffle Line cleared M6 belt issues by 15:18 and metal shavings by 22:19, but metal dust reappeared on ML1 at 07:08 and is under investigation. ML1 Cavanna had open seal issues through most of 1st and 2nd shift, brought under 1% defect by 18:33. ML4 startup ran with high scrap overnight \u2014 over 3,000 pounds \u2014 due to TG pauses and double-stacking."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Saturday production confirmed, running until 03:00 Sunday."
+    },
+    {
+      "plant": "L2",
+      "text": "Hershey Peco pallets arrived at 14:02; one truckload of Hershey SS boxes delivering Friday for Monday use."
+    },
+    {
+      "plant": "L3",
+      "text": "Hershey customer visit during ML4 startup; over 3,000 pounds scrap on 3rd shift due to line pauses and setup issues."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 tray printer cable disconnected, not printing correctly",
+      "summary": "Tray printer cable disconnected at 21:40, printing in wrong position; 2+ pallets accumulated.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-12T04:31:21.869Z"
+      },
+      "resolution": "Cleared by 00:15 \u2014 Troy came in, walked through Videojet setup, \"Tray printing is back\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector belt drifting to one side",
+      "summary": "Metal detector belt drifting, causing line pause while mechanics worked on tracking.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-11T22:34:13.622Z"
+      },
+      "resolution": "Cleared by 16:55 \u2014 \"It's running and tracking properly now, for now\" (Caleb York)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web tracking issues",
+      "summary": "Line down at 09:25 due to web tracking problems.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-11T15:25:41.435Z"
+      },
+      "resolution": "Cleared by 09:59 \u2014 \"Line is running again\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap issues",
+      "summary": "Line down for flow wrap issues at 15:18.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-11T21:18:07.437Z"
+      },
+      "resolution": "Cleared by 15:26 \u2014 \"line running again\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 truffles falling over causing blow-offs",
+      "summary": "A lot of truffles falling over coming off down ramp, causing high blow-offs; maintenance adjusted belt speeds.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-06-11T23:16:55.772Z"
+      },
+      "resolution": "Cleared by 19:14 \u2014 conveyor speed changes made, \"It's working great\" (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 line down for CIL",
+      "summary": "Line stopped at 14:05 for CIL (clean-in-place).",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-11T20:16:59.698Z"
+      },
+      "resolution": "Restarted by 14:24 \u2014 \"Line start running\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna 0 open and cut flow wrap seals",
+      "summary": "Cavanna producing open seals and cut pieces; Theegarten tech worked adjustments through 1st and 2nd shift.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-11T14:40:33.729Z"
+      },
+      "resolution": "Brought under control by 18:33 \u2014 defect rate under 1%, team sorting and monitoring, no pallets on hold (Angel Cabrera)."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal shavings found on Truffle Line MD reject section",
+      "summary": "Metal shavings discovered on metal detector reject section; stopped line to inspect and clean.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-12T02:46:11.485Z"
+      },
+      "resolution": "Cleared by 22:19 \u2014 \"Maintenance finished. Production cleaned the metal detector bin and belts and around the bin\" (Melissa Zavala)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line lead called out sick, unable to run",
+      "summary": "3rd shift lead went home sick at 05:42, line could not run without certified operator.",
+      "priority": "P1",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-06-12T11:42:44.314Z"
+      },
+      "resolution": "Coverage arranged by 06:28 \u2014 1st shift kitchen operator coming in early to help (Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M5 belt won't turn on",
+      "summary": "M5 belt would not turn on during 1st shift startup, maintenance working to fix.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-06-12T12:42:57.522Z"
+      },
+      "resolution": "Cleared by 07:04 \u2014 \"M5 belt was making contact with M6 causing motor to trip. Made adjustments, running fine now\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line flow wrap jaws separated, chocolate spilling",
+      "summary": "Jaws separated from bands at flow wrap, causing chocolate to spill downward; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-11T14:32:53.866Z"
+      },
+      "resolution": "Cleared by 08:55 \u2014 \"Maintenance was called, and the problem was resolved\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M6 belt centering issues causing accumulation",
+      "summary": "M6 belt needed centering, causing product accumulation; maintenance called multiple times.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-11T16:33:26.488Z"
+      },
+      "resolution": "Cleared by 15:18 \u2014 \"M6 belt running correctly\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 gondola jam at entrance",
+      "summary": "Gondola jammed at entrance on ML4 startup line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-11T18:59:38.884Z"
+      },
+      "resolution": "Cleared by 13:03 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temperature running low",
+      "summary": "Imperial temperature running low, maintenance called to line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-12T05:58:44.523Z"
+      },
+      "resolution": "Cleared by 00:55 \u2014 \"Maintenance is working on it, says it's good to run just keep an eye on it\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial belt moving north",
+      "summary": "Belt tracking north, maintenance adjusted and corrected alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-12T08:45:05.2Z"
+      },
+      "resolution": "Cleared by 02:45 \u2014 \"Belt was moving north maintenance has fixed it back up and running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chiller would not turn on",
+      "summary": "Issues turning on chiller during 3rd shift startup, maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-12T10:21:04.981Z"
+      },
+      "resolution": "Cleared by 04:26 \u2014 \"Maintenance got it back on\" (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 watery caramel batch scrapped",
+      "summary": "One batch came out watery and had to be scrapped, causing early stop on 2nd shift cooking.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-06-12T04:04:34.901Z"
+      },
+      "status": "Batch scrapped at 22:04, asked kitchen to investigate root cause when they arrive."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Cavanna 4 control uneven",
+      "summary": "Control for Cavanna 4 is uneven; supervisor said that was how he received it from prior shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-12T13:00:12.467Z"
+      },
+      "status": "Reported at 07:00, handed off from previous shift, no action taken in window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 down for print centering and open bars",
+      "summary": "Line stopped at 03:13 to inspect boxes for print image alignment; print not centered, many open bars, maintenance and Theegarten troubleshooting.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-12T09:13:30.704Z"
+      },
+      "status": "Line down since 03:13, maintenance still troubleshooting at 07:00 with no ETA, waiting on Theegarten response."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 high scrap and TG5 reliability issues overnight",
+      "summary": "Over 3,000 pounds scrap on 3rd shift due to line pauses, TG5 faults, and double-stacking when WDS slowed down.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-12T02:40:49.896Z"
+      },
+      "status": "TG5 down with fault at 20:40, multiple pauses through night, over 3,000 lbs scrap reported at 21:08, startup issues continuing."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal dust found on ML1 at demolding/MD area",
+      "summary": "Metallic dust falling to floor and machine structure near metal detector; maintenance inspecting.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-06-12T13:08:42.514Z"
+      },
+      "status": "Reported at 07:08, dust falling to non-food-contact area as of 07:12, under investigation at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt issues",
+      "summary": "C6 belt problems, maintenance working on it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-12T09:08:42.976Z"
+      },
+      "status": "Reported at 03:08, maintenance called, no resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch flow-wrap sealing issues on paper",
+      "summary": "Packages start fine but silver area grows larger as run progresses, getting mixed in boxes with Cavanna chocolate.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-06-12T10:53:22.382Z"
+      },
+      "status": "Sealing quality degrading during run as of 04:53, no fix posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line enrober screen showing incorrect status",
+      "summary": "Enrober screen indicates blowers and belt are off even though everything is running.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-11T14:50:46.372Z"
+      },
+      "status": "Display issue reported at 08:50, no resolution or follow-up in window."
+    }
+  ]
+}
