@@ -1,0 +1,161 @@
+{
+  "date": "2026-06-14",
+  "headline": {
+    "eyebrow": "L1 depositor issues",
+    "text": "L1 Sollich 3 had *two P1 machine stops* on caramel equipment\u2014pump down 75 minutes, depositor leak required hose replacement\u2014both cleared by early morning."
+  },
+  "per_plant_summary": {
+    "L1": "L1 Sollich 2 ran steady with a 13-minute X-ray false-alarm stop at midday. Sollich 3 lost 75 minutes to a caramel pump air-lock at 20:26, cleared by 21:41, then stopped again at 22:46 for a depositor leak\u2014team replaced bulged hose and seals, back running by 04:33. Print quality on MM6/MM7 flagged but not yet resolved. S3 team lead radio still missing.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "L3 ML1 tested 16-17 mpm with Cavanna vendor on-site\u2014open product dropped from 14% to 2% after cleaning buildup off guides and fingers, but bars still jamming at wrapper as of 19:34. Infeed belt roller replaced, belt trimming pending. C1 belt stopped briefly 3 times overnight. Truffle chicane belt 3 also needs trimming. ML1 finished run at 02:00 and started Level 2 clean."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Caramel pump low suction, air in line",
+      "summary": "Condensed milk pump not creating suction, line paused at 20:26; maintenance cleared air from drain valve, cooking resumed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-14T02:25:57.664Z"
+      },
+      "resolution": "Maintenance opened drain valve, sprayed air then poured milk, caramel cooking restarted; depositing resumed at 21:41\u201475 minutes total downtime (William)."
+    },
+    {
+      "plant": "L1",
+      "title": "Caramel depositor leaking, bulged hose",
+      "summary": "Depositor began leaking at 22:46, line paused; team identified bulged hose, replaced with spare, replaced seals, cleaned and ATP passed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-14T04:46:15.572Z"
+      },
+      "resolution": "Replaced bulged hose and seals, cleaned, ATP passed by 04:33\u2014\"The hose for caramel depositor bulged, we replaced... cleaned and ATP passed\" (Brandon)."
+    },
+    {
+      "plant": "L1",
+      "title": "76 bags in X-ray reject bin after lunch",
+      "summary": "X-ray reject bin accumulated 76 bags during lunch break; QA halted line 13 minutes, double-checked all bags, found no defects and released.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-06-13T18:24:45.744Z"
+      },
+      "resolution": "All 76 bags re-inspected through X-ray twice, no anomalies, product released after 13 minutes (Ingrid, 12:24)."
+    },
+    {
+      "plant": "L1",
+      "title": "Tunnel 1 belt misaligned under roller",
+      "summary": "Belt dragging against framework instead of running under roller; team stopped depositing to reposition.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-14T02:02:03.988Z"
+      },
+      "resolution": "Team released tension, repositioned roller and belt, fixed in under 2 minutes\u2014\"The team fixed it already\" (William, 20:03)."
+    },
+    {
+      "plant": "L1",
+      "title": "Line paused 5 minutes for caramel",
+      "summary": "Ran out of caramel batch, paused briefly while next batch finished cooking.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-13T21:18:42.134Z"
+      },
+      "resolution": "Next batch ready in under 5 minutes\u2014\"Line is running again\" at 15:23 (William)."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna shims dull, replaced",
+      "summary": "Maintenance replaced two dull shims on Cavanna wrapper at start of shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-06-13T13:26:19.126Z"
+      },
+      "resolution": "Shims replaced, running at 16 mpm by 07:36\u2014\"Shim replaced running at 16mpm\" (Rich)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "MM6 and MM7 print quality poor",
+      "summary": "Best-by date and lot number print quality on MM6/MM7 needs improvement; lead and supervisor working on it.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-06-13T23:31:26.592Z"
+      },
+      "status": "Lead and supervisor informed and working on improvements as of 17:31."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 team lead radio missing",
+      "summary": "Unable to locate the Sollich 3 team lead radio during shift.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-14T00:51:29.274Z"
+      },
+      "status": "Radio not found as of 18:51, team leads and supervisors notified."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 bars jamming at wrapper, not kicking correctly",
+      "summary": "Bars not kicking off properly from infeed, causing jams when entering wrapper; ongoing issue despite Cavanna buildup cleaning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-14T01:34:57.37Z"
+      },
+      "status": "Still having lots of jamming issues as of 19:34 despite cleaning guides and reducing open product to 2%."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 infeed belt needs trimming",
+      "summary": "Belt trimming required after replacing bad roller on Cavanna infeed belt during inverter fault recovery.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-13T22:53:31.142Z"
+      },
+      "status": "Roller replaced at 16:53, belt trimming flagged but not completed by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle chicane belt 3 needs trimming",
+      "summary": "Belt edge wear identified during walkthrough, trimming required.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-14T02:25:07.585Z"
+      },
+      "status": "Belt wear spotted at 20:25, trimming flagged for follow-up."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 belt stopped 3 times briefly",
+      "summary": "Conveyor belt C1 had three brief unplanned stops overnight.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-14T07:27:33.66Z"
+      },
+      "status": "Three brief stops reported as of 01:27, no further detail on cause or fix."
+    }
+  ]
+}
