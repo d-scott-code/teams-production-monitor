@@ -1,0 +1,249 @@
+{
+  "date": "2026-06-16",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 4 Theegarten has fought wax-paper wrapping all shift \u2014 *1 in 20 wrapped properly* at worst, still adjusting at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel on S2 and S4. S2 had a broken MM8 bag-opening finger at 22:27 (part detectable by x-ray, running with 3 fingers). S3 cleared open-pouch issues by 13:22 but shorted the order. S4 struggled with Theegarden wax-paper changeover from 17:38 onward \u2014 caramel flung everywhere, only 1 in 20 wrapping properly at worst \u2014 maintenance still adjusting at window close. C20 belt and decorator allergen tests pending as of 23:50.",
+    "L2": "L2 ran VFFS and two molding lines. VFFS had four brief stops (BB date, open gusset, empty pouches, film tear) all cleared same shift, longest 34 minutes. ML2 had two flow-wrap jams cleared in minutes. ML3 had glue buildup, filler sensor, flow-wrap, x-ray, and belt issues all cleared same problem. Both molding lines ran smoothly after early morning clears.",
+    "L3": "L3 ML1 fought tempering instability all day \u2014 low slope at start, swinging high and low, stopping/starting deposition six times, last stop at 06:48 with restart at 07:14. Flow-wrap open-seal rate improved from 5.7% to 0.28% by 14:09. Belt C9 melted chocolate at 14:01 due to closed cooling valve (opened, fixed). Cavanna chain pin fell at 17:42, ran intermittently rest of shift with sealing and cutting issues still live at 23:14. ML4 had TG4/5 film-cutting problems from 09:10 through window close, dirty-mold shortage at 23:25 (caught up by hand-washing), and nozzle issue cleared at 05:13. Truffle line ran out early due to seal damage, curtain down at 22:43. MF Matrix had bracket fall off at 20:03, no fix posted."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Grey Boscan tracked ML1 buffer-tank draw-down rate to plan second-shift stop time (Chad praised proactive shutdown planning at 08:11)."
+    },
+    {
+      "plant": "L1",
+      "text": "Katya flagged tool-cabinet health check at 07:45: tools missing or swapped, no return times logged."
+    },
+    {
+      "plant": "L2",
+      "text": "Maria Moron Quintero clarified ML3 needs 2.68M more dark pieces before milk changeover (target 9.98M on-hand)."
+    },
+    {
+      "plant": "L1",
+      "text": "Bequet salted caramel run (S4) used custom item 30923-Box22 at 883 pieces/case instead of standard 891."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 MM8 bag-opening finger snapped off",
+      "summary": "MM8 bag-opening finger fell off and snapped at 22:27; operator stopped, part appears complete.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-16T04:27:47.89Z"
+      },
+      "resolution": "Piece confirmed detectable by x-ray at 22:41; running with 3 fingers temporarily, hourly x-ray checks clean (Delia Zambrano, Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 open pouches at top hole",
+      "summary": "Multiple pouches open at small hole at top of packaging found at 13:17.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-06-15T19:17:38.749Z"
+      },
+      "resolution": "Line stopped and run out by 13:22 \u2014 operators notified, issue rectified, order 1,395 pouches short (Nathan Topham)."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS bags coming out empty",
+      "summary": "Bags empty at 14:29, maintenance checking depositor/filler.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-06-15T20:29:14.929Z"
+      },
+      "resolution": "Up and running at 15:05 \u2014 downtime 2:20 to 2:33, 13 minutes (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS open gusset recurring",
+      "summary": "Line down at 07:37 for open gusset, Dave from Syntegon assisting maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-06-15T13:37:51.331Z"
+      },
+      "resolution": "Line running at 08:21 \u2014 gusset fixed, 44-minute stop (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 glue buildup on case-erector rollers",
+      "summary": "Line stopped at 07:50, too much glue on rollers.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-15T13:50:09.115Z"
+      },
+      "resolution": "Line running at 08:02 \u2014 rollers cleaned, 12-minute stop (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrap jam, twin-belt sensor",
+      "summary": "Line down at 08:42 for flow-wrap jam, then again at 08:56 for twin-belt sensor adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-06-15T14:42:00.639Z"
+      },
+      "resolution": "Line running at 08:57 \u2014 sensor adjusted, jams cleared, combined 15-minute stop (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow-wrap label misalignment causing opens",
+      "summary": "Line down at 19:41 for flow-wrap issues; label going to one side, sending opened chocolates.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-16T01:44:09.782Z"
+      },
+      "resolution": "Line running at 19:47 \u2014 flow wrap adjusted, 6-minute stop (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 x-ray showing false 'bin full' error",
+      "summary": "Line down at 21:50, x-ray sending error code saying bin full when empty.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-16T03:50:50.499Z"
+      },
+      "resolution": "Line running at 22:11 \u2014 x-ray reset, 21-minute stop (Brandon Lance explains issue)."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS film tear at shoulder, printer missing numbers",
+      "summary": "Film tore at shoulder at 22:39; gusset hoses and container overfull, believed to be cause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-16T04:39:37.74Z"
+      },
+      "resolution": "Line up at 23:51 \u2014 film replaced, debris removed from print head (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS best-by date issue at startup",
+      "summary": "Line down at 07:17, quality flagged BB date problem.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-06-15T13:17:29.037Z"
+      },
+      "resolution": "Line running at 07:21 \u2014 date corrected, 4-minute stop (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 belt before detector",
+      "summary": "Line stopped at 17:48, adjusting belt before detector.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-15T23:48:29.306Z"
+      },
+      "resolution": "Line running at 17:55 \u2014 belt fixed, 7-minute stop (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 filler sensor issue",
+      "summary": "Line down at 18:31, small filler sensor problem.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-06-16T00:34:19.11Z"
+      },
+      "resolution": "Line started running at 18:34 \u2014 sensor reset, 3-minute stop (Brandon Lance confirms)."
+    },
+    {
+      "plant": "L3",
+      "title": "Belt C9 melting chocolate due to closed cooling valve",
+      "summary": "Chocolate melting on C9 belt at 14:01; Nelson Cook found cooling-water valve closed, no circulation through chill plates.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-15T20:01:17.363Z"
+      },
+      "resolution": "Valve opened at 14:14, plates cooled down; action added to startup checklist to verify valve open (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dirty-mold shortage, 10 totes waiting",
+      "summary": "Line stopping frequently at 23:25 due to dirty molds; 10 totes waiting, no clean ones available.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-16T05:25:11.995Z"
+      },
+      "resolution": "Caught up by 00:19 with 2 EEs hand-washing plus ATP pass-off as cleaned; expectation set at 1 tote/hour (Marcos Montano)."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow-wrap open-seal rate high at 5.7%",
+      "summary": "Open-unit rate on ML1 flow wrap hit 5.7% at 09:40; speed reduced to 15mpm and cut position adjusted.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-15T15:40:37.773Z"
+      },
+      "resolution": "Cleared by 14:09 \u2014 rate dropped to 0.28% (3 open out of 1,056) after adjustments, \"well below 1%\" (David Zuniaga)."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal detector belt slipped on ML1",
+      "summary": "MD belt slipped at 15:17, line down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-15T21:17:53.694Z"
+      },
+      "resolution": "Line running at 15:49 \u2014 \"Line running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line seal damage causing chocolate markings",
+      "summary": "Chocolates showing markings at 16:09; inspection found seal hanging off line.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-15T22:09:06.923Z"
+      },
+      "resolution": "Line run out by 17:28, cleaning and tarp takedown completed, curtain down at 22:43 (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 nozzle depositing halfway on every mold",
+      "summary": "One WDS nozzle depositing halfway on same cavity every mold at 02:51.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-16T08:51:47.183Z"
+      },
+      "resolution": "Nozzle removed and cleaned at 05:13 \u2014 \"no further issues with it\" (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": []
+}
