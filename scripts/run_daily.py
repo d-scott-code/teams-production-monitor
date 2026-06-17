@@ -315,14 +315,17 @@ Bad: "Various food-safety and quality issues occurred."
 
 ## Opportunities
 
-`opportunities` — 0 to 3 process-level suggestions surfaced by TODAY'S events. Each MUST cite the specific event(s) it's based on, in the same sentence. Frame as "Consider X..." — these are the FSQA Manager's call, not a directive.
+`opportunities` — 0 to 3 process-level suggestions **per plant** surfaced by TODAY'S events. Each plant has its own Quality Manager, so opportunities are scoped to one plant. Attribute each opportunity to the plant where the originating event occurred.
 
-Each entry: `{ "text": "one sentence ending with — based on Y" }`. Keep it tight. If today's events don't suggest a process improvement, return an empty array. Don't pad.
+Each entry: `{ "plant": "L1|L2|L3", "text": "one sentence ending with — based on Y" }`. Cite the specific event(s) it's drawn from in the sentence. Frame as "Consider X..." — these are the Quality Manager's call, not a directive.
 
-Good: "Consider adding cleaning-roller blade inspection to ML4 startup checklist — today's damaged blade and possible metal shavings echoed two similar incidents earlier this month."
-Good: "Review labeling on sanitation tools — the sprayer used on drains nearly went back into equipment service."
-Bad: "Consider improving food safety." (vague, no event citation)
-Bad: "Consider replacing the ML1 metal detector." (capital expenditure — stay at process/procedure level)
+If a single insight genuinely applies cross-plant (e.g., a checklist gap that exists on all three lines), write one entry per affected plant — each one citing that plant's specific event. Don't merge cross-plant opportunities into a single entry; the Quality Manager reading just their plant should see what applies to them.
+
+If a plant's events don't suggest a process improvement today, just don't include an entry for that plant. Don't pad. A plant with zero opportunities is a clean read.
+
+Good: `{ "plant": "L3", "text": "Consider adding cleaning-roller blade inspection to ML4 startup checklist — today's damaged blade and possible metal shavings echo two similar incidents earlier this month." }`
+Good: `{ "plant": "L1", "text": "Review labeling on sanitation tools — the sprayer used on drains nearly went back into equipment service." }`
+Bad: A single opportunity with `plant: "L1"` whose text refers to events at L2 or L3. The plant attribution must match the events cited.
 
 ## Voice rules
 
@@ -402,16 +405,17 @@ FSQA_TOOL = {
             "allergen": {"type": "array", "items": FSQA_SECTION_ITEM},
             "opportunities": {
                 "type": "array",
-                "description": "0-3 process-level suggestions surfaced by today's events.",
+                "description": "0-3 process-level suggestions per plant surfaced by today's events. Each entry is attributed to ONE plant (the plant where the originating event occurred). Cross-plant insights should be written as one entry per affected plant.",
                 "items": {
                     "type": "object",
                     "properties": {
+                        "plant": {"type": "string", "enum": PLANTS},
                         "text": {
                             "type": "string",
-                            "description": "One sentence ending with — based on Y, citing the specific event(s) it's drawn from.",
+                            "description": "One sentence ending with — based on Y, citing the specific event(s) at this plant that prompted the suggestion.",
                         },
                     },
-                    "required": ["text"],
+                    "required": ["plant", "text"],
                 },
             },
         },
@@ -516,12 +520,16 @@ def build_fsqa_ledger(today: str, plan: dict) -> dict:
         )
 
     sections = ["holds", "food_safety", "quality", "sanitation", "allergen"]
+    opportunities = sorted(
+        plan.get("opportunities") or [],
+        key=lambda o: plant_order.get(o.get("plant"), 9),
+    )
     return {
         "date": today,
         "headline": plan.get("headline") or {},
         "summary": plan.get("summary") or "",
         **{s: sorted(plan.get(s) or [], key=sort_key) for s in sections},
-        "opportunities": plan.get("opportunities") or [],
+        "opportunities": opportunities,
     }
 
 

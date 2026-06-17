@@ -206,33 +206,47 @@ PAGE_LOCAL_CSS = """
   color: var(--fg-3);
 }
 
-/* ---------- Opportunities ---------- */
-.opportunities {
+/* ---------- Opportunities (per-plant boxes) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
   margin: 18pt 0 12pt 0;
-  padding: 10pt 14pt 12pt 14pt;
-  background: #F5F4EE;
-  border-left: 3pt solid var(--steel-blue);
-  border-radius: var(--radius-sm);
   page-break-inside: avoid;
+}
+.opp-box {
+  background: #F5F4EE;
+  border-left: 3pt solid var(--plant-accent, var(--primary));
+  border-radius: var(--radius-sm);
+  padding: 9pt 11pt 10pt 11pt;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
   color-adjust: exact;
 }
-.opportunities .eyebrow {
+.opp-box .eyebrow {
   font-size: 7pt; color: var(--fg-3);
   letter-spacing: 0.08em; text-transform: uppercase;
-  margin-bottom: 6pt;
+  margin-bottom: 4pt;
 }
-.opportunities h3 {
-  font-size: 10.5pt; font-weight: 700;
-  margin: 0 0 6pt 0; color: var(--fg-1);
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
 }
-.opportunities ul { margin: 0; padding-left: 14pt; }
-.opportunities li {
-  font-size: 9pt; line-height: 1.45;
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
   color: var(--fg-1);
   padding: 2pt 0;
   text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
 }
 
 /* ---------- Misc ---------- */
@@ -363,17 +377,43 @@ def section_block(section_id: str, title: str, icon: str, empty_msg: str,
     )
 
 
-def opportunities_block(items: list[dict]) -> str:
-    if not items:
+def opportunities_row(items: list[dict]) -> str:
+    """Render three per-plant opportunity boxes (one per plant). Each
+    plant has its own Quality Manager, so opportunities are scoped to
+    the plant where the originating event occurred. Empty boxes show a
+    short "Nothing flagged" note rather than collapsing — the layout
+    stays consistent so the Quality Manager always sees their box."""
+    by_plant: dict[str, list[dict]] = {p: [] for p in PLANTS}
+    for it in items:
+        p = it.get("plant")
+        if p in by_plant and it.get("text"):
+            by_plant[p].append(it)
+
+    if not any(by_plant.values()):
         return ""
-    lis = "".join(f'<li>{esc(it.get("text", ""))}</li>' for it in items if it.get("text"))
-    if not lis:
-        return ""
+
+    plant_label = {"L1": "L1 Caramel", "L2": "L2 Eco Moulding", "L3": "L3 Chocolate"}
+
+    def box(plant: str) -> str:
+        accent = PLANT_ACCENT[plant]
+        opps = by_plant[plant]
+        if opps:
+            lis = "".join(f'<li>{esc(o.get("text", ""))}</li>' for o in opps)
+            body = f'<ul>{lis}</ul>'
+        else:
+            body = '<p class="empty">No opportunities flagged today.</p>'
+        return (
+            f'<div class="opp-box" style="--plant-accent: {accent};">'
+            f'<div class="eyebrow">{esc(plant)}</div>'
+            f'<h4>{esc(plant_label[plant])}</h4>'
+            f'{body}'
+            f'</div>'
+        )
+
     return (
-        '<div class="opportunities">'
-        '<div class="eyebrow">Opportunities</div>'
-        '<h3>Consider this week</h3>'
-        f'<ul>{lis}</ul>'
+        '<div class="opportunities-eyebrow">Opportunities — by plant</div>'
+        '<div class="opportunities-row">'
+        + "".join(box(p) for p in PLANTS) +
         '</div>'
     )
 
@@ -475,7 +515,7 @@ def render(ledger: dict, messages: dict, date: str) -> str:
 
   {sections_html}
 
-  {opportunities_block(ledger.get("opportunities") or [])}
+  {opportunities_row(ledger.get("opportunities") or [])}
 
   <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
     Production briefing for the same day:
