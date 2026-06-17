@@ -6,7 +6,7 @@ description: Generate the daily CandyCo production briefing from Microsoft Teams
 # Teams Production Monitor
 
 Produces the daily production briefing for CandyCo's three Lindon plants
-(L1 Caramel, L2 Eco Moulding, L3 Chocolate) by scanning the last 24 hours
+(L1 Caramel, L2 Moulding, L3 Chocolate) by scanning the last 24 hours
 of Microsoft Teams chats whose topic contains `L1`, `L2`, or `L3`.
 
 Each briefing is window-only: it covers what happened in the last 24 hours

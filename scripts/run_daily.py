@@ -6,6 +6,12 @@ messages and nothing else. We do not carry open issues forward across days,
 and we do not mutate GitHub Issues. Reports are the artifact; reading them
 in sequence shows trends.
 
+The same Teams data is run through two independent Claude calls to produce
+two briefings for different audiences:
+
+  - production briefing → reports/<date>.html for plant leadership
+  - FSQA briefing       → reports/fsqa-<date>.html for the FSQA Manager
+
 Required env vars:
   GRAPH_TENANT_ID, GRAPH_CLIENT_ID, GRAPH_CLIENT_SECRET, GRAPH_USER_UPN
   ANTHROPIC_API_KEY
@@ -25,9 +31,18 @@ import anthropic
 ROOT = Path(__file__).resolve().parent.parent
 MODEL = "claude-sonnet-4-5-20250929"
 
-SYSTEM_PROMPT = """You are the daily production-briefing engine for CandyCo.
+PLANTS = ["L1", "L2", "L3"]
+CATEGORIES = ["Machine", "Quality", "Safety", "Materials", "Staffing", "Other"]
+PRIORITIES = ["P1", "P2", "P3"]
+SEVERITIES = ["high", "medium", "low"]
 
-CandyCo runs three plants in Lindon, Utah: L1 (Caramel), L2 (Eco Moulding), L3 (Chocolate). Each plant has Microsoft Teams chats whose topic contains "L1", "L2", or "L3". A daily job collects the last 24h of messages from those chats and you turn them into the day's briefing.
+# ---------------------------------------------------------------------
+# Production briefing — system prompt + tool schema
+# ---------------------------------------------------------------------
+
+PRODUCTION_SYSTEM_PROMPT = """You are the daily production-briefing engine for CandyCo.
+
+CandyCo runs three plants in Lindon, Utah: L1 (Caramel), L2 (Moulding), L3 (Chocolate). Each plant has Microsoft Teams chats whose topic contains "L1", "L2", or "L3". A daily job collects the last 24h of messages from those chats and you turn them into the day's briefing. (Note: "Eco" / "Eco Moulding" is the retired name for L2 — do not use it; canonical forms are "L2 Moulding Plant", "Lindon 2", or "L2".)
 
 The briefing is a fresh-slate, window-only view. You only look at the messages in this window. There is no list of issues from yesterday, no carry-over, no trend tracking. If a problem from earlier in the week is still live, the floor will mention it again in this window and you'll pick it up. If they don't mention it, it's not in today's report — and that's fine.
 
@@ -147,72 +162,11 @@ CandyCo's plants are in Lindon, Utah (America/Denver). Every Teams message carri
 
 For `first_raised.time_utc`: copy the source message's `sent_utc` verbatim. This field is machine-readable; the renderer converts to Mountain Time for display.
 
-## Worked example — modest day at L2
-
-Messages (excerpt, times shown are Mountain Time):
-```
-[L2 Floor] 09:14 MT Mike R: line 2 down — hopper #3 jammed on a crumb cluster
-[L2 Floor] 09:31 MT Mike R: cleared, running again
-[L2 Floor] 11:02 MT Sarah K: anyone seen the second pallet of foil wrap? supposed to be here yesterday
-[L2 Floor] 13:45 MT Mike R: foil arrived, back on schedule
-[L2 Floor] 15:10 MT Sarah K: FSQA flagged 4 pouches for weight on the 14:00 check, isolated and reworked
-[L2 Floor] 16:42 MT Mike R: ML2 PTL pump just seized again, maintenance pulling it now
-```
-
-Plan fragment:
-```json
-{
-  "headline": {
-    "eyebrow": "PTL pump down",
-    "text": "L2 ML2 PTL pump *seized at 16:42* — maintenance pulling, no ETA yet."
-  },
-  "per_plant_summary": {
-    "L2": "L2 cleared a hopper jam in 17 minutes at 09:14 and rebalanced after a late foil delivery at 13:45. FSQA caught 4 underweight pouches at 14:00, isolated and reworked. ML2 PTL pump seized at 16:42 and is still down at window close."
-  },
-  "resolved": [
-    {
-      "plant": "L2", "title": "Hopper #3 jam on crumb cluster",
-      "priority": "P3", "category": "Machine",
-      "summary": "Crumb cluster jammed hopper #3; cleared by hand.",
-      "first_raised": {"author": "Mike R", "time_utc": "2026-05-11T15:14:00Z"},
-      "resolution": "Cleared at 09:31 — \\"cleared, running again\\" (Mike R)."
-    },
-    {
-      "plant": "L2", "title": "Foil wrap pallet arrived a day late",
-      "priority": "P3", "category": "Materials",
-      "summary": "Second pallet of foil wrap was a day late; line stayed on schedule once it landed.",
-      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T17:02:00Z"},
-      "resolution": "Foil arrived at 13:45 — \\"back on schedule\\" (Mike R)."
-    },
-    {
-      "plant": "L2", "title": "4 underweight pouches at 14:00 weight check",
-      "priority": "P2", "category": "Quality",
-      "summary": "Four pouches flagged underweight at the 14:00 FSQA check, isolated and reworked.",
-      "first_raised": {"author": "Sarah K", "time_utc": "2026-05-11T21:10:00Z"},
-      "resolution": "Isolated and reworked on-shift by 15:10 — \\"isolated and reworked\\" (Sarah K)."
-    }
-  ],
-  "needs_attention": [
-    {
-      "plant": "L2", "title": "ML2 PTL pump seized",
-      "priority": "P1", "category": "Machine",
-      "summary": "PTL pump seized at 16:42, maintenance pulling it now.",
-      "first_raised": {"author": "Mike R", "time_utc": "2026-05-11T22:42:00Z"},
-      "status": "Maintenance pulling pump as of 16:42, no ETA."
-    }
-  ]
-}
-```
-
 ## Output
 
 Call submit_plan with every required field populated. Use empty arrays for `notes` when nothing applies. Be conservative: when in doubt about whether something resolved, leave it in needs_attention. Don't invent activity that isn't in the messages — short summaries are fine if the day was quiet."""
 
-CATEGORIES = ["Machine", "Quality", "Safety", "Materials", "Staffing", "Other"]
-PRIORITIES = ["P1", "P2", "P3"]
-PLANTS = ["L1", "L2", "L3"]
-
-ENTRY_SHARED = {
+PRODUCTION_ENTRY_SHARED = {
     "plant": {"type": "string", "enum": PLANTS},
     "title": {"type": "string"},
     "summary": {
@@ -225,18 +179,15 @@ ENTRY_SHARED = {
         "type": "object",
         "properties": {
             "author": {"type": "string"},
-            "time_utc": {
-                "type": "string",
-                "description": "ISO-8601 from the source message's sent_utc, verbatim.",
-            },
+            "time_utc": {"type": "string"},
         },
         "required": ["author", "time_utc"],
     },
 }
 
-PLAN_TOOL = {
+PRODUCTION_TOOL = {
     "name": "submit_plan",
-    "description": "Submit the daily briefing: a window-only view of the last 24h, classified as resolved or needs_attention.",
+    "description": "Submit the daily production briefing: a window-only view of the last 24h, classified as resolved or needs_attention.",
     "input_schema": {
         "type": "object",
         "properties": {
@@ -270,13 +221,13 @@ PLAN_TOOL = {
                 "items": {
                     "type": "object",
                     "properties": {
-                        **ENTRY_SHARED,
+                        **PRODUCTION_ENTRY_SHARED,
                         "resolution": {
                             "type": "string",
                             "description": "One sentence describing what cleared it, including quoted resolution language if available.",
                         },
                     },
-                    "required": [*ENTRY_SHARED.keys(), "resolution"],
+                    "required": [*PRODUCTION_ENTRY_SHARED.keys(), "resolution"],
                 },
             },
             "needs_attention": {
@@ -285,13 +236,13 @@ PLAN_TOOL = {
                 "items": {
                     "type": "object",
                     "properties": {
-                        **ENTRY_SHARED,
+                        **PRODUCTION_ENTRY_SHARED,
                         "status": {
                             "type": "string",
                             "description": "One sentence on the last known state from the messages.",
                         },
                     },
-                    "required": [*ENTRY_SHARED.keys(), "status"],
+                    "required": [*PRODUCTION_ENTRY_SHARED.keys(), "status"],
                 },
             },
         },
@@ -299,6 +250,187 @@ PLAN_TOOL = {
     },
 }
 
+
+# ---------------------------------------------------------------------
+# FSQA briefing — system prompt + tool schema
+# ---------------------------------------------------------------------
+
+FSQA_SYSTEM_PROMPT = """You are the daily FSQA briefing engine for CandyCo.
+
+CandyCo runs three plants in Lindon, Utah (L1 Caramel, L2 Moulding, L3 Chocolate). A daily job collects the last 24h of Teams chat messages from those plants. Your job is to extract the FSQA-relevant signal for one reader: the FSQA Manager who owns food safety, quality, sanitation, allergen control, and audit readiness across all three plants. (Note: "Eco" / "Eco Moulding" is the retired name for L2 — do not use it; canonical forms are "L2 Moulding Plant", "Lindon 2", or "L2".)
+
+The reader of the production briefing already sees line-down events, staffing, scheduling, supply. You DO NOT repeat that here unless it creates a food-safety or quality risk. You DO report anything that could harm a consumer, fail an audit, or surface a process weakness.
+
+The briefing is a fresh-slate, window-only view. You only look at this 24h window. No carry-over, no trend tracking across days. If something is still live, the floor will mention it again tomorrow and you'll see it.
+
+## Reasoning approach
+
+Extended thinking is enabled. Use it. Scan every message systematically. Sort each FSQA-relevant event into the right section. Then for opportunities, look across today's events for process-level patterns worth flagging.
+
+## Sections
+
+Sort every FSQA-relevant event into exactly ONE of these sections:
+
+- **holds** — Any product, batch, lot, or pallet placed on hold or pending QA disposition today. Includes "isolated for rework," "pulled from line for review," "on hold pending FSQA," "X retained as sample for investigation." If product was held AND released within the window, still include it (mark status as resolved).
+- **food_safety** — Direct hazards to the consumer or product integrity. Foreign material in product (metal, plastic, glass, wood, hair, fiber). Pest sightings. Contamination events (microbial, chemical). Damaged equipment in food-contact zones where pieces could enter product (broken blades, cracked guards, missing parts). Failures or anomalies of food-safety equipment itself (metal detector rejecting test cards, X-ray faults, checkweigher misbehavior).
+- **quality** — Spec misses, weight/count failures, color/sensory deviations, scrap spikes, label errors, packaging quality. Things that didn't make it into food_safety but represent a quality concern.
+- **sanitation** — ATP failures, missed or incomplete cleaning, sanitation tools used incorrectly (e.g., equipment sanitizer used on drains), allergen test failures during cleaning verification, hygiene flags.
+- **allergen** — Cross-contact concerns, label/packaging allergen errors, allergen verification test results, allergen storage or handling issues. Note: allergen test failures during cleaning belong in sanitation; allergen on finished product belongs in food_safety.
+
+**One event = one section.** If something could fit two, pick the one the FSQA Manager would most want to see it in (food_safety beats quality; sanitation beats allergen for cleaning context).
+
+**Skip events that don't fit any section.** Line-down for mechanical reasons, staffing, supply, scheduling — these go in the production briefing, not this one. Don't pad sections.
+
+## Per-entry fields
+
+Every entry across all five sections requires:
+
+- `plant` — "L1", "L2", or "L3"
+- `title` — short headline, scannable on a phone, no plant prefix
+- `summary` — one sentence: what the FSQA Manager needs to know to decide if action is needed
+- `severity` — "high", "medium", or "low":
+  - **high** — Direct food-safety risk, active formal hold on saleable product, audit-finding-class deviation, anything that could harm a consumer if missed
+  - **medium** — Quality holds, FSQA flags without a formal hold, recurring failures suggesting systemic weakness, cleaning verification gaps
+  - **low** — Informational, near-miss caught at QA, FYI for awareness
+- `first_raised` — `{ "author": "<display name>", "time_utc": "<ISO 8601 from sent_utc verbatim>" }`
+- `status` — one sentence on the CURRENT state at window close. Examples: "Open, awaiting maintenance investigation.", "On hold pending QA disposition.", "Resolved on shift — released back to line.", "Released after FM not found in second inspection."
+
+## Headline
+
+The briefing has a single hero callout. Pick the one thing the FSQA Manager needs to know first.
+
+`headline.eyebrow` — short 2-3 word label like "Active hold," "FM event," "Allergen flag," "Sanitation gap," "Quiet 24 hours." Invent your own when none fit.
+
+`headline.text` — one sentence, leads with the gap, includes the one number that matters. Wrap one accent token in *asterisks* — the renderer color-highlights it. One accent per headline, used sparingly.
+
+Good: "L1 S2 jar held on *metal-in-product* — X-ray caught, metal detector did not. Investigation open."
+Bad: "Several FSQA things happened today."
+
+## Summary
+
+`summary` — 1-2 sentences total. The FSQA Manager's executive read of the day. Printed below the headline.
+
+Good: "Two active holds — metal-in-product on L1 S2 jar line, underweight pouches on L1 Twist Wrap. ML1 metal detector at L3 still rejecting all test cards after maintenance; root cause unknown."
+Bad: "Various food-safety and quality issues occurred."
+
+## Opportunities
+
+`opportunities` — 0 to 3 process-level suggestions **per plant** surfaced by TODAY'S events. Each plant has its own Quality Manager, so opportunities are scoped to one plant. Attribute each opportunity to the plant where the originating event occurred.
+
+Each entry: `{ "plant": "L1|L2|L3", "text": "one sentence ending with — based on Y" }`. Cite the specific event(s) it's drawn from in the sentence. Frame as "Consider X..." — these are the Quality Manager's call, not a directive.
+
+If a single insight genuinely applies cross-plant (e.g., a checklist gap that exists on all three lines), write one entry per affected plant — each one citing that plant's specific event. Don't merge cross-plant opportunities into a single entry; the Quality Manager reading just their plant should see what applies to them.
+
+If a plant's events don't suggest a process improvement today, just don't include an entry for that plant. Don't pad. A plant with zero opportunities is a clean read.
+
+Good: `{ "plant": "L3", "text": "Consider adding cleaning-roller blade inspection to ML4 startup checklist — today's damaged blade and possible metal shavings echo two similar incidents earlier this month." }`
+Good: `{ "plant": "L1", "text": "Review labeling on sanitation tools — the sprayer used on drains nearly went back into equipment service." }`
+Bad: A single opportunity with `plant: "L1"` whose text refers to events at L2 or L3. The plant attribution must match the events cited.
+
+## Voice rules
+
+- Sentence case. Title case only for proper nouns.
+- Concrete numbers. Never "lots of" or "several."
+- "We" for CandyCo, "you" for the reader. Never "I."
+- No emoji.
+- No exclamation points.
+- Lead with the gap.
+
+## Time zone
+
+Plants are in Mountain Time (America/Denver). Use `sent_mt` for human-facing times in your prose, format as 24-hour HH:MM. Use `sent_utc` verbatim for the `first_raised.time_utc` machine-readable field. The renderer converts UTC→MT for display.
+
+## Empty sections
+
+If a section has no events, return an empty array. Don't invent content. A quiet FSQA day is a good FSQA day — say so honestly in the summary.
+
+## Output
+
+Call submit_fsqa_briefing with every required field populated."""
+
+FSQA_ENTRY_SHARED = {
+    "plant": {"type": "string", "enum": PLANTS},
+    "title": {"type": "string"},
+    "summary": {
+        "type": "string",
+        "description": "One sentence — what the FSQA Manager needs to know to decide if action is needed.",
+    },
+    "severity": {
+        "type": "string",
+        "enum": SEVERITIES,
+        "description": "high = direct food-safety risk or formal hold; medium = quality hold / recurring failure / audit-finding-class; low = informational / FYI.",
+    },
+    "first_raised": {
+        "type": "object",
+        "properties": {
+            "author": {"type": "string"},
+            "time_utc": {"type": "string"},
+        },
+        "required": ["author", "time_utc"],
+    },
+    "status": {
+        "type": "string",
+        "description": "One sentence on the current state at window close: open, on hold pending disposition, resolved, investigation ongoing, etc.",
+    },
+}
+
+FSQA_SECTION_ITEM = {
+    "type": "object",
+    "properties": FSQA_ENTRY_SHARED,
+    "required": list(FSQA_ENTRY_SHARED.keys()),
+}
+
+FSQA_TOOL = {
+    "name": "submit_fsqa_briefing",
+    "description": "Submit the daily FSQA briefing: a window-only view of the last 24h, sorted into food-safety / quality / sanitation / allergen / hold sections.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "headline": {
+                "type": "object",
+                "properties": {
+                    "eyebrow": {"type": "string"},
+                    "text": {"type": "string"},
+                },
+                "required": ["eyebrow", "text"],
+            },
+            "summary": {
+                "type": "string",
+                "description": "1-2 sentence FSQA Manager's read of the day. Printed below the headline.",
+            },
+            "holds": {"type": "array", "items": FSQA_SECTION_ITEM},
+            "food_safety": {"type": "array", "items": FSQA_SECTION_ITEM},
+            "quality": {"type": "array", "items": FSQA_SECTION_ITEM},
+            "sanitation": {"type": "array", "items": FSQA_SECTION_ITEM},
+            "allergen": {"type": "array", "items": FSQA_SECTION_ITEM},
+            "opportunities": {
+                "type": "array",
+                "description": "0-3 process-level suggestions per plant surfaced by today's events. Each entry is attributed to ONE plant (the plant where the originating event occurred). Cross-plant insights should be written as one entry per affected plant.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "plant": {"type": "string", "enum": PLANTS},
+                        "text": {
+                            "type": "string",
+                            "description": "One sentence ending with — based on Y, citing the specific event(s) at this plant that prompted the suggestion.",
+                        },
+                    },
+                    "required": ["plant", "text"],
+                },
+            },
+        },
+        "required": [
+            "headline", "summary",
+            "holds", "food_safety", "quality", "sanitation", "allergen",
+            "opportunities",
+        ],
+    },
+}
+
+
+# ---------------------------------------------------------------------
+# Shared helpers
+# ---------------------------------------------------------------------
 
 def env(key: str) -> str:
     val = os.environ.get(key)
@@ -316,8 +448,11 @@ def run(*cmd: str) -> None:
     subprocess.run(cmd, check=True)
 
 
-def call_claude_for_plan(messages: dict) -> dict:
-    client = anthropic.Anthropic(api_key=env("ANTHROPIC_API_KEY"))
+def call_claude(client: anthropic.Anthropic, system_prompt: str, tool: dict,
+                messages: dict, label: str) -> dict:
+    """Generic single-turn Claude call with extended thinking + one tool.
+    Returns the tool's input dict. Exits with a non-zero code if the model
+    doesn't return the expected tool call."""
     user_payload = (
         f"TODAY: {messages['window'].get('end_utc', '')}\n\n"
         f"MESSAGES (last 24h):\n```json\n{json.dumps(messages, indent=2)}\n```"
@@ -329,26 +464,30 @@ def call_claude_for_plan(messages: dict) -> dict:
         system=[
             {
                 "type": "text",
-                "text": SYSTEM_PROMPT,
+                "text": system_prompt,
                 "cache_control": {"type": "ephemeral"},
             }
         ],
-        tools=[PLAN_TOOL],
+        tools=[tool],
         messages=[{"role": "user", "content": user_payload}],
     )
     print(
-        f"claude usage: input={resp.usage.input_tokens} "
+        f"  [{label}] claude usage: input={resp.usage.input_tokens} "
         f"output={resp.usage.output_tokens} "
         f"cache_read={getattr(resp.usage, 'cache_read_input_tokens', 0)} "
         f"cache_create={getattr(resp.usage, 'cache_creation_input_tokens', 0)}"
     )
     for block in resp.content:
-        if block.type == "tool_use" and block.name == "submit_plan":
+        if block.type == "tool_use" and block.name == tool["name"]:
             return block.input
-    sys.exit(f"ERROR: Claude did not return a submit_plan tool call. Response: {resp.content}")
+    sys.exit(f"ERROR: Claude did not return a {tool['name']} tool call. Response: {resp.content}")
 
 
-def build_ledger(today: str, plan: dict) -> dict:
+# ---------------------------------------------------------------------
+# Ledger builders
+# ---------------------------------------------------------------------
+
+def build_production_ledger(today: str, plan: dict) -> dict:
     plant_order = {p: i for i, p in enumerate(PLANTS)}
     priority_rank = {"P1": 0, "P2": 1, "P3": 2}
 
@@ -369,6 +508,35 @@ def build_ledger(today: str, plan: dict) -> dict:
     }
 
 
+def build_fsqa_ledger(today: str, plan: dict) -> dict:
+    severity_rank = {"high": 0, "medium": 1, "low": 2}
+    plant_order = {p: i for i, p in enumerate(PLANTS)}
+
+    def sort_key(item: dict) -> tuple:
+        return (
+            severity_rank.get(item.get("severity"), 9),
+            plant_order.get(item.get("plant"), 9),
+            item.get("first_raised", {}).get("time_utc", ""),
+        )
+
+    sections = ["holds", "food_safety", "quality", "sanitation", "allergen"]
+    opportunities = sorted(
+        plan.get("opportunities") or [],
+        key=lambda o: plant_order.get(o.get("plant"), 9),
+    )
+    return {
+        "date": today,
+        "headline": plan.get("headline") or {},
+        "summary": plan.get("summary") or "",
+        **{s: sorted(plan.get(s) or [], key=sort_key) for s in sections},
+        "opportunities": opportunities,
+    }
+
+
+# ---------------------------------------------------------------------
+# Git
+# ---------------------------------------------------------------------
+
 def configure_git() -> None:
     run("git", "config", "user.name", "github-actions[bot]")
     run("git", "config", "user.email",
@@ -386,18 +554,25 @@ def commit_and_push(today: str) -> bool:
     return True
 
 
+# ---------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------
+
 def main() -> None:
     today = today_in_denver()
     print(f"=== Daily Teams Production Monitor — {today} ===")
 
-    report_path = ROOT / "reports" / f"{today}.html"
+    production_report = ROOT / "reports" / f"{today}.html"
+    fsqa_report = ROOT / "reports" / f"fsqa-{today}.html"
 
-    # Idempotency guard for the backup cron slot.
+    # Idempotency guard for the backup cron slot. Skip only when BOTH reports
+    # already exist — if one is missing we want to retry to finish the job.
     if (
         os.environ.get("GITHUB_EVENT_NAME") == "schedule"
-        and report_path.exists()
+        and production_report.exists()
+        and fsqa_report.exists()
     ):
-        print(f"already published {report_path.name} — backup slot skipping")
+        print(f"already published {production_report.name} and {fsqa_report.name} — backup slot skipping")
         return
 
     for k in ("GRAPH_TENANT_ID", "GRAPH_CLIENT_ID", "GRAPH_CLIENT_SECRET",
@@ -405,7 +580,8 @@ def main() -> None:
         env(k)
 
     messages_path = ROOT / "data" / f"messages-{today}.json"
-    ledger_path = ROOT / "data" / f"ledger-{today}.json"
+    production_ledger_path = ROOT / "data" / f"ledger-{today}.json"
+    fsqa_ledger_path = ROOT / "data" / f"fsqa-{today}.json"
     messages_path.parent.mkdir(parents=True, exist_ok=True)
 
     print("\n--- 1. Fetch Teams messages ---")
@@ -413,22 +589,45 @@ def main() -> None:
         "--out", str(messages_path))
     messages = json.loads(messages_path.read_text())
 
-    print("\n--- 2. Classify messages → plan (Claude) ---")
-    plan = call_claude_for_plan(messages)
-    print(f"plan: resolved={len(plan.get('resolved', []))} "
-          f"needs_attention={len(plan.get('needs_attention', []))} "
-          f"notes={len(plan.get('notes', []))}")
+    client = anthropic.Anthropic(api_key=env("ANTHROPIC_API_KEY"))
 
-    print("\n--- 3. Build & write ledger ---")
-    ledger = build_ledger(today, plan)
-    ledger_path.write_text(json.dumps(ledger, indent=2) + "\n")
-    print(f"wrote {ledger_path}")
+    print("\n--- 2a. Classify messages → production briefing (Claude) ---")
+    production_plan = call_claude(client, PRODUCTION_SYSTEM_PROMPT, PRODUCTION_TOOL,
+                                  messages, label="production")
+    print(f"  production: resolved={len(production_plan.get('resolved', []))} "
+          f"needs_attention={len(production_plan.get('needs_attention', []))} "
+          f"notes={len(production_plan.get('notes', []))}")
 
-    print("\n--- 4. Render HTML report ---")
+    print("\n--- 2b. Classify messages → FSQA briefing (Claude) ---")
+    fsqa_plan = call_claude(client, FSQA_SYSTEM_PROMPT, FSQA_TOOL,
+                            messages, label="fsqa")
+    print(f"  fsqa: holds={len(fsqa_plan.get('holds', []))} "
+          f"food_safety={len(fsqa_plan.get('food_safety', []))} "
+          f"quality={len(fsqa_plan.get('quality', []))} "
+          f"sanitation={len(fsqa_plan.get('sanitation', []))} "
+          f"allergen={len(fsqa_plan.get('allergen', []))} "
+          f"opportunities={len(fsqa_plan.get('opportunities', []))}")
+
+    print("\n--- 3. Build & write ledgers ---")
+    production_ledger = build_production_ledger(today, production_plan)
+    production_ledger_path.write_text(json.dumps(production_ledger, indent=2) + "\n")
+    print(f"wrote {production_ledger_path}")
+
+    fsqa_ledger = build_fsqa_ledger(today, fsqa_plan)
+    fsqa_ledger_path.write_text(json.dumps(fsqa_ledger, indent=2) + "\n")
+    print(f"wrote {fsqa_ledger_path}")
+
+    print("\n--- 4a. Render production briefing ---")
     run("python3", str(ROOT / "scripts" / "render_report.py"),
         "--messages", str(messages_path),
-        "--ledger", str(ledger_path),
-        "--out", str(report_path))
+        "--ledger", str(production_ledger_path),
+        "--out", str(production_report))
+
+    print("\n--- 4b. Render FSQA briefing ---")
+    run("python3", str(ROOT / "scripts" / "render_fsqa_report.py"),
+        "--messages", str(messages_path),
+        "--ledger", str(fsqa_ledger_path),
+        "--out", str(fsqa_report))
 
     print("\n--- 5. Refresh manifest ---")
     run("python3", str(ROOT / "scripts" / "update_manifest.py"))
@@ -439,12 +638,16 @@ def main() -> None:
 
     print("\n=== Summary ===")
     for p in PLANTS:
-        r = sum(1 for x in ledger["resolved"] if x.get("plant") == p)
-        n = sum(1 for x in ledger["needs_attention"] if x.get("plant") == p)
+        r = sum(1 for x in production_ledger["resolved"] if x.get("plant") == p)
+        n = sum(1 for x in production_ledger["needs_attention"] if x.get("plant") == p)
         print(f"  {p}: {r} resolved, {n} needs attention")
+    fsqa_total = sum(len(fsqa_ledger[s]) for s in
+                     ["holds", "food_safety", "quality", "sanitation", "allergen"])
+    print(f"  FSQA: {fsqa_total} items, {len(fsqa_ledger['opportunities'])} opportunities")
     if pushed:
-        print(f"Report: https://d-scott-code.github.io/teams-production-monitor/"
-              f"reports/{today}.html")
+        base = "https://d-scott-code.github.io/teams-production-monitor/reports"
+        print(f"Production:  {base}/{today}.html")
+        print(f"FSQA:        {base}/fsqa-{today}.html")
 
 
 if __name__ == "__main__":

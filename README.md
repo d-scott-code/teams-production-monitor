@@ -1,6 +1,9 @@
 # Teams Production Monitor
 
-Daily automated reports of Microsoft Teams activity for CandyCo's three Lindon plants (L1 Caramel, L2 Eco Moulding, L3 Chocolate).
+Daily automated briefings on Microsoft Teams activity for CandyCo's three Lindon plants (L1 Caramel, L2 Moulding, L3 Chocolate). Two views of the same 24 hours, generated in one pass:
+
+- **Production briefing** — for plant leadership. Ops focus: what was resolved, what needs attention, per plant.
+- **FSQA briefing** — for the FSQA Manager. Food safety, quality, sanitation, allergen, plus 1-3 process-level opportunities surfaced by the day's events.
 
 **Live site:** https://d-scott-code.github.io/teams-production-monitor/
 
@@ -28,12 +31,21 @@ live, the floor will mention it again today and it'll show up. If
 they don't, it won't. Trends are something to extract from the report
 archive, not bake into the report.
 
-## What each report covers
+## What each briefing covers
 
-Per plant (L1, L2, L3):
+**Production briefing**, per plant (L1, L2, L3):
 
 - **Needs attention** — problems raised in the last 24h that didn't clear
 - **Resolved in the last 24 hours** — problems raised AND cleared in the window
+
+**FSQA briefing**, single sheet across all plants:
+
+- **Active holds** — product on hold or pending QA disposition
+- **Food safety** — foreign material, contamination, food-safety equipment failures, damaged equipment in food-contact zones
+- **Quality flags** — spec misses, weight/count failures, label errors
+- **Sanitation** — ATP failures, cleaning gaps, hygiene issues
+- **Allergen** — cross-contact, label errors, allergen verification
+- **Opportunities** — 0-3 process-level "consider..." suggestions surfaced by today's events
 
 Raw message dumps land in [`data/`](data/) — the source of truth if you
 want to build weekly/monthly/quarterly roll-ups with a separate tool.
@@ -43,11 +55,14 @@ want to build weekly/monthly/quarterly roll-ups with a separate tool.
 - `index.html` — homepage (archive + latest)
 - `reports/<YYYY-MM-DD>.html` — one briefing per day
 - `reports/manifest.json` — list of dates, rebuilt by `scripts/update_manifest.py`
+- `reports/fsqa-<YYYY-MM-DD>.html` — one FSQA briefing per day
 - `data/messages-<YYYY-MM-DD>.json` — raw Teams dump for the day
-- `data/ledger-<YYYY-MM-DD>.json` — classified resolved + needs_attention for the day
+- `data/ledger-<YYYY-MM-DD>.json` — production briefing ledger (resolved + needs_attention)
+- `data/fsqa-<YYYY-MM-DD>.json` — FSQA briefing ledger (holds/food_safety/quality/sanitation/allergen/opportunities)
 - `scripts/fetch_teams_messages.py` — Graph API client (called by orchestrator)
 - `scripts/run_daily.py` — the orchestrator the workflow invokes
-- `scripts/render_report.py` — HTML report generator
+- `scripts/render_report.py` — production briefing HTML generator
+- `scripts/render_fsqa_report.py` — FSQA briefing HTML generator
 - `scripts/update_manifest.py` — rebuilds `reports/manifest.json`
 - `.claude/skills/teams-production-monitor/SKILL.md` — manual-run skill (Claude Code sessions only)
 - `.claude/hooks/session-start.sh` — installs `requests` when the skill is used interactively

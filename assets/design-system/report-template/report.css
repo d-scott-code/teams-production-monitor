@@ -101,9 +101,13 @@ p { margin: 3pt 0 7pt 0; }
   margin-bottom: 12pt;
 }
 .cover-head .brand img {
-  height: 38px;
+  /* Logo PNGs carry a 4% transparent margin so no artwork sits on the image
+     boundary (a tight crop made the wordmark look clipped at small sizes).
+     42px box renders the artwork at the standard 38px. */
+  height: 42px;
   width: auto;
   display: block;
+  margin: -2px 0;
 }
 .cover-head .doc-meta {
   font-size: 8.5pt;
