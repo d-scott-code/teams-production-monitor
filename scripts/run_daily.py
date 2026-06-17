@@ -461,7 +461,12 @@ def call_claude(client: anthropic.Anthropic, system_prompt: str, tool: dict,
     # Extended thinking budget (5000) counts toward max_tokens. Busy days
     # produce 50+ resolved items × dozens of chars each; we've seen production
     # output alone hit ~7K tokens. 24000 leaves comfortable headroom.
-    resp = client.messages.create(
+    #
+    # Streaming is required at this max_tokens level — the SDK refuses
+    # non-streaming above its 10-minute heuristic threshold. Using the
+    # streaming context manager and pulling the final assembled message
+    # gives us the same Message shape we'd get from create().
+    with client.messages.stream(
         model=MODEL,
         max_tokens=24000,
         thinking={"type": "enabled", "budget_tokens": 5000},
@@ -474,7 +479,8 @@ def call_claude(client: anthropic.Anthropic, system_prompt: str, tool: dict,
         ],
         tools=[tool],
         messages=[{"role": "user", "content": user_payload}],
-    )
+    ) as stream:
+        resp = stream.get_final_message()
     print(
         f"  [{label}] claude usage: input={resp.usage.input_tokens} "
         f"output={resp.usage.output_tokens} "
