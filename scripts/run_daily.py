@@ -452,14 +452,18 @@ def call_claude(client: anthropic.Anthropic, system_prompt: str, tool: dict,
                 messages: dict, label: str) -> dict:
     """Generic single-turn Claude call with extended thinking + one tool.
     Returns the tool's input dict. Exits with a non-zero code if the model
-    doesn't return the expected tool call."""
+    doesn't return the expected tool call, OR if the model hit max_tokens
+    mid-tool-call (which silently corrupts the structured output)."""
     user_payload = (
         f"TODAY: {messages['window'].get('end_utc', '')}\n\n"
         f"MESSAGES (last 24h):\n```json\n{json.dumps(messages, indent=2)}\n```"
     )
+    # Extended thinking budget (5000) counts toward max_tokens. Busy days
+    # produce 50+ resolved items × dozens of chars each; we've seen production
+    # output alone hit ~7K tokens. 24000 leaves comfortable headroom.
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=8192,
+        max_tokens=24000,
         thinking={"type": "enabled", "budget_tokens": 5000},
         system=[
             {
@@ -475,8 +479,17 @@ def call_claude(client: anthropic.Anthropic, system_prompt: str, tool: dict,
         f"  [{label}] claude usage: input={resp.usage.input_tokens} "
         f"output={resp.usage.output_tokens} "
         f"cache_read={getattr(resp.usage, 'cache_read_input_tokens', 0)} "
-        f"cache_create={getattr(resp.usage, 'cache_creation_input_tokens', 0)}"
+        f"cache_create={getattr(resp.usage, 'cache_creation_input_tokens', 0)} "
+        f"stop_reason={resp.stop_reason}"
     )
+    # A max_tokens stop in the middle of a tool_use block leaves block.input
+    # in a partially-parsed state (e.g., array fields come through as strings),
+    # which would silently corrupt the briefing. Fail loud instead.
+    if resp.stop_reason == "max_tokens":
+        sys.exit(
+            f"ERROR: Claude hit max_tokens for {label} — output likely "
+            f"truncated mid-tool-call. Bump max_tokens or split the input."
+        )
     for block in resp.content:
         if block.type == "tool_use" and block.name == tool["name"]:
             return block.input
