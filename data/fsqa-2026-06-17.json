@@ -1,0 +1,166 @@
+{
+  "date": "2026-06-17",
+  "headline": {
+    "eyebrow": "Ingredient contamination",
+    "text": "L3 found *SRS dark chocolate* in supersack during production \u2014 wrong product in ingredient, line now inspecting 100% of incoming truffles with OPL in place."
+  },
+  "summary": "Three sanitation gaps at L1 today: allergen test failure on S3 Tunnel 2 belt requiring rewash, uncovered flow wrap at S4, and wet contaminated area in S2 kitchen. L3 caught wrong-product chocolate in ingredient supersack and deployed 100% inspection. L2 dirty molds caused quality hold until replacement.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Wrong product found in ingredient supersack",
+      "summary": "SRS dark chocolate piece found in MF Matrix supersack during production \u2014 OPL created, dedicated EE now inspecting 100% of product from supersack before use.",
+      "severity": "high",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-17T15:58:42.945Z"
+      },
+      "status": "Open, 100% inspection protocol active, only one supersack on line at a time."
+    },
+    {
+      "plant": "L1",
+      "title": "Pecan found in Tunnel 2 during visual inspection",
+      "summary": "Pecan piece and excessive grease found during S2 Tunnel 2 visual inspection at shift start \u2014 cleaning team addressed before production release.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-17T17:55:41.039Z"
+      },
+      "status": "Resolved, tunnel re-cleaned and passed before line release."
+    },
+    {
+      "plant": "L1",
+      "title": "Flow wrap left uncovered overnight",
+      "summary": "Direct food-contact flow wrap material at S4 found uncovered and unprotected \u2014 contamination risk flagged by QA at 14:21.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-06-17T20:21:16.886Z"
+      },
+      "status": "Resolved, material covered after QA intervention."
+    },
+    {
+      "plant": "L3",
+      "title": "Glycol contamination on finished product",
+      "summary": "Glycol found on eyes of smiling-face product at ML1 \u2014 source unknown, flagged at 14:52.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-17T20:52:22.851Z"
+      },
+      "status": "Open, investigation needed on glycol source."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "Dirty molds causing surface defects at ML2",
+      "summary": "Bars coming out stained with holes due to dirty molds \u2014 line stopped at 15:08, team pulling and replacing all molds.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-06-17T21:08:34.263Z"
+      },
+      "status": "Resolved, molds replaced and production resumed with acceptable quality."
+    },
+    {
+      "plant": "L1",
+      "title": "Underweight final parts on S3",
+      "summary": "Underweight pieces flagged at 22:57, operator making adjustments.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-17T04:57:17.451Z"
+      },
+      "status": "Resolved on shift, operator adjusted and brought back into spec."
+    },
+    {
+      "plant": "L2",
+      "title": "Open pouches at FFS requiring blade cleaning",
+      "summary": "Recurring open-pouch issues during shift \u2014 line paused twice to clean blades, maintenance worked sealing adjustments.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-06-17T16:49:09.615Z"
+      },
+      "status": "Resolved after blade cleaning and maintenance adjustment, packaging now acceptable."
+    },
+    {
+      "plant": "L3",
+      "title": "Open package spike on ML1 Cavanna",
+      "summary": "Open-package rate spiked at 14:19, filled one bin in 10 minutes \u2014 maintenance adjusted jaws cutting into chocolate, resolved by 14:50.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-17T20:15:39.688Z"
+      },
+      "status": "Resolved after jaw adjustment, rate returned to acceptable levels."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Allergen test failure on S3 Tunnel 2 belt",
+      "summary": "Tunnel 2 belt failed allergen test at 21:06 after wash cycle \u2014 belt rewashed 30 minutes, retested, passed at 21:45.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-06-17T03:06:41.381Z"
+      },
+      "status": "Resolved, belt rewashed and passed allergen verification before production."
+    },
+    {
+      "plant": "L1",
+      "title": "Wet contaminated area in S2 kitchen",
+      "summary": "Wet area with rusty water under curtain next to S2 kitchen floor flagged by QA \u2014 contamination risk, requires curtain cut and dry-out.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-06-17T13:20:39.873Z"
+      },
+      "status": "Open, waiting for deep clean and curtain replacement plan."
+    },
+    {
+      "plant": "L1",
+      "title": "Excessive grease on S2 Tunnel 2 table",
+      "summary": "Heavy grease buildup found during Tunnel 2 visual inspection at 11:55 \u2014 re-cleaned before production.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-17T17:55:41.039Z"
+      },
+      "status": "Resolved, table re-cleaned and passed before line release."
+    },
+    {
+      "plant": "L2",
+      "title": "Unlabeled chemical barrels on floor",
+      "summary": "Two unlabeled barrels found on L2 floor at 16:46 \u2014 contents unknown, supervisor tasked to label and train team.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-06-16T22:46:11.854Z"
+      },
+      "status": "Open, awaiting supervisor follow-up to identify and label."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding verification step for flow wrap covering to S4 end-of-shift checklist \u2014 today's uncovered material sat overnight unprotected."
+    },
+    {
+      "plant": "L2",
+      "text": "Review mold cleaning frequency and visual inspection trigger at ML2 \u2014 today's dirty molds caused surface defects and line stop."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding supersack inspection SOP and EE training at MF Matrix \u2014 today's wrong-product chocolate suggests receiving/staging gap."
+    },
+    {
+      "plant": "L3",
+      "text": "Review mold tote segregation process at ML1 wash station \u2014 60g molds found in 35g tote today, no tracking paperwork exists for mold washing."
+    }
+  ]
+}
