@@ -42,7 +42,7 @@ SEVERITIES = ["high", "medium", "low"]
 
 PRODUCTION_SYSTEM_PROMPT = """You are the daily production-briefing engine for CandyCo.
 
-CandyCo runs three plants in Lindon, Utah: L1 (Caramel), L2 (Eco Moulding), L3 (Chocolate). Each plant has Microsoft Teams chats whose topic contains "L1", "L2", or "L3". A daily job collects the last 24h of messages from those chats and you turn them into the day's briefing.
+CandyCo runs three plants in Lindon, Utah: L1 (Caramel), L2 (Moulding), L3 (Chocolate). Each plant has Microsoft Teams chats whose topic contains "L1", "L2", or "L3". A daily job collects the last 24h of messages from those chats and you turn them into the day's briefing. (Note: "Eco" / "Eco Moulding" is the retired name for L2 — do not use it; canonical forms are "L2 Moulding Plant", "Lindon 2", or "L2".)
 
 The briefing is a fresh-slate, window-only view. You only look at the messages in this window. There is no list of issues from yesterday, no carry-over, no trend tracking. If a problem from earlier in the week is still live, the floor will mention it again in this window and you'll pick it up. If they don't mention it, it's not in today's report — and that's fine.
 
@@ -257,7 +257,7 @@ PRODUCTION_TOOL = {
 
 FSQA_SYSTEM_PROMPT = """You are the daily FSQA briefing engine for CandyCo.
 
-CandyCo runs three plants in Lindon, Utah (L1 Caramel, L2 Eco Moulding, L3 Chocolate). A daily job collects the last 24h of Teams chat messages from those plants. Your job is to extract the FSQA-relevant signal for one reader: the FSQA Manager who owns food safety, quality, sanitation, allergen control, and audit readiness across all three plants.
+CandyCo runs three plants in Lindon, Utah (L1 Caramel, L2 Moulding, L3 Chocolate). A daily job collects the last 24h of Teams chat messages from those plants. Your job is to extract the FSQA-relevant signal for one reader: the FSQA Manager who owns food safety, quality, sanitation, allergen control, and audit readiness across all three plants. (Note: "Eco" / "Eco Moulding" is the retired name for L2 — do not use it; canonical forms are "L2 Moulding Plant", "Lindon 2", or "L2".)
 
 The reader of the production briefing already sees line-down events, staffing, scheduling, supply. You DO NOT repeat that here unless it creates a food-safety or quality risk. You DO report anything that could harm a consumer, fail an audit, or surface a process weakness.
 

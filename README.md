@@ -1,6 +1,6 @@
 # Teams Production Monitor
 
-Daily automated briefings on Microsoft Teams activity for CandyCo's three Lindon plants (L1 Caramel, L2 Eco Moulding, L3 Chocolate). Two views of the same 24 hours, generated in one pass:
+Daily automated briefings on Microsoft Teams activity for CandyCo's three Lindon plants (L1 Caramel, L2 Moulding, L3 Chocolate). Two views of the same 24 hours, generated in one pass:
 
 - **Production briefing** — for plant leadership. Ops focus: what was resolved, what needs attention, per plant.
 - **FSQA briefing** — for the FSQA Manager. Food safety, quality, sanitation, allergen, plus 1-3 process-level opportunities surfaced by the day's events.

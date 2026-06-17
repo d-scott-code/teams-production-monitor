@@ -10,7 +10,7 @@ Produces a 4-sheet 8.5"x11" paged document using the CandyCo Design System
   Sheet 1 — Org-wide briefing summary (cover, hero, stats, plant cards,
             cross-plant floor notes)
   Sheet 2 — Lindon 1 (Caramel)
-  Sheet 3 — Lindon 2 (Eco Moulding)
+  Sheet 3 — Lindon 2 (Moulding)
   Sheet 4 — Lindon 3 (Chocolate)
 
 Each plant sheet has two sections: "Resolved" (raised and cleared in the
@@ -30,10 +30,13 @@ MT = ZoneInfo("America/Denver")
 
 DS = "../assets/design-system"
 
+# Plant naming follows CandyCo design system: L2 is "Moulding" — "Eco" is
+# retired (see README in the candyco-design-system plugin). Per design rules,
+# we identify plants through text (the card title), never via colored chrome.
 PLANTS = [
-    {"id": "L1", "name": "Lindon 1 — Caramel",      "accent": "#FFCA3A"},
-    {"id": "L2", "name": "Lindon 2 — Eco Moulding", "accent": "#23CE6B"},
-    {"id": "L3", "name": "Lindon 3 — Chocolate",    "accent": "#1982C4"},
+    {"id": "L1", "name": "Lindon 1 — Caramel"},
+    {"id": "L2", "name": "Lindon 2 — Moulding"},
+    {"id": "L3", "name": "Lindon 3 — Chocolate"},
 ]
 TOTAL_SHEETS = 1 + len(PLANTS)
 
@@ -52,11 +55,13 @@ CATEGORY_ICON = {
 ACCENT_RE = re.compile(r"\*([^*]+)\*")
 
 PAGE_LOCAL_CSS = """
-/* ---------- Sheet 1 — plant cards (audience grid) ---------- */
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- Sheet 1 — plant cards ---------- */
 .plant-card {
   background: var(--bg-1);
   border: 1px solid var(--border-subtle);
-  border-top: 4pt solid var(--plant-accent, var(--primary));
   border-radius: var(--radius);
   padding: 10pt 12pt;
   box-shadow: var(--shadow-sm);
@@ -68,7 +73,7 @@ PAGE_LOCAL_CSS = """
   padding-bottom: 5pt; margin-bottom: 6pt;
 }
 .plant-card .title { font-weight: 700; font-size: 10pt; color: var(--fg-1); }
-.plant-card .scale { font-size: 7.5pt; color: var(--fg-3); }
+.plant-card .scale { font-size: 7.5pt; color: var(--fg-3); letter-spacing: 0.08em; }
 .plant-card .row {
   display: flex; justify-content: space-between;
   padding: 2pt 0; font-size: 8.5pt;
@@ -77,26 +82,12 @@ PAGE_LOCAL_CSS = """
   font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1);
 }
 
-/* ---------- Per-plant sheet — cover band ---------- */
+/* ---------- Per-plant sheet — cover band (logo lockup at 42pt) ---------- */
 .plant-sheet-head {
-  margin: -0.5in -0.5in 14pt -0.5in;
-  padding: 0.5in 0.5in 14pt 0.5in;
-  border-bottom: 1px solid var(--border-default);
-  position: relative;
-}
-.plant-sheet-head::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 8pt;
-  background: var(--plant-accent, var(--primary));
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-  color-adjust: exact;
-}
-.plant-sheet-head .head-row {
   display: flex; align-items: flex-end; justify-content: space-between;
-  gap: 16pt; margin-top: 14pt;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
 }
 .plant-sheet-head .plant-name {
   font-family: var(--font-display);
@@ -110,6 +101,7 @@ PAGE_LOCAL_CSS = """
   font-size: 8pt; color: var(--fg-3);
   letter-spacing: 0.08em;
   margin: 4pt 0 0 0;
+  text-transform: uppercase;
 }
 .plant-sheet-head .meta {
   text-align: right;
@@ -117,8 +109,10 @@ PAGE_LOCAL_CSS = """
   line-height: 1.4;
 }
 .plant-sheet-head .meta img {
-  height: 22px; width: auto; display: block; margin-left: auto;
-  margin-bottom: 4pt;
+  /* Logo PNGs carry a 4% transparent margin so artwork renders at 38px when
+     the box is 42px — matches the design system's cover-head lockup. */
+  height: 42px; width: auto; display: block; margin-left: auto;
+  margin: -2px 0 4pt auto;
 }
 
 /* ---------- Plant narrative ---------- */
@@ -166,10 +160,8 @@ PAGE_LOCAL_CSS = """
   margin-top: 3pt;
   text-wrap: pretty;
 }
-.entry-table .issue-cell .resolution::before {
-  content: "✓ "; font-style: normal; color: #15803d; font-weight: 700;
-  -webkit-print-color-adjust: exact; print-color-adjust: exact;
-}
+/* No emoji — section heading "Resolved" and the italic resolution text
+   carry the meaning. */
 .entry-table .cat-cell { white-space: nowrap; }
 .entry-table .cat-cell .cat-icon {
   display: inline-block; width: 12px; height: 12px;
@@ -329,7 +321,7 @@ def plant_card(plant: dict, ledger: dict) -> str:
     needs = [i for i in ledger.get("needs_attention", []) if i.get("plant") == p]
     p1_needs = sum(1 for i in needs if i.get("priority") == "P1")
     return (
-        f'<div class="plant-card" style="--plant-accent: {plant["accent"]};">'
+        f'<div class="plant-card">'
         f'  <div class="head"><div class="title">{esc(plant["name"])}</div>'
         f'    <div class="scale">{p}</div></div>'
         f'  <div class="row"><span>Resolved</span><span class="v">{resolved}</span></div>'
@@ -442,18 +434,16 @@ def plant_sheet(plant: dict, ledger: dict, page_num: int, total: int,
 
     return f"""
 <!-- ========== SHEET {page_num} — {esc(plant["name"])} ========== -->
-<section class="sheet" style="--plant-accent: {plant["accent"]};">
+<section class="sheet">
   <div class="plant-sheet-head">
-    <div class="head-row">
-      <div>
-        <h1 class="plant-name">{esc(plant["name"])}</h1>
-        <div class="plant-id">{esc(p)} · Production briefing</div>
-      </div>
-      <div class="meta">
-        <img src="{DS}/assets/logo/candyco-logo-black.png" alt="CandyCo">
-        <div>{esc(long_date)}</div>
-        <div>08:00 America/Denver</div>
-      </div>
+    <div>
+      <h1 class="plant-name">{esc(plant["name"])}</h1>
+      <div class="plant-id">{esc(p)} · Production briefing</div>
+    </div>
+    <div class="meta">
+      <img src="{DS}/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>{esc(long_date)}</div>
+      <div>08:00 America/Denver</div>
     </div>
   </div>
 

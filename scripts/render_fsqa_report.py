@@ -24,7 +24,13 @@ MT = ZoneInfo("America/Denver")
 DS = "../assets/design-system"
 
 PLANTS = ["L1", "L2", "L3"]
-PLANT_ACCENT = {"L1": "#FFCA3A", "L2": "#23CE6B", "L3": "#1982C4"}
+
+# Canonical plant names per CandyCo design system (L2 "Eco" is retired).
+PLANT_LABEL = {
+    "L1": "L1 Caramel",
+    "L2": "L2 Moulding",
+    "L3": "L3 Chocolate",
+}
 
 SEVERITY_CAP = {"high": "error", "medium": "warning", "low": "neutral"}
 SEVERITY_RANK = {"high": 0, "medium": 1, "low": 2, None: 3}
@@ -42,26 +48,15 @@ ACCENT_RE = re.compile(r"\*([^*]+)\*")
 
 
 PAGE_LOCAL_CSS = """
-/* ---------- Cover band ---------- */
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
 .fsqa-head {
-  margin: -0.5in -0.5in 14pt -0.5in;
-  padding: 0.5in 0.5in 14pt 0.5in;
-  border-bottom: 1px solid var(--border-default);
-  position: relative;
-}
-.fsqa-head::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 8pt;
-  background: var(--primary);
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-  color-adjust: exact;
-}
-.fsqa-head .head-row {
   display: flex; align-items: flex-end; justify-content: space-between;
-  gap: 16pt; margin-top: 14pt;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
 }
 .fsqa-head h1 {
   font-family: var(--font-display);
@@ -75,6 +70,7 @@ PAGE_LOCAL_CSS = """
   font-size: 8pt; color: var(--fg-3);
   letter-spacing: 0.08em;
   margin: 4pt 0 0 0;
+  text-transform: uppercase;
 }
 .fsqa-head .meta {
   text-align: right;
@@ -82,8 +78,8 @@ PAGE_LOCAL_CSS = """
   line-height: 1.4;
 }
 .fsqa-head .meta img {
-  height: 22px; width: auto; display: block; margin-left: auto;
-  margin-bottom: 4pt;
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
 }
 
 /* ---------- Summary block ---------- */
@@ -165,16 +161,13 @@ PAGE_LOCAL_CSS = """
   display: inline-block;
   font-size: 7pt; font-weight: 700;
   color: var(--fg-2);
-  background: var(--bg-2);
+  background: var(--shadow-grey-50);
   border-radius: var(--radius-sm);
-  padding: 1pt 5pt;
+  padding: 1pt 6pt;
   margin-right: 6pt;
   vertical-align: 1pt;
-  letter-spacing: 0.06em;
-  border-left: 3pt solid var(--plant-accent, var(--primary));
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-  color-adjust: exact;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .fsqa-entry .summary {
   display: block; font-size: 8.5pt; color: var(--fg-2);
@@ -206,7 +199,7 @@ PAGE_LOCAL_CSS = """
   color: var(--fg-3);
 }
 
-/* ---------- Opportunities (per-plant boxes) ---------- */
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
 .opportunities-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -215,13 +208,11 @@ PAGE_LOCAL_CSS = """
   page-break-inside: avoid;
 }
 .opp-box {
-  background: #F5F4EE;
-  border-left: 3pt solid var(--plant-accent, var(--primary));
-  border-radius: var(--radius-sm);
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
   padding: 9pt 11pt 10pt 11pt;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-  color-adjust: exact;
 }
 .opp-box .eyebrow {
   font-size: 7pt; color: var(--fg-3);
@@ -322,8 +313,7 @@ def fmt_raised(item: dict) -> str:
 
 
 def plant_tag(plant: str) -> str:
-    accent = PLANT_ACCENT.get(plant, "var(--primary)")
-    return f'<span class="plant-tag" style="--plant-accent: {accent};">{esc(plant)}</span>'
+    return f'<span class="plant-tag">{esc(plant)}</span>'
 
 
 def severity_cell(severity: str | None) -> str:
@@ -392,10 +382,7 @@ def opportunities_row(items: list[dict]) -> str:
     if not any(by_plant.values()):
         return ""
 
-    plant_label = {"L1": "L1 Caramel", "L2": "L2 Eco Moulding", "L3": "L3 Chocolate"}
-
     def box(plant: str) -> str:
-        accent = PLANT_ACCENT[plant]
         opps = by_plant[plant]
         if opps:
             lis = "".join(f'<li>{esc(o.get("text", ""))}</li>' for o in opps)
@@ -403,9 +390,9 @@ def opportunities_row(items: list[dict]) -> str:
         else:
             body = '<p class="empty">No opportunities flagged today.</p>'
         return (
-            f'<div class="opp-box" style="--plant-accent: {accent};">'
+            f'<div class="opp-box">'
             f'<div class="eyebrow">{esc(plant)}</div>'
-            f'<h4>{esc(plant_label[plant])}</h4>'
+            f'<h4>{esc(PLANT_LABEL[plant])}</h4>'
             f'{body}'
             f'</div>'
         )
@@ -485,16 +472,14 @@ def render(ledger: dict, messages: dict, date: str) -> str:
 
 <section class="sheet">
   <div class="fsqa-head">
-    <div class="head-row">
-      <div>
-        <h1>FSQA briefing</h1>
-        <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
-      </div>
-      <div class="meta">
-        <img src="{DS}/assets/logo/candyco-logo-black.png" alt="CandyCo">
-        <div>{esc(long_date)}</div>
-        <div>08:00 America/Denver</div>
-      </div>
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="{DS}/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>{esc(long_date)}</div>
+      <div>08:00 America/Denver</div>
     </div>
   </div>
 
