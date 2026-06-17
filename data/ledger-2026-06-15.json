@@ -1,0 +1,101 @@
+{
+  "date": "2026-06-15",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 gondola jammed *three times* in 17 minutes \u2014 aligner also rejecting everything, both still down at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran routine changeovers and weekend cleaning on Sollich 3, targeting 10:00 start. No production issues in the window.",
+    "L2": "L2 FFS completed 8.4 oz setup by 07:01 after a short changeover. ML2 had a Monday morning materials delay \u2014 caramel and chocolate delivery plus single warehouse resource on busiest shift \u2014 but reached temp and resumed. ML3 running great.",
+    "L3": "L3 Truffle and MF Matrix started on time with clean runs. ML1 waiting on temper adjustments at window close. ML4 started depositing at 05:03 but went down at 06:50 with recurring gondola entrance jams (three in 17 minutes) and an aligner fault rejecting all product to scrap; both issues active at 07:07."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "ML2 Monday morning materials delay",
+      "summary": "Caramel and chocolate delivery delayed by single warehouse resource on busiest Monday shift; room-temp caramel had to reach acceptable temperature before run could start.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-06-15T12:26:53.676Z"
+      },
+      "resolution": "Materials delivered and caramel reached acceptable temp by 06:36; Jeffrey Barney confirmed line resumed after warm caramel added to speed heating."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line setup for 8.4 oz",
+      "summary": "Line setup for 8.4 oz pack size completed and running by 07:01.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-06-15T12:27:52.619Z"
+      },
+      "resolution": "Setup completed by 07:01 \u2014 \"Line is running\" (Jeffrey Barney)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L3",
+      "title": "ML4 recurring gondola entrance jams",
+      "summary": "Product not entering gondola slat properly; line down at 06:50, ran 3 minutes then jammed again at 06:53, down again at 07:07 after speed reduction to 15 mpm.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-15T12:50:25.292Z"
+      },
+      "status": "Three jams in 17 minutes. Chad suggested reducing from 18 to 15 mpm at 07:00; line jammed again at 07:07. Still down at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 aligner rejecting all product, high scrap",
+      "summary": "Aligner not separating properly and rejecting everything to discharge; creating significant scrap while Felix is in a meeting.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-15T12:59:37.376Z"
+      },
+      "status": "Aligner fault active as of 06:59, no resolution by window close. Felix unavailable (in meeting)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chiller temperature issues on WDS coolers",
+      "summary": "WDS cooler temperatures out of range; maintenance looking at the chiller.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-15T12:45:55.484Z"
+      },
+      "status": "Maintenance looking at chiller as of 06:45, no resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper unit adjustments in progress",
+      "summary": "Preston making adjustments to temper unit; line still waiting for temper at window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-15T13:05:50.016Z"
+      },
+      "status": "Preston in the line making temper adjustments as of 07:05, no ETA. Chad noted settings may not have saved from last week's modifications."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 tablet locked, cannot post checklists",
+      "summary": "ML4 TG tablet (Lenovo) locked with unknown password; operators unable to post any checklists.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-15T13:03:12.042Z"
+      },
+      "status": "Tablet locked as of 07:03. Jorel Gourdin confirmed he did not set up that device and cannot help."
+    }
+  ]
+}

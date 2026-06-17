@@ -1,0 +1,390 @@
+{
+  "date": "2026-06-05",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 Truffle Line guillotine was down *1 hour 15 minutes* on an electrical fault \u2014 cleared at 06:45 and restarted at 06:50."
+  },
+  "per_plant_summary": {
+    "L1": "L1 cleared a Yamato scale issue in 11 minutes on Sollich 3 and released quarantined chocolate at 05:40 after overnight coordination with QA. Tunnel 3 belt is down with maintenance on-site as of 07:08, and Cavanna recipe changes are blocked pending Troy's arrival with passwords.",
+    "L2": "L2 cleared four short stoppages across ML2 and ML3 including mold jams, a film tear, and caramel temperature adjustments. ML2's mold evacuation tooth went out of alignment three times in the shift; maintenance reports no obvious cause and camera footage is password-locked.",
+    "L3": "L3 cleared a 1 hour 15 minute guillotine fault on Truffle Line at 06:45, replaced a torn Sweco screen overnight, and resolved metal shavings traced to a loose bolt. MF Matrix has a recurring product clog issue flagged twice with no fix, and an improper LOTO on Truffle Line used a zip tie instead of a lock."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "BEQ Pouches require 11 employees including 2 extra for trays and 3 for hopper positions per Rich Brierley at 12:48."
+    },
+    {
+      "plant": "L2",
+      "text": "Caramel delivery arrived at 09:26 without COA; QA released for use by 13:23 after coordination with supplier."
+    },
+    {
+      "plant": "L1",
+      "text": "Transferred 1,600 lbs of 10227 chocolate from Sollich 2 buffer to Sollich 3 for Brookies at 01:51."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 chocolate in quarantine status",
+      "summary": "All dark chocolate (10276) pallets in quarantine, no COAs available; decision made to melt and hold product until release.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-05T05:19:53.247Z"
+      },
+      "resolution": "Chocolate released at 05:40 \u2014 \"the chocolate has been taken off quarantine and is good to use\" (Candon Watt)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 Yamato scale issue",
+      "summary": "Yamato having issues, operator recalibrating and passing accumulation; line down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-05T13:02:39.923Z"
+      },
+      "resolution": "Cleared at 07:13 \u2014 \"line is back to run\" (Luis Falcon)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 ran out of caramel, no COA on new delivery",
+      "summary": "Stopped depositing at 11:52 after running out of caramel; newly arrived caramel had no COA.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-04T17:52:51.609Z"
+      },
+      "resolution": "QA released caramel for use with quarantine hold at 13:23 (Hervin Herrera), back depositing at 12:25 after heating tank."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jam on top row",
+      "summary": "Mold jam stopping line; maintenance working on evacuation chain.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-06-04T18:43:28.437Z"
+      },
+      "resolution": "Cleared at 13:19 \u2014 \"line back up running\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 caramel filler emptying, not depositing",
+      "summary": "Filler getting empty at 18:11, line running but not depositing; maintenance working, temperature issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-06-05T00:11:06.347Z"
+      },
+      "resolution": "Cleared at 18:29 \u2014 temperature raised from 89\u00b0F to 94\u00b0F, percentage range adjusted from 45 to 65, \"we are depositing again\" (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film tear at 14:43",
+      "summary": "Film tear stopped line briefly.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-06-04T20:43:10.672Z"
+      },
+      "resolution": "Cleared at 14:45 \u2014 \"back up running\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrap screen not functioning",
+      "summary": "HMI screen not working, couldn't make adjustments; restarted system.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-04T23:26:00.751Z"
+      },
+      "resolution": "Down 6 minutes, cleared at 17:39 \u2014 \"we are up and running again\" (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cooler problem at 18:42",
+      "summary": "Cooler issue stopped line; maintenance fixed quickly.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-05T00:43:15.89Z"
+      },
+      "resolution": "Cleared at 18:45 \u2014 \"maintenance fixed the issue, we are running again\" (Brandon Lance)."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal shavings found on Truffle Line",
+      "summary": "Metal shavings discovered at 15:06; traced to missing piece on bolt plate causing movement.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-04T21:06:51.831Z"
+      },
+      "resolution": "Cause identified at 16:04 \u2014 \"on the plate where the bolt goes into there's a piece missing which caused it to move\" \u2014 area cleaned, capture test passed, line restarted."
+    },
+    {
+      "plant": "L3",
+      "title": "Nut and bolt found inside matrix area",
+      "summary": "Foreign material discovered; maintenance called to determine origin and adjust.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-06-04T22:08:12.287Z"
+      },
+      "resolution": "Cleared at 16:09 \u2014 \"ready\" after maintenance determined location and adjusted."
+    },
+    {
+      "plant": "L3",
+      "title": "Guillotine knife not starting, electrical fault",
+      "summary": "Cutting knife on Truffle Line would not start with no error code; maintenance traced to fault in main electrical box and restarted system.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-05T11:35:21.946Z"
+      },
+      "resolution": "Cleared at 06:45 \u2014 \"guillotine is up and running, maintenance restarted the system, the main problem was a fault in the main electric box\" \u2014 line started at 06:50."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix weight issues",
+      "summary": "Weight problems flagged at 13:28; maintenance made adjustments to recipe.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-04T19:28:40.209Z"
+      },
+      "resolution": "Cleared at 14:18 \u2014 \"maintenance made changes to the recipe.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line depositor alarm, temps too high",
+      "summary": "Line attempting to start but getting alarm; temps too high at 17:00, belt not moving prevented deposit.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-04T22:14:42.155Z"
+      },
+      "resolution": "Cleared at 17:20 \u2014 \"we're depositing now, the issue ended up being because the belt was not moving it wasn't allowing it to deposit.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Sweco screen torn during disassembly",
+      "summary": "Tear found on Truffle Line Sweco screen during cleaning; replaced with new screen overnight.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-05T06:23:45.691Z"
+      },
+      "resolution": "New screen installed, visual and ATP passed at 03:16 (Luisiana Castro)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold inserter trays falling through",
+      "summary": "Trays falling through inserter; maintenance working on issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-05T08:00:26.678Z"
+      },
+      "resolution": "Root cause found at 04:43 \u2014 \"bolts were left loose by whoever cleaned it, causing chain support plate to hit loosely when molds cycling. Luckily operator caught before it caused damage.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna blowing chocolate from conveyor bottom",
+      "summary": "Chocolate blowing out of bottom of Cavanna conveyor; maintenance fixing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-05T09:19:20.461Z"
+      },
+      "resolution": "Implied resolved by continued operation shown in later status updates through end of shift."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Cavanna recipe change blocked by password",
+      "summary": "Cannot change Cavanna recipes because password is not available; Troy scheduled to arrive early to make changes.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-06-05T11:08:30.653Z"
+      },
+      "status": "Issue flagged at 05:08 and 05:22; Troy scheduled to arrive early per Justin at 05:42, no completion confirmation by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Tunnel 3 belt not working",
+      "summary": "Tunnel 3 belt down, maintenance on-site as of 07:08.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-05T13:08:02.887Z"
+      },
+      "status": "Maintenance on-site at 07:08, no update by window close at 07:15."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 kitchen table damaged",
+      "summary": "Kitchen table damaged, possibly from scrap pallet contact.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-04T18:57:00.168Z"
+      },
+      "status": "Reported at 12:57, no repair or assessment posted."
+    },
+    {
+      "plant": "L1",
+      "title": "Tarp wall areas need repair",
+      "summary": "Multiple areas on tarp wall flagged as needing repair.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-06-05T07:06:39.808Z"
+      },
+      "status": "Flagged to Jody at 01:06, no repair scheduled or completed."
+    },
+    {
+      "plant": "L1",
+      "title": "New wash area water temperature insufficient",
+      "summary": "New wash area hose tied into heat exchanger running at 120\u00b0F; will not clean caramel due to low temp and pressure. May need contractor to tie into steam line.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Coles",
+        "time_utc": "2026-06-05T11:06:53.087Z"
+      },
+      "status": "Identified at 05:06, recommendation to have contractor tie into steam line for higher temps; no action taken by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold tooth out of alignment \u2014 third occurrence",
+      "summary": "Evacuation chain tooth went out of alignment three times in the shift (12:43, 16:37, 18:46); maintenance reports chain is tight, molds move freely, possibly servo drive or incorrect referencing but can't determine root cause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-06-04T18:43:28.437Z"
+      },
+      "status": "Third occurrence at 18:46, camera footage password-locked preventing review. Recurring issue with no root cause identified as of window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap label cutting issue at 15:27",
+      "summary": "Line down to switch roll of flow wrap label that was getting cut.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-04T21:27:50.827Z"
+      },
+      "status": "Reported at 15:27, switching roll; no clear \"back up running\" confirmation posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Improper LOTO on Truffle Line metal detector",
+      "summary": "Lock would not fit on e-stop during cleaning; team used zip tie instead, which prevents proper lockout/tagout.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-06-04T15:10:07.933Z"
+      },
+      "status": "Reported at 09:10, no corrective action posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix area clogging with product twice",
+      "summary": "Area clogged with product at 19:27, happened twice; maintenance notified. Root cause is exposed silver adhesive causing pieces to stick together.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-05T01:27:01.585Z"
+      },
+      "status": "Issue identified as adhesive at 19:58, recurring problem with no fix implemented as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix buckets falling, not taking correct weight",
+      "summary": "Buckets falling and not deducting corresponding weight; re-zero being done.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-05T12:43:29.87Z"
+      },
+      "status": "Re-zero in progress at 06:43, no completion confirmation."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 licking roller and scraper push unclear",
+      "summary": "Question raised whether licking roller and scraper pipes were pushed during changeover; not marked as checked on whiteboard.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-05T12:59:05.977Z"
+      },
+      "status": "Asked at 06:59, no clear answer from Tyson by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 slider won't enter",
+      "summary": "Having hard time installing one of the sliders on depositor 4; maintenance on-site but still not entering, waiting for Alex WDS.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-05T13:07:05.316Z"
+      },
+      "status": "As of 07:07, slider still not entering, waiting on Alex WDS who should arrive soon."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 damaged blade on licking roller #2",
+      "summary": "Damage on blade for one of the licking rollers noticed during setup; reportedly flagged ~3 weeks ago by Kim but not repaired.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-04T17:36:01.085Z"
+      },
+      "status": "Reported at 11:36, Preston confirms it was reported 3 weeks ago but details unclear; no repair completed."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix tools missing \u2014 scissor",
+      "summary": "Tools are lacking, scissor is missing from area.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-05T12:30:49.889Z"
+      },
+      "status": "Reported at 06:30, no resolution posted."
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "date": "2026-05-30",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 was down *5 hours overnight* on a Cavanna piston actuator fault \u2014 cleared at 06:20."
+  },
+  "per_plant_summary": {
+    "L1": "L1 recovered from a brief power outage at 17:38 that required enrober reheat. Sollich 2 labeling machine wrinkled labels for 30 minutes but cleared by 21:00 with no rework. Sollich 4 kitchen chiller faulted at 12:43 with no resolution by window close.",
+    "L2": "L2 had a busy 24 hours. ML3 lost temper after a power outage at 17:40, restarted by 18:58, then spiked again at 19:31 and cleared by 20:41. ML3 also ran 30 minutes without a printer, placing 55 boxes on hold. ML2 battled cooler rail jams, servo faults, and blade alignment issues through the morning, cleared by 12:11. A power bump at 17:45 required brief reheat. Panning allergen test on macadamia hoppers failed third shift but passed by 00:40.",
+    "L3": "L3 ML1 was down 5 hours overnight (01:06\u201306:20) on a Cavanna piston actuator fault. Maintenance troubleshot extensively, calling in additional techs. Third shift also started the line before hopper temps reached setpoint, sticking 71 molds; first shift corrected and restarted. Cavanna flow wrap film defect raised at 15:44 continues with extra monitoring. Truffle line missing salt ingredient (item 10002), expected tomorrow."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Startup checklist improvement identified: does not specify waiting for hopper and water temp control unit to reach setpoint before production."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Power outage lost enrober temper",
+      "summary": "Company-wide power outage at 17:38 lost temper on enrobers, required reheat and re-tempering.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-05-29T23:38:32.64Z"
+      },
+      "resolution": "Cleared at 18:52 \u2014 \"The line is started back up\" (Dakota Adair)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 labeling machine wrinkled labels",
+      "summary": "Labels came out wrinkled after power outage; maintenance repaired machine, 2 pallets accumulated but processed with no rework.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-05-30T02:28:03.841Z"
+      },
+      "resolution": "Cleared at 21:00 \u2014 \"labeling machine is already working better\" (Elizabeth Hernandez). 2 pallets processed by 22:37, no rework remaining."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 power outage lost temper",
+      "summary": "Power shortcut at 17:40 caused line down, lost temper, required reheat.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-05-29T23:40:21.856Z"
+      },
+      "resolution": "Cleared at 18:58 \u2014 \"The third temper check is 0.4 we will start running again\" (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cooler rail 75 jammed, bent",
+      "summary": "Rail 75 in cooler bent, causing mold jams at 08:51 and 10:20; maintenance bent rail back.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-29T14:51:27.512Z"
+      },
+      "resolution": "Cleared at 11:21 \u2014 \"line is back up and running\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 depositor slider A piston servo fault",
+      "summary": "Slider A piston faulted at depositor at 10:35, line down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-05-29T16:35:09.262Z"
+      },
+      "resolution": "Cleared at 10:43 \u2014 \"Alex made an adjustment and it started running\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrap blade causing slits",
+      "summary": "Bars coming out with slits, maintenance shimmed blade.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-05-29T17:28:08.153Z"
+      },
+      "resolution": "Cleared at 12:11 \u2014 \"Line is back up\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 chocolate stuck on aligner",
+      "summary": "Chocolate getting stuck on aligner caused line stoppage at 14:26.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-05-29T20:26:44.215Z"
+      },
+      "resolution": "Cleared by 17:25 \u2014 production continued with caramel tank monitoring (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolding belt tracking causing aligner issues",
+      "summary": "Demolding belt tracking off, causing double rows at aligner and bars kicked off.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-05-29T22:16:03.34Z"
+      },
+      "resolution": "Cleared at 16:49 \u2014 \"Line is running again. So far, better alignment with the bars and less kicking out\" (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 power bump, flow wrap reboot",
+      "summary": "Power bump at 17:45 caused flow wrap to reboot.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-05-29T23:45:58.105Z"
+      },
+      "resolution": "Cleared at 20:29 \u2014 \"Line is running\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 temper spiked to 1.4",
+      "summary": "After power outage, temper spiked to 1.4, line stopped at 19:31 for adjustments and chiller check.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-05-30T01:31:18.06Z"
+      },
+      "resolution": "Cleared at 20:41 \u2014 \"The temper look better with the adjustments\" (ML3 Filler)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 printer failure, 55 boxes missing lot codes",
+      "summary": "After power outage, printer stopped working; line ran ~15 minutes before issue identified, 55 boxes on hold for rework.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-05-30T02:32:43.699Z"
+      },
+      "resolution": "Cleared at 20:42 \u2014 1 pallet (55 boxes) placed on hold for missing lot codes (Wilson Amaris Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "Panning optical sorter allergen test failed",
+      "summary": "Allergen test on optical sorter macadamia hoppers failed third shift.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-05-30T04:05:44.237Z"
+      },
+      "resolution": "Cleared at 00:40 \u2014 \"The allergen test conducted on the optical sorter specifically in the hoppers was satisfactory\" (Claudio Tovar)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 twin belt screw came loose",
+      "summary": "Screw on twin belt came out of place at 20:59, causing line stop.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-05-30T02:59:40.872Z"
+      },
+      "resolution": "Cleared at 21:11 \u2014 \"someone either tried to loosen or tighten that belt and forgot to tighten the nuts on the end. It's good now\" (Raymond Fleming)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor piston clogged at 00:09",
+      "summary": "Depositor piston stopped moving due to clogged ports, plate disassembled for cleaning.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-05-30T06:09:54.553Z"
+      },
+      "resolution": "Cleared at 01:12 \u2014 \"No issues found is was a dirty pin\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna piston actuator fault, 5 hours down",
+      "summary": "Cavanna flow wrap piston actuator stopped moving piston at 01:06, extensive troubleshooting through overnight, additional maintenance called in.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-05-30T07:06:04.332Z"
+      },
+      "resolution": "Cleared at 06:20 \u2014 \"Ml1 up and running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 third shift improper startup, 71 molds stuck",
+      "summary": "Third shift started line before hopper and water temp control unit reached setpoints; 71 molds stuck and sent to dishwasher.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-05-30T12:59:53.307Z"
+      },
+      "resolution": "Cleared at 07:13 \u2014 first shift stopped production, drained hopper, waited for temps, refilled, performed capture test, and restarted (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 HMI alarm at 18:49",
+      "summary": "HMI alarm, maintenance and QA notified, line stopped briefly.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-05-30T00:49:53.15Z"
+      },
+      "resolution": "Cleared at 18:58 \u2014 \"We started the line back up\" (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 kitchen chiller faulted",
+      "summary": "Chiller faulted at 12:43, maintenance informed, no resolution by window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-05-29T18:42:52.028Z"
+      },
+      "status": "Maintenance notified at 12:43, no update by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 chiller issue impacting temper",
+      "summary": "Suspected chiller issue causing temper instability at 20:22, maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-05-30T02:22:19.571Z"
+      },
+      "status": "Maintenance called at 20:23, temper adjustments made but chiller issue not explicitly resolved by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna flow wrap film defect",
+      "summary": "Flow wrap film has line in middle causing wrappers to come out open; quality requested second EE to monitor defects.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-05-29T21:44:48.591Z"
+      },
+      "status": "Ongoing at window close; extra monitoring in place but defect not resolved. Staffing limited (only 1 EE for lunches)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle salt ingredient missing",
+      "summary": "Salt item 10002 did not arrive afternoon of 29th, expected tomorrow.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Andrea Diaz",
+        "time_utc": "2026-05-30T02:34:20.245Z"
+      },
+      "status": "Missing as of 20:34 on 29th, expected to arrive 30th."
+    }
+  ]
+}

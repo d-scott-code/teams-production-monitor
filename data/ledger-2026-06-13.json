@@ -1,0 +1,246 @@
+{
+  "date": "2026-06-13",
+  "headline": {
+    "eyebrow": "Sensor & equipment",
+    "text": "L3 ML1 C1 belt still down at window close after *01:53* call \u2014 L2 ML3 has a sensor stuck out of range until Monday, L1 water-activity meter failed and requires L2 loaner."
+  },
+  "per_plant_summary": {
+    "L1": "L1 S2 recovered from a glycol leak at Chicane #5 and a Cavanna 4 thermocouple failure, both cleared by 21:53. S4 completed 18 barrels of One Shot (MMK) overnight but discovered the plant's water-activity meter is not testing correctly and borrowed L2's unit. S4 also cleared a mixing-tank agitator issue during Bequet caramel.",
+    "L2": "L2 ML3 has one filler sensor out of range that cannot be reset and will need attention Monday morning. A brief flow-wrap stoppage at 18:09 cleared in 3 minutes. ML2 wrapped the shift with no issues.",
+    "L3": "L3 ML1 cleared a drive-sprocket misalignment, mold-heater alarm, Bosch sealing fault, and C6 belt tracking by 20:23, but C1 belt went down at 01:53 with no resolution posted. Flow-wrap cutting issues recurred overnight; maintenance saved the Cavanna recipe at 04:24 and lowered speed to 5 mpm by window close. Truffle line replaced a worn B150 sensor and reported metal dust from a roller that maintenance planned to fix overnight \u2014 no confirmation. MF Matrix had 7,095 trays held for wrong version label."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Truffle line operators avoid correct magnet placement because chocolate overflows \u2014 Preston suggested jacketing the slide or a narrower magnet."
+    },
+    {
+      "plant": "L1",
+      "text": "S4 staged to send 18 barrels of One Shot caramel to L2 for Monday morning availability."
+    },
+    {
+      "plant": "L2",
+      "text": "Gustavo flagged drain under ML3 buffer tank and sweco found dirty; heavy wash completed, new 800ppm sanitizer x3/shift protocol starts Monday."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 Chicane Belt #5 glycol leak",
+      "summary": "Operator noticed glycol leaking under Chicane #5; maintenance tightened all hose clamps, line stopped and cleaned.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-12T21:46:49.177Z"
+      },
+      "resolution": "Belt cleaned, ATP passed, chocolate tempered and running by 17:14 \u2014 \"Belt ready to run\" (Victor Mejia at 17:05)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Cavanna 4 thermocouple failure",
+      "summary": "Cavanna 4 alarmed on upper jaw thermocouple; line stopped at 20:32 with 29 bins of accumulated product.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-13T02:17:15.71Z"
+      },
+      "resolution": "Temperature cable replaced, Cavanna 3 working well, line running by 21:53 \u2014 \"Cavanna 3 is working well now; we're going to run the line\" (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 mixing tank agitator motor not running",
+      "summary": "Agitator motor failed to run during ingredient addition on fourth batch, caused pipeline blockage; tank and pipeline washed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-06-12T18:41:12.348Z"
+      },
+      "resolution": "Adjustments made, Bequet caramel finished and One Shot startup supported by 15:55 \u2014 board posted showing production complete (Marcos Jimenez at 15:55)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 tunnel 3 e-stop, reheat required",
+      "summary": "E-stop pressed on tunnel 3, line turned off for reheat cycle.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-12T21:50:56.125Z"
+      },
+      "resolution": "Reheat finished by 16:31, program set \u2014 \"We've finished the reheat; we've already set the program\" (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrapper stoppage",
+      "summary": "Line down at 18:09 due to flow-wrap issues.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-13T00:09:44.857Z"
+      },
+      "resolution": "Cleared in 3 minutes \u2014 \"Line start running\" at 18:12 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "Main drive sprocket off one tooth, molds scratching",
+      "summary": "Drive sprocket slipped a tooth during almond clean, causing all molds to scratch against demolding hardware.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-12T21:21:36.38Z"
+      },
+      "resolution": "Sprocket corrected, gap created for QA inspection, passed and running at 16:39 \u2014 \"We are back and running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line B150 sensor worn, machine not starting",
+      "summary": "Worn B150 sensor preventing machine from starting; 30 bins of accumulation ran out while maintenance worked.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-12T15:01:58.833Z"
+      },
+      "resolution": "Sensor replaced and phasing belt adjusted by 09:40 \u2014 \"Replaced worn sensor wb150 and made adjustments to phasing belt\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix weight checker loaded wrong recipe",
+      "summary": "Weight checker had incorrect recipe loaded, causing high reject rate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-12T21:56:58.174Z"
+      },
+      "resolution": "Verified with QA, correct recipe loaded, approved at 15:59 \u2014 \"Approved\" (Angel Cabrera)."
+    },
+    {
+      "plant": "L3",
+      "title": "Mold heater overheated, blower fan failing",
+      "summary": "One of four mold heaters overheated and alarmed; maintenance identified failing blower fan and adjusted fault limit to 65% duty cycle.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-13T00:08:26.473Z"
+      },
+      "resolution": "Fault limit increased, heater running within safe limits as of 19:13 \u2014 \"It's still within safe limits for the equipment\" (Preston Elmer)."
+    },
+    {
+      "plant": "L3",
+      "title": "Bosch wrapper not sealing",
+      "summary": "Bosch wrapper stopped sealing, maintenance worked on-site.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-13T01:24:55.412Z"
+      },
+      "resolution": "Cleared at 20:23 \u2014 \"Running again\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "C6 belt tracking south",
+      "summary": "C6 belt drifting to south side, maintenance adjusted tracking.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-06-13T07:07:24.159Z"
+      },
+      "resolution": "Cleared at 01:28 \u2014 \"Start running back up\" (Raoul Lubain)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 water activity meter not testing correctly",
+      "summary": "L1 water-activity meter giving incorrect low readings during One Shot run; L2 meter borrowed and showing proper results.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-06-12T18:58:29.25Z"
+      },
+      "status": "L1 meter confirmed not testing correctly at 18:51; L2 meter in use as workaround, L1 unit requires service."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 filler sensor out of range, cannot reset",
+      "summary": "One filler sensor reading out of range; unplugging, power-down, and recipe reload all failed to clear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-13T12:22:33.449Z"
+      },
+      "status": "Cannot reset sensor as of 06:22, flagged for Monday morning attention \u2014 Dave Ruff and Jeffrey Barney tagged."
+    },
+    {
+      "plant": "L3",
+      "title": "C1 belt down",
+      "summary": "C1 belt reported down at 01:53, maintenance called.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-13T07:53:49.048Z"
+      },
+      "status": "Down since 01:53, maintenance called, no resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal dust from roller between MD and next belt",
+      "summary": "Metal dust found originating from roller between metal detector belt and subsequent belt; not compromising product, maintenance planned to fix overnight.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-12T18:52:09.388Z"
+      },
+      "status": "Maintenance stated they would resolve with changes and adjustments overnight; no confirmation of completion posted."
+    },
+    {
+      "plant": "L3",
+      "title": "7,095 trays of 41056-V1 on hold, wrong version",
+      "summary": "MF Matrix produced 7,095 trays with version V1 label when sales team required different version.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-06-13T04:10:07.27Z"
+      },
+      "status": "Trays on hold as of 22:10, awaiting disposition from sales team."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow-wrap not cutting, recurring issue",
+      "summary": "Recurring cutting issues on flow-wrap overnight; maintenance saved Cavanna recipe at 04:24, speed lowered to 5 mpm by 07:10.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-13T08:58:32.934Z"
+      },
+      "status": "Maintenance saved recipe at 04:24 and lowered line to 5 mpm for adjustments as of 07:10 at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bracket #14 fell off central cone",
+      "summary": "Bracket number 14 detached from machine central cone.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-12T22:31:33.102Z"
+      },
+      "status": "Bracket fell off at 16:31, no resolution posted."
+    }
+  ]
+}

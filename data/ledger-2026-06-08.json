@@ -1,0 +1,106 @@
+{
+  "date": "2026-06-08",
+  "headline": {
+    "eyebrow": "Safety flag",
+    "text": "L1 Sollich 2 heating elements broken \u2014 operator heating caramel drain pipe *with a torch* since 06:14, no fix yet."
+  },
+  "per_plant_summary": {
+    "L1": "L1 Sollich 3 ran normally through the shift. Sollich 2 has broken heating elements on the caramel drain pipe \u2014 operator is using a torch as a workaround since 06:14, still unresolved at window close.",
+    "L2": "L2 FFS line ran cleanly. ML2 flow wrap belt failed at 06:44 \u2014 maintenance began replacement work by 06:49 but not yet back online. Lot 10140 was received without COAs; team reached out to supplier at 06:53.",
+    "L3": "L3 ML4 cleared a cooler humidity alarm in 7 minutes at start-up, then paused at 06:51 waiting for TG techs. MF Matrix started on time but flagged weight problems at 06:50. Truffle Line reported sticking issues on the center row at 06:29."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Scheduling conflict flagged \u2014 S2 and S3 both scheduled to run jars on June 11th, requesting change."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "ML4 cooler cabinet 4 humidity alarm blocked depositing",
+      "summary": "High humidity alarm on cooler cabinet 4 prevented depositing start at 05:39; cleared and depositing resumed by 05:46.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-08T11:39:07.186Z"
+      },
+      "resolution": "Cleared by 05:46 \u2014 \"We are depositing\" (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 caramel drain pipe heating elements broken",
+      "summary": "Heating elements that warm the caramel drain pipe are broken; operator is using a torch to heat the pipe as a workaround.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-08T12:14:09.193Z"
+      },
+      "status": "Heating elements broken since 06:14, operator using torch workaround, no repair timeline."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrap belt failure",
+      "summary": "Line started running at 06:44 but flow wrap belt failed and needs replacement; maintenance began getting replacement belt by 06:49.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-08T12:44:20.544Z"
+      },
+      "status": "Maintenance getting replacement belt as of 06:49, no confirmation of install or line restart."
+    },
+    {
+      "plant": "L2",
+      "title": "Lot 10140 delivered without COAs",
+      "summary": "Material lot 10140 offloaded and received at 06:53 but supplier delivered without certificates of analysis; team reached out to supplier contacts for COAs.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joey Michael Dudney",
+        "time_utc": "2026-06-08T12:53:21.975Z"
+      },
+      "status": "Material received, reached out to William R. and Diego R. for COAs from supplier as of 06:53, awaiting response."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line sticking issues on center row",
+      "summary": "Operator reported sticking problems on the center row at 06:29; adjustments were made but issue persists.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-06-08T12:29:24.44Z"
+      },
+      "status": "Sticking on center row flagged at 06:29, adjustments made but issue still present."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix weight problems",
+      "summary": "Line started on time at 06:44 but experiencing weight control issues flagged at 06:50.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-08T12:50:19.761Z"
+      },
+      "status": "Weight problems reported at 06:50, no update on resolution or root cause."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 paused waiting for TG techs",
+      "summary": "Product reached demolding at 06:51 and line paused to wait for TG techs to arrive.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-08T12:51:45.466Z"
+      },
+      "status": "Line paused at demolding as of 06:51, waiting for TG techs."
+    }
+  ]
+}

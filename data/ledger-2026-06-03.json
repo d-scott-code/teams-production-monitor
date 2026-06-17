@@ -1,0 +1,270 @@
+{
+  "date": "2026-06-03",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 ran *3 hours down total* across quality and buffer faults \u2014 bars with low cookies caught and held, then 3rd shift buffer management learning took line offline again."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran Sollich 3 pretzel enrobing all three shifts and dialed in chocolate usage from 7g to 6g per piece by adjusting the bottomer. Sollich 2 reheated and resumed HER dark caramels by midday. Sollich 4 drain remains clogged after Roto-rooter attempt; they'll return to jet it.",
+    "L2": "L2 ML2 saw mold jams in the morning but the bigger hit was a PTL sensor failure overnight \u2014 twisted pins on the pressure sensor blew fuses and took the line down from 03:15 to 05:19. Sensor replaced, line back. ML3 and FFS ran clean.",
+    "L3": "L3 ML1 fought recurring mold camera alarms all day (chocolate buildup under hopper) plus a metal detection event where washer and nut fell from shaker hardware; all accounted for, no product impact. ML4 had bad bars with low cookie distribution around 15:01 \u2014 pallet on hold \u2014 then 3rd shift took buffer 2 below 5%, starved depositor 4, and went down 03:44 to 04:59. Truffle Line swapped the roller and fixed Cavanna 1 chain issues, back running by 13:58."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Bequet film inventory at 21.5 rolls; Shep pickup requested for 36 pallets."
+    },
+    {
+      "plant": "L1",
+      "text": "Multiple PO/receiving blocks on Peco pallets (PO8677), Tates, Mondelez chocolate, and tape \u2014 Tiffanee escalating to Ethan/Sunny."
+    },
+    {
+      "plant": "L1",
+      "text": "Sensory flagged excessive vanilla flavor on One Shot Caramel from May 29 electrical interruption; samples to R&D."
+    },
+    {
+      "plant": "L2",
+      "text": "Tim visiting Wednesday and Thursday \u2014 plant walk and standards focus."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 learned buffer 2 needs to stay at 5% minimum; anything lower starves depositor 4 and triggers cascading alarms."
+    },
+    {
+      "plant": "L3",
+      "text": "MF Matrix depositing issues continue \u2014 pouch opening suction cup not reading fully open."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "ML2 PTL pressure sensor failure",
+      "summary": "Twisted pins on 711-pt1 sensor caused fuses to blow instantly; line ran dry at 03:54 before sensor was replaced.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-06-03T07:56:41.31Z"
+      },
+      "resolution": "Sensor replaced at 04:16, PTL reached temp by 04:36, depositing restarted at 05:19 \u2014 \"We're back up running\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detection event \u2014 washer and nut",
+      "summary": "Metal detector triggered; two bars had visible metal (washer and nut) likely from shaker area hardware.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-03T04:18:11.411Z"
+      },
+      "resolution": "All pieces accounted for, hardware replaced and tightened at 22:56 \u2014 \"Put back into place. I also checked and tightened all other ones\" (Kavin Ayala). Line back at 23:36."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 buffer 2 management caused PTL faults",
+      "summary": "Buffer 2 dropped to 0-3%, starving depositor 4 and triggering cascading faults; line went down at 03:44 for reheat.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-03T09:20:25.742Z"
+      },
+      "resolution": "Reheat completed, buffer raised to 10-20% per Chad's guidance, line running at 04:59 \u2014 \"We're back up running\" (Kimberly Morales). Learned 5% is operational minimum."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line roller replacement",
+      "summary": "Roller needed for Truffle Line was machined, washed, ATP'd, and installed by maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-06-02T15:24:43.193Z"
+      },
+      "resolution": "Roller installed at 11:13, line started at 11:23 \u2014 \"The line has started running\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 1 chain jam and belt tracking",
+      "summary": "Cavanna 1 feed chain jammed and infeed belts went off track; zero position link and roller alignment issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-02T18:37:01.642Z"
+      },
+      "resolution": "Zero position link shaved and straightened, rollers aligned at 13:58 \u2014 \"Cavanna 1 is now back in operation\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 molding belt fraying on edge",
+      "summary": "Molding belt fraying discovered on edge at 02:21; maintenance called to repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-03T08:21:59.53Z"
+      },
+      "resolution": "Belt fixed by maintenance at 02:43 \u2014 \"ML1 is back to running, maintenance has fixed the belt\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola throwing chocolates at TG4 exit",
+      "summary": "Gondola was ejecting chocolates at the exit for TG4; team cleaned and restarted.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-02T16:05:19.768Z"
+      },
+      "resolution": "Cleaned and restarted at 10:13 \u2014 \"Started back up\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 flap repair",
+      "summary": "Felix requested a 10-minute pause to fix an issue with depositor 2 flap.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-02T16:28:15.256Z"
+      },
+      "resolution": "Line restarted at 10:42, 12 minutes total downtime \u2014 \"Line started back up at 10:42am\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 scraper piece fell off",
+      "summary": "A piece fell off inside the scraper under the molds; all pieces accounted for, no product impact since scraper not in use.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-03T02:54:57.323Z"
+      },
+      "resolution": "Part set aside for maintenance inspection at 21:45 \u2014 \"Nothing appears to be missing... no impact to the product\" (Tyson Fausett)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Multiple receiving PO blocks on packaging materials",
+      "summary": "Tiffanee unable to receive Peco pallets (PO8677 doesn't work), Mondelez chocolate, tape, and Tates \u2014 no open POs in system.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tiffanee Taylor",
+        "time_utc": "2026-06-02T13:54:15.243Z"
+      },
+      "status": "Escalated to Ethan Bean and Sunny Jagtiani multiple times; as of 16:08 still no resolution. Blocking FG label creation for item 41017."
+    },
+    {
+      "plant": "L1",
+      "title": "PRS pouch shortage for Friday S3 run",
+      "summary": "S3 scheduled to run PRS pouches (40961) on Friday; only 3,340 of 63,000 needed in stock.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-06-02T14:57:17.02Z"
+      },
+      "status": "Escalated to Ethan Bean, Sunny Jagtiani, Martin Carlos at 08:57. No update by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 drain clog unresolved",
+      "summary": "Drain clogged with caramel/ingredients; Roto-rooter attempted repair at 18:30 but couldn't clear, needs to return for jetting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-06-02T23:24:18.365Z"
+      },
+      "status": "Roto-rooter unable to clear at 20:38; scheduled to return tomorrow for jetting. Marcos to coach shifts on not pushing caramel down drain."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jams in cooler recurring",
+      "summary": "Mold jams in cooler caused three line stops during 1st shift between 09:18 and 12:50.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-02T15:18:28.771Z"
+      },
+      "status": "Line restarted after each jam; last restart at 12:50. Pattern suggests ongoing jamming risk but no further reports 2nd/3rd shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bars with low cookie distribution \u2014 pallet on hold",
+      "summary": "Bars coming out half good/half bad around 15:01 due to low cookie distribution; team positioned at flow wrap to catch defects.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-02T21:01:41.596Z"
+      },
+      "status": "Pallet placed on hold at 15:33; Preston asked about bounding but Tyson noted some bad bars likely escaped. Product improved by 16:18 after adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 recurring mold sensor alarms all day",
+      "summary": "Mold camera alarm triggered repeatedly (10+ times) due to dirty molds and chocolate buildup under hopper back side contacting molds.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-02T14:56:19.454Z"
+      },
+      "status": "Cleaning molds and swapping with clean ones throughout shifts; buildup area under hopper cleaned at 10:17 but difficult to access. Alarms still triggering as of 04:36."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 tempering instability and adjustments",
+      "summary": "Temper spiked to 0.7 at 04:46, then multiple bad temper events requiring adjustments; crystallization being lowered in 0.2 increments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-02T21:33:30.877Z"
+      },
+      "status": "Operators working with Robert Villarreal on crystallization adjustments; hard stop at 80.0 crystallization. Temper back in range (-0.1) by 04:51 but required active management."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dark mass in hopper requiring drain",
+      "summary": "Mass inside hopper and inclusion turned really dark by end of 3rd shift; team drained both and started with fresh mass.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-03T12:32:21.872Z"
+      },
+      "status": "Drained and reloaded with fresh chocolate and cookies by 06:54; depositing resumed. TG5 pulled for level 3 clean, running on TG3 and TG4 only."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 flow wrap jams recurring",
+      "summary": "Multiple flow wrap jams throughout 2nd shift \u2014 at group formation (15:55), spiral entrance (16:15), and others.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-02T21:55:50.963Z"
+      },
+      "status": "Maintenance adjusted rail that was too far in at 21:06; operator noted video shows two boxes entering side by side. 5 jams total by 19:50."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix depositing issues \u2014 suction cup malfunction",
+      "summary": "Top suctions on pouch opening not reading fully open, preventing deposit; bottom portion of suction cup not making full contact.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-03T02:03:07.033Z"
+      },
+      "status": "Maintenance notified at 20:03; still having depositing problems as of 20:59. No clear resolution posted."
+    }
+  ]
+}

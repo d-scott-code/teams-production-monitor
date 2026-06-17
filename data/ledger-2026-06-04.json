@@ -1,0 +1,222 @@
+{
+  "date": "2026-06-04",
+  "headline": {
+    "eyebrow": "L3 Matrix weight",
+    "text": "L3 Matrix fought weight and scale faults *all day* \u2014 maintenance on-site at window close, buckets opening mid-cycle."
+  },
+  "per_plant_summary": {
+    "L1": "L1 S2 completed a 2-hour reheat and restarted at 11:45 after enrober buildup. S3 cleared forming-plate blowoffs with a position adjustment but still has trough buildup that will need a reheat soon. S4 ran clean.",
+    "L2": "L2 ML2 lost the Z conveyor at 16:49 when a roller key slot failed \u2014 maintenance installed a temporary key and line restarted by 17:19. ML3 fought high scrap at shift start from twin-belt tension, cleared by 20:22. FFS completed a 4-hour changeover to 12-count with a temp alarm reset, back online at 04:32.",
+    "L3": "L3 Matrix struggled with Yamato weight faults from 11:06 through window close \u2014 buckets opening prematurely, affecting bag weight. Rejector belt reported shaking at 16:56 with no follow-up. ML1 cleared a glycol hose break and a south-chain derail, both inside 2 hours. Truffle line reports tunnel 3 belt is breaking but not yet affecting product. ML4 clean found depositor 4 nozzle plate still had chocolate inside at 06:37."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Grey Boscan flagged a training incident on ML1 at 07:14 \u2014 operator in training used wrong temper sheet for product, made unnecessary mixer water adjustment."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 team could not locate TG3 chain after wash; confirmed maintenance had already started small-bar changeover, longer chain installed."
+    },
+    {
+      "plant": "L2",
+      "text": "Troy Baxter created new X-ray recipe for FFS and slowed check weigher from 60 to 55 \u2014 first and second shift both hit attainment for the first time this week."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 enrober reheat for buildup",
+      "summary": "Enrober trough buildup required full reheat and chocolate removal; caramel stopped at Conbar.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-04T02:40:39.313Z"
+      },
+      "resolution": "Reheat completed by 10:20, caramel cooked, line restarted at 11:45 \u2014 total 2 hours 15 minutes downtime (Dakota Adair, Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 forming-plate blowoffs",
+      "summary": "High blowoff rate at forming plates during pretzel run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-06-03T23:27:59.086Z"
+      },
+      "resolution": "Maintenance adjusted product position setting from 9.0 to 5.0 at 17:30 \u2014 \"it is running better\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 Z conveyor roller key failure",
+      "summary": "Z conveyor stopped when key slot on roller broke; line down, weights moved to manual scale.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-06-03T22:54:45.708Z"
+      },
+      "resolution": "Maintenance installed new key as temporary fix by 18:37 \u2014 \"it's running good\" (Raymond Fleming). Line restarted at 17:19."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 twin-belt tension caused high scrap",
+      "summary": "First blowoff before forming plate rejecting heavily; twin white belts out of tension, roller and chain also needed adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ahtziri Arteaga",
+        "time_utc": "2026-06-04T02:09:27.187Z"
+      },
+      "resolution": "Maintenance adjusted tension, replaced roller underneath twin belts, adjusted chain by 20:16 \u2014 \"line is working way better\" at 20:22 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS changeover with temp alarm",
+      "summary": "5 oz to 12-count changeover extended by password issues and temp-out-of-range alarm requiring hard reset.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-04T06:16:04.215Z"
+      },
+      "resolution": "Changeover completed, hard reset cleared temp alarm, line running at 04:32 \u2014 \"Line is up and running\" (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 south chain derailed, molds ejecting",
+      "summary": "South chain dislocated or loosened, causing molds to fall off pins during run.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-04T00:25:18.048Z"
+      },
+      "resolution": "Maintenance fixed chain issue by 18:44 \u2014 \"Line is running moving now\" (Nathan Gevenois at 18:46)."
+    },
+    {
+      "plant": "L3",
+      "title": "C6 conveyor glycol hose ruptured",
+      "summary": "Conveyor belt rubbed against glycol hose on Cavanna machine and broke it; maintenance replaced and line cleared.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-03T18:55:27.415Z"
+      },
+      "resolution": "Hose replaced, line running by 14:47 \u2014 \"Imperial, metal detector and c6 belt are running well\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 piston fault alarm",
+      "summary": "Right-side piston alarm triggered, line stopped briefly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-04T01:01:29.873Z"
+      },
+      "resolution": "Cleared at 19:14 \u2014 \"The right sided started working again. We are now running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Matrix pallet stability on BEQ changeover",
+      "summary": "New Bequet 17.1 oz palletization pattern per spec caused instability; floor proposed alternate stack.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-06-03T17:10:47.51Z"
+      },
+      "resolution": "Bequet approved floor's alternate stacking at 11:56 \u2014 \"we are ok to proceed with your solution\" (Ira Robison). Final pallet approved at 12:30 (Jenny Medina)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle metal detector sensitivity high",
+      "summary": "Metal detector dropping too many rows; maintenance fine-tuned to reduce false rejects.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-03T18:39:10.987Z"
+      },
+      "resolution": "Tuned at 12:59 \u2014 eliminated one row from dropping, now Brass/SS316 drop 7 rows, Ferrous 9 rows vs. 8 and 10 before (Preston Elmer)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 enrober trough buildup needs reheat",
+      "summary": "Significant chocolate buildup in enrober trough and thin bottomer coverage indicate reheat needed, but 3rd shift only scheduled 4 hours so team delaying.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-03T22:07:36.547Z"
+      },
+      "status": "Buildup confirmed at 16:07 and 21:01, preventing optimal coating; reheat deferred due to short shift, no ETA for resolution."
+    },
+    {
+      "plant": "L3",
+      "title": "Matrix Yamato weight faults all day",
+      "summary": "Yamato scale buckets opening prematurely, causing bag weight errors; maintenance adjusted program, vibration, and bag target multiple times without resolving root cause.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-03T17:06:37.404Z"
+      },
+      "status": "Maintenance on-site at 07:05 window close, still troubleshooting bucket actuation after adjustments at 11:06, 14:03, and 14:18 failed to hold."
+    },
+    {
+      "plant": "L3",
+      "title": "Matrix rejector belt shaking strongly",
+      "summary": "Rejector belt vibrating heavily, maintenance notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-03T22:56:02.519Z"
+      },
+      "status": "Reported at 16:56, no follow-up posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle tunnel 3 belt breaking",
+      "summary": "Cooling tunnel 3 belt is tearing but not yet affecting product quality; QA and supervisors notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-04T00:30:07.765Z"
+      },
+      "status": "Belt breaking as of 18:30, monitored through window close, no replacement scheduled yet."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 nozzle plate incomplete clean",
+      "summary": "Nozzle plate was not fully disassembled during level-3 clean and still has chocolate inside.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-04T12:37:14.876Z"
+      },
+      "status": "Identified at 06:37, 3rd shift operator tasked to disassemble and re-clean."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line checklist missing",
+      "summary": "First-shift operators cannot locate the line checklist at shift start.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-04T11:49:32.807Z"
+      },
+      "status": "Reported at 05:49, no resolution posted by window close."
+    }
+  ]
+}

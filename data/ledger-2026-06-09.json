@@ -1,0 +1,329 @@
+{
+  "date": "2026-06-09",
+  "headline": {
+    "eyebrow": "Rework in progress",
+    "text": "L1 S2 discovered incorrect box labels on *15 pallets* at 05:01 \u2014 team reworking at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 cleared 7 issues across S2 and S3, including a gasket leak, wrong gripper parts, and a caramel outage that triggered a caustic clean. S2 found incorrect box labels on 15 pallets at 05:01 and started rework; also flagged a curtain hanging over exposed product. S3 still troubleshooting an MM5 tape machine and MM4 belt contact issue at window close.",
+    "L2": "L2 cleared 3 quick faults across ML2 and ML3 \u2014 all under 20 minutes. Cross conveyor air fault, cooler fault reset, and a brief mold jam. FFS finished production at 18:30 and began level 4 cleaning. No open issues at window close.",
+    "L3": "L3 cleared 10 issues in a busy 24 hours: belt tension, pump alarms, depositor faults, and a safety flag when two support beams came off their hooks on MF Matrix at 00:59. Maintenance re-secured and inspected. At window close, M6 belt still moving with grease at 07:01 and MF Matrix has a bent/clogged funnel piece at 06:52."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 tunnel 2 door seal foreign material",
+      "summary": "Plastic foreign material found in metal detector; traced to tunnel 2 door seal, part removed and QA approved restart.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-08T21:36:33.29Z"
+      },
+      "resolution": "QA approved restart at 15:15 \u2014 \"QA has given verbal approval to resume production. We've started the line again\" (William Beattie), Nathan Topham identified source as tunnel 2 door seal."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 line down, out of caramel",
+      "summary": "Line stopped at 23:10 when caramel ran out; waited for C1 and C2 to finish cooking, then ran caustic clean.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-09T05:26:03.594Z"
+      },
+      "resolution": "Line running at 04:07 \u2014 Caustic clean completed, reheat on enrober and decorator done at 04:08, \"Line is running\" (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 chocolate leak from melting tank to buffer tank",
+      "summary": "Pipe leak between melting and buffer tanks; maintenance found and replaced broken gasket.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-06-08T15:02:03.24Z"
+      },
+      "resolution": "Gasket replaced at 09:02 \u2014 \"a broken gasket, but it has already been replaced\" (S2 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 MM8 bag slipping at sealer",
+      "summary": "Bags slipping on MM8, failing to seal; discovered wrong green pad installed on gripper arm inside spot.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-08T15:24:13.731Z"
+      },
+      "resolution": "Replaced with proper part at 10:14 \u2014 \"We have replaced the green pad with the proper part\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 wrong cone size installed",
+      "summary": "Incorrect cone allowed pieces to fall outside bag into machine, driving high pouch scrap; correct cone installed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-08T22:56:23.264Z"
+      },
+      "resolution": "Correct cone installed at 16:57 \u2014 \"With the correct cone, MM3 runs better\" (William Beattie), pouch scrap dropped to 87 in the hour after fix."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector blue card sensitivity issue",
+      "summary": "Blue test card failing verification at 585-589 while threshold set to 900; Caleb lowered to 580.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-08T23:27:12.016Z"
+      },
+      "resolution": "Setting adjusted at 17:30 \u2014 \"It was set to 900. I set it to 580, the blue card was only registering at 585-589\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector belt opening frequently",
+      "summary": "Belt kept opening, triggering piston repeatedly; belt had tracked over photoeye, holding it active.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-09T02:50:13.745Z"
+      },
+      "resolution": "Tracking adjusted at 21:31 \u2014 \"We adjusted tracking and it's doing fine now\" (Caleb York), belt moved off photoeye."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cooler problems",
+      "summary": "Cooler fault initially reported as mold jam; maintenance determined it was a fault, reset and running well.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-06-09T00:52:58.808Z"
+      },
+      "resolution": "Running well at 19:42 \u2014 \"Maintenance said it was not a jam but a fault that was reset and it's running well now\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 cross conveyor stopped",
+      "summary": "Cross belt under ramp stopped running; air fault in HMI, maintenance cleared and restarted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-09T02:52:14.391Z"
+      },
+      "resolution": "Cleared at 21:22 \u2014 Line down 5 minutes, \"Maintenance said it was an air fault in the HMI. They cleared the fault and it started running again\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jam",
+      "summary": "Mold jam at 00:11; cleared quickly, line running within 3 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-06-09T06:11:04.992Z"
+      },
+      "resolution": "Running at 00:14 \u2014 \"Line is running\" (ML2 Depositor)."
+    },
+    {
+      "plant": "L3",
+      "title": "Two MF Matrix support beams came off hooks",
+      "summary": "During start-of-shift inspection, two overhead support beams found off their hooks; immediate safety risk.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-09T06:59:53.145Z"
+      },
+      "resolution": "Re-secured at 06:53 \u2014 Maintenance re-secured both beams and completed inspection; Grey Boscan verified all beams properly secured."
+    },
+    {
+      "plant": "L3",
+      "title": "Dosing pump and ktron faulted, won't send ingredients",
+      "summary": "Both dosing pump and ktron faulted simultaneously, blocking ingredient flow; cleared in 5 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-09T11:31:37.779Z"
+      },
+      "resolution": "Up and running at 05:36 \u2014 \"Ktron and dosing pump are up and running\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "M5 belt chicanes shut down on error",
+      "summary": "Chicanes stopped due to M5 belt tension set too tight; maintenance adjusted and restarted within 13 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-09T12:29:05.786Z"
+      },
+      "resolution": "Back in operation at 06:42 \u2014 \"M5 belt tension was too tight it's back in operation now\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "M6 belt shifting, chocolate spilling off",
+      "summary": "Belt tracked too far, causing chocolate to spill; maintenance adjusted tracking and belt ran properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-08T15:22:07.396Z"
+      },
+      "resolution": "Maintenance adjusted M6 at 09:40 \u2014 \"Maintenance has already adjusted the M6\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line electrical cabinet open",
+      "summary": "Electrical cabinet door left open; immediate safety concern flagged and closed within 10 minutes.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-06-08T16:44:30.604Z"
+      },
+      "resolution": "Fixed at 10:54 \u2014 \"Fixed\" (Shawn Jewkes), door panel closed and confirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix #14 bracket fell off central cone",
+      "summary": "Bracket dropped from central cone; maintenance re-attached within 30 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-09T03:21:06.846Z"
+      },
+      "resolution": "Reattached at 21:51 \u2014 \"It's back on\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 piston stuck",
+      "summary": "Piston jammed, recurring issue; maintenance removed, cleaned, and reinstalled over 5 hours.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Greer",
+        "time_utc": "2026-06-09T05:25:19.345Z"
+      },
+      "resolution": "Installed and lubing at 04:06 \u2014 Piston removed at 23:59, cleaned, reassembled, hopper installed at 04:03, chain lubed at 04:06."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal found on ML1 belt Y C3",
+      "summary": "Staff found metal debris on belt Y C3 during cleaning; belt re-cleaned immediately.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-06-09T06:02:51.121Z"
+      },
+      "resolution": "Belt cleaned again at 00:02 \u2014 \"The belt was cleaned again\" (Janeth Sanchez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Riser pump alarm",
+      "summary": "Alarm triggered on riser pump; maintenance power-cycled main electrical cabinet to clear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-06-09T10:41:12.818Z"
+      },
+      "resolution": "Fixed at 04:50 \u2014 \"Riser pump issues has been fixed\" (Raoul Lubain), Kavin power-cycled cabinet."
+    },
+    {
+      "plant": "L3",
+      "title": "Guillotine not working",
+      "summary": "Guillotine stopped working; maintenance fixed within 12 minutes, method unknown.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-06-09T10:52:15.48Z"
+      },
+      "resolution": "Fixed at 05:04 \u2014 \"Guillotine is fixed\" (TruffleLine Enrober)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 incorrect box labels on 15 pallets",
+      "summary": "IMS reconfirmed labels and found Best By and Lot number for scan code on boxes was incorrect; 15 pallets need rework.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Chris Whitaker",
+        "time_utc": "2026-06-09T11:01:56.727Z"
+      },
+      "status": "Label updated, team started rework at 05:29; Jody Howse confirmed working on it at 05:46 at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM4 belts making contact",
+      "summary": "Two belts for MM4 making contact; maintenance called to reposition them.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-09T03:56:26.642Z"
+      },
+      "status": "Caleb York and Jon Jensen called at 21:56 to assist with repositioning; no confirmation of fix at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 curtain hanging over exposed product",
+      "summary": "Curtain previously touching floor now folded up and positioned on top of product; hook could fall onto conveyor.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-06-09T05:54:59.734Z"
+      },
+      "status": "Flagged by Angelica Perez at 23:54 and Victor Mejia at 22:58 during GMP inspection; no resolution posted at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM5 tape machine malfunction",
+      "summary": "Tape machine for MM5 continues to malfunction; recurring issue flagged to maintenance leads.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-09T00:17:39.671Z"
+      },
+      "status": "Jon Jensen and Caleb York notified at 18:17; no resolution or update at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix funnel piece bent and clogged",
+      "summary": "Piece between shooter and funnel is bent and clogged with product; cannot remove because piece is bent.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-09T12:52:02.172Z"
+      },
+      "status": "Reported at 06:52 with photo; no resolution or maintenance response posted at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "M6 belt moving excessively, grease coming off",
+      "summary": "M6 belt moving a lot with grease coming off the belt; maintenance working on issue at window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-06-09T13:01:04.473Z"
+      },
+      "status": "Maintenance already working on M6 belt as of 07:01; M5 belt adjustments made at 06:58, but M6 issue still active at window close."
+    }
+  ]
+}
