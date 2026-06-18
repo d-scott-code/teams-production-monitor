@@ -1,0 +1,190 @@
+{
+  "date": "2026-06-18",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L3 ML4 gondola exit belt missing screw \u2014 *metal shavings* found in product zone, maintenance called at 06:27."
+  },
+  "summary": "Two active foreign-material events at L3 ML4 (bolt under hood, missing screw with metal shavings at gondola). One hold at L2 grinding (440 lbs Graham product, torn bag/damaged box). Multiple sanitation gaps flagged at L1 S2 kitchen following heavy wash.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "440 lbs ground Grahams on hold, torn bag in damaged box",
+      "summary": "Grinding team discovered torn inner bag and holes in bottom of box near end of processing Graham (Item 10139); 440 lbs ground + 20 lbs unprocessed isolated for inspection, possible forklift damage to packaging.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Leandro",
+        "time_utc": "2026-06-18T10:03:28.103Z"
+      },
+      "status": "On hold pending QA inspection for potential foreign material from damaged packaging."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Metal shavings at ML4 gondola exit belt, screw missing",
+      "summary": "Gondola exit belt area missing one screw with metal shavings inside product zone at 06:27; maintenance called, line stopped.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-18T12:25:59.767Z"
+      },
+      "status": "Maintenance responded; M6 bolt needed, Nelson Cook on way at 06:28."
+    },
+    {
+      "plant": "L1",
+      "title": "Shoe found in S2 Kitchen Area",
+      "summary": "One shoe discovered in S2 Kitchen Area at 02:10; GMP violation, Jody to discuss with team.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-06-18T08:10:47.793Z"
+      },
+      "status": "Removed; floor supervisor will address with team."
+    },
+    {
+      "plant": "L3",
+      "title": "Bolt/screw found under ML4 pre-heating hood #2",
+      "summary": "During extensive clean at 03:01, bolt or screw discovered under pre-heating hood #2; maintenance notified, hood later found damaged during photo inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-06-18T09:01:41.848Z"
+      },
+      "status": "Maintenance fixed pre-heating hood #2 before startup; depositing began 05:38."
+    },
+    {
+      "plant": "L3",
+      "title": "Plastic wrapper pieces in remelt chocolate tote",
+      "summary": "One tote of chocolate for remelt received with pieces of plastic wrapper mixed in; unwrapping teams must ensure no plastic remains in totes.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-06-18T13:03:42.993Z"
+      },
+      "status": "Tote identified, teams instructed to verify no plastic in remelt material going forward."
+    },
+    {
+      "plant": "L1",
+      "title": "Cardboard found at S3 line start from cereal pallet",
+      "summary": "Employee detected piece of cardboard at beginning of line, determined to be from cereal pallet; team reminded to inspect before loading product into Z conveyor.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-06-18T04:17:49.969Z"
+      },
+      "status": "Cardboard removed; team reminded to inspect boxes before use."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 caramel viscosity high, samples for R&D",
+      "summary": "Three consecutive viscosity readings elevated (see 21:22, 21:42, 03:22 reports); R&D requested samples from each batch for evaluation tomorrow.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-06-18T03:37:59.219Z"
+      },
+      "status": "Samples pulled and labeled for R&D; kitchen stopped production at 03:45."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 glycol on product (smiling face eyes)",
+      "summary": "Glycol visible on eyes of smiling-face product at 14:52; operator flagged, cause under investigation.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-17T20:52:22.851Z"
+      },
+      "status": "Operator monitoring; no disposition yet."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 kitchen wet area, rusty water under curtain",
+      "summary": "Wet area next to S2 kitchen floor where heavy wash done; section of rusty water underneath curtain, may require cutting curtain bottom and replacing to dry properly.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-06-17T13:20:39.873Z"
+      },
+      "status": "Open; FSQA Manager requested walk-through at 13:33, no response at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 tunnel pecan found, table greasy",
+      "summary": "Visual inspection of Tunnel 2 found one pecan and heavy grease on table at 11:57.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-17T17:55:41.039Z"
+      },
+      "status": "Flagged for re-clean; no status update at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Room 8 curtain not pulled, salt/chocolate left on floor",
+      "summary": "During Room 8 cleaning, curtain not pulled down, so salt and chocolate particles fell to floor after clean was called complete; cleaning shift did not have time to address.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-06-18T05:21:34.121Z"
+      },
+      "status": "Open at shift end; photos attached, no follow-up at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 kitchen shoe sanitization reminder",
+      "summary": "All operators and visitors walking through S2 kitchen must sanitize shoes on exit; communicated across shifts.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-06-17T16:32:39.88Z"
+      },
+      "status": "Reminder issued to all shifts."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "60g molds found in 35g mold tote at ML1",
+      "summary": "Visual inspection of 35g mold tote found 30 molds of 60g size mixed in; no tracking paperwork exists for mold washing, multiple employees working washroom causes mix-ups.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-17T19:04:20.524Z"
+      },
+      "status": "Molds segregated; day shift keeping same employees in washroom daily to reduce errors."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffles found in supersacks from previous L3 run",
+      "summary": "L3 receiving truffles left in supersacks after emptying at FFS; L2 has inspection process after emptying, L3 creating OPL and training materials.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-06-17T20:01:57.797Z"
+      },
+      "status": "OPL created for MFM supersack inspection; one supersack inspected and flagged SRS dark chocolate in morning."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S2 kitchen cleaning SOP and sign-off \u2014 curtain left wet with rusty water pooled underneath after heavy wash, Room 8 curtain not pulled during clean leaving salt/chocolate on floor."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider labeling cereal-handling tools or adding inspection step before Z-conveyor loading on S3 \u2014 cardboard from cereal pallet found at line start."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding pre-startup hardware inspection to ML4 extensive-clean checklist \u2014 today's bolt under pre-heating hood and missing gondola screw both found during or after cleaning cycles."
+    },
+    {
+      "plant": "L3",
+      "text": "Review mold-washing workflow and accountability \u2014 60g molds found in 35g tote at ML1, no tracking paperwork exists, multiple employees rotating through washroom."
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "date": "2026-06-18",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 FFS ended the window with *all pouches rejected* \u2014 maintenance working at shift close with no resolution yet."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 and 4 both ran with intermittent equipment issues \u2014 most cleared inside the shift. S2 enrober cleaning is *12 hours behind* due to maintenance rebuilds blocking access. Tates cookie bar cases will not arrive until Friday, two days late.",
+    "L2": "FFS ran the full window but stopped *five times* for blade fouling and seal issues. Ended with all-reject fault at 07:16 with no resolution. ML2 cannot label three items due to missing manufacturing routing. ML3 ran clean after implementing two-hour cross-conveyor wipe cycle.",
+    "L3": "ML4 completed startup after clearing debris from pre-heating hood and repairing damaged equipment. ML1 fought belt tracking and roller issues across three shifts \u2014 C1, C6, and Bosch all flagged. MF Matrix up after changeover. Truffle Cavanna running with manageable double-pack rate after hour-long tune by Preston."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Shoe found in S2 kitchen area \u2014 Jody addressing with team."
+    },
+    {
+      "plant": "L2",
+      "text": "Brandon Lance reports cross conveyor buildup eliminated by cleaning every two hours instead of end-of-shift."
+    },
+    {
+      "plant": "L3",
+      "text": "Frederick implementing dedicated washroom EEs on day shift to prevent mold mix-ups after 60g molds found in 35g tote."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 cooling failure \u2014 soft chocolate on finished piece",
+      "summary": "Product not firming in tunnel, chocolate soft at pack. Operators stopped line at 13:25, temps verified high.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-17T19:25:44.685Z"
+      },
+      "resolution": "Cleared at 13:50 \u2014 Nathan verified sucotherm 172\u00b0 and CAR 158\u00b0 within range, line resumed. Katya confirmed product firming properly by 13:55 (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 mixing tank red alarm \u2014 lid sensor fault",
+      "summary": "Mixer showing maintenance alarm at 14:30, kitchen stopped.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-06-17T20:30:35.275Z"
+      },
+      "resolution": "Cleared at 14:42 \u2014 maintenance bypassed alarm, kitchen resumed. Lid sensor inspection scheduled for following day (Marcos Jimenez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 riser pump faulted on high pressure",
+      "summary": "Return pump tripped at 22:40, stopping chocolate flow to enrober.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-18T04:40:13.186Z"
+      },
+      "resolution": "Cleared at 22:50 \u2014 operator reset alarm, restarted pumps, performed manual purge to verify no cloggage. System running normally (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector belt off track",
+      "summary": "Belt rolled over on east side due to closed airflow valve and chocolate buildup on roller.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-17T13:54:17.34Z"
+      },
+      "resolution": "Cleared at 08:05 \u2014 maintenance opened airflow valve and removed chocolate buildup, line resumed (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Z conveyor cover loose and noisy",
+      "summary": "Cover not properly installed, EEs reporting weird sounds at 19:06.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-06-18T01:06:33.103Z"
+      },
+      "resolution": "Cleared at 19:10 \u2014 William Beattie confirmed covers not needed and will remove (William Beattie)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bag sealing failure",
+      "summary": "Line down at 10:49, bags not sealing properly on mid-shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-06-17T16:49:09.615Z"
+      },
+      "resolution": "Cleared at 10:51 \u2014 maintenance fixed, line running. Jeffrey Barney confirmed still seeing blow-offs but improved (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouch weights high, rejecting at 275.7g",
+      "summary": "Line stopped at 17:25, weights above 270g max but piece count correct at 19 per pouch.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-06-17T23:25:36.858Z"
+      },
+      "resolution": "Cleared at 17:34 \u2014 Wilson Amaris approved max target adjustment to 275g, line resumed (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "Grinding supersack damaged, product exposed",
+      "summary": "Torn inner bag found at end of processing graham box at 04:03, holes in bottom of outer box.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Leandro",
+        "time_utc": "2026-06-18T10:03:28.103Z"
+      },
+      "resolution": "440 lbs grinded grahams and 20 lbs unprocessed placed on hold. Team instructed to inspect all boxes before loading (Victor Leandro)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 line stop \u2014 brief outage",
+      "summary": "Line down at 06:34 for unspecified reason.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-18T12:34:51.225Z"
+      },
+      "resolution": "Cleared at 06:46 \u2014 maintenance completed work, line back up in 12 minutes (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna open packages \u2014 10-minute bin fill",
+      "summary": "Flow-wrap seal failure at 14:19, massive open-pack rate, operator filled rejection bin in ten minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-17T20:15:39.688Z"
+      },
+      "resolution": "Cleared at 14:50 \u2014 Shawn adjusted jaws to stop cutting into chocolate, sealing restored (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix upper load arm spring fault",
+      "summary": "Load arm failing at 09:05, affecting pouch feed consistency.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-17T15:05:37.831Z"
+      },
+      "resolution": "Cleared at 09:37 \u2014 Nathan adjusted weight, mvf amp, pouch feed sensor, and spring tension. Machine running smooth at 44 ppm (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix wrong chocolate in supersack",
+      "summary": "SRS dark chocolate piece found in supersack at 09:58 during inspection.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-17T15:58:42.945Z"
+      },
+      "resolution": "Frederick created OPL and stationed EE to inspect all product from supersack. Only one foreign piece found (Frederick Peairs)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 wrong molds in tote \u2014 60g in 35g batch",
+      "summary": "Visual inspection at 13:04 found 60g molds mixed into 35g tote after washing.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-17T19:04:20.524Z"
+      },
+      "resolution": "Frederick implementing dedicated washroom EEs on day shift to prevent mixing. No tracking system exists for mold washing currently (Frederick Peairs)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 pre-heating hood #2 damaged",
+      "summary": "Hood found damaged during photo documentation at 04:14, line stopped to repair before depositing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-18T10:14:19.011Z"
+      },
+      "resolution": "Cleared at 05:38 \u2014 maintenance repaired hood, line resumed depositing on schedule (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 product not demolding, surface defects",
+      "summary": "Bars coming out of tunnel at 06:55 but sticking in molds, showing appearance issues.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-18T12:55:49.099Z"
+      },
+      "resolution": "Cleared at 07:14 \u2014 Preston explained untempered chocolate from depositor 1 after downtime. Product demolding cleanly after purge cycle (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Tates cookie bar cases will not arrive until Friday",
+      "summary": "Item 41152 cases needed for tomorrow production \u2014 6,000 required, only 1,665 V1 on hand (unusable). West Rock delivery two days late.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-06-17T15:14:29.562Z"
+      },
+      "status": "Curt confirmed at 15:40 boxes will not arrive until Friday. Janell notes delayed 11:00 startup may provide buffer depending on delivery time and location."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 enrober cleaning 12 hours behind schedule",
+      "summary": "Day shift unable to start wash at 11:45 \u2014 maintenance rebuilding heaters and other enrober parts blocked access.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-17T17:45:57.363Z"
+      },
+      "status": "Still need to drain dark chocolate from enrober and empty milk buffer (72% full) as of 11:56. Prevents next product startup."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 kitchen wet area and curtain contamination risk",
+      "summary": "Rusty water pooling under curtain next to heavy-wash floor since 07:20, curtain may need section replaced.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-06-17T13:20:39.873Z"
+      },
+      "status": "Mary Montilla requested thorough cleaning plan at 10:56. Charity asked for walk-through at 13:33. No action confirmed by end of window."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 chiller second compressor not auto-starting",
+      "summary": "Chiller swinging between 0\u00b0C and 5\u00b0C since 14:52, only one compressor running when two needed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-17T20:52:57.35Z"
+      },
+      "status": "William walked Nathan through manual start of second compressor at 15:24. Maintenance investigating why auto-start logic not working."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 tunnel 1 condensation or leak",
+      "summary": "Visible moisture issue on cooling tunnel 1 flagged at 15:15.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-06-17T21:15:37.513Z"
+      },
+      "status": "Maintenance called at 15:15, no resolution or root cause posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 depositor nozzle clogged, piston removed",
+      "summary": "East-side nozzle plugged at 15:20, blocking caramel flow. Could not clear with standard procedure.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-17T21:20:56.237Z"
+      },
+      "status": "Piston removed at 15:24 to prevent caramel flowing through return belts. Running with one nozzle offline."
+    },
+    {
+      "plant": "L1",
+      "title": "EPJ 6 pallet jack out of service",
+      "summary": "Shaft coming out, whole unit wobbling \u2014 unsafe to operate as of 12:36.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-17T18:36:13.379Z"
+      },
+      "status": "Reported to Tiffanee Taylor and Justin Garner at 12:36, no maintenance ETA provided."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS all pouches rejected at line end",
+      "summary": "Line down at 07:16 (shift close) with every pouch being rejected by system.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-06-18T13:16:05.76Z"
+      },
+      "status": "Maintenance working on it as of 07:16. No resolution or root cause identified before window closed."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS recurring blade fouling \u2014 five cleaning stops",
+      "summary": "Line stopped at 12:01, 14:04, 14:12 for blade cleaning to clear open pouches. Chronic issue across all three shifts.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-17T18:01:26.197Z"
+      },
+      "status": "Cleaning frequency increased but issue recurring. Last blade clean before final shift at 14:12. Contributing to final all-reject fault at 07:16."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cannot label three items \u2014 missing routing",
+      "summary": "Items 21151, 30883, 30883-Case18 produced at shift end, NetSuite only has ML1 manufacturing routing.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nidia Lopez Corea",
+        "time_utc": "2026-06-18T04:32:32.623Z"
+      },
+      "status": "Nidia notified responsible parties via email and Teams at 22:32. Awaiting ML2 routing setup to release product."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola exit belt missing screw, metal shavings inside",
+      "summary": "Hardware missing from gondola belt assembly at 06:25, metal debris found during inspection.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-18T12:25:59.767Z"
+      },
+      "status": "Maintenance called at 06:25, Nelson Cook en route. Preston identified M6 bolt needed at 06:28. No confirmation of repair by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 and C2 belts stopping on own \u2014 tracking sensor fault",
+      "summary": "Conveyors auto-stopping frequently since 11:50, maintenance advising operators to just reset.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-17T17:50:37.055Z"
+      },
+      "status": "Preston explained at 13:05 tracking sensors trigger fault when belt favors one side too long. Needs tracking adjustment to force actuation back and forth. C1 still stopping at 21:56 on third shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 bad roller, belt frayed and tracking south",
+      "summary": "Bosch belt coming off at 22:36, C6 roller damaged at 22:44, belt frayed by 23:21, still tracking wrong at 00:43.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-18T04:36:53.786Z"
+      },
+      "status": "Maintenance working continuously from 22:43 through 00:43. Multiple issues \u2014 Bosch belt, C6 bad roller, frayed belt, south tracking \u2014 all interrelated. Still being addressed at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bolt/screw found under pre-heating hood during startup clean",
+      "summary": "Foreign metal object discovered at 03:01 during extensive pre-startup cleaning.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-06-18T09:01:41.848Z"
+      },
+      "status": "Maintenance notified at 03:01. Origin of hardware unknown, no follow-up posted."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix missing item 40725 elbows for startup",
+      "summary": "Pre-op complete at 04:00 but cannot start correctly \u2014 reference 40725 elbows not in stock.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-06-18T10:00:58.476Z"
+      },
+      "status": "Janeth confirmed at 04:00 elbows not in inventory, startup held. No ETA for parts delivery."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix hopper clogging with caramel texture",
+      "summary": "Hopper received full at shift start (06:42), caramel texture causing product to stick, requiring manual removal and direct belt feed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-06-18T12:42:20.5Z"
+      },
+      "status": "Isis reports at 06:42 operators manually clearing hopper and placing product directly onto conveyor belt. Workaround in place but inefficient."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 plastic wrapper pieces in rework chocolate tote",
+      "summary": "Tote of chocolate for remelting received at 07:03 with plastic contamination from bar wrappers.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-06-18T13:03:42.993Z"
+      },
+      "status": "Jenny instructed all shifts at 07:03 that unwrapping teams must ensure no plastic in rework totes. Training/process issue, no formal corrective action posted."
+    }
+  ]
+}
