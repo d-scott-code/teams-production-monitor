@@ -1,0 +1,366 @@
+{
+  "date": "2026-06-19",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L1 Sollich 2 cleared *7 equipment stops* including printer bug and lost decorator temper \u2014 line running by window close"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 had a rough first half with check weigher reset, both feed belts down, box printer timestamp bug, and lost decorator temper. Printer workaround in place pending technician visit. Sollich 3 stopped for metal in product at 12:44, cleared tunnel 1 and investigated with maintenance, back running by 13:35. Sollich 2 salt contamination in tunnel 3 cleared after two cleaning passes.",
+    "L2": "FFS ran above standard pace, needed extra shipper delivery mid-shift. Urschel grinder had loud banging from blade housing buildup, cleared by 23:22. ML3 chain adjustment in progress at window close.",
+    "L3": "ML1 (Feastables 35g) saw open bars climb to 6% overnight, slowed from 18 to 15 MPM to troubleshoot. Cavanna sensor issues recurring. ML4 TG3 blue infeed belt tracking to edge with chocolate jams, guide hanging off by 00:33. TG tech Marco left before 3rd shift start. MF Matrix check weight rejecting 31-piece bags since 07:41."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Dark chocolate lot 126131-01 released for Tate's run at 16:55. Salt delivery arrived 11:05, boxes for S2 arrived 07:05 next day."
+    },
+    {
+      "plant": "L2",
+      "text": "FFS running above standard, completed 24,663 of 108,344-case order. Extra shipper pallets delivered from SV within the hour."
+    },
+    {
+      "plant": "L3",
+      "text": "Truffle line down for scheduled work, zoning team addressed damaged zone lines overnight. ML4 QA scales all out of battery, replacement batteries backordered 2+ weeks."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 check weigher factory reset at pack-off",
+      "summary": "Check weigher reset to factory settings overnight, lost all programming for net weights, tare, and reject settings.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-06-18T16:38:02.066Z"
+      },
+      "resolution": "Reprogrammed by 11:09 with correct net weights, tare, and reject settings (Jorel Gourdin)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 metal detected in product by QC",
+      "summary": "Metal piece found in finished product at metal detector, maintenance suspected cereal source, emptied tunnel 1 and inspected all equipment and verified no FM from L2 grinding.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-18T18:44:04.291Z"
+      },
+      "resolution": "Line back up at 13:35 after tunnel 1 scrap, equipment inspection, and X-ray verification of bedding product (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 tunnel 3 salt contamination",
+      "summary": "Salt falling from tunnel 3 onto product, rollers and tunnel covered with salt, required two cleaning passes to clear.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-18T14:05:43.126Z"
+      },
+      "resolution": "Tunnel and rollers cleaned by 09:13, second cleaning pass completed, QA inspection cleared by mid-shift."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 box printer timestamp out of sync",
+      "summary": "West side print head showing different timestamp than east side, one side correct and other completely different time.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-18T19:34:16.861Z"
+      },
+      "resolution": "Software 15 versions behind with known clock sync bug. Temporarily swapped to S3 jar Leader printer as independent machine, printing working by 16:03. VideoJet technician to be scheduled for upgrade (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 check weigher stopping, pouches piling up",
+      "summary": "CW repeatedly stopping after factory reset, causing pouch accumulation on line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-18T21:15:48.982Z"
+      },
+      "resolution": "Adjusted settings to reject instead of shut down when two pouches close together. Running correctly by 15:26 (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 decorator lost temper during pack area pause",
+      "summary": "Decorator chocolate at -0.6 temper, buffer tank barely warm at 90\u00b0F, water not recirculating properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-18T21:31:45.625Z"
+      },
+      "resolution": "Raised buffer tank to 100\u00b0F and fixed water recirculation with Chris G., then adjusted back down. Temper recovered to positive range, mini temper unit valve opened to flow into IS to improve tempering. Back at 1.0 slope / 2.0 index by 18:38 (Dakota Adair)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 ran out of shippers mid-shift",
+      "summary": "Out of boxes at 16:34, started using WIP boxes while waiting on delivery.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-18T22:34:13.235Z"
+      },
+      "resolution": "Boxes arrived and received at 07:05, line restarted (Tiffanee Taylor, Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 X-ray rejected washer in pouch",
+      "summary": "Metal washer found in X-ray reject at 19:22, pouch timestamped 19:14, line already down for belt work when bag produced.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-06-19T01:26:53.986Z"
+      },
+      "resolution": "Investigated equipment, no loose washers found, timeline shows bag from accumulation bins during downtime. All MD checks on time, no failures. First S2 hit, no hold required per 3-in-8-hour policy. Line continued (Charity Young, Conner Boyd)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS running low on shippers (41143)",
+      "summary": "On last pallet of shippers at 08:52, approximately 45 minutes of boxes remaining.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-18T14:52:58.602Z"
+      },
+      "resolution": "Trailer with 5 pallets (5,250 cases) left SV, arrived within the hour by 09:17 (Victor Romero Jr, Joey Dudney)."
+    },
+    {
+      "plant": "L2",
+      "title": "Urschel grinder loud banging noise",
+      "summary": "Grinder making loud banging sound, maintenance investigating source.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-19T04:44:06.308Z"
+      },
+      "resolution": "Build-up found underneath blade housing, cleared by 23:22, Urschel running."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 changeover 12g to 35g with temper startup issues",
+      "summary": "Changeover started 09:26, temper unit settings didn't match CL after water jacket system changes, took multiple adjustments to stabilize.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-18T14:28:17.602Z"
+      },
+      "resolution": "Started at last 12g settings per Preston's direction, made water and crystallization adjustments, line started at 13:03 with two good tempers (Preston Elmer, Robert Villarreal)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 bars kicking off, chain loose",
+      "summary": "Bars ejecting from TG5 transfer area, operators and maintenance troubleshooting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-18T21:37:03.694Z"
+      },
+      "resolution": "Chain slightly loose, maintenance tightened by 16:16, running better (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML3 twin belt air nozzles misaligned causing jams",
+      "summary": "Air nozzles at twin belts not at correct measurements, chocolate not being blown off properly, causing jams.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-06-19T00:57:10.186Z"
+      },
+      "resolution": "Adjustment made, now running good by 18:57 (Raymond Fleming)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 hoppers at 120\u00b0F at shift start",
+      "summary": "Hopper temperature at 120\u00b0F when 1st shift started 06:30, above target, causing delay to line start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-19T13:18:32.668Z"
+      },
+      "resolution": "Operator adjusted temperature down, waited for hoppers to reach correct temp before depositing at 07:32 (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial mold jam, sensor alarm",
+      "summary": "Imperial fault alarm stopped machine twice, sensor detected mold anomaly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-06-19T13:26:15.313Z"
+      },
+      "resolution": "Inspected with QA and maintenance, molds only slightly dirty, cleaned and cleared by 07:33 (David Zuniaga)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 belts C8 and C11 both down",
+      "summary": "C11 not assembled correctly after cleaning, C8 belt frayed, both conveyors offline, accumulating product and feeding directly to MMs.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-18T18:02:06.115Z"
+      },
+      "status": "Workaround in place at 12:02, accumulating product in lugs and hand-feeding MMs. Parts left unassembled from previous shift with no screws available for some components per Elizabeth at 12:34."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 caramel appears runny, water activity testing",
+      "summary": "Caramel in hopper looks more fluid, spreads more on drop, adheres to inclusion, final appearance thinner than normal.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-06-18T18:07:32.375Z"
+      },
+      "status": "Notified Nathan at 12:07, water activity testing to be performed. Alfonsina noted issue again at 16:30 with photos. No resolution or test results posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Matrix 6 repeatedly jamming, product not dropping",
+      "summary": "Matrix 6 filler not dropping product into pouches, maintenance called, went down again 90 minutes later.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-18T21:28:29.938Z"
+      },
+      "status": "Down at 15:28, Troy working. Down again at 16:58. Generated approximately 500 scrap pouches, many high/low weight from MM6. No update on final resolution."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 line stopped for chain adjustment",
+      "summary": "Line stopped at 07:27, maintenance making adjustments to the chain.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-19T13:27:29.551Z"
+      },
+      "status": "Maintenance working on chain adjustment as of 07:27, no follow-up by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna sensor issues, rejecting bars at infeed rail",
+      "summary": "Cavanna rejecting chocolate as it enters rail, finger replaced but continues to eject chocolate, recurring sensor faults.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-18T19:31:29.125Z"
+      },
+      "status": "Sensor issues at 13:31, finger replaced at 13:57 but continued ejecting chocolate. Dooner 3 belt also won't start as of 14:17. No clear resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 open bars climbing to 6%, speed reduced to 15 MPM",
+      "summary": "Open bar percentage climbed from 0.8% to 6% overnight, mostly from East side of Cavanna, required speed reduction from 18 to 15 MPM to troubleshoot.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Luisiana Castro",
+        "time_utc": "2026-06-19T05:32:06.548Z"
+      },
+      "status": "Slowed to 15 MPM at 23:55, open bars dropped to 2% by 01:14 then 0% by 05:38. Chad and Shawn committed to same troubleshooting process as 12g to ramp speed back up. MPS changed to 1757. Investigation ongoing into East side Cavanna."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 blue infeed belt tracking to edge, chocolate jams building up",
+      "summary": "TG3 blue infeed belt moving toward edge, chocolate jams accumulating in same area, guide raised and eventually hanging off.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-19T05:51:07.743Z"
+      },
+      "status": "Issue at 23:51, maintenance assisting. By 00:33 guide kept being raised by chocolate jams and now hanging off. Maintenance still assisting at that time, no resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix check weight rejecting 31-piece bags (target 32)",
+      "summary": "Check weigher rejecting bags with 31 pieces when target is 32, causing quality failures.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-19T13:41:38.328Z"
+      },
+      "status": "Issue reported at 07:41, maintenance on the line working the problem, no resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector missing one foot, standing on 3 legs",
+      "summary": "One of the risers on metal detector feet is missing, MD standing on only 3 legs, likely affecting belt tracking.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Preston Elmer",
+        "time_utc": "2026-06-18T19:35:47.604Z"
+      },
+      "status": "Missing 2.5x2.5 inch plastic puck riser as of 13:35. Preston asked if anyone has seen the foot. No resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 piece in Mold Return falls out periodically",
+      "summary": "Random piece inside Mold Return tends to fall out here and there, production putting it back each time.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-06-19T00:00:23.331Z"
+      },
+      "status": "Reported at 18:00, production put piece back to original place. Preston, Spencer, and Efrain tagged. Recurring issue needing permanent fix."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG tech Marco left before 3rd shift start",
+      "summary": "TG technician Marco not seen since 22:30, did not stay past start of 3rd shift despite TG3 issues requiring technical support.",
+      "priority": "P3",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-19T05:51:07.743Z"
+      },
+      "status": "Alan verified with Ray Garcia at 06:06 that TG Tech Marco did not stay past 3rd shift start. TG3 belt and jam issues ongoing without technical coverage."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 QA scales all out of battery for capture test",
+      "summary": "All QA scales dead battery, causing 13-minute downtime for capture test, batteries are special type and backordered.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-19T12:42:01.609Z"
+      },
+      "status": "Issue at 06:42, Preston confirmed batteries on order but backordered, will take couple weeks. Broke one scale trying to switch batteries yesterday. Using what's available for now."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 roller missing scraper",
+      "summary": "One roller on TG3 is missing its scraper blade, likely contributing to chocolate buildup issues.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-19T12:42:22.209Z"
+      },
+      "status": "Identified at 06:42 with photo. No follow-up on installation by window close."
+    }
+  ]
+}

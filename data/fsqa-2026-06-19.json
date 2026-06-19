@@ -1,0 +1,151 @@
+{
+  "date": "2026-06-19",
+  "headline": {
+    "eyebrow": "Metal FM events",
+    "text": "Two metal foreign-material hits at L1 \u2014 S3 caught metal in depositor product, S2 caught *washer* in pouch \u2014 both investigated, no holds required under 3-hit policy."
+  },
+  "summary": "Two active FM investigations at L1. S3 depositor line metal event at 12:44 resolved after scrapping tunnel 1 and clearing L2 grinder. S2 washer detected at 19:26, equipment inspected, source unconfirmed but within policy threshold. Salt contamination cleaned from S2 tunnel 3. L3 ML1 open-bar spike (6%) resolved overnight through speed reduction.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal foreign material in S3 depositor product",
+      "summary": "QC found metal in finished product rejected by metal detector at 12:44; maintenance traced to cereal ingredient, scrapped tunnel 1 product, inspected all scrapers/rollers/bearings and L2 grinding blades\u2014all clear.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-06-18T18:45:26.635Z"
+      },
+      "status": "Resolved \u2014 line restarted 13:35 after equipment inspection and product removal; L2 grinder cleared by maintenance."
+    },
+    {
+      "plant": "L1",
+      "title": "Washer detected in S2 pouch at X-ray",
+      "summary": "X-ray rejected pouch containing washer at 19:26 (pouch timestamp 19:14); line was already down for belt maintenance, all accumulation bins and equipment inspected, no missing hardware or source identified.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-06-19T01:26:53.986Z"
+      },
+      "status": "Open investigation \u2014 first hit in 8-hour window, no hold required per 3-hit policy; source of washer not yet confirmed."
+    },
+    {
+      "plant": "L1",
+      "title": "Salt contamination in S2 tunnel 3",
+      "summary": "Tunnel 3 began dropping salt at line startup 08:05, rollers and tunnel interior covered; production stopped, tunnel and rollers cleaned, QA inspected at 09:13 but salt remained; second clean performed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-18T14:05:43.126Z"
+      },
+      "status": "Resolved after second cleaning cycle; tunnel released for production."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector foot (plastic puck) missing",
+      "summary": "One of four leveling risers on metal detector missing at 13:35; detector standing on three legs only, affecting belt tracking stability.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Preston Elmer",
+        "time_utc": "2026-06-18T19:35:48.293Z"
+      },
+      "status": "Open \u2014 2.5\" \u00d7 2.5\" plastic puck not located; belt tracking issues noted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold-return component repeatedly falling out",
+      "summary": "Random piece inside mold return at 18:00 on 18th; production reports it tends to fall out periodically and is replaced each time.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-06-19T00:00:23.331Z"
+      },
+      "status": "Open recurring issue \u2014 component replaced but root cause not addressed; potential FM risk if enters product path."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 cleaning roller missing scraper blade",
+      "summary": "Roller on TG3 found without scraper at shift start 06:42; no indication of when blade was lost or whether fragment entered product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-19T12:42:22.209Z"
+      },
+      "status": "Open \u2014 scraper location unknown, no product hold initiated."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 box printer timestamp mismatch between sides",
+      "summary": "West-side print head printing incorrect time vs. east side at 13:34; VideoJet software 15 versions behind (known clock-sync bug), cases bypassed to rework stack until independent-printer workaround applied.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-18T19:34:16.861Z"
+      },
+      "status": "Resolved via workaround \u2014 borrowed S3 jar-line Leader printer to run both printers independently; software upgrade scheduled."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 flow-wrap open-unit rate spike (35g bars)",
+      "summary": "Master-case inspection at 23:08 found 6% open bars (east-side Cavanna dominant); line slowed from 18 to 15 MPM, rate dropped to 2% by 02:46 and 0% by 05:38.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Luisiana Castro",
+        "time_utc": "2026-06-19T05:32:06.548Z"
+      },
+      "status": "Resolved \u2014 speed reduction and process adjustments corrected seal quality; troubleshooting ongoing to ramp speed back up."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix checkweigher rejecting 31-piece bags (target 32)",
+      "summary": "Bags rejecting at checkweigh with one-piece underweight at 07:41; maintenance on line adjusting.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-19T13:41:38.328Z"
+      },
+      "status": "Open \u2014 maintenance troubleshooting bag-feed accuracy."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 flow-wrap open-unit rate on 12g bars",
+      "summary": "Box inspection at 08:03 found 9 open units out of 1,050 (0.8% open rate); informational flag ahead of 35g run.",
+      "severity": "low",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-18T14:03:02.96Z"
+      },
+      "status": "Noted \u2014 rate within tolerance, same Cavanna line later showed higher issue on 35g."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 mini tempering unit pipes \u2014 residue and odor",
+      "summary": "Discolored chocolate from tempering unit at 08:02; pipes removed, residue with unpleasant odor found inside (highlighted in photo); maintenance confirmed from oil-cleaning cycle, purged with chocolate until clean.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-06-18T14:27:16.248Z"
+      },
+      "status": "Resolved \u2014 pipes purged and restored to service after oil-cleaning residue cleared."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding loose-hardware inspection (washers, nuts, small parts) to pre-shift and post-maintenance checklists \u2014 based on S2 washer FM where source could not be traced to specific maintenance activity."
+    },
+    {
+      "plant": "L3",
+      "text": "Review metal-detector leveling-foot retention and add to ML1 pre-shift inspection \u2014 based on today's missing plastic puck that affects belt tracking and detector stability."
+    },
+    {
+      "plant": "L3",
+      "text": "Add cleaning-roller scraper presence to ML4 startup checklist \u2014 based on TG3 missing scraper found at shift start with no record of when or where blade was lost."
+    }
+  ]
+}
