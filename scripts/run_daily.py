@@ -36,6 +36,14 @@ CATEGORIES = ["Machine", "Quality", "Safety", "Materials", "Staffing", "Other"]
 PRIORITIES = ["P1", "P2", "P3"]
 SEVERITIES = ["high", "medium", "low"]
 
+# Fields the streaming tool-use reassembly should always deliver as lists.
+# When the SDK's incremental JSON parser hits an unfortunate chunk boundary
+# inside a long array value, it occasionally surfaces that one field as a
+# raw JSON-encoded string. `_coerce_array_fields` below detects that and
+# recovers by re-parsing.
+PRODUCTION_ARRAY_KEYS = ["notes", "resolved", "needs_attention"]
+FSQA_ARRAY_KEYS = ["holds", "food_safety", "quality", "sanitation", "allergen", "opportunities"]
+
 # ---------------------------------------------------------------------
 # Production briefing — system prompt + tool schema
 # ---------------------------------------------------------------------
@@ -448,8 +456,47 @@ def run(*cmd: str) -> None:
     subprocess.run(cmd, check=True)
 
 
+def _coerce_array_fields(plan: dict, array_keys: list[str], label: str) -> dict:
+    """Defensive shape fix for streaming tool-use output.
+
+    The Anthropic SDK streaming path reassembles tool input from
+    `input_json_delta` events. When a delta boundary lands mid-array,
+    the reassembled `block.input` occasionally surfaces that one field
+    as a JSON-encoded string instead of the parsed list. (Observed
+    once with FSQA `food_safety` coming back as a 2,984-char string
+    on a busy day with normal `stop_reason=tool_use`.)
+
+    For each key we expect to be a list, recover by `json.loads`. Fail
+    loud if the string doesn't parse to a list — better a broken
+    workflow than a silently wrong briefing.
+    """
+    for k in array_keys:
+        v = plan.get(k)
+        if v is None or isinstance(v, list):
+            continue
+        if isinstance(v, str):
+            try:
+                parsed = json.loads(v)
+            except json.JSONDecodeError as e:
+                sys.exit(
+                    f"ERROR: {label}.{k} came back as malformed JSON string "
+                    f"({len(v)} chars): {e}; first 300 chars: {v[:300]!r}"
+                )
+            if not isinstance(parsed, list):
+                sys.exit(
+                    f"ERROR: {label}.{k} parsed to {type(parsed).__name__}, "
+                    f"expected list; first 300 chars: {v[:300]!r}"
+                )
+            print(f"  [{label}] recovered {k}: JSON string → list of {len(parsed)} items")
+            plan[k] = parsed
+        else:
+            sys.exit(f"ERROR: {label}.{k} is {type(v).__name__}, expected list")
+    return plan
+
+
 def call_claude(client: anthropic.Anthropic, system_prompt: str, tool: dict,
-                messages: dict, label: str) -> dict:
+                messages: dict, label: str,
+                array_keys: list[str] | None = None) -> dict:
     """Generic single-turn Claude call with extended thinking + one tool.
     Returns the tool's input dict. Exits with a non-zero code if the model
     doesn't return the expected tool call, OR if the model hit max_tokens
@@ -498,7 +545,10 @@ def call_claude(client: anthropic.Anthropic, system_prompt: str, tool: dict,
         )
     for block in resp.content:
         if block.type == "tool_use" and block.name == tool["name"]:
-            return block.input
+            result = block.input
+            if array_keys:
+                result = _coerce_array_fields(result, array_keys, label)
+            return result
     sys.exit(f"ERROR: Claude did not return a {tool['name']} tool call. Response: {resp.content}")
 
 
@@ -612,14 +662,16 @@ def main() -> None:
 
     print("\n--- 2a. Classify messages → production briefing (Claude) ---")
     production_plan = call_claude(client, PRODUCTION_SYSTEM_PROMPT, PRODUCTION_TOOL,
-                                  messages, label="production")
+                                  messages, label="production",
+                                  array_keys=PRODUCTION_ARRAY_KEYS)
     print(f"  production: resolved={len(production_plan.get('resolved', []))} "
           f"needs_attention={len(production_plan.get('needs_attention', []))} "
           f"notes={len(production_plan.get('notes', []))}")
 
     print("\n--- 2b. Classify messages → FSQA briefing (Claude) ---")
     fsqa_plan = call_claude(client, FSQA_SYSTEM_PROMPT, FSQA_TOOL,
-                            messages, label="fsqa")
+                            messages, label="fsqa",
+                            array_keys=FSQA_ARRAY_KEYS)
     print(f"  fsqa: holds={len(fsqa_plan.get('holds', []))} "
           f"food_safety={len(fsqa_plan.get('food_safety', []))} "
           f"quality={len(fsqa_plan.get('quality', []))} "
