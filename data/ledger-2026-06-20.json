@@ -1,0 +1,210 @@
+{
+  "date": "2026-06-20",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 knife jam cost *30 minutes* at 02:10; L1 speed trial hit congestion and piece-count drops through the night."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran caramel cluster all shift but fought printer scrap and dirty pouches from 16:00 onward. Sollich 2 raised line speed and immediately hit box congestion, piece counts falling to 17\u201319 (target 24\u201321), and two carts of check-weigher accumulation by 20:15. Tate's order is 5,400 of 14,000 cases; clean delayed, Monday trial pushed to 11:00.",
+    "L2": "FFS knife stopped cutting pouches at 02:10, cleared in 30 minutes. ML2 and ML3 ran steadily; maintenance cleaned filters and lubed chains overnight. Grinder disassembled for weekend cleaning.",
+    "L3": "ML4 delivered over 1 million bars on first shift despite two Theegarten stops (TG3 belt rip cleared by 08:40, TG4 chain cleaned by 10:12). Piece-count check at 12:28 found boxes 23\u201324 pieces short of 955 minimum. ML1 stopped three times for high temper, entered reheat at 07:03. MFM compensating for underweight pieces by dosing 33 per bag instead of 32; packaging defects totaled 21 lbs scrap across two pallets."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Two chocolate barrels from L3 scrapped after scrap-barrel tags found; operator reminded to verify empties before filling."
+    },
+    {
+      "plant": "L3",
+      "text": "First shift ML4 produced over 1 million bars; pizza party announced by Frederick Peairs."
+    },
+    {
+      "plant": "L3",
+      "text": "Inventory adjustment processed for two MFM pallets (R221216, R227714) found in Staging but recorded as consumed; Fredy reminded team to enter all transactions promptly."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 C22 belt tracking, C25 infeed dead",
+      "summary": "C22 conveyor not tracking properly, C25 belt not feeding product to MM4 at 15:37.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-19T21:37:59.141Z"
+      },
+      "resolution": "Cleared at 16:11 \u2014 Caleb adjusted C22 tracking; C25 fixed by setting Weight Sensitivity from zero to 5000/3500, \"it took off.\""
+    },
+    {
+      "plant": "L2",
+      "title": "FFS knife jammed, not cutting pouches",
+      "summary": "Knife stopped deploying after lunch break at 02:10; operator troubleshot, then maintenance pulled and cleaned knife assembly.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-06-20T08:10:40.868Z"
+      },
+      "resolution": "Cleared at 02:38 \u2014 \"Line is back up! approximately 30 minutes of downtime to take apart the knives and sealers, clean them and reassemble\" (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 chain adjustment at start of shift",
+      "summary": "Line stopped at 07:27 for chain tension work.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-19T13:27:29.551Z"
+      },
+      "resolution": "Cleared at 08:01 \u2014 \"The line up\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "TG4 down on caramel-caked chain",
+      "summary": "Chain pulled at 08:58 with heavy caramel buildup; operators ran CIL during downtime, chain cleaned and reinstalled.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-19T15:14:25.052Z"
+      },
+      "resolution": "Cleared at 10:12 \u2014 \"It's running now, thanks Nelson\" (Itzel Chavez). Preston noted chain was dry; maintenance to oil daily and pull weekly going forward."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 belt ripped during CIL",
+      "summary": "Belt tore at 08:12; Preston pulled it to the shop, replaced with slightly oversized spare that runs loose but functional.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-19T14:12:07.406Z"
+      },
+      "resolution": "Cleared at 08:40 \u2014 \"As of now it's working good\" (Itzel Chavez). Belt is oversized and slightly loose; ops monitoring."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM badge cover broke, line stopped for search",
+      "summary": "Employee badge cover snapped at 19:36; team halted to locate the fragment before resuming.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-20T01:36:48.413Z"
+      },
+      "resolution": "Cleared at 19:52 \u2014 \"We have located the badge\" (Nathan Gevenois). Angel thanked Nathan and line team."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 high temper stopping flow wrap",
+      "summary": "Temper spiked above 1.0 at 05:19, line stopped, no flow wrap running.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-06-20T11:19:41.334Z"
+      },
+      "resolution": "Cleared at 05:40 \u2014 \"Started running back up\" (Raoul Lubain). Line stopped again at 06:30 and entered reheat at 07:03; Chad issued guidance to allow single temper <1.0 for ML1 continuous runs."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 speed trial causing box congestion and piece-count drop",
+      "summary": "Line speed raised; box-belt congested, check weigher accumulated two carts of pouches, and piece count fell to 17\u201319 (target 24\u201321). Paused 20:15\u201320:45 to clear accumulation; x-ray bin filling fast as of 00:07.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-20T02:41:53.416Z"
+      },
+      "status": "Increased bark-breaker rotation to recover piece count. Paused 20:15\u201320:45; resumed but x-ray bin still filling fast at 00:07. 17-minute gap at 00:18 for lot change and accumulation run-down."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 printer scrap and dirty pouches from 16:00 onward",
+      "summary": "MM3 printer head cleaned and ink changed at 17:13; alarm cleared but higher-than-normal pouch scrap continued through 18:03 due to dirty pouches and printing issues between 16:00\u201317:00.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-19T23:13:58.008Z"
+      },
+      "status": "Printer alarm cleared at 17:13; team monitoring. Higher scrap ongoing due to dirty pouches as of 18:03. Line lead asked maintenance to inspect and advise."
+    },
+    {
+      "plant": "L1",
+      "title": "Tate's order 9,000 cases behind, delaying level 4 clean and Monday trial",
+      "summary": "Order is 14,000 cases; only 5,400 complete as of 19:47. Finish is first priority per Chad, but will push level 4 clean and delay Monday MDLZ trial from 07:00 to 11:00.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-06-20T01:47:36.76Z"
+      },
+      "status": "Running 4 hours into dayshift 06/20 to finish order. Trial start moved to 11:00; MDLZ asked to arrive at 09:00 or later (Chad, 06:58)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM individual piece weights below 11g minimum, dosing 33 instead of 32",
+      "summary": "Ray and Frederick sampled four bags; pieces ranged 10.35\u201314.35g (min spec 11g). Line now filling 33 pieces per bag to pass total-weight check instead of 32-piece spec.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-06-19T13:41:38.328Z"
+      },
+      "status": "Ray reduced target weight 5g at 10:50; rejects paused >5 minutes. Frederick coaching operators to inspect rejects and adjust. Line running 33-count as workaround as of 09:40."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM packaging defects: 21 lbs of open, doubled, and empty flow wraps",
+      "summary": "Isis found 11 lbs of defective pouches on one pallet at 10:25, then another 10.56 lbs on a second pallet at 12:19.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-06-19T16:25:32.04Z"
+      },
+      "status": "Two pallets flagged and scrapped; no root cause or corrective action noted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 piece count below 955 minimum in master-case check",
+      "summary": "Mirella inspected two boxes at 12:28; Box 1 held 932 pieces (28.07 lb), Box 2 held 931 pieces (28.0 lb). Spec minimum is 955 per box.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-06-19T18:28:13.224Z"
+      },
+      "status": "Flagged at 12:28; no follow-up action or hold decision recorded in the window."
+    },
+    {
+      "plant": "L3",
+      "title": "TG5 missing bolts on two of five rollers",
+      "summary": "Kimberly reported during level 2 clean that two rollers are missing bolts entirely and one is very loose.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-20T08:39:02.289Z"
+      },
+      "status": "Flagged at 02:39; no repair logged by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 missing scraper after level 2 clean",
+      "summary": "Scraper not reinstalled on TG3 as of 06:40.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-20T12:40:29.501Z"
+      },
+      "status": "Kimberly flagged at 06:40; Chad asked Preston to follow up same day. No confirmation of install by window close."
+    }
+  ]
+}

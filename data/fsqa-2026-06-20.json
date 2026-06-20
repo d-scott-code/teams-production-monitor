@@ -1,0 +1,129 @@
+{
+  "date": "2026-06-20",
+  "headline": {
+    "eyebrow": "Quality flag",
+    "text": "L1 S3 metal detector recorded *20+ openings* in short window \u2014 maintenance on site, root cause unknown."
+  },
+  "summary": "Three active quality concerns: L1 S3 metal detector fault generating high reject rate, L3 MFM running 33 pieces per bag to compensate for underweight truffles (spec is 32), and L3 ML4 missing hardware on two lines. Two chocolate barrels from L3 held at L1 due to scrap-tag cross-contamination.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Two chocolate barrels from L3 held for scrap",
+      "summary": "Barrels arrived with orange scrap tags and empty tags mixed, indicating scrap barrel reused for clean chocolate; barrels cannot be used and will be scrapped.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-19T14:06:08.922Z"
+      },
+      "status": "Held pending scrap disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Correct enrober infeed pipe found on floor",
+      "summary": "S3 enrober infeed pipe found on floor between wash area and S2 ingredients; washed, sanitized, ATP passed, staged on table for installation after next reheat.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-20T01:50:29.345Z"
+      },
+      "status": "Resolved \u2014 cleaned, verified, staged for reinstallation."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 missing bolts on cleaning rollers",
+      "summary": "Two out of five rollers missing bolts, one very loose \u2014 potential fastener-into-product risk during weekend clean.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-20T08:39:02.289Z"
+      },
+      "status": "Open, maintenance requested to follow up."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 scraper missing",
+      "summary": "Scraper not reinstalled after cleaning; flagged at end of Level 2 clean, maintenance requested for follow-up today.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-20T12:40:29.501Z"
+      },
+      "status": "Open, maintenance assigned to address today."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 metal detector generating high reject rate",
+      "summary": "Over 20 metal detector openings in short period; maintenance on site, no root cause identified yet.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-06-19T23:36:37.556Z"
+      },
+      "status": "Investigation ongoing, maintenance on site."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM running 33 pieces per bag instead of spec 32",
+      "summary": "Individual truffle weights varying low (10.35\u201314.35 g, min 11 g); line dosing 33 pieces to meet total bag weight after checkweigher rejected 32-piece bags.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-06-19T15:40:52.621Z"
+      },
+      "status": "Line running 33 pieces; bags passing weight check, operator trained to adjust target based on reject counts."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 elevated pouch scrap from dirty pouches",
+      "summary": "Higher than normal pouch scrap due to dirty pouches and printer head issues between 16:00\u201317:00; printer cleaned and resolved, dirty-pouch issue persists, maintenance inspecting.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-19T23:13:58.008Z"
+      },
+      "status": "Printer issue resolved; dirty-pouch cause under investigation."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM 21.56 lbs flow-wrap defects on two pallets",
+      "summary": "First shift QA found 11 lbs open/doubled/empty pouches on one pallet, 10.56 lbs on second pallet.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-06-19T16:25:32.04Z"
+      },
+      "status": "Scrap recorded; no root cause reported."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 undercount master cases",
+      "summary": "Two master cases inspected contained 932 and 931 pieces; spec minimum is 955 pieces per case.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-06-19T18:28:13.224Z"
+      },
+      "status": "Open, no disposition or root cause reported."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding the S3 enrober infeed pipe to the post-reheat installation checklist \u2014 today's floor find suggests it was removed and not tracked back to service."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding fastener inspection to ML4 TG startup checklist \u2014 today's missing bolts on TG5 rollers and missing TG3 scraper both surfaced after Level 2 clean."
+    },
+    {
+      "plant": "L3",
+      "text": "Review MFM individual-piece weight control limits \u2014 today's wide variance (10.35\u201314.35 g) forced line to run 33 pieces per bag instead of spec 32 to meet total weight."
+    }
+  ]
+}
