@@ -1,0 +1,107 @@
+{
+  "date": "2026-06-21",
+  "headline": {
+    "eyebrow": "Equipment damage",
+    "text": "L3 ML4 scraper blade missing since *April 3rd* \u2014 spares on order; three other damage events open across L1 and L3."
+  },
+  "summary": "Four equipment-damage events: L3 ML4 scraper blade missing for 2+ months, L1 S2 separator-belt damage with no follow-up, L3 Dorner 1 conveyor damage pending Monday inspection, and L1 S3 Tunnel 1 dirty rollers affecting belt tracking. L3 ML1 demolding-belt damage was trimmed and resolved on second shift.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Separator table belt damaged on S2",
+      "summary": "Belt on S2 separator table shows damage of unknown origin; no follow-up or inspection visible in window.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-21T09:18:08.671Z"
+      },
+      "status": "Open, no follow-up visible in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Scraper blade missing on ML4 since April 3rd",
+      "summary": "Scraper blade on ML4 has been missing for over two months; maintenance confirming no spares available and ordering replacements.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Preston Elmer",
+        "time_utc": "2026-06-20T21:30:17.097Z"
+      },
+      "status": "Open, spares on order."
+    },
+    {
+      "plant": "L3",
+      "title": "Demolding belt damaged on ML1",
+      "summary": "QA observed damage on ML1 demolding belt at Imperial discharge; maintenance trimmed belt on shift and cleared for continued use.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-06-21T01:25:59.135Z"
+      },
+      "status": "Resolved on shift \u2014 belt trimmed by maintenance."
+    },
+    {
+      "plant": "L3",
+      "title": "Dorner 1 conveyor damaged on ML4",
+      "summary": "Dorner 1 conveyor on ML4 reported damaged; full inspection and replacement decision deferred to Monday.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-21T10:19:58.722Z"
+      },
+      "status": "Open, awaiting Monday inspection."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Tunnel 2 left without filter on S2",
+      "summary": "S2 Tunnel 2 was left without a filter after cleaning or changeover; no follow-up on installation visible in window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-21T05:31:15.798Z"
+      },
+      "status": "Open, no follow-up visible in window."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Dirty rollers affecting Tunnel 1 belt tracking on S3",
+      "summary": "Tunnel 1 belt on S3 tracking west due to dirty rollers; maintenance adjusted tension but rollers need cleaning at next stop.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-21T03:42:21.278Z"
+      },
+      "status": "Open, continuing to run \u2014 cleaning deferred to next scheduled stop."
+    },
+    {
+      "plant": "L1",
+      "title": "C6 cross conveyor allergen test on S2",
+      "summary": "C6 cross conveyor on S2 cleaned and held pending allergen verification; passed allergen test and cleared for use.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-21T02:40:17.047Z"
+      },
+      "status": "Resolved \u2014 allergen test passed at 22:40."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider flagging tunnel filter installation in S2 startup checklist \u2014 Tunnel 2 was left without filter after cleaning."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding scraper-blade inspection to ML4 startup checklist \u2014 today's missing blade had been absent since April 3rd."
+    },
+    {
+      "plant": "L3",
+      "text": "Review belt-splice quality expectations with C&E \u2014 ML1 demolding belt installed two weeks ago already showed wear at connection point."
+    }
+  ]
+}

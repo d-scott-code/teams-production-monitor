@@ -1,0 +1,146 @@
+{
+  "date": "2026-06-21",
+  "headline": {
+    "eyebrow": "Unresolved volume",
+    "text": "L1 closed the window with *5 open issues* including white chocolate melting trouble on Sollich 2 and a belt-tracking problem on Sollich 3."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran changeover flushes overnight and started filling white chocolate, but melting tank 1 is keeping product on top instead of fully melting as of 07:08. Tunnel 2 was left without a filter. Separator table belt shows damage with no repair logged. Sollich 3 ran all day but tunnel 1 belt is tracking west despite a maintenance adjustment. Warehouse hit an RF-smart receiving error on Oreos.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML1 ran without deviation after clearing two problems \u2014 tempering tank temperature climbed back into range by 16:16 and maintenance trimmed the damaged demolding belt at 20:10. Dorner 1 is damaged and will need Monday inspection. ML4's missing scraper, gone since April 3, has no spare; team is ordering."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "ML4 team met every launch goal (OEE, scrap, downtime, headcount) on the HER Salted Caramel 13.3g first run."
+    },
+    {
+      "plant": "L1",
+      "text": "Cardboard vendor coordination with International Paper and driver needed; Chad asked Benjamin Hicks to follow up Monday."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "C6 cross conveyor allergen test pending",
+      "summary": "Conveyor cleaned and waiting on allergen test results before resuming use.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-06-21T02:40:17.047Z"
+      },
+      "resolution": "Test passed by 22:40 (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L3",
+      "title": "CL tank temperature below range",
+      "summary": "Chocolate line tank temp read low against a 45-51 target; maintenance raised setpoint and circulation held temp as it climbed back.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-20T20:38:31.436Z"
+      },
+      "resolution": "Temperature back to normal by 16:16; team lowered mixing water to balance temper and last reading was 0.0 (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "Demolding belt damage at Imperial discharge",
+      "summary": "Quality flagged worn material in the demolding area; belt was replaced two weeks prior after almond run and likely had an installation issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-06-21T01:25:59.135Z"
+      },
+      "resolution": "Line stopped at 20:01, maintenance trimmed the damaged section; Lorena confirmed \"Maintenance did a good job. It turned out really well\" at 20:10."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "White chocolate not melting in MT1",
+      "summary": "Melting tank 1 filled with white chocolate that heats but stays on top instead of fully melting; product won't flow properly to next stage.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-21T13:07:35.616Z"
+      },
+      "status": "Chocolate is hot but remains on top of tank as of 07:08; no fix attempted in the window."
+    },
+    {
+      "plant": "L1",
+      "title": "Tunnel 1 belt tracking west after adjustment",
+      "summary": "Cooling tunnel 1 belt favors west side despite maintenance adjustment; ops believes dirty rollers are root cause and belt should be cleaned at next production stop.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-21T03:42:21.278Z"
+      },
+      "status": "Maintenance improved tracking but belt still favors west side; William says line can continue as scheduled, Caleb recommends stopping to clean rollers."
+    },
+    {
+      "plant": "L1",
+      "title": "RF-smart Oreo receiving error",
+      "summary": "Warehouse cannot receive Oreos in RF-smart; system throws \"This order is being received by someone else\" error.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-21T03:50:18.359Z"
+      },
+      "status": "Error blocking Oreo receipt as of 21:50; no resolution or workaround logged."
+    },
+    {
+      "plant": "L1",
+      "title": "Tunnel 2 left without filter",
+      "summary": "QA reported tunnel 2 missing filter; confirmed by Elizabeth at 23:31 with no follow-up showing replacement.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-06-21T03:55:18.129Z"
+      },
+      "status": "Elizabeth confirmed tunnel 2 was left without a filter at 23:31; no installation logged by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Separator table belt damage",
+      "summary": "Belt on separator table shows damage; cause and extent unknown.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-21T09:18:08.671Z"
+      },
+      "status": "Luis reported damage at 03:18 and noted uncertainty whether it was pre-existing; no repair action in this window."
+    },
+    {
+      "plant": "L3",
+      "title": "Dorner 1 damaged, Monday inspection required",
+      "summary": "Dorner 1 conveyor is damaged; full inspection scheduled for Monday to determine if replacement is needed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-21T10:19:58.722Z"
+      },
+      "status": "Kimberly flagged damage at 04:19 and noted Monday inspection required; no interim fix or assessment by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 scraper missing since April",
+      "summary": "A specific scraper has been missing since April 3; no spares available and team is ordering replacements.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Preston Elmer",
+        "time_utc": "2026-06-20T21:30:17.097Z"
+      },
+      "status": "Preston confirmed no spares on hand at 15:54 and will order as soon as possible; scraper remains unavailable."
+    }
+  ]
+}
