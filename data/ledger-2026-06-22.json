@@ -1,0 +1,101 @@
+{
+  "date": "2026-06-22",
+  "headline": {
+    "eyebrow": "Equipment focus",
+    "text": "L3 had *3 equipment stops* this morning \u2014 two cleared quickly, TG#4 still down as of 07:08; L2 hapman faulting intermittently."
+  },
+  "per_plant_summary": {
+    "L1": "No activity in the last 24 hours.",
+    "L2": "ML2 line running but hapman continues to fault on auto, causing micro stops \u2014 maintenance troubleshooting connections since 06:07. WiFi down plant-wide as of 07:15, IT notified.",
+    "L3": "ML1 had C1 belt misalignment that stopped the line at 07:08 but cleared within 7 minutes. ML4 had TG#3 and TG#4 down at 06:48 \u2014 TG#3 back at 07:08 after correcting upside-down part, TG#4 still down with maintenance on site. Dorner 1 belt remains damaged with no spare available."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "TG#3 part assembled upside down",
+      "summary": "ML4 TG#3 went down at 06:48; maintenance found a part installed incorrectly and corrected the assembly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-22T12:48:31.124Z"
+      },
+      "resolution": "Corrected and running at 07:08 \u2014 \"TG#3 is now running, maintenance is still working on #4\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "C1 belt misalignment stopping line",
+      "summary": "Belt tracking issues caused constant stops on ML1; maintenance realigned and line resumed production within 7 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-22T13:08:26.841Z"
+      },
+      "resolution": "Cleared at 07:15 \u2014 \"The line is running again. Maintenance is continuing to make adjustments to the belt\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "Back off plow blades scraping on one side only",
+      "summary": "ML4 paused at 06:21 to correct plow blade alignment that was only scraping on one side.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-22T12:21:04.461Z"
+      },
+      "resolution": "Fixed and running at 06:24 \u2014 \"Running\" (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "Hapman faulting on auto, causing micro stops",
+      "summary": "ML2 hapman continues to fault when running on auto; line is still producing but experiencing repeated micro stops while maintenance troubleshoots connections.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-22T12:07:02.6Z"
+      },
+      "status": "Maintenance troubleshooting connections since 06:07, line running with micro stops as of 07:08."
+    },
+    {
+      "plant": "L2",
+      "title": "WiFi down plant-wide",
+      "summary": "Plant-wide WiFi outage reported at 07:15; IT has been notified by email.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-22T13:15:30.495Z"
+      },
+      "status": "Down as of 07:15, IT notified via email."
+    },
+    {
+      "plant": "L3",
+      "title": "Dorner 1 belt damaged, no spare available",
+      "summary": "ML1 Dorner 1 belt has existing damage that was not replaced over the weekend; Preston confirmed no spare belt in stock.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-22T12:18:06.872Z"
+      },
+      "status": "Damage confirmed at 06:18, no spare dorner belt available as of 06:44."
+    },
+    {
+      "plant": "L3",
+      "title": "TG#4 down",
+      "summary": "ML4 TG#4 went down at 06:48 alongside TG#3; TG#3 was cleared but TG#4 remains offline with maintenance actively troubleshooting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-22T12:48:31.124Z"
+      },
+      "status": "Down since 06:48, maintenance on-site \u2014 still working on it as of 07:08."
+    }
+  ]
+}

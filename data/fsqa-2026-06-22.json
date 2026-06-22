@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-22",
+  "headline": {
+    "eyebrow": "Equipment integrity",
+    "text": "L3 ML1 Dorner 1 belt remains damaged and in service \u2014 no spare available, *damage* reported since Saturday night."
+  },
+  "summary": "Single food-safety flag: L3 ML1 operating with damaged Dorner 1 conveyor belt since weekend; no spare in inventory to replace it.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Damaged Dorner 1 conveyor belt still in service",
+      "summary": "ML1 Dorner 1 belt has sustained damage (referenced in Saturday night report) and remains in use; no spare belt available for replacement, creating potential for belt material to enter product stream.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-22T12:18:06.872Z"
+      },
+      "status": "Open \u2014 damaged belt remains in service, no spare available to replace it."
+    }
+  ],
+  "quality": [],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider establishing critical spare-parts inventory (belts, scrapers, blades) to avoid extended operation with damaged equipment \u2014 based on ML1 Dorner 1 belt running damaged since Saturday due to no spare availability."
+    }
+  ]
+}
