@@ -1,0 +1,140 @@
+{
+  "date": "2026-06-23",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "L1 S3 flashlight part found on *Tunnel 2 roller* at 03:50 \u2014 production stopped, belt inspected, no other pieces found."
+  },
+  "summary": "Three foreign-material events at L1: flashlight top on S3 production belt, cookies stored in S2 parts cabinet, and supplier bolt in tray pallet. L2 FFS seal jaw fell during run after screw backed off. Multiple L1 cleaning sign-off gaps.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Flashlight top found on S3 Tunnel 2 roller",
+      "summary": "Lead discovered plastic flashlight part on first roller after enrober at 03:50; line stopped, belt inspected with no additional pieces found, source flashlight identified in production area.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-23T10:14:01.773Z"
+      },
+      "status": "Resolved on shift \u2014 part removed, belt inspected clear, production resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "Bag of cookies found in S2 machine parts cabinet",
+      "summary": "Production staff organizing cleaning materials discovered bagged cookies inside cabinet where protected machine parts are stored, representing contamination risk to food-contact components.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-23T11:39:43.567Z"
+      },
+      "status": "Open \u2014 cookies removed, teams notified to keep food out of parts storage."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS long seal jaw fell off during production",
+      "summary": "Screw on long seal jaw backed itself off over time causing jaw to fall; line stopped immediately, maintenance reinstalled and secured.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-06-22T22:48:55.885Z"
+      },
+      "status": "Resolved on shift \u2014 jaw reinstalled, line back up; supervisors verified nut torque at midshift and end of shift."
+    },
+    {
+      "plant": "L1",
+      "title": "Bolt found in supplier tray pallet",
+      "summary": "Pack-area EE discovered bolt inside pallet of new trays; maintenance and Ops confident bolt came from tray manufacturer, not CandyCo equipment.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-23T03:27:24.881Z"
+      },
+      "status": "Resolved \u2014 bolt removed, QA escalating to Procurement for supplier defect follow-up."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 incorrect enrober infeed pipe installed",
+      "summary": "2nd shift discovered wrong infeed pipe in enrober after Saturday night swap; correct pipe found on pallet, will clean/sanitize and install after next reheat.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-22T21:43:50.011Z"
+      },
+      "status": "Open pending reheat \u2014 follow-up action created for correct pipe installation."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS open and double wrappers in finished boxes",
+      "summary": "QA observed open and double pieces in most boxes during 2nd shift run; no hold placed, ongoing monitoring.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-06-23T04:09:57.315Z"
+      },
+      "status": "Open, ongoing \u2014 operators aware, no corrective action documented in window."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS linked and open chocolate chains at hopper",
+      "summary": "3rd shift EE found chain of linked/open chocolates on top of box as opened for hopper feed; indicates upstream wrap quality issue.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-06-23T07:12:16.666Z"
+      },
+      "status": "Open, recurring \u2014 still finding defects at window close."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 C20 nose bar rollers not cleaned Saturday",
+      "summary": "1st shift startup inspection found nose bar rollers on C20 belt missed during Saturday night cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-06-22T13:59:23.945Z"
+      },
+      "status": "Resolved \u2014 rollers cleaned and ATP'd before production start Monday."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 cleaning paperwork incomplete \u2014 two belts unsigned",
+      "summary": "L4 pre-op paperwork missing sign-offs for C6 and C7 belt cleaning; QA flagged before trial start, team reviewed on floor.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-06-22T15:27:32.587Z"
+      },
+      "status": "Resolved on shift \u2014 paperwork reviewed and completed with supervision."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Tunnel 2 belt wash left closed after cleaning",
+      "summary": "2nd shift found belt wash tunnel 2 left closed by previous shift; procedural gap flagged.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-06-22T21:20:12.092Z"
+      },
+      "status": "Resolved \u2014 tunnel opened, no impact to cleaning effectiveness."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding flashlight and personal-item inspections to S3 startup checklist \u2014 based on today's flashlight-part FM event on the Tunnel 2 roller."
+    },
+    {
+      "plant": "L1",
+      "text": "Review cleaning sign-off procedures and supervisor verification steps \u2014 based on three incomplete or missed cleaning events today (S2 belt paperwork, S3 nose bar rollers, S3 tunnel left closed)."
+    },
+    {
+      "plant": "L2",
+      "text": "Review FFS equipment torque-check intervals and add seal-jaw fastener inspection to PM routine \u2014 based on today's long-seal-jaw screw backing off and jaw falling during production."
+    }
+  ]
+}
