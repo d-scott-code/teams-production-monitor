@@ -1,0 +1,246 @@
+{
+  "date": "2026-06-24",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 ran on *1 kettle for 90 minutes* after dual sensor failures \u2014 both kettles back online by 06:57."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 lost both kettles to damaged sensor connectors at 03:55 and 05:27, slowed to 60 RR on single kettle; maintenance replaced connectors and restored full capacity by 06:57. Sollich 2 completed Oreo trial with multiple enrober re-washes before allergen clearance at 06:04. Melting tank 1 squealing noise under investigation.",
+    "L2": "ML3 replaced shredded cross conveyor belt at 14:32, back running by 14:51; second belt issue at 06:07 cleared by 06:12. FFS bobine collar misalignment fixed in 29 minutes at shift start. ML2 molding belt adjusted, 11-minute stop at 06:08.",
+    "L3": "ML1 temper swings stabilized by 03:49 after multiple adjustments; B100A sensor tolerance adjusted for twisted-piece rejection at 07:16. ML4 compressor 1 faulting intermittently since 19:27, Sollich contacted; TG3 film jamming cleared with roll swap at 23:26; chocolate buildup in vibration area cleaned in 15 minutes at 02:32."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Operator caught and tightened loose screw on motor M260 before failure."
+    },
+    {
+      "plant": "L1",
+      "text": "Sollich 2 Oreo trial hit 2508 ppm at max tunnel speed; 9 pallets FG completed."
+    },
+    {
+      "plant": "L2",
+      "text": "Film versions V5 and V6 can mix in master cases but not displays per QA."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 dual kettle sensor failure",
+      "summary": "Kettle 1 top-door sensor connector damaged by moisture at 03:55, kettle 2 followed at 05:27; line slowed to 60 RR on single kettle while maintenance replaced 8-wire cable and connectors.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-24T09:55:01.675Z"
+      },
+      "resolution": "Cleared at 06:57 \u2014 \"Repairs are done and we are currently cooking in 2 kettles\" (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 enrober allergen test failures",
+      "summary": "Enrober failed allergen swab at 04:17 after initial wash; white chocolate residue not releasing with oil, required brushing and multiple re-washes.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-24T10:17:45.584Z"
+      },
+      "resolution": "Cleared at 06:04 \u2014 \"Enrober allergens have all passed\" (Karen Velastegui)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Russell Finex filter clog",
+      "summary": "Filter alarm at 09:40 during Oreo trial startup; team disassembled to clear suspected clog but found partially closed valve downstream.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-06-23T15:40:25.072Z"
+      },
+      "resolution": "Cleared at 10:18 \u2014 valve opened, filter reassembled, \"We are ready\" (Erandy Garcilazo Ceja)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Matrix belt trip on safety cable",
+      "summary": "Matrix area belts stopped at 10:44 during Oreo trial; mezzanine safety cable had tripped.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-23T16:44:43.203Z"
+      },
+      "resolution": "Cleared at 10:48 \u2014 \"It was the safety cable on the mezzanine. Maintenance reset that and things are running\" (Troy Baxter)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 cross conveyor belt shredding",
+      "summary": "Belt breaking apart and shedding material at 14:32; line down for replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-06-23T20:32:17Z"
+      },
+      "resolution": "Cleared at 14:51 \u2014 belt replaced, ATP passed, \"Line start running\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bobine collar misalignment",
+      "summary": "Film tracking and print issues on roll changes carried over from 2nd shift; collars measured unequal, needed adjustment at shift start to prevent recurrence.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-24T04:25:08.217Z"
+      },
+      "resolution": "Cleared at 22:49 \u2014 collars adjusted, tracking and print reset, \"Line is up\" after 29 minutes DT (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 belt issue at shift start",
+      "summary": "Belt problem at 06:07 prevented startup; maintenance on-site.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-24T12:07:27.637Z"
+      },
+      "resolution": "Cleared at 06:21 \u2014 \"Line back up at 6:12\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS print defect at midshift",
+      "summary": "Print quality issue during first shift run.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-06-23T14:22:25.973Z"
+      },
+      "resolution": "Cleared same message \u2014 \"Had a print issue, but resolved and line is running well\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 missing wrench from shadow board",
+      "summary": "Wrench #10 missing from pack area shadow board at 21:45.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-24T03:45:18.581Z"
+      },
+      "resolution": "Cleared at 22:00 \u2014 \"It was Recovered wrench 10\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 film jamming and rips",
+      "summary": "Film jamming at 23:09, switched to rips at 23:21; speed lowered to 16 mpm.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-24T05:21:05.307Z"
+      },
+      "resolution": "Cleared at 23:26 \u2014 \"Switched film, readjusted lot code. TG3 is now running, we're back up to 18\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper instability",
+      "summary": "Temper moving up and down starting at 02:08; team made multiple mixing-water adjustments and notified maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-24T08:08:38.498Z"
+      },
+      "resolution": "Cleared at 03:49 \u2014 \"Temper return to normal 0.3\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chocolate buildup causing mold noise",
+      "summary": "Loud noises from molds after demolding at 02:32; chocolate buildup in vibration area pushing molds up.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-24T08:32:39.212Z"
+      },
+      "resolution": "Cleared after 10\u201315 min gap \u2014 removed 10 molds, ran gap to scrape buildup, \"verified what it was\" (Kimberly at 05:06:01). Chad suggested daily cleaning during capture test."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 B100A sensor not rejecting doubles",
+      "summary": "Sensor failing to kick off misaligned and double product at 07:08.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-24T13:08:53.71Z"
+      },
+      "resolution": "Cleared at 07:16 \u2014 tolerance adjusted to detect twisted pieces, \"So far, it has done well to kick these off\" (Shawn Jewkes). Note: sensor not designed for doubles."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 loose screw on motor M260",
+      "summary": "Operator found loose screw during belt inspection at 06:58.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-24T12:58:10.339Z"
+      },
+      "resolution": "Cleared immediately \u2014 operator tightened screw on the spot; Preston: \"Great catch! Thank you for stopping that before it became a bigger issue!\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 melting tank 1 squealing noise",
+      "summary": "Loud squealing noise from melting tank 1 reported at 05:00; maintenance has been informed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-24T11:00:32.95Z"
+      },
+      "status": "Maintenance notified as of 05:00; no update on diagnosis or repair plan by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 pick and brush missing from shadow board",
+      "summary": "Tools not returned to shadow board at end of 3rd shift.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Dave Ruff",
+        "time_utc": "2026-06-24T12:05:40.776Z"
+      },
+      "status": "Missing at 06:05 shadow board check; no recovery reported by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sensor plug damaged, temporary fix",
+      "summary": "Sensor plug on TG hit and broken out of socket at 14:19; pins straightened and reattached but connection not secured, will fall out if bumped.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Preston Elmer",
+        "time_utc": "2026-06-23T20:19:35.754Z"
+      },
+      "status": "Temporary fix in place as of 14:19 on 6/23; permanent repair not completed by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 compressor 1 intermittent faults",
+      "summary": "Compressor 1 faulting repeatedly since 19:27 on 6/23; only compressor 1 affected, compressor 2 stable.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-24T01:27:53.402Z"
+      },
+      "status": "Preston sent email to Sollich for support at 20:25 on 6/23; faults recurring through window, no resolution yet."
+    }
+  ]
+}

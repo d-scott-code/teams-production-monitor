@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-24",
+  "headline": {
+    "eyebrow": "Active cleaning gap",
+    "text": "L1 S2 enrober failed *three* allergen tests after cleaning \u2014 root cause is incomplete disassembly inspection \u2014 line cleared at 06:04."
+  },
+  "summary": "Two plant-level near-misses today: L2 ML3 cross-conveyor belt shredding into product zone (replaced, ATP passed), and L3 ML1 loose motor screw caught before it fell. L1 S2 enrober allergen failures delayed startup ~6 hours.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "Cross-conveyor belt shredding on ML3",
+      "summary": "Belt breaking apart in product zone \u2014 line stopped, belt replaced, ATP tested and passed before restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-06-23T20:32:17Z"
+      },
+      "status": "Resolved \u2014 belt replaced by 14:51, ATP passed, line restarted."
+    },
+    {
+      "plant": "L3",
+      "title": "Loose screw on ML1 motor M260",
+      "summary": "Operator found loose screw during belt inspection and tightened before it could fall into product stream.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-24T12:58:10.339Z"
+      },
+      "status": "Resolved on shift \u2014 operator tightened screw, no product impact."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "246 lbs scrap from damaged molds on ML4",
+      "summary": "Damaged molds already in system at shift start generated one barrel of scrap during capture test.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-24T12:49:22.001Z"
+      },
+      "status": "Open \u2014 scrap collected, no update on mold removal or inspection protocol."
+    },
+    {
+      "plant": "L3",
+      "title": "B100A sensor not rejecting doubles on ML1",
+      "summary": "Sensor adjusted by maintenance to detect twisted pieces for jam prevention \u2014 does not detect doubles by design.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-06-24T13:08:53.71Z"
+      },
+      "status": "Resolved \u2014 maintenance adjusted tolerance, sensor working as designed."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 enrober allergen test failures post-cleaning",
+      "summary": "Enrober failed allergen verification three times after level-4 clean \u2014 multiple areas missed during disassembly inspection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-24T06:56:04.377Z"
+      },
+      "status": "Resolved \u2014 passed allergen test at 06:04 after re-wash and inspection coaching."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate buildup on ML4 vibration area",
+      "summary": "Buildup under demolding area caused loud noise \u2014 10-15 min gap created to clean, root cause is daily cleaning gap.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-24T08:32:39.212Z"
+      },
+      "status": "Resolved \u2014 area cleaned during gap, suggestion to add to daily shift-change cleaning protocol."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding enrober disassembly checkpoint photos to cleaning checklist \u2014 based on today's three failed allergen tests at S2 after operators signed off on cleaning."
+    },
+    {
+      "plant": "L2",
+      "text": "Review cross-conveyor belt inspection frequency on ML3 \u2014 today's belt was shredding into product zone before operators noticed."
+    },
+    {
+      "plant": "L3",
+      "text": "Add ML4 vibration-area cleaning to daily shift-change protocol \u2014 today's buildup caused 15-min unplanned gap and loud noise."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding motor fastener inspection to ML1 startup checklist \u2014 today's loose screw on M260 was a near-miss caught by operator."
+    }
+  ]
+}
