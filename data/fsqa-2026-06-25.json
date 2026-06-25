@@ -1,0 +1,145 @@
+{
+  "date": "2026-06-25",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "L1 S2 bark breaker coating *chipping* into contact zone \u2014 equipment finish degrading, hold and repair needed before restart."
+  },
+  "summary": "One active hold at L3 ML4 (5 partial rolls, quality issue from 3rd shift). Three direct food-safety flags: bark breaker coating flaking at L1 S2, vanilla dosing fault at L1 S4 (caught before impact), and paper towels over product zone at L3 Truffle.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "5 partial rolls held \u2014 quality defect",
+      "summary": "3rd shift left 5 partial rolls marked as bad; 1st shift verified defects and placed on hold at 11:11 MT.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-24T17:11:28.682Z"
+      },
+      "status": "On hold pending QA disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Bark breaker coating chipping off",
+      "summary": "Charity Young documented finish degradation on S2 bark breaker food-contact surface \u2014 coating flaking risk into product flow.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-06-24T22:02:23.740Z"
+      },
+      "status": "Victor Romero Sr. scheduled reclean for following shift; equipment needs inspection and repair before use."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 vanilla pump dosing fault",
+      "summary": "Pump configuration jumped from 220 g/h to 12,000 g/h mid-batch; operator caught, stopped pump immediately, maintenance reset system.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-06-24T16:17:01.199Z"
+      },
+      "status": "Resolved \u2014 pump reset, tested, and verified normal operation by 10:49 MT; QA sensory tested batch and confirmed no product impact."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 C2 caramel overfilled into steam pipe",
+      "summary": "C2 overfilled to the point caramel pushed up the steam pipe; unclear if pressure forced it or tank overfilled.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-25T03:32:48.975Z"
+      },
+      "status": "CRU production paused; C1 batch finished, C2 caramel scrapped; investigating root cause."
+    },
+    {
+      "plant": "L3",
+      "title": "Paper towels covering pipes above Sweco",
+      "summary": "Angel Cabrera flagged paper towels used as covers over pipes directly above product sifter \u2014 foreign material and fiber risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-06-25T01:40:45.370Z"
+      },
+      "status": "Open; Angel requested caps instead of towels, awaiting maintenance response."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "6 pallets Tate's wrong lot code printed",
+      "summary": "S2 first shift printed incorrect lot number on 6 pallets; flagged to 2nd shift supervisor for rework.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-24T21:45:11.975Z"
+      },
+      "status": "Rework verified and started by 2nd shift QA at 15:49 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "Chocolate pallets expired labels but extended shelf life",
+      "summary": "S2 shift found chocolate BBD labels showing expiration before receipt date; NetSuite shows shelf life extended to 7/10/26 but labels not updated.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-25T01:55:52.977Z"
+      },
+      "status": "Open \u2014 IMS contacted, labels require update to reflect extended BBD; received date also incorrect."
+    },
+    {
+      "plant": "L1",
+      "title": "10 pallets S2 jars oriented incorrectly",
+      "summary": "Final inspection found jar labels not forward-facing per customer spec; wrapper operator repeatedly instructed but non-compliance continued.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-25T11:12:19.688Z"
+      },
+      "status": "Resolved \u2014 all 10 pallets corrected before shift end at 06:31 MT."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 vacuum system failure",
+      "summary": "2nd shift operator noticed TG4 vacuum not working; bins suggest it may have been down all day, dust not evacuating.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-24T21:09:43.599Z"
+      },
+      "status": "Resolved \u2014 maintenance cleared clogged funnel filter by 17:08 MT, vacuum restored."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 main vacuum filter clogged",
+      "summary": "TG5 multiples issue traced to main vacuum filter (not CIL-cleaned); filter clogged, causing secondary funnel blockage.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-25T03:20:53.261Z"
+      },
+      "status": "Resolved \u2014 filter cleaned, TG5 running normally; Shawn Jewkes working on daily cleaning standard and schedule."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider pre-shift food-contact surface inspection for S2 bark breaker and similar coated equipment \u2014 today's chipping finish was visible and should have been caught before product contact."
+    },
+    {
+      "plant": "L1",
+      "text": "Review label verification and operator accountability on S2 pack-off \u2014 10 pallets required rework for orientation non-compliance despite repeated instruction, signaling a training or supervision gap."
+    },
+    {
+      "plant": "L3",
+      "text": "Add TG vacuum filter cleaning to daily or per-shift maintenance checklist \u2014 today's TG4 and TG5 clogs caused line issues and suggest the current CIL scope misses critical dust-handling components."
+    },
+    {
+      "plant": "L3",
+      "text": "Replace temporary paper-towel covers over Truffle Sweco with permanent caps \u2014 today's flag highlights a recurring foreign-material risk that a simple engineering control would eliminate."
+    }
+  ]
+}

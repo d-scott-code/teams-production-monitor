@@ -1,0 +1,270 @@
+{
+  "date": "2026-06-25",
+  "headline": {
+    "eyebrow": "Heavy downtime",
+    "text": "L1 S2 lost *2 hours 6 minutes* to a blown seal in the heavy cream system \u2014 back cooking at 05:57."
+  },
+  "per_plant_summary": {
+    "L1": "S2 had the biggest hit: a blown ingredient-side seal stopped all caramel cooking from 03:51 until 05:57. The decrystalizer was also found plugged during Oreo changeover \u2014 maintenance cleared it by midday. S3 ran clean after a quick scraper adjustment at start of shift. S4 cooked 13 CRU batches but paused late 3rd shift after C2 overfilled and pushed caramel up the steam pipe.",
+    "L2": "ML3 ran well aside from two planned belt changes during CIL. A ceiling leak above the line was reported at 11:06 and still dripping by end of 3rd shift \u2014 maintenance aware. ML2 and FFS both steady with routine maintenance windows.",
+    "L3": "ML4 had three vacuum-related stoppages: TG5 down 102 minutes for a broken belt part (cleared 13:12), TG4 down from 09:41 until 17:08 for a clogged filter, and TG5 again at 20:55 for 25 minutes. TG4 reported blow-offs again at 07:07 with maintenance on-site. Five rolls from 3rd shift remain on hold for quality review."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Curt Willis noted the S2 decrystalizer would have forced a full shutdown within hours if the clean hadn't been scheduled."
+    },
+    {
+      "plant": "L1",
+      "text": "S2 reworked 10 pallets for incorrect jar orientation between 05:12 and 06:31 \u2014 operator repeatedly instructed on correct procedure."
+    },
+    {
+      "plant": "L3",
+      "text": "Maintenance added M4 tracking roller cleaning to PM schedule after repeated faults; active tracking now installed on M13 conveyor."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 decrystalizer plugged during Oreo run",
+      "summary": "Decrystalizer found heavily plugged with cookie material during changeover; maintenance disassembled and cleaned.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-24T19:42:56.927Z"
+      },
+      "resolution": "Cleaned and tested for ATP/allergens by 13:52 \u2014 \"Russell Finex was cleaned and is being tested\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 heavy cream seal failure stopped caramel cooking",
+      "summary": "Blown seal on the ingredients side caused heavy cream to dump into the wrong kettle; line ran out of caramel and went down until maintenance replaced the seal.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-25T09:51:14.758Z"
+      },
+      "resolution": "Seal replaced by 04:39, cooking resumed, caramel back at conbar by 05:57 \u2014 \"Sending caramel at the conbar\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 vanilla pump configuration fault",
+      "summary": "Vanilla pump changed its setting from 220 g/h to 12,000 g/h; operators caught it and stopped the pump immediately.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-06-24T16:17:01.199Z"
+      },
+      "resolution": "Power reset performed, pump restored to normal operation by 10:49 \u2014 \"We restored the vanilla pump to proper operation\" (Marcos Jimenez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar conveyor belt snapped on startup",
+      "summary": "Four links of the MD jar belt broke at 17:49; maintenance believed it was routed incorrectly through underside guiderails causing bind.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-24T23:49:23.968Z"
+      },
+      "resolution": "Fixed by 18:45 \u2014 \"The jar conveyor has been fixed\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 X-ray reject arm not ejecting",
+      "summary": "X-ray detected product but the reject arm was not ejecting jars; valve found closed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-06-25T04:14:54.93Z"
+      },
+      "resolution": "Valve opened and X-ray toggled off/on by 22:23 \u2014 \"Maintenance has adjusted the X-rays, and it now reads the cards\" (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar orientation rework on 10 pallets",
+      "summary": "Final inspection found most jars positioned incorrectly (label not forward); operator had been repeatedly instructed on correct procedure.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-06-25T11:12:19.688Z"
+      },
+      "resolution": "Line stopped, all 10 pallets corrected by 06:31 \u2014 \"All pallets have been corrected\" (Karen Velastegui)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tunnel 1 scraper causing belt vibration",
+      "summary": "Last scraper on tunnel 1 built up with product, causing belt to vibrate; line stopped to clean.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-06-25T07:14:20.115Z"
+      },
+      "resolution": "Cleaned immediately, back running \u2014 \"Line is running\" (Luis Falcon, 01:14)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 cross conveyor belt replacement during CIL",
+      "summary": "Belt changed out during first-shift CIL at 08:17; quality performed ATP.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-24T14:17:31.645Z"
+      },
+      "resolution": "Belt passed ATP, line running by 08:49 \u2014 \"Line up\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line down for knife cleaning",
+      "summary": "Line stopped at 06:28 for maintenance to clean the knife.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-06-25T12:28:07.559Z"
+      },
+      "resolution": "Back up by 06:50 \u2014 \"Line is running\" (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 vacuum system clogged",
+      "summary": "Vacuum not suctioning, causing blow-offs; operators noted bins full, suggesting it hadn't worked all day.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-24T15:41:42.758Z"
+      },
+      "resolution": "Top of funnel above filter found clogged, cleared by 17:08 \u2014 \"We have vacuum again\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 down 102 minutes on broken belt part",
+      "summary": "Loose piece prevented blue belt from moving properly; maintenance took it to the shop to repair.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-24T17:37:10.136Z"
+      },
+      "resolution": "Plate installed and running good by 13:12 \u2014 \"TG5 is running good now\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 multiples from clogged vacuum funnel",
+      "summary": "TG5 had multiples for 20 minutes; operators and maintenance working on it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-06-25T02:55:54.969Z"
+      },
+      "resolution": "Problem was clogged vacuum funnel, cleared by 21:20 \u2014 \"Problem was clogged vacuum funnel\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor #2 agitator stopped",
+      "summary": "Agitator for 1-shot tank on depositor 2 not moving; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-25T12:26:45.21Z"
+      },
+      "resolution": "Fixed in 4 minutes \u2014 \"Agitator is fixed. It was an over limit faults on the VFD\" (Itzel Chavez, 06:31)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line jacketed pipe water leak",
+      "summary": "Approximately one gallon of water leaking from jacketed pipe; initially thought to be coconut oil.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-06-25T01:43:48.742Z"
+      },
+      "resolution": "Maintenance tightened hose, leak stopped \u2014 \"It was about a gallon of water. It came from jacketed pipe\" (Marcos Montano)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 C2 caramel overfilled, pushed up steam pipe",
+      "summary": "C2 overfilled to the point caramel was forcing up the steam pipe at 21:32; unclear if pressure-driven or operator error; paused CRU production.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-25T03:32:48.975Z"
+      },
+      "status": "Finishing C1, then scrapping what remains in C2; investigating root cause as of 21:56."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 bark breaker finish chipping off",
+      "summary": "FSQA swab identified finish coating chipping from bark breaker surface during post-clean inspection.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-06-24T22:02:23.74Z"
+      },
+      "status": "Victor Romero will reclean tomorrow per Charity Young at 16:01."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 heavy cream pump gasket broken",
+      "summary": "Gasket on heavy cream pump found broken at shift handoff; maintenance will replace.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-06-25T13:02:26.474Z"
+      },
+      "status": "Identified at 07:02, maintenance notified to replace gasket."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 ceiling leak above line",
+      "summary": "Water dripping from ceiling or ductwork above ML3; reported at 11:06, still dripping as of 21:55 on 3rd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-24T17:06:41.525Z"
+      },
+      "status": "Maintenance checking source; appears to be from roof via outer duct as of 02:54."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 blow-offs with maintenance on-site",
+      "summary": "TG4 down at 07:07 for excessive blow-offs; maintenance called to line.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-25T13:07:34.621Z"
+      },
+      "status": "Maintenance on-site as of 07:07; no resolution posted by window close at 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "5 rolls from 3rd shift on hold for quality review",
+      "summary": "Partial rolls marked bad by 3rd shift tested and confirmed out of spec; separated for hold.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-24T17:11:28.682Z"
+      },
+      "status": "Six rolls on hold as of 15:02, being documented with photos for disposition."
+    }
+  ]
+}
