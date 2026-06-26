@@ -1,0 +1,230 @@
+{
+  "date": "2026-06-26",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 cold stamp jam held the line down *2.5 hours* overnight \u2014 motors wouldn't sync, escalated to engineering."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 lost 1.5 hours on a C1 belt roller bearing failure \u2014 greased and reinstalled without the correct part, new bearings arrive Monday. Sollich 2 planning a reheat around 09:00 for enrober buildup. Sollich 4 had a quick metal detector air connector fix.",
+    "L2": "ML3 paused briefly for a roof water leak, resolved by 12:15. ML2 lost startup time to flow wrap power issues and a loose Sweco that spilled chocolate \u2014 both cleared by mid-morning.",
+    "L3": "ML4 had a rough night: 2.5-hour cold stamp jam (motors wouldn't sync), depositor 4 sensor failures forcing manual mode, a scratched north filter replacement, and product demolding issues at the end of the window. ML1 battled recurring high temper all day \u2014 cold water setpoint was wrong for days, mixing water dropped out of range overnight."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "MDLZ touring the plant tomorrow morning (per Charity Young 11:08)."
+    },
+    {
+      "plant": "L1",
+      "text": "S3 C1 belt roller bearing is a temporary fix \u2014 correct bearings ordered for Monday delivery."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 C1 belt roller bearing failure",
+      "summary": "Roller after metal detector making grinding noise, eventual bearing failure, line down 02:38.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-26T03:06:55.692Z"
+      },
+      "resolution": "Line running at 04:30 \u2014 bearing removed, greased, reinstalled as temporary fix. Correct bearings ordered for Monday (Jody Howse)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 metal detector air connector broke",
+      "summary": "Air fitting failed on metal detector during 1st shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-06-25T15:37:40.664Z"
+      },
+      "resolution": "Maintenance replaced connector, line running again (Marcos Jimenez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 roof water leak over hopper",
+      "summary": "Water dripping from RTU near Z-belt and supersack hopper, risk of contamination.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-06-25T17:52:52.712Z"
+      },
+      "resolution": "Line back up at 12:15 \u2014 unhooked vent sock to prevent dripping, William draining sump and working on RTU. Sock reconnected by maintenance at 05:04 Friday."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrap power failure",
+      "summary": "Flow wrap would not turn on at 3rd shift startup.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-06-26T11:28:16.037Z"
+      },
+      "resolution": "Power restored by 05:42, centerline and print verified good (Fernando Flores)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 line down for maintenance",
+      "summary": "Brief unplanned stop, cause not specified in chat.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-06-25T23:44:59.257Z"
+      },
+      "resolution": "Line running again at 17:48 (~4 minutes)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 Sweco moved and spilled chocolate",
+      "summary": "Sweco not tightened down enough after changeover, shifted during startup and spilled chocolate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-26T11:50:10.514Z"
+      },
+      "resolution": "Sweco adjusted by 06:13, waiting on temper to stabilize before restart (Gustavo Rodas)."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 film jam and printer clog",
+      "summary": "Film caught by fin wheels (excess glue buildup), printer wand clogged \u2014 TG3 paused for one hour starting 23:39.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-06-26T05:39:46.604Z"
+      },
+      "resolution": "Cleared at 23:46 \u2014 operators cleaned fin wheels and printer wand, \"TG3 back up and running\" (Kavin Ayala)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector alarm",
+      "summary": "Metal detector faulted out mid-shift, QA and maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-25T21:45:52.86Z"
+      },
+      "resolution": "Line running again at 15:52 (cleared in ~7 minutes)."
+    },
+    {
+      "plant": "L3",
+      "title": "C6 belt tracking to north rail",
+      "summary": "Belt repeatedly climbing into the rail on ML1 flow wrap, causing line stops throughout 2nd and 3rd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-26T02:35:51.933Z"
+      },
+      "resolution": "Cleared at 03:33 \u2014 \"C6 Belt is running good now\" after maintenance adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "North side chocolate filter scratched",
+      "summary": "Filter on north Sweco screen found scratched during routine check, line stopped pumping chocolate to replace.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-06-26T03:00:13.916Z"
+      },
+      "resolution": "Screen replaced by 21:17, no metal hits reported, team monitoring (Angel Cabrera)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera sensor fault at shift end",
+      "summary": "Metal detector faulted at 06:17, traced to dirty camera sensor.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-26T12:17:10.287Z"
+      },
+      "resolution": "Sensor cleaned, fault cleared (Imperial and Jose Vasquez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 enrober buildup, reheat planned",
+      "summary": "Heavy buildup on enrober, 2 hours of caramel left, planning reheat around 09:00 and raising sump temp from 28\u00b0C to 30\u00b0C.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-06-26T12:55:48.012Z"
+      },
+      "status": "Reheat scheduled for ~09:00 this morning (07:05 update). Proactive stop to prevent quality issues (Justin Garner, Curt Willis)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 twin belts and chicane belt installed backwards",
+      "summary": "Belts put on reversed during changeover \u2014 wide twin belt on wrong side, first chicane belt backwards.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Halladay",
+        "time_utc": "2026-06-26T11:54:05.982Z"
+      },
+      "status": "Identified at 05:54 by Justin Halladay, no follow-up on correction in chat."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 recurring high temper \u2014 settings out of range",
+      "summary": "Multiple high temper stops throughout 24h window (0.8-0.9 slope), traced to cold water at wrong setpoint for days and mixing water dropped to 79.7 (min is 81.0).",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-26T00:38:37.07Z"
+      },
+      "status": "Cold water corrected to 57\u00b0F, mixing water being brought back to 80.5+. Temper yo-yoing overnight, adjustments ongoing by 3rd shift. Robert Villarreal coaching on parameter limits."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp jam \u2014 2.5 hour downtime",
+      "summary": "Mold jammed in cold stamp section at 01:19, motors wouldn't sync via gameboy, had to clear via HMI, escalated to Preston.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-26T07:19:56.313Z"
+      },
+      "status": "Line restarted at 03:17 after 2.5 hours. Root cause: mold not centered correctly. Gameboy control failure required HMI workaround (Kavin, Alan, Preston)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 product demolding failure at window close",
+      "summary": "Product coming out of molds but not demolding properly starting 07:03, worsening through end of window.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-26T13:03:28.774Z"
+      },
+      "status": "At 07:15 (window close): product demolding partially but not fully. Active issue, no resolution posted (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 hopper sensor failure",
+      "summary": "Level sensors reading empty when full, causing auto-drain, multiple stoppages from 00:28 through 05:14.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-06-26T06:28:28.449Z"
+      },
+      "status": "Running on manual mode as of 05:14. Maintenance worked on sensors, issue persists. Line operating but requires manual hopper control (Kimberly Morales)."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-06-26",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L3 ML4 *scratched Sweco screen* caught at 21:00, replaced with no material found in downstream product \u2014 L1 S3 C1 roller bearing flagged for FM risk, serviced preemptively."
+  },
+  "summary": "Three food-safety events: L3 ML4 scratched chocolate filter screen replaced after immediate stop-and-swap; L1 S3 grinding belt roller serviced before failure; L2 ML3 roof leak isolated from product zone. L3 ML1 ran out of tempering spec overnight with mixing water 1.3\u00b0F below centerline minimum.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Scratched Sweco screen on ML4 north side",
+      "summary": "Chocolate pumping stopped immediately at 21:00 when operator found scratched filter screen; screen replaced, magnet inspected, no material observed coming off screen or in product since last good check at 20:00.",
+      "severity": "high",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-06-26T03:00:13.916Z"
+      },
+      "status": "Resolved \u2014 screen replaced, no contamination found; root cause investigation ongoing (suspected heavy flow from primary left discharge pipe)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C1 belt roller bearing grinding, FM risk flagged",
+      "summary": "Post-metal-detector belt roller making grinding noise; maintenance found no metal shavings or FM but flagged bearing-failure contamination risk; bearing removed, greased, reinstalled pending Monday replacement.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-26T03:06:55.692Z"
+      },
+      "status": "Resolved \u2014 line back up at 04:30; new bearings arrive Monday; no evidence of contamination during inspection."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 roof leak dripping near product zone",
+      "summary": "Water dripping from RTU above Z belt and supersack hopper; line paused, supersack removed, vent sock disconnected to isolate hopper while roof drain cleared; no water contact with product or equipment.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-06-25T17:52:52.712Z"
+      },
+      "status": "Resolved \u2014 vent sock reconnected 05:04; William confirmed drain pan adjusted and no further drip risk."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML1 mixing water 1.3\u00b0F below centerline minimum",
+      "summary": "Tempering instability overnight; mixing water dropped to 79.7\u00b0F at 21:19 (centerline minimum 81.0\u00b0F), causing phase-4 crystal formation and high temper reads (0.8\u20130.9); cold water had been at 57\u00b0F for days before recipe loaded.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-26T02:39:50.200Z"
+      },
+      "status": "Open \u2014 team corrected settings during 3rd shift; Robert Villarreal coaching on centerline adherence and pre-cooling control."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 Sweco loosened and spilled chocolate",
+      "summary": "Sweco screen not tightened after assembly, moved during startup and spilled chocolate; depositing stopped, Sweco adjusted, temper allowed to stabilize before restart.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-06-26T11:50:10.514Z"
+      },
+      "status": "Resolved \u2014 depositing resumed 06:13 after Sweco secured and temper recovery."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Flag S3 C1 roller bearing work as strong example of proactive FM risk mitigation \u2014 William and Caleb identified grinding noise, assessed contamination risk, and serviced before failure."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding Sweco screen visual inspection to ML4 startup checklist \u2014 today's scratched screen and Angel's observation that primary left discharge pipe delivers heaviest flow suggest routine inspection could catch wear earlier."
+    },
+    {
+      "plant": "L3",
+      "text": "Review recipe changeover procedure for ML1 tempering unit settings \u2014 cold water remained at 57\u00b0F for days before today's recipe load, contributing to overnight tempering instability."
+    }
+  ]
+}
