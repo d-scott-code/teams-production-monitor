@@ -1,0 +1,282 @@
+{
+  "date": "2026-06-27",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L2 PTL sensor failure stopped depositor for *2 hours* \u2014 cleared by 18:19 after sensor swap \u2014 and L3 box printer still down at window close."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran all day with two quick clears: blower buildup at 21:15 (5-minute pause) and a water leak under cereal pallets fixed by 20:16. Shift 3 flagged material shortages for Monday \u2014 SRS and PRS pouches both short, will run into WIP boxes once flow-wrap stock runs out.",
+    "L2": "ML2 lost 2 hours when the PTL expansion tank sensor failed at 16:06; maintenance replaced the sensor and restarted depositing by 18:19. ML3 had two brief stops for a chocolate-caked roller and a flow-wrap label jam, both cleared inside 10 minutes.",
+    "L3": "ML1 cleared five quick stops across the day \u2014 C-6 belt sensors, misalignment, mold alarm, water test failures (flow-wrap adhesive gap), and a dirty mold pin \u2014 but the box printer has been down since 06:44 with maintenance still working at window close while the line accumulates displays."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Changeover to 24Ct/case12 completed at 05:26; temper held steady at -0.2 after cold water and crystallization adjustments overnight."
+    },
+    {
+      "plant": "L1",
+      "text": "Sollich 2 completed MMK run at 03:00, started FD 12g after changeover at 04:00; first shift short on manpower, shutting down for lunches today."
+    },
+    {
+      "plant": "L2",
+      "text": "ML3 switched from finished goods to WIP at 20:42."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Chocolate buildup on blower",
+      "summary": "Significant chocolate accumulation on blower required 5-minute production pause to clean during third shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-27T03:15:34.203Z"
+      },
+      "resolution": "Cleared at 21:33 \u2014 William reported \"Line is running again.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Jars delivery delay for Sollich 2",
+      "summary": "Jars scheduled for 14:00 delivery didn't arrive; driver located and jars delivered by 15:11.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-06-26T20:46:29.063Z"
+      },
+      "resolution": "Cleared at 15:11 \u2014 Kirk Nickel confirmed \"Driver is just pulling up to L1 with the jars!\""
+    },
+    {
+      "plant": "L1",
+      "title": "Water leak under cereal pallets",
+      "summary": "Leak from compression fitting behind Sollich 4 kitchen ingredients puddled under cereal stock; crew moved pallets and cleaned floor while maintenance tightened fittings.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-27T01:54:18.08Z"
+      },
+      "resolution": "Cleared by 20:16 \u2014 Caleb York tightened fittings and noted thread sealant on compression fittings caused mineral buildup."
+    },
+    {
+      "plant": "L2",
+      "title": "PTL expansion tank sensor failure",
+      "summary": "Depositor lost temper control when PTL expansion tank sensor faulted at 16:06, causing overflow and stopping chocolate feed for 2 hours while maintenance diagnosed and replaced sensor.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-06-26T22:06:12.585Z"
+      },
+      "resolution": "Cleared at 18:19 \u2014 Brandon Lance confirmed sensor replaced, chocolate tempered, and \"We are depositing again\" at 18:12; depositor running by 18:18."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 CIL roller chocolate buildup",
+      "summary": "Heavy chocolate accumulation on roller forced 10-minute line stop for cleaning at start of first shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-26T14:16:08.686Z"
+      },
+      "resolution": "Cleared at 08:26 \u2014 \"The line up.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow-wrap label jam",
+      "summary": "Label feed issue stopped flow-wrapper for 10 minutes during second shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-26T20:23:43.816Z"
+      },
+      "resolution": "Cleared at 14:23 \u2014 \"Is running now.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 brief line stop",
+      "summary": "Short unspecified stoppage during second shift, back running within 4 minutes.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-06-26T20:32:23.382Z"
+      },
+      "resolution": "Cleared at 14:36 \u2014 \"Is running now.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 piece weight adjustment",
+      "summary": "QA requested weight correction during second shift; line held 30 minutes for adjustment and verification.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-06-27T01:47:35.175Z"
+      },
+      "resolution": "Cleared at 20:26 \u2014 Marlenis Fernandez confirmed \"The weight is good; it is as close as possible to the target.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Water test failures on flow-wrap",
+      "summary": "Multiple water test failures traced to gaps in flow-wrap adhesive; new roll installed and three consecutive passes confirmed fix.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Daniel McCarty",
+        "time_utc": "2026-06-26T22:23:15.945Z"
+      },
+      "resolution": "Cleared at 16:23 after roll change \u2014 Daniel ran 3 more tests with no failures and continued periodic testing remainder of shift."
+    },
+    {
+      "plant": "L3",
+      "title": "C-6 belt sensor malfunction",
+      "summary": "Sensors WB102, WB130, and WB140 needed sensitivity adjustment after belt started malfunctioning during morning production.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-26T14:12:16.795Z"
+      },
+      "resolution": "Nathan Ruiz adjusted sensitivity on all three sensors by 08:40 \u2014 \"keep C6 running smoothly.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Temper control adjustment after mixing water minimum",
+      "summary": "Temper dropped below spec when mixing water reached minimum adjustment; team coordinated crystallization and precooling changes to stabilize.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-26T18:11:12.523Z"
+      },
+      "resolution": "Stabilized by 18:16 \u2014 Nathan Gevenois confirmed \"Temper has been staying steady at -.2\" after cold water and crystallization adjustments held."
+    },
+    {
+      "plant": "L3",
+      "title": "C-6 belt misalignment",
+      "summary": "Belt tracking pulled off-center during afternoon shift, requiring maintenance re-alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-26T20:18:43.843Z"
+      },
+      "resolution": "Cleared at 14:23 \u2014 \"The C-6 band has already been adjusted and is functioning correctly.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Mold alarm tripped on depositor",
+      "summary": "Depositor faulted mid-afternoon, requiring QA and maintenance inspection before restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-26T21:34:07.328Z"
+      },
+      "resolution": "Cleared at 15:38 \u2014 \"We are now running.\""
+    },
+    {
+      "plant": "L3",
+      "title": "C6 belt tracking off overnight",
+      "summary": "Belt drifted during third shift, triggering production hold for maintenance adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-27T04:31:37.204Z"
+      },
+      "resolution": "Cleared at 22:45 \u2014 \"C6 Belt running correctly, MD belt running correctly.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Morcos tank temperature drop",
+      "summary": "Temper tank temperature fell from 46\u00b0F to 43\u00b0F at shift start; maintenance intervened to restore target.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-06-27T06:07:42.936Z"
+      },
+      "resolution": "Cleared at 02:22 \u2014 Raoul confirmed \"The Morcos temper Return to normal.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Safety sensor fault on line stop",
+      "summary": "Safety interlock triggered, halting line until maintenance reset.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-27T08:53:02.153Z"
+      },
+      "resolution": "Cleared at 02:54 \u2014 \"Was a safety sensor maintenance has reset it. Functioning normally.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Mold pin alarm at shift end",
+      "summary": "Mold alarm triggered near end of third shift; QA, maintenance, and supervisor inspected before clearing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-27T11:00:08.024Z"
+      },
+      "resolution": "Cleared at 05:02 \u2014 Raoul reported \"No issues found it was a dirty pin.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "SRS pouches short for Monday production",
+      "summary": "Item 40921 needs 55,890 for Monday Sollich 2 run; only 17,930 on hand and airfreight of 40,000 not arriving until 06/29-06/30, forcing WIP box packaging.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-06-26T15:08:05.617Z"
+      },
+      "status": "Curt Willis directed at 18:43 to run SRS in pouches until stock depletes, then switch to WIP boxes for balance of order."
+    },
+    {
+      "plant": "L1",
+      "title": "PRS pouches short for Monday production",
+      "summary": "Item 40892 needs 55,890 for Monday Sollich 2 wrapped product; only 7,460 available in L3, will require WIP box fallback.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-06-26T22:39:09.117Z"
+      },
+      "status": "Curt Willis confirmed at 18:43 PRS will run in pouches until depletion, then continue into WIP boxes."
+    },
+    {
+      "plant": "L3",
+      "title": "Box printer malfunction",
+      "summary": "Printer fault at start of first shift has maintenance working through window close; line continues running and accumulating displays that can't be boxed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-27T12:44:05.337Z"
+      },
+      "status": "Maintenance still troubleshooting as of 07:03; Grey Boscan reports line running and accumulating displays while repair continues."
+    },
+    {
+      "plant": "L3",
+      "title": "Black parking belt drifting south",
+      "summary": "Belt in parking area continuously tracking to south side; maintenance engaged but no resolution confirmed.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-06-27T06:25:25.039Z"
+      },
+      "status": "Maintenance working on tracking adjustment as of 00:25; no follow-up confirming fix."
+    }
+  ]
+}

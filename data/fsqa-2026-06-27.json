@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-27",
+  "headline": {
+    "eyebrow": "Quality flag",
+    "text": "L3 ML1 flow wrap failed *multiple* water tests \u2014 adhesive gaps found, new roll installed, retests passed."
+  },
+  "summary": "Three quality events across plants: L3 flow wrap seal integrity failures (resolved), L2 PTL temperature fault (2-hour line down, sensor replaced), and L1 chiller compressor requiring manual restarts. One facility flag: L1 walk-in cooler door gap allows cold air escape. One pest control device needs replacement.",
+  "holds": [],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 chiller 2nd compressor not auto-starting",
+      "summary": "Second compressor on S3 glycol chiller requires force-start each cycle; when it fails to start, temperatures climb and risk melted chocolate exiting Tunnel 2; no alarm or fault indication to operators.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-06-26T23:19:39.612Z"
+      },
+      "status": "Open \u2014 manually force-started during shift; compressors cycling normally once restarted, but root cause of auto-start failure unresolved."
+    },
+    {
+      "plant": "L1",
+      "title": "Walk-in cooler door gap \u2014 cold air escaping",
+      "summary": "Gap along one side of walk-in cooler sliding door allows cold air to escape; door seal needs repair to maintain proper temperature control.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-06-27T11:43:53.758Z"
+      },
+      "status": "Open \u2014 flagged for maintenance repair; no indication cooler is out of temp spec at this time."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 PTL temperature fault \u2014 bad sensor",
+      "summary": "Product tank temperature dropped, PTL overflowed and stopped sending to temper unit; expansion tank pressure high (19.7); line down ~2 hours while maintenance replaced faulty sensor.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-06-26T21:03:51.549Z"
+      },
+      "status": "Resolved \u2014 sensor replaced, chocolate re-tempered, depositing resumed at 18:12 MT."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow wrap water test failures \u2014 adhesive gaps",
+      "summary": "Multiple water test failures on ML1 2nd shift traced to gaps in adhesive on flow wrap roll; production adjusted, maintenance inspected, new roll installed, three subsequent tests passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Daniel McCarty",
+        "time_utc": "2026-06-26T22:23:15.945Z"
+      },
+      "status": "Resolved \u2014 new roll installed, retests passed, periodic testing continuing through shift per QA."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Pest control device #18 damaged",
+      "summary": "Pest control device #18 is bent and out of shape, needs replacement to maintain pest monitoring coverage.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-06-27T11:52:21.759Z"
+      },
+      "status": "Open \u2014 flagged for pest control vendor replacement."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 CIL roller chocolate buildup after short run",
+      "summary": "Significant chocolate accumulation on CIL roller caused line stop after only a few hours of operation; maintenance confirmed roller was cleaned and reinstalled on 3rd shift, but buildup recurred quickly.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-06-26T14:16:08.686Z"
+      },
+      "status": "Resolved \u2014 roller cleaned, line restarted within 10 minutes; root cause of rapid re-buildup unclear."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Add S3 glycol chiller compressor auto-start behavior to daily startup checks and request controls review \u2014 based on today's ongoing issue where 2nd compressor fails to auto-start with no alarm, creating unmonitored temperature risk."
+    },
+    {
+      "plant": "L2",
+      "text": "Review ML3 cleaning roller cleaning verification method and post-clean inspection protocol \u2014 based on today's excessive chocolate buildup on CIL roller recurring after only a few hours despite confirmed cleaning and reinstall."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding flow wrap adhesive and seal integrity inspection to ML1 startup checklist \u2014 based on today's repeated water test failures traced to gaps in the adhesive on the flow wrap roll."
+    }
+  ]
+}
