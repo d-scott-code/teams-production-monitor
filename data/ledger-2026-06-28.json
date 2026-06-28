@@ -1,0 +1,210 @@
+{
+  "date": "2026-06-28",
+  "headline": {
+    "eyebrow": "Incomplete cleans",
+    "text": "L1 left S2 merge floor heavy wash incomplete (no air fitting) and couldn't start S2 pack cleaning due to *labor shortage on second shift*."
+  },
+  "per_plant_summary": {
+    "L1": "L1 completed an Oreo aligner trial after 3x clean/swab protocol and closed a curtain gap in the new pack area, but S2's merge system level 4 clean remains incomplete and labor shortages delayed pack area cleaning on second shift.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "L3 cleared four machine faults (mold alarm, HMI pin, printer, and one camera alarm) and completed a level 2 clean on schedule, but one earlier camera fault had no recorded resolution."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "New work order created for item 21098 for Monday's production; original WO will not be used."
+    },
+    {
+      "plant": "L2",
+      "text": "Film/roll change taking 12 minutes and blade cleaning 23 minutes, within the 30-minute planned downtime allowance."
+    },
+    {
+      "plant": "L1",
+      "text": "Monday SRS run must start at 07:00; third shift to run 4 hours then begin cleaning."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "New pack area level 4 clean for contractor work",
+      "summary": "Pack area needed level 4 clean and heavy floor wash before Monday startup due to contractor drilling, conduit cutting, and metal debris; required sticky rollers first then metaquat mop.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-27T14:33:14.692Z"
+      },
+      "resolution": "Conner Boyd reported second wash and test completed by 23:59, third clean and test completed by Joseph Scott at 01:35."
+    },
+    {
+      "plant": "L1",
+      "title": "Curtain gap in new pack area",
+      "summary": "Entire section of curtain detached in newly configured pack area; Jorel flagged as immediate safety/contamination risk with photos.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-06-27T21:03:27.569Z"
+      },
+      "resolution": "Conner Boyd closed the gap by 17:51 and continued patching other areas along the floor."
+    },
+    {
+      "plant": "L1",
+      "title": "Oreo aligner new equipment cleaning protocol",
+      "summary": "New aligner part for MDLZ Oreo trial required 3x clean and 3x swab per new equipment policy; quality flagged the gap after initial ATP-only approach.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-06-28T01:57:22.541Z"
+      },
+      "resolution": "Joseph Scott completed third clean and ATP test at 02:04, all 1,800 beads accounted for after trial completed at 04:56."
+    },
+    {
+      "plant": "L1",
+      "title": "Caramel supply pause vs. slowdown",
+      "summary": "Line paused for caramel at 20:22 (C2 had 47 min, C1 had 38 min); supervisor requested slowdown instead of full pause to maintain flow.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-28T02:22:41.451Z"
+      },
+      "resolution": "After the pause, line slowed to 68 RR at 20:54 per Curt's request (Conner Boyd)."
+    },
+    {
+      "plant": "L3",
+      "title": "Mold alarm on ML1",
+      "summary": "Mold alarm triggered at 15:30; maintenance not on-site, Nathan asked Preston for clearance to restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-27T21:30:28.564Z"
+      },
+      "resolution": "Running again by 15:35 \u2014 \"We are now running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "HMI pin fault on ML1",
+      "summary": "HMI pin fault stopped line at 17:56 on third shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-06-27T23:56:02.185Z"
+      },
+      "resolution": "Running again at 18:01 \u2014 \"Running again\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "Printer fault on ML1 flow-wrap",
+      "summary": "1880 printer failed at 00:08, needed new service module; maintenance on-site working repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-06-28T06:08:08.2Z"
+      },
+      "resolution": "Repaired by 00:34 \u2014 \"Printer is repaired waiting for it to warm up line is running\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "Display color shade variation on same pallet",
+      "summary": "Darker and lighter displays mixed on same pallet; sorted to process lighter shades first to avoid color mixing in finished goods.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-06-27T16:42:17.095Z"
+      },
+      "resolution": "Darker displays separated out, lighter processed first, then darker to follow once exhausted (David Zuniaga 10:42)."
+    },
+    {
+      "plant": "L3",
+      "title": "Camera alarm (second incident) on ML1",
+      "summary": "Camera alarm triggered at 23:22; maintenance, QA, and supervisor inspected the line.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-28T05:22:47.31Z"
+      },
+      "resolution": "No issues found by 23:28 \u2014 it was a dirty pin (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Lock left on S2 packing belt after level clean",
+      "summary": "Contractor asked Amy to remove lock left on S2 MM packing belt; leads need to ensure all locks removed after level cleans per LOTO protocol.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-27T20:03:00.876Z"
+      },
+      "status": "Flagged to Jody Howse and Dakota Adair at 14:03, no follow-up action recorded."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 pack area cleaning not started due to labor shortage",
+      "summary": "Second shift couldn't send EEs to start S2 pack cleaning after Eaglestone left due to labor shortages; Conner looking for team of 2-3 to start at 20:30.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-28T02:30:50.634Z"
+      },
+      "status": "Conner said he'd post back shortly at 20:30, but no update was provided by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 merge system level 4 clean incomplete \u2014 heavy wash pending",
+      "summary": "Level 4 clean on merge system completed scrub and mop, but heavy floor wash couldn't be done because air fitting for foamer was missing; needs completion Monday.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-28T07:18:53.618Z"
+      },
+      "status": "Joseph reported at 06:32 that heavy wash still needs completion Monday; no air fitting found for foamer."
+    },
+    {
+      "plant": "L1",
+      "title": "Sticky roller handles missing for new pack area clean",
+      "summary": "Floor sticky rollers found but handles missing; needed for new pack area debris removal before sweep/mop per Jorel's instructions.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-27T19:55:45.323Z"
+      },
+      "status": "Katya found rollers at 14:17 but no handles; Jorel asked if current handles fit at 14:27, no answer recorded."
+    },
+    {
+      "plant": "L1",
+      "title": "Nine pallets with uneven stacking couldn't load",
+      "summary": "Warehouse couldn't load 9 pallets due to uneven stacking; 3 rewrapped and secured, working on remaining 6 by end of second shift.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-06-27T23:58:24.384Z"
+      },
+      "status": "Three pallets rewrapped by 17:58, working to finish other 6 by end of shift; no confirmation of completion."
+    },
+    {
+      "plant": "L3",
+      "title": "Camera fault on ML1 (first incident)",
+      "summary": "Camera fault reported at 12:29 with maintenance inspecting the line.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-06-27T18:29:39.98Z"
+      },
+      "status": "Maintenance in line inspecting as of 12:29, no resolution or follow-up recorded."
+    }
+  ]
+}

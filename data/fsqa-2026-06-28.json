@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-28",
+  "headline": {
+    "eyebrow": "Equipment trial gap",
+    "text": "L1 new Oreo aligner installed and tested before completing *3\u00d7 clean/swab protocol* \u2014 trial product scrapped, cleaning completed overnight."
+  },
+  "summary": "New equipment trial on L1 S3 bypassed FSQA protocol initially; Jorel and Kathleen intervened, three-clean cycle completed by 02:04. Separate sanitation gaps: lock left on S2 belt after clean, S2 floor heavy-wash incomplete pending Monday, and curtain breach at L1 pack area patched by 2nd shift.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "1,800 beads on new aligner chains \u2014 foreign material control",
+      "summary": "New Oreo aligner equipment uses 10 chains with 180 beads each; Joseph Scott counted all 1,800 beads pre- and post-trial to prevent loss into product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-06-28T04:28:27.756Z"
+      },
+      "status": "Resolved \u2014 all 1,800 beads accounted for after trial; 3 extra beads removed to standardize strand count."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "New Oreo aligner installed before 3\u00d7 clean/swab protocol completed",
+      "summary": "Equipment cleaned once and ATP-tested before Jorel flagged missing Listeria/Salmonella/EB swabs and two additional clean cycles required by new-equipment policy.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-06-27T01:57:22.541Z"
+      },
+      "status": "Resolved \u2014 third clean and ATP completed at 02:04; trial product scrapped per Jorel and Kathleen."
+    },
+    {
+      "plant": "L1",
+      "title": "Construction debris in pack area \u2014 metal, concrete dust on floor",
+      "summary": "New pack configuration work (drilling, conduit cutting, bolt cutting) left metal pieces, wires, and concrete dust; level 4 clean with sticky rollers required before Monday production.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-27T14:33:14.692Z"
+      },
+      "status": "In progress \u2014 sticky roller and debris removal started 2nd shift, level 4 cleaning underway 3rd shift."
+    },
+    {
+      "plant": "L1",
+      "title": "Curtain gap at pack area \u2014 pest control breach",
+      "summary": "Jorel flagged section of plastic curtain with large gap and damage near new pack configuration; potential pest entry point.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-06-27T21:03:27.569Z"
+      },
+      "status": "Resolved \u2014 Conner taped gap at 21:17, then patched curtain sections along floor by 17:51."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 pack area floor heavy wash incomplete \u2014 no air fitting for foamer",
+      "summary": "Level 4 clean on S2 merge system completed except heavy floor wash; team scrubbed and mopped but could not locate air fitting to plug in foamer.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-06-28T12:32:33.919Z"
+      },
+      "status": "Open \u2014 heavy wash deferred to Monday per Joseph Scott and Victor Romero."
+    },
+    {
+      "plant": "L1",
+      "title": "Lock left on S2 packing belt after level clean",
+      "summary": "Contractor found lockout lock still installed on MM packing belt post-clean; Katya removed and flagged leads on lock removal protocol.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-06-27T20:03:00.876Z"
+      },
+      "status": "Resolved \u2014 lock removed by Katya; follow-up with leads requested."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding new-equipment intake checklist visible to production and maintenance \u2014 today's aligner trial started before FSQA 3\u00d7 clean/swab protocol was complete."
+    },
+    {
+      "plant": "L1",
+      "text": "Review S2 pack area floor-wash tooling \u2014 today's level 4 clean could not locate air fitting for foamer, deferring heavy wash to Monday."
+    },
+    {
+      "plant": "L1",
+      "text": "Add lockout/tagout removal step to L1 level-clean signoff checklist \u2014 lock left on S2 belt after clean, discovered by contractor."
+    }
+  ]
+}
