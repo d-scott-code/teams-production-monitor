@@ -1,0 +1,142 @@
+{
+  "date": "2026-06-29",
+  "headline": {
+    "eyebrow": "Line constraint",
+    "text": "L3 running at *14 mpm* after TG#4 belt shredded \u2014 replacement found by 07:10 but not yet installed."
+  },
+  "per_plant_summary": {
+    "L1": "Quiet shift with no production issues. New packaging area flagged as needing compressed air for tape machines and box printers.",
+    "L2": "Minor equipment hiccups cleared quickly. Temperature unit and scraper issues on ML2 resolved by 05:47, long belt tracking on ML3 fixed with hard reset by 06:12.",
+    "L3": "Heavy equipment day. TG#4 belt shredded, forcing line speed to 14 mpm; replacement belt located by 07:10. Multiple other issues active at window close: sensor problems after demolding, gondola exit jams, and TG#3 down cutting paper."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Forming plate guides were found swapped between ML2 and ML3 during setup."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "Temperature unit and scraper fault on ML2",
+      "summary": "Temperature unit had problems and scraper faulted during startup, blocking deposition.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-06-29T10:46:44.049Z"
+      },
+      "resolution": "Mechanics worked on temperature unit, maintenance brought scraper back up, temperatures came down, and line started depositing at 05:47."
+    },
+    {
+      "plant": "L2",
+      "title": "Long belts not tracking on ML3",
+      "summary": "Long belts on ML3 failed to track properly, requiring maintenance intervention.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-29T12:04:11.484Z"
+      },
+      "resolution": "Maintenance performed hard reset at 06:04; belts tracking and running by 06:12."
+    },
+    {
+      "plant": "L3",
+      "title": "Temper unit faulted on depositor 1",
+      "summary": "One of the temper units on depositor 1 faulted out, requiring maintenance response.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-29T12:53:16.641Z"
+      },
+      "resolution": "Cleared at 06:59 \u2014 \"This got resolved at 6:59am\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Air in ML1 cooling system",
+      "summary": "Cooling system pressure dropped below green range, indicating air in the line.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-06-29T11:50:03.173Z"
+      },
+      "resolution": "Nathan Ruiz bled the air out at 05:59 \u2014 \"Bled the air out and it's now in the green.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "New packaging area missing compressed air",
+      "summary": "New packaging area has no air supply; tape machine and box printers require compressed air to operate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-06-29T13:08:50.003Z"
+      },
+      "status": "Troy Baxter flagged at 07:08, assuming air can be brought over from adjacent area and dropped in."
+    },
+    {
+      "plant": "L3",
+      "title": "TG#4 belt shredded, line at reduced speed",
+      "summary": "TG#4 belt shredded into two pieces due to incorrect operator installation; line running at 14 mpm instead of normal speed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-06-29T10:52:27.955Z"
+      },
+      "status": "No spare available; Preston Elmer located replacement belt at L2 and picked it up by 07:10, but installation not confirmed by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Sensor issues on belts after demolding",
+      "summary": "One or more sensors on the belts after demolding are malfunctioning, requiring maintenance attention.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-29T12:25:09.222Z"
+      },
+      "status": "Nathan Ruiz on-site as of 06:25, no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Gondola exit sending double layers, causing jams",
+      "summary": "Gondola exit is feeding double layers of chocolate, creating jams at the exit point.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-29T13:08:02.342Z"
+      },
+      "status": "Reported at 07:08, no resolution or update by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "TG#3 down, cutting paper",
+      "summary": "TG#3 flow wrapper is down due to cutting the paper film, blocking that wrapping lane.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-06-29T13:10:54.188Z"
+      },
+      "status": "Nathan Ruiz investigating as of 07:10; team working on alternate wrapper (RW) as temporary workaround."
+    },
+    {
+      "plant": "L3",
+      "title": "Blank guidance values on operator screens",
+      "summary": "Many operator guidance values are blank on ML4, making it harder for the team to run to spec.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-06-29T11:25:08.157Z"
+      },
+      "status": "Flagged to Rich Brierley and Shawn Jewkes at 05:25, requested update today; no confirmation of fix."
+    }
+  ]
+}

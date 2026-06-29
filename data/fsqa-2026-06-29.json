@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-29",
+  "headline": {
+    "eyebrow": "Food-contact FM risk",
+    "text": "Cleaning tools discovered inside *L3 ML4 T5 flow wrapper* at startup \u2014 no investigation or hold documented."
+  },
+  "summary": "One high-severity event: cleaning tools found inside T5 flow wrapper at L3 ML4 startup with no follow-up investigation or hold visible in chat. Separately, L2 ML3 forming plate guides were swapped between lines, potentially affecting product specifications.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Cleaning tools found inside T5 flow wrapper",
+      "summary": "Operator discovered cleaning tools loose inside T5 flow wrapper housing when cover was opened at startup \u2014 direct foreign material contamination risk with no investigation or hold mentioned.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-06-29T11:03:58.973Z"
+      },
+      "status": "Open, no follow-up investigation or disposition action documented in chat."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "Forming plate guides swapped between ML2 and ML3",
+      "summary": "ML2 and ML3 forming plate guides were installed on wrong lines during changeover \u2014 incorrect guides could affect product dimensions and specifications.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-06-29T12:08:43.136Z"
+      },
+      "status": "Open, no indication of corrective action or product review in chat."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Consider part-number verification step when installing forming plate guides \u2014 based on ML2 and ML3 guides swapped during changeover today."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding tool accountability checklist before closing food-contact equipment covers \u2014 based on cleaning tools found loose inside T5 flow wrapper at ML4 startup."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding belt installation verification to ML4 startup checklist \u2014 today's TG#4 downtime and speed reduction trace to Friday's operator installation error despite prior training post."
+    }
+  ]
+}
