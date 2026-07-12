@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-12",
+  "headline": {
+    "eyebrow": "FM recovery",
+    "text": "L1 S3 scraper dropped into nut-allergen dark chocolate buffer \u2014 *retrieved* by maintenance, no product shipped."
+  },
+  "summary": "One foreign-material near-miss at L1 S3 (scraper retrieved from buffer). L1 S3 MD level-4 clean on hold pending QA inspection Monday \u2014 hard-to-reach areas did not meet visual standard after first post-production deep clean. L3 ML4 scrap underreported by 526 lbs for second time this month.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Blue scraper dropped into AD4 nut-allergen buffer",
+      "summary": "Employee dropped a blue scraper into the AD4 (nut allergen dark) buffer while scrubbing during level-4 MD clean; maintenance retrieved it before any product contact.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-12T03:11:50.168Z"
+      },
+      "status": "Resolved \u2014 scraper fished out by maintenance at 21:22, no product exposed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Pre-zipped pouches failing to open on all 3 Matrix machines",
+      "summary": "Same lot (41021) of pouches arriving pre-zipped across Matrix 6, 8, and another unit; operators manually opening pouches to prevent product dumping onto sealed bags.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-07-11T19:24:31.918Z"
+      },
+      "status": "Open \u2014 workaround in place (manual pouch opening), all on-hand pallets from same lot."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 scrap underreported by 526 lbs in SafetyChain",
+      "summary": "Third shift recorded 990 lbs scrap in SafetyChain but physical count was 1,516 lbs (chocolate, cream, caramel); system adjusted to match physical, second occurrence this month.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-07-11T15:00:12.986Z"
+      },
+      "status": "Resolved \u2014 inventory adjusted, 3rd shift lead reminded by Rose Smuin."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 MD level-4 clean incomplete, pending QA review Monday",
+      "summary": "First level-4 clean of MD (metal detector) after production run; inner rollers and center areas not accessible for visual clean even with 3 rollers removed \u2014 cleaning standard not met.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-12T01:15:00.097Z"
+      },
+      "status": "On hold pending QA inspection Monday \u2014 team cleaned accessible areas, disassembly limits reached."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Tunnel 1 curtains not closed and taped",
+      "summary": "Tunnel 1 environmental curtains found open and not taped during shift \u2014 reminder issued that curtain control applies to all manufacturing, not just specific customers.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-07-11T15:33:44.632Z"
+      },
+      "status": "Open \u2014 teams reminded to tape immediately, not days later."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding MD inner-roller inspection ports or revised disassembly SOP to level-4 cleaning standard \u2014 today's first post-production deep clean could not visually verify center areas even with tension roller removed."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider incoming inspection or lot change-out for item 41021 pouches \u2014 all three Matrix machines saw pre-zipped failures from the same supplier lot."
+    },
+    {
+      "plant": "L3",
+      "text": "Review scrap data-entry training and checklist for ML4 night shift \u2014 526 lb underreport is the second gap this month per Rose Smuin."
+    }
+  ]
+}

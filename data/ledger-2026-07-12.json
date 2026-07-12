@@ -1,0 +1,170 @@
+{
+  "date": "2026-07-12",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 stopped production *2 hours early* after fighting defective matrix bags all shift \u2014 operator now manually opening pouches."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran caramel all shift but battled matrix bag opening failures from 13:24 onward \u2014 bags arriving pre-sealed, machine can't open them. Maintenance spent hours on adjustments; workaround is manual pouch opening. Line stopped cooking caramel at 23:07 and shut down early. Sollich 3 completed first post-production Level 4 clean on MD equipment but couldn't reach all rollers; QA checking Monday.",
+    "L2": "FFS ran salted caramel then affogato but fought film handling all window \u2014 splice sensor failures, multiple film tears on the shoulder, punch clogs. 78 minutes down from 23:50 to 01:08 for a tear and adjustment. Line also ran out of salted caramel cases mid-shift as expected. ML2 corrected filler nozzles after overnight confusion.",
+    "L3": "ML4 and ML1 ran cleanly with no line breaks. Truffle line waiting on a spare roller for tunnel 3 \u2014 worn roller noted but no parts on hand. MF Matrix had a funnel jam issue; maintenance trimmed 1 inch off upper funnel and cleared it. ML4 computer monitor cable is broken; maintenance aware."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Pecan pallets ordered from L3 for Monday Sollich 3 start never arrived; team scrambling to get them delivered by Monday morning."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 scrap reporting flagged again \u2014 3rd shift had 1,516 lbs physical scrap vs 990 lbs recorded in SafetyChain, second occurrence this week."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 tunnel 3 belt slipping and stopping",
+      "summary": "Belt stopped twice; operators cleaned rollers and motor, brought line back at 10:05.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-07-11T14:40:01.555Z"
+      },
+      "resolution": "Cleared at 10:05 \u2014 \"We already clean the rollers and motor the line is running right now\" (S2 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "Blue scraper dropped into AD4 buffer during cleaning",
+      "summary": "Operator dropped scraper into nut allergen dark buffer tank while scrubbing; maintenance fished it out with grabber tool.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-12T03:11:50.168Z"
+      },
+      "resolution": "Cleared at 21:22 \u2014 \"Me, Bryan and the new guy fished it out\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "C1 belt plug failed during cleaning",
+      "summary": "Belt wouldn't run after cleaning; plug needed replacement before 5-minute run test could complete.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-07-12T04:25:01.254Z"
+      },
+      "resolution": "Cleared at 23:55 \u2014 \"Plug has been fixed. And we will now conduct the run for 5 minute test\" (Conner Boyd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 filler nozzle confusion overnight",
+      "summary": "3rd shift couldn't locate correct nozzles for MMK caramels; day shift confirmed and installed correct nozzles from cart.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-07-11T18:30:12.506Z"
+      },
+      "resolution": "Cleared at 04:59 \u2014 \"They have corrected the nozzles and placed it into the filler\" (Zack Kurtz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix funnel jamming on pouch opening",
+      "summary": "Upper and lower funnels making contact, causing pouch jams; maintenance trimmed 1 inch off upper funnel to create clearance.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-07-11T17:30:14.525Z"
+      },
+      "resolution": "Cleared at 11:30 \u2014 \"Trimmed about 1\" off the upper funnel so the lower one can be raised and not jam up the pouch opening\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Worn roller on Cavanna 2",
+      "summary": "Roller worn beyond service life; maintenance swapped in new roller.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-07-11T19:17:01.952Z"
+      },
+      "resolution": "Cleared at 13:17 \u2014 \"Worn roller was replaced on Cavanna 2\" (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 matrix machines rejecting pre-sealed bags",
+      "summary": "Bags arriving from supplier already zipped; matrix openers can't separate them, causing product to dump onto closed pouches. Maintenance spent hours on cam and arm adjustments; operators now manually opening bags upstream as workaround. Line stopped cooking caramel 2 hours early at 23:07 rather than continue.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-07-11T19:24:31.918Z"
+      },
+      "status": "Workaround in place as of 16:53 with manual opening; line chose to shut down early rather than run remaining 2.5 hours. All pallets on hand are same lot."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MD Level 4 clean incomplete",
+      "summary": "First Level 4 clean after production run; maintenance removed 3 rollers but inner rollers and nose bars remain inaccessible even with belt slack. Team cleaned reachable areas but can't meet visual standard for tight spaces. QA checking Monday morning to determine next steps.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-07-11T22:46:09.968Z"
+      },
+      "status": "Cleaned accessible areas; Luis noted at 04:15 that QA will inspect Monday, so no assembly completed."
+    },
+    {
+      "plant": "L1",
+      "title": "Pecan pallets for Monday Sollich 3 production not delivered",
+      "summary": "Item 10024 was ordered from L3 with 23:00 delivery Friday; pallets never arrived and Sollich 3 scheduled to start Monday morning.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-07-12T04:48:36.784Z"
+      },
+      "status": "Curt escalated to Rose and Laura at 22:59; investigating what happened and how to deliver by Monday morning."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS splice sensor and film handling issues",
+      "summary": "Splice sensor malfunctioning throughout window; film tearing on shoulder, catching in punch, gusset folds. Down 10:04\u201310:33 for sensor cleaning, 11:13\u201312:08 for fold and jam, 17:27\u201317:54 for blade cleaning, 20:42\u201301:08 for film tear (78 minutes). Fernando noted material building between rollers is causing tears.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-11T16:01:18.949Z"
+      },
+      "status": "Running as of 01:08 after changeover to affogato but recurring film handling issues not resolved; 3rd shift noted same splice sensor problems."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line tunnel 3 roller worn, no spare available",
+      "summary": "Roller to tunnel 3 identified as needing replacement; no spare rollers in stock to complete the swap.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-12T11:44:04.427Z"
+      },
+      "status": "Waiting on parts; noted at 05:44 that replacement can't proceed without spare roller."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 HMI computer monitor cable broken",
+      "summary": "Display cable for HMI monitor failed; operators can't use that monitor.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-07-12T08:47:20.752Z"
+      },
+      "status": "Maintenance aware as of 02:47; no update on repair timeline."
+    }
+  ]
+}
