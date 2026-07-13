@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-13",
+  "headline": {
+    "eyebrow": "Sanitation hold",
+    "text": "L2 FFS held for *ATP failure* \u2014 Level 2 cleaning completed and line released within 3 hours."
+  },
+  "summary": "One sanitation hold at L2 resolved after ATP retest passed. L3 quality flags include dirty molds returned to ML4 magazine and yellow trays mixed with white on Truffle Line.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "FFS line held for ATP failure",
+      "summary": "ATP tests failed on FFS line at 04:13; product removed, Level 2 cleaning performed, visual and ATP retest passed at 06:41.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-13T10:13:00.875Z"
+      },
+      "status": "Resolved \u2014 line released and running at 07:03."
+    }
+  ],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Yellow floor trays mixed with white product trays",
+      "summary": "Yellow interlocking floor trays found alongside white product trays on Truffle Line; potential segregation or cross-contact concern.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-07-13T12:31:50.702Z"
+      },
+      "status": "Open \u2014 no disposition or corrective action reported."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jams caused by dirty molds in magazine",
+      "summary": "Multiple mold jams at cold stamp section traced to molds with chocolate residue inside; molds appear to have been returned to magazine dirty after prior shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-13T13:12:00.949Z"
+      },
+      "status": "Open \u2014 root cause identified as cleaning gap, no corrective action reported yet."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "FFS ATP failure",
+      "summary": "ATP tests did not pass on FFS line; product emptied and Level 2 cleaning initiated; retest passed visual and ATP verification.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-13T10:13:00.875Z"
+      },
+      "status": "Resolved \u2014 cleaning verified and line released at 07:03."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Consider reviewing ATP sampling points and pre-startup cleaning verification protocols on FFS line \u2014 based on today's ATP failure requiring Level 2 re-clean."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding mold cleanliness inspection to ML4 shutdown checklist \u2014 based on multiple mold jams traced to chocolate-contaminated molds returned to magazine."
+    },
+    {
+      "plant": "L3",
+      "text": "Review tray color-coding and segregation protocols on Truffle Line \u2014 based on yellow floor trays found mixed with white product trays."
+    }
+  ]
+}

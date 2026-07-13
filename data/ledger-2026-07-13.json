@@ -1,0 +1,185 @@
+{
+  "date": "2026-07-13",
+  "headline": {
+    "eyebrow": "Active issues",
+    "text": "L3 closed *5 problems* in the window but still carrying 6 open items \u2014 4 on ML1 alone \u2014 plus slowdowns at L2 and a kitchen leak at L1."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 kitchen has a water leak that's impacting cooking; maintenance notified at 05:35 but no fix yet. Otherwise quiet.",
+    "L2": "FFS line failed ATP at 04:13, ran a Level 2 clean, and was back running by 07:03. ML3 depositor was left off over the weekend and is still struggling to reach temp as of 06:46 despite maintenance purging and pulling filters.",
+    "L3": "ML4 cleared a mold jam, temper issues, and a TG5 power fault, but TG3 is now down on a printer issue as of 07:13. ML1 has four open machine items: low temper, a Bosch alarm, a rejecting sensor, and C5 conveyor rollers being repaired. Truffle Line fixed a guillotine fault but is waiting for temper after a restart."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "FFS line failed ATP swab, required Level 2 clean",
+      "summary": "Morning ATP test did not pass; sanitation ran a full Level 2 clean, re-tested, and cleared the line to run.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-13T10:13:00.875Z"
+      },
+      "resolution": "Cleared at 06:41 \u2014 \"Level 2 cleaning was initiated; this passed visual inspection and ATP testing was satisfactory, so we can now begin\" (Claudio Tovar). Line running at 07:03."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 not powering on",
+      "summary": "TG5 main breaker would not power the unit; maintenance rigged it and brought it back online.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-07-13T11:41:07.666Z"
+      },
+      "resolution": "Fixed at 06:43 \u2014 \"TG5 is powering up right now\" (Preston Elmer)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line guillotine sticking product and faulting",
+      "summary": "Product stuck to the guillotine and threw a communication fault; maintenance cleared it and brought the line back.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-13T12:22:21.768Z"
+      },
+      "resolution": "Fixed at 06:58 \u2014 \"Guillotine is now running and no more ultrasonic issues. It had a communication fault that needed to be cleared\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at demolding during startup",
+      "summary": "Molds jammed at the demolding station while starting recirculation; lead cleared it in 5 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-13T10:31:27.668Z"
+      },
+      "resolution": "Cleared at 04:36 \u2014 \"it's clear now and molds are recirculating\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 first temper out of spec during startup",
+      "summary": "Initial temper sample failed; team made adjustments and was depositing inside 30 minutes.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-13T10:31:27.668Z"
+      },
+      "resolution": "Resolved by 05:19 \u2014 \"We are depositing\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 recurring mold jams at cold stamp section",
+      "summary": "Molds with dried chocolate inside \u2014 likely returned dirty to the magazine \u2014 jammed the cold stamp twice; team cleaned a plate and cleared both.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-13T12:32:33.913Z"
+      },
+      "resolution": "Cleared by 06:49 \u2014 \"Running\" (Itzel Chavez). Root cause identified at 07:12."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 kitchen water leak impacting cooking",
+      "summary": "Water leak in the S2 kitchen is affecting cook operations; maintenance was to address it when they arrive but no confirmation of fix.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-07-13T11:20:09.463Z"
+      },
+      "status": "Reported at 05:20, maintenance to address when they arrive per Justin at 05:35, no update by end of window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 depositor won't heat up, temps still low",
+      "summary": "Depositor was left off over the weekend and is struggling to reach 89 degrees; maintenance purged tempering devices and pulled filters but temps climbing slowly as of 06:46.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-07-13T11:22:58.122Z"
+      },
+      "status": "Temps coming up slowly as of 06:46 after maintenance purged and pulled filters; still not at target."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch alarm triggered, unit won't turn on",
+      "summary": "Bosch threw an alarm and will not power back on; maintenance was notified at 06:38 but no resolution posted.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-13T12:38:32.062Z"
+      },
+      "status": "Maintenance notified at 06:38, no update by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 down due to printer issue",
+      "summary": "TG3 went down at 07:13 with the same printer fault that hit TG5 earlier; no fix attempted yet.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-13T13:13:08.606Z"
+      },
+      "status": "Down as of 07:13, no resolution by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper very low, operator adjusting",
+      "summary": "Temper reading came in very low at 05:56; operator made adjustments but no follow-up on whether it stabilized.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-13T11:56:48.62Z"
+      },
+      "status": "Operator adjusting as of 05:56, no update by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sensor B100B rejecting excessive product",
+      "summary": "Sensor B100B is firing and rejecting too much good product; no root cause or fix mentioned.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-13T12:47:42.269Z"
+      },
+      "status": "Reported at 06:47, no update by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line waiting for temper after machine restart",
+      "summary": "Guillotine fix required a restart that wiped the recipe; line is waiting for temper to come back up.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-13T13:10:56.202Z"
+      },
+      "status": "Waiting for temper as of 07:10, no update by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C5 conveyor coner rollers not spinning",
+      "summary": "Coner rollers on conveyor belt C5 were not spinning; maintenance pulled them for repair at 07:15.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-13T13:15:44.987Z"
+      },
+      "status": "Maintenance removed rollers for repair at 07:15, no update on timeline or completion."
+    }
+  ]
+}
