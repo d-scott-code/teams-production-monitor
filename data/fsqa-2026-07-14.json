@@ -1,0 +1,183 @@
+{
+  "date": "2026-07-14",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L2 hold on *496,204* pieces of item 21098 pending additional testing \u2014 disposition expected later this week."
+  },
+  "summary": "One active quality hold at L2. L3 ML4 catch tray found in scrap bin, L3 ML1 Cavanna belt tore twice exposing potential FM risk, L2 ML2 demolding roller shedding loose pieces. All three plants saw quality events tied to equipment wear.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "496,204 pieces of item 21098 on hold pending test results",
+      "summary": "Product placed on hold today for additional testing; disposition decision expected later in the week.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Maria Moron Quintero",
+        "time_utc": "2026-07-13T17:59:51.721Z"
+      },
+      "status": "On hold \u2014 QA conducting additional testing, disposition pending."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "ML2 demolding roller shedding loose end pieces",
+      "summary": "Blue roller under demolding belt has end caps coming loose \u2014 potential for plastic or metal fragments to enter product if pieces detach fully.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-14T03:16:32.092Z"
+      },
+      "status": "Open \u2014 maintenance worked on roller at 21:16, line running but issue may recur."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna infeed belt tore twice in 12 hours",
+      "summary": "Belt replaced at 12:16 first shift, tore again at 20:25 second shift \u2014 operator found protruding metal part causing damage, maintenance corrected root cause.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-13T17:52:19.494Z"
+      },
+      "status": "Resolved \u2014 root cause (protruding metal part) identified and corrected by maintenance at 21:30."
+    },
+    {
+      "plant": "L3",
+      "title": "Catch tray found in ML4 scrap bin during emptying",
+      "summary": "Metal catch tray discovered in chocolate scrap bin at 04:17 \u2014 unclear if tray entered product stream or was isolated to waste collection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-14T10:17:25.988Z"
+      },
+      "status": "Open \u2014 tray found and removed, no evidence yet that it contacted saleable product."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 PTL leaking water onto production floor",
+      "summary": "Water leak detected at pre-tunnel cooling zone at 22:19 \u2014 maintenance called to address potential product contamination risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-14T04:19:28.777Z"
+      },
+      "status": "Open \u2014 maintenance notified, leak status at window close unknown."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 Tunnel 3 belt slipping, causing product to stick in doubles and triples",
+      "summary": "Intermittent belt stoppages created product clusters throughout third shift \u2014 line paused at 02:52 to clean salt buildup from drive, restarted at 03:59.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-14T08:47:50.737Z"
+      },
+      "status": "Resolved \u2014 belt cleaned, line resumed production; tunnel 3 belt stopped again at 06:54 first shift for roller cleaning."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bags opening at gusset seal",
+      "summary": "Bottom seal failures detected at 15:40 second shift \u2014 maintenance adjusted gusset punch, no defective bags boxed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-13T21:40:30.223Z"
+      },
+      "status": "Resolved \u2014 gusset punch adjusted by 15:54, line running with good seals; third shift made additional tweak at 22:22."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolding belt loose, causing stuck molds",
+      "summary": "Belt slipped three times during second shift startup (20:36, 20:42, 20:58) \u2014 maintenance tightened twice, root cause traced to loose roller end pieces.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-07-14T02:36:02.983Z"
+      },
+      "status": "Open \u2014 belt adjusted multiple times, underlying roller damage may cause recurrence."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix underweight bags due to chocolate-drop timing mismatch",
+      "summary": "Chocolate falling speed not synced with bag speed at start of first shift \u2014 sensor also faulted, maintenance addressed both issues by 08:29.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-13T13:57:00.612Z"
+      },
+      "status": "Resolved \u2014 timing corrected, sensor replaced, pouches met spec by mid-shift."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 labeler roller skipped during film threading",
+      "summary": "Third shift missed a guide roller when loading label stock at 03:00, causing label misalignment issues through rest of shift.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-07-14T13:15:49.309Z"
+      },
+      "status": "Resolved \u2014 first shift lead corrected threading, coached operator on startup checklist."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 dumping excessive chocolate",
+      "summary": "Temperature-control issue on depositor 4 causing high scrap rate \u2014 maintenance on site at window close.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-07-14T13:09:13.623Z"
+      },
+      "status": "Open \u2014 maintenance working on TG4, investigation ongoing."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "FFS knife cleaned three times in 24 hours",
+      "summary": "Blade required cleaning at 10:50 and 17:03 first shift, again at 02:03 third shift \u2014 frequency suggests buildup accumulating faster than normal.",
+      "severity": "low",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-13T16:50:42.096Z"
+      },
+      "status": "Open \u2014 blade cleaning completed each time within 10 minutes, no quality impact but elevated frequency noted."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Gluten-free verification test on Bequet caramel passed",
+      "summary": "Routine allergen test on S4 Bequet line at 08:35 returned negative for gluten \u2014 product cleared for continued production.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-07-13T14:35:10.59Z"
+      },
+      "status": "Resolved \u2014 test passed, no gluten detected."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Add photo or diagram of correct S3 labeler threading path to startup checklist \u2014 today's missed roller caused label issues for an entire shift."
+    },
+    {
+      "plant": "L2",
+      "text": "Inspect all ML2 demolding rollers for loose end caps and add roller-integrity check to changeover procedure \u2014 today's repeated belt slippage and loose pieces suggest wear pattern that could spread to other units."
+    },
+    {
+      "plant": "L2",
+      "text": "Review FFS blade cleaning intervals \u2014 three cleanings in 24 hours is above normal and may signal formula or temperature issue causing faster buildup."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding catch-tray and foreign-object checks to ML4 bin-emptying procedure \u2014 today's tray discovery suggests a gap in visual verification before scrap disposal."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML1 Cavanna belt inspection frequency and add check for protruding guide parts to startup and mid-shift checklists \u2014 today's double failure traced to a sharp edge that should have been caught earlier."
+    }
+  ]
+}

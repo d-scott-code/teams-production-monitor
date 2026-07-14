@@ -1,0 +1,341 @@
+{
+  "date": "2026-07-14",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 tunnel belt stopped *3 times* in 5 hours \u2014 still cleaning rollers at window close."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 tunnel 3 belt slipped repeatedly from 02:47 through 06:54, pausing the line three times for drive cleaning and roller work. Sollich 3 labeler had recurring issues starting at 03:00. Sollich 4 cleared a film guide spacing problem in 8 minutes.",
+    "L2": "ML3 cleared a film-open defect in 15 minutes. FFS routed film incorrectly at shift start but recovered in 27 minutes. ML2 demolding belt loosened twice overnight but maintenance fixed the root cause \u2014 loose roller pieces. Two lot changes on FFS completed smoothly after product ran short.",
+    "L3": "ML4 scraper bin filled and tripped the return pump breaker, down 1 hour total before clearing. MF Matrix sensor is down since 06:41 with maintenance on-site. ML1 replaced a torn Cavanna belt, stopped depositing on bad temper (cleared in 1 hour), and has a PTL water leak under repair. Truffle line sensor issue flagged at 06:58."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 TG film guide spacing off",
+      "summary": "Film guide spacing was slightly off causing line pause; maintenance dialed it back into position.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-07-13T14:42:58.976Z"
+      },
+      "resolution": "Cleared at 08:50 \u2014 maintenance adjusted spacing and line restarted (Nathan Topham)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS film routed incorrectly at startup",
+      "summary": "Film was threaded through the FFS machine incorrectly during startup, maintenance assisted with re-routing and gusset adjustment.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-07-13T13:22:36.749Z"
+      },
+      "resolution": "Cleared at 07:49 \u2014 \"Line is running\" after gusset adjustment (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 scraper on temper unit faulted low temp",
+      "summary": "Scraper faulted for low temperature; ran reheat cycle to bring temp up.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-07-13T21:36:56.279Z"
+      },
+      "resolution": "Cleared at 16:04 \u2014 \"Scraper is running now. Back to tempering\" (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bags open at bottom gusset",
+      "summary": "Bottom seals failing; maintenance corrected the gusset punch defect.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-13T21:40:30.223Z"
+      },
+      "resolution": "Cleared at 15:54 \u2014 \"The problem was solved\" (Wilson Amaris Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolding belt loose causing stuck molds",
+      "summary": "Demolding belt was loose; maintenance adjusted twice, then found loose pieces on blue roller ends and secured them.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-07-14T02:36:02.983Z"
+      },
+      "resolution": "Cleared at 21:21 \u2014 maintenance fixed roller pieces that came loose; \"The line is running again\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film coming out open",
+      "summary": "Packaging film seals were opening; operator made adjustments while line was paused.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-13T15:38:07.968Z"
+      },
+      "resolution": "Cleared at 10:02 \u2014 \"The line up\" after operator adjustments (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade needed cleaning",
+      "summary": "Routine blade cleaning pause at 10:50.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-13T16:50:42.096Z"
+      },
+      "resolution": "Cleared at 11:00 \u2014 \"Line is backup\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 caramel hopper showing separation",
+      "summary": "Funky separation visible in caramel hopper; lowered hopper level, mixing speed, and agitator speed to correct.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Aubrey Howe",
+        "time_utc": "2026-07-13T18:08:26.783Z"
+      },
+      "resolution": "Cleared at 12:33 \u2014 Alan Todd adjusted settings; Hervin confirmed product not affected."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS knife cleaning",
+      "summary": "Routine knife cleaning at 02:03.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-14T08:03:15.28Z"
+      },
+      "resolution": "Cleared at 02:13 \u2014 \"Line is back up after knife cleaning\" (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS lot changes due to WIP shortage",
+      "summary": "Line ran out of lot 63G WIP; completed two lot changes to keep running while awaiting more pallets.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-14T05:06:00.583Z"
+      },
+      "resolution": "Cleared at 04:41 \u2014 second lot change completed; \"Line is running\" (Zack Kurtz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna infeed belt replaced",
+      "summary": "Maintenance replaced the infeed belt on Cavanna.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-13T17:52:19.494Z"
+      },
+      "resolution": "Cleared at 12:16 \u2014 \"We start back up\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna infeed belt torn again",
+      "summary": "Infeed belt tore in corner; operator found sharp edge causing repeated failures and showed maintenance.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-14T02:25:58.716Z"
+      },
+      "resolution": "Cleared at 21:30 \u2014 root cause identified and fixed; \"Infeed belt is working good now\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 bad depositing temperature",
+      "summary": "Depositor temperature went out of range; stopped depositing until temperature recovered.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-14T02:44:37.953Z"
+      },
+      "resolution": "Cleared at 21:40 \u2014 \"Good temperature we are now running!\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 scraper bin full and return pump breaker trip",
+      "summary": "Scraper bin filled with valves closed; return pump wouldn't start due to sitting, required manual emptying, then breaker tripped.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 2",
+        "time_utc": "2026-07-14T09:40:52.156Z"
+      },
+      "resolution": "Cleared at 04:47 \u2014 breaker trip identified and reset; \"return pump scraped is now working\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix scale issues",
+      "summary": "Line down for 40 minutes with scale problem.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-14T10:38:32.33Z"
+      },
+      "resolution": "Cleared at 04:38 \u2014 \"it's up and running back\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam in cold stamp",
+      "summary": "Mold jammed in cold stamp; maintenance assisted in clearing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-07-14T11:32:55.771Z"
+      },
+      "resolution": "Cleared \u2014 no further mention after initial report; line appears to have resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bag speed mismatch and sensor",
+      "summary": "Chocolate drop speed not matching bag speed caused underweight; then sensor detecting bag for chocolate send failed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-13T13:57:00.612Z"
+      },
+      "resolution": "Cleared \u2014 line reported \"running good\" at 01:26 (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna doubles and no-cut issue",
+      "summary": "Cavanna producing double products and not cutting; operator made adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-13T18:39:29.243Z"
+      },
+      "resolution": "Cleared at 14:24 \u2014 operator adjustments resolved double products and cutting issue (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix 45-minute startup delay",
+      "summary": "Maintenance was working on the line at startup; delayed start to 11:15.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-14T05:27:52.289Z"
+      },
+      "resolution": "Cleared at 01:26 \u2014 \"The Line is running good\" (Raoul Lubain)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 tunnel 3 belt stopping repeatedly",
+      "summary": "Belt on tunnel 3 experiencing intermittent stoppages causing product to stick and cluster; line paused three times for salt cleaning and roller work.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-14T08:47:50.737Z"
+      },
+      "status": "At 06:54 Victor Romero moving product out of tunnel to clean rollers; decorator also clogged and being cleaned."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 labeler having recurring issues",
+      "summary": "Label machine running well until 03:00, then started having frequent issues; roller was skipped when feeding label.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-07-14T10:16:17.77Z"
+      },
+      "status": "At 07:15 Nathan Topham notes roller completely skipped during label feed; followed up with Luis on cause."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 high nut usage",
+      "summary": "Almond usage is running high; Curt Willis requested team work on reducing scrap.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-07-14T10:58:52.042Z"
+      },
+      "status": "Flagged at 04:58; no corrective action reported by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 missing 10mm wrench",
+      "summary": "10mm wrench from ML2 flow-wrap shadow board cannot be found; reported missing by 2nd and 3rd shifts.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-07-13T21:02:14.017Z"
+      },
+      "status": "Alan Todd asked all shifts at 06:17; no one has located the wrench."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix sensor not reading product",
+      "summary": "Machine down because sensor is not reading the product; maintenance on-site working on it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-14T12:41:47.597Z"
+      },
+      "status": "Machine still down at 07:05; \"maintenance is still here\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 dumping excessive chocolate",
+      "summary": "TG4 is dumping a lot of chocolate; maintenance already working on fixing the problem.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-07-14T13:09:13.623Z"
+      },
+      "status": "Reported at 07:09; maintenance working on problem at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 PTL leaking water",
+      "summary": "Pre-tunnel (PTL) is leaking water; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-14T04:19:28.777Z"
+      },
+      "status": "Reported at 22:19; maintenance called, no resolution update by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line Cavanna 2 sensor B150 problem",
+      "summary": "Sensor B150 on Cavanna 2 flow-wrapper is causing issues; maintenance working on the line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-07-14T12:58:36.774Z"
+      },
+      "status": "Reported at 06:58; maintenance already working on line at window close."
+    }
+  ]
+}
