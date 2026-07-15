@@ -1,0 +1,105 @@
+{
+  "date": "2026-07-15",
+  "headline": {
+    "eyebrow": "Allergen flag",
+    "text": "L1 S3 ended shift with *almonds* in pecan rework area \u2014 team coached on area segregation and cleaning."
+  },
+  "summary": "One active hold resolved: L1 S2 pouches with illegible Best By dates reworked after printer adjustment. Allergen cross-contact near-miss on S3. Two tool-control gaps (missing wrench L2, lost ruler L3). S4 packaging quality affecting L3 downstream.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 pouches \u2014 illegible Best By dates",
+      "summary": "MM7 printer produced illegible lot codes; 2+ pallets held, then reworked after Caleb York adjusted print window and label height.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-15T00:48:46.483Z"
+      },
+      "status": "Resolved on shift \u2014 printer adjusted, all held pallets reworked and released back to line by 22:23."
+    }
+  ],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 torn wrap causing L3 scrap",
+      "summary": "L3 reports torn wrap and exposed caramel pieces from S4 jamming Multiformat Matrix; 16 lbs scrap in 4 hours despite 2-person inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-07-14T20:46:12.461Z"
+      },
+      "status": "Open \u2014 L3 requested S4 solve torn-wrap root cause; Curt Willis acknowledged."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 belt fraying",
+      "summary": "One belt on Cavanna 2 starting to fray; maintenance notified to assess replacement before further deterioration.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-14T14:00:10.928Z"
+      },
+      "status": "Resolved on shift \u2014 maintenance notified and addressing."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix \u2014 unwrapped candies sticking",
+      "summary": "Significant appearance deviations observed during monitoring: unwrapped candies adhering to one another.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-07-15T00:09:31.381Z"
+      },
+      "status": "Open \u2014 QA recommended reinforce continuous monitoring to ensure optimal final-product quality."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 sucotherm drain needs attention",
+      "summary": "Jorel Gourdin flagged area and drain under S2 sucotherm for immediate cleaning attention.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-07-14T13:40:08.634Z"
+      },
+      "status": "Open \u2014 flagged to Katya Farnsworth and Justin Garner for follow-up."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "S3 almonds in pecan rework area",
+      "summary": "Katya Farnsworth found cart with almonds sitting in the pecan rework area at end of 1st shift; risk of cross-contact if ingredients co-mingle.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-15T13:14:16.963Z"
+      },
+      "status": "Open \u2014 Katya coaching Luis Falcon's team to ensure allergen areas left clean and segregated at shift end."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding label print legibility to S2 hourly quality checks \u2014 based on today's MM7 illegible Best By event that required hold and rework."
+    },
+    {
+      "plant": "L1",
+      "text": "Review end-of-shift allergen area inspection and handoff protocol for S3 \u2014 based on almonds left in pecan rework zone."
+    },
+    {
+      "plant": "L1",
+      "text": "Review S4 flow-wrap setup and quality checks \u2014 today's torn wrap generated 16 lbs scrap at L3 downstream despite double inspection."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider shift-start/end tool shadow-board photo protocol for ML2 \u2014 10-size wrench missing entire shift with no resolution."
+    },
+    {
+      "plant": "L3",
+      "text": "Review tool control procedures for MF Matrix \u2014 ruler lost mid-shift, no immediate recovery or FM investigation noted."
+    }
+  ]
+}

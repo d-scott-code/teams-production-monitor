@@ -1,0 +1,378 @@
+{
+  "date": "2026-07-15",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 S2 tunnel 3 belt slipped for *3 hours* on salt buildup \u2014 cleared by 18:22, then ran out of almonds at 19:43, resumed 21:42."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran almond cluster on S2 with multiple salt-related belt issues and a material outage; S3 fought MM5 X-ray errors and checkweigher drift through the afternoon; S4 had an overheating motor requiring a cooling fan.",
+    "L2": "L2 ML2 truffle line saw repeated belt transitions causing product to jump and blow off, resulting in ~68K pieces of accumulation transferred to L3 for rework. ML3 paused briefly for flow wrap adjustments at shift start.",
+    "L3": "L3 ML1 ran a changeover with recurring Cavanna chain and printer issues that cleared by early morning. Truffle line found a broken Cavanna 1 sensor. MF Matrix ran out of pouches mid-shift with no returns completed."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Barrels of chocolate (10169 HER) plugged in at 13:45 and should be ready for use."
+    },
+    {
+      "plant": "L1",
+      "text": "Katya flagged ongoing cold chocolate barrel deliveries; Justin scheduling a meeting to fix the process."
+    },
+    {
+      "plant": "L2",
+      "text": "Alan Todd directed that ML2 truffle accumulation (2 pallets, ~68K pieces) be sent to L3 for wrapping on Cute Cavanna 3rd shift tomorrow."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 MM5 X-ray safety switch misaligned",
+      "summary": "X-ray threw error at 13:22, maintenance found safety switch far apart; adjusted front legs and sensor, working better by 17:43.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-14T19:22:09.435Z"
+      },
+      "resolution": "Cleared by 17:43 \u2014 \"It's working better\" after adjustments (Caleb York). Delia confirmed at 16:57: \"MM5 restored and working very well.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S2 tunnel 3 belt slipping on salt buildup",
+      "summary": "Belt slipping reported at 16:28, multiple cleaning and tension adjustments; cleared by 18:22 with belt washer running.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-14T22:28:06.195Z"
+      },
+      "resolution": "Cleared at 18:22 \u2014 \"Started at the Enrober again at 6:05 PM. Belt running with little to no slippage\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 ran out of almonds",
+      "summary": "Line down at 19:43 for material; trailer arrived at L3, almonds delivered, line resumed at 21:42.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-15T01:43:19.938Z"
+      },
+      "resolution": "Cleared at 21:42 \u2014 \"Line resumed at 9:05 PM\" after almond delivery (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 mixing tank out of calibration after caustic clean",
+      "summary": "Post-clean calibration drift caught at 10:19; maintenance recalibrated and cleared by 11:06.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-07-14T16:19:13.987Z"
+      },
+      "resolution": "Cleared at 11:06 \u2014 \"Calibration is done in the kitchen\" (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tunnel 1 belt frayed",
+      "summary": "Frayed piece found at 17:43, line paused; maintenance cut, removed frayed section, ATP passed, line resumed at 18:12.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-14T23:43:37.921Z"
+      },
+      "resolution": "Cleared at 18:12 \u2014 \"Fray cut, removed, area passed ATP; line running again\" (Caleb York, William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 product pieces sticking together",
+      "summary": "Salt buildup and caramel trailing from depositor caused pieces to stick in groups of 2\u20135; depositor and tunnel 2 belt adjustments separated drops by 18:44.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-15T00:34:43.129Z"
+      },
+      "resolution": "Cleared at 18:44 \u2014 \"Changes made at depositor and tunnel 2 belt have drops adequately separated\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 M7 printer illegible",
+      "summary": "Printer illegible at 18:48, pallets placed on hold; label window adjusted, print improved by 21:44.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-15T00:48:46.483Z"
+      },
+      "resolution": "Cleared at 21:44 \u2014 \"M7 printer improved a bit; letters and numbers now more clearly visible\" (Alfonsina Gil). Caleb York worked on it."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM4 sealer causing accumulation",
+      "summary": "Sealer issues on MM4 at 03:35 caused accumulation; team fixed issues, passed accumulation, line started running by 03:55.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-07-15T09:35:07.289Z"
+      },
+      "resolution": "Cleared at 03:55 \u2014 \"We pass all the accumulation and line start running\" (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 scheduled reheat",
+      "summary": "Temper bar steady at 3.8\u20134.1, line down for scheduled reheat at 04:07; line started at 06:27.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-15T10:07:20.577Z"
+      },
+      "resolution": "Cleared at 06:27 \u2014 \"Line started\" (Joseph Scott)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 belt transition causing product to jump",
+      "summary": "Product jumping at belt before metal detector starting 21:20; maintenance adjusted nose bar, line up 22:43, back down 23:00, finally cleared by 01:35.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-15T04:21:20.222Z"
+      },
+      "resolution": "Cleared at 01:35 \u2014 \"Line is up\" after repeated adjustments (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolder belt replaced",
+      "summary": "Old belt shifted excessively preventing product flow; new belt installed, ATP passed, satisfactory results by 13:57.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-14T19:57:13.861Z"
+      },
+      "resolution": "Cleared at 13:57 \u2014 \"Demolder belt replaced, ATP testing satisfactory\" (Claudio Tovar)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap adjustments needed",
+      "summary": "Line stopped at 06:33 for flow wrap adjustments at shift start; line up by 06:54.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-07-15T12:33:55.543Z"
+      },
+      "resolution": "Cleared at 06:54 \u2014 \"The line up\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna chain and jaw issues through changeover",
+      "summary": "Chain installed backwards 2nd shift, causing cutting bar to split in two; corrected, cavanna running by 23:43.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-15T03:12:27.849Z"
+      },
+      "resolution": "Cleared at 23:43 \u2014 \"2345 cavanna is now running\" (Molding Line 1 Flow-Wrap). Chain was on backwards, turned around, then problems cleared."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 phasing and alignment off",
+      "summary": "Cavanna 2 needed phasing sensor, timing, infeed belts, and guide rails adjusted after cleaning at 07:39; likely due to rollers placed in different positions during reassembly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-07-14T13:39:39.798Z"
+      },
+      "resolution": "Cleared at 07:39 \u2014 Nathan Ruiz adjusted phasing sensor, timing, aligned infeed belts and guide rails. Nathan noted: \"High possibility rollers were put in different positions from where they were originally.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 printer sensor head misaligned",
+      "summary": "Printer not working at 04:00, line paused; maintenance adjusted sensor head position, working well by 05:19.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-15T10:24:44.778Z"
+      },
+      "resolution": "Cleared at 05:19 \u2014 \"It was the sensor head position. Maintenance adjusted it. It's working well now\" (Raoul Lubain)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 FW motor overheating",
+      "summary": "FW stopping every 20 seconds at 16:02, scrap building fast; maintenance placed fan on overheating motor, line running but motor still overheating as of 20:30.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-07-14T22:02:26.652Z"
+      },
+      "status": "Fan installed on motor, line running as of 16:37 but Preston confirmed motor still overheating at 20:30. Erandy asked if motor replacement falls under warranty."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 rework boats/cans open, traceability unclear",
+      "summary": "Karen flagged at 06:22 that most boats in rework are open, can't confirm if they went through cap sealing and X-ray; tag doesn't indicate pending processes, some cans have candy exposed.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-15T12:22:14.528Z"
+      },
+      "status": "Karen identified the issue at 06:22 during rework; no confirmation of hold or disposition by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Chocolate barrel supply \u2014 arriving cold",
+      "summary": "Katya reports past few weeks of struggle with chocolate barrels requested as level 1; every delivery arrives cold and not usable. Justin scheduling meeting to fix process.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-14T18:14:57.714Z"
+      },
+      "status": "Justin scheduling a meeting to discuss process with Rich Brierley, Rose Smuin, German Cervantes. Ongoing issue as of 12:14 PM."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 checkweigher vs. static scale drift",
+      "summary": "Weight discrepancy between checkweigher and static scale reported at 14:26; Troy and maintenance making adjustments to keep difference under 2g.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-14T20:26:17.872Z"
+      },
+      "status": "Troy and maintenance adjusting as of 14:26; no confirmation that scales now match within spec."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tape machines not working",
+      "summary": "EEs accumulating too many boxes at 20:28 due to tape machine failure; only one maintenance person on shift to address.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-15T02:28:11.938Z"
+      },
+      "status": "Victor called for maintenance at 20:28. Caleb noted \"only one maintenance man here, and he's yet to take lunch.\" No resolution by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 printer issues",
+      "summary": "Luis reported printer issues on MM3 at 03:55; no follow-up on resolution.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-07-15T09:55:53.855Z"
+      },
+      "status": "Reported at 03:55 with no further updates in window."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 exhaust fan blower wheel broken",
+      "summary": "Exhaust fan for SL2 kitchen has broken blower wheel; William ordering replacement, may see condensation from flue pipe in meantime.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Lopez",
+        "time_utc": "2026-07-15T00:27:05.434Z"
+      },
+      "status": "William will order blower wheel and install when it arrives. Reported at 18:27."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 truffle line product blow-off and accumulation",
+      "summary": "Ongoing challenge with product blown off during wrapping; 1st shift accumulated ~2 pallets (~68K pieces); Alan directed accumulation be sent to L3 for Cute Cavanna wrapping 3rd shift tomorrow, but emphasized need to improve line performance.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-07-14T23:19:25.474Z"
+      },
+      "status": "Alan's message at 17:19 describes ongoing issue: product being blown off, ~2 pallets accumulation. Directed to L3 for rework but emphasized \"not a permanent solution\" \u2014 need to improve line performance and reduce blow-offs."
+    },
+    {
+      "plant": "L2",
+      "title": "Packaging material shortage for Friday production",
+      "summary": "Luis flagged at 13:16 that item 40944-V2 (layflat caddie) has qty 0 in NetSuite; need 100K for Friday 7/17 production, only 40K on PO arriving 7/22.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Pino",
+        "time_utc": "2026-07-14T19:16:45.76Z"
+      },
+      "status": "Ethan working with AM Lithography to expedite; 40K due 7/22 but need 100K by 7/17. As of 14:18 PM."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 missing #10 wrench",
+      "summary": "Number 10 wrench cannot be found; reported at shift start 22:02 and again at shift end 05:37.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-07-15T04:02:52.114Z"
+      },
+      "status": "Missing at 3rd shift start (22:02) and still missing at shift end (05:37)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix out of pouches #41227",
+      "summary": "IMS confirmed out of pouches #41227-v1 at 05:35, no other location; 3rd shift ran out, no returns completed, 1st shift has no pouches to run.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-15T11:35:16.45Z"
+      },
+      "status": "Mayra confirmed out of stock at 06:00. Itzel reported at 07:01: \"3rd shift run out of pouches, and no returns were completed.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 belt fraying",
+      "summary": "Grey reported at 08:00 that one belt on Cavanna 2 starting to fray; maintenance notified to see if can be replaced.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-14T14:00:10.928Z"
+      },
+      "status": "Maintenance notified at 08:00; no update on replacement by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix suction cup failed",
+      "summary": "Raoul called maintenance for suction cup failure at midnight; no resolution shown.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-15T06:00:47.91Z"
+      },
+      "status": "Maintenance called at 00:00; no update by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 broken sensor",
+      "summary": "Broken sensor found in Cavanna 1 at 07:03.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-07-15T13:03:28.825Z"
+      },
+      "status": "Reported at 07:03 with no follow-up on repair or replacement."
+    }
+  ]
+}
