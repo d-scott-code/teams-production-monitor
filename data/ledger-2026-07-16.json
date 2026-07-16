@@ -1,0 +1,234 @@
+{
+  "date": "2026-07-16",
+  "headline": {
+    "eyebrow": "Materials flag",
+    "text": "L3 Truffle line lost WIP for Cute Cavanna \u2014 still searching at window close after *overnight* hunt."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel across all three Sollich lines with six resolved machine issues. S3 had the busiest day: corn syrup hose replaced, MM4 cam settings adjusted for empty pouches, checkweigher overflow cleared during CIL, MM3 infeed forks freed by maintenance, and jar belt cleaned for buildup. S4 held 24 lbs of defective wrap and stopped cooking early when kettles and reserve filled.",
+    "L2": "L2 ML2 flow-wrapper faulted repeatedly on door and sealing through the morning \u2014 resolved by 06:32 after multiple hard resets. ML3 had a quality miss when an operator forgot to re-enable caramel pistons after a chocolate purge, producing chocolate-only pieces; RCA in progress. ML3 also ran out of caramel at 06:48. FFS ran clean aside from a brief scale error and a false fire alarm.",
+    "L3": "L3 ML1 had a temper dip to 0.9 at 04:14 \u2014 team paused, adjusted crystallization, and recovered to 0.5 by 04:45. Truffle line discovered missing WIP for Cute Cavanna at 23:55; teams searched all trailers and the dock through the night with no success as of 04:55. MFM completed a changeover and restarted at 09:15."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Hawaiian Host spec revision submitted and live in Safety Chain by 07:10 to reflect 400 lb target fill instead of 480."
+    },
+    {
+      "plant": "L2",
+      "text": "ML2 sent 4 rolls of flow wrap and all unwrapped truffle pallets over to L3 for rework."
+    },
+    {
+      "plant": "L3",
+      "text": "Boxes on Truffle line found contaminated with pieces of another product; damaged boxes separated."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 corn syrup hose leak",
+      "summary": "Flexible hose transferring corn syrup leaked, possibly due to temperature or loose connection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-07-15T16:50:08.844Z"
+      },
+      "resolution": "Removed flexible hose, replaced with heavy-duty Chocotech-spec hose, cleaned and sanitized, ATP passed, returned to service at 10:50."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM4 sealing empty pouches",
+      "summary": "MM4 creating sealed pouches without product inside due to cam timing issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-15T16:59:47.451Z"
+      },
+      "resolution": "Updated cam settings at 10:59 \u2014 product no longer dropping when pouch doesn't open."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 checkweigher reject bins full, product passing",
+      "summary": "MM3 and MM4 checkweigher reject bins full; overweight and underweight product passing through uncaught.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-15T17:58:49.094Z"
+      },
+      "resolution": "Line paused at 12:00 for CIL on MMs, bins cleared, running by 12:25."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 infeed drive belts stuck",
+      "summary": "Infeed drive belts not moving; forks that pick up pouches were stuck in position.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-15T20:15:17Z"
+      },
+      "resolution": "Maintenance freed stuck forks at 14:15 \u2014 working properly."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 jar belt scraper vibration",
+      "summary": "Noise started on jar belt; large roller had chocolate buildup causing scraper to vibrate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-07-16T12:42:34.285Z"
+      },
+      "resolution": "Stopped to clean roller at 06:42, line back to run at 07:03."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 wrap roll defect",
+      "summary": "24.15 lbs of wrap placed on hold due to improper winding causing machine issues.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-07-15T20:55:46.055Z"
+      },
+      "resolution": "Material segregated and held at 14:55."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS scale error and knife cleaning",
+      "summary": "Line down for scale error fault and knife maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-16T08:38:12.876Z"
+      },
+      "resolution": "Line back up at 02:43."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 FW door fault and sealing failure",
+      "summary": "Flow-wrapper door kept faulting out and film not sealing; print image option disappeared from HMI.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-16T11:54:01.996Z"
+      },
+      "resolution": "Maintenance performed multiple hard resets; door reset, print image option returned, film sealing properly by 06:32."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 depositor stopped for cleaning",
+      "summary": "Brief production stop to clean the depositor.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-07-15T21:01:16.718Z"
+      },
+      "resolution": "Cleaning completed, running again at 15:09."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 CIL pause",
+      "summary": "Scheduled line stop for change-in-line inspection.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-07-15T22:34:30.429Z"
+      },
+      "resolution": "CIL completed, line working again at 16:52."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS fire alarm",
+      "summary": "Fire alarm triggered during production.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-16T10:56:46.979Z"
+      },
+      "resolution": "No fire \u2014 false alarm. Line back up at 05:13, fire drill successful per Ben."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS lot changeover 63H to 63G",
+      "summary": "Routine lot change from 63H to 63G.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-16T11:24:14.827Z"
+      },
+      "resolution": "Changeover completed, line back up at 05:37."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper out of range",
+      "summary": "Temper dropped to 0.9 at 04:14, line paused to retake temper reading and adjust.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-16T10:14:33.302Z"
+      },
+      "resolution": "Adjusted crystallization by 0.1 (80.1 to 80.0) at 04:05, temper recovered to 0.5 by 04:45 \u2014 line resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM changeover delay",
+      "summary": "Changeover delayed waiting on materials from warehouse and level 2 clean requested by QA.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-15T13:34:09.497Z"
+      },
+      "resolution": "Changeover ready at 08:40, line started at 09:15."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "ML3 operator error \u2014 chocolate-only pieces produced",
+      "summary": "Operator purged chocolate and turned off caramel pistons but forgot to re-enable them at startup, producing chocolate shells without caramel filling.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-07-16T12:06:01.559Z"
+      },
+      "status": "Cooler full of chocolate-only trays at 06:06 causing late start; Alan requested operator follow-up and RCA at 06:21."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 out of caramel",
+      "summary": "Line ran out of caramel with tank just under half full.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-07-16T12:48:10.541Z"
+      },
+      "status": "Reported at 06:48; no further updates in the window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line missing WIP for Cute Cavanna",
+      "summary": "Line could not start because WIP pallets for Cute Cavanna flow-wrapper are missing; teams searched all trailers and dock overnight.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-16T05:55:33.744Z"
+      },
+      "status": "Still searching as of 04:55; Alan verified all trailers on dock at 01:01 with no WIP found."
+    }
+  ]
+}

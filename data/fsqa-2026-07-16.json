@@ -1,0 +1,119 @@
+{
+  "date": "2026-07-16",
+  "headline": {
+    "eyebrow": "FM risk",
+    "text": "L3 Truffle Line equipment piece found without bolts for *second time* \u2014 foreign material hazard remains open."
+  },
+  "summary": "One active hold (L1 S4 packaging material), one recurring foreign-material risk at L3 Truffle Line, and a pest control flag at L2 drinking fountain. L1 S3 checkweighers allowed out-of-spec product to pass until bins were cleared; operator coaching completed.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S4 packaging material on hold \u2014 defective wrap roll",
+      "summary": "24.15 lbs of wrap placed on hold due to defect: roll improperly wound, causing machine issues.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-07-15T20:55:46.055Z"
+      },
+      "status": "On hold pending disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Truffle Line equipment piece missing bolts \u2014 recurring FM risk",
+      "summary": "Equipment piece found without bolts again this morning; same issue flagged previously, indicating potential for loose hardware to enter product.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-16T12:46:26.014Z"
+      },
+      "status": "Open \u2014 maintenance notified, root cause for recurrence not yet identified."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 checkweighers allowed out-of-spec product to pass",
+      "summary": "MM3 and MM4 reject bins were full; overweight and underweight products passed through until operator cleared bins and was coached.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-15T17:58:49.094Z"
+      },
+      "status": "Resolved \u2014 bins cleared during CIL pause, operator coaching completed."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 operator error caused delayed start \u2014 caramel pistons off",
+      "summary": "Operator turned off caramel pistons during chocolate purge but forgot to re-enable them at startup; cooler filled with chocolate-only trays, delaying caramel deposition.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-16T12:08:42.897Z"
+      },
+      "status": "Resolved \u2014 line running; RCA scheduled per Alan Todd."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line boxes contaminated with pieces of another product",
+      "summary": "Incoming boxes used on Truffle Line contain stuck pieces from another product; damaged and contaminated boxes being separated.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-07-15T17:35:12.407Z"
+      },
+      "status": "Open \u2014 contaminated boxes being separated as found."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Dead bugs accumulating around drinking fountain daily",
+      "summary": "Recurring dead bug accumulation near drinking fountain; logged in pest control log, cart re-sanitized and towels replaced daily.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-07-16T02:27:00.749Z"
+      },
+      "status": "Open \u2014 logged for pest control; interim sanitization and towel changes in place."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Sweco leaking during QA walkthrough",
+      "summary": "QA identified Sweco leaking out the sides during walkthrough; operators corrected and cleaned up.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-15T22:48:59.075Z"
+      },
+      "status": "Resolved \u2014 operators fixed leak and cleaned area."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 corn syrup hose leak replaced and ATP-passed",
+      "summary": "Flexible corn syrup transfer hose was leaking; replaced with heavy-duty hose, cleaned, sanitized, and ATP-verified before return to service.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-07-15T16:50:08.844Z"
+      },
+      "status": "Resolved \u2014 ATP passed, hose in service."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review checkweigher reject-bin monitoring protocol on S3 \u2014 based on today's MM3/MM4 event where full bins allowed out-of-spec product to pass."
+    },
+    {
+      "plant": "L2",
+      "text": "Review ML3 startup checklist to include caramel-piston verification after purge operations \u2014 based on today's operator error that delayed caramel deposition."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding torque-check or fastener-inspection step to Truffle Line startup checklist \u2014 based on today's recurring missing-bolts finding, second occurrence this week."
+    }
+  ]
+}
