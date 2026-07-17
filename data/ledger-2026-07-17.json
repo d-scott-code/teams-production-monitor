@@ -1,0 +1,290 @@
+{
+  "date": "2026-07-17",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 FFS overweight bags kicked *75+ per hour* on bucket malfunction \u2014 line also down 40 minutes on photo-eye calibration."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 had a belt contamination scare overnight that forced a new work order and full restart by 02:56. Sollich 4 dialed in viscosity after switching to 714 lb batch size and landed at 223\u00b0F. Sollich 3 cleaned a stuck belt guide and flagged a capper speed setting issue.",
+    "L2": "FFS line struggled with overweight bags \u2014 bucket 1 vibrating abnormally, bucket 12 overfilling \u2014 and kicked 75+ bags per hour through end of window. Film change at 03:07 took 40 minutes to recalibrate photo eye. ML3 has been in cleaning since 10:00 yesterday; wash caddy top valve faulting overnight.",
+    "L3": "Truffle line lost dark chocolate pump motor at 04:00 and delayed tempering 45 minutes; cleared by maintenance. First shift found metal detector belt off, hoses disconnected, and rails misaligned \u2014 17 bins accumulated at startup. Flow wrap inventory low: only 2 partial rolls staged."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "WIP label mismatch flagged: package printed 63J but IMS label showed 63H on first pallet of 21139."
+    },
+    {
+      "plant": "L1",
+      "text": "Bay door #1 is off track; ADS called for parts and repair."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Tunnel 2 caramel buildup led to belt floor-contact concern",
+      "summary": "Significant caramel accumulation on Tunnel 2 rollers discovered at shift start; cleaning disassembly raised QA concern that belt touched floor before reassembly.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-17T03:31:03.173Z"
+      },
+      "resolution": "Line stopped, almonds emptied, belt cleaned, 3 ATPs passed, new work orders issued, and line restarted at 02:56."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 mixing tank not blending 1,000 lb batches",
+      "summary": "Ingredients not mixing properly in new tank at full batch size; viscosity inconsistent and below target through multiple cook cycles.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-07-16T14:30:35.151Z"
+      },
+      "resolution": "Reduced batch size to 714 lb, adjusted cook temp to 223\u00b0F, and landed in-spec viscosity (30,700\u201334,000 cP) by end of window."
+    },
+    {
+      "plant": "L1",
+      "title": "Equipment ATP failures on new/old equipment",
+      "summary": "Equipment did not pass 2nd or 3rd ATP test after cleaning.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-16T22:02:48.447Z"
+      },
+      "resolution": "2nd and 3rd cleaning completed with passed ATP results and sponge samples collected at 22:42."
+    },
+    {
+      "plant": "L1",
+      "title": "C2 belt guide damaging product on Sollich 3",
+      "summary": "White plastic strip missing a bolt caused pieces to slide underneath and get damaged; excessive scrap reported.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-17T03:19:39.013Z"
+      },
+      "resolution": "Cleared in 3 minutes \u2014 maintenance fixed the guide and line restarted at 21:52."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS photo eye out of calibration after film change",
+      "summary": "Film change at 03:07 triggered print mark and photo eye issues; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-17T09:07:49.945Z"
+      },
+      "resolution": "Line up at 03:16 \u2014 40 minutes down for recalibration."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS down waiting for product",
+      "summary": "Packaging line stopped at 10:42 with no WIP available to run.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-16T16:42:45.615Z"
+      },
+      "resolution": "Line restarted at 11:28 \u2014 46 minutes down."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS paused to separate 2 lots",
+      "summary": "Line stopped to segregate mixed lot codes on 1st shift.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-07-16T17:44:43.127Z"
+      },
+      "resolution": "Lots separated and line restarted at 12:07 \u2014 23 minutes down."
+    },
+    {
+      "plant": "L3",
+      "title": "Dark chocolate pump motor not functioning",
+      "summary": "Motor on dark chocolate tank would not send chocolate to temper tank and gave no error code; delayed 04:00 tempering start.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-17T09:57:26.992Z"
+      },
+      "resolution": "Nelson Cook cleared \u2014 pump running at 04:14. Tempering started at 04:45."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM buckets not opening",
+      "summary": "Multiple buckets failing to open on MF Matrix; maintenance called at 08:51.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-16T14:51:52.17Z"
+      },
+      "resolution": "Nathan Ruiz made adjustments; running well with no stuck buckets by 09:31."
+    },
+    {
+      "plant": "L3",
+      "title": "Sollich 1 enrober screw drive faulted",
+      "summary": "Enrober screw drive on Truffle line threw fault at 02:28; maintenance en route.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-17T08:29:54.045Z"
+      },
+      "resolution": "Faults removed by maintenance at 05:11 \u2014 Jose Vasquez confirmed cleared."
+    },
+    {
+      "plant": "L3",
+      "title": "Cute cavanna cutter malfunction",
+      "summary": "Cutter on Truffle line failed; maintenance called at 04:17.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-17T10:17:09.734Z"
+      },
+      "resolution": "Running at reduced speed (10 minutes per box) by 05:02."
+    },
+    {
+      "plant": "L3",
+      "title": "Guillotine fault on Truffle line",
+      "summary": "Guillotine threw fault at 05:35; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Greer",
+        "time_utc": "2026-07-17T11:35:06.332Z"
+      },
+      "resolution": "Fixed by Jose Vasquez at 05:40 \u2014 5 minutes down."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line startup: metal detector belt off, hoses disconnected, rails misaligned",
+      "summary": "First shift arrived to find metal detector belt off track, hoses disconnected, belt loose, and rails out of alignment \u2014 17 bins of product accumulated during fixes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-17T12:52:26.963Z"
+      },
+      "resolution": "Issues corrected and product through metal detector by 06:35; line running."
+    },
+    {
+      "plant": "L3",
+      "title": "Pallet spec incorrect for FG-30903 rotation",
+      "summary": "Pallet placement spec did not match current order requirements; floor flagged rotation error.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-07-16T20:50:29.382Z"
+      },
+      "resolution": "Rafael updated spec in SafetyChain, Angel printed and distributed to team by 16:38."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 decorator nozzles plugged, BAR pushing 4",
+      "summary": "Multiple decorator nozzles plugged; BAR (presumed viscosity or pressure metric) at 4 and climbing; Joseph Scott planned a reheat.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-17T10:38:03.475Z"
+      },
+      "status": "Joseph noted intent to take a reheat at 04:38; no confirmation of execution or outcome."
+    },
+    {
+      "plant": "L1",
+      "title": "Belt after metal detector stopping repeatedly on Sollich 3",
+      "summary": "Belt after MD stopped multiple times; crew cleaned rollers at 05:25.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-07-17T11:25:55.646Z"
+      },
+      "status": "Rollers cleaned; no follow-up on whether stops continued."
+    },
+    {
+      "plant": "L1",
+      "title": "Bay door #1 off track",
+      "summary": "Bay door sections bent and door off track; ADS called to order parts.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "William  Lopez",
+        "time_utc": "2026-07-16T20:55:46.138Z"
+      },
+      "status": "Parts ordered; no ETA from ADS as of 14:55."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 capper conveyor speed set to 60 Hz vs. 45 Hz centerline",
+      "summary": "Capper belt found running at 60 Hz instead of 45 Hz centerline; likely cause of overfeeding and timing issues.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-17T12:57:57.261Z"
+      },
+      "status": "Troy flagged at shift start; no confirmation of correction or whether speed was reset to 45 Hz."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS kicking 75+ overweight bags per hour \u2014 bucket vibration and overfill",
+      "summary": "Bucket 1 vibrating abnormally, bucket 12 overfilling and not emptying; bags hitting high 30s and low 40s piece count vs. 17\u201319 spec.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-17T07:04:54.696Z"
+      },
+      "status": "Maintenance requested at 01:04; no resolution by end of window. Zack posted images of plate 2 and bucket 12 at 05:55."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 down for cleaning since 10:00 yesterday",
+      "summary": "Molding Line 3 ran out of caramel at 10:00 on 7/16 and entered Level 3 cleaning; no restart signal by end of window.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-07-16T17:09:12.519Z"
+      },
+      "status": "Cleaning plan posted at 13:03; no update on completion or restart as of 07:16."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 wash caddy top valve faulting",
+      "summary": "Top valve on wash caddy not turning and throwing faults at start of 3rd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-17T10:21:59.996Z"
+      },
+      "status": "Flagged at 04:21; no follow-up on repair or workaround."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow wrap inventory low \u2014 only 2 partial rolls staged",
+      "summary": "Truffle line has no flow wrap staged except 2 partial rolls and what is loaded in the machine.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-17T12:59:14.962Z"
+      },
+      "status": "Flagged at 06:59; no restocking update by end of window."
+    }
+  ]
+}

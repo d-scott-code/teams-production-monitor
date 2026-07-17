@@ -1,0 +1,123 @@
+{
+  "date": "2026-07-17",
+  "headline": {
+    "eyebrow": "MD offline",
+    "text": "L3 Truffle metal detector belt offline at shift start \u2014 *17 bins* accumulated before correction, no detection coverage during startup."
+  },
+  "summary": "Two active food-safety events: L3 Truffle ran without metal detection at startup, 17 bins accumulated. L1 S2 stopped midshift after QA raised concern that Tunnel 2 belt touched floor during reassembly \u2014 product dumped, line cleaned, ATP passed, restarted on new work orders. L2 FFS label mismatch (63J printed vs 63H on IMS) and chronic overweight-bag issue under investigation.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 Tunnel 2 product dumped after floor-contact concern",
+      "summary": "QA flagged risk that Tunnel 2 belt touched floor during drive reassembly after 2nd shift cleaning; 3rd shift stopped line, emptied all almonds, cleaned belt, passed ATP, and restarted on new work orders for clean cutoff.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-17T06:42:31.756Z"
+      },
+      "status": "Resolved \u2014 line restarted 02:56 after ATP pass and new WO creation."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 Tunnel 2 belt floor-contact risk during reassembly",
+      "summary": "QA concern that Tunnel 2 belt may have contacted floor when 3rd shift reassembled drive after 2nd shift cleaning; line stopped, product dumped, belt cleaned and ATP-verified before restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-17T06:42:31.756Z"
+      },
+      "status": "Resolved \u2014 ATP passed, new work orders issued, line restarted 02:56."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line metal detector belt offline at shift start",
+      "summary": "1st shift found MD belt off, hoses disconnected, belt loose, rails misaligned; 17 bins of product accumulated before metal detector was operational at 06:35.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-17T12:52:26.963Z"
+      },
+      "status": "Resolved on shift \u2014 equipment corrected, product in MD by 06:35, line running."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 capper conveyor speed set 33% over centerline",
+      "summary": "Capper belt found at 60 Hz vs 45 Hz centerline; identified as root cause of overfeeding and timing issues.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-17T12:57:57.261Z"
+      },
+      "status": "Open \u2014 speed corrected, team reminded that faster \u2260 higher output without comprehensive timing adjustments."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS code-date mismatch on WIP pallet",
+      "summary": "First pallet of WIP 21139 had package code 63J but IMS label showed 63H; team asked to verify all remaining pallets.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-07-16T17:38:28.028Z"
+      },
+      "status": "Open \u2014 verification in progress across remaining WIP inventory."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS chronic overweight bags \u2014 75+ per hour rejected",
+      "summary": "Bucket 1 abnormal vibration, bucket 12 overfilling and not emptying, bags running high 30s\u2013low 40s vs 17\u201319 spec; maintenance investigating.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-17T07:04:54.696Z"
+      },
+      "status": "Open \u2014 maintenance called, buckets 1 and 12 flagged for inspection."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 damaged plastic guide strip causing excessive scrap",
+      "summary": "White plastic strip on C2 belt missing bolt, not straight, pieces sliding underneath and getting damaged; maintenance replaced.",
+      "severity": "low",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-17T03:19:39.013Z"
+      },
+      "status": "Resolved \u2014 3-minute pause, guide fixed, line running."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "New/old equipment failed 2nd and 3rd ATP tests",
+      "summary": "Equipment cleaning verification failed on attempts 2 and 3; crew performed additional cleaning, passed ATP and collected sponge samples for lab on final attempt.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-16T22:02:48.447Z"
+      },
+      "status": "Resolved \u2014 ATP passed 04:42, sponge samples sent to lab for APC/EB confirmation."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review belt-reassembly procedure for S2 Tunnel 2 to include floor-clearance check or physical stop before reinstallation \u2014 based on today's floor-contact concern that required product dump and line rework."
+    },
+    {
+      "plant": "L1",
+      "text": "Lock critical machine speeds (like S3 capper conveyor) in HMI or add visual centerline label at control \u2014 today's 60 Hz vs 45 Hz deviation drove overfeeding and was attributed to speed-equals-output mindset."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider daily bucket-vibration audit on FFS during startup \u2014 today's 75+ overweight rejects/hour tied to bucket 1 vibration and bucket 12 overfill suggest early detection would reduce scrap."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding metal-detector belt tension and alignment to Truffle startup checklist \u2014 today's offline MD at shift start echoes equipment left in non-ready state after maintenance or cleaning."
+    }
+  ]
+}
