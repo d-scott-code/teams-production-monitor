@@ -1,0 +1,96 @@
+{
+  "date": "2026-07-18",
+  "headline": {
+    "eyebrow": "Food safety event",
+    "text": "L1 S2 enrober wire mesh damaged and replaced \u2014 all *pieces accounted for*, new belt installed and ATP-passed."
+  },
+  "summary": "One active food-safety event resolved: damaged wire mesh in L1 S2 enrober, all pieces recovered and disposed, new mesh installed. Roller wear flagged for follow-up inspection. L3 MFM GMP housekeeping deviations repeated for second time this week.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Damaged wire mesh in S2 enrober replaced",
+      "summary": "Wire mesh belt stopped turning, found damaged with caramel and almonds inside enrober and mesh; maintenance replaced entire belt, all pieces of damaged mesh accounted for and disposed, new mesh ATP-passed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Lolo Bencomo",
+        "time_utc": "2026-07-17T15:45:41.885Z"
+      },
+      "status": "Resolved \u2014 new mesh installed at 11:33, ATP passed, line restarted at 14:06."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 roller wear may produce metal shavings",
+      "summary": "Grooves visible on Tunnel 2 roller ends; Curt Willis to evaluate during tomorrow's clean to eliminate risk of metal particles entering product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-07-17T19:00:55.993Z"
+      },
+      "status": "Open, awaiting inspection during next scheduled cleaning."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "MFM FIFO violation \u2014 newest WIP staged",
+      "summary": "Only 1 pallet of 4/14 date staged for production while older dates remain in staging; team reminded WIP must run first-in, first-out.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-18T12:43:01.197Z"
+      },
+      "status": "Open \u2014 reminder issued to 3rd shift team."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 trays with pink discoloration isolated",
+      "summary": "19 trays showing pink discoloration on cluster image; team coached not to use them.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-17T22:10:36.337Z"
+      },
+      "status": "Resolved \u2014 trays isolated from use."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bad product increase overnight",
+      "summary": "Zack Kurtz reported elevated reject rate across multiple shifts; no specific root cause identified.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-18T08:07:50.072Z"
+      },
+      "status": "Open \u2014 no corrective action logged."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "MFM GMP deviations repeated \u2014 second occurrence",
+      "summary": "Waste container without lid and scrap trays on cardboard instead of authorized yellow trays; same deviations corrected earlier this week, recurred on 1st shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-07-17T23:44:20.386Z"
+      },
+      "status": "Resolved \u2014 team leader notified, corrective action taken on shift."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding enrober mesh belt and roller visual inspection to S2 startup and weekly PM checklist \u2014 based on today's damaged mesh event and roller wear flagged at 19:00."
+    },
+    {
+      "plant": "L3",
+      "text": "Review GMP housekeeping verification frequency at MFM \u2014 same two deviations (waste lids, tray storage) corrected twice this week, suggesting gap in shift handoff or checklist adherence."
+    },
+    {
+      "plant": "L3",
+      "text": "Strengthen FIFO verification at MFM WIP staging \u2014 based on newest-date pallet staged ahead of older inventory on 3rd shift."
+    }
+  ]
+}

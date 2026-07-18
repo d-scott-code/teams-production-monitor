@@ -1,0 +1,113 @@
+{
+  "date": "2026-07-18",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 enrober belt failed at 08:20, replaced and back running by *14:06* \u2014 full wire mesh swap and deep clean."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 lost 6 hours to an enrober wire mesh failure \u2014 caramel and almonds fouled the belt, maintenance replaced it and the line restarted at 14:06. Sollich 3 ran caramel cluster with a brief capper jam overnight that cleared inside 20 minutes. Sollich 4 cooked Hawaiian Host caramel all day with no interruptions.",
+    "L2": "ML3 saw blowoffs past the 2nd chicane all evening and stopped at 20:07 for maintenance to check belts \u2014 still working on it at shift end. FFS reported elevated bad product counts overnight from multiple shifts, then completed a level 2 clean and passed ATP for Monday. ML2 ran without incident.",
+    "L3": "MF Matrix fought bag-sliding problems all day \u2014 Ray adjusted rails and pusher at 11:45 but accumulation continued into third shift. ML1 had a quick camera sensor fault at 04:07 (dirty sensor, cleaned, line running 10 minutes later). Truffle line and ML4 ran clean."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Enrober wire mesh belt failed and was replaced",
+      "summary": "Wire mesh stopped turning at 08:20 due to caramel and almond buildup inside the enrober; maintenance replaced the entire belt, production cleaned and tempered, and the line restarted at 14:06.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-07-17T14:20:09Z"
+      },
+      "resolution": "New wire mesh installed and working by 11:33, line restarted at 14:06 after tempering \u2014 \"The line has already started\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "Capper jamming from overfeeding caused accumulation",
+      "summary": "Accumulation built up overnight due to capper jams when overfed and lids not fully secured; line paused at 01:51 to clear and coach the team.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-18T01:51:09.189Z"
+      },
+      "resolution": "Cleared at 02:13 \u2014 \"We're restarting the line now\" (William Beattie) after coaching on jar feed rate and lid seating."
+    },
+    {
+      "plant": "L2",
+      "title": "Internet outage during fiber hookup",
+      "summary": "Plant-wide internet went down at 10:34 while facilities inspected and connected L2 to fiber.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-07-17T16:34:16.826Z"
+      },
+      "resolution": "Back online at 11:33 \u2014 \"You all should have high speed connection now\" (Chad Stone)."
+    },
+    {
+      "plant": "L2",
+      "title": "Sweco clamp nut threads stripped",
+      "summary": "One of the sweco clamp nuts lost its threads at 03:14; maintenance attempted to rethread it.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-18T09:14:21.433Z"
+      },
+      "resolution": "Rethreaded and reinstalled at 05:47 \u2014 \"Maintenance was able to get this rethreaded and it was put back on\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L3",
+      "title": "Camera sensor fault stopped ML1 line",
+      "summary": "Sensor fault at 04:07 triggered a line stop; maintenance and QA found a dirty sensor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-18T10:07:48.017Z"
+      },
+      "resolution": "Cleaned and back running by 04:17 \u2014 \"It was a dirty sensor. Line is up and running\" (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "ML3 blowoffs past 2nd chicane, line stopped for belts",
+      "summary": "Blowoffs started at 19:11, improved briefly, then continued; Brandon stopped the line at 20:07 suspecting belt movement and called maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-18T01:11:21.385Z"
+      },
+      "status": "Line down since 20:07 for maintenance to inspect belts; no restart confirmation by end of shift."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS seeing elevated bad product overnight",
+      "summary": "Zack reported a spike in bad product at 02:07 from multiple shifts throughout the night; no root cause identified.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-18T08:07:50.072Z"
+      },
+      "status": "Line completed level 2 clean and passed ATP at 05:48; bad product issue not addressed before shutdown."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bags not sliding, pouches accumulating",
+      "summary": "Bag texture causing persistent slide failures since 09:32; Ray adjusted side rails and pusher at 11:45 but Kimberly reported continued pouch accumulation at 23:56.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-17T15:32:30.493Z"
+      },
+      "status": "Still accumulating as of 23:56 on third shift despite earlier adjustments; Spanish note at 20:16 reports constant problems due to bag texture."
+    }
+  ]
+}
