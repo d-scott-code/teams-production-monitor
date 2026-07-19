@@ -1,0 +1,63 @@
+{
+  "date": "2026-07-19",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L3 MFM detected *2 pieces* of caramel twist wrap in product \u2014 matrix emptied, inspected, and cleared back to production."
+  },
+  "summary": "One foreign material event at L3 MFM resolved within shift. L3 ML1 continues to see air leaks in packaging seal tests \u2014 3 of 5 bars failed at midshift, 4 of 10 failed at swing shift.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Caramel twist wrap detected in MFM product",
+      "summary": "Line lead found 2 pieces of caramel twist wrap running through MFM during production; matrix was stopped, emptied, inspected, and upstream areas re-verified before restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-07-18T21:26:46.382Z"
+      },
+      "status": "Resolved \u2014 matrix emptied, product verified, upstream areas re-checked, and line restarted."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Recurring air leaks in ML1 chocolate bar packaging",
+      "summary": "Water tests show 3 of 5 bars failed at 13:04 (midshift), then 4 of 10 failed at 15:42 (swing shift) with small leaks at package corners; line leader notified both times.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-07-18T19:04:51.103Z"
+      },
+      "status": "Open \u2014 recurring seal quality issue flagged to line leadership, investigation ongoing."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 visual cleaning check delayed at shift start",
+      "summary": "QA flagged at 05:30 that conveyor belt section and line cabin visual checks had not been performed; checks completed and passed by 05:46.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-07-19T11:31:15.761Z"
+      },
+      "status": "Resolved \u2014 visual inspection completed 16 minutes after flag; cabana passed."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding packaging material removal verification to MFM changeover checklist \u2014 based on caramel twist wrap detected during production after product switch."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding flowwrap seal parameter review to ML1 startup protocol \u2014 based on 7 of 15 bars failing water test across two shifts with corner leaks."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider pre-shift visual check timing reminder in ML1 startup checklist \u2014 based on conveyor/cabin checks not performed until 30 minutes into 3rd shift."
+    }
+  ]
+}

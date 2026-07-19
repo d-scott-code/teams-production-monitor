@@ -1,0 +1,101 @@
+{
+  "date": "2026-07-19",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 enrober went down for *3 hours* on high pressure \u2014 full reheat cleared it by 18:02."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 had a chocolate supply gap that required slowing to 60rr and switching from 10226 to 10200, then went down at 14:39 for a full reheat after the riser pump failed on high pressure \u2014 maintenance found 30 pounds of cold chocolate buildup and cleared it by 18:02. Sollich 2 ran clean with one brief scraper cleaning pause.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "Molding Line 1 ran through the shift but flagged air leaks on packaging in two separate water tests \u2014 3 of 5 bars at 13:04 and 4 of 10 at 15:42. MFM had a product sensor failure that cleared by 08:35 and a brief foreign material stop after finding two caramel twist wraps in the line \u2014 corrective inspection completed."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 enrober riser pump failed on high pressure",
+      "summary": "Riser pump would not start, alarm showed high chocolate pressure at turbotemper inlet, required full reheat and cleaning.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-18T20:38:34.054Z"
+      },
+      "resolution": "Cleared at 18:02 \u2014 line restarted after full reheat; maintenance found 30 pounds cold chocolate buildup in screw drive and nuts in wire belt (Dakota Adair)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 chocolate supply shortage",
+      "summary": "Warehouse out of 10226 chocolate with driver 90 minutes away, only 15 boxes left, risked MT temperature issues.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-18T18:27:07.674Z"
+      },
+      "resolution": "Cleared at 14:11 \u2014 slowed line to 60rr, switched work order to 10200 chocolate per matrix compatibility, 12 pallets of 10226 still en route (Nathan Topham, Paula Pena)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 almond bedding weight high",
+      "summary": "Almond weight running above target, needed adjustment to bedding thickness.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-07-18T17:20:49.293Z"
+      },
+      "resolution": "Cleared by 13:33 \u2014 bedding thinned out, subsequent weight checks in range, \"Great work bringing down the almond weights!\" (Justin Garner)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM product sensor failing",
+      "summary": "Sensor that reads product failed during first shift, maintenance worked the issue and restored function.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-18T14:27:07.723Z"
+      },
+      "resolution": "Cleared at 08:35 \u2014 \"This got fixed at 8:35am, the line is running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Foreign material found in MFM line during production",
+      "summary": "Two pieces of caramel twist wrap detected in line during caramel cups run, required stop and full inspection.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-07-18T21:26:46.382Z"
+      },
+      "resolution": "Cleared at 15:45 \u2014 matrix emptied, product verified, upstream areas re-checked to ensure compliance (Lorena Abreu)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM date ticket printer not working",
+      "summary": "Printer stopped producing date tickets during changeover, blocking label production.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-07-18T18:31:13.575Z"
+      },
+      "resolution": "Cleared at 12:37 \u2014 \"Done, the printer is ok\" (Fredy Montalvan)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L3",
+      "title": "ML1 packaging air leaks detected in water tests",
+      "summary": "Two separate vacuum tests flagged seal failures \u2014 3 of 5 bars at midshift, then 4 of 10 at 15:42 with leaks at flow-wrap corners.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-07-18T19:04:51.103Z"
+      },
+      "status": "Line leader notified at 13:04; issue persisted into second shift with 4 of 10 pieces showing small leaks at corners as of 15:42."
+    }
+  ]
+}
