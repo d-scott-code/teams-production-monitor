@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-20",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 Cavanna wrapper down since 06:55 \u2014 maintenance escalated to Chris Givens, *15 minutes out* as of window close."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 electrical connection blew and melted on the front end Z conveyor during morning clean \u2014 maintenance working through it. Sollich 2 setting up a first-time product run with guide rails and box print configuration still in progress at window close.",
+    "L2": "No issues. FFS line started at 06:08, batch verified, product meeting spec on piece count and appearance. ML3 depositing normally, all quality checks passing.",
+    "L3": "Cavanna wrapper on ML1 down since 06:55, won't start \u2014 maintenance on-site, Chris Givens called in. MF Matrix had two quick hits (low air pressure alarm, then feeding conveyors) but both cleared inside 10 minutes. Demolding belt damage flagged for follow-up. High-speed roll-up door won't shut off properly despite setpoint adjustments."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Third-shift pallet left without IMS label; Preston Tregaskis flagged for shift report follow-up to reinforce labeling discipline."
+    },
+    {
+      "plant": "L3",
+      "text": "Nathan Ruiz swapped out Cavanna infeed belt at 06:01 (separate from the later Cavanna down event)."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "MF Matrix low air pressure alarm blocked startup",
+      "summary": "Machine threw low air pressure alarm and would not turn on; maintenance called and cleared it quickly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-20T12:18:54.002Z"
+      },
+      "resolution": "Cleared at 06:26 \u2014 \"Got it running now\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix feeding conveyors stopped moving",
+      "summary": "Some feeding conveyors on MF Matrix stopped moving, bringing the machine down; Nathan Ruiz on-site troubleshooting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-20T12:54:40.462Z"
+      },
+      "resolution": "Cleared at 06:58 \u2014 \"Running.\" (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 electrical connection blew and melted on Z conveyor",
+      "summary": "Electrical connection on front end Z conveyor blew and melted; maintenance working on repair during morning clean.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-07-20T11:51:20.549Z"
+      },
+      "status": "Maintenance working on the issue as of 05:51; no update on completion by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 first-time product run setup incomplete",
+      "summary": "Pack area setup for first-time product run missing guide rails and needs box print configuration before line can start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-20T12:49:51.582Z"
+      },
+      "status": "Temper, bed load, and caramel ready as of 06:49; awaiting guide rails and box print setup to start line."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna wrapper won't start",
+      "summary": "Cavanna machine on Molding Line 1 won't start; maintenance on-site, escalated to Chris Givens who was 15 minutes out at window close.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-20T12:55:25.822Z"
+      },
+      "status": "Maintenance troubleshooting; Chris Givens called and 15 minutes out as of 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 demolding belt damaged with curled pieces",
+      "summary": "Demolding belt showing damage with curled pieces; flagged for Monday first-shift maintenance check, but Chris Givens being asked to look at it during Cavanna visit.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-07-19T14:40:36.05Z"
+      },
+      "status": "Chris Givens being asked to inspect during Cavanna call as of 07:01; originally scheduled for Monday maintenance."
+    },
+    {
+      "plant": "L3",
+      "title": "High-speed roll-up door won't shut off when closed",
+      "summary": "High-speed roll-up door appears to stay energized when closed; door stop setpoint adjustments in manual mode not resolving, keeps closing to -3%.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-07-20T11:14:08.33Z"
+      },
+      "status": "Nathan Ruiz tried changing door stop setpoint with no effect as of 06:12; still closing to -3% in manual mode."
+    }
+  ]
+}

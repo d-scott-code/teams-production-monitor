@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-20",
+  "headline": {
+    "eyebrow": "Equipment damage",
+    "text": "ML1 demolding belt at L3 showing *curled pieces* \u2014 QA flagged Saturday, supervisor requesting maintenance assessment to evaluate foreign-material risk."
+  },
+  "summary": "Two process flags in the window \u2014 damaged ML1 demolding belt at L3 with curled pieces under maintenance review for potential foreign-material risk, and one truffle pallet completed without IMS label affecting traceability.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Damaged demolding belt with curled pieces on ML1",
+      "summary": "Belt damage with curled pieces flagged by QA; maintenance reported partial correction but supervisor requesting follow-up assessment to determine if curled pieces pose foreign-material risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-07-19T14:40:36.05Z"
+      },
+      "status": "Open \u2014 supervisor requesting maintenance lead to assess belt and determine if curled pieces can be safely removed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Truffle pallet completed without IMS label",
+      "summary": "Third shift completed full pallet without applying IMS label despite notification at process start; impacts traceability and inventory accuracy.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-07-19T14:51:49.676Z"
+      },
+      "status": "Open \u2014 supervisor adding follow-up action to shift report to address labeling gap with third-shift team."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding belt condition inspection to ML1 startup checklist \u2014 based on the damaged demolding belt with curled pieces discovered mid-shift by QA."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding pallet-completion verification step to Truffle Line procedures \u2014 based on the full pallet finished without IMS label despite crew notification."
+    }
+  ]
+}
