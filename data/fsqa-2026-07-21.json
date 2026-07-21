@@ -1,0 +1,122 @@
+{
+  "date": "2026-07-21",
+  "headline": {
+    "eyebrow": "Equipment damage",
+    "text": "L3 ML4 cleaning roller found with *damaged blades* \u2014 possible metal shavings during prior shift, investigation open."
+  },
+  "summary": "One active equipment damage investigation at L3 ML4 with potential metal contamination risk. L3 Truffle belt broke twice but metal detector monitoring prevented product issue. L3 ML1 resolved seal integrity failures by adjusting water-test vacuum settings.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "ML4 back-off plow cleaning roller blades damaged",
+      "summary": "1st shift discovered cleaning roller with damaged blades still inside housing; unknown which shift caused damage, potential metal shavings in food-contact zone during prior cleaning operations.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-21T12:58:37.831Z"
+      },
+      "status": "Open \u2014 Chad Stone requested shift accountability and follow-up at shift exchange, no mention of product disposition yet."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line bottomer conveyor belt broke twice",
+      "summary": "Belt failed at 15:30 and again during test run at 17:10; maintenance replaced belt, line resumed 18:26 with metal detector monitoring increased per Preston Tregaskis.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-20T21:30:54.37Z"
+      },
+      "status": "Resolved \u2014 belt replaced, line running since 18:26 with no further issues and enhanced MD bin checks per 2nd shift QA."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 MM6 multihead weigher malfunction",
+      "summary": "MM6 intermittently dumps product incorrectly and loses timing after ~15 minutes of operation; line speed reduced from 51 to 40 to manage accumulation, Troy Baxter escalated for MM tech visit.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-20T19:03:48.487Z"
+      },
+      "status": "Open \u2014 running at reduced speed, Justin Garner coordinating tech support visit, issue beyond on-site maintenance capability."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix sensor failures causing mixing and overfills",
+      "summary": "Multiple fill-level sensor failures throughout shift caused hopper overfills and flavor mixing (toffee double-dumping); sensors repositioned, HMI reset, Nathan L1 called to site at 01:51 for system lock-up, manually cleared hoppers to restore function at 03:08.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-20T13:24:00.912Z"
+      },
+      "status": "Resolved \u2014 system running since 03:08, Nathan suspects glitch caused lock-up, no product on hold."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate bar seal integrity failures",
+      "summary": "Initial water test showed 4/5 bars leaking; three rounds of testing totaled 11/15 failures; root cause identified as water-test vacuum setting too high (15\u201317), corrected to 13, subsequent 10-bar test at 16:50 showed zero leaks.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-07-20T15:33:19.85Z"
+      },
+      "status": "Resolved \u2014 vacuum adjusted, Cavanna jaws rebuilt as precaution, testing normal since 16:50 with no further leaks."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt recurring tracking and fraying",
+      "summary": "Newly replaced C6 belt tracked north repeatedly, tore/frayed at 21:45 and 02:35, trimmed each time with cleaning/sanitizing; by end of window belt tracking south (opposite direction), Chris Givens coming in to assess root cause.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-21T03:45:14.304Z"
+      },
+      "status": "Open \u2014 line running but belt behavior unstable, Chad Stone asked if belt should be flipped, maintenance assessment scheduled 1st shift."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Standing water behind S2 equipment M678",
+      "summary": "Water leakage and pooling discovered behind M678 in S2 area; standing water flagged as microbial growth risk, area needs cleaning and sanitizing per Ebrima Dibba.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-07-21T11:00:53.447Z"
+      },
+      "status": "Open \u2014 flagged for immediate repair and sanitation, no indication cleaning completed within window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line WIP containers returned wet from cleaning",
+      "summary": "1st shift found truffle containers with water inside; Itzel Chavez requested 3rd shift coaching on drying containers before returning to production floor.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-21T12:36:54.776Z"
+      },
+      "status": "Resolved \u2014 coaching requested and acknowledged by Kimberly Morales for 3rd shift team."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S2 area walk-through checklist for environmental hazards \u2014 standing water behind M678 suggests drainage or leak-detection gaps in routine inspection."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding blade integrity check to ML4 cleaning-roller maintenance SOP \u2014 today's damaged-blade discovery echoes setup/teardown risk and unclear shift accountability."
+    },
+    {
+      "plant": "L3",
+      "text": "Review C6 belt installation and tracking procedures at ML1 \u2014 newly replaced belt has frayed/torn three times in 24 hours with directional tracking reversals suggesting alignment or tensioning issue."
+    },
+    {
+      "plant": "L3",
+      "text": "Add water-test vacuum setting to ML1 startup checklist \u2014 today's 11 seal failures were caused by test equipment set to 15\u201317 instead of spec 13, contributing to extended troubleshooting and jaw rebuild."
+    }
+  ]
+}

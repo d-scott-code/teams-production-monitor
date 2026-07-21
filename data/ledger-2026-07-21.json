@@ -1,0 +1,178 @@
+{
+  "date": "2026-07-21",
+  "headline": {
+    "eyebrow": "Belt tracking",
+    "text": "L3 ML1 C6 belt tracked north then south across *five separate events* \u2014 trimmed each time but still drifting at 07:13"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran at reduced speed all day after MM6 began failing intermittently \u2014 accumulation built up twice requiring line pauses. Materials shortages flagged for buckets and pecans.",
+    "L2": "ML3 ran steady through the window. FFS team working film sensor tuning with maintenance. Affogato changeover executed on schedule despite some floor confusion.",
+    "L3": "ML1 fought two big problems: a 6-hour water leak scare that turned out to be test equipment miscalibration, and a C6 belt that was replaced recently but keeps tracking off \u2014 trimmed five times in 24 hours. MF Matrix had sensor lockup overnight, cleared by manually cycling hoppers. Truffle bottomer belt snapped twice but running by evening."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Hawaiian Host caramel completed 16 barrels on first shift; 13 barrels from April still on hold awaiting disposition."
+    },
+    {
+      "plant": "L1",
+      "text": "Troy scheduled MM tech visit to diagnose chronic MM6 timing and dump issues."
+    },
+    {
+      "plant": "L3",
+      "text": "WDS recommends cleaning depositor pistons and rotary valves with cocoa butter as lubricant on every product change."
+    },
+    {
+      "plant": "L3",
+      "text": "Seven pallets of caramel truffle bite rework remain \u2014 same count as yesterday, possible miscount."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "ML1 water leak test failures traced to miscalibrated test equipment",
+      "summary": "15 bars tested with only 4 passing water tests; jaw rebuild completed but leaks persisted until team discovered vacuum setting on test machine was 15-17 instead of 13.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-07-20T15:33:19.85Z"
+      },
+      "resolution": "Cleared at 16:50 \u2014 vacuum adjusted to 13, then 10 bars tested with 0 leaks (Melissa Zavala)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line bottomer conveyor belt failure",
+      "summary": "Belt broke at 15:30, was replaced, then broke again during test run at 17:10.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-20T21:30:54.37Z"
+      },
+      "resolution": "Cleared at 17:57 \u2014 running 5 minutes with no issues, depositing again at 18:26 (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix sensor lockup causing hopper overfill and flavor mixing",
+      "summary": "Sensor moved by product beneath belt stopped reading, hoppers overfilled and mixed flavors; alarms showed empty when full.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-21T05:33:50.653Z"
+      },
+      "resolution": "Cleared at 03:08 \u2014 Nathan came from L1, manually emptied hoppers until auto-detection resumed; likely a glitch lockup (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 demolding belt frayed edge",
+      "summary": "Cavanna shutdown at start of window for frayed demolding belt edge needing trim.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-07-20T13:15:40.093Z"
+      },
+      "resolution": "Cleared at 08:48 \u2014 belt edge trimmed and repaired (Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sensor B150 false rejections",
+      "summary": "Chocolate reject sensor B150 began rejecting good product during first shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-20T14:59:54.255Z"
+      },
+      "resolution": "Cleared by 09:00 \u2014 maintenance adjusted sensor in-line."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna belt C10 misalignment",
+      "summary": "Wrapper went down at 09:10 when belt C10 tracking threw off alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-07-20T15:10:56.318Z"
+      },
+      "resolution": "Cleared at 09:15 \u2014 roller was not pressed in, running good now (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temperature alarm paused depositing",
+      "summary": "Bad temperature reading stopped chocolate depositing at 18:37.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-21T00:37:44.441Z"
+      },
+      "resolution": "Temperature good at 18:54, depositing resumed (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 loose belt at shift start",
+      "summary": "Cavanna 2 down at 06:51 \u2014 one belt needed tensioning, 19 bins accumulated.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-21T12:51:03.324Z"
+      },
+      "resolution": "Fixed by 06:56 (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 MM6 intermittent timing and dump failures",
+      "summary": "Multipacker 6 runs correctly for 15 minutes then dumps product incorrectly and has timing issues with no changes; causing high scrap or accumulation buildup.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-20T19:03:48.487Z"
+      },
+      "status": "Line running at reduced speed (40 vs 51) to manage MM6 instability. Troy reports issue beyond his abilities; Chris J assisting and scheduling MM tech visit."
+    },
+    {
+      "plant": "L1",
+      "title": "Bucket shortage for 30710-Case1 production Tuesday",
+      "summary": "Need 1,320 buckets (40244) and lids (40247) for Tuesday; vendor can only supply 360 extra, total 839 vs requirement.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-07-20T16:30:08.351Z"
+      },
+      "status": "Martin flagged at 18:24 for 9:45 meeting to determine options; boxes (41223) confirmed arriving Tuesday morning."
+    },
+    {
+      "plant": "L1",
+      "title": "Pecan inventory running low with production through Wednesday",
+      "summary": "Six pallets on hand (6,945 lb total) with dark chocolate pecan production continuing; changeover starting at 13:00 today.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ricardo Tovar",
+        "time_utc": "2026-07-21T08:11:43.838Z"
+      },
+      "status": "Curt asked about incoming supply at 06:38; Chad asked if MRC saw this in 2-week materials review yesterday."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt chronic tracking \u2014 recently replaced but drifting north then south",
+      "summary": "Belt trimmed five times across three shifts; tracks north for hours then switches to south at shift change despite recent replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-21T03:39:36.378Z"
+      },
+      "status": "Down at 06:45 when belt moved south; maintenance trimming as of 07:13. Alan and Frederick discussed flipping belt when more resources available at first shift."
+    }
+  ]
+}
