@@ -1,0 +1,109 @@
+{
+  "date": "2026-07-22",
+  "headline": {
+    "eyebrow": "Food-safety event",
+    "text": "L3 ML1 glycol leak contaminated *three totes* of chocolate during belt maintenance \u2014 product scrapped, totes sent to wash."
+  },
+  "summary": "Three active holds: damaged Graham box at L2 Grinding, 2+ pallets unsealed jars at L1 S3, and ~6 pallets misdated boxes at L1 S2 (resolved via rework). L3 Matrix cross-contact: 2 mints found in milk truffle boxes.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Unsealed jars held for rework",
+      "summary": "2+ pallets (unknown exact count) of S3 jars not sealed by capper \u2014 held, will be re-run through sealing machine.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-22T04:57:49.190Z"
+      },
+      "status": "On hold pending rework through capper."
+    },
+    {
+      "plant": "L2",
+      "title": "Damaged Graham box held",
+      "summary": "One box of Grahams on hold \u2014 outer box broken, possibly inner bag damaged from forklift forks.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Leandro",
+        "time_utc": "2026-07-22T11:57:45.521Z"
+      },
+      "status": "On hold pending QA disposition."
+    },
+    {
+      "plant": "L1",
+      "title": "Misdated boxes reworked",
+      "summary": "~6 pallets S2 boxes printed without date due to printer fault \u2014 held, reworked during shift, released.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-22T07:12:09.057Z"
+      },
+      "status": "Resolved \u2014 date corrected, boxes reworked and released same shift."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Glycol leak contaminated chocolate",
+      "summary": "ML1 C6 belt disassembled for replacement at 01:43; glycol leaked into three totes of chocolate \u2014 product scrapped, totes sent to wash bay.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-22T09:19:41.629Z"
+      },
+      "status": "Product scrapped, totes decontaminated; line restarted 03:45 after belt replacement and ATP pass."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Sealed pouches caught at load",
+      "summary": "S2 operators found 20 pre-sealed pouches during loading \u2014 screened out before filling, supplier feedback requested.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-21T18:15:56.213Z"
+      },
+      "status": "Resolved \u2014 pouches removed, operations normal; QA tracking supplier lot."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Dirty pin mold flagged",
+      "summary": "ML1 mold inspection found one pin mold with residue \u2014 flagged during routine check.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-22T13:05:12.852Z"
+      },
+      "status": "Open \u2014 mold removed from circulation for cleaning."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "Mints found in milk truffle boxes",
+      "summary": "Matrix operator found 2 mint pieces inside milk truffle boxes during packing \u2014 cross-contact from adjacent product stream.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-07-22T03:16:45.498Z"
+      },
+      "status": "Open \u2014 team inspecting conveyor feed; no additional mints found as of window close."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Add S3 capper verification to end-of-batch checklist \u2014 based on 2+ pallets unsealed jars discovered only at QA inspection."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding belt-removal glycol isolation step to ML1 maintenance checklist \u2014 based on today's leak during C6 replacement that contaminated three totes."
+    },
+    {
+      "plant": "L3",
+      "text": "Review Matrix feed-conveyor product segregation \u2014 based on 2 mints in milk truffle boxes suggesting cross-contact at hopper stage."
+    }
+  ]
+}

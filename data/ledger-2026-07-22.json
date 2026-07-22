@@ -1,0 +1,310 @@
+{
+  "date": "2026-07-22",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 FFS was down *2.5 hours* overnight on a broken bolt in the cutting blade assembly \u2014 back up at 03:28 and running to spec."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran HER almonds all shift with short stops for Matrix 6 gripper adjustments (cleared by midshift) and a 27-minute Tunnel 3 salt buildup clear at 21:20. Sollich 3 spent much of 2nd and 3rd shift troubleshooting caramel viscosity and oil separation in the depositor; cook temp raised from 237.5\u00b0 to 238.5\u00b0, hopper level lowered, and management cleared the line to run at 21:52 \u2014 stable through shift end with two pallets of unsealed jars on hold for rework.",
+    "L2": "FFS was down from 01:04 to 03:28 (2.5 hours) after a cutting blade bolt broke off inside the holder during routine maintenance; drilled out, knife and holder replaced, running to spec since restart. Grinding and ML3 ran without breaks.",
+    "L3": "Truffle Line had chillers fault at 04:47, back up by 05:01; tempermeter printer cover broken, line using ML4 backup unit. ML1 replaced C6 belt overnight after tracking failure (01:43\u201303:43) with glycol leak into two chocolate totes during disassembly \u2014 totes scrapped and sent to wash bay, line restarted. C7 belt flagged misaligned at 06:45 and camera fault at 07:00, both under review at window close. MF Matrix had recurring bucket 7 & 10 opening faults and printer head fouling throughout the shift; 3rd shift stopped production for one hour at 02:16 for high check weigher blow-offs, back up and stable by 04:24."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Weekly tool inventory shows more missing tools since last week; Katya Farnsworth asked for help recovering them and following checkout standard."
+    },
+    {
+      "plant": "L1",
+      "text": "Candyco PECO pallet supply dropped to 185 on-hand; Kirk Nickel ordered two emergency truckloads for delivery today."
+    },
+    {
+      "plant": "L2",
+      "text": "One box of Grahams placed on hold after forklift damage; 3rd shift FL operator coached on inspecting pallets during offload."
+    },
+    {
+      "plant": "L3",
+      "text": "MF Matrix EE found two mints inside milk truffle boxes at 21:17; team continuing to inspect as conveyor is filled."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 caramel viscosity low and oil separating in depositor",
+      "summary": "Caramel viscosity readings consistently low through 2nd and 3rd shift despite cook temp increases from 237.5\u00b0 to 238\u00b0 to 238.5\u00b0; depositor showed oil layer on top, water activity spiked to 0.60 from earlier 0.40\u20130.43 range, raising concern about water intrusion.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-22T00:17:39.308Z"
+      },
+      "resolution": "Cleared at 21:52 \u2014 management and QA agreed \"system needs to actualize to adjustments... viscosity and aW look ok... keep running as normal\" after lowering depositor hopper level to reduce agitation and butter separation (Jorel Gourdin). Final piece dimensions and organoleptic checks in spec."
+    },
+    {
+      "plant": "L1",
+      "title": "Matrix 6 gripper arms opening pouches too soon",
+      "summary": "Gripper arms on multipack machine 6 were closing before pouches fully opened, causing product misses \u2014 1 in 100 pouches after Ray and Chris adjusted the physical cam and turned on bottom pouch tapper.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-07-21T16:54:50.692Z"
+      },
+      "resolution": "Cleared at 11:54 \u2014 gripper arms adjusted, bottom pouch tapper enabled, \"only 1 miss in 100 pouches\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "Tunnel 3 slipping and stopping from salt buildup",
+      "summary": "Compressed air for the salt brush at the end of Tunnel 3 was turned off, allowing salt to accumulate under the belt and cause slipping \u2014 line paused to clear rollers and scrapers.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-22T03:20:22.069Z"
+      },
+      "resolution": "Cleared at 21:47 \u2014 \"We've started the line again\" after removing rollers, clearing salt, and resetting (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 jars not sealed by capper",
+      "summary": "Unknown quantity of jars failed to seal during 3rd shift; QA verifying which jars affected for rework.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-22T04:57:49.19Z"
+      },
+      "resolution": "Cleared at 01:33 \u2014 \"Two pallets and one partial shipment were affected... placed on hold and will need to be passed through the sealing machine again\" (Angelica Perez)."
+    },
+    {
+      "plant": "L1",
+      "title": "Box date printer failing to print correct date",
+      "summary": "QA unable to change box printer date, resulting in almost 6 pallets of boxes without date codes \u2014 line continued while troubleshooting, boxes will be reworked during reheat.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-22T07:10:12.555Z"
+      },
+      "resolution": "Cleared at 01:14 \u2014 \"They have figured it out and changed it to the correct\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "Belt C1 & C2 tracked off after enrober",
+      "summary": "Cooling tunnel belts after enrober tracked off, stopped to clean chocolate buildup from rollers.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-07-22T07:10:58.605Z"
+      },
+      "resolution": "Cleared at 01:42 \u2014 \"Line is running now\" after cleaning rollers (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 enrober reheat",
+      "summary": "Scheduled reheat on Sollich 2 enrober; hard chocolate cut and moved to melt, second 20-minute reheat cycle required.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-22T09:54:35.876Z"
+      },
+      "resolution": "Completed at 04:58 \u2014 \"Reheat is complete. There is no hard chocolate remaining under the decorator... We are getting into temper\" (Joseph Scott)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS cutting blade bolt broken off inside holder",
+      "summary": "During lot change and blade cleaning, bolt snapped off inside the knife holder and could not be extracted; line down from 01:04 to 03:28 (2.5 hours) while maintenance drilled out the broken bolt, replaced knife and holder.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-22T07:04:21.842Z"
+      },
+      "resolution": "Cleared at 03:28 \u2014 knife and holder replaced, \"blade still moves freely\" but \"we are going to run and see how it cuts.\" At restart: \"not seeing any issue with the blade and pouches are meeting spec\" (Zack Kurtz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix high check weigher blow-offs and weight variation",
+      "summary": "3rd shift experiencing 4 out of 10 pouches rejected by check weigher despite raising target weight to 480g; hoppers 7 & 10 not opening consistently, scale hopper zeroed out, centerline settings adjusted \u2014 stopped production at 02:16 waiting for maintenance.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-22T07:00:16.322Z"
+      },
+      "resolution": "Cleared at 03:19 \u2014 \"Line is back up\" after maintenance intervention. By 04:24: \"Line is running well without kickoffs from check weigher\" (Kimberly Morales). Down approximately 1 hour."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt tracking failure with glycol contamination",
+      "summary": "C6 belt tracking off at 01:43; during belt replacement (estimated 1\u20132 hours), glycol leaked into two totes of chocolate when belt was disassembled \u2014 totes scrapped and sent to wash bay.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-22T07:43:54.71Z"
+      },
+      "resolution": "Cleared at 03:43 \u2014 \"Starting the line back up\" after belt replaced and ATP swab cleared (Alan Greer). Chocolate contamination scrapped (Imperial, 03:19)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line chillers not working",
+      "summary": "Chillers on Truffle Line stopped functioning, maintenance called immediately.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-22T10:47:24.807Z"
+      },
+      "resolution": "Cleared at 05:01 \u2014 \"Chiller are back up and running, we threw into night mode and back into program\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix buckets 7 & 10 not opening",
+      "summary": "Feed buckets 7 and 10 failing to open intermittently, causing weight variation and check weigher rejects; maintenance reset machine, adjusted sensors, eventually removed and reinstalled scales.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-21T13:27:18.846Z"
+      },
+      "resolution": "Cleared at 12:08 \u2014 \"Running\" after maintenance removed scales and reinstalled (mfmatrix). Recurred 3rd shift but cleared again by 03:19."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober weight out of spec",
+      "summary": "Piece weight well outside product spec at 07:30, operator notified to make adjustments.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-07-21T13:30:52.317Z"
+      },
+      "resolution": "Cleared at 07:40 \u2014 \"Weight looks good; we are within the parameters required by the product specifications\" (David Zuniaga)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt loose and rubbing on structure",
+      "summary": "C6 conveyor belt observed loose and rubbing against equipment, causing dust and product residue accumulation; maintenance adjusting tension.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-21T13:35:19.274Z"
+      },
+      "resolution": "Cleared at 09:08 \u2014 \"The C-6 belt is running correctly\" after Chris G. and Nathan R. adjusted it (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix printer head fouling repeatedly",
+      "summary": "Printer head building up heavy ink on right side, causing faults and requiring repeated cleaning cycles throughout 1st and 2nd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-21T15:52:31.49Z"
+      },
+      "resolution": "Cleared through repeated cleaning cycles; last cleaning at 10:31 followed by stable run (mfmatrix)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna printer alarm and empty ink tank",
+      "summary": "Cavanna printer threw alarms and stopped printing, line down briefly while maintenance diagnosed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-21T18:11:04.756Z"
+      },
+      "resolution": "Cleared at 12:18 \u2014 \"I had to fill the mixing tank with ink to clear this out it is working good now\" (Nelson Cook)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna printer down for maintenance",
+      "summary": "Line stopped at 13:56 for Cavanna printer maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-21T19:56:28.479Z"
+      },
+      "resolution": "Cleared at 14:15 \u2014 \"Start back up\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C5 belt moved and flipped",
+      "summary": "C5 conveyor belt shifted position and flipped, maintenance working to reposition.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-22T03:47:01.557Z"
+      },
+      "resolution": "Cleared at 22:03 \u2014 \"C5 belt is running good\" (Molding Line 1 Flow-Wrap). 16 minutes downtime."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol leak at PTL",
+      "summary": "Possible glycol leak noticed on PTL (pre-tempering line), maintenance notified at 03:10.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-22T09:10:26.531Z"
+      },
+      "resolution": "Cleared at 23:25 \u2014 \"Maintenance has repaired the leak\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 video jet printer stopped printing",
+      "summary": "Video jet quit printing, maintenance troubleshooting the issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-22T11:20:43.386Z"
+      },
+      "resolution": "Cleared at 05:28 \u2014 \"The line is up and running again\" (Frederick Peairs)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L3",
+      "title": "ML1 C7 belt misaligned",
+      "summary": "Belt C7 became misaligned at 06:45, maintenance notified \u2014 no follow-up by window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-22T12:45:05.17Z"
+      },
+      "status": "Maintenance notified at 06:45; no resolution message by 07:16 window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera fault on Imperial molder",
+      "summary": "Camera fault flagged on Imperial molder at 07:00, maintenance notified \u2014 no follow-up by window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-22T13:00:16.998Z"
+      },
+      "status": "Maintenance notified at 07:00; no resolution message by 07:16 window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line tempermeter printer cover broken",
+      "summary": "Tempermeter received with broken printer cover, does not print paper or display temper result \u2014 line using backup tempermeter from ML4 while maintenance checks primary unit.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-22T13:10:35.186Z"
+      },
+      "status": "Workaround in place using ML4 tempermeter; maintenance checking primary unit as of 07:10."
+    }
+  ]
+}
