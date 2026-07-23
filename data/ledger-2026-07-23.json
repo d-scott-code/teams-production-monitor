@@ -1,0 +1,210 @@
+{
+  "date": "2026-07-23",
+  "headline": {
+    "eyebrow": "Materials short",
+    "text": "L1 down to *10 PECO pallets* and L2 missing layflat caddies until 7/27 \u2014 both lines at risk of stoppage"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran almond cluster all three shifts but fought line-speed accumulation at the check weigher and x-ray during second shift. PECO pallet supply dropped to 10 units by 18:30 with no delivery confirmed until Thursday.",
+    "L2": "FFS ran three shifts with three brief stoppages for blade and film issues, all cleared inside 30 minutes. Layflat caddies for item 40944 confirmed delayed until 7/27, forcing a line-down decision.",
+    "L3": "MF Matrix had a busy 24 hours: two bucket calibrations (one span cal down 1 hour), printer ink alignment, and recurring weight-related bag ejections from 23:35 through window close. Foreign material found in WIP boxes at 23:25 with no resolution. Truffle line accumulating doubles \u2014 4 bins reported at 06:46."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Ray Garcia noted electrician scheduled Monday morning to inspect and set up ML4 mixer."
+    },
+    {
+      "plant": "L2",
+      "text": "Joey Dudney reported 940 Hershey PECO pallets at L2; 200 sent to L3, discussing whether to send 200 to L1."
+    },
+    {
+      "plant": "L1",
+      "text": "Chamber tour scheduled 11:45 on Thursday \u2014 Curt Willis ensuring L1 tour-ready, Alan Todd checking L2."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "FFS silver line appearing on front of pouch",
+      "summary": "Line stopped at 15:08 for silver line defect on pouch front, maintenance working on issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-22T21:08:47.583Z"
+      },
+      "resolution": "Cleared at 15:27 \u2014 \"Line is running\" after Brandon Lance corrected film wrap that was bent behind photo eye sensor B11 (Mathew Draper, Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 temper unit faulting during reheat",
+      "summary": "Temper unit continued to fault out while attempting reheat cycle.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-07-22T17:56:55.388Z"
+      },
+      "resolution": "Cleared at 11:58 \u2014 Dave Ruff walked through and Adrien confirmed \"it was good\" (Dave Ruff)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade cleaning at 16:58",
+      "summary": "Maintenance cleaning machine blades on FFS line during second shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-22T22:59:24.715Z"
+      },
+      "resolution": "Cleared at 17:14 \u2014 \"The blade is clean. Line is running!\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade maintenance at 02:26",
+      "summary": "Line paused during third shift for scheduled blade maintenance.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-23T08:26:49.33Z"
+      },
+      "resolution": "Cleared at 02:34 \u2014 \"Line is back up and good to go\" (Zack Kurtz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM buckets 7 and 10 not running, needed span calibration",
+      "summary": "Buckets 7 and 10 stopped running at 10:19, Troy Baxter performed span calibration with Nathan Ruiz and Shawn Jewkes, line down approximately 1 hour.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-07-22T16:19:08.727Z"
+      },
+      "resolution": "Cleared at 11:11 \u2014 \"7 and 10 are now working again\" after span calibration on both buckets (Nathan Ruiz, Troy Baxter)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM upper product feeding sensors causing weight issues",
+      "summary": "Buckets not opening properly and upper feeding sensors being hit by product, causing weight problems at shift start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-22T13:32:45.381Z"
+      },
+      "resolution": "Cleared at 07:38 \u2014 Shawn adjusted sensor angles so they don't get hit by product while still pointing at center, \"seems to help a lot\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Videojet printer fault, printhead full of ink",
+      "summary": "Printer shut down at 11:20 with fault code requiring printhead cleaning; printhead was full of ink and needed alignment adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-22T17:36:29.387Z"
+      },
+      "resolution": "Cleared at 11:48 \u2014 \"Running\" after Nathan Ruiz cleaned printhead and corrected alignment; ink jet was shooting off to side creating mess (Itzel Chavez, Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM weight issue causing continuous bag rejection at 00:44",
+      "summary": "Matrix stopped at 00:44 due to weight issue causing continuous bag rejection, maintenance called, line down 10 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-23T06:47:16.499Z"
+      },
+      "resolution": "Cleared at 00:56 \u2014 \"The operator resolved the weight issue, and production resumed after a 10 minute downtime\" (mfmatrix)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM bucket 21 staying open due to latch problem",
+      "summary": "Bucket 21 remained open and would not close properly, maintenance called to investigate.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-22T23:11:09.922Z"
+      },
+      "resolution": "Cleared at 17:26 \u2014 \"Bucket is back on, maintenance said some of the latches weren't on correctly which was causing a small problem\" (Nathan Gevenois)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "PECO pallet inventory critically low, down to 10 units",
+      "summary": "Expected delivery of 2 FTLs (1,080 pallets) did not arrive; warehouse down to 10 PECO pallets as of 18:30, will need to use regular pallets if supply exhausted.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joey Michael Dudney",
+        "time_utc": "2026-07-22T18:12:19.772Z"
+      },
+      "status": "Kirk Nickel following up with supplier at 19:21, expects delivery won't happen until Thursday 7/24."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 line speed causing accumulation at check weigher and x-ray",
+      "summary": "Running at 97 pouches/minute with one check weigher creates bottleneck; second shift reported over-accumulation, 20+ pouches falling into x-ray bin every 10 minutes, EEs overwhelmed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-23T01:53:33.384Z"
+      },
+      "status": "Conner Boyd paused line at 20:03 to clear accumulation and planned speed timing adjustment on check weigher belt; no confirmation of sustained improvement."
+    },
+    {
+      "plant": "L2",
+      "title": "Layflat caddy shortage (item 40944) delaying production until 7/27",
+      "summary": "Zero quantity on hand for item 40944 layflat caddies; confirmed delivery delayed from 7/22 to 7/27, forcing line-down decision after current materials exhausted.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Pino",
+        "time_utc": "2026-07-22T20:17:23.801Z"
+      },
+      "status": "Alan Todd confirmed at 17:18 that caddies won't arrive until 7/27; scheduling meeting held, line will stay down without material."
+    },
+    {
+      "plant": "L3",
+      "title": "Foreign material found in WIP boxes",
+      "summary": "Kimberly Morales reported foreign material contamination in work-in-process boxes at 23:25.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-23T05:25:36.526Z"
+      },
+      "status": "Reported at 23:25 with no follow-up resolution or FSQA disposition by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM continues ejecting bags due to recurring weight issues",
+      "summary": "Matrix paused multiple times overnight for bag ejections; 04:37 report shows line paused again for 5 minutes, continues to eject bags, maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-23T05:35:11.69Z"
+      },
+      "status": "Maintenance called at 04:37, basket monitoring assigned at 23:43, but ejections continuing as of last message in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line producing high volume of doubles",
+      "summary": "Truffle enrober accumulating double pieces \u2014 4 bins of doubles reported at 06:46 with no root cause identified.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-23T12:46:13.54Z"
+      },
+      "status": "4 bins accumulated as of 06:46; no follow-up on cause or corrective action by window close."
+    }
+  ]
+}

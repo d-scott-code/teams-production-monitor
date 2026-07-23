@@ -1,0 +1,4290 @@
+{
+  "window": {
+    "start_utc": "2026-07-22T13:16:21.053523+00:00",
+    "end_utc": "2026-07-23T13:16:21.053523+00:00",
+    "start_mt": "2026-07-22T07:16:21-06:00",
+    "end_mt": "2026-07-23T07:16:21-06:00",
+    "tz": "America/Denver",
+    "hours": 24
+  },
+  "chat_count": 17,
+  "message_count": 414,
+  "chats": [
+    {
+      "id": "19:d48e05845df34689a352c0bd3baa2252@thread.v2",
+      "topic": "L3 MF Matrix",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Ad48e05845df34689a352c0bd3baa2252%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784727165381",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:32:45.381Z",
+          "sent_mt": "2026-07-22T07:32:45-06:00",
+          "text": "Some of the buckets not opening properly causing weight issues, and issues with the upper product feeding sensors.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784727179095",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:32:59.095Z",
+          "sent_mt": "2026-07-22T07:32:59-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784727537110",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:38:57.11Z",
+          "sent_mt": "2026-07-22T07:38:57-06:00",
+          "text": "Shawn is adjusting the sensors in angle so they don’t get hit by the product, but still pointing at the center it seems to help a lot.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784727588891",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:39:48.891Z",
+          "sent_mt": "2026-07-22T07:39:48-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784729959679",
+          "from": "David Zuniaga",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:19:19.679Z",
+          "sent_mt": "2026-07-22T08:19:19-06:00",
+          "text": "Pouch test check update ✅️ \n\n\nUpon checking the assorted pouch, we found the 34 pieces required by the product specifications. The print (best if used by) is printed, legible, and understandable as required by the spec.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784734597695",
+          "from": "Troy Baxter",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:36:37.695Z",
+          "sent_mt": "2026-07-22T09:36:37-06:00",
+          "text": "My apologies. I had capper issues here in L1. Still need me?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737148727",
+          "from": "Nathan Ruiz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:19:08.727Z",
+          "sent_mt": "2026-07-22T10:19:08-06:00",
+          "text": "7 and 10 still aren't running",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737322467",
+          "from": "Troy Baxter",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:22:02.467Z",
+          "sent_mt": "2026-07-22T10:22:02-06:00",
+          "text": "I can come try to help. But fair warning, I have about 10 minutes of experience with the MFM interface. If it works like the older Yamato scales, I can probably figure it out",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737471209",
+          "from": "Nathan Ruiz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:24:31.209Z",
+          "sent_mt": "2026-07-22T10:24:31-06:00",
+          "text": "After reading more into it a lot of these issues are pointing towards needing a span calibration. It's pretty similar the HMI is just a little different",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737523904",
+          "from": "Troy Baxter",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:25:23.904Z",
+          "sent_mt": "2026-07-22T10:25:23-06:00",
+          "text": "there a couple of things to try before a span calibration, but we can certainly do that and i can help.  I'll be over shortly",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784739241990",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:54:01.99Z",
+          "sent_mt": "2026-07-22T10:54:01-06:00",
+          "text": "Machine is down Troy is here doing a calibration.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784739622263",
+          "from": "Troy Baxter",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:00:22.263Z",
+          "sent_mt": "2026-07-22T11:00:22-06:00",
+          "text": "We have cleared the initial errors, but will need to do a span calibration, which requires specific weights to perform. I'm tracking those down.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784740650651",
+          "from": "Chad Stone",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:17:30.651Z",
+          "sent_mt": "2026-07-22T11:17:30-06:00",
+          "text": "Thank you Troy Baxter & Nathan Ruiz!",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784740894529",
+          "from": "Shawn Jewkes",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:21:34.529Z",
+          "sent_mt": "2026-07-22T11:21:34-06:00",
+          "text": "We'll create/look for a standard procedure to distribute and train to.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784740273687",
+          "from": "Nathan Ruiz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:11:13.687Z",
+          "sent_mt": "2026-07-22T11:11:13-06:00",
+          "text": "7 and 10 are now working again",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784740758252",
+          "from": "Troy Baxter",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:19:18.252Z",
+          "sent_mt": "2026-07-22T11:19:18-06:00",
+          "text": "Did a span calibration on those 2 buckets and that cleared the errors. I showed Nathan and Shawn how to do it. I'm happy to help, but trying to train as many as I can along the way.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784741789387",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:36:29.387Z",
+          "sent_mt": "2026-07-22T11:36:29-06:00",
+          "text": "Printer fault at 11:20am. Nathan is working on it",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784741836204",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:37:16.204Z",
+          "sent_mt": "2026-07-22T11:37:16-06:00",
+          "text": "The Videojet printer shut down, and a fault code appeared saying the printhead needed cleaning. When we took it out, it was full of ink, and now we're cleaning it, Maintenance is looking into why it's leaking so much ink.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784742536285",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:48:56.285Z",
+          "sent_mt": "2026-07-22T11:48:56-06:00",
+          "text": "Running.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784742468697",
+          "from": "Nathan Ruiz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:47:48.697Z",
+          "sent_mt": "2026-07-22T11:47:48-06:00",
+          "text": "Ink jet needed an alignment. It was shooting off to the side creating a good size mess and faulting it out.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784749674783",
+          "from": "Ray Garcia",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:47:54.783Z",
+          "sent_mt": "2026-07-22T13:47:54-06:00",
+          "text": "Nathan Ruiz Frederick Peairs Kimberly Morales I received some feedback from Yamato. The next time the HMI appears to glitch and is not displaying weights or sending the drop signal, go to Options and select Ignore Available Combinations. Please let me know if this resolves the issue the next time it occurs.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784750185819",
+          "from": "David Zuniaga",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:56:25.819Z",
+          "sent_mt": "2026-07-22T13:56:25-06:00",
+          "text": "Pouch test check update ✅️ \n\n\nUpon checking the assorted pouch, we found the 34 pieces required by the product specifications. The print (best if used by) is printed, legible, and understandable as required by the spec.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751790280",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:23:10.28Z",
+          "sent_mt": "2026-07-22T14:23:10-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751839919",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:23:59.919Z",
+          "sent_mt": "2026-07-22T14:23:59-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751968648",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:26:08.648Z",
+          "sent_mt": "2026-07-22T14:26:08-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751980225",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:26:20.225Z",
+          "sent_mt": "2026-07-22T14:26:20-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754407262",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:06:47.262Z",
+          "sent_mt": "2026-07-22T15:06:47-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784758256792",
+          "from": "Nathan Gevenois",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:10:56.792Z",
+          "sent_mt": "2026-07-22T16:10:56-06:00",
+          "text": "Currently paused. We’ve got to sort the chocolate from the rework pouches to make sure we consume all the chocolate before lots code change",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784759235909",
+          "from": "Melissa Zavala",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:27:15.909Z",
+          "sent_mt": "2026-07-22T16:27:15-06:00",
+          "text": "Line clearance done. Change of exp 06/2027—>07/2027",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784760106455",
+          "from": "Fredy Montalvan",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:41:46.455Z",
+          "sent_mt": "2026-07-22T16:41:46-06:00",
+          "text": "New JOB for MFM pallet final for change date,  Marian Adair Marcos Montano Nathan Gevenois",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784761562203",
+          "from": "Melissa Zavala",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:06:02.203Z",
+          "sent_mt": "2026-07-22T17:06:02-06:00",
+          "text": "Pouch check. Lot and BB are present and legible on the pouches. There are 34 pieces per pouch. The seal integrity is in good condition",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784761869922",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:11:09.922Z",
+          "sent_mt": "2026-07-22T17:11:09-06:00",
+          "text": "Estamos presentando fallas con la cubeta Numero 21 ya que se mantiene habiera y estamos a la espera de que mantenimiento nos de una solucion",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784762782676",
+          "from": "Nathan Gevenois",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:26:22.676Z",
+          "sent_mt": "2026-07-22T17:26:22-06:00",
+          "text": "Bucket is back on, maintenance said some of the latches weren’t on correctly which was causing a small problem",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781235141",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:33:55.141Z",
+          "sent_mt": "2026-07-22T22:33:55-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781269546",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:34:29.546Z",
+          "sent_mt": "2026-07-22T22:34:29-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781283519",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:34:43.519Z",
+          "sent_mt": "2026-07-22T22:34:43-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782371489",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:52:51.489Z",
+          "sent_mt": "2026-07-22T22:52:51-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784784336526",
+          "from": "Kimberly Morales",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:25:36.526Z",
+          "sent_mt": "2026-07-22T23:25:36-06:00",
+          "text": "Found foreign material in WIP boxes",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784784911690",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:35:11.69Z",
+          "sent_mt": "2026-07-22T23:35:11-06:00",
+          "text": "The Matrix stopped because it is ejecting the bags. The operator is working on the weight issue.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784785404628",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:43:24.628Z",
+          "sent_mt": "2026-07-22T23:43:24-06:00",
+          "text": "The MFM stopped for 5 minutes  and then resumed operation. One person was assigned to monitor the baskets to ensure proper performance.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789236499",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:47:16.499Z",
+          "sent_mt": "2026-07-23T00:47:16-06:00",
+          "text": "The MFM stopped again at 12:44 am, due to a weight issue, causing continuous bag rejection. Maintenance was called.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789815899",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:56:55.899Z",
+          "sent_mt": "2026-07-23T00:56:55-06:00",
+          "text": "The operator resolved the weight issue, and production resumed after a 10 minute downtime.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789929819",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:58:49.819Z",
+          "sent_mt": "2026-07-23T00:58:49-06:00",
+          "text": "Maintenance is currently checking the baskets.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784793639531",
+          "from": "Luisiana Castro",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T08:00:39.531Z",
+          "sent_mt": "2026-07-23T02:00:39-06:00",
+          "text": "Update 3rd Shift: Product is within the specifications. 35 wrappers inside the pouch. Seal integrity of the pouch is in good condition. BBD and lot is confirmed to be correct/visible. No issues to report.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784802052224",
+          "from": "Kimberly Morales",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:20:52.224Z",
+          "sent_mt": "2026-07-23T04:20:52-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784802528464",
+          "from": "Kimberly Morales",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:28:48.464Z",
+          "sent_mt": "2026-07-23T04:28:48-06:00",
+          "text": "There’s 3 more pallets of V1 before switching to V2",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784803025365",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:37:05.365Z",
+          "sent_mt": "2026-07-23T04:37:05-06:00",
+          "text": "The MFM was paused for 5 minutes, because it continues to eject bags. Maintenance was called",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784809729722",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:28:49.722Z",
+          "sent_mt": "2026-07-23T06:28:49-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784812359640",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:12:39.64Z",
+          "sent_mt": "2026-07-23T07:12:39-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811963951",
+          "from": "Grey Boscan",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:06:03.951Z",
+          "sent_mt": "2026-07-23T07:06:03-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784812151558",
+          "from": "Grey Boscan",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:09:11.558Z",
+          "sent_mt": "2026-07-23T07:09:11-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784812478312",
+          "from": "Rich Brierley",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:14:38.312Z",
+          "sent_mt": "2026-07-23T07:14:38-06:00",
+          "text": "We still have plenty of assorted pouches to complete this order.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:9d982dc3c86644deb69a31840db6458c@thread.v2",
+      "topic": "L3 ML1 Information Exchange",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A9d982dc3c86644deb69a31840db6458c%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784770304827",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:31:44.827Z",
+          "sent_mt": "2026-07-22T19:31:44-06:00",
+          "text": "Molds appear to be in Good condition",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784766937508",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:35:37.508Z",
+          "sent_mt": "2026-07-22T18:35:37-06:00",
+          "text": "C5 and C6 rollers are in good and clean condition",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772069155",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:01:09.155Z",
+          "sent_mt": "2026-07-22T20:01:09-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772618851",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:10:18.851Z",
+          "sent_mt": "2026-07-22T20:10:18-06:00",
+          "text": "Glycol is below smiling face",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772706166",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:11:46.166Z",
+          "sent_mt": "2026-07-22T20:11:46-06:00",
+          "text": "Metal detector belt and C6 belt are running correctly",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768612935",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:03:32.935Z",
+          "sent_mt": "2026-07-22T19:03:32-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784775774179",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:02:54.179Z",
+          "sent_mt": "2026-07-22T21:02:54-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784777192447",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:26:32.447Z",
+          "sent_mt": "2026-07-22T21:26:32-06:00",
+          "text": "Molds appear to be in good condition 👍",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779272985",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:01:12.985Z",
+          "sent_mt": "2026-07-22T22:01:12-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784780322771",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:18:42.771Z",
+          "sent_mt": "2026-07-22T22:18:42-06:00",
+          "text": "Glyco normal will have maintenance top it off",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784780416794",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:20:16.794Z",
+          "sent_mt": "2026-07-22T22:20:16-06:00",
+          "text": "MD belt running correctly, C6 belt running correctly",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781197509",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:33:17.509Z",
+          "sent_mt": "2026-07-22T22:33:17-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781313517",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:35:13.517Z",
+          "sent_mt": "2026-07-22T22:35:13-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781337972",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:35:37.972Z",
+          "sent_mt": "2026-07-22T22:35:37-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781435221",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:37:15.221Z",
+          "sent_mt": "2026-07-22T22:37:15-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781569751",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:39:29.751Z",
+          "sent_mt": "2026-07-22T22:39:29-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781692629",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:41:32.629Z",
+          "sent_mt": "2026-07-22T22:41:32-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781703781",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:41:43.781Z",
+          "sent_mt": "2026-07-22T22:41:43-06:00",
+          "text": "Moldes good",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781874161",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:44:34.161Z",
+          "sent_mt": "2026-07-22T22:44:34-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782240114",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:50:40.114Z",
+          "sent_mt": "2026-07-22T22:50:40-06:00",
+          "text": "Start-up verification for the 3rd shift: tempering, part weight, organoleptic properties, packaging specifications, water test, final case weight, final case label, pallet, and final label—everything is within the correct parameters.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782239753",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:50:39.753Z",
+          "sent_mt": "2026-07-22T22:50:39-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782755690",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:59:15.69Z",
+          "sent_mt": "2026-07-22T22:59:15-06:00",
+          "text": "Verification and piece count for the final box: weight 16.80 kg, containing 217 pieces; final weight per piece (including packaging) is 35.9 g.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782755408",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:59:15.408Z",
+          "sent_mt": "2026-07-22T22:59:15-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782003580",
+          "from": "Nathan Gevenois",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:46:43.58Z",
+          "sent_mt": "2026-07-22T22:46:43-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784785634270",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:47:14.27Z",
+          "sent_mt": "2026-07-22T23:47:14-06:00",
+          "text": "C5 belt tracking correctly,  C6 belt tracking correctly",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784785854387",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:50:54.387Z",
+          "sent_mt": "2026-07-22T23:50:54-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784785966066",
+          "from": "Jose Vasquez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:52:46.066Z",
+          "sent_mt": "2026-07-22T23:52:46-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784786636352",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:03:56.352Z",
+          "sent_mt": "2026-07-23T00:03:56-06:00",
+          "text": "Batch change CC26204I1, date 22/MAR/28 correct.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784786636090",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:03:56.09Z",
+          "sent_mt": "2026-07-23T00:03:56-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784786715604",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:05:15.604Z",
+          "sent_mt": "2026-07-23T00:05:15-06:00",
+          "text": "1230 c5 rollers good, c6 ro.lers good",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789220390",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:47:00.39Z",
+          "sent_mt": "2026-07-23T00:47:00-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789247526",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:47:27.526Z",
+          "sent_mt": "2026-07-23T00:47:27-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789253714",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:47:33.714Z",
+          "sent_mt": "2026-07-23T00:47:33-06:00",
+          "text": "Moldes good",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789718368",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:55:18.368Z",
+          "sent_mt": "2026-07-23T00:55:18-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784790170607",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:02:50.607Z",
+          "sent_mt": "2026-07-23T01:02:50-06:00",
+          "text": "Cleaning rollers",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784790204402",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:03:24.402Z",
+          "sent_mt": "2026-07-23T01:03:24-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784790223039",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:03:43.039Z",
+          "sent_mt": "2026-07-23T01:03:43-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784790240495",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:04:00.495Z",
+          "sent_mt": "2026-07-23T01:04:00-06:00",
+          "text": "Rollers clean c5 and c6",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784790880543",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:14:40.543Z",
+          "sent_mt": "2026-07-23T01:14:40-06:00",
+          "text": "Verification and piece count for the final box: weight 16.80 kg, total of 217 pieces; piece weight 34.8 g, final piece weight including packaging 35.5 g.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784790880322",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:14:40.322Z",
+          "sent_mt": "2026-07-23T01:14:40-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784793813350",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T08:03:33.35Z",
+          "sent_mt": "2026-07-23T02:03:33-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784794681208",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T08:18:01.208Z",
+          "sent_mt": "2026-07-23T02:18:01-06:00",
+          "text": "C6 Belt tracking correctly \n\n\n\n\n\nC5 belt tracking correctly",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784795489576",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T08:31:29.576Z",
+          "sent_mt": "2026-07-23T02:31:29-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784797355946",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T09:02:35.946Z",
+          "sent_mt": "2026-07-23T03:02:35-06:00",
+          "text": "0300 cleaning c5 and c6 rollers",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784797466689",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T09:04:26.689Z",
+          "sent_mt": "2026-07-23T03:04:26-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784797493587",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T09:04:53.587Z",
+          "sent_mt": "2026-07-23T03:04:53-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784797700898",
+          "from": "Alan Greer",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T09:08:20.898Z",
+          "sent_mt": "2026-07-23T03:08:20-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784798796185",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T09:26:36.185Z",
+          "sent_mt": "2026-07-23T03:26:36-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784798802027",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T09:26:42.027Z",
+          "sent_mt": "2026-07-23T03:26:42-06:00",
+          "text": "Moldes good",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784803102268",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:38:22.268Z",
+          "sent_mt": "2026-07-23T04:38:22-06:00",
+          "text": "0437 rollers on c5 and c6 cleaned",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784803595111",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:46:35.111Z",
+          "sent_mt": "2026-07-23T04:46:35-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784805988243",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:26:28.243Z",
+          "sent_mt": "2026-07-23T05:26:28-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784806002081",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:26:42.081Z",
+          "sent_mt": "2026-07-23T05:26:42-06:00",
+          "text": "Moldes good",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784806479256",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:34:39.256Z",
+          "sent_mt": "2026-07-23T05:34:39-06:00",
+          "text": "Verification and piece count for final box: weight 16.75. Total pieces: 215. Piece weight: 34.6; weight with packaging: 35.7.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784806478980",
+          "from": "Janeth Sanchez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:34:38.98Z",
+          "sent_mt": "2026-07-23T05:34:38-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784809393913",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:23:13.913Z",
+          "sent_mt": "2026-07-23T06:23:13-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784809473651",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:24:33.651Z",
+          "sent_mt": "2026-07-23T06:24:33-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784809949740",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:32:29.74Z",
+          "sent_mt": "2026-07-23T06:32:29-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810107041",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:35:07.041Z",
+          "sent_mt": "2026-07-23T06:35:07-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810166109",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:36:06.109Z",
+          "sent_mt": "2026-07-23T06:36:06-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810254278",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:37:34.278Z",
+          "sent_mt": "2026-07-23T06:37:34-06:00",
+          "text": "The rollers from the C6 belt are received without excess chocolate.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810427030",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:40:27.03Z",
+          "sent_mt": "2026-07-23T06:40:27-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810801675",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:46:41.675Z",
+          "sent_mt": "2026-07-23T06:46:41-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811838183",
+          "from": "Molding Line 1 Flow-Wrap",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:03:58.183Z",
+          "sent_mt": "2026-07-23T07:03:58-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811867223",
+          "from": "Mirella Mamani",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:04:27.223Z",
+          "sent_mt": "2026-07-23T07:04:27-06:00",
+          "text": "Damage-free",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784812442110",
+          "from": "Imperial",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:14:02.11Z",
+          "sent_mt": "2026-07-23T07:14:02-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:58789caed5f94038843e2913983d2777@thread.v2",
+      "topic": "L2 ML3 Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A58789caed5f94038843e2913983d2777%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784736713189",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:11:53.189Z",
+          "sent_mt": "2026-07-22T10:11:53-06:00",
+          "text": "1shif",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784750098250",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:54:58.25Z",
+          "sent_mt": "2026-07-22T13:54:58-06:00",
+          "text": "End of the 1shif",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784750894410",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:08:14.41Z",
+          "sent_mt": "2026-07-22T14:08:14-06:00",
+          "text": "Starting second shift",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751058302",
+          "from": "Marlenis Fernandez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:10:58.302Z",
+          "sent_mt": "2026-07-22T14:10:58-06:00",
+          "text": "¡Buenas tardes! Lote del segundo turno verificado:",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752840235",
+          "from": "Ricardo Caldera",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:40:40.235Z",
+          "sent_mt": "2026-07-22T14:40:40-06:00",
+          "text": "Initial Inventory Chocolate Second Shift, Sofia Carcamo Nidia Lopez Corea Alan Todd Brandon Lance Mathew Draper",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784763255169",
+          "from": "Marlenis Fernandez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:34:15.169Z",
+          "sent_mt": "2026-07-22T17:34:15-06:00",
+          "text": "The weight, texture, appearance, surface, and packaging remain within the technical specifications:",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784763308016",
+          "from": "Marlenis Fernandez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:35:08.016Z",
+          "sent_mt": "2026-07-22T17:35:08-06:00",
+          "text": "The packaging passed the water test:",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754304167",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:05:04.167Z",
+          "sent_mt": "2026-07-22T15:05:04-06:00",
+          "text": "Good afternoon|2nd shift \n\n\n \n\n\nCenterlines of the flow wrapper",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784777955841",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:39:15.841Z",
+          "sent_mt": "2026-07-22T21:39:15-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784777996493",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:39:56.493Z",
+          "sent_mt": "2026-07-22T21:39:56-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784778013213",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:40:13.213Z",
+          "sent_mt": "2026-07-22T21:40:13-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784778085119",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:41:25.119Z",
+          "sent_mt": "2026-07-22T21:41:25-06:00",
+          "text": "End of shift temper",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784778641005",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:50:41.005Z",
+          "sent_mt": "2026-07-22T21:50:41-06:00",
+          "text": "Ends 2nd shift and starts 3rd shift \n\n\n \n\n\nShadow board at the pack area",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779271021",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:01:11.021Z",
+          "sent_mt": "2026-07-22T22:01:11-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779334032",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:02:14.032Z",
+          "sent_mt": "2026-07-22T22:02:14-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779837084",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:10:37.084Z",
+          "sent_mt": "2026-07-22T22:10:37-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782018094",
+          "from": "Ricardo Caldera",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:46:58.094Z",
+          "sent_mt": "2026-07-22T22:46:58-06:00",
+          "text": "After performing a cycle count of item 10186 \nTHE ADJUSTMENT AFTER CLOSURE IS -1,301.41 Nidia Lopez Corea Sofia Carcamo Alan Todd Brandon Lance Mathew Draper",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784796545245",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T08:49:05.245Z",
+          "sent_mt": "2026-07-23T02:49:05-06:00",
+          "text": "3 turno",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784803204969",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:40:04.969Z",
+          "sent_mt": "2026-07-23T04:40:04-06:00",
+          "text": "Shadow board at off the 3rd shift molding 3",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784806280958",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:31:20.958Z",
+          "sent_mt": "2026-07-23T05:31:20-06:00",
+          "text": "We started depositing at 5 30 am",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784809826480",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:30:26.48Z",
+          "sent_mt": "2026-07-23T06:30:26-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810022120",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:33:42.12Z",
+          "sent_mt": "2026-07-23T06:33:42-06:00",
+          "text": "End of shift temper",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810055342",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:34:15.342Z",
+          "sent_mt": "2026-07-23T06:34:15-06:00",
+          "text": "Entrega 3 turno",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810053190",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:34:13.19Z",
+          "sent_mt": "2026-07-23T06:34:13-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810328609",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:38:48.609Z",
+          "sent_mt": "2026-07-23T06:38:48-06:00",
+          "text": "1shif",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811721412",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:02:01.412Z",
+          "sent_mt": "2026-07-23T07:02:01-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810193769",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:36:33.769Z",
+          "sent_mt": "2026-07-23T06:36:33-06:00",
+          "text": "Shadow board at on the 1st shift molding 3",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784812244067",
+          "from": "Claudio Tovar",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:10:44.067Z",
+          "sent_mt": "2026-07-23T07:10:44-06:00",
+          "text": "The weight, texture, appearance, surface, and packaging remain within specifications.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:03820e0f9a794631a04ae83791082313@thread.v2",
+      "topic": "L2 Schedule Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A03820e0f9a794631a04ae83791082313%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784735717449",
+          "from": "Maria Moron Quintero",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:55:17.449Z",
+          "sent_mt": "2026-07-22T09:55:17-06:00",
+          "text": "Good morning! This does not include what has been produced so far today. Alan Todd, Alex Mendoza, Brandon Lance",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784736638583",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:10:38.583Z",
+          "sent_mt": "2026-07-22T10:10:38-06:00",
+          "text": "Good morning Maria Moron Quintero,\n \nThanks for the update.\n \nFor 30767-Case6 the goal is 5,600 cases, but on the visual schedule you only have one shift running 30767-case6 is that correct? One shift is not enough to run 5,600 cases.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784733425702",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:17:05.702Z",
+          "sent_mt": "2026-07-22T09:17:05-06:00",
+          "text": "Ethan Bean, Kirk Nickel\n\nWould you please update if you have a time and building the Feastables will deliver today?\n\nThese are the items needed\n\n40945\n40944\n40910",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784736784043",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:13:04.043Z",
+          "sent_mt": "2026-07-22T10:13:04-06:00",
+          "text": "Alex Mendoza, \n\nPlease check the final schedule to see how many shifts she has scheduled.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737026274",
+          "from": "Maria Moron Quintero",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:17:06.274Z",
+          "sent_mt": "2026-07-22T10:17:06-06:00",
+          "text": "Thanks Alex! It has been updated.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738281252",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:38:01.252Z",
+          "sent_mt": "2026-07-22T10:38:01-06:00",
+          "text": "Thanks Maria. Will you be sending a final schedule update to reflect the changes?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738866045",
+          "from": "Maria Moron Quintero",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:47:46.045Z",
+          "sent_mt": "2026-07-22T10:47:46-06:00",
+          "text": "Yes. I will be sending an update for tomorrow",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784747652550",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:14:12.55Z",
+          "sent_mt": "2026-07-22T13:14:12-06:00",
+          "text": "Ethan Bean, Kirk Nickel,\n\nDid we figure out when/where the truck will arrive today? Do they have an appointment?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784749917464",
+          "from": "Ethan Bean",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:51:57.464Z",
+          "sent_mt": "2026-07-22T13:51:57-06:00",
+          "text": "i dont see appointments on opendock. Im reaching out to the vendors now",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784749921325",
+          "from": "Ethan Bean",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:52:01.325Z",
+          "sent_mt": "2026-07-22T13:52:01-06:00",
+          "text": "Alan Todd",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751443801",
+          "from": "Luis Pino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:17:23.801Z",
+          "sent_mt": "2026-07-22T14:17:23-06:00",
+          "text": "Alan ToddEthan BeanKirk NickelAlex MendozaBrandon LanceGustavo Rodas L3 let me know the FEA truck didn't have the items we are waiting for ML2",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751527588",
+          "from": "Luis Pino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:18:47.588Z",
+          "sent_mt": "2026-07-22T14:18:47-06:00",
+          "text": "Ethan BeanMartin CarlosKirk NickelAlan Todd these are the items we are waiting items 40944-V2      \nItem 40910-V6   \nItem 40911-V3   \nItem 40912-V2    \nItem 40966       \nItem 40945",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751580893",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:19:40.893Z",
+          "sent_mt": "2026-07-22T14:19:40-06:00",
+          "text": "Luis Pino, Did it have the flow wrap?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752306137",
+          "from": "Luis Pino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:31:46.137Z",
+          "sent_mt": "2026-07-22T14:31:46-06:00",
+          "text": "Flow wrap for ML2 item 40910-v6 we have qty 267638",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752315187",
+          "from": "Luis Pino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:31:55.187Z",
+          "sent_mt": "2026-07-22T14:31:55-06:00",
+          "text": "here",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752659118",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:37:39.118Z",
+          "sent_mt": "2026-07-22T14:37:39-06:00",
+          "text": "Luis Pino, I know we have some here and we need more to finish the order. If we don't receive it, we only have enough for 3-4 shifts",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752723521",
+          "from": "Luis Pino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:38:43.521Z",
+          "sent_mt": "2026-07-22T14:38:43-06:00",
+          "text": "yes, that is correct",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752789928",
+          "from": "Luis Pino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:39:49.928Z",
+          "sent_mt": "2026-07-22T14:39:49-06:00",
+          "text": "item 40944-V2 Caddie 24ct  we qty 0",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755977726",
+          "from": "Luis Pino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:32:57.726Z",
+          "sent_mt": "2026-07-22T15:32:57-06:00",
+          "text": "Team, \n \nAll components have been verified and staged for 2nd shift today's production. \n \nAttached is the signed verification.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784756493911",
+          "from": "Ethan Bean",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:41:33.911Z",
+          "sent_mt": "2026-07-22T15:41:33-06:00",
+          "text": "Alan Todd Kirk Nickel Luis Pino  All of these items were previously confirmed for todays date. \n \nAfter numerous follow up throughout the week everything was said to be on track. \n \nI cannot get answers from 2 different Vendors in trying to find the trucks that were promised for today.\n \nthe only part that has/will arrive today are 40945 by 7:30PM to L3",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784757180981",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:53:00.981Z",
+          "sent_mt": "2026-07-22T15:53:00-06:00",
+          "text": "Thank you for the update Ethan Bean.\n \nAt this point, we have 0 quantity of item 40944 - Layflat Caddy. If they do not arrive, we will have to keep the line down. I will update after the scheduling meeting today by 5:30pm.\n \nChad Stone, Kirk Nickel, Maria Moron Quintero, Daniel Bringas, Brandon Lance, Gustavo Rodas, Alex Mendoza",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784762287041",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:18:07.041Z",
+          "sent_mt": "2026-07-22T17:18:07-06:00",
+          "text": "Brandon Lance, Gustavo Rodas, Alex Mendoza, Maria Moron Quintero, Luis Pino\n \nWe just received an update on the layflat caddies and they won't arrive until 7/27.\n \nChad Stone, Kirk Nickel, Daniel Bringas",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784809986373",
+          "from": "Joey Michael Dudney",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:33:06.373Z",
+          "sent_mt": "2026-07-23T06:33:06-06:00",
+          "text": "Goodmorning! Just a heads up, we currently have about 940 Hersheys Peco pallets at L2.\n\nWe are going to go ahead & send 200 over to L3 as requested. \n\nShould we send 200 to L1 as well? \nAlan Todd -Kirk Nickel -Chad Stone-Curt Willis",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811074761",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:51:14.761Z",
+          "sent_mt": "2026-07-23T06:51:14-06:00",
+          "text": "How many do we need in L2 for today Joey Michael Dudney?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784812053424",
+          "from": "Joey Michael Dudney",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T13:07:33.424Z",
+          "sent_mt": "2026-07-23T07:07:33-06:00",
+          "text": "Let me check with Alex Mendoza & Luis Pino.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:38fa7db30fce4c1f9aba50c0ea947182@thread.v2",
+      "topic": "L3 Truffle Line",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A38fa7db30fce4c1f9aba50c0ea947182%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784809801420",
+          "from": "TruffleLine Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:30:01.42Z",
+          "sent_mt": "2026-07-23T06:30:01-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810059708",
+          "from": "TruffleLine Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:34:19.708Z",
+          "sent_mt": "2026-07-23T06:34:19-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810366782",
+          "from": "TruffleLine Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:39:26.782Z",
+          "sent_mt": "2026-07-23T06:39:26-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810773540",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:46:13.54Z",
+          "sent_mt": "2026-07-23T06:46:13-06:00",
+          "text": "There’s a lot of doubles coming out . We have accumulated 4 bins of doubles.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811059386",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:50:59.386Z",
+          "sent_mt": "2026-07-23T06:50:59-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811073139",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:51:13.139Z",
+          "sent_mt": "2026-07-23T06:51:13-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811098793",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:51:38.793Z",
+          "sent_mt": "2026-07-23T06:51:38-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811117695",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:51:57.695Z",
+          "sent_mt": "2026-07-23T06:51:57-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811134480",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:52:14.48Z",
+          "sent_mt": "2026-07-23T06:52:14-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811404344",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:56:44.344Z",
+          "sent_mt": "2026-07-23T06:56:44-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784811415738",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:56:55.738Z",
+          "sent_mt": "2026-07-23T06:56:55-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:fdf0be282a2546119ea3fb1708455e23@thread.v2",
+      "topic": "L2 FFS Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Afdf0be282a2546119ea3fb1708455e23%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784739095699",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:51:35.699Z",
+          "sent_mt": "2026-07-22T10:51:35-06:00",
+          "text": "The line is running",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737380459",
+          "from": "Marelyn Flores",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:23:00.459Z",
+          "sent_mt": "2026-07-22T10:23:00-06:00",
+          "text": "Mid shift scrap: -285 Alan Todd Jeffrey Barney Nidia Lopez Corea Sofia Carcamo",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751422165",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:17:02.165Z",
+          "sent_mt": "2026-07-22T14:17:02-06:00",
+          "text": "All the baskets are working good.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751455112",
+          "from": "Marelyn Flores",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:17:35.112Z",
+          "sent_mt": "2026-07-22T14:17:35-06:00",
+          "text": "Final shift scrap: -366 Alan Todd Jeffrey Barney Nidia Lopez Corea Sofia Carcamo",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784750997098",
+          "from": "Marlenis Fernandez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:09:57.098Z",
+          "sent_mt": "2026-07-22T14:09:57-06:00",
+          "text": "¡Buenas tardes! Lote del segundo turno verificado:",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752626594",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:37:06.594Z",
+          "sent_mt": "2026-07-22T14:37:06-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752673808",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:37:53.808Z",
+          "sent_mt": "2026-07-22T14:37:53-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754527583",
+          "from": "Mathew Draper",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:08:47.583Z",
+          "sent_mt": "2026-07-22T15:08:47-06:00",
+          "text": "Line is down for silver line on front of pouch",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754564669",
+          "from": "Mathew Draper",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:09:24.669Z",
+          "sent_mt": "2026-07-22T15:09:24-06:00",
+          "text": "Maintenance is working on it",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755600284",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:26:40.284Z",
+          "sent_mt": "2026-07-22T15:26:40-06:00",
+          "text": "Mathew Draper, is the line running or still down?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755624569",
+          "from": "Mathew Draper",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:27:04.569Z",
+          "sent_mt": "2026-07-22T15:27:04-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755641356",
+          "from": "Brandon Lance",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:27:21.356Z",
+          "sent_mt": "2026-07-22T15:27:21-06:00",
+          "text": "The issue was because the wrap was bent behind photo eye sensor B11. This has been corrected and we are running better now.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755654577",
+          "from": "Mathew Draper",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:27:34.577Z",
+          "sent_mt": "2026-07-22T15:27:34-06:00",
+          "text": "Line is running",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784761139091",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:58:59.091Z",
+          "sent_mt": "2026-07-22T16:58:59-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784761164715",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:59:24.715Z",
+          "sent_mt": "2026-07-22T16:59:24-06:00",
+          "text": "Maintenance is cleaning the blade's machine.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784761632383",
+          "from": "Ahtziri Arteaga",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:07:12.383Z",
+          "sent_mt": "2026-07-22T17:07:12-06:00",
+          "text": "Mid shift. Brandon Lance Alan Todd Nidia Lopez Corea Sofia Carcamo",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784762067276",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:14:27.276Z",
+          "sent_mt": "2026-07-22T17:14:27-06:00",
+          "text": "The blade is clean. Line is running!",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784762084148",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:14:44.148Z",
+          "sent_mt": "2026-07-22T17:14:44-06:00",
+          "text": "Brandon Lance Mathew Draper",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768242860",
+          "from": "Marlenis Fernandez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:57:22.86Z",
+          "sent_mt": "2026-07-22T18:57:22-06:00",
+          "text": "The appearance of the pouch and the number of chocolate pieces in the bag meet the specifications:",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779418360",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:03:38.36Z",
+          "sent_mt": "2026-07-22T22:03:38-06:00",
+          "text": "Second shift",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779428182",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:03:48.182Z",
+          "sent_mt": "2026-07-22T22:03:48-06:00",
+          "text": "Brandon Lance Mathew Draper Ahtziri Arteaga",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779563795",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:06:03.795Z",
+          "sent_mt": "2026-07-22T22:06:03-06:00",
+          "text": "Gusset container emptied final second shift.Brandon Lance Mathew Draper",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779953964",
+          "from": "Ahtziri Arteaga",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:12:33.964Z",
+          "sent_mt": "2026-07-22T22:12:33-06:00",
+          "text": "End shift. Brandon Lance Alan Todd Nidia Lopez Corea Sofia Carcamo",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784780369260",
+          "from": "Victor Leandro",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:19:29.26Z",
+          "sent_mt": "2026-07-22T22:19:29-06:00",
+          "text": "Lot verified",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784780914081",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:28:34.081Z",
+          "sent_mt": "2026-07-22T22:28:34-06:00",
+          "text": "Centerline",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784780360989",
+          "from": "Victor Leandro",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:19:20.989Z",
+          "sent_mt": "2026-07-22T22:19:20-06:00",
+          "text": "Pouches look great, and have 18 pieces each. We are meeting the product specifications 🎯🎯",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784790722747",
+          "from": "Zack Kurtz",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:12:02.747Z",
+          "sent_mt": "2026-07-23T01:12:02-06:00",
+          "text": "Midshift scrap Haydee Hidalgo Gonzales. Safety chain submitted. 15plt + partial 30 cases. Midshift = 1,380 cases / 11,040 pouches",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784791754785",
+          "from": "Haydee Hidalgo Gonzales",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:29:14.785Z",
+          "sent_mt": "2026-07-23T01:29:14-06:00",
+          "text": "Pouches report Alan Todd Nidia Lopez Corea Sofia Carcamo Gustavo Rodas Zack Kurtz",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784795209330",
+          "from": "Zack Kurtz",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T08:26:49.33Z",
+          "sent_mt": "2026-07-23T02:26:49-06:00",
+          "text": "Line is down for blade maintenance. 🤞",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784795644881",
+          "from": "Zack Kurtz",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T08:34:04.881Z",
+          "sent_mt": "2026-07-23T02:34:04-06:00",
+          "text": "Line is back up and good to go 🙏",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810779685",
+          "from": "Haydee Hidalgo Gonzales",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:46:19.685Z",
+          "sent_mt": "2026-07-23T06:46:19-06:00",
+          "text": "Pouches report Alan Todd Nidia Lopez Corea Sofia Carcamo Gustavo Rodas Zack Kurtz",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810944655",
+          "from": "Claudio Tovar",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:49:04.655Z",
+          "sent_mt": "2026-07-23T06:49:04-06:00",
+          "text": "Good morning, team! First-shift update: batch verified.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784806993024",
+          "from": "Zack Kurtz",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:43:13.024Z",
+          "sent_mt": "2026-07-23T05:43:13-06:00",
+          "text": "End of shift scrap with 38 plts + 30 cases. Haydee Hidalgo Gonzales",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:0767c447cdb841f296fa0b0e3ff8c82e@thread.v2",
+      "topic": "L1 Schedule",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A0767c447cdb841f296fa0b0e3ff8c82e%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784731936401",
+          "from": "Daniel Bringas",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:52:16.401Z",
+          "sent_mt": "2026-07-22T08:52:16-06:00",
+          "text": "Use the quantity that is in the Schedule please",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738092999",
+          "from": "Ethan Bean",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:34:52.999Z",
+          "sent_mt": "2026-07-22T10:34:52-06:00",
+          "text": "Curt Willis Kirk Nickel Chad Stone Daniel Bringas 40730-v2 are in inventory. 208k available for use.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784743939772",
+          "from": "Joey Michael Dudney",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:12:19.772Z",
+          "sent_mt": "2026-07-22T12:12:19-06:00",
+          "text": "Hello Kirk Nickel /Ethan Bean! Peco has not arrived yet at L1, can you reach out to Peco for an ETA on the Candyco Peco pallets? Tiffanee Taylor - Justin Garner",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784744567771",
+          "from": "Nisheena Etcitty",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:22:47.771Z",
+          "sent_mt": "2026-07-22T12:22:47-06:00",
+          "text": "Will all pallets be requested today? Curt Willis, Ethan Bean",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784753274148",
+          "from": "Jazmin Vazquez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:47:54.148Z",
+          "sent_mt": "2026-07-22T14:47:54-06:00",
+          "text": "Team, \n\nThe 2-4 pm time block components have been verified and staged for 2nd shift today's production.\n\nAttached is the signed verification.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752892235",
+          "from": "Justin Garner",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:41:32.235Z",
+          "sent_mt": "2026-07-22T14:41:32-06:00",
+          "text": "We have enough of this ingredient to only make 10 batches, about 9 barrels. Daniel Bringas Kirk Nickel Ethan Bean Martin Carlos Curt Willis Justin Garner\nDo we know when more is coming?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784756514190",
+          "from": "Daniel Bringas",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:41:54.19Z",
+          "sent_mt": "2026-07-22T15:41:54-06:00",
+          "text": "Thanks Martin!",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784756479719",
+          "from": "Martin Carlos",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:41:19.719Z",
+          "sent_mt": "2026-07-22T15:41:19-06:00",
+          "text": "Justin Garner For 10218 Rowanberry Extract, we have 350 lbs. coming in Thursday 7/23 from the vendor. \nNeeded until 7/27\nCurt Willis, Daniel Bringas, Kirk Nickel",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784761966383",
+          "from": "Tiffanee Taylor",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:12:46.383Z",
+          "sent_mt": "2026-07-22T17:12:46-06:00",
+          "text": "Still need a PO# please",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784736830278",
+          "from": "Ethan Bean",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:13:50.278Z",
+          "sent_mt": "2026-07-22T10:13:50-06:00",
+          "text": "Jazmin Vazquez we have 200 coming tomorrow on P.O 9025 Tiffanee Taylor for Visibility",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784762075754",
+          "from": "Tiffanee Taylor",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:14:35.754Z",
+          "sent_mt": "2026-07-22T17:14:35-06:00",
+          "text": "Ethan Bean Kirk Nickel",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784762587753",
+          "from": "Kirk Nickel",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:23:07.753Z",
+          "sent_mt": "2026-07-22T17:23:07-06:00",
+          "text": "I believe Ethan requested a part # for this new item so he could then create a PO for you",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784763366820",
+          "from": "Tiffanee Taylor",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:36:06.82Z",
+          "sent_mt": "2026-07-22T17:36:06-06:00",
+          "text": "Great, thank you",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784763473546",
+          "from": "Tiffanee Taylor",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:37:53.546Z",
+          "sent_mt": "2026-07-22T17:37:53-06:00",
+          "text": "Also, we still haven't received any Peco pallets today. We only have 20 left on the floor right now",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784767024035",
+          "from": "Dakota Adair",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:37:04.035Z",
+          "sent_mt": "2026-07-22T18:37:04-06:00",
+          "text": "Kirk Nickel, Ethan Bean, do we have an ETA on peco pallets Tiffanee Taylor is asking for. \n\nWe are down to 10 pallets once we run out we will be placing the boxes onto regular pallets until they arrive Curt Willis",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768084838",
+          "from": "Kirk Nickel",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:54:44.838Z",
+          "sent_mt": "2026-07-22T18:54:44-06:00",
+          "text": "Were any delivered today? I was expecting 2 FTLs or 1080 pallets today",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768209035",
+          "from": "Dakota Adair",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:56:49.035Z",
+          "sent_mt": "2026-07-22T18:56:49-06:00",
+          "text": "From what Tiffanee Taylor and the second shift warehouse team has stated. they have not shown up.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784769714421",
+          "from": "Kirk Nickel",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:21:54.421Z",
+          "sent_mt": "2026-07-22T19:21:54-06:00",
+          "text": "I will follow up with the supplier. Likely won’t deliver till tomorrow",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784808903303",
+          "from": "Ricardo Tovar",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:15:03.303Z",
+          "sent_mt": "2026-07-23T06:15:03-06:00",
+          "text": "Team, \n\nThe 6-8  time block components have been verified and staged for 1st shift today's production. Only item we are short on is the PECO Pallets \n\nAttached is the signed verification.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810927968",
+          "from": "Justin Garner",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:48:47.968Z",
+          "sent_mt": "2026-07-23T06:48:47-06:00",
+          "text": "Do we know what time these are arriving? And is it being delivered to L1 or SV?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810980674",
+          "from": "Justin Garner",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:49:40.674Z",
+          "sent_mt": "2026-07-23T06:49:40-06:00",
+          "text": "Do we know what time these are arriving? And are they being delivered to L1?",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:0f56b879729240b79098dbb5b52b9c0e@thread.v2",
+      "topic": "L1 Sollich 2 information exchange",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A0f56b879729240b79098dbb5b52b9c0e%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784726531196",
+          "from": "Katya Farnsworth",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:22:11.196Z",
+          "sent_mt": "2026-07-22T07:22:11-06:00",
+          "text": "With the blower going, let's make sure that we inspect and empty out catch pans, please. Joseph Scott",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784729307755",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:08:27.755Z",
+          "sent_mt": "2026-07-22T08:08:27-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784729328948",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:08:48.948Z",
+          "sent_mt": "2026-07-22T08:08:48-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784730819764",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:33:39.764Z",
+          "sent_mt": "2026-07-22T08:33:39-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784731295254",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:41:35.254Z",
+          "sent_mt": "2026-07-22T08:41:35-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784731421997",
+          "from": "Ingrid Moreno Angarita",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:43:41.997Z",
+          "sent_mt": "2026-07-22T08:43:41-06:00",
+          "text": "Victor Romero Sr. Please remind the staff to verify the weights—minimum (179.0), target (189.8), and maximum (215.0)—for Matrix 6, 7, and 8 bags in accordance with each product's specifications. It is important to ensure that weights remain within the established limits to guarantee compliance with quality standards and prevent the product from falling outside specifications.\n\nThank you for your support and commitment!",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784729437290",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:10:37.29Z",
+          "sent_mt": "2026-07-22T08:10:37-06:00",
+          "text": "10 pieces and 1 almond",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784732443754",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:00:43.754Z",
+          "sent_mt": "2026-07-22T09:00:43-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784732445729",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:00:45.729Z",
+          "sent_mt": "2026-07-22T09:00:45-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784733601114",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:20:01.114Z",
+          "sent_mt": "2026-07-22T09:20:01-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784733742989",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:22:22.989Z",
+          "sent_mt": "2026-07-22T09:22:22-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784734127122",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:28:47.122Z",
+          "sent_mt": "2026-07-22T09:28:47-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737704125",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:28:24.125Z",
+          "sent_mt": "2026-07-22T10:28:24-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738010393",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:33:30.393Z",
+          "sent_mt": "2026-07-22T10:33:30-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738256037",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:37:36.037Z",
+          "sent_mt": "2026-07-22T10:37:36-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738350343",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:39:10.343Z",
+          "sent_mt": "2026-07-22T10:39:10-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738552600",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:42:32.6Z",
+          "sent_mt": "2026-07-22T10:42:32-06:00",
+          "text": "Scrap calculation - Almond Cluster - pre enrober mid shift\nPre piece scrap= 91 lb \nJustin Garner Victor Romero Sr.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784741059200",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:24:19.2Z",
+          "sent_mt": "2026-07-22T11:24:19-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784741487111",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:31:27.111Z",
+          "sent_mt": "2026-07-22T11:31:27-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784742052055",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:40:52.055Z",
+          "sent_mt": "2026-07-22T11:40:52-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784742353141",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:45:53.141Z",
+          "sent_mt": "2026-07-22T11:45:53-06:00",
+          "text": "Viscosity 28700",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784743897421",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:11:37.421Z",
+          "sent_mt": "2026-07-22T12:11:37-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784745067675",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:31:07.675Z",
+          "sent_mt": "2026-07-22T12:31:07-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784744822623",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:27:02.623Z",
+          "sent_mt": "2026-07-22T12:27:02-06:00",
+          "text": "10 pieces and 2 almonds",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784745126145",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:32:06.145Z",
+          "sent_mt": "2026-07-22T12:32:06-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784745390896",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:36:30.896Z",
+          "sent_mt": "2026-07-22T12:36:30-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784745809863",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:43:29.863Z",
+          "sent_mt": "2026-07-22T12:43:29-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784746880673",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:01:20.673Z",
+          "sent_mt": "2026-07-22T13:01:20-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784747559975",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:12:39.975Z",
+          "sent_mt": "2026-07-22T13:12:39-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784748755516",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:32:35.516Z",
+          "sent_mt": "2026-07-22T13:32:35-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784749785003",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:49:45.003Z",
+          "sent_mt": "2026-07-22T13:49:45-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784750932022",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:08:52.022Z",
+          "sent_mt": "2026-07-22T14:08:52-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751286405",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:14:46.405Z",
+          "sent_mt": "2026-07-22T14:14:46-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751797021",
+          "from": "S2 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:23:17.021Z",
+          "sent_mt": "2026-07-22T14:23:17-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752016528",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:26:56.528Z",
+          "sent_mt": "2026-07-22T14:26:56-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752434896",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:33:54.896Z",
+          "sent_mt": "2026-07-22T14:33:54-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752084225",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:28:04.225Z",
+          "sent_mt": "2026-07-22T14:28:04-06:00",
+          "text": "Filter and sweco screen inspection Justin Garner Victor Romero Sr.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784753024305",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:43:44.305Z",
+          "sent_mt": "2026-07-22T14:43:44-06:00",
+          "text": "Scrap calculation - Almond Cluster - pre enrober end of shift \nPre piece scrap= 131 lb \nNuts fell on Floor= 8 lb",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784753480353",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:51:20.353Z",
+          "sent_mt": "2026-07-22T14:51:20-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784753509339",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:51:49.339Z",
+          "sent_mt": "2026-07-22T14:51:49-06:00",
+          "text": "End of 1 shift",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755558194",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:25:58.194Z",
+          "sent_mt": "2026-07-22T15:25:58-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755573440",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:26:13.44Z",
+          "sent_mt": "2026-07-22T15:26:13-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755592863",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:26:32.863Z",
+          "sent_mt": "2026-07-22T15:26:32-06:00",
+          "text": "Hi team, just wondering if the \"pitch error\" message is normal, is over rejecting pouches with good weights due to this error. Angelica Perez Conner Boyd",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755697613",
+          "from": "Conner Boyd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:28:17.613Z",
+          "sent_mt": "2026-07-22T15:28:17-06:00",
+          "text": "I’ll come take a look at it Victor Mejia\n\nWith the speed we’re going it can happen if we’re not sorting fast enough.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784755745389",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:29:05.389Z",
+          "sent_mt": "2026-07-22T15:29:05-06:00",
+          "text": "Thanks Conner",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784758152155",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:09:12.155Z",
+          "sent_mt": "2026-07-22T16:09:12-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784764970418",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:02:50.418Z",
+          "sent_mt": "2026-07-22T18:02:50-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784771613384",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:53:33.384Z",
+          "sent_mt": "2026-07-22T19:53:33-06:00",
+          "text": "Due to the speed of the line we have over accumulation due to weight and x ray. I would kindly suggest a pause while we pass all accumulation.\n\n\nAngelica Perez Charity Young Conner Boyd",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784771787959",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:56:27.959Z",
+          "sent_mt": "2026-07-22T19:56:27-06:00",
+          "text": "It's the safest way to get through. Please Conner Boyd Dakota Adair",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784771926533",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:58:46.533Z",
+          "sent_mt": "2026-07-22T19:58:46-06:00",
+          "text": "We are having to many pouches fallin to the floor due to the same reason and EEs are also having over accumulation",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784771989191",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:59:49.191Z",
+          "sent_mt": "2026-07-22T19:59:49-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772031682",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:00:31.682Z",
+          "sent_mt": "2026-07-22T20:00:31-06:00",
+          "text": "Please, we need to address this. Conner Boyd Dakota Adair",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784771998300",
+          "from": "Conner Boyd",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:59:58.3Z",
+          "sent_mt": "2026-07-22T19:59:58-06:00",
+          "text": "We paused for 20 minutes within the hour to pass the accumulation from the check weigher. \nSo the X-ray is built up from that pause, since Production can’t access the X-ray bin. \n\nThe RR dictates that 97 pouches pass by the check weigher per minute. \n\nWith one check weigher it is creating a bottleneck. \n\nWe’ll looking into to adjusting the speed timing of the check weigher belt. \nVictor Mejia Dakota Adair Charity Young Angelica Perez",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772169605",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:02:49.605Z",
+          "sent_mt": "2026-07-22T20:02:49-06:00",
+          "text": "Thank you for the explanation, we hope this improves things.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772193590",
+          "from": "Conner Boyd",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:03:13.59Z",
+          "sent_mt": "2026-07-22T20:03:13-06:00",
+          "text": "We’ll pause to pass the accumulation, and make a decision on how to proceed from there.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772252363",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:04:12.363Z",
+          "sent_mt": "2026-07-22T20:04:12-06:00",
+          "text": "The paused is counted from the start of the line, you would need to consider how long it takes to reach the pause by the end of the line and we are reaching over 20 pouches falling into the x-ray bin in a 10 minutes time frame",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772315956",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:05:15.956Z",
+          "sent_mt": "2026-07-22T20:05:15-06:00",
+          "text": "We'll need to consider a couple of thing since the speed was increased",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772997695",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:16:37.695Z",
+          "sent_mt": "2026-07-22T20:16:37-06:00",
+          "text": "Isn't it a problem with the sensitivity of the x-ray machine? Victor Mejia",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773045812",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:17:25.812Z",
+          "sent_mt": "2026-07-22T20:17:25-06:00",
+          "text": "Are the employees separating the bags, leaving some distance so they aren't rejected?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773053420",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:17:33.42Z",
+          "sent_mt": "2026-07-22T20:17:33-06:00",
+          "text": "Could be",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773090503",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:18:10.503Z",
+          "sent_mt": "2026-07-22T20:18:10-06:00",
+          "text": "Yes but due to the speed is really hard to have a proper distance between bags",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784776069135",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:07:49.135Z",
+          "sent_mt": "2026-07-22T21:07:49-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779154684",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:59:14.684Z",
+          "sent_mt": "2026-07-22T21:59:14-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784780981433",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:29:41.433Z",
+          "sent_mt": "2026-07-22T22:29:41-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781574464",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:39:34.464Z",
+          "sent_mt": "2026-07-22T22:39:34-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784781978423",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:46:18.423Z",
+          "sent_mt": "2026-07-22T22:46:18-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782033999",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:47:13.999Z",
+          "sent_mt": "2026-07-22T22:47:13-06:00",
+          "text": "Why we are placing the pallets for rework? Victor Mejia",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784782502482",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:55:02.482Z",
+          "sent_mt": "2026-07-22T22:55:02-06:00",
+          "text": "Wrong pallet, we should use PECO pallet instead of new pallets based on spec",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784784782151",
+          "from": "Conner Boyd",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:33:02.151Z",
+          "sent_mt": "2026-07-22T23:33:02-06:00",
+          "text": "6.7oz pouches remaining\n\nTotal in Inventory: 142,539 \n\nTotal needed to finish Case10/6.7ox: 102,060(pouches)\n+\nTotal needed to finish Case12/6.7oz: 19,994(pouches)\n\n= 122,054 (required)",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784784112006",
+          "from": "Victor Mejia",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:21:52.006Z",
+          "sent_mt": "2026-07-22T23:21:52-06:00",
+          "text": "We have a total of 6 pallets from our shift (second shift) that needs to be reworked \n\n\nCharity Young Angelica Perez",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784786596532",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:03:16.532Z",
+          "sent_mt": "2026-07-23T00:03:16-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784786610466",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:03:30.466Z",
+          "sent_mt": "2026-07-23T00:03:30-06:00",
+          "text": "Shift 3",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784800904646",
+          "from": "Joseph Scott",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:01:44.646Z",
+          "sent_mt": "2026-07-23T04:01:44-06:00",
+          "text": "We are a half pallet away from finishing the case 12 order. We will pause to pass accumulation and switch to the case 10 job",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784789261686",
+          "from": "Jody Howse",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:47:41.686Z",
+          "sent_mt": "2026-07-23T00:47:41-06:00",
+          "text": "All FG pallets are being staged on S4 awaiting PECO to rework Thursday.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784805924322",
+          "from": "Joseph Scott",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:25:24.322Z",
+          "sent_mt": "2026-07-23T05:25:24-06:00",
+          "text": "1,740 boxes made",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784805951986",
+          "from": "Joseph Scott",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:25:51.986Z",
+          "sent_mt": "2026-07-23T05:25:51-06:00",
+          "text": "Running case 10 job",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784807446416",
+          "from": "Joseph Scott",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:50:46.416Z",
+          "sent_mt": "2026-07-23T05:50:46-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784807680449",
+          "from": "Joseph Scott",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:54:40.449Z",
+          "sent_mt": "2026-07-23T05:54:40-06:00",
+          "text": "Piece check 10",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784810570842",
+          "from": "S2 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:42:50.842Z",
+          "sent_mt": "2026-07-23T06:42:50-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:efb197a79aff4c868d441bab3db6dbbb@thread.v2",
+      "topic": "L1  Sollich 3 information exchange",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Aefb197a79aff4c868d441bab3db6dbbb%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784730228253",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:23:48.253Z",
+          "sent_mt": "2026-07-22T08:23:48-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784731040906",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:37:20.906Z",
+          "sent_mt": "2026-07-22T08:37:20-06:00",
+          "text": "Height 15,04mm\nDiameter 38,67",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784731894794",
+          "from": "S3 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:51:34.794Z",
+          "sent_mt": "2026-07-22T08:51:34-06:00",
+          "text": "Bed and caramel CL.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784731981995",
+          "from": "S3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:53:01.995Z",
+          "sent_mt": "2026-07-22T08:53:01-06:00",
+          "text": "There are only 750 lids left; I estimate about 45–50 minutes of production time.Nathan Topham Justin Garner",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784727281563",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:34:41.563Z",
+          "sent_mt": "2026-07-22T07:34:41-06:00",
+          "text": "Height 14,90mm\nDiameter 39,34mm",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784733081822",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:11:21.822Z",
+          "sent_mt": "2026-07-22T09:11:21-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784733410028",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:16:50.028Z",
+          "sent_mt": "2026-07-22T09:16:50-06:00",
+          "text": "We will hit order we are good we will over produce by some with the left over product in the tunel what would you like done with it Justin",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784734626165",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:37:06.165Z",
+          "sent_mt": "2026-07-22T09:37:06-06:00",
+          "text": "Height 15,08mm\nDiameter 39,95mm",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784734991790",
+          "from": "Curt Willis",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:43:11.79Z",
+          "sent_mt": "2026-07-22T09:43:11-06:00",
+          "text": "Pack everything and overproduce please",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784735063070",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:44:23.07Z",
+          "sent_mt": "2026-07-22T09:44:23-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784735082876",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:44:42.876Z",
+          "sent_mt": "2026-07-22T09:44:42-06:00",
+          "text": "ok",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784737247963",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:20:47.963Z",
+          "sent_mt": "2026-07-22T10:20:47-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784734761183",
+          "from": "Katya Farnsworth",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T15:39:21.183Z",
+          "sent_mt": "2026-07-22T09:39:21-06:00",
+          "text": "Amy Hadrich",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784741649855",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:34:09.855Z",
+          "sent_mt": "2026-07-22T11:34:09-06:00",
+          "text": "William, Luis, Mary and Charity do any of you know where the book and paperwork is for the level 4 cleaning paperwork ? It was by the supervisors desk yesterday.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784748001586",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:20:01.586Z",
+          "sent_mt": "2026-07-22T13:20:01-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784748095447",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:21:35.447Z",
+          "sent_mt": "2026-07-22T13:21:35-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784746375249",
+          "from": "Leon Brueger",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:52:55.249Z",
+          "sent_mt": "2026-07-22T12:52:55-06:00",
+          "text": "Justin Garner Curt Willis\nThe Z Conveyor Disconnect is complete. The intended purpose is to turn off the disconnect before unplugging the conveyor.  Turn the power back on after the conveyor plug is inspected to be dry and plugged in. Please have the operators trained in correct use, thank you.\n\nThank you, Chris Jeffs for help finishing the wire connection.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784753243362",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:47:23.362Z",
+          "sent_mt": "2026-07-22T14:47:23-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752054553",
+          "from": "Leon Brueger",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:27:34.553Z",
+          "sent_mt": "2026-07-22T14:27:34-06:00",
+          "text": "Curt Willis Justin Garner\nKitchen 3 Steam Pressure sensor check complete. Results: Both Passed. \nNotes: Before inspection the cables were not tight to the sensors. This could have been giving incomplete feed back. Fully seated when finished. The terminal ends are starting to green from not being fully seated so cable replacement may be required in the near future.\nTested at 30 and 90psi.\nBoth kettles are within 2psi of the analog gauges.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784739503011",
+          "from": "Justin Garner",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:58:23.011Z",
+          "sent_mt": "2026-07-22T10:58:23-06:00",
+          "text": "I want to make sure it is clear and everyone understands. This is not a new LOTO process. This switch was installed so the power to this 480 outlet can be turned off before anyone plugs or unplugs the conveyor to eliminate anyone getting electrocuted. Nathan Topham, will create an OPL so all teams can be trained.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784738491374",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T16:41:31.374Z",
+          "sent_mt": "2026-07-22T10:41:31-06:00",
+          "text": "We now have this new LOTO process Chris Jeffs and I have walked through it and we will follow up with our team as well",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784753839619",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:57:19.619Z",
+          "sent_mt": "2026-07-22T14:57:19-06:00",
+          "text": "Visual inspection done ✅",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784756369711",
+          "from": "William Beattie",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:39:29.711Z",
+          "sent_mt": "2026-07-22T15:39:29-06:00",
+          "text": "Maintenance is requesting confirmation that these white plastic strips need to be removed in order to properly clean the guides for the C2 belt. We don't normally remove these? It looks necessary to me. Dakota Adair Curt Willis Charity Young",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784756721235",
+          "from": "Charity Young",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:45:21.235Z",
+          "sent_mt": "2026-07-22T15:45:21-06:00",
+          "text": "Yes",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784756991510",
+          "from": "Caleb York",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:49:51.51Z",
+          "sent_mt": "2026-07-22T15:49:51-06:00",
+          "text": "I've just not seen that clean fall on this shift yet, that's all.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784758140564",
+          "from": "Alfonsina Gil",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:09:00.564Z",
+          "sent_mt": "2026-07-22T16:09:00-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784758318602",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:11:58.602Z",
+          "sent_mt": "2026-07-22T16:11:58-06:00",
+          "text": "I agree Alfonsina Gil",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784758244069",
+          "from": "Alfonsina Gil",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:10:44.069Z",
+          "sent_mt": "2026-07-22T16:10:44-06:00",
+          "text": "We need to dismantle this area; there is a lot of chocolate and residue will be left behind—it requires a Level 4 cleaning. William Beattie Angelica Perez, Charity Young",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784759796647",
+          "from": "Alfonsina Gil",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:36:36.647Z",
+          "sent_mt": "2026-07-22T16:36:36-06:00",
+          "text": "thank you William Beattie",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784758615007",
+          "from": "William Beattie",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:16:55.007Z",
+          "sent_mt": "2026-07-22T16:16:55-06:00",
+          "text": "The team is working with Caleb York to do this now.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784761978997",
+          "from": "William Beattie",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T23:12:58.997Z",
+          "sent_mt": "2026-07-22T17:12:58-06:00",
+          "text": "Because we are still working on completing the PRS Pecan Clusters order, we're not able to start cleaning the labeler and x-ray machine for the jar area. And because the C19-C26 belts are complete, as well as the tops and bottoms of the matrixes, we've started working on the belt after the metal detector, as well as Return Conveyor 1 and Cross Conveyors 2 & 3.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784767915917",
+          "from": "Charity Young",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:51:55.917Z",
+          "sent_mt": "2026-07-22T18:51:55-06:00",
+          "text": "Angelica Perez Dakota Adair\n\nCan you please remind me what is happening with these 3 LPNs?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768065169",
+          "from": "Alfonsina Gil",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:54:25.169Z",
+          "sent_mt": "2026-07-22T18:54:25-06:00",
+          "text": "The sealing machine malfunctioned on these pallets, leaving them open; they were the last ones processed by the second shift.Charity Young",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768096102",
+          "from": "Charity Young",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:54:56.102Z",
+          "sent_mt": "2026-07-22T18:54:56-06:00",
+          "text": "Will these be sealed tonight?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768141374",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:55:41.374Z",
+          "sent_mt": "2026-07-22T18:55:41-06:00",
+          "text": "Correct",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768152380",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:55:52.38Z",
+          "sent_mt": "2026-07-22T18:55:52-06:00",
+          "text": "We hope so.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768376215",
+          "from": "Alfonsina Gil",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:59:36.215Z",
+          "sent_mt": "2026-07-22T18:59:36-06:00",
+          "text": "We are currently processing some pallets from the third shift that are undergoing rework due to missing labels; we hope to get to those as well.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768433816",
+          "from": "Alfonsina Gil",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:00:33.816Z",
+          "sent_mt": "2026-07-22T19:00:33-06:00",
+          "text": "I'll ask the supervisor, since those just need to be stamped—it'll be faster.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768820942",
+          "from": "William Beattie",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:07:00.942Z",
+          "sent_mt": "2026-07-22T19:07:00-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784768831858",
+          "from": "William Beattie",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:07:11.858Z",
+          "sent_mt": "2026-07-22T19:07:11-06:00",
+          "text": "We will have this done.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784774074497",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:34:34.497Z",
+          "sent_mt": "2026-07-22T20:34:34-06:00",
+          "text": "I will make sure that the pallets that were put on hold due to exposed caranel have the hold tag as in the system",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784776356045",
+          "from": "William Beattie",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:12:36.045Z",
+          "sent_mt": "2026-07-22T21:12:36-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784777062377",
+          "from": "Delia Zambrano",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:24:22.377Z",
+          "sent_mt": "2026-07-22T21:24:22-06:00",
+          "text": "I attached the retention tag to 9 pallets that have the same problem with the caramel cracking.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784777353242",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:29:13.242Z",
+          "sent_mt": "2026-07-22T21:29:13-06:00",
+          "text": "I checked the system and they are all on hold",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784777370154",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T03:29:30.154Z",
+          "sent_mt": "2026-07-22T21:29:30-06:00",
+          "text": "Thank you Delia Zambrano",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773705852",
+          "from": "Dakota Adair",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:28:25.852Z",
+          "sent_mt": "2026-07-22T20:28:25-06:00",
+          "text": "Charity Young, Angelica Perez can we please ensure all tags from QA are change on the PRS dark chocolate pecans created last week.\n\nThe team almost packed off a pallet due to the tag saying rework instead of hold. \n\n\nCurt Willis FYI",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784779988932",
+          "from": "Angelica Perez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T04:13:08.932Z",
+          "sent_mt": "2026-07-22T22:13:08-06:00",
+          "text": "The rework of these 3 pallets is complete and they have been released to production.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784784478979",
+          "from": "William Beattie",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:27:58.979Z",
+          "sent_mt": "2026-07-22T23:27:58-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784785418237",
+          "from": "Luis Falcon",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T05:43:38.237Z",
+          "sent_mt": "2026-07-22T23:43:38-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784787377913",
+          "from": "Alfonsina Gil",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T06:16:17.913Z",
+          "sent_mt": "2026-07-23T00:16:17-06:00",
+          "text": "Information: The second shift cleaned the area from the jars up to the cap machine; cleaning was not continued to the end because rework was being performed.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784793240199",
+          "from": "Luis Falcon",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T07:54:00.199Z",
+          "sent_mt": "2026-07-23T01:54:00-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784757005824",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:50:05.824Z",
+          "sent_mt": "2026-07-22T15:50:05-06:00",
+          "text": "We keep finding nuts in the conveyor for the z cereal belt we will finish it tomorrow Justin and Katya",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784800831680",
+          "from": "Luis Falcon",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T10:00:31.68Z",
+          "sent_mt": "2026-07-23T04:00:31-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784809825041",
+          "from": "Luis Falcon",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T12:30:25.041Z",
+          "sent_mt": "2026-07-23T06:30:25-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:cfccea066d034acba94704d396eb0481@thread.v2",
+      "topic": "L3 ML4 Start up",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Acfccea066d034acba94704d396eb0481%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784753889767",
+          "from": "Ray Garcia",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:58:09.767Z",
+          "sent_mt": "2026-07-22T14:58:09-06:00",
+          "text": "The electrician will be here Monday morning to inspect and setup the mixer.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:8604f35233d24ab4bb30194a240f84b0@thread.v2",
+      "topic": "L2 Grinding Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A8604f35233d24ab4bb30194a240f84b0%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784806337697",
+          "from": "Victor Leandro",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:32:17.697Z",
+          "sent_mt": "2026-07-23T05:32:17-06:00",
+          "text": "The same Graham box that was in Hold yesterday, 330lbs were consumed and 130lbs of product were left in the box, to be reviewed. The idea was to consume the product that is before the affected part of the bag.  Hervin Herrera Jose Cabrera",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784806375537",
+          "from": "Victor Leandro",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:32:55.537Z",
+          "sent_mt": "2026-07-23T05:32:55-06:00",
+          "text": "The remaining 130 lbs are in hold",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784806344836",
+          "from": "Victor Leandro",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T11:32:24.836Z",
+          "sent_mt": "2026-07-23T05:32:24-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:16497bc837ca46ce9161fa0881beb4f8@thread.v2",
+      "topic": "L2 Plant Standards",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A16497bc837ca46ce9161fa0881beb4f8%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784752681724",
+          "from": "Mathew Draper",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:38:01.724Z",
+          "sent_mt": "2026-07-22T14:38:01-06:00",
+          "text": "I will inquire whose they are",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752721113",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:38:41.113Z",
+          "sent_mt": "2026-07-22T14:38:41-06:00",
+          "text": "Mathew Draper, I sent some information to Brandon Lance. Please check with him.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752849663",
+          "from": "Brandon Lance",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:40:49.663Z",
+          "sent_mt": "2026-07-22T14:40:49-06:00",
+          "text": "Two of them are being moved now Alan Todd",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752896117",
+          "from": "Brandon Lance",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:41:36.117Z",
+          "sent_mt": "2026-07-22T14:41:36-06:00",
+          "text": "Three of them are being moved. We are still looking for the gray SUV.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784751075032",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:11:15.032Z",
+          "sent_mt": "2026-07-22T14:11:15-06:00",
+          "text": "Brandon Lance, Mathew Draper\n\nPlease find out whose cars they are and have them moved",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784752928319",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T20:42:08.319Z",
+          "sent_mt": "2026-07-22T14:42:08-06:00",
+          "text": "That one belongs to Daniel Bringas.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:01a44fcb36664ffcad48a30c6f952864@thread.v2",
+      "topic": "L3 Plant Standards",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A01a44fcb36664ffcad48a30c6f952864%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784760200650",
+          "from": "Benjamin Hicks",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:43:20.65Z",
+          "sent_mt": "2026-07-22T16:43:20-06:00",
+          "text": "Shoes for Crew Update: \nRhys (sales rep) is on his way back to your building. As planned, he will be there from 5pm-8pm. Please let me know if there are any problems. \nChad, Rose, Marcos",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784759133945",
+          "from": "Tyson Fausett",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:25:33.945Z",
+          "sent_mt": "2026-07-22T16:25:33-06:00",
+          "text": "I’ll come get it thank you",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784758486730",
+          "from": "Robert Villarreal",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T22:14:46.73Z",
+          "sent_mt": "2026-07-22T16:14:46-06:00",
+          "text": "This oil pump is here in the lobby if anyone needs it",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:17cdef05e40440a6a7d64757067ca624@thread.v2",
+      "topic": "L1 Plant Standards",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A17cdef05e40440a6a7d64757067ca624%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784766719744",
+          "from": "Caleb York",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:31:59.744Z",
+          "sent_mt": "2026-07-22T18:31:59-06:00",
+          "text": "Tiffanee, would you be able to have L2 send the tote of pre-mix glycol to L1?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784767373857",
+          "from": "Caleb York",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:42:53.857Z",
+          "sent_mt": "2026-07-22T18:42:53-06:00",
+          "text": "Thank you",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784769710722",
+          "from": "Victor Alvarez Montez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:21:50.722Z",
+          "sent_mt": "2026-07-22T19:21:50-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784769736863",
+          "from": "Victor Alvarez Montez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:22:16.863Z",
+          "sent_mt": "2026-07-22T19:22:16-06:00",
+          "text": "Caleb, that's ready",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784769752598",
+          "from": "Caleb York",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:22:32.598Z",
+          "sent_mt": "2026-07-22T19:22:32-06:00",
+          "text": "Thank you",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784766845405",
+          "from": "Victor Alvarez Montez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T00:34:05.405Z",
+          "sent_mt": "2026-07-22T18:34:05-06:00",
+          "text": "Yes, we will do",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784772519354",
+          "from": "Caleb York",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:08:39.354Z",
+          "sent_mt": "2026-07-22T20:08:39-06:00",
+          "text": "I'm finished with the glycol Victor, it can be sent back whenever",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773074111",
+          "from": "Victor Alvarez Montez",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:17:54.111Z",
+          "sent_mt": "2026-07-22T20:17:54-06:00",
+          "text": "Ok,",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773463556",
+          "from": "Curt Willis",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:24:23.556Z",
+          "sent_mt": "2026-07-22T20:24:23-06:00",
+          "text": "Will do 👍",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773731920",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:28:51.92Z",
+          "sent_mt": "2026-07-22T20:28:51-06:00",
+          "text": "Sounds good.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784773391227",
+          "from": "Chad Stone",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T02:23:11.227Z",
+          "sent_mt": "2026-07-22T20:23:11-06:00",
+          "text": "Good evening everyone, \n \nWe will have some visitors from the Pleasant Grove / Lindon Chamber out tomorrow to tour our facility. \n \nWe will tour around 11:45am and I will keep them on the path. \n \nCurt Willis please ensure L1 is tour ready and Alan Todd please ensure L2 is tour ready as we may walk L2 as well.\n \nThank you!!",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:8c43a11f48b84dea809ff223b8ab344d@thread.v2",
+      "topic": "L2 ML2 Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A8c43a11f48b84dea809ff223b8ab344d%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784743015388",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:56:55.388Z",
+          "sent_mt": "2026-07-22T11:56:55-06:00",
+          "text": "Dave Ruff the temper unit continues to fault out while trying to do a reheat.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784743089814",
+          "from": "Dave Ruff",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:58:09.814Z",
+          "sent_mt": "2026-07-22T11:58:09-06:00",
+          "text": "I just walked through and Adrien said it was good.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784750226387",
+          "from": "ML2 Depositor",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:57:06.387Z",
+          "sent_mt": "2026-07-22T13:57:06-06:00",
+          "text": "End of shift",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784750265939",
+          "from": "ML2 Depositor",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T19:57:45.939Z",
+          "sent_mt": "2026-07-22T13:57:45-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784771297107",
+          "from": "Wilson Amaris Cabrera",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:48:17.107Z",
+          "sent_mt": "2026-07-22T19:48:17-06:00",
+          "text": "Thank you Brandon Lance",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784771255765",
+          "from": "Brandon Lance",
+          "from_upn": null,
+          "sent_utc": "2026-07-23T01:47:35.765Z",
+          "sent_mt": "2026-07-22T19:47:35-06:00",
+          "text": "Everything is now staged on the line besides the displays. Wilson Amaris Cabrera and myself just did a walk-through and checked that all part numbers match the BOM.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:5cac812b7b014d96993a8d78de0dd6f4@thread.v2",
+      "topic": "L1 Sollich 4 Information Exchange",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A5cac812b7b014d96993a8d78de0dd6f4%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784731181275",
+          "from": "Katya Farnsworth",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T14:39:41.275Z",
+          "sent_mt": "2026-07-22T08:39:41-06:00",
+          "text": "We have enough of this ingredient to only make 10 batches, about 9 barrels. Daniel Bringas Kirk Nickel Ethan Bean Martin Carlos Curt Willis Justin Garner \n\n\nDo we know when more is coming?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784739719925",
+          "from": "Paula Pena",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:01:59.925Z",
+          "sent_mt": "2026-07-22T11:01:59-06:00",
+          "text": "New WO for item 21117 Nathan Topham, Katya Farnsworth, Dakota Adair",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784739770316",
+          "from": "Nathan Topham",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:02:50.316Z",
+          "sent_mt": "2026-07-22T11:02:50-06:00",
+          "text": "We have already cooking our 1st batch and QC is currently testing for WA, Brix, and viscosity.  This is our first batch.  The reason this has taken so long is due to one shot was now staged for FEA.  All materials had to be returned and re-staged for FEA One shot",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784740475201",
+          "from": "Mariela Gudino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:14:35.201Z",
+          "sent_mt": "2026-07-22T11:14:35-06:00",
+          "text": "Item : 21117\nViscosity Spec: 9860-16750\nWA: 0.60-0.70\nTemp:93\nBrix: Data\n\n\n\n\nViscosity, WA, Brix",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784740489545",
+          "from": "Marcos Jimenez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:14:49.545Z",
+          "sent_mt": "2026-07-22T11:14:49-06:00",
+          "text": "Hi Team,\nOne Shot Feastables 21117 Update:",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784740499797",
+          "from": "Marcos Jimenez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T17:14:59.797Z",
+          "sent_mt": "2026-07-22T11:14:59-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784744324280",
+          "from": "Mariela Gudino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T18:18:44.28Z",
+          "sent_mt": "2026-07-22T12:18:44-06:00",
+          "text": "Viscosity, WA, Brix",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754111201",
+          "from": "Mariela Gudino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:01:51.201Z",
+          "sent_mt": "2026-07-22T15:01:51-06:00",
+          "text": "Viscosity, WA, Brix",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754183494",
+          "from": "Mariela Gudino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:03:03.494Z",
+          "sent_mt": "2026-07-22T15:03:03-06:00",
+          "text": "Viscosity, WA,Brix",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754622366",
+          "from": "Marcos Jimenez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:10:22.366Z",
+          "sent_mt": "2026-07-22T15:10:22-06:00",
+          "text": "Hi Team,\nOne Shot Feastables 21117 Update:\nWe produced 9 barrels, and all values were within the specified range.\nJustin Garner Nathan Topham Katya Farnsworth",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754638107",
+          "from": "Marcos Jimenez",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:10:38.107Z",
+          "sent_mt": "2026-07-22T15:10:38-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784754987280",
+          "from": "Mariela Gudino",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:16:27.28Z",
+          "sent_mt": "2026-07-22T15:16:27-06:00",
+          "text": "Viscosity,WA, Brix",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784756662494",
+          "from": "Martin Carlos",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T21:44:22.494Z",
+          "sent_mt": "2026-07-22T15:44:22-06:00",
+          "text": "Katya Farnsworth \nFor 10218 Rowanberry Extract, we have 350 lbs. coming in Thursday 7/23 from the vendor.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:212f26d25f104e348601b9032af3a1b6@thread.v2",
+      "topic": "L3 Second Floor",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A212f26d25f104e348601b9032af3a1b6%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1784728507111",
+          "from": "Chad Stone",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:55:07.111Z",
+          "sent_mt": "2026-07-22T07:55:07-06:00",
+          "text": "Perfect. Thank you Jorel Gourdin!!",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1784728484620",
+          "from": "Jorel Gourdin",
+          "from_upn": null,
+          "sent_utc": "2026-07-22T13:54:44.62Z",
+          "sent_mt": "2026-07-22T07:54:44-06:00",
+          "text": "Chad Stone confirmed delivery date is 7\\27. Please let Todd know.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    }
+  ]
+}

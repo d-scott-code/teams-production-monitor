@@ -1,0 +1,130 @@
+{
+  "date": "2026-07-23",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L3 MFM foreign material found in *WIP boxes* \u2014 no investigation or disposition documented in window."
+  },
+  "summary": "One open FM event at L3 MFM with no closure details. Five active holds across L1 and L2: wrong pallet type (6 pallets), exposed caramel (9 pallets), missing labels, and continuing ingredient hold. Near-miss at L1 S3 \u2014 QA tag read 'rework' instead of 'hold,' nearly released product to pack.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "3 LPNs \u2014 sealing malfunction, pouches open",
+      "summary": "Last pallets from second shift S3 line left with open seals due to machine fault.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-23T00:54:25.169Z"
+      },
+      "status": "Resolved on shift \u2014 sealing completed and released to production."
+    },
+    {
+      "plant": "L1",
+      "title": "Pallets missing labels \u2014 S3 rework",
+      "summary": "Third shift PRS pallets missing final labels; second shift rework in progress.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-23T00:59:36.215Z"
+      },
+      "status": "Resolved on shift \u2014 rework completed and released to production by 22:13 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "9 pallets \u2014 exposed caramel cracking",
+      "summary": "PRS Pecan Clusters jars showing caramel quality issue; retention tags attached and hold confirmed in system.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-07-23T03:24:22.377Z"
+      },
+      "status": "On hold \u2014 retention tags attached, disposition pending QA review."
+    },
+    {
+      "plant": "L1",
+      "title": "6 pallets \u2014 wrong pallet type used",
+      "summary": "Second shift S2 line packed 6 pallets of 6.7oz pouches onto new pallets instead of PECO pallets per spec; all staged on S4 for rework Thursday.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-23T05:21:52.006Z"
+      },
+      "status": "On hold \u2014 staged on S4 awaiting PECO pallet delivery Thursday 7/27 for rework."
+    },
+    {
+      "plant": "L2",
+      "title": "130 lbs Graham ingredient \u2014 continuing hold",
+      "summary": "Partial box from previous hold; 330 lbs consumed from unaffected portion, 130 lbs remains on hold for review.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Leandro",
+        "time_utc": "2026-07-23T11:32:17.697Z"
+      },
+      "status": "On hold \u2014 130 lbs isolated pending QA disposition; unaffected material consumed."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Foreign material in WIP boxes",
+      "summary": "FM found in work-in-process boxes on MFM line at 23:25 MT; no details on material type, quantity affected, or investigation documented.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-23T05:25:36.526Z"
+      },
+      "status": "Open \u2014 no disposition, investigation update, or affected product quantity reported by window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Near-miss \u2014 hold tag read 'rework'",
+      "summary": "PRS dark chocolate pecans from last week had QA tag incorrectly labeled 'rework' instead of 'hold'; team nearly packed off before catch.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-23T02:28:25.852Z"
+      },
+      "status": "Resolved \u2014 product remained on hold, tags corrected during shift."
+    },
+    {
+      "plant": "L3",
+      "title": "4 bins of doubles on Truffle line",
+      "summary": "High rate of double pieces coming out of enrober; 4 bins accumulated by 06:46 MT first shift.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-23T12:46:13.54Z"
+      },
+      "status": "Open \u2014 accumulation ongoing at window close, no corrective action documented."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 C2 belt \u2014 Level 4 cleaning",
+      "summary": "Significant chocolate buildup under C2 belt guides requires disassembly and deep clean; white plastic strips must be removed for proper access.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-22T22:10:44.069Z"
+      },
+      "status": "In progress \u2014 maintenance confirmed strips removal required, team working with Caleb York during second shift."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review hold tag process and training \u2014 based on S3 near-miss where 'rework' tag on hold product nearly released pallets to pack."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider pallet type verification step in S2 pack-off checklist \u2014 based on 6 pallets packed onto wrong pallet type (new vs. PECO per spec)."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding WIP container inspection checkpoint to MFM startup checklist \u2014 based on FM found in WIP boxes with no documented source or investigation protocol."
+    }
+  ]
+}
