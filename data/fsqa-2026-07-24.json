@@ -1,0 +1,133 @@
+{
+  "date": "2026-07-24",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S3 screw fell from MM5 matrix, never recovered \u2014 X-ray rejected test piece only *2 of 5* passes."
+  },
+  "summary": "Two active holds: 1.5 pallets from L1 S3 MM4 re-screened after missing screw (replacement installed, original not found); 3 pallets from L1 S3 on appearance hold after caramel double-passed due to matrix sealing failures. L1 S2 paused to sanitize floor-dropped pouches before re-run.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "MM4 product on hold after missing screw",
+      "summary": "1.5 pallets from Matrix 4 placed on hold and re-screened through X-ray after screw holding pouch-opening arms fell off at 03:20; original screw never recovered, replacement installed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-24T09:21:20.992Z"
+      },
+      "status": "Re-screened through X-ray by 06:19; released after no foreign material detected in finished product."
+    },
+    {
+      "plant": "L1",
+      "title": "3 pallets on appearance hold",
+      "summary": "S3 product held due to poor caramel appearance after double-passing through matrices caused by sealing failures; QA not satisfied with visual quality.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-07-24T04:12:58.504Z"
+      },
+      "status": "Open, pending disposition decision from production and QA leadership."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "MM5 screw missing, X-ray detection inconsistent",
+      "summary": "Screw from Matrix 5 pouch-opening mechanism fell during operation at 03:20; never recovered despite line stop and search; X-ray test of similar part rejected only 2 of 5 times.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-24T09:21:20.992Z"
+      },
+      "status": "Replacement screw installed by 05:20; affected product re-screened and released; original screw remains unrecovered."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 pouches fell to floor, no catch tray",
+      "summary": "Pouches fell through X-ray reject area to floor; no tray installed under machine to prevent contamination; line paused to sanitize before re-running product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-07-23T22:20:27.332Z"
+      },
+      "status": "Resolved on shift \u2014 pouches sanitized and successfully re-run through X-ray."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 MM6 seal quality failures",
+      "summary": "Bad drop every ~15 bags on Matrix 6; pouches zipping before seal; held off running to prevent pouch scrap spike.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-23T23:50:20.020Z"
+      },
+      "status": "Open, ongoing adjustments by maintenance and operations."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 multiple matrix sealing failures",
+      "summary": "MM3 and MM5 not sealing pouches, adding to scrap; MM4 hands loose and catching on suction cups; three machines failing within single shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-24T02:24:11.160Z"
+      },
+      "status": "Investigation ongoing; Caleb York and Dakota Adair troubleshooting all three machines through 2nd/3rd shift."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 product deterioration from double-passing",
+      "summary": "4 containers of accumulated product scrapped due to severe deterioration; product double-passed through matrices due to open bag failures.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-24T03:09:20.208Z"
+      },
+      "status": "Scrapped; team instructed to use only shallow bins and scrap deep-bin accumulation to prevent clumping."
+    },
+    {
+      "plant": "L1",
+      "title": "Wrong tray on labeled pallet",
+      "summary": "Pallet found with correct item number label but incorrect tray inside; caught before reaching line.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-24T03:35:00.176Z"
+      },
+      "status": "Resolved \u2014 pallet pulled and isolated before use."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 PTL water leak from hose joint",
+      "summary": "Water leaking from PTL hose joint; pressure reached 19.3 psi before venting via blue handle; maintenance addressing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-24T02:50:59.436Z"
+      },
+      "status": "Open, maintenance investigating joint integrity and pressure controls."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding catch tray under S2 X-ray reject bin to prevent product-floor contact \u2014 based on today's sanitation pause when pouches fell without containment."
+    },
+    {
+      "plant": "L1",
+      "text": "Review matrix sealing setup and preventive maintenance schedule for S3 \u2014 all three machines (MM3, MM4, MM5) showed sealing or mechanical failures within a single 8-hour window."
+    },
+    {
+      "plant": "L1",
+      "text": "Add fastener torque check to S3 matrix startup checklist \u2014 two separate hardware-loss events (MM4 screw, MM5 bolt) occurred within 45 minutes on same line."
+    },
+    {
+      "plant": "L2",
+      "text": "Monitor PTL hose joint integrity and pressure limits during ML2 startup checks \u2014 leak at 19.3 psi suggests fitting or pressure-relief gap."
+    }
+  ]
+}

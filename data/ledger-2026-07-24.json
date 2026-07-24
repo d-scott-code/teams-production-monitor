@@ -1,0 +1,233 @@
+{
+  "date": "2026-07-24",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 lost a matrix screw into product at 03:20, stopped *45 minutes* to search and re-screen \u2014 screw never found, replacement installed by 05:30."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran all four Sollich lines but S3 had a rough shift. A screw fell from MM4 at 03:20 and was never recovered; the team re-screened all affected product through x-ray and installed a replacement. Earlier in the night, S3 struggled with Tunnel 1 belt tracking, MM3/MM5 sealing failures, and product quality degrading after double-processing through the matrices. S2 had temper unit alarms around 05:23 but cleared by 07:04.",
+    "L2": "L2 FFS ran smoothly with two blade cleanings. ML2 had a PTL water leak at 20:50 with pressure spiking to 19.3 \u2014 maintenance responded. ML3 ran clean with no issues.",
+    "L3": "L3 Truffle line struggled all morning to dial in tempering after adjusting from 45\u00b0C down to 33\u00b0C per Chad's guidance \u2014 still working to stabilize as of 07:01. ML1 had recurring mold alarms through the night, same mold flagged multiple times for replacement. MF Matrix paused briefly for a sensor failure that caused chocolate overflow, then later had a printer issue around 06:48."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 Tunnel 1 belt tracking west, missing roller",
+      "summary": "Conveyor tracking caused caramel to deposit off the cookie bed; team found a missing roller under the depositor and a drive roller installed incorrectly.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-23T23:25:47.449Z"
+      },
+      "resolution": "Fixed at 18:01 \u2014 \"Tunnel 1 is fixed and ready\" after correcting roller installation (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM4 screw fell into product",
+      "summary": "The screw holding the matrix arms came out at 03:20, operator stopped immediately; part never found despite 45-minute search, all MM4 product re-screened through x-ray.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-24T09:21:20.992Z"
+      },
+      "resolution": "Maintenance found a replacement bolt and installed by 05:20; x-ray testing showed 2 of 5 passes rejected similar part, all affected product re-screened and cleared by 06:19 (Luis Falcon, Ebrima Dibba)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 chicane belts misaligned",
+      "summary": "Dakota paused the line at 17:33 to adjust the chicane belts; back running by 17:49.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-23T23:33:16.742Z"
+      },
+      "resolution": "Cleared at 17:49 \u2014 \"This is fixed\" (Dakota Adair)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 temper unit high pressure alarm and mass temp low",
+      "summary": "Riser pump shut off 20 minutes after starting tempering program with high pressure alarm and mass temperature too low; needed second reheat.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-24T11:23:43.896Z"
+      },
+      "resolution": "Got two good tempers after reheating, started line at 07:04 (Joseph Scott)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade needed cleaning",
+      "summary": "Line down at 10:01 for maintenance to clean the blade.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-23T16:01:54.297Z"
+      },
+      "resolution": "Line running again at 10:15 (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade cleaning (second instance)",
+      "summary": "Routine blade cleaning mid-shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-23T23:04:06.367Z"
+      },
+      "resolution": "Line running at 17:24 (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix sensor failure causing chocolate overflow",
+      "summary": "Line paused at 17:55 due to sensor fault that caused chocolate to overflow.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-23T23:55:21.366Z"
+      },
+      "resolution": "Issue addressed, line resumed normal operations (no explicit resolution message but line continued)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M4 belt tracking off",
+      "summary": "The M4 belt moved out of position at 06:04, maintenance called in to adjust.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-07-24T12:04:22.706Z"
+      },
+      "resolution": "Belt running good at 06:27 (TruffleLine FW)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 Tunnel 1 belt tracking recurring issue",
+      "summary": "Despite multiple fixes through the night (rollers, tension adjustments), Tunnel 1 belt continued to track west and fold over itself.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-23T23:25:47.449Z"
+      },
+      "status": "Belt adjusted and running as of 23:01 per 3rd shift operator and Luis; recurring pattern suggests deeper mechanical issue remains."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 MM6 pouch quality poor, bad drop every ~15 bags",
+      "summary": "Conner held off running MM6 at 17:50 due to high pouch scrap rate \u2014 bags zipping before seal, looking into further adjustments.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-23T23:50:20.02Z"
+      },
+      "status": "Line held at 17:50 to avoid climbing scrap; Caleb and team investigating adjustments, no resolution posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 and MM5 sealing failures causing high pouch scrap",
+      "summary": "Multiple matrices failing to seal bags throughout 2nd and 3rd shift, adding to pouch scrap and causing product to be processed twice, degrading appearance.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-07-24T01:43:48.631Z"
+      },
+      "status": "Caleb and Dakota investigating all three matrix machines as of 21:39; operators adjusted sealing but bags still coming out open or poorly sealed, 3 pallets on hold due to appearance issues from double-processing as of 22:12."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 product appearance degraded from double-processing",
+      "summary": "Product passing through matrices twice due to sealing failures loses acceptable appearance; Angelica flagged 3 pallets on hold at 22:12.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-07-24T04:12:58.504Z"
+      },
+      "status": "Angelica suggested reducing tunnel temp to get colder caramel exit; William noted accumulation bins causing pieces to stick, instructed team to scrap deep bins and use shallow bins only; product on hold as of 22:21."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 vibrating plates dirty, product clumping in scales",
+      "summary": "Troy observed at 07:10 that vibrating plates are very dirty and un-enrobed caramel causing product to clump, leaving empty zones and preventing pouches from filling.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-24T13:10:05.695Z"
+      },
+      "status": "Identified at shift handoff; plates need cleaning, product sticking together on vibrating surface."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 water leak from PTL hose joint",
+      "summary": "Water leaking from a PTL hose joint at 20:50, pressure was up to 19.3, some water let out via blue handle to reduce pressure.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-24T02:50:59.436Z"
+      },
+      "status": "Maintenance looking at it as of 20:50, cleaned up water; no follow-up on repair completion by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 recurring mold alarms, same mold flagging multiple times",
+      "summary": "Mold alarms throughout 2nd and 3rd shift at 16:46, 18:46, 20:12, 21:42, 22:11; maintenance noticed same mold from earlier alarm.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-23T22:46:18.179Z"
+      },
+      "status": "Tyson marked the repeat-offending mold at 22:59 for 3rd shift operator to replace; mix of dirty pins and sensor errors; Shawn wondered if sensor position or cleanliness at fault."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line tempering unstable after adjustment",
+      "summary": "After adjusting tempering unit from 45\u00b0C down to 33\u00b0C per Chad's instruction, line struggled all morning to stabilize; temper readings bouncing, not achieving good temper consistently.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-07-23T23:29:12.543Z"
+      },
+      "status": "As of 07:01 Itzel reported 2nd temper at -0.2, technically have temper but need regular water/chocolate adjustments; also noted enrober blower was left on when line not running, causing chocolate to overheat."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C3 belt tear",
+      "summary": "Tear observed in belt C3 at 00:17.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-24T06:17:35.146Z"
+      },
+      "status": "Tear identified at 00:17, no repair status posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix printer turned off",
+      "summary": "Printer turned off at 06:48, team checking it.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-24T12:48:28.937Z"
+      },
+      "status": "Team checking as of 06:48, no follow-up posted by window close."
+    }
+  ]
+}
