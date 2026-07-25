@@ -1,0 +1,398 @@
+{
+  "date": "2026-07-25",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 had *5 hours* of combined downtime on depositor jams, temper issues, and buffer tank failures across 3rd shift."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran three lines. S3 completed PRS Brookies changeover after clearing decoration pattern and tank contamination issues. S2 fought X-ray rejections all shift \u2014 over 100 pouches backed up by 16:50. S4 finished Crumbl order (266 cases, 26 over) and changed to Feastables.",
+    "L2": "L2 ran FFS and ML3 with two brief cleaning pauses on FFS (totaling 40 minutes). Both lines steady otherwise. Materials verified for Monday startup.",
+    "L3": "L3 ML1 lost roughly 5 hours overnight to recurring depositor piston jams, buffer tank temperature drift, and a glycol spill during belt changeout. Truffle Line and MF Matrix ran stable; MF Matrix flagged elevated open flow-wrap scrap (1.07%) from upstream."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S3 overproduced PRS Brookies by 11 pallets per IMS; Daniel Bringas cleared changeover to S'mores at 19:37."
+    },
+    {
+      "plant": "L1",
+      "text": "S4 switched from Crumbl (21097) to Feastables One Shot (21117) at 15:35 after caustic wash."
+    },
+    {
+      "plant": "L2",
+      "text": "Affogato Case8 FFS projected to finish 3.5 days early (July 29 vs. August 3); Zack Kurtz proposed skipping Salted Caramel Case5 changeover to go straight to Case8."
+    },
+    {
+      "plant": "L3",
+      "text": "Truffle Line completed level 2 clean at 06:50; final ATP satisfactory."
+    },
+    {
+      "plant": "L3",
+      "text": "Grey Boscan found wrong tempering chart (milk chocolate) and centerline (plain bars) on ML1 while running Crunch at 07:06."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 wrong decoration pattern on PRS Brookies",
+      "summary": "Incorrect drizzle pattern applied; product from start of run placed on hold pending line clearance.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-24T18:10:18.535Z"
+      },
+      "resolution": "Pattern corrected and approved by QC at 12:48 \u2014 \"drizzle pattern approved\" (Charity Young)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 adhesive tape in decorator melting tank",
+      "summary": "Mary Montilla found adhesive tape inside decorator tank at 14:21; contamination risk.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-07-24T20:21:56.008Z"
+      },
+      "resolution": "Tape removed with long tool; oil flush completed and QC inspection cleared at 14:47 (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 matrix machines seal/scrap issues",
+      "summary": "Matrix units producing open, sealed, or burnt bags; 268 bags scrap at 08:00.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-07-24T13:57:29.837Z"
+      },
+      "resolution": "Troy Baxter dialed in pulsing and pouch opening by 08:19 \u2014 \"MM5 looking pretty good.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S2 cooling tunnel 1 belt replacement",
+      "summary": "Belt replaced by C&E maintenance; needs cleaning before restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chris Jeffs",
+        "time_utc": "2026-07-24T19:55:59.539Z"
+      },
+      "resolution": "Replacement finished 13:55 \u2014 \"will need to be cleaned\" (Chris Jeffs)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 caramel too firm \u2014 sticking and jamming",
+      "summary": "Caramel sticking inside bags and jamming matrix machines; pieces firm at metal detector.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-07-24T20:27:56.303Z"
+      },
+      "resolution": "Cook temp raised 2\u00b0F at 14:53; Angelica Perez observed \"improvements\" comparing 16:00 vs. 18:00 samples, confirmed good texture by 22:10."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade and printer cleaning pause",
+      "summary": "Line down to clean blade and printer.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-07-24T16:04:37.193Z"
+      },
+      "resolution": "Cleared at 10:38 \u2014 \"Line is running\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade cleaning pause",
+      "summary": "Line down for blade cleaning (second occurrence).",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-24T22:55:41.754Z"
+      },
+      "resolution": "Running again at 17:21 \u2014 \"We are running again!\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label issues causing brief stoppage",
+      "summary": "Line stopped 19:20\u201319:30 for label-related problems.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-07-25T01:33:30.094Z"
+      },
+      "resolution": "Resolved by 19:30 \u2014 \"we are running now\" (ML3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 cooler temperature out of range",
+      "summary": "Cooler temp spiking; product not demolding correctly.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-24T20:13:26.321Z"
+      },
+      "resolution": "VFD faulted; Nelson Cook cleared fault and temp stabilized at 14:28 \u2014 \"temp is coming down now.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol leak into depositor hopper during belt install",
+      "summary": "Glycol leaked from connections into hopper while installing C3 belt; QA recommended purge.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-07-25T00:00:56.505Z"
+      },
+      "resolution": "Purged; no glycol signs after at 18:32. Scraped hopper sides and QA verified clear \u2014 \"No signs of Glycol after the purge\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper too hot on Crunch recipe",
+      "summary": "Temper unit recipe so hot probe couldn't read; adjustments made but still 1.4 at 20:47.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-25T00:41:58.523Z"
+      },
+      "resolution": "Reheat performed; good temper (0.7) achieved at 21:52, depositing at 22:04 \u2014 \"We got good temper\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 PTL not pumping chocolate to buffer",
+      "summary": "PTL stopped pumping; maintenance suspected clog but no screen installed for this product.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-25T08:44:19.004Z"
+      },
+      "resolution": "PTL valve was closed; operator missed it during auger overflow response. Valve opened, transferring at 02:57 (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 pin inspection cameras disabled for adjustment",
+      "summary": "Photo eye turned at angle; inspection window misaligned. Cameras disabled while Leon investigates.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-07-24T15:53:16.313Z"
+      },
+      "resolution": "Loaded backup program and cameras back online at 10:45 \u2014 \"back on\" (Leon Brueger)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix product not feeding into pouches",
+      "summary": "Product feed issue required 10-minute pause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-25T06:37:38.731Z"
+      },
+      "resolution": "Cleared after lot change completed; line back up at 00:48 (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix HMI solid fill command OFF",
+      "summary": "Switch 2 No. 11 solid product fill command was off; line stopped filling bags.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-25T06:57:30.526Z"
+      },
+      "resolution": "Switch turned back on; issue identified and corrected (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 metal detector rejecting items every second",
+      "summary": "Metal detector false-rejecting at very high rate; mechanics in area.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-07-24T13:30:51.407Z"
+      },
+      "status": "Mechanics working on it at 07:30; no resolution or update posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 decorator tank contamination requires full clean",
+      "summary": "Box of chocolate found in decorator tank at 09:38; requires thorough clean and swab beyond the tape removal.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jason Jensen",
+        "time_utc": "2026-07-24T15:38:58.652Z"
+      },
+      "status": "Tank requires \"thorough clean and swab\" per Jason Jensen at 09:38; tape removed and oil flushed, but full clean/swab scope unclear."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 X-ray rejecting over 100 pouches",
+      "summary": "X-ray rejection rate spiking 13 minutes into 2nd shift; accumulation grew to >100 pouches by 16:50, forcing pause.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-24T21:15:23.733Z"
+      },
+      "status": "Line paused at 17:26 to pass accumulation; issue ongoing as of 17:26 (Victor Mejia, Angelica Perez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 melting tank shaft possible oil leak",
+      "summary": "Dark substance observed leaking from shaft into chocolate at 01:20; maintenance believes it's chocolate, not oil, but monitoring continues.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-07-25T08:14:07.458Z"
+      },
+      "status": "Shaft cleaned; maintenance determined likely chocolate not oil (lubricant is clear). Monitoring shaft rest of shift as of 02:14."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 estop error on metal detector at line end",
+      "summary": "Estop error on MD; cannot reset.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-25T13:15:37.967Z"
+      },
+      "status": "Maintenance on the way as of 07:15; no further update in window."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C1 band slipped; tracking not working",
+      "summary": "Conveyor belt tracking failure; mechanics already dispatched at 07:26.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-07-24T13:26:07.593Z"
+      },
+      "status": "Mechanics fixing at 07:26 (Nathan Topham); no follow-up posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 enrober return pump high pressure alarms",
+      "summary": "Two high-pressure alarms on enrober return pump at 16:56 and 19:01; third at 19:01.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-24T22:56:48.088Z"
+      },
+      "status": "Three alarms logged (16:56, 19:01, 19:01); no maintenance follow-up or resolution posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 overflow printer date quality unfixable",
+      "summary": "Overflow printer (used to correct bad dates) produces inconsistent print due to pouch curvature; ~100 pouches affected.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-07-25T05:06:49.119Z"
+      },
+      "status": "Troy Baxter confirmed unfixable \u2014 product in pouch makes flat surface impossible. Charity escalating to Chris G & Curt on Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 right side pistons jamming repeatedly",
+      "summary": "Depositor right-side pistons stuck from rice and cooled chocolate; recurring issue across 3rd shift requiring multiple plate removals and washes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-25T06:02:39.729Z"
+      },
+      "status": "Pistons jammed at 00:02, 01:20, 01:28, 02:38. Plate washed and reassembled by 02:10; depositing restarted but issue recurred. As of 04:19, whole block needs cleaning per Imperial."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank temperature dropping despite adjustments",
+      "summary": "Buffer tank temp drifting down; maintenance made multiple adjustments but temp continues falling.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-25T09:21:09.221Z"
+      },
+      "status": "Temp dropping at 03:21, 03:47, 04:19. Maintenance working; temps started to rise at 06:49 but issue unresolved as of 05:15 (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 grease found on finished product",
+      "summary": "One bar found with grease during line inspection at 05:53.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-07-25T11:53:04.534Z"
+      },
+      "status": "One piece with grease observed and photographed; no further update on source or corrective action."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix elevated open flow-wrap scrap from L2",
+      "summary": "1.07% open flow-wrap rate causing caramel to stick on plates, forcing production stops for cleaning. Issue sourced from L2 upstream.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-24T14:21:18.494Z"
+      },
+      "status": "Hopper cleaned at 08:21; Preston Tregaskis collecting data (15 lbs scrap, 5 min DT, 1.07% rate) to escalate to L2 formally."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna belt failure",
+      "summary": "Belt on Cavanna is bad; maintenance dispatched at 05:21.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-25T11:21:00.979Z"
+      },
+      "status": "Maintenance working on it as of 05:21; no completion posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 wrong tempering chart and centerline on line",
+      "summary": "Found milk chocolate tempering chart and plain bars centerline while running Crunch; documents not verified during changeover.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-25T13:05:55.544Z"
+      },
+      "status": "Incorrect documents discovered at 07:06; Grey Boscan flagged Supervisor 1 LSW verification gap."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sticker machine not working",
+      "summary": "Sticker machine failure; maintenance checking.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-25T13:06:49.703Z"
+      },
+      "status": "Maintenance checking as of 07:06; no resolution posted."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-07-25",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "Three foreign-material events at L1 and L3 \u2014 tape in chocolate, glycol in depositor, *grease on product* \u2014 all caught and cleared."
+  },
+  "summary": "One active hold at L1 S3 for wrong decoration pattern (resolved same day). Three foreign-material events required investigation: tape in L1 S3 decorator tank (removed, oil-flushed), glycol leak into L3 ML1 hopper (purged clean), and grease on two L3 ML1 chocolate bars (isolated). L1 S2 monitoring dark substance from melting tank shaft \u2014 maintenance believes chocolate, not oil.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Wrong decoration pattern on PRS Brookies",
+      "summary": "Incorrect drizzle pattern used from start of run; all product from beginning of run placed on hold pending line clearance and pattern correction.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-24T18:10:18.535Z"
+      },
+      "status": "Resolved \u2014 pattern corrected, line cleared, QC approved new pattern, hold released same shift at 19:01."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Tape found inside S3 decorator melting tank",
+      "summary": "Piece of adhesive tape discovered inside decorator melting tank during production; line paused, tape removed with long tool, oil flush performed, QC inspected and cleared.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-07-24T20:21:56.008Z"
+      },
+      "status": "Resolved \u2014 tape removed at 14:47, oil flush completed, QC inspection clear, production resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "Glycol leak into ML1 depositor hopper",
+      "summary": "Glycol leaked into hopper during connection installation; line paused, hopper scraped and purged, QA inspected with no signs of glycol after purge.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-07-25T00:00:56.505Z"
+      },
+      "status": "Resolved \u2014 purge completed at 00:32, QA inspection clear, no glycol detected."
+    },
+    {
+      "plant": "L3",
+      "title": "Grease found on ML1 chocolate bars",
+      "summary": "Two chocolate bars found with grease during line inspection; source under investigation, product isolated.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-07-25T11:53:04.227Z"
+      },
+      "status": "Investigation ongoing \u2014 two pieces isolated, source not yet identified, line continues with monitoring."
+    },
+    {
+      "plant": "L1",
+      "title": "Corner board used on S3 MM conveyor cover",
+      "summary": "Employees observed using corner board to push product through MM 3-5 conveyor cover when plugged; creates contamination risk if board sheds material into product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-07-24T18:28:53.832Z"
+      },
+      "status": "Open \u2014 coaching requested for operators; no product hold initiated."
+    },
+    {
+      "plant": "L1",
+      "title": "Dark substance from S2 melting tank shaft",
+      "summary": "Dark-colored substance observed leaking from melting tank shaft into chocolate at 01:20; shaft cleaned immediately, maintenance inspected and believes substance is chocolate (not lubricant) as equipment uses clear oil.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-07-25T08:14:07.458Z"
+      },
+      "status": "Open \u2014 shaft cleaned, maintenance assessment complete, line monitoring continues through shift."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 metal detector rejecting every second",
+      "summary": "Metal detector rejecting items continuously; mechanics called to resolve malfunction.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-07-24T13:30:51.407Z"
+      },
+      "status": "Resolved \u2014 mechanics repaired issue, line resumed normal operation."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "DFP sanitizer concentration incorrect",
+      "summary": "Dishwasher foaming product (DFP) found not concentrated correctly \u2014 very high; team directed to mix by hand following label directions until tech arrives; three 5-gallon buckets pre-mixed correctly by sanitation lead.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-07-24T19:12:20.504Z"
+      },
+      "status": "Resolved \u2014 correct pre-mixed DFP staged for wash room, team notified to use as-is at 16:49."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding decorator tank and hopper visual inspection to pre-start checklist \u2014 based on today's tape-in-tank event on S3 and corner-board contamination risk on MM conveyor."
+    },
+    {
+      "plant": "L2",
+      "text": "Verify DFP dilution system or add concentration check to sanitation startup \u2014 today's very-high concentration required manual intervention and pre-mixing by supervisor."
+    },
+    {
+      "plant": "L3",
+      "text": "Review glycol connection design on ML1 depositor \u2014 today's leak during install suggests quick-disconnect or different fitting may reduce contamination risk during maintenance."
+    },
+    {
+      "plant": "L3",
+      "text": "Investigate grease source on ML1 chocolate line \u2014 two pieces found today; if equipment-related, add lubrication points to pre-shift inspection to catch before product contact."
+    }
+  ]
+}
