@@ -1,0 +1,222 @@
+{
+  "date": "2026-07-26",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 had multiple equipment failures totaling *~5 hours* downtime before finishing the week\u2014metal detector belt issue left unresolved into end-of-week clean."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 fought through a rough first shift\u2014E-stop on the metal detector, enrober cold from another E-stop, bag tapper failures, and a snapped pressure cable after an EE sweeping incident. All cleared by mid-afternoon, but late 2nd shift the metal detector belt stopped again with no resolution before the weekend clean started. Sollich 2 ran almond cluster steadily with 26 hours of almond inventory left heading into Monday.",
+    "L2": "Flow wrap material for item 40910 is short\u2014arriving Monday 7/27 per the supplier.",
+    "L3": "Molding Line 1 battled seal quality on the Cavanna all day (pinholes on water test) and a wave of bad flow wrap rolls with missing adhesive on 2nd shift. Biggest hit was the cooler compressor faulting out at 18:15, keeping the line down until 21:15 when it self-recovered. Product in the cooler went to rework. Overnight crew discovered a broken hopper heater tube during wash\u2014maintenance unable to extract the fitting."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Katya flagged that most of today's S3 issues could have been avoided if start-up checklists were followed\u2014enforcement plan in progress."
+    },
+    {
+      "plant": "L1",
+      "text": "Canadian Smore Clusters completed 60 pallets and ready to ship to SV."
+    },
+    {
+      "plant": "L3",
+      "text": "William Lopez will show the team on Monday how to clean/water the roof compressor unit during hot weather to prevent high-pressure trips."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Metal detector E-stop and wrong recipe loaded",
+      "summary": "E-stop pressed at line start triggered MD belt fault; troubleshooting revealed the wrong recipe was uploaded, which prevented normal operation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-25T13:15:37.967Z"
+      },
+      "resolution": "Correct recipe uploaded at 08:30, QA passed cards, MD running normally by 08:36 per Jason Jensen."
+    },
+    {
+      "plant": "L1",
+      "title": "Enrober E-stop caused 6-minute cold soak and partial reheat",
+      "summary": "Phantom E-stop in the line dropped enrober temp; 3rd shift also reported return pump faulting overnight from high pressure.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-25T13:26:23.136Z"
+      },
+      "resolution": "Partial reheat completed, two good tempers achieved, line resumed operations at 09:05 per S3 Enrober."
+    },
+    {
+      "plant": "L1",
+      "title": "Multiple MM mechanical issues requiring re-zero",
+      "summary": "Accumulation of MM problems forced line pause to pass product, re-zero all scales and checkweighers, and complete mechanical repairs.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-25T18:07:27.21Z"
+      },
+      "resolution": "Line back up and running at 13:15 per Katya Farnsworth."
+    },
+    {
+      "plant": "L1",
+      "title": "Enrober return pump pressure cable snapped",
+      "summary": "EE sweeping accidentally caught broom between pressure cable and chute, snapping the cable; without the sensor the return pump wouldn't run, forcing reheat.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-25T20:52:24.122Z"
+      },
+      "resolution": "Maintenance repaired sensor, gave go-ahead to start tempering at 15:56 per William Beattie."
+    },
+    {
+      "plant": "L1",
+      "title": "MM4 and MM5 bag tappers not functioning",
+      "summary": "Bag tappers failed, product not dropping into pouches, creating dirty seal rejects; blue gear controlling suction cups also damaged.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-25T15:42:33.427Z"
+      },
+      "resolution": "Maintenance rotated damaged gear, line resumed at 10:03 per S3 Enrober."
+    },
+    {
+      "plant": "L1",
+      "title": "MM4 silver line on pouches",
+      "summary": "Silver line appearing on Matrix 4 bags during sealing; initially stopped using MM4, then monitored as maintenance adjusted.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-25T19:16:36.538Z"
+      },
+      "resolution": "Improved to 1 in 10 at ~2.5mm by 18:21 after Caleb York's heat sealer alignment and settings adjustments."
+    },
+    {
+      "plant": "L1",
+      "title": "MM3 backing plates installed incorrectly",
+      "summary": "Visual inspection found plates and backing plates on MM3 not installed correctly; removed and reinstalled during shift startup.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-07-25T13:54:57.235Z"
+      },
+      "resolution": "Removed and installed correctly during visual inspection at 07:54 per S3 Pack."
+    },
+    {
+      "plant": "L1",
+      "title": "Brookie cereal found in wrong aisles",
+      "summary": "Brookie cereal discovered in aisles C21, C22, C23 during 5S sweep; material removed to prevent cross-contamination.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-07-25T14:12:27.596Z"
+      },
+      "resolution": "Removed from area at 08:12 per S3 Pack."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna seal pinholes on water test",
+      "summary": "Bars failing water pressure test with 2\u20134 out of 5 showing pinhole leaks; Nathan escalated, maintenance adjusted jaws and seal pressure throughout the day.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-25T14:23:09.383Z"
+      },
+      "resolution": "Preston cleared line to continue running at 13:46\u2014pinholes minor and normal occurrence, will troubleshoot further on Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "Bad flow wrap rolls with missing adhesive",
+      "summary": "Bars not sealing or cutting; found 9+ rolls with gaps in glue or insufficient adhesive strength across multiple pallets.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-25T21:14:33.972Z"
+      },
+      "resolution": "Line restarted at 18:13 after finding better rolls and adjusting Cavanna roller centering\u20142 of 10 pieces bad seal, rest acceptable."
+    },
+    {
+      "plant": "L3",
+      "title": "Cooler compressor high-pressure fault",
+      "summary": "Cooler climbed to 74\u00b0F; roof compressor tripped on high pressure and would not reset, keeping line down from 18:15 to 21:15.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-26T00:16:03.778Z"
+      },
+      "resolution": "Compressor self-recovered at 21:15 after ambient temp drop; cooler dropped to 54\u00b0 and product moved to rework per Tyson Fausett."
+    },
+    {
+      "plant": "L3",
+      "title": "High chocolate temper at line start",
+      "summary": "Temper reading too high, stopped sending chocolate to hopper to bring temperature down into range.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-25T13:50:35.167Z"
+      },
+      "resolution": "Temper dropped to 0.8, resumed sending chocolate to hopper at 08:02 per Grey Boscan."
+    },
+    {
+      "plant": "L3",
+      "title": "8 cooler buckets not installed correctly",
+      "summary": "Maintenance PM inspection found 8 buckets in the cooler improperly positioned during routine check.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-25T22:07:57.305Z"
+      },
+      "resolution": "Corrected during PM per Tyson Fausett at 16:07."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Metal detector belt stopped unexpectedly",
+      "summary": "MD belt stopped late 2nd shift; EEs began removing accumulated product to attempt restart but no resolution posted before line went into end-of-week clean.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-26T05:05:03.159Z"
+      },
+      "status": "Line paused at 23:05, product being cleared; no restart confirmed before EOW clean began at 02:54."
+    },
+    {
+      "plant": "L1",
+      "title": "Bat entered the facility",
+      "summary": "Bat found in production area during 3rd shift; safety and maintenance notified to remove and assess exposed product per FSQA procedures.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-07-26T09:43:57.16Z"
+      },
+      "status": "Charity Young acknowledged at 04:28, will determine who to contact for removal; no update on capture or product assessment."
+    },
+    {
+      "plant": "L3",
+      "title": "Left hopper heater tube broken during wash",
+      "summary": "Heater tube fitting broke while washing; maintenance cannot extract broken piece from the threads and no replacement fitting available.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-26T09:52:51.764Z"
+      },
+      "status": "Maintenance tried penetrating oil, heat, and extractor as of 05:54 with no success; thread may be damaged, no thread insert on-site per Jose Vasquez."
+    }
+  ]
+}

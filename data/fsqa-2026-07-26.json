@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-26",
+  "headline": {
+    "eyebrow": "Pest event",
+    "text": "L3 *bat* entered facility early 3rd shift \u2014 exposed product and packaging assessment required per food-safety protocol."
+  },
+  "summary": "One active pest event at L3. Two quality issues at L3 ML1: persistent flow-wrap seal failures approved to run under monitoring, and multiple rolls with weak adhesive. Sanitation gap at L1 S3 (decorator missed in L3 clean) and allergen zone control flag (Brookie cereal found in S3 caramel area).",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Bat entered facility during 3rd shift",
+      "summary": "Pest sighting flagged by Rafael at 03:43 \u2014 exposed product and packaging in affected area require assessment per food-safety procedures; Maintenance/Safety notified for removal.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-07-26T09:43:57.16Z"
+      },
+      "status": "Open \u2014 Charity responding to identify removal contact; product assessment pending."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML1 flow-wrap seal failures throughout 1st and 2nd shift",
+      "summary": "Water tests showed 2\u20134 of 5 pieces failing consistently; tried multiple rolls and lots with same result; Preston approved line to continue running with minor pinholes under monitoring, investigation ongoing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-07-25T16:04:49.989Z"
+      },
+      "status": "Line running \u2014 approved by Preston at 13:46 to monitor pinholes, no line-down unless worse; 2nd shift QA reported 2 of 10 failing vacuum test after maintenance adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 flow-wrap material quality \u2014 weak adhesive on multiple rolls",
+      "summary": "2nd shift found 9+ rolls with missing or insufficient adhesive causing sealing and cutting failures; line down 16:32\u201318:13 searching for usable rolls.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-25T22:32:45.489Z"
+      },
+      "status": "Resolved on shift \u2014 found working rolls, line restarted 18:13; bad rolls isolated, unclear if defective or spec variation."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 decorator not cleaned during last level 3 clean",
+      "summary": "Enrober operator flagged at 11:08 that decorator was missed in previous L3 cleaning cycle.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-25T17:08:15.175Z"
+      },
+      "status": "Flagged to Luis and Katya for follow-up; no corrective action documented in window."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Brookie cereal found in S3 caramel production aisles",
+      "summary": "S3 Pack operator found Brookie cereal (wrong product) in aisles C21, C22, C23 at 08:12; cross-contact risk for allergen zoning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-07-25T14:12:27.596Z"
+      },
+      "status": "Resolved on shift \u2014 product removed from area; no explanation for how it entered zone."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding allergen zone verification to S3 startup checklist \u2014 based on Brookie cereal found in three caramel production aisles this morning."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider adding decorator to L3 clean verification checklist \u2014 missed during last cleaning cycle per 11:08 flag."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider flow-wrap seal acceptance criteria review \u2014 persistent water-test failures throughout 1st and 2nd shift suggest either material spec drift or test method needs calibration."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider hopper heater-tube handling procedure for washing \u2014 tube broke during 3rd shift clean, and broken adapter remains lodged with no removal method available."
+    }
+  ]
+}
