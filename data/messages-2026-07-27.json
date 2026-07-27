@@ -1,0 +1,612 @@
+{
+  "window": {
+    "start_utc": "2026-07-26T13:15:28.341653+00:00",
+    "end_utc": "2026-07-27T13:15:28.341653+00:00",
+    "start_mt": "2026-07-26T07:15:28-06:00",
+    "end_mt": "2026-07-27T07:15:28-06:00",
+    "tz": "America/Denver",
+    "hours": 24
+  },
+  "chat_count": 11,
+  "message_count": 51,
+  "chats": [
+    {
+      "id": "19:8c43a11f48b84dea809ff223b8ab344d@thread.v2",
+      "topic": "L2 ML2 Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A8c43a11f48b84dea809ff223b8ab344d%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785149514403",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T10:51:54.403Z",
+          "sent_mt": "2026-07-27T04:51:54-06:00",
+          "text": "We are depositing",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785150620779",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:10:20.779Z",
+          "sent_mt": "2026-07-27T05:10:20-06:00",
+          "text": "We have a jam in the cooler.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785151251343",
+          "from": "Dave Ruff",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:20:51.343Z",
+          "sent_mt": "2026-07-27T05:20:51-06:00",
+          "text": "This hose was replaced.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785154407219",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:13:27.219Z",
+          "sent_mt": "2026-07-27T06:13:27-06:00",
+          "text": "Good morning Alex Mendoza.\n\nIs the line running again?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785154951767",
+          "from": "ML2 FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:22:31.767Z",
+          "sent_mt": "2026-07-27T06:22:31-06:00",
+          "text": "First shift centerlines",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155010429",
+          "from": "ML2 FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:23:30.429Z",
+          "sent_mt": "2026-07-27T06:23:30-06:00",
+          "text": "First shift shadow board",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155022577",
+          "from": "Jeffrey Barney",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:23:42.577Z",
+          "sent_mt": "2026-07-27T06:23:42-06:00",
+          "text": "Still working on mold jams",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155045771",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:24:05.771Z",
+          "sent_mt": "2026-07-27T06:24:05-06:00",
+          "text": "Not yet, maintenance is working on bending some rails back",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155616308",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:33:36.308Z",
+          "sent_mt": "2026-07-27T06:33:36-06:00",
+          "text": "Line is back up. We have bars almost out of the cooler. Maintenance is going to dial in the line to 13mpm",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155741089",
+          "from": "Justin Halladay",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:35:41.089Z",
+          "sent_mt": "2026-07-27T06:35:41-06:00",
+          "text": "Had a mold jam. Had to straighten rails 68-74",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157133303",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:58:53.303Z",
+          "sent_mt": "2026-07-27T06:58:53-06:00",
+          "text": "We have another mold jam",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157369911",
+          "from": "Alan Todd",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T13:02:49.911Z",
+          "sent_mt": "2026-07-27T07:02:49-06:00",
+          "text": "More bent rails Alex Mendoza?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157963470",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T13:12:43.47Z",
+          "sent_mt": "2026-07-27T07:12:43-06:00",
+          "text": "No is a jam at the demolder. We got cleared pretty quickly.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:38fa7db30fce4c1f9aba50c0ea947182@thread.v2",
+      "topic": "L3 Truffle Line",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A38fa7db30fce4c1f9aba50c0ea947182%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785151182710",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:19:42.71Z",
+          "sent_mt": "2026-07-27T05:19:42-06:00",
+          "text": "Kevin Jenny we need Quality over in Truffle line please",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785151931439",
+          "from": "Isis Oses",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:32:11.439Z",
+          "sent_mt": "2026-07-27T05:32:11-06:00",
+          "text": "Capture test",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785152594110",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:43:14.11Z",
+          "sent_mt": "2026-07-27T05:43:14-06:00",
+          "text": "Starting.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785154024041",
+          "from": "Isis Oses",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:07:04.041Z",
+          "sent_mt": "2026-07-27T06:07:04-06:00",
+          "text": "The weight of the pre-part at the target",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785154206512",
+          "from": "TruffleLine Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:10:06.512Z",
+          "sent_mt": "2026-07-27T06:10:06-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156068973",
+          "from": "TruffleLine Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:41:08.973Z",
+          "sent_mt": "2026-07-27T06:41:08-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157528075",
+          "from": "TruffleLine FW",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T13:05:28.075Z",
+          "sent_mt": "2026-07-27T07:05:28-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157941593",
+          "from": "Isis Oses",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T13:12:21.593Z",
+          "sent_mt": "2026-07-27T07:12:21-06:00",
+          "text": "The weight of the final piece is within the target range.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:efb197a79aff4c868d441bab3db6dbbb@thread.v2",
+      "topic": "L1  Sollich 3 information exchange",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Aefb197a79aff4c868d441bab3db6dbbb%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785155960005",
+          "from": "S3 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:39:20.005Z",
+          "sent_mt": "2026-07-27T06:39:20-06:00",
+          "text": "The line has begun operations.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156451758",
+          "from": "S3 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:47:31.758Z",
+          "sent_mt": "2026-07-27T06:47:31-06:00",
+          "text": "Enrober tempering chart.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157633617",
+          "from": "S3 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T13:07:13.617Z",
+          "sent_mt": "2026-07-27T07:07:13-06:00",
+          "text": "Enrober CL.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157698009",
+          "from": "S3 Enrober",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T13:08:18.009Z",
+          "sent_mt": "2026-07-27T07:08:18-06:00",
+          "text": "Startup checklist - Sol 3 tunnels.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:17cdef05e40440a6a7d64757067ca624@thread.v2",
+      "topic": "L1 Plant Standards",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A17cdef05e40440a6a7d64757067ca624%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785095053128",
+          "from": "Jorel Gourdin",
+          "from_upn": null,
+          "sent_utc": "2026-07-26T19:44:13.128Z",
+          "sent_mt": "2026-07-26T13:44:13-06:00",
+          "text": "This air treatment unit has active flowing water and nowhere for it to go. Matrix 678. William  Lopez Curt Willis",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785111280620",
+          "from": "Curt Willis",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T00:14:40.62Z",
+          "sent_mt": "2026-07-26T18:14:40-06:00",
+          "text": "I’ll have the team clean the area Monday morning Justin Garner",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155323508",
+          "from": "Katya Farnsworth",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:28:43.508Z",
+          "sent_mt": "2026-07-27T06:28:43-06:00",
+          "text": "Good morning! \n\n\nJody Howse Curt Willis, we have 2 dish washer areas that are wheat and one that is nut allergen. One of the wheat areas has nut allergen items in it. And we don't have a non allergen area to clean S4 items. Also, all the areas are dirty and did not get cleaned this weekend. Please follow up with your team.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157269396",
+          "from": "Justin Garner",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T13:01:09.396Z",
+          "sent_mt": "2026-07-27T07:01:09-06:00",
+          "text": "Dakota Adair, William Beattie, do you guys know why these are on the end of jar line B?",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:cfccea066d034acba94704d396eb0481@thread.v2",
+      "topic": "L3 ML4 Start up",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Acfccea066d034acba94704d396eb0481%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785156951902",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:55:51.902Z",
+          "sent_mt": "2026-07-27T06:55:51-06:00",
+          "text": "Good Morning,\nJenny Kevin Preston Rich Rose\nWe need to find a solution for the Gondola Cleaning, it needs to be done today to be able to run CNC tomorrow. Nelson Nathan do you guys have a solution for the plastic dust that is getting underneath?",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785157059345",
+          "from": "Itzel Chavez",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:57:39.345Z",
+          "sent_mt": "2026-07-27T06:57:39-06:00",
+          "text": "Nelson Nathan we need to do the set up on the end packaging for the FEA CNC caddies and the set up on the TG’s machines.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:fdf0be282a2546119ea3fb1708455e23@thread.v2",
+      "topic": "L2 FFS Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Afdf0be282a2546119ea3fb1708455e23%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785153913719",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:05:13.719Z",
+          "sent_mt": "2026-07-27T06:05:13-06:00",
+          "text": "The film is on the wrong way. It has missing rolls. We're gonna cut it and put it back",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785154974288",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:22:54.288Z",
+          "sent_mt": "2026-07-27T06:22:54-06:00",
+          "text": "Line is running",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155307068",
+          "from": "Claudio Tovar",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:28:27.068Z",
+          "sent_mt": "2026-07-27T06:28:27-06:00",
+          "text": "Good morning, team! First-shift update: batch verified.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156854181",
+          "from": "VFFS",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:54:14.181Z",
+          "sent_mt": "2026-07-27T06:54:14-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:d48e05845df34689a352c0bd3baa2252@thread.v2",
+      "topic": "L3 MF Matrix",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Ad48e05845df34689a352c0bd3baa2252%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785156353946",
+          "from": "Grey Boscan",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:45:53.946Z",
+          "sent_mt": "2026-07-27T06:45:53-06:00",
+          "text": "The line started on time.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156380035",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:46:20.035Z",
+          "sent_mt": "2026-07-27T06:46:20-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156587427",
+          "from": "mfmatrix",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:49:47.427Z",
+          "sent_mt": "2026-07-27T06:49:47-06:00",
+          "text": "lost work tools",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:0f56b879729240b79098dbb5b52b9c0e@thread.v2",
+      "topic": "L1 Sollich 2 information exchange",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A0f56b879729240b79098dbb5b52b9c0e%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785156381402",
+          "from": "Katya Farnsworth",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:46:21.402Z",
+          "sent_mt": "2026-07-27T06:46:21-06:00",
+          "text": "Joseph Scott Jody Howse we found a box full of HER Almonds with bad print leftover from last week. Please make sure to do a proper line clearance at the end of week. Curt Willis Justin Garner",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156498158",
+          "from": "Justin Garner",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:48:18.158Z",
+          "sent_mt": "2026-07-27T06:48:18-06:00",
+          "text": "The z conveyor was installed in correctly. We are going to take the z conveyor apart and reinstall it correctly. Curt Willis, Jody Howse",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:5cac812b7b014d96993a8d78de0dd6f4@thread.v2",
+      "topic": "L1 Sollich 4 Information Exchange",
+      "plant": "L1",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A5cac812b7b014d96993a8d78de0dd6f4%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785156318887",
+          "from": "Nancy Quiroz",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:45:18.887Z",
+          "sent_mt": "2026-07-27T06:45:18-06:00",
+          "text": "Viscosity,aW,Brix",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:58789caed5f94038843e2913983d2777@thread.v2",
+      "topic": "L2 ML3 Information Exchange",
+      "plant": "L2",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A58789caed5f94038843e2913983d2777%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785150457373",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:07:37.373Z",
+          "sent_mt": "2026-07-27T05:07:37-06:00",
+          "text": "We are depositing",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785151578247",
+          "from": "Molding Line 3 Filler",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:26:18.247Z",
+          "sent_mt": "2026-07-27T05:26:18-06:00",
+          "text": "1shif",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785152800426",
+          "from": "Claudio Tovar",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:46:40.426Z",
+          "sent_mt": "2026-07-27T05:46:40-06:00",
+          "text": "verified batch",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785153504693",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:58:24.693Z",
+          "sent_mt": "2026-07-27T05:58:24-06:00",
+          "text": "The line is running",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785154265775",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:11:05.775Z",
+          "sent_mt": "2026-07-27T06:11:05-06:00",
+          "text": "Shadow board at on the 1st shift molding 3",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785153193043",
+          "from": "Alex Mendoza",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T11:53:13.043Z",
+          "sent_mt": "2026-07-27T05:53:13-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785155588673",
+          "from": "Molding Line 3 Pack",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:33:08.673Z",
+          "sent_mt": "2026-07-27T06:33:08-06:00",
+          "text": "",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156172681",
+          "from": "Claudio Tovar",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:42:52.681Z",
+          "sent_mt": "2026-07-27T06:42:52-06:00",
+          "text": "The weight, texture, appearance, surface, and packaging remain within specifications.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1785156305410",
+          "from": "Claudio Tovar",
+          "from_upn": null,
+          "sent_utc": "2026-07-27T12:45:05.41Z",
+          "sent_mt": "2026-07-27T06:45:05-06:00",
+          "text": "The container passed the water test:",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:9d982dc3c86644deb69a31840db6458c@thread.v2",
+      "topic": "L3 ML1 Information Exchange",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A9d982dc3c86644deb69a31840db6458c%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1785103459746",
+          "from": "Rose Smuin",
+          "from_upn": null,
+          "sent_utc": "2026-07-26T22:04:19.746Z",
+          "sent_mt": "2026-07-26T16:04:19-06:00",
+          "text": "Chris Givens\n \nMLl has been cancelled for 1st shift tomorrow. \n \nLeo, Estefania will be in first thing tomorrow to see if they can help in any way. \n \n \nPlease let me know how I can help. \n \n \nThank you",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    }
+  ]
+}

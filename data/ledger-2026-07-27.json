@@ -1,0 +1,118 @@
+{
+  "date": "2026-07-27",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 moulding line down *1h 23min* on cooler jam with bent rails \u2014 cleared at 06:33, then a second jam at demolder cleared quickly."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran caramel all shift with no breaks. Three process issues flagged: dishwasher areas have allergen cross-contamination risk and weren't cleaned over the weekend, a box of bad-print product found from last week, and a Z conveyor being reinstalled after incorrect setup.",
+    "L2": "Two mold jams on ML2. First jam in cooler at 05:10 required straightening rails 68-74, line back up at 06:33. Second jam at demolder at 06:58 cleared quickly. FFS had film loaded wrong way at 06:05, running again by 06:22. ML3 ran within spec all shift.",
+    "L3": "Truffle line ran all shift, weight checks on target. MF Matrix started on time but reported lost work tools. ML4 needs gondola cleaning and end-packaging setup completed today for tomorrow's CNC run. ML1 was cancelled for first shift."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "ML1 production cancelled for first shift on 07-27 per Rose Smuin at 16:04 on 07-26."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "Mold jam in cooler, bent rails 68-74",
+      "summary": "Cooler jam at 05:10 required maintenance to straighten rails 68-74 before line could restart, caused depositing stoppage on ML2.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-07-27T11:10:20.779Z"
+      },
+      "resolution": "Cleared at 06:33 \u2014 \"Line is back up. We have bars almost out of the cooler. Maintenance is going to dial in the line to 13mpm\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS film loaded wrong way, missing rolls",
+      "summary": "Film on VFFS was installed backwards and had missing rolls, required cutting and reloading.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-27T12:05:13.719Z"
+      },
+      "resolution": "Cleared at 06:22 \u2014 \"Line is running\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "Second mold jam at demolder",
+      "summary": "Demolder jam at 06:58 on ML2, separate from earlier cooler jam.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-07-27T12:58:53.303Z"
+      },
+      "resolution": "Cleared at 07:12 \u2014 \"No is a jam at the demolder. We got cleared pretty quickly\" (Alex Mendoza)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Dishwasher areas allergen cross-contamination and not cleaned",
+      "summary": "Two wheat dishwasher areas and one nut allergen area \u2014 one wheat area has nut allergen items in it, no non-allergen area available for S4 items, and all areas dirty from weekend.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-27T12:28:43.508Z"
+      },
+      "status": "Katya flagged at 06:28 and requested follow-up with team; no resolution by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Z conveyor installed incorrectly on Sollich 2",
+      "summary": "Z conveyor needs to be disassembled and reinstalled correctly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-07-27T12:48:18.158Z"
+      },
+      "status": "Justin reported at 06:48 that team is taking it apart and reinstalling; no completion confirmation by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Box of HER Almonds with bad print left from last week",
+      "summary": "Full box of off-spec product found on Sollich 2, indicates line clearance at end of week was incomplete.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-27T12:46:21.402Z"
+      },
+      "status": "Found at 06:46; Katya requested better line clearance process going forward, no further update."
+    },
+    {
+      "plant": "L3",
+      "title": "Lost work tools on MF Matrix",
+      "summary": "Work tools reported missing on MF Matrix line.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-27T12:49:47.427Z"
+      },
+      "status": "Reported at 06:49 via system message; no follow-up by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Gondola cleaning and end-packaging setup needed for CNC run",
+      "summary": "Gondola cleaning must be completed today for tomorrow's CNC run, plastic dust getting underneath needs solution; end packaging and TG machine setups also required for FEA CNC caddies.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-27T12:55:51.902Z"
+      },
+      "status": "Itzel requested solution from Nelson and Nathan at 06:55 for cleaning and setup work; no resolution by window close."
+    }
+  ]
+}

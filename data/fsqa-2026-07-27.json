@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-27",
+  "headline": {
+    "eyebrow": "Allergen control",
+    "text": "L1 dish wash areas show *nut-allergen cross-contact* \u2014 nut items found in wheat-designated zone, all areas uncleaned since Friday."
+  },
+  "summary": "Three allergen/sanitation gaps at L1: nut items in wheat dish-wash area, weekend cleaning skipped, and HER Almonds carton with bad print left from prior week. L3 reports lost tools on MF Matrix line; location unknown.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Lost work tools at MF Matrix line",
+      "summary": "Tools reported lost on MF Matrix line with no indication of recovery or location confirmed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-27T12:49:47.427Z"
+      },
+      "status": "Open, location and recovery status unknown at window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "HER Almonds carton with bad print found from prior week",
+      "summary": "Full box of HER Almonds with bad print discovered on Sollich 2, leftover from last week's run \u2014 line clearance incomplete.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-27T12:46:21.402Z"
+      },
+      "status": "Resolved \u2014 carton identified and flagged, escalated to shift leads for clearance follow-up."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Air treatment unit water pooling, Matrix 678",
+      "summary": "Active water flow from air treatment unit Matrix 678 with no drainage path; area cleanup scheduled.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-07-26T19:44:13.128Z"
+      },
+      "status": "Open \u2014 sanitation team scheduled to clean area Monday morning."
+    },
+    {
+      "plant": "L3",
+      "title": "Gondola cleaning pending for CNC changeover",
+      "summary": "Gondola cleaning required today for tomorrow's CNC run; plastic dust accumulation underneath needs solution before allergen changeover.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-27T12:55:51.902Z"
+      },
+      "status": "Open \u2014 maintenance and quality escalated to resolve dust issue and complete cleaning today."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Dish wash allergen cross-contact \u2014 nut items in wheat zone",
+      "summary": "Nut-allergen items found in wheat-designated dish wash area; no non-allergen zone available for S4 cleaning, and all three dish wash areas left uncleaned over weekend.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-27T12:28:43.508Z"
+      },
+      "status": "Open \u2014 escalated to sanitation leads and plant management for immediate corrective action."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding end-of-week line clearance verification to shift-change checklists \u2014 based on HER Almonds carton with bad print found from prior week on Sollich 2."
+    },
+    {
+      "plant": "L1",
+      "text": "Review dish wash area labeling and weekend sanitation accountability \u2014 based on nut-allergen cross-contact in wheat zone and missed weekend cleaning."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider tool check-in/check-out log for MF Matrix startup and shutdown \u2014 based on lost work tools reported with no recovery status."
+    }
+  ]
+}
