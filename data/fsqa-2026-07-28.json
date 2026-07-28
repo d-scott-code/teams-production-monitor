@@ -1,0 +1,189 @@
+{
+  "date": "2026-07-28",
+  "headline": {
+    "eyebrow": "FM events",
+    "text": "Two *milk-chocolate chunks* found in L3 ML4 depositor 1 during changeover; sweco lid at L2 ML3 fell to floor during cleaning."
+  },
+  "summary": "Three food-safety events across two plants: foreign material in L3 equipment, floor-contact at L2, and a pest sighting at L1. L1 S2 has 4 pallets on hold for lot-code rework; L2 ML3 shut down with all product on hold pending level-4 clean.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "ML3 full line hold \u2014 all chocolate and FG",
+      "summary": "Out of abundance of caution, ML3 shut down; all chocolate removed from line and placed on hold; level-4 clean, ATP, and oil flush ordered.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-07-28T00:42:56.207Z"
+      },
+      "status": "Hold active; level-4 clean in progress, quantities to be emailed."
+    },
+    {
+      "plant": "L1",
+      "title": "Lot-code error on S2 M7 \u2014 4 pallets held for rework",
+      "summary": "Incorrect character entered in lot code during font adjustment; QA had not yet approved; production will rework by reprinting correct code on affected pouches.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-27T16:05:36.3Z"
+      },
+      "status": "On hold pending rework by reprinting."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Two milk-chocolate chunks in ML4 depositor 1",
+      "summary": "Two large chunks of milk chocolate discovered inside depositor 1 during white-chocolate changeover; origin unknown; no material believed missing from equipment.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T05:04:23.793Z"
+      },
+      "status": "Chunks removed; investigation ongoing into source."
+    },
+    {
+      "plant": "L1",
+      "title": "Bat in production area",
+      "summary": "Bat observed flying in production area; supervisor caught it and released outside; no product contact reported.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-28T02:09:11.507Z"
+      },
+      "status": "Resolved \u2014 bat removed; reminder issued to keep all doors closed."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sweco lid dropped to floor during cleaning",
+      "summary": "Sweco lid was in sink for cleaning; EE pulled hose from same sink, lid came out with hose and fell to floor; lid requires re-clean before reinstallation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-28T06:10:58.993Z"
+      },
+      "status": "Lid removed from service; re-cleaning required before use."
+    },
+    {
+      "plant": "L3",
+      "title": "Damaged gasket found on ML4 north sweco",
+      "summary": "During installation of north sweco after cleaning, gasket discovered damaged; sweco taken out of service until gasket replaced.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-27T16:03:46.938Z"
+      },
+      "status": "Sweco removed from service; gasket replacement in progress."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 MM4 pouch defects \u2014 wrinkled, dirty, open, excess silvering",
+      "summary": "MM4 bags showing multiple quality defects: wrinkled, dirty, open pouches, and excess silvering at seal (spec allows up to 3 mm); line supervisor and operator notified to adjust.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-07-27T18:27:30.681Z"
+      },
+      "status": "Adjustments made; monitoring continues."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 milk streaks in white chocolate during changeover",
+      "summary": "Milk chocolate visible in white-chocolate push at south depositors; QA approved running with 100% inspection at demolding; any bars with visible streaks scrapped; after 350 lb through system, no streaks observed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-28T09:59:35.593Z"
+      },
+      "status": "Running with QA inspection; no streaks observed after initial push."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 underweight pieces flagged",
+      "summary": "QA observed underweight pieces; supervisor and operator informed to make adjustments to return to target weight.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-27T17:49:16.464Z"
+      },
+      "status": "Adjustments made; weights returned to spec."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 damaged pouches from vendor",
+      "summary": "Vendor-supplied pouches not cut correctly; causing operational issues; pictures sent to IPS for vendor follow-up.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-27T19:03:07.694Z"
+      },
+      "status": "Vendor contacted with photos; awaiting response."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Carts stacked with wheels off floor \u2014 re-clean required",
+      "summary": "Carts found stacked with wheels not on floor; QA flagged that carts must be recleaned and sanitized before use.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-07-27T15:54:39.044Z"
+      },
+      "status": "Open \u2014 carts pulled from service pending re-clean."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 caramel hopper pistons clogged",
+      "summary": "Four pistons in caramel hopper clogged; line stopped to clean; all pistons working normally after unblocking.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-07-27T13:30:11.825Z"
+      },
+      "status": "Resolved \u2014 all pistons working after cleaning."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM5 tapper rod clogged with product buildup",
+      "summary": "MM5 tapping rod not moving up and down; large buildup of chocolate and caramel found; maintenance cleaned buildup, tapping restored.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-27T19:28:22.759Z"
+      },
+      "status": "Resolved \u2014 buildup cleaned, tapping working normally."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 new Tunnel 2 belt cleaning verification passed",
+      "summary": "Production completed three cleanings of new Tunnel 2 belt during first shift; QA performed ATP testing at five points; all results passed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-27T20:32:44.013Z"
+      },
+      "status": "Passed \u2014 belt cleared for production use."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review door-closure discipline and pest-exclusion training \u2014 based on bat entry into production area on second shift."
+    },
+    {
+      "plant": "L1",
+      "text": "Add MM5 tapper-rod cleaning to S3 preventive maintenance schedule \u2014 based on today's large buildup of chocolate and caramel preventing tapper movement."
+    },
+    {
+      "plant": "L2",
+      "text": "Review sink and hose layout in ML3 cleaning area to prevent equipment falling to floor \u2014 based on sweco lid dropping when hose was pulled from shared sink."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding depositor-area inspection to ML4 changeover checklist \u2014 based on today's discovery of two milk-chocolate chunks inside depositor 1 with unknown origin."
+    }
+  ]
+}

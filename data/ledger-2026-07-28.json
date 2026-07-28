@@ -1,0 +1,510 @@
+{
+  "date": "2026-07-28",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML3 shut down at *18:42* for contamination hold \u2014 full level-4 clean and oil flush underway."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran Canadian S'mores all shift; early matrix issues (MM3\u20135) and pouch problems resolved by mid-shift, but bottom coverage quality and vendor-damaged pouches remain flagged. Sollich 2 cleared clogged pistons and ran through the last almond inventory by 03:05, finishing on schedule. Vitamin E for Feastables One-Shot is running out.",
+    "L2": "ML3 was shut down at 18:42 for a contamination hold; all chocolate pulled to quarantine and a level-4 clean with oil flush is in progress. ML2 ran displays without issues. Flow wrap is short for upcoming jobs, working with Amcor on delivery.",
+    "L3": "ML1 lost *3 hours* on a piston-drive fault that cleared by 01:29, then fought recurring Cavanna sensor faults through early morning \u2014 line stable by 05:43. ML4 changeover to white chocolate CNC hit delays from incomplete 3rd-shift cleaning, wrong PTL grate, and milk streaks in the push; QA approved limited production at 04:12 with scrap-on-sight inspection. Truffle Line and Matrix ran with minor quality flags."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Bat found in plant at 20:09, removed; reinforcing door-closure discipline."
+    },
+    {
+      "plant": "L2",
+      "text": "Wash caddy requested from L3 at 19:02 for ML3 clean, delivered by 21:06."
+    },
+    {
+      "plant": "L3",
+      "text": "All iPads logged out of Teams at 05:41, blocking uploads from ML4 floor."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 matrix machines (MM3\u20135) faults during startup",
+      "summary": "MM4 had zipped pouches and MM5 threw \"no combination\" scale errors; Troy cleaned, re-zeroed MM5, power-cycled scale, adjusted MM4 gripper arms \u2014 all three running by 07:46.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-07-27T13:27:15.704Z"
+      },
+      "resolution": "Cleared by 07:46 \u2014 \"Before the line paused all 3 machines were working\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 caramel hopper pistons clogged (4 pistons)",
+      "summary": "Four pistons in caramel depositor clogged; line stopped to clean pistons, all restored to operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-07-27T13:30:11.825Z"
+      },
+      "resolution": "Cleared at 08:27 \u2014 \"All the pistons are working well after being unblocked\" (S2 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "MM5 tapper rod jammed, not moving up/down",
+      "summary": "Tapper toggled on in HMI but rod stuck; maintenance found heavy chocolate and caramel buildup preventing movement, cleaned buildup, tapping restored.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-27T18:42:46.066Z"
+      },
+      "resolution": "Cleared at 13:28 \u2014 buildup cleaned, \"tapping is now working as it should\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "MM4 unsealed bags, pouches dropping before seal bar",
+      "summary": "Pouches dropped one side before seal bar; gripper arms adjusted to be closer together, sealing issue eliminated.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-07-27T18:42:46.066Z"
+      },
+      "resolution": "Cleared same message \u2014 \"Everything is fine on MM4 now\" after gripper adjustment (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 display tray shortage mid-shift",
+      "summary": "Ran out of display trays at 17:15, line paused for lunch, pouches packed into WIP boxes; trays arrived 00:22, line resumed normal packing.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-07-27T23:15:50.226Z"
+      },
+      "resolution": "Cleared at 00:22 \u2014 \"The trays have arrived\" and normal packing resumed (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "Bat flying in production area",
+      "summary": "Bat found flying around plant; supervisor caught and removed it outside, reinforced door-closure discipline.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-28T02:09:11.507Z"
+      },
+      "resolution": "Cleared at 20:09 \u2014 bat removed, door protocols reinforced (Dakota Adair, Jorel Gourdin)."
+    },
+    {
+      "plant": "L1",
+      "title": "Water leak near drain (non-production area)",
+      "summary": "Water actively pouring out near cleaned drain area; maintenance responded, restored flow through drain.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-27T14:14:37.482Z"
+      },
+      "resolution": "Cleared at 08:40 \u2014 \"The water is now flowing through the drain\" (Chris Jeffs)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 M7 incorrect lot code character entered",
+      "summary": "During font adjustment operator entered wrong character in lot code before QA approval; production corrected error and flagged four pallets for rework/reprint.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-27T16:05:36.3Z"
+      },
+      "resolution": "Corrected same shift; rework plan in place for affected pallets (Mariela Gudino, 10:05)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 pallet marked with both version 3 & 4 labels",
+      "summary": "Delivered pallet marked with both version labels; all boxes confirmed version 4, quality alerted for record.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-07-28T04:03:44.351Z"
+      },
+      "resolution": "Identified and quality alerted at 22:03 \u2014 all confirmed version 4 (Brandon Lance)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 piston drive faulted, right side not moving",
+      "summary": "Depositor piston drive threw fault at 00:23, right side stopped; maintenance found issue, cleaned and ATP-tested plate, reassembled, temper recovered, depositing resumed at 01:29.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-07-28T06:23:31.402Z"
+      },
+      "resolution": "Cleared at 01:29 \u2014 plate cleaned/ATP'd, installed, temper at 0.1, \"started depositing\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM upper sensor positions causing empty plates",
+      "summary": "Faulty sensor positions not detecting empty upper plates; maintenance adjusted sensor placements, issue resolved.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-27T14:04:14.144Z"
+      },
+      "resolution": "Cleared at 08:04 \u2014 maintenance adjusted sensors (mfmatrix)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM line paused, ejecting all bags (sensor fault)",
+      "summary": "Matrix paused for 7 minutes, rejecting all pouches due to sensor fault; operator reset, line back up.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-28T05:03:50.241Z"
+      },
+      "resolution": "Cleared at 23:05 \u2014 \"Line is back up\" after 7-minute pause (mfmatrix)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna sensor faults (recurring B150)",
+      "summary": "Cavanna sensors failed at 03:16, cleared by 03:31, faulted again at 04:20 with chain pin damage; maintenance adjusted sensor B150, phasing belt, speed \u2014 stable by 05:43.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-28T09:16:06.851Z"
+      },
+      "resolution": "Cleared at 05:43 \u2014 \"Line is running correctly now\" after sensor/belt adjustments (Nathan Ruiz, flow-wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C5 conveyor belt shifted off track",
+      "summary": "C5 belt moved out of position; maintenance realigned and tensioned belt, running correctly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-28T09:51:46.081Z"
+      },
+      "resolution": "Cleared at 04:16 \u2014 \"Belt is running good\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 milk chocolate in white chocolate push (north depositors)",
+      "summary": "South depositors showing milk streaks during white push; QA approved production at 350 lbs pushed with demolding inspection and scrap-on-sight for visible streaks.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-28T09:59:35.593Z"
+      },
+      "resolution": "Cleared at 04:12 \u2014 QA approved limited production with inspection, no streaks observed after 350 lbs (Frederick Peairs)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM basket #3 not functioning",
+      "summary": "Basket #3 stopped working properly; maintenance put back into operation.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-28T07:25:04.207Z"
+      },
+      "resolution": "Cleared at 01:25 \u2014 basket restored to operation (mfmatrix)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 slider caps missing for depositor 1",
+      "summary": "Caps for depositor 1 sliders not found in expected location; team located spares across depositor 2, swapped in place.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-28T07:37:40.663Z"
+      },
+      "resolution": "Cleared at 02:50 \u2014 grabbed caps from across depositor 2 (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 bottom coverage quality miss (caramel cluster)",
+      "summary": "Cluster bottoms intermittently too exposed, poor chocolate coverage; enrober operator asked to improve multiple times through shift but issue recurs.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-07-27T15:22:07.116Z"
+      },
+      "status": "Flagged at 09:22, 13:39, and 15:42; enrober adjustments requested but not holding."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 underweight almond cluster pieces",
+      "summary": "Experiencing underweight pieces; QA informed supervisor and operator to make adjustments.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-07-27T17:49:16.464Z"
+      },
+      "status": "Reported at 11:49, adjustments requested; no confirmation weights corrected."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 pouch pickup inconsistent (rubber bumpers)",
+      "summary": "Pouch pickup on MM3 grabbing inconsistently due to worn rubber bumpers, causing misalignment; maintenance notified, line still running but quality impact visible.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-07-27T19:16:09.71Z"
+      },
+      "status": "Maintenance informed at 13:16, scheduled after MM5 tapper fix; line running as of last update."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM4 excessive silvering on pouch seals",
+      "summary": "Matrix 4 bags showing silver at seal above 3mm spec limit; operator notified to adjust but issue persists.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-07-27T19:22:47.331Z"
+      },
+      "status": "Reported at 13:22, requested adjustments to keep under 3mm spec; no confirmation of resolution."
+    },
+    {
+      "plant": "L1",
+      "title": "Vitamin E shortage for Feastables One-Shot (item 10217)",
+      "summary": "20 lbs Vitamin E on hand, no inventory in Springville or second building; finishing tonight leaves ~15 lbs, enough for 10,560 lbs One-Shot before stockout.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-07-28T03:24:31.701Z"
+      },
+      "status": "Reported at 21:24; planning notified (Curt, Dakota, Daniel, Kirk, Ethan) but no replenishment ETA given."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 vendor-damaged pouches (not cut correctly)",
+      "summary": "Receiving pouches from vendor with incorrect cuts; pictures sent to IPS for vendor follow-up.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-07-27T19:03:07.694Z"
+      },
+      "status": "Pictures sent to IPS at 13:25 (Ethan Bean); awaiting vendor response."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 pieces per pouch over spec (36\u201338 vs. 36 max)",
+      "summary": "Pouch piece count running 36\u201338 against 36 max spec; adjustments requested to hit target.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "(system)",
+        "time_utc": "2026-07-28T00:22:13.121Z"
+      },
+      "status": "Flagged at 18:22, Victor acknowledged \"working on that\" at 18:48; no follow-up confirming target hit."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 contamination hold \u2014 full line shutdown",
+      "summary": "Out of abundance of caution, ML3 shut down at 18:42; all chocolate removed to HOLD (finished goods + barrels), level-4 clean in progress with PTL flush using oil.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-07-28T00:42:56.207Z"
+      },
+      "status": "Shutdown ordered 18:42, draining/holding product, wash caddy delivered 21:06, clean underway as of 06:44 EOS \u2014 depositor ATP'd, ready for assembly."
+    },
+    {
+      "plant": "L2",
+      "title": "Flow wrap shortage for upcoming ML2 jobs (item 40966)",
+      "summary": "1.78M rolls needed, 19.9M on order; ETA requested from Amcor for 5M delivery.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Pino",
+        "time_utc": "2026-07-27T16:22:56.478Z"
+      },
+      "status": "Ethan working with Amcor as of 11:29, no ETA confirmed; Alex requested level-1 FW pull from L3 at 06:58 (2 hours on line)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sweco lid fell on floor during wash",
+      "summary": "Operator pulled hose from sink, sweco lid came out with hose and fell on ground; contamination event.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-28T06:10:58.993Z"
+      },
+      "status": "Occurred at 00:10; no follow-up on rewash/ATP or disciplinary action."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 shutdown checklist not followed (chiller/temper in production mode)",
+      "summary": "2nd shift left chiller and temper unit in production programs instead of shutdown; 3rd shift doing reheat to empty buffer tank.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-28T05:11:42.952Z"
+      },
+      "status": "Flagged at 23:11, reheat underway to drain buffer; procedural miss from 2nd shift."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM machine stopped dispensing chocolate",
+      "summary": "Machine stopped dispensing chocolate; operator attempting hard reset.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-07-28T01:37:46.643Z"
+      },
+      "status": "Reported at 19:37, trying hard reset; no follow-up confirming restoration."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 3rd shift cleaning incomplete (multiple sections missing)",
+      "summary": "Multiple cleaning sections from 3rd shift either incomplete or not updated on checklist; 1st shift asking for status.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-27T16:27:04.762Z"
+      },
+      "status": "Flagged at 10:27, unclear which sections done vs. missing; no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 affogato bars stuck in Z conveyors (EagleStone/bulk)",
+      "summary": "Same affogato bars stuck in tops of Z conveyors from morning inspection; team worked most of shift but did not finish removal.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-07-27T17:38:57.904Z"
+      },
+      "status": "Flagged at 11:38, Kimberly confirmed team spent most of shift but incomplete at 11:44; no final clear."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM corner board shortage (item 40745)",
+      "summary": "No corner boards available in system; creating pallets with bags only, will finalize pallet labels when boards arrive from Springville.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-07-27T17:57:22.531Z"
+      },
+      "status": "Reported at 11:57, workaround in place; no ETA given for inbound boards."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line chocolate shape defects causing jams",
+      "summary": "Chocolate arriving with round bottoms and misshapen coating, jamming in cabin rails and wrapper machines.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-07-27T19:28:39.271Z"
+      },
+      "status": "Reported at 13:28, causing recurring jams; no resolution or enrober adjustment confirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM sucker mechanism not opening pouches (sensor faults)",
+      "summary": "Sucker assembly failing to open pouches correctly, sensor faults causing pauses; maintenance adjusting but issue recurring.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-28T00:54:03.594Z"
+      },
+      "status": "Reported 18:54, paused for sensor fault at 19:02; multiple sensor issues through shift, last clear status unclear."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 two milk chocolate chunks found in depositor 1",
+      "summary": "Two large milk chocolate chunks found inside depositor 1 during white chocolate setup; source unknown.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T05:04:23.793Z"
+      },
+      "status": "Reported at 23:04, no follow-up on removal, source investigation, or FM risk assessment."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 setup incomplete from 1st shift",
+      "summary": "Depositor 4 missing front plates, program plates, and hoses; setup not finished by 1st shift.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T05:33:38.233Z"
+      },
+      "status": "Identified at 23:33, left incomplete from 1st shift; no update on completion by 3rd."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 north sweco gasket found damaged during install",
+      "summary": "Gasket damaged when installing north sweco; replacement required.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-27T16:03:46.938Z"
+      },
+      "status": "Found at 10:03, replacement needed; no confirmation gasket sourced or installed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 wrong grate in PTL2, missing agitator",
+      "summary": "Wrong grate installed in PTL2; correct grate and agitator being swapped in.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T00:15:09.499Z"
+      },
+      "status": "Identified at 18:15, installing correct grate/agitator; no confirmation install complete."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 drains by swecos need cleaning",
+      "summary": "Floor drains near sweco stations require cleaning.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T05:20:31.177Z"
+      },
+      "status": "Flagged at 23:20, no confirmation cleaning completed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 all iPads logged out of Teams, blocking uploads",
+      "summary": "All line iPads logged out of Teams; operators unable to upload photos or checklists.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-07-28T11:41:02.966Z"
+      },
+      "status": "Reported at 05:41, IT/access issue; no resolution or re-login confirmed."
+    }
+  ]
+}
