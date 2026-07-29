@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSQA briefing — 2026-07-29 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
+.fsqa-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.fsqa-head h1 {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.fsqa-head .sub {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.fsqa-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.fsqa-head .meta img {
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Summary block ---------- */
+.fsqa-summary {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 14pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Stats strip ---------- */
+.fsqa-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8pt;
+  margin: 0 0 14pt 0;
+}
+.fsqa-stats .stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8pt 10pt;
+  text-align: left;
+}
+.fsqa-stats .stat .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fsqa-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 18pt; line-height: 1;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2pt;
+}
+
+/* ---------- Section blocks ---------- */
+.fsqa-section {
+  margin: 16pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.fsqa-section .sec-head {
+  display: flex; align-items: center; gap: 6pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 4pt; margin-bottom: 6pt;
+}
+.fsqa-section .sec-head h3 {
+  font-size: 10.5pt; font-weight: 700;
+  margin: 0; color: var(--fg-1);
+}
+.fsqa-section .sec-head .sec-icon {
+  width: 14px; height: 14px; color: var(--fg-2);
+}
+.fsqa-section .sec-head .sec-count {
+  margin-left: auto;
+  font-size: 8pt; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Entry rows ---------- */
+.fsqa-entry {
+  display: grid;
+  grid-template-columns: 26pt 1fr auto;
+  gap: 8pt;
+  align-items: start;
+  padding: 6pt 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.fsqa-entry:last-child { border-bottom: 0; }
+.fsqa-entry .sev-col { text-align: center; padding-top: 1pt; }
+.fsqa-entry .body { min-width: 0; }
+.fsqa-entry .title-line {
+  font-weight: 600; color: var(--fg-1);
+  font-size: 9.5pt; line-height: 1.3;
+}
+.fsqa-entry .plant-tag {
+  display: inline-block;
+  font-size: 7pt; font-weight: 700;
+  color: var(--fg-2);
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  padding: 1pt 6pt;
+  margin-right: 6pt;
+  vertical-align: 1pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fsqa-entry .summary {
+  display: block; font-size: 8.5pt; color: var(--fg-2);
+  margin-top: 2pt; line-height: 1.35;
+  text-wrap: pretty;
+}
+.fsqa-entry .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt; line-height: 1.4;
+  text-wrap: pretty;
+}
+.fsqa-entry .status::before {
+  content: "→ "; font-style: normal; color: var(--fg-3);
+}
+.fsqa-entry .raised {
+  font-size: 7.5pt; color: var(--fg-3);
+  text-align: right; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.fsqa-entry .raised .author { color: var(--fg-2); font-weight: 600; display: block; }
+
+/* ---------- Empty state ---------- */
+.fsqa-section .empty {
+  padding: 6pt 0 4pt 0;
+  font-style: italic; font-size: 9pt;
+  color: var(--fg-3);
+}
+
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+  margin: 18pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.opp-box {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 9pt 11pt 10pt 11pt;
+}
+.opp-box .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4pt;
+}
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
+}
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
+  color: var(--fg-1);
+  padding: 2pt 0;
+  text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<section class="sheet">
+  <div class="fsqa-head">
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>July 29, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Jul 28 07:15 MT → Jul 29 07:15 MT</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Audience</div><div class="v">FSQA Manager</div></div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Metal detection bypass</div>
+    <p class="headline">L3 ML4 dark filling pipe found dropping <span class="accent">directly into hopper</span> — bypassed magnet for 3+ hours before shift caught it.</p>
+  </div>
+
+  <p class="fsqa-summary">One food-safety control bypassed, one sanitation re-clean for allergen residue, one quality hold for underweight product. L3 ML4 filling pipe was misaligned and skipped the magnet; L1 Tunnel 2 re-cleaned for almond residue post-startup; L3 scrapped underweight bars when centerline settings weren&#x27;t followed.</p>
+
+  <div class="fsqa-stats"><div class="stat"><div class="eyebrow">Holds</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">Food safety</div><div class="num">4</div></div><div class="stat"><div class="eyebrow">Quality</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">Sanitation</div><div class="num">3</div></div><div class="stat"><div class="eyebrow">Allergen</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">High severity</div><div class="num">3</div></div></div>
+
+  <section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="package"></i><h3>Active holds</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>Molds on hold pending full wash after allergen clean</div><span class="summary">L2 ML3 molds pulled during allergen changeover placed on hold; mold washer will be deep-cleaned after these molds complete their cycle.</span><span class="status">Open — molds being washed, washer deep-clean to follow.</span></div><div class="raised"><span class="author">Kathleen Gilbert</span><span>06:24 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Underweight bars scrapped — centerline not followed</div><span class="summary">L3 ML4 depositor 4 suction stroke set to 20 instead of centerline spec of 24; boxes came up underweight, product scrapped and settings corrected to 24.</span><span class="status">Resolved — suction stroke adjusted to 24, weights back in range.</span></div><div class="raised"><span class="author">Kimberly Morales</span><span>01:58 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-alert"></i><h3>Food safety</h3><span class="sec-count">4</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Dark filling pipe bypassing magnet</div><span class="summary">L3 ML4 pipe for dark filling found moved and pointing directly into hopper instead of dropping through magnet; maintenance wired it back into correct position.</span><span class="status">Resolved — pipe repositioned and wired to drop through magnet.</span></div><div class="raised"><span class="author">Itzel Chavez</span><span>07:08 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Depositor 4 nozzle plate bolts loose</div><span class="summary">L3 ML4 depositor 4 nozzle plate found with only 3 of its bolts tight; maintenance tightened all bolts during downtime for capture test.</span><span class="status">Resolved — all bolts tightened by maintenance.</span></div><div class="raised"><span class="author">Itzel Chavez</span><span>06:43 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Damaged belt on gondola outfeed</div><span class="summary">L3 ML4 gondola outfeed belt found damaged; line held until repair to prevent belt material entering product zone.</span><span class="status">Resolved on shift — belt addressed before restart.</span></div><div class="raised"><span class="author">Nathan Ruiz</span><span>06:52 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Multiple dirty molds flagged on ML1</div><span class="summary">L3 ML1 had 4 mold alarms across third shift for dirty molds/pins; molds pulled and washed, broken pieces found in tote given to QA.</span><span class="status">Ongoing — molds cycled through washer, one lean 59 swapped out.</span></div><div class="raised"><span class="author">Imperial</span><span>22:29 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-check"></i><h3>Quality flags</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S3 out-of-spec weights and piece count</div><span class="summary">L1 Sollich 3 performing low final weights, out-of-spec, and 37 pieces per pouch instead of target; operator and lead notified over 30 minutes prior with no improvement.</span><span class="status">Open at window close — improvements requested, status unclear.</span></div><div class="raised"><span class="author">Victor Mejia</span><span>17:10 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 capture tests out of range</div><span class="summary">L3 ML4 depositor 4 capture test out of range when centerline settings applied; adjustments made, re-tested until in range before production resumed.</span><span class="status">Resolved — capture tests passed after adjustments.</span></div><div class="raised"><span class="author">Itzel Chavez</span><span>06:46 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="spray-can"></i><h3>Sanitation</h3><span class="sec-count">3</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Tunnel 2 re-cleaned for almond residue</div><span class="summary">L1 Sollich 2 Tunnel 2 found with almond peels on belt during post-startup inspection; tunnel taken offline and re-cleaned before non-almond product run.</span><span class="status">Resolved — tunnel re-cleaned and passed inspection.</span></div><div class="raised"><span class="author">Karen Velastegui</span><span>05:12 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Sollich 3 level 4 cleaning visual inspection failed</div><span class="summary">L1 Sollich 3 area failed visual inspection during level 4 cleaning; QA flagged residue in one zone, cleaning team re-worked.</span><span class="status">Open — area flagged for re-clean.</span></div><div class="raised"><span class="author">Victor Mejia</span><span>23:17 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>Sorting machine swab tests inconclusive</div><span class="summary">L2 Panning/Sorting swab tests came back inconclusive; QA requested sorting machine be cleaned before loading product.</span><span class="status">Open — cleaning requested before product load.</span></div><div class="raised"><span class="author">Claudio Tovar</span><span>06:51 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="triangle-alert"></i><h3>Allergen</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Almond peels found on Tunnel 2 belt</div><span class="summary">L1 Sollich 2 Tunnel 2 had almond peels on top of band during post-startup walk; tunnel re-cleaned to prevent cross-contact on non-almond product.</span><span class="status">Resolved — tunnel re-cleaned and cleared for production.</span></div><div class="raised"><span class="author">Karen Velastegui</span><span>05:12 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>ML3 allergen changeover cleaning completed</div><span class="summary">L2 ML3 completed allergen changeover cleaning; temper flush passed, ATP passed on buffer tank, demolding station, Sweco, and belts; molds pulled and held.</span><span class="status">Resolved — cleaning complete, ATP passed, line ready.</span></div><div class="raised"><span class="author">Maria Caldera</span><span>13:35 MT</span></div></div></section>
+
+  <div class="opportunities-eyebrow">Opportunities — by plant</div><div class="opportunities-row"><div class="opp-box"><div class="eyebrow">L1</div><h4>L1 Caramel</h4><ul><li>Consider adding tunnel belt inspection to Sollich 2 allergen changeover checklist — today&#x27;s almond residue on Tunnel 2 required a full re-clean.</li></ul></div><div class="opp-box"><div class="eyebrow">L2</div><h4>L2 Moulding</h4><p class="empty">No opportunities flagged today.</p></div><div class="opp-box"><div class="eyebrow">L3</div><h4>L3 Chocolate</h4><ul><li>Consider adding filling-pipe position check to ML4 startup checklist — today&#x27;s misaligned pipe bypassed the magnet for hours before discovery.</li><li>Review depositor nozzle-plate bolt torque checks for ML4 — today only 3 bolts were tight, suggesting a recurring maintenance gap.</li></ul></div></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
+    Production briefing for the same day:
+    <a class="archive-link" href="2026-07-29.html">reports/2026-07-29.html</a> ·
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">FSQA briefing · 2026-07-29</span>
+    <span class="page-no">Page 1 of 1</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

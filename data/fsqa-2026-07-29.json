@@ -1,0 +1,175 @@
+{
+  "date": "2026-07-29",
+  "headline": {
+    "eyebrow": "Metal detection bypass",
+    "text": "L3 ML4 dark filling pipe found dropping *directly into hopper* \u2014 bypassed magnet for 3+ hours before shift caught it."
+  },
+  "summary": "One food-safety control bypassed, one sanitation re-clean for allergen residue, one quality hold for underweight product. L3 ML4 filling pipe was misaligned and skipped the magnet; L1 Tunnel 2 re-cleaned for almond residue post-startup; L3 scrapped underweight bars when centerline settings weren't followed.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Molds on hold pending full wash after allergen clean",
+      "summary": "L2 ML3 molds pulled during allergen changeover placed on hold; mold washer will be deep-cleaned after these molds complete their cycle.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-07-29T12:24:36.201Z"
+      },
+      "status": "Open \u2014 molds being washed, washer deep-clean to follow."
+    },
+    {
+      "plant": "L3",
+      "title": "Underweight bars scrapped \u2014 centerline not followed",
+      "summary": "L3 ML4 depositor 4 suction stroke set to 20 instead of centerline spec of 24; boxes came up underweight, product scrapped and settings corrected to 24.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-07-29T07:58:33.075Z"
+      },
+      "status": "Resolved \u2014 suction stroke adjusted to 24, weights back in range."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Dark filling pipe bypassing magnet",
+      "summary": "L3 ML4 pipe for dark filling found moved and pointing directly into hopper instead of dropping through magnet; maintenance wired it back into correct position.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-29T13:08:35.315Z"
+      },
+      "status": "Resolved \u2014 pipe repositioned and wired to drop through magnet."
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor 4 nozzle plate bolts loose",
+      "summary": "L3 ML4 depositor 4 nozzle plate found with only 3 of its bolts tight; maintenance tightened all bolts during downtime for capture test.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-29T12:43:50.460Z"
+      },
+      "status": "Resolved \u2014 all bolts tightened by maintenance."
+    },
+    {
+      "plant": "L3",
+      "title": "Damaged belt on gondola outfeed",
+      "summary": "L3 ML4 gondola outfeed belt found damaged; line held until repair to prevent belt material entering product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-07-29T12:52:22.663Z"
+      },
+      "status": "Resolved on shift \u2014 belt addressed before restart."
+    },
+    {
+      "plant": "L3",
+      "title": "Multiple dirty molds flagged on ML1",
+      "summary": "L3 ML1 had 4 mold alarms across third shift for dirty molds/pins; molds pulled and washed, broken pieces found in tote given to QA.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-29T04:29:49.218Z"
+      },
+      "status": "Ongoing \u2014 molds cycled through washer, one lean 59 swapped out."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 out-of-spec weights and piece count",
+      "summary": "L1 Sollich 3 performing low final weights, out-of-spec, and 37 pieces per pouch instead of target; operator and lead notified over 30 minutes prior with no improvement.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-28T23:10:33.081Z"
+      },
+      "status": "Open at window close \u2014 improvements requested, status unclear."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 capture tests out of range",
+      "summary": "L3 ML4 depositor 4 capture test out of range when centerline settings applied; adjustments made, re-tested until in range before production resumed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-29T12:46:50.811Z"
+      },
+      "status": "Resolved \u2014 capture tests passed after adjustments."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Tunnel 2 re-cleaned for almond residue",
+      "summary": "L1 Sollich 2 Tunnel 2 found with almond peels on belt during post-startup inspection; tunnel taken offline and re-cleaned before non-almond product run.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-29T11:12:44.786Z"
+      },
+      "status": "Resolved \u2014 tunnel re-cleaned and passed inspection."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 level 4 cleaning visual inspection failed",
+      "summary": "L1 Sollich 3 area failed visual inspection during level 4 cleaning; QA flagged residue in one zone, cleaning team re-worked.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-29T05:17:40.306Z"
+      },
+      "status": "Open \u2014 area flagged for re-clean."
+    },
+    {
+      "plant": "L2",
+      "title": "Sorting machine swab tests inconclusive",
+      "summary": "L2 Panning/Sorting swab tests came back inconclusive; QA requested sorting machine be cleaned before loading product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-29T12:51:35.095Z"
+      },
+      "status": "Open \u2014 cleaning requested before product load."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Almond peels found on Tunnel 2 belt",
+      "summary": "L1 Sollich 2 Tunnel 2 had almond peels on top of band during post-startup walk; tunnel re-cleaned to prevent cross-contact on non-almond product.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-29T11:12:44.786Z"
+      },
+      "status": "Resolved \u2014 tunnel re-cleaned and cleared for production."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 allergen changeover cleaning completed",
+      "summary": "L2 ML3 completed allergen changeover cleaning; temper flush passed, ATP passed on buffer tank, demolding station, Sweco, and belts; molds pulled and held.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-07-28T19:35:15.685Z"
+      },
+      "status": "Resolved \u2014 cleaning complete, ATP passed, line ready."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding tunnel belt inspection to Sollich 2 allergen changeover checklist \u2014 today's almond residue on Tunnel 2 required a full re-clean."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding filling-pipe position check to ML4 startup checklist \u2014 today's misaligned pipe bypassed the magnet for hours before discovery."
+    },
+    {
+      "plant": "L3",
+      "text": "Review depositor nozzle-plate bolt torque checks for ML4 \u2014 today only 3 bolts were tight, suggesting a recurring maintenance gap."
+    }
+  ]
+}

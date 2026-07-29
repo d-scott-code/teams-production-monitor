@@ -1,0 +1,246 @@
+{
+  "date": "2026-07-29",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 lost *8 hours* on a packaging code format issue \u2014 customer approved at 14:24, but multiple equipment problems followed."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 tunnel 2 required allergen re-clean after almond peels found on the belt \u2014 last update at 06:29 said it still needed more work. Sollich 3 ran out of caramel at 12:09, completed caustic wash, and restarted at 15:41.",
+    "L2": "ML3 completed allergen deep clean with ATP sign-offs. Panning sorting machine flagged for cleaning after inconclusive swab tests. FFS and ML2 ran routine production with no breaks.",
+    "L3": "ML4 was down from 08:32 until 14:24 waiting on customer approval for a 2-line code format, then hit equipment issues including a solidified chocolate hopper, loose nozzle bolts, and a damaged gondola belt. ML1 cleared multiple mold alarms and a dirty camera. Truffle line worked through warm chocolate, a twisted separator belt, and accumulation from bad pieces."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Small man lift tagged out of order; HOJ scheduled to repair before Friday."
+    },
+    {
+      "plant": "L2",
+      "text": "L2 conference room fridge thawed after leak. Encoder from ML3 borrowed for ML4 emergency repair \u2014 need 2 more expedited."
+    },
+    {
+      "plant": "L3",
+      "text": "MF Matrix found 5 untracked caramel pallets in WIP boxes; inventory discrepancy under investigation with MRC."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 ran out of caramel at 12:09",
+      "summary": "Cook times hit 50 minutes; operator drained reserve and started caustic wash to prevent longer downtime.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-28T16:34:20.07Z"
+      },
+      "resolution": "Caustic complete, new batches cooked, QA approved caramel at 15:34, line running at 15:41 \u2014 \"Line is running\" (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MM3 printer frozen since 12:40",
+      "summary": "Markem printer locked up mid-shift and wouldn't respond; discovered during restart prep.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-28T22:16:42.948Z"
+      },
+      "resolution": "Power cycled at 16:16 to reset \u2014 printer back online."
+    },
+    {
+      "plant": "L2",
+      "title": "Conference room fridge leaking water",
+      "summary": "Refrigerator door leaked water onto floor creating slip hazard in L2 caramel conference room.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Jessica Malave",
+        "time_utc": "2026-07-28T16:33:43.53Z"
+      },
+      "resolution": "Cleaned at 11:24 \u2014 \"Laudia already cleaned up the leak\" (Maria Caldera). Jorel noted fridge needs full thaw."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 down 8 hours on packaging code format",
+      "summary": "Line stopped at 08:32 when requested 3-line lot code wouldn't fit in the wrapper print area; customer approved 2-line format at 14:24 and line resumed.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-28T14:32:58.263Z"
+      },
+      "resolution": "Customer approved 2-line format at 14:24 \u2014 \"this is the approved format, please keep lot code on second line\" (Ira Robison). Line started second shift at 14:30."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna M30 sensor shutting down truffle wrapper",
+      "summary": "Cavanna unit repeatedly stopped on M30 sensor fault, blocking flow wrap.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-07-28T13:43:09.799Z"
+      },
+      "resolution": "Chain tension adjusted and chain lubed at 08:01 \u2014 \"Chain tension needed adjustment and the chain needed to be lubed\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 inclusion hopper piece installed backwards",
+      "summary": "Depositor inclusion system wasn't sending cookies out; maintenance found hopper piece reversed during setup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-28T14:32:58.263Z"
+      },
+      "resolution": "Maintenance identified backwards installation at 09:14 and corrected it; system functioning."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle separator belt twisted on south side",
+      "summary": "South separator belt twisted mid-shift, blocking product flow; needed maintenance support to fix.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T22:31:56.127Z"
+      },
+      "resolution": "Cleared at 16:31 \u2014 \"With the help of maintenance, we are able to trim the chocolate while we fixed the belt and got it moving again.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 system crash blocking final pallet labels",
+      "summary": "IT system issue prevented warehouse from generating final labels for finished goods pallets starting at 21:51.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-07-29T03:51:55.591Z"
+      },
+      "resolution": "IT resolved at 22:27 \u2014 \"The incident with the system has been resolved, we started making the final labels normally\" (Fredy Montalvan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera dirty causing mold alarm",
+      "summary": "Mold inspection camera triggered alarm and stopped line at 22:29; QA and maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-29T04:29:49.218Z"
+      },
+      "resolution": "Cleaned at 22:41 \u2014 \"Camera was dirty, ml1 is back up and running\" (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 tunnel 2 allergen contamination",
+      "summary": "Almond peels found on tunnel 2 belt at 05:12 during pre-shift inspection; re-clean started at 05:34 but Ebrima reported at 06:29 it still needed more thorough cleaning.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-07-29T11:12:44.786Z"
+      },
+      "status": "Re-clean in progress as of 06:29 \u2014 \"Tunnel 2 still needs more thorough clean\" (Ebrima Dibba). Last message at 06:29; no final sign-off posted."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 level 4 clean failed visual inspection",
+      "summary": "QA visual inspection at 23:17 found area under separation table not clean to level 4 standard.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-29T05:17:40.306Z"
+      },
+      "status": "Failed at 23:17 with photo evidence. Angelica acknowledged at 23:18. No re-clean or pass posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "Panning sorting machine needs cleaning after inconclusive swab",
+      "summary": "Swab tests on sorting machine came back inconclusive at 06:51; QA requested cleaning before loading product.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-29T12:51:35.095Z"
+      },
+      "status": "Cleaning requested at 06:51 from Alex Mendoza and Jeffrey Barney. No confirmation of cleaning completion or re-swab results posted."
+    },
+    {
+      "plant": "L2",
+      "title": "L2 washroom and wall leaking, HVAC suspected",
+      "summary": "Water leaks inside washroom and wet spots on entrance wall; maintenance suspects clogged HVAC units.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-29T10:33:05.26Z"
+      },
+      "status": "Reported to William Lopez and Dave Ruff at 04:33. Maintenance assessment given but no repair or resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 white chocolate solidified in depositor 4 hopper",
+      "summary": "One-shot hopper chocolate completely solidified at 14:54 because mixer drive wasn't moved to correct position during setup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T20:54:48.875Z"
+      },
+      "status": "Mixer drive repositioned and marked at 15:52, capture test run at 16:34. Depositing resumed but no confirmation chocolate fully cleared from hopper."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle chocolate temp too high causing defects",
+      "summary": "Chocolate running too warm at 15:49, causing issues at Cavanna end with doubles and accumulation; operators working to bring temp down.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-28T21:49:29.544Z"
+      },
+      "status": "Operators adjusting temp at 15:49, still seeing accumulation at 18:00. Victor reported improvements needed at 17:10 on low weights. No final resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 nozzle plate bolts all loose",
+      "summary": "Only 3 of the nozzle plate bolts were tight on depositor 4 at 06:43; could cause weight variance and leaks.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-29T12:43:50.46Z"
+      },
+      "status": "Nathan tightened all bolts at 06:52. Capture tests run and weights brought into range, but root cause of loosening not identified."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola outfeed belt damaged",
+      "summary": "Damaged belt found on gondola outfeed conveyor at 06:52 blocking line restart after capture test adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-07-29T12:52:22.663Z"
+      },
+      "status": "Reported at 06:52, Itzel confirmed \"we are ready to start but we can't due to the damaged belt on the Gondola\" at 06:59. No resolution posted in window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank temp rising",
+      "summary": "Buffer tank temperature flagged as going up at 05:45 during third shift checks.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-29T11:45:38.742Z"
+      },
+      "status": "Flagged at 05:45. Subsequent checks at 04:06 and 06:36 showed rollers condition but no temp resolution posted."
+    }
+  ]
+}
