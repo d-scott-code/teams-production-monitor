@@ -1,0 +1,275 @@
+{
+  "date": "2026-07-30",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L3 ML4 WIP tote held for *cardboard-and-chocolate* contamination \u2014 product cannot be used, investigation open."
+  },
+  "summary": "Two active holds at L3 ML4 \u2014 one for foreign material contamination (cardboard in WIP tote), one for quality (50\u2013100 bad molds awaiting QA disposition). Shower nozzles at ML4 failed allergen test twice. Rust found on S4 twist wrap belt during cleaning. Pest activity elevated at L1 doors.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "WIP tote contaminated with cardboard and chocolate",
+      "summary": "Tote from Depositor #1 contained cardboard and chocolate debris; line informed product cannot be used and instructed to remove, place on hold, and replace with clean tote.",
+      "severity": "high",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-07-30T11:54:00.342Z"
+      },
+      "status": "On hold pending disposition \u2014 line instructed to pull and replace tote."
+    },
+    {
+      "plant": "L3",
+      "title": "50\u2013100 bad molds on ML4 Depositor 1",
+      "summary": "Cookies not turned on at restart; 50\u2013100 molds without cookie inclusions deposited before catch; line stopped to purge depositor and await QA clearance.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-30T02:52:07.691Z"
+      },
+      "status": "Resolved \u2014 line restarted at 21:32 MT after 10 min downtime; scrap quantity pending."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Rust on S4 twist wrap conveyor belt",
+      "summary": "During cleaning of S4 twist wrap conveyor, rust from roller discovered on belt; belt is in food-contact zone.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-07-30T12:21:20.067Z"
+      },
+      "status": "Open \u2014 rust identified during cleaning, no resolution reported in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Cardboard and chocolate in ML4 WIP tote",
+      "summary": "WIP tote dropped off by Depositor #1 contained cardboard and chocolate contamination; QA and line lead notified, tote pulled from service and placed on hold.",
+      "severity": "high",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-07-30T11:54:00.342Z"
+      },
+      "status": "On hold \u2014 contaminated tote removed from line, awaiting disposition."
+    },
+    {
+      "plant": "L1",
+      "title": "Elevated insect activity at multiple doors",
+      "summary": "Multiple insects observed attempting entry at L1 doors (photos show 5+ insects per door frame at South door, L2 west side door also flagged); PCO spraying weekly but activity remains high.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-07-30T03:42:47.597Z"
+      },
+      "status": "Open \u2014 PCO performing weekly spray, seasonal activity elevated, monitoring continues."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 product with insufficient bottom chocolate",
+      "summary": "Operators reported many S3 bars with lack of bottom chocolate coverage on both sides; buildup in bottomer prevented proper flow.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-30T04:30:02.309Z"
+      },
+      "status": "Resolved \u2014 bottomer cleaned, adjustments made at 22:37 MT; issue persisted 5+ min post-adjustment, then resolved."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 caramel temperature excursions",
+      "summary": "S2 caramel coming hot and liquidy across 3rd shift; drums cleaned twice (00:18 MT, 04:10 MT); chiller fluid low, topped off but caramel still soft and sticking to rollers.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-30T06:17:57.395Z"
+      },
+      "status": "Open \u2014 chiller fluid added, caramel still exhibiting temperature-related sticking behavior at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Dirty molds causing ML1 camera faults",
+      "summary": "ML1 camera faults triggered by dirty molds across multiple shifts; 80 molds replaced due to chocolate buildup on chain/pins under hopper; mold alarms recurred 5+ times in 24h.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-29T15:48:48.589Z"
+      },
+      "status": "Ongoing \u2014 dirty molds pulled and cleaned at each alarm; root cause (chocolate dripping from hopper guard) addressed, monitoring continues."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dark chocolate capture test failed",
+      "summary": "Capture test of dark chocolate on ML4 failed spec; line paused for adjustments, retest passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-07-30T12:49:32.149Z"
+      },
+      "status": "Resolved \u2014 adjustments made, retest at 06:59 MT passed and line restarted."
+    },
+    {
+      "plant": "L2",
+      "title": "Chains of chocolate pieces in FFS",
+      "summary": "Operators continue finding chains of chocolate pieces in FFS feeder.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-07-30T10:44:30.439Z"
+      },
+      "status": "Open \u2014 reported, no resolution in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Cookie clumps in ML4 sliders",
+      "summary": "Cookie clumps found in sliders at ML4; Ray Garcia confirmed as cookie clumps.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-30T00:16:46.521Z"
+      },
+      "status": "Resolved \u2014 identified and removed during shift."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 shower nozzles failed allergen test twice",
+      "summary": "Shower nozzles failed allergen verification test twice during ML4 cleaning; second failure at 20:01 MT.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-07-30T02:01:05.717Z"
+      },
+      "status": "Open at window close \u2014 second failure reported, no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate buildup on chain and pins",
+      "summary": "Chocolate buildup found on chain and pins under ML1 hopper; maintenance cleaned per recommendation, but molds continued getting dirty; 80 molds replaced.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-29T15:26:51.855Z"
+      },
+      "status": "Resolved \u2014 chain and pins cleaned, chocolate source (dripping guard) identified and cleaned; 80 dirty molds swapped out."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sliders failed ATP, rewashed",
+      "summary": "ML4 sliders did not pass ATP after cleaning; operators rewashed and line held until clearance.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-30T01:24:10.225Z"
+      },
+      "status": "Resolved \u2014 sliders rewashed, molds passed ATP at 19:44 MT, line restarted."
+    },
+    {
+      "plant": "L1",
+      "title": "Black carts, hoses, and buckets not to standard",
+      "summary": "Charity Young floor walk identified black carts not clean, hoses left on ground, and improper bucket use (pink bucket on floor, white bucket for sanitation).",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-07-29T17:23:18.117Z"
+      },
+      "status": "Open \u2014 flags raised, corrective actions not confirmed in window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolding belt replaced, ATP passed",
+      "summary": "ML2 demolding belt bent and replaced by maintenance; new belt passed ATP before restart.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-07-29T22:22:38.834Z"
+      },
+      "status": "Resolved \u2014 belt replaced and ATP passed at 16:49 MT, line restarted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 cavanna belt replaced, ATP passed",
+      "summary": "Cavanna belt on ML1 flow wrap torn, replaced by maintenance and cleaning team; belt passed ATP before restart.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-30T11:53:18.418Z"
+      },
+      "status": "Resolved \u2014 belt replaced, ATP passed at 06:03 MT, line up and running."
+    },
+    {
+      "plant": "L3",
+      "title": "Rollers received dirty at ML1 end of shift",
+      "summary": "Photo documentation shows rollers being received at end of shift in dirty condition.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-30T12:35:44.669Z"
+      },
+      "status": "Open \u2014 documented for awareness, no corrective action in window."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "S3 visual inspection failed for previous allergen",
+      "summary": "S3 label machine and X-ray area visual inspection failed \u2014 chocolate details from previous product and previous allergen chocolate still present after cleaning.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-30T04:57:51.51Z"
+      },
+      "status": "Open \u2014 failed inspection reported at 22:57 MT, no re-clean or retest reported in window."
+    },
+    {
+      "plant": "L3",
+      "title": "FEA 35g crunch bars found in CNC area",
+      "summary": "Two FEA 35g crunch bars (peanut allergen) discovered by TG3 coder in ML4 CNC line area; line leads reminded not to bring other products into the line.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-29T23:48:17.86Z"
+      },
+      "status": "Resolved \u2014 product removed, team reminded of allergen separation protocol."
+    },
+    {
+      "plant": "L2",
+      "title": "Flow wrap from previous product in FFS pallet",
+      "summary": "Bag of flow wrap from previous run discovered stuffed in empty middle spot of Affogato bar pallet during dumping.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-30T03:44:25.545Z"
+      },
+      "status": "Open \u2014 discovered and flagged, no disposition reported in window."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Add rust inspection to S4 food-contact roller PM checklist \u2014 rust discovered on twist wrap belt during cleaning suggests wear not caught earlier."
+    },
+    {
+      "plant": "L1",
+      "text": "Evaluate S3 label/X-ray area cleaning verification method \u2014 visual inspection failed for residual allergen chocolate, suggesting current protocol insufficient."
+    },
+    {
+      "plant": "L1",
+      "text": "Review S2 caramel chiller maintenance schedule \u2014 low fluid and repeated temperature excursions across shift suggest preventive check missed."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding shower nozzle inspection/extended contact time to ML4 allergen cleaning SOP \u2014 nozzles failed allergen test twice in one shift, suggesting protocol gap."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML1 hopper area design and cleaning frequency \u2014 chocolate dripping from guard onto chain/pins caused repeated dirty-mold incidents requiring 80 mold swaps."
+    },
+    {
+      "plant": "L3",
+      "text": "Review allergen separation training and physical barriers for ML4 \u2014 FEA bars (peanut allergen) brought into CNC area despite protocol."
+    }
+  ]
+}

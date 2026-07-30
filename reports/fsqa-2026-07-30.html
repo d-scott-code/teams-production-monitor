@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSQA briefing — 2026-07-30 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
+.fsqa-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.fsqa-head h1 {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.fsqa-head .sub {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.fsqa-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.fsqa-head .meta img {
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Summary block ---------- */
+.fsqa-summary {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 14pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Stats strip ---------- */
+.fsqa-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8pt;
+  margin: 0 0 14pt 0;
+}
+.fsqa-stats .stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8pt 10pt;
+  text-align: left;
+}
+.fsqa-stats .stat .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fsqa-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 18pt; line-height: 1;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2pt;
+}
+
+/* ---------- Section blocks ---------- */
+.fsqa-section {
+  margin: 16pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.fsqa-section .sec-head {
+  display: flex; align-items: center; gap: 6pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 4pt; margin-bottom: 6pt;
+}
+.fsqa-section .sec-head h3 {
+  font-size: 10.5pt; font-weight: 700;
+  margin: 0; color: var(--fg-1);
+}
+.fsqa-section .sec-head .sec-icon {
+  width: 14px; height: 14px; color: var(--fg-2);
+}
+.fsqa-section .sec-head .sec-count {
+  margin-left: auto;
+  font-size: 8pt; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Entry rows ---------- */
+.fsqa-entry {
+  display: grid;
+  grid-template-columns: 26pt 1fr auto;
+  gap: 8pt;
+  align-items: start;
+  padding: 6pt 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.fsqa-entry:last-child { border-bottom: 0; }
+.fsqa-entry .sev-col { text-align: center; padding-top: 1pt; }
+.fsqa-entry .body { min-width: 0; }
+.fsqa-entry .title-line {
+  font-weight: 600; color: var(--fg-1);
+  font-size: 9.5pt; line-height: 1.3;
+}
+.fsqa-entry .plant-tag {
+  display: inline-block;
+  font-size: 7pt; font-weight: 700;
+  color: var(--fg-2);
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  padding: 1pt 6pt;
+  margin-right: 6pt;
+  vertical-align: 1pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fsqa-entry .summary {
+  display: block; font-size: 8.5pt; color: var(--fg-2);
+  margin-top: 2pt; line-height: 1.35;
+  text-wrap: pretty;
+}
+.fsqa-entry .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt; line-height: 1.4;
+  text-wrap: pretty;
+}
+.fsqa-entry .status::before {
+  content: "→ "; font-style: normal; color: var(--fg-3);
+}
+.fsqa-entry .raised {
+  font-size: 7.5pt; color: var(--fg-3);
+  text-align: right; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.fsqa-entry .raised .author { color: var(--fg-2); font-weight: 600; display: block; }
+
+/* ---------- Empty state ---------- */
+.fsqa-section .empty {
+  padding: 6pt 0 4pt 0;
+  font-style: italic; font-size: 9pt;
+  color: var(--fg-3);
+}
+
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+  margin: 18pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.opp-box {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 9pt 11pt 10pt 11pt;
+}
+.opp-box .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4pt;
+}
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
+}
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
+  color: var(--fg-1);
+  padding: 2pt 0;
+  text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<section class="sheet">
+  <div class="fsqa-head">
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>July 30, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Jul 29 07:16 MT → Jul 30 07:16 MT</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Audience</div><div class="v">FSQA Manager</div></div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Active hold</div>
+    <p class="headline">L3 ML4 WIP tote held for <span class="accent">cardboard-and-chocolate</span> contamination — product cannot be used, investigation open.</p>
+  </div>
+
+  <p class="fsqa-summary">Two active holds at L3 ML4 — one for foreign material contamination (cardboard in WIP tote), one for quality (50–100 bad molds awaiting QA disposition). Shower nozzles at ML4 failed allergen test twice. Rust found on S4 twist wrap belt during cleaning. Pest activity elevated at L1 doors.</p>
+
+  <div class="fsqa-stats"><div class="stat"><div class="eyebrow">Holds</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">Food safety</div><div class="num">3</div></div><div class="stat"><div class="eyebrow">Quality</div><div class="num">6</div></div><div class="stat"><div class="eyebrow">Sanitation</div><div class="num">7</div></div><div class="stat"><div class="eyebrow">Allergen</div><div class="num">3</div></div><div class="stat"><div class="eyebrow">High severity</div><div class="num">6</div></div></div>
+
+  <section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="package"></i><h3>Active holds</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>WIP tote contaminated with cardboard and chocolate</div><span class="summary">Tote from Depositor #1 contained cardboard and chocolate debris; line informed product cannot be used and instructed to remove, place on hold, and replace with clean tote.</span><span class="status">On hold pending disposition — line instructed to pull and replace tote.</span></div><div class="raised"><span class="author">ML4 WDS Tablet 1</span><span>05:54 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>50–100 bad molds on ML4 Depositor 1</div><span class="summary">Cookies not turned on at restart; 50–100 molds without cookie inclusions deposited before catch; line stopped to purge depositor and await QA clearance.</span><span class="status">Resolved — line restarted at 21:32 MT after 10 min downtime; scrap quantity pending.</span></div><div class="raised"><span class="author">Tyson Fausett</span><span>20:52 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-alert"></i><h3>Food safety</h3><span class="sec-count">3</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Rust on S4 twist wrap conveyor belt</div><span class="summary">During cleaning of S4 twist wrap conveyor, rust from roller discovered on belt; belt is in food-contact zone.</span><span class="status">Open — rust identified during cleaning, no resolution reported in window.</span></div><div class="raised"><span class="author">Brandon Hernandez</span><span>06:21 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Cardboard and chocolate in ML4 WIP tote</div><span class="summary">WIP tote dropped off by Depositor #1 contained cardboard and chocolate contamination; QA and line lead notified, tote pulled from service and placed on hold.</span><span class="status">On hold — contaminated tote removed from line, awaiting disposition.</span></div><div class="raised"><span class="author">ML4 WDS Tablet 1</span><span>05:54 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Elevated insect activity at multiple doors</div><span class="summary">Multiple insects observed attempting entry at L1 doors (photos show 5+ insects per door frame at South door, L2 west side door also flagged); PCO spraying weekly but activity remains high.</span><span class="status">Open — PCO performing weekly spray, seasonal activity elevated, monitoring continues.</span></div><div class="raised"><span class="author">Angelica Perez</span><span>21:42 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-check"></i><h3>Quality flags</h3><span class="sec-count">6</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S3 product with insufficient bottom chocolate</div><span class="summary">Operators reported many S3 bars with lack of bottom chocolate coverage on both sides; buildup in bottomer prevented proper flow.</span><span class="status">Resolved — bottomer cleaned, adjustments made at 22:37 MT; issue persisted 5+ min post-adjustment, then resolved.</span></div><div class="raised"><span class="author">Victor Mejia</span><span>22:30 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S2 caramel temperature excursions</div><span class="summary">S2 caramel coming hot and liquidy across 3rd shift; drums cleaned twice (00:18 MT, 04:10 MT); chiller fluid low, topped off but caramel still soft and sticking to rollers.</span><span class="status">Open — chiller fluid added, caramel still exhibiting temperature-related sticking behavior at window close.</span></div><div class="raised"><span class="author">Joseph Scott</span><span>00:17 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Dirty molds causing ML1 camera faults</div><span class="summary">ML1 camera faults triggered by dirty molds across multiple shifts; 80 molds replaced due to chocolate buildup on chain/pins under hopper; mold alarms recurred 5+ times in 24h.</span><span class="status">Ongoing — dirty molds pulled and cleaned at each alarm; root cause (chocolate dripping from hopper guard) addressed, monitoring continues.</span></div><div class="raised"><span class="author">Grey Boscan</span><span>09:48 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 dark chocolate capture test failed</div><span class="summary">Capture test of dark chocolate on ML4 failed spec; line paused for adjustments, retest passed.</span><span class="status">Resolved — adjustments made, retest at 06:59 MT passed and line restarted.</span></div><div class="raised"><span class="author">Mirella Mamani</span><span>06:49 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>Chains of chocolate pieces in FFS</div><span class="summary">Operators continue finding chains of chocolate pieces in FFS feeder.</span><span class="status">Open — reported, no resolution in window.</span></div><div class="raised"><span class="author">Jose Cabrera</span><span>04:44 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Cookie clumps in ML4 sliders</div><span class="summary">Cookie clumps found in sliders at ML4; Ray Garcia confirmed as cookie clumps.</span><span class="status">Resolved — identified and removed during shift.</span></div><div class="raised"><span class="author">Tyson Fausett</span><span>18:16 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="spray-can"></i><h3>Sanitation</h3><span class="sec-count">7</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 shower nozzles failed allergen test twice</div><span class="summary">Shower nozzles failed allergen verification test twice during ML4 cleaning; second failure at 20:01 MT.</span><span class="status">Open at window close — second failure reported, no resolution posted.</span></div><div class="raised"><span class="author">Melissa Zavala</span><span>20:01 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML1 chocolate buildup on chain and pins</div><span class="summary">Chocolate buildup found on chain and pins under ML1 hopper; maintenance cleaned per recommendation, but molds continued getting dirty; 80 molds replaced.</span><span class="status">Resolved — chain and pins cleaned, chocolate source (dripping guard) identified and cleaned; 80 dirty molds swapped out.</span></div><div class="raised"><span class="author">Grey Boscan</span><span>09:26 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 sliders failed ATP, rewashed</div><span class="summary">ML4 sliders did not pass ATP after cleaning; operators rewashed and line held until clearance.</span><span class="status">Resolved — sliders rewashed, molds passed ATP at 19:44 MT, line restarted.</span></div><div class="raised"><span class="author">Tyson Fausett</span><span>19:24 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Black carts, hoses, and buckets not to standard</div><span class="summary">Charity Young floor walk identified black carts not clean, hoses left on ground, and improper bucket use (pink bucket on floor, white bucket for sanitation).</span><span class="status">Open — flags raised, corrective actions not confirmed in window.</span></div><div class="raised"><span class="author">Charity Young</span><span>11:23 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>ML2 demolding belt replaced, ATP passed</div><span class="summary">ML2 demolding belt bent and replaced by maintenance; new belt passed ATP before restart.</span><span class="status">Resolved — belt replaced and ATP passed at 16:49 MT, line restarted.</span></div><div class="raised"><span class="author">ML2 FW</span><span>16:22 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML1 cavanna belt replaced, ATP passed</div><span class="summary">Cavanna belt on ML1 flow wrap torn, replaced by maintenance and cleaning team; belt passed ATP before restart.</span><span class="status">Resolved — belt replaced, ATP passed at 06:03 MT, line up and running.</span></div><div class="raised"><span class="author">Molding Line 1 Flow-Wrap</span><span>05:53 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Rollers received dirty at ML1 end of shift</div><span class="summary">Photo documentation shows rollers being received at end of shift in dirty condition.</span><span class="status">Open — documented for awareness, no corrective action in window.</span></div><div class="raised"><span class="author">Molding Line 1 Flow-Wrap</span><span>06:35 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="triangle-alert"></i><h3>Allergen</h3><span class="sec-count">3</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S3 visual inspection failed for previous allergen</div><span class="summary">S3 label machine and X-ray area visual inspection failed — chocolate details from previous product and previous allergen chocolate still present after cleaning.</span><span class="status">Open — failed inspection reported at 22:57 MT, no re-clean or retest reported in window.</span></div><div class="raised"><span class="author">Victor Mejia</span><span>22:57 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>FEA 35g crunch bars found in CNC area</div><span class="summary">Two FEA 35g crunch bars (peanut allergen) discovered by TG3 coder in ML4 CNC line area; line leads reminded not to bring other products into the line.</span><span class="status">Resolved — product removed, team reminded of allergen separation protocol.</span></div><div class="raised"><span class="author">Tyson Fausett</span><span>17:48 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>Flow wrap from previous product in FFS pallet</div><span class="summary">Bag of flow wrap from previous run discovered stuffed in empty middle spot of Affogato bar pallet during dumping.</span><span class="status">Open — discovered and flagged, no disposition reported in window.</span></div><div class="raised"><span class="author">Mathew Draper</span><span>21:44 MT</span></div></div></section>
+
+  <div class="opportunities-eyebrow">Opportunities — by plant</div><div class="opportunities-row"><div class="opp-box"><div class="eyebrow">L1</div><h4>L1 Caramel</h4><ul><li>Add rust inspection to S4 food-contact roller PM checklist — rust discovered on twist wrap belt during cleaning suggests wear not caught earlier.</li><li>Evaluate S3 label/X-ray area cleaning verification method — visual inspection failed for residual allergen chocolate, suggesting current protocol insufficient.</li><li>Review S2 caramel chiller maintenance schedule — low fluid and repeated temperature excursions across shift suggest preventive check missed.</li></ul></div><div class="opp-box"><div class="eyebrow">L2</div><h4>L2 Moulding</h4><p class="empty">No opportunities flagged today.</p></div><div class="opp-box"><div class="eyebrow">L3</div><h4>L3 Chocolate</h4><ul><li>Consider adding shower nozzle inspection/extended contact time to ML4 allergen cleaning SOP — nozzles failed allergen test twice in one shift, suggesting protocol gap.</li><li>Review ML1 hopper area design and cleaning frequency — chocolate dripping from guard onto chain/pins caused repeated dirty-mold incidents requiring 80 mold swaps.</li><li>Review allergen separation training and physical barriers for ML4 — FEA bars (peanut allergen) brought into CNC area despite protocol.</li></ul></div></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
+    Production briefing for the same day:
+    <a class="archive-link" href="2026-07-30.html">reports/2026-07-30.html</a> ·
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">FSQA briefing · 2026-07-30</span>
+    <span class="page-no">Page 1 of 1</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

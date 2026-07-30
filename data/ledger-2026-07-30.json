@@ -1,0 +1,281 @@
+{
+  "date": "2026-07-30",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 enrober lost control communication at 03:13 \u2014 *still down at window close* with buffer tank heating failures"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 enrober went down at 03:13 on control panel communication loss and has not returned; buffer tanks 3 and 4 cannot reach temperature by 06:27. Sollich 2 saw recurring hot caramel issues requiring multiple drum cleanings through the night. Sollich 4 ran clean.",
+    "L2": "ML2 demolding belt tracked off at 05:08 after earlier tension and cleaning stops overnight \u2014 still down at window close. FFS had a 1 hour 51 minute film jam cleared by 03:11. Panning sorter conveyor fuse replaced in 56 minutes.",
+    "L3": "ML1 cleared two sets of clogged nozzles (40 minutes at 07:23, quicker at 12:44) and replaced 80 dirty molds after chocolate buildup under hopper at 10:30. ML4 shower nozzles failed allergen test twice during changeover \u2014 blocking restart. MF Matrix changeover from Assorted to EBQ took longer than planned; sensor and gripper issues at startup resolved by 07:14."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 temper dropped to -0.5",
+      "summary": "Tempering dropped out of range briefly during second shift production",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-30T00:30:13.567Z"
+      },
+      "resolution": "Back in range at 18:35 \u2014 \"We are back in the white at -0.3\" (S3 Enrober)"
+    },
+    {
+      "plant": "L2",
+      "title": "FFS film tear and gusset punch jam",
+      "summary": "Film tore at gusset punch at 01:20; maintenance cleared jam, cleaned blade, then found missing gusset requiring punch realignment",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-30T07:20:22.028Z"
+      },
+      "resolution": "Running at 03:11 \u2014 \"Line is back up. At 2:59a cause was jammed film inside gusset punch. Then realignment of punches\" (Zack Kurtz)"
+    },
+    {
+      "plant": "L2",
+      "title": "Roof leak into ML wash area from clogged condensate line",
+      "summary": "RTU condensate pipe clogged with debris caused drain pan overflow and water leaking into mold wash area; heavy wash held until resolved",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-07-29T14:52:18.714Z"
+      },
+      "resolution": "Fixed at 14:08 \u2014 \"Condensate pipe was clogged with debris... I removed all debris and check all the traps for L2 RTUs. No more issues with leaks\" (William Lopez)"
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolding belt bent and replaced",
+      "summary": "Demolding belt bent too much during second shift; maintenance replaced belt and ATP test passed",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-07-29T22:22:38.834Z"
+      },
+      "resolution": "Belt replaced and ATP passed at 16:49 \u2014 \"The replaced belt passed the ATP test\" (Marlenis Fernandez)"
+    },
+    {
+      "plant": "L2",
+      "title": "Panning sorter conveyor down on bad fuse",
+      "summary": "Sorter conveyor stopped; maintenance was working FFS first then came to replace fuse",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-30T08:02:35.004Z"
+      },
+      "resolution": "Fuse replaced at 02:58 \u2014 \"Fuse was bad, replaced. Conveyor is running again\" (Gustavo Rodas)"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 two clogged nozzles at startup",
+      "summary": "Line down 40 minutes to clear two clogged nozzles; both hoppers emptied during the fix",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-29T13:23:30.731Z"
+      },
+      "resolution": "Cleared at 08:07 \u2014 \"The two clogged nozzles on ML1 have been cleared\" (Grey Boscan)"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate buildup under hopper triggering camera faults",
+      "summary": "Chocolate buildup on chain and pins under hopper caused dirty molds and repeated camera faults; 80 molds replaced",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-29T15:06:30.954Z"
+      },
+      "resolution": "Area cleaned and 80 molds swapped out by 10:30 per Grey Boscan; covers confirmed in place by 10:23"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 second set of clogged nozzles midday",
+      "summary": "Different nozzles from morning clog; operators cleaning and line sent to lunch",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-29T18:44:47.432Z"
+      },
+      "resolution": "Running at 13:32 \u2014 \"The line is running\" (Grey Boscan)"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 flow-wrap belt torn",
+      "summary": "Cavanna belt tore and required replacement; ATP test needed before restart",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-30T11:53:18.418Z"
+      },
+      "resolution": "ATP passed and line running per same message at 05:53 \u2014 \"belt has been replaced waiting on QA to do the ATP test. Atp passed line is up and running\""
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bag sensor and gripper issues at startup",
+      "summary": "After long changeover to EBQ, line started at 06:45 but sensor not reading bags and machine not gripping properly",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-30T12:53:19.325Z"
+      },
+      "resolution": "Fixed at 07:14 \u2014 \"Adjusted the upper infeed belt position and the upper suction cups needed an alignment\" (Nathan Ruiz)"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 single clogged nozzle third shift",
+      "summary": "One nozzle clogged during third shift production run",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-29T21:52:47.313Z"
+      },
+      "resolution": "Depositing at 16:04 \u2014 \"Start depositing now\" (Imperial)"
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 enrober control panel communication lost",
+      "summary": "Enrober lost communication between control panel and screen at 03:13; power supply replaced but buffer tanks 3 and 4 cannot reach 42\u00b0F by 06:27, blocking return pump operation",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-07-30T09:13:03.259Z"
+      },
+      "status": "Maintenance replaced power supply by 05:03 but buffer tanks still below temperature at 06:27; alarm blocking return pump as of window close"
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 lack of bottom chocolate coverage",
+      "summary": "Many pieces showing insufficient bottom chocolate coverage; adjustments made at 22:37 for buildup in bottomer but issue persisted through 23:10",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-07-30T04:30:02.309Z"
+      },
+      "status": "Victor at 23:10 still seeing lack of bottom on many pieces after 5+ minutes from adjustment; passing to next shift for further work"
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 recurring hot caramel requiring repeated drum cleaning",
+      "summary": "Caramel coming hot and liquidy starting at 00:18; chiller fluid was low and added but issue recurred at 04:10 and 06:47 requiring multiple production stops to clean drums",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-30T06:17:57.395Z"
+      },
+      "status": "Stopped again at 06:47 to clean stuck caramel from second combar; caramel still soft and sticking to rollers despite chiller fluid addition earlier"
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 temper unit power supply removed for S3 repair",
+      "summary": "AB4 temper unit power supply pulled from Sollich 1 to repair Sollich 3 enrober; reference pictures taken of wiring before removal",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jordan Woodcox",
+        "time_utc": "2026-07-30T11:39:33.772Z"
+      },
+      "status": "Component removed and used for S3 repair as of 05:39; no plan stated for replacement or SL1 operation without it"
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolding belt tracking off repeatedly",
+      "summary": "Belt skipped at 00:33, adjusted and cleaned at 01:07, then tracked completely off drive side at 05:08; recurring tension and tracking issues through the night",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-07-30T06:33:15.365Z"
+      },
+      "status": "Line down at 05:08, belt tracked off to drive side; Fernando assigned to work issue at 05:06 with no resolution by window close"
+    },
+    {
+      "plant": "L2",
+      "title": "FFS chocolate piece chains found in product",
+      "summary": "Operators finding chains of chocolate pieces stuck together coming from upstream; quality concern for bag fill",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-07-30T10:44:30.439Z"
+      },
+      "status": "Reported at 04:44 as ongoing issue \u2014 \"We keep finding chains of chocolate pieces\" with photo; no corrective action or root cause identified"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 shower nozzles failed allergen test twice",
+      "summary": "Environmental swab phase 1 shower nozzles did not pass allergen test on second attempt during changeover cleaning; blocking restart",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-07-30T02:01:05.717Z"
+      },
+      "status": "Failed allergen test for second time at 20:01; Tyson added shower nozzles to whiteboard for environmental swabs at 20:44 but no passing result shown"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 slip hazard from scrap barrel lid placement",
+      "summary": "Scrap barrel lid placed on floor at base of ladders during active collection, obstructing walkway and creating trip hazard",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-07-29T14:59:12.719Z"
+      },
+      "status": "Phillip identified hazard at 08:59 and requested designated storage spot for lid when barrel in use; no action or plan confirmed"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 capture test out of range",
+      "summary": "Capture test too high on depositor 4; adjustments to lower rice caused defective bars, had to revert to original setting and looking for other solutions",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-29T22:38:56.217Z"
+      },
+      "status": "Reverted to original settings at 16:38 after lower rice adjustment caused defects; team looking at other ways to bring ratios in range"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 coder fault",
+      "summary": "TG3 coder showing fault; Spencer attempting to clean to restore function",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-07-29T23:51:26.012Z"
+      },
+      "status": "Reported at 17:51; Spencer working to clean coder but no resolution confirmed"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 printer leaking ink",
+      "summary": "TG3 printer has ink leak; maintenance looking at issue at start of first shift",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-30T13:13:20.317Z"
+      },
+      "status": "Maintenance inspecting at 07:13; no update on cause or repair timeline"
+    }
+  ]
+}
