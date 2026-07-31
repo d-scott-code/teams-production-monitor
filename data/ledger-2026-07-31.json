@@ -1,0 +1,377 @@
+{
+  "date": "2026-07-31",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 soft caramel issue still live at shift handoff \u2014 *3 hours down* overnight for enrober belt repair, now back but caramel quality unresolved."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran caramel cluster all window with two major stops: enrober wire mesh repair (3 hours down, cleared by third shift) and slitter congestion (10 minutes, cleared). Soft caramel at the conbar remains unresolved as of 07:14. Sollich 3 cleared a z-conveyor buildup but the belt is splitting and needs replacement soon.",
+    "L2": "FFS had two lot-mixing incidents (both cleared same-shift) and a brief box printer fault (cleared). Lower hopper vibrator fuse replaced. ML2 swapped 68 dirty molds, completed Feastables China printer setup after multiple spacing adjustments, and started bulk-100 run at 02:40. ML3 cleared a dancing-arm bolt failure and a demolder belt tension issue; B19 sensor fault at 06:14 not yet resolved.",
+    "L3": "ML1 Imperial fought dirty mold alarms all shift \u2014 chocolate buildup under hopper identified and being cleaned, but alarms continued through 07:13. C6 belt roller fixed. MFM cleared checkweigher and inlet sensor issues; staging ran dry at shift change but restarted. ML4 hit three mold jams; third jam at 06:56 still in progress at window close. Truffle Line cleared scraper and guillotine faults but is running tunnel 3 with four missing rollers (no parts on-site)."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Enrober wire mesh broken, metal contamination risk",
+      "summary": "Wire mesh on enrober belt broke; ran with 30-minute visual and MD/X-ray checks until third shift replaced belt section during lunch rotation.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-07-31T00:51:34.027Z"
+      },
+      "resolution": "Cleared at 04:57 \u2014 \"Maintenance finished the repair on the belt. We are getting into temper\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "Cavanna 4 temperature fault stopping machine",
+      "summary": "Temperature sensor on Cavanna 4 caused repeated stops; maintenance presence appeared to clear it, continuing to monitor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-07-30T23:39:22.083Z"
+      },
+      "resolution": "Cleared at 00:12 \u2014 \"It seems my presence corrected the issue. I'll keep an eye on it\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "Z-conveyor stuttering on excessive buildup",
+      "summary": "Bottom roller on z-conveyor accumulated product causing stuttering; line paused for CILT cleanup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-31T03:08:28.857Z"
+      },
+      "resolution": "Cleared at 03:31 \u2014 \"All better\" (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "Slitter congested with caramel, line down",
+      "summary": "Caramel buildup on slitter and conbar required a cleaning pause; team cleared and restarted inside 10 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-31T04:26:56.129Z"
+      },
+      "resolution": "Cleared at 04:37 \u2014 \"Line start back again\" (Francisco Gudino Torres)."
+    },
+    {
+      "plant": "L2",
+      "title": "Mixed lots 62CUC / 62KUC on Z conveyor and scales",
+      "summary": "Two lots mixed at Z conveyor; line stopped, product inspected and separated, scales emptied, and line cleared before restarting.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-31T03:33:40.564Z"
+      },
+      "resolution": "Cleared at 23:51 \u2014 \"Line is running!\" after full line clearance and fresh lot loaded (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 demolder belt no tension, line down",
+      "summary": "Belt at demolder lost tension; maintenance adjusted and cleared inside 5 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-07-30T19:35:12.825Z"
+      },
+      "resolution": "Cleared at 13:39 \u2014 \"Line is back up\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "Dirty molds causing stained bars on ML2",
+      "summary": "Appearance degraded due to dirty 60g Feastables molds; swapped 68 dirty molds for clean ones from tote on floor.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-30T21:50:28.393Z"
+      },
+      "resolution": "Cleared at 19:43 \u2014 \"Reemplazamos 68 moldes sucios por limpios para mejorar la apariencia del chocolate\" (ML2 Depositor)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolding belt misaligned, line down",
+      "summary": "Belt at demolding lost alignment; stopped for cleaning and belt correction.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-07-30T22:08:18.075Z"
+      },
+      "resolution": "Cleared at 16:26 \u2014 \"The line running again\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 dancing arm bolt broke, line down",
+      "summary": "Bolt to dancing arm broke off in back; maintenance extracted broken bolt and replaced, line resumed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-07-31T01:15:16.213Z"
+      },
+      "resolution": "Cleared at 20:11 \u2014 \"Line running again\" after bolt replaced (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "Box code printer malfunction",
+      "summary": "Printer for box codes faulted; maintenance reset and line resumed within 45 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-31T02:26:15.566Z"
+      },
+      "resolution": "Cleared at 02:09 \u2014 \"Running again! 8:04 pm\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "Lower hopper vibrator not functioning",
+      "summary": "Vibrator on lower hopper set to max but barely moving, delaying product feed; maintenance replaced bad fuse.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-31T11:11:17.878Z"
+      },
+      "resolution": "Cleared at 05:47 \u2014 \"Vibrato is working, it was a bad fuse\" (Fernando Flores)."
+    },
+    {
+      "plant": "L2",
+      "title": "Mixed lots 63 LUC / 63 JUC in single box",
+      "summary": "One box with lot 63 LUC found on a 63 JUC pallet; team separated mixed product and resumed.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-30T22:27:09.056Z"
+      },
+      "resolution": "Cleared at 16:58 \u2014 \"The parts mixed with different batches have already been separated\" (Marlenis Fernandez)."
+    },
+    {
+      "plant": "L2",
+      "title": "Feastables China code date printer setup",
+      "summary": "Code date lines inverted and spacing incorrect on new Feastables China run; required multiple adjustments and QA approval before starting.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-31T07:00:31.609Z"
+      },
+      "resolution": "Cleared at 02:37 \u2014 \"Looks great... Jose will monitor and if the code start to get off the line needs to stop\" (Hervin Herrera), running at 02:40."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM checkweigher not detecting underweight pouches",
+      "summary": "Checkweigher failed to reject low-weight pouches; caught immediately, no low pouches reached pallets, issue cleared.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-31T03:46:28.411Z"
+      },
+      "resolution": "Cleared at 21:50 \u2014 \"The issue was caught right away and no low pouches were placed on the pallet\" (Angel Cabrera)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line scraper to u belt broken",
+      "summary": "Scraper component failed; maintenance repaired and line resumed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-31T08:46:03.427Z"
+      },
+      "resolution": "Cleared at 05:21 \u2014 \"The scraper has been fixed\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line guillotine not functioning",
+      "summary": "Guillotine rexroth faulted out; maintenance reset and confirmed running properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-31T10:24:00.193Z"
+      },
+      "resolution": "Cleared at 05:35 \u2014 \"Tha guillotine has been fixed. The rexroth had faulted out. They reset it\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "C6 conveyor belt roller misaligned",
+      "summary": "Roller used to align C6 belt moved out of position; third-shift mechanic fixed alignment, belt running correctly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-07-31T12:32:28.103Z"
+      },
+      "resolution": "Cleared at 06:45 \u2014 \"He already fixed it, and the belt is now running correctly\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM inlet sensor causing empty bags and accumulation",
+      "summary": "Inlet sensor not gripping bags properly, resulting in many empty bags; maintenance adjusted sensor and repositioned C1.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-31T13:04:45.019Z"
+      },
+      "resolution": "Cleared at 07:06 \u2014 \"Had to make a minor adjustment to the infeed sensor and move C1 into the position I had it in yesterday\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM out of WIP trays at shift change",
+      "summary": "Third shift did not stage product pallets; line stopped at 07:00, warehouse brought pallet and line restarted.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-31T13:09:23.525Z"
+      },
+      "resolution": "Cleared at 07:15 \u2014 \"They've already brought in a pallet of product and we're filling the hopper to get started\" (mfmatrix)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Soft caramel at Sollich 2 conbar, quality issue ongoing",
+      "summary": "Caramel became very runny starting second shift; line stopped at 16:56, checks and adjustments made, but as of 07:14 still reporting soft caramel issues at the conbar.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-07-30T22:56:44.755Z"
+      },
+      "status": "Scrapers cleaned, conbar settings verified at original position, but Justin reports \"We are still having issues with soft caramel at the conbar on S2\" as of 07:14."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 z-conveyor belt splitting, needs replacement",
+      "summary": "Belt is splitting at base of a flap, allowing pieces to fall inside with each rotation; requires ASAP replacement but maintenance does not have spare.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-31T04:32:21.166Z"
+      },
+      "status": "Caleb checking if new belt is available; rollers cleaned at 06:43 to keep running, but belt still splitting."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 second drum motor mount loose and bouncing",
+      "summary": "Motor mount observed loose and bouncing; flagged by operator but no maintenance action recorded in window.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-07-31T05:07:40.826Z"
+      },
+      "status": "Reported at 05:07, no follow-up or repair mentioned."
+    },
+    {
+      "plant": "L2",
+      "title": "Chains found in 62P lot chocolate on FFS",
+      "summary": "Operator reported finding chains in the 62P lot chocolate being fed to FFS; QA notified and en route to inspect.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-07-31T10:01:41.187Z"
+      },
+      "status": "Jose Cabrera responded \"I'm on my way\" at 04:04; no update on findings or resolution."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sensor B19 malfunction, line stopped",
+      "summary": "Flow-wrap line started at 06:03 then stopped immediately due to sensor B19 fault; no resolution recorded by window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-07-31T12:14:45.109Z"
+      },
+      "status": "Reported at 06:14, no follow-up on repair or restart."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line tunnel 3 missing four rollers, no parts on-site",
+      "summary": "Roller to tunnel 3 broke; maintenance unable to fix, no replacement inventory, order placed with Jay, running without the rollers for now.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-31T08:18:43.019Z"
+      },
+      "status": "Maintenance confident line can run without them; Kavin placing order with Jay, but currently operating with four missing rollers on tunnel 3."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial dirty mold alarms constant on both sides",
+      "summary": "Persistent dirty mold alarms on north and south depositors; chocolate buildup under hopper identified and cleaning started, but alarms continued through 07:13.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-31T12:14:20.581Z"
+      },
+      "status": "Maintenance babysitting Imperial, chocolate buildup being cleaned per Grey at 06:51, but dirty mold alarms still occurring at 07:13."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam, gondola being emptied",
+      "summary": "Third mold jam of the shift; emptying gondola on cleaning mode with Chris and Nelson on-site as of 07:09.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-07-31T12:56:04.001Z"
+      },
+      "status": "Line stopped at 06:56, emptying gondola and cleaning as of 07:09, no restart confirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M4 belt running off track",
+      "summary": "M4 belt misaligned and running off track; no resolution posted.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-31T11:01:58.488Z"
+      },
+      "status": "Reported at 05:01, no follow-up on adjustment or repair."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 nozzle plate leaking chocolate, misadjusted",
+      "summary": "Nozzle plate received leaking chocolate; operator noticed incorrect adjustment but no follow-up on correction.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-31T12:59:09.92Z"
+      },
+      "status": "Plate inspected at 06:59 and found not correctly adjusted; no update on fix."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera fault, tunnel inspection underway",
+      "summary": "Camera fault triggered; maintenance inspecting tunnel but no resolution posted.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-07-31T13:11:10.12Z"
+      },
+      "status": "Maintenance inspecting tunnel as of 07:11."
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSQA briefing — 2026-07-31 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
+.fsqa-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.fsqa-head h1 {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.fsqa-head .sub {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.fsqa-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.fsqa-head .meta img {
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Summary block ---------- */
+.fsqa-summary {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 14pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Stats strip ---------- */
+.fsqa-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8pt;
+  margin: 0 0 14pt 0;
+}
+.fsqa-stats .stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8pt 10pt;
+  text-align: left;
+}
+.fsqa-stats .stat .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fsqa-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 18pt; line-height: 1;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2pt;
+}
+
+/* ---------- Section blocks ---------- */
+.fsqa-section {
+  margin: 16pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.fsqa-section .sec-head {
+  display: flex; align-items: center; gap: 6pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 4pt; margin-bottom: 6pt;
+}
+.fsqa-section .sec-head h3 {
+  font-size: 10.5pt; font-weight: 700;
+  margin: 0; color: var(--fg-1);
+}
+.fsqa-section .sec-head .sec-icon {
+  width: 14px; height: 14px; color: var(--fg-2);
+}
+.fsqa-section .sec-head .sec-count {
+  margin-left: auto;
+  font-size: 8pt; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Entry rows ---------- */
+.fsqa-entry {
+  display: grid;
+  grid-template-columns: 26pt 1fr auto;
+  gap: 8pt;
+  align-items: start;
+  padding: 6pt 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.fsqa-entry:last-child { border-bottom: 0; }
+.fsqa-entry .sev-col { text-align: center; padding-top: 1pt; }
+.fsqa-entry .body { min-width: 0; }
+.fsqa-entry .title-line {
+  font-weight: 600; color: var(--fg-1);
+  font-size: 9.5pt; line-height: 1.3;
+}
+.fsqa-entry .plant-tag {
+  display: inline-block;
+  font-size: 7pt; font-weight: 700;
+  color: var(--fg-2);
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  padding: 1pt 6pt;
+  margin-right: 6pt;
+  vertical-align: 1pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fsqa-entry .summary {
+  display: block; font-size: 8.5pt; color: var(--fg-2);
+  margin-top: 2pt; line-height: 1.35;
+  text-wrap: pretty;
+}
+.fsqa-entry .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt; line-height: 1.4;
+  text-wrap: pretty;
+}
+.fsqa-entry .status::before {
+  content: "→ "; font-style: normal; color: var(--fg-3);
+}
+.fsqa-entry .raised {
+  font-size: 7.5pt; color: var(--fg-3);
+  text-align: right; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.fsqa-entry .raised .author { color: var(--fg-2); font-weight: 600; display: block; }
+
+/* ---------- Empty state ---------- */
+.fsqa-section .empty {
+  padding: 6pt 0 4pt 0;
+  font-style: italic; font-size: 9pt;
+  color: var(--fg-3);
+}
+
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+  margin: 18pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.opp-box {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 9pt 11pt 10pt 11pt;
+}
+.opp-box .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4pt;
+}
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
+}
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
+  color: var(--fg-1);
+  padding: 2pt 0;
+  text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<section class="sheet">
+  <div class="fsqa-head">
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>July 31, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Jul 30 07:16 MT → Jul 31 07:16 MT</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Audience</div><div class="v">FSQA Manager</div></div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Metal detector gap</div>
+    <p class="headline">L1 S2 jar line metal-in-product caught by X-ray but <span class="accent">missed by metal detector</span> — wire mesh investigation ongoing, MD verification every 30 min.</p>
+  </div>
+
+  <p class="fsqa-summary">One active hold — L2 FFS pallet with mixed lots 62C/62K isolated after changeover breach. L1 S2 metal detector failed to catch wire mesh fragment that X-ray rejected; broken enrober belt ran 2nd shift under heightened verification protocol.</p>
+
+  <div class="fsqa-stats"><div class="stat"><div class="eyebrow">Holds</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">Food safety</div><div class="num">4</div></div><div class="stat"><div class="eyebrow">Quality</div><div class="num">5</div></div><div class="stat"><div class="eyebrow">Sanitation</div><div class="num">3</div></div><div class="stat"><div class="eyebrow">Allergen</div><div class="num">0</div></div><div class="stat"><div class="eyebrow">High severity</div><div class="num">3</div></div></div>
+
+  <section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="package"></i><h3>Active holds</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>Mixed-lot pallet on hold after FFS changeover breach</div><span class="summary">Pallet containing mixed product from lots 62C and 62K isolated in hold area after lots were found mixed at Z-conveyor and scales during changeover.</span><span class="status">On hold in designated area pending disposition by QA.</span></div><div class="raised"><span class="author">Mathew Draper</span><span>21:33 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-alert"></i><h3>Food safety</h3><span class="sec-count">4</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Metal detector failure on S2 jar line — X-ray caught, MD did not</div><span class="summary">X-ray rejected wire mesh fragment from broken enrober belt; metal detector did not detect the same piece, triggering investigation and 30-minute MD verification cycle.</span><span class="status">Open — MD verification every 30 min through end of 2nd shift, wire mesh piece confirmed rejected by MD in subsequent test, belt replaced on 3rd shift.</span></div><div class="raised"><span class="author">Elizabeth Hernandez</span><span>18:51 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Broken enrober wire mesh on S2 — ran under verification protocol</div><span class="summary">Wire mesh on S2 enrober broke; Production and QA agreed to continue running with operator stationed at enrober, photos every 30 min, and MD/X-ray checks every 30 min.</span><span class="status">Resolved — belt replaced during 3rd shift reheat at 01:04 MT, no further issues reported.</span></div><div class="raised"><span class="author">Elizabeth Hernandez</span><span>18:51 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S3 Z-conveyor belt splitting — product falling inside belt</div><span class="summary">Belt flap splitting along base, allowing pieces to fall inside belt with each rotation and causing buildup around bottom roller; belt flagged for ASAP replacement.</span><span class="status">Open — line continues running with periodic CILT cleaning of bottom roller; replacement belt availability being confirmed.</span></div><div class="raised"><span class="author">William Beattie</span><span>22:32 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Truffle line tunnel 3 missing 4 rollers — maintenance approved continued run</div><span class="summary">Broken roller to tunnel 3 identified; upon inspection, 4 rollers total confirmed missing; maintenance confident line can run without them, no replacements on site.</span><span class="status">Open — line running, replacements ordered, Kavin Ayala placing order with Jay.</span></div><div class="raised"><span class="author">TruffleLine Enrober</span><span>02:18 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-check"></i><h3>Quality flags</h3><span class="sec-count">5</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>Two lot-mixing events on FFS in 12 hours</div><span class="summary">First event: box of 63 LUC mixed onto 63 JUC pallet, separated on 1st shift; second event: lots 62C and 62K mixed at Z-conveyor/scales during changeover on 3rd shift, pallet held.</span><span class="status">Resolved for first event; second event pallet on hold, QA requested documented process for staging multiple lots.</span></div><div class="raised"><span class="author">Mathew Draper</span><span>16:27 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>ML2 code date printing errors during FEA China startup</div><span class="summary">Code date lines inverted and spacing incorrect on startup; required three rounds of adjustment before QA approved print consistency over 100-bar run.</span><span class="status">Resolved — print approved by QA at 02:37 MT after spacing and line order corrected.</span></div><div class="raised"><span class="author">Zack Kurtz</span><span>01:00 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Checkweigher failure on MFM — caught immediately, no product affected</div><span class="summary">Checkweigher stopped detecting underweight pouches; operator caught issue immediately, line stopped, no low-weight pouches reached pallets.</span><span class="status">Resolved — issue corrected, line restarted, no hold required.</span></div><div class="raised"><span class="author">mfmatrix</span><span>21:50 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S2 soft/runny caramel causing line stops</div><span class="summary">Caramel consistency issues on S2 causing multiple stops for investigation and scraper cleaning; settings verified unchanged from 1st shift start.</span><span class="status">Open — issue persists into 1st shift 7/31, Curt Willis engaged.</span></div><div class="raised"><span class="author">Elizabeth Hernandez</span><span>16:56 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Product from previous run found during MFM date change</div><span class="summary">Piece of Bequet chocolate from yesterday&#x27;s run found during visual inspection for date change on MFM.</span><span class="status">Resolved — product removed, date changed, production continued.</span></div><div class="raised"><span class="author">Isis Oses</span><span>08:28 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="spray-can"></i><h3>Sanitation</h3><span class="sec-count">3</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML1 dirty mold alarms — chocolate buildup on hopper cover identified</div><span class="summary">Constant dirty-mold alarms on both north and south sides; inspection found heavy chocolate buildup on hopper cover contaminating mold pins; area cleaned.</span><span class="status">Resolved — hopper cover area cleaned, mold cleanliness improved.</span></div><div class="raised"><span class="author">Grey Boscan</span><span>06:51 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>ML2 dirty molds replaced during 2nd shift FEA run</div><span class="summary">Heavily stained bars observed; QA requested dirty molds swapped for clean; 68 dirty molds replaced with clean, appearance improved.</span><span class="status">Resolved — molds replaced, product appearance within spec.</span></div><div class="raised"><span class="author">Claudio Tovar</span><span>15:50 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Food product in L3 walkway</div><span class="summary">Ritz crackers found sitting in walkway; GMP violation flagged to Rose Smuin and Chad Stone.</span><span class="status">Open — reported to management for cleanup and root cause.</span></div><div class="raised"><span class="author">Frederick Peairs</span><span>07:04 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="triangle-alert"></i><h3>Allergen</h3><span class="sec-count">0</span></div><p class="empty">No allergen events.</p></section>
+
+  <div class="opportunities-eyebrow">Opportunities — by plant</div><div class="opportunities-row"><div class="opp-box"><div class="eyebrow">L1</div><h4>L1 Caramel</h4><ul><li>Consider adding wire mesh inspection to S2 enrober startup checklist and defining MD verification frequency when running with damaged food-contact equipment — based on today&#x27;s broken mesh event and initial MD failure to detect the fragment.</li></ul></div><div class="opp-box"><div class="eyebrow">L2</div><h4>L2 Moulding</h4><ul><li>Review FFS lot-staging SOP and consider single-lot-at-a-time rule for Z-conveyor feed — based on two mixing events in 12 hours (63 LUC/JUC boxes, then 62C/62K at changeover).</li></ul></div><div class="opp-box"><div class="eyebrow">L3</div><h4>L3 Chocolate</h4><ul><li>Add hopper cover inspection to ML1 mold-cleaning protocol — based on today&#x27;s discovery that chocolate buildup on the cover was root cause of persistent dirty-mold alarms.</li></ul></div></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
+    Production briefing for the same day:
+    <a class="archive-link" href="2026-07-31.html">reports/2026-07-31.html</a> ·
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">FSQA briefing · 2026-07-31</span>
+    <span class="page-no">Page 1 of 1</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

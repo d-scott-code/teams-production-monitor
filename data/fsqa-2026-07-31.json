@@ -1,0 +1,174 @@
+{
+  "date": "2026-07-31",
+  "headline": {
+    "eyebrow": "Metal detector gap",
+    "text": "L1 S2 jar line metal-in-product caught by X-ray but *missed by metal detector* \u2014 wire mesh investigation ongoing, MD verification every 30 min."
+  },
+  "summary": "One active hold \u2014 L2 FFS pallet with mixed lots 62C/62K isolated after changeover breach. L1 S2 metal detector failed to catch wire mesh fragment that X-ray rejected; broken enrober belt ran 2nd shift under heightened verification protocol.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Mixed-lot pallet on hold after FFS changeover breach",
+      "summary": "Pallet containing mixed product from lots 62C and 62K isolated in hold area after lots were found mixed at Z-conveyor and scales during changeover.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-31T03:33:40.564Z"
+      },
+      "status": "On hold in designated area pending disposition by QA."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal detector failure on S2 jar line \u2014 X-ray caught, MD did not",
+      "summary": "X-ray rejected wire mesh fragment from broken enrober belt; metal detector did not detect the same piece, triggering investigation and 30-minute MD verification cycle.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-07-31T00:51:34.027Z"
+      },
+      "status": "Open \u2014 MD verification every 30 min through end of 2nd shift, wire mesh piece confirmed rejected by MD in subsequent test, belt replaced on 3rd shift."
+    },
+    {
+      "plant": "L1",
+      "title": "Broken enrober wire mesh on S2 \u2014 ran under verification protocol",
+      "summary": "Wire mesh on S2 enrober broke; Production and QA agreed to continue running with operator stationed at enrober, photos every 30 min, and MD/X-ray checks every 30 min.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-07-31T00:51:34.027Z"
+      },
+      "status": "Resolved \u2014 belt replaced during 3rd shift reheat at 01:04 MT, no further issues reported."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Z-conveyor belt splitting \u2014 product falling inside belt",
+      "summary": "Belt flap splitting along base, allowing pieces to fall inside belt with each rotation and causing buildup around bottom roller; belt flagged for ASAP replacement.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-07-31T04:32:21.166Z"
+      },
+      "status": "Open \u2014 line continues running with periodic CILT cleaning of bottom roller; replacement belt availability being confirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line tunnel 3 missing 4 rollers \u2014 maintenance approved continued run",
+      "summary": "Broken roller to tunnel 3 identified; upon inspection, 4 rollers total confirmed missing; maintenance confident line can run without them, no replacements on site.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-07-31T08:18:43.019Z"
+      },
+      "status": "Open \u2014 line running, replacements ordered, Kavin Ayala placing order with Jay."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "Two lot-mixing events on FFS in 12 hours",
+      "summary": "First event: box of 63 LUC mixed onto 63 JUC pallet, separated on 1st shift; second event: lots 62C and 62K mixed at Z-conveyor/scales during changeover on 3rd shift, pallet held.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-07-30T22:27:09.056Z"
+      },
+      "status": "Resolved for first event; second event pallet on hold, QA requested documented process for staging multiple lots."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 code date printing errors during FEA China startup",
+      "summary": "Code date lines inverted and spacing incorrect on startup; required three rounds of adjustment before QA approved print consistency over 100-bar run.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-07-31T07:00:31.609Z"
+      },
+      "status": "Resolved \u2014 print approved by QA at 02:37 MT after spacing and line order corrected."
+    },
+    {
+      "plant": "L3",
+      "title": "Checkweigher failure on MFM \u2014 caught immediately, no product affected",
+      "summary": "Checkweigher stopped detecting underweight pouches; operator caught issue immediately, line stopped, no low-weight pouches reached pallets.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-07-31T03:50:59.059Z"
+      },
+      "status": "Resolved \u2014 issue corrected, line restarted, no hold required."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 soft/runny caramel causing line stops",
+      "summary": "Caramel consistency issues on S2 causing multiple stops for investigation and scraper cleaning; settings verified unchanged from 1st shift start.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-07-30T22:56:44.755Z"
+      },
+      "status": "Open \u2014 issue persists into 1st shift 7/31, Curt Willis engaged."
+    },
+    {
+      "plant": "L3",
+      "title": "Product from previous run found during MFM date change",
+      "summary": "Piece of Bequet chocolate from yesterday's run found during visual inspection for date change on MFM.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-07-30T14:28:58.074Z"
+      },
+      "status": "Resolved \u2014 product removed, date changed, production continued."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 dirty mold alarms \u2014 chocolate buildup on hopper cover identified",
+      "summary": "Constant dirty-mold alarms on both north and south sides; inspection found heavy chocolate buildup on hopper cover contaminating mold pins; area cleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-07-31T12:51:48.608Z"
+      },
+      "status": "Resolved \u2014 hopper cover area cleaned, mold cleanliness improved."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 dirty molds replaced during 2nd shift FEA run",
+      "summary": "Heavily stained bars observed; QA requested dirty molds swapped for clean; 68 dirty molds replaced with clean, appearance improved.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-07-30T21:50:28.393Z"
+      },
+      "status": "Resolved \u2014 molds replaced, product appearance within spec."
+    },
+    {
+      "plant": "L3",
+      "title": "Food product in L3 walkway",
+      "summary": "Ritz crackers found sitting in walkway; GMP violation flagged to Rose Smuin and Chad Stone.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-07-31T13:04:28.730Z"
+      },
+      "status": "Open \u2014 reported to management for cleanup and root cause."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding wire mesh inspection to S2 enrober startup checklist and defining MD verification frequency when running with damaged food-contact equipment \u2014 based on today's broken mesh event and initial MD failure to detect the fragment."
+    },
+    {
+      "plant": "L2",
+      "text": "Review FFS lot-staging SOP and consider single-lot-at-a-time rule for Z-conveyor feed \u2014 based on two mixing events in 12 hours (63 LUC/JUC boxes, then 62C/62K at changeover)."
+    },
+    {
+      "plant": "L3",
+      "text": "Add hopper cover inspection to ML1 mold-cleaning protocol \u2014 based on today's discovery that chocolate buildup on the cover was root cause of persistent dirty-mold alarms."
+    }
+  ]
+}
