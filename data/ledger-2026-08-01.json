@@ -1,0 +1,185 @@
+{
+  "date": "2026-08-01",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 S4 conbar motor stopped at 21:35 after degrading through second shift \u2014 runtime dropped from 6 minutes to *30\u201360 seconds* before final shutdown."
+  },
+  "per_plant_summary": {
+    "L1": "S3 ran caramel cluster with multiple brief pauses for Z-conveyor cleaning and accumulation, all cleared same-shift. S2 had metal detector failure that resolved in under an hour, then ran through two caramel supply pauses. S4 conbar motor degraded through second shift and stopped at 21:35.",
+    "L2": "ML2 completed morning CIL clean by 08:21 and resumed production. VFFS completed lot changeover 62R to 63A and flagged cross-contamination from L3 pallets. ML3 had brief film-paste stop at roll change, cleared in 5 minutes.",
+    "L3": "ML4 completed level 2 deep clean and passed ATP by 06:57. ML1 ran with temper adjustments through the night and has clogged nozzle in progress as of 06:50. MF Matrix level 2 clean passed ATP at 01:50."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 metal detector failed card test at 15:32",
+      "summary": "Metal detector failed to read test cards during routine check; line paused immediately, product from 14:30\u201315:30 isolated for hold.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-07-31T21:32:04.304Z"
+      },
+      "resolution": "Maintenance made adjustments, cards passed by 15:54. X-ray verified with 3 passes per card. One WIP pallet from 15:10 placed on hold; no pouch pallets affected."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM4/5 suction cup jam causing accumulation",
+      "summary": "Ripped suction cups on MM4 and MM5 pouch height mechanism caused 220 pouch scrap and 15-minute line pause at 08:52.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-07-31T15:04:23.728Z"
+      },
+      "resolution": "Replaced suction cups and adjusted pouch height by 09:07 \u2014 \"now running better\" (Nathan). Operations resumed 09:08."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 warm caramel jammed slitter at startup",
+      "summary": "Caramel too warm passing through slitter and separation table; line stopped at 15:43, then jammed at 17:15 when operator couldn't remove cut piece in time.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-07-31T21:43:05.873Z"
+      },
+      "resolution": "Cleaned separating belts, prevented buildup from damaging slitter, reassembled. Line restarted 17:38 with caramel at guillotine, running fine by 18:17."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 ran out of caramel twice on second shift",
+      "summary": "Line paused at 18:19 and 21:16 due to buffer tank empty; cooking times at 43 and 52 minutes, unable to keep pace with line speed.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-01T00:19:20.645Z"
+      },
+      "resolution": "Reduced line speed to 65 instead of caustic clean (third shift only 4 hours). Resumed 18:46 and 21:36 after buffer tank filled."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Z-conveyor roller buildup recurring",
+      "summary": "Z-conveyor bottom roller accumulated caramel buildup requiring cleaning at 09:48, 18:46, and 21:34 to avoid friction and damage.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-07-31T15:40:03.962Z"
+      },
+      "resolution": "Cleaned during pauses at 09:48 (10 min), 18:46 (during caramel wait), and 21:34 (during caramel wait). Replacement belt shipped from Springville at 15:00."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film didn't paste at roll exchange",
+      "summary": "Flow wrapper film failed to paste during roll changeover at 18:27, line down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-01T00:27:57.151Z"
+      },
+      "resolution": "Line back up at 18:33 \u2014 5-minute stop."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 CIL cleaning pause",
+      "summary": "Line stopped at 07:48 for clean-in-line maintenance.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-07-31T13:48:43.819Z"
+      },
+      "resolution": "Clean completed, line running up at 08:21."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 level 2 deep clean and micro hold",
+      "summary": "Deep clean required with micro lab samples before resuming use; mixer drive wear found but no product contamination risk.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-07-31T23:25:58.355Z"
+      },
+      "resolution": "Clean completed by 06:57. Passed ATP, allergen, and micro collection. Gondola, long belt, and TG5 all verified."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 conbar motor windings failing",
+      "summary": "Motor degraded through second shift from 6-minute runtime to 30\u201360 seconds before faulting; maintenance tried cooling solutions but windings continuing to fail.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-07-31T16:48:23.213Z"
+      },
+      "status": "Line stopped at conbar at 21:35. Caleb York: \"motor is on its final legs\" \u2014 cooling not helping, runtime dropping continuously. Decision made at 21:06 to watch 30 mins then shut down."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 green feeder belt not working",
+      "summary": "Green feeder belt on MM3 failed, maintenance dispatched to repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-08-01T08:18:19.02Z"
+      },
+      "status": "Maintenance working on it as of 02:18. No resolution posted before line finished at 03:21."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 cavanna accumulation due to dirty equipment",
+      "summary": "Cavannas causing lots of accumulation on third shift; operators believe equipment is dirty and needs CILT.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-01T09:24:57.84Z"
+      },
+      "status": "Pausing to pass accumulation and do CILT as of 03:24. No completion posted by end of window."
+    },
+    {
+      "plant": "L2",
+      "title": "L3 placing wrong WIP on top of VFFS pallets",
+      "summary": "Twice found loose WIP (truffle product and Hershey caramel in red packaging) placed on top of 21140 pallets from VFFS, cross-contamination risk.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-01T10:49:35.365Z"
+      },
+      "status": "Flagged to Alan Todd at 04:49 to follow up with L3. No response or resolution posted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 10 pallets need re-wrapping",
+      "summary": "10 finished pallets wrapped with insufficient film, cannot ship as-is, need to be re-wrapped.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-01T01:11:11.924Z"
+      },
+      "status": "Flagged to Alex Mendoza and Gustavo Rodas at 19:11 to talk with operators about proper wrapping. Pallets identified but not yet re-wrapped."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 clogged nozzle on depositor",
+      "summary": "Depositor nozzle clogged at 06:34, blocking flow.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-01T12:34:34.004Z"
+      },
+      "status": "Still working to unclog at 06:50, reported \"almost done\" but no final clear posted."
+    }
+  ]
+}

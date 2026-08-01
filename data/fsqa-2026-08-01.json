@@ -1,0 +1,107 @@
+{
+  "date": "2026-08-01",
+  "headline": {
+    "eyebrow": "MD failure",
+    "text": "L1 S2 metal detector failed test cards at 15:32 \u2014 *X-ray verified working*, MD repaired, 1 pallet WIP on hold awaiting final verification."
+  },
+  "summary": "One active hold from L1 S2 metal-detector failure. Two food-safety flags at L1: makeshift cardboard guard on S4 conveyor creates foreign-material risk, and L3 ML4 mixer-drive metal wear investigation closed clean. Cross-product WIP contamination at L2 FFS requires follow-up with L3.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 WIP pallet on hold \u2014 metal detector failure",
+      "summary": "One pallet of WIP produced at 15:10 placed on hold after metal detector failed test-card verification at 15:32; MD repaired and re-verified with X-ray backup; pallet awaits final disposition through MD.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-07-31T21:32:04.304Z"
+      },
+      "status": "On hold pending final MD verification before release."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 cardboard & tape used as makeshift conveyor guard",
+      "summary": "Operators improvised cardboard and tape as guard on conveyor to prevent caramel drop; creates foreign-material risk if cardboard enters product zone; maintenance notified to fabricate proper metal guard.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-07-31T20:07:41.956Z"
+      },
+      "status": "Open \u2014 maintenance committed to installing proper guard, cardboard still in place as of window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector failed test cards",
+      "summary": "Metal detector failed to reject test cards at 15:32; line paused immediately, maintenance adjusted equipment, MD re-verified passing cards three times, X-ray double-checked and confirmed working; one pallet WIP isolated from 15:10\u201315:30 window.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-07-31T21:32:04.304Z"
+      },
+      "status": "Resolved \u2014 MD and X-ray verified working, hold pallet awaiting disposition."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mixer drive metal wear investigation",
+      "summary": "Mixer drive not fully seated caused metal scraping at center piece; maintenance and QA investigated, confirmed no metal contaminated product, no damage to depositor; precautionary deep clean completed, ATP and allergen passed, micros sent to lab.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-01T03:04:40.268Z"
+      },
+      "status": "Resolved \u2014 investigation closed, no product impact, ATP/allergen passed, micros pending lab."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 flow-wrap best-before date doesn't match spec",
+      "summary": "Flow-wrap film best-before month doesn't match spec; Charity and Candon approved continuing production with current film until 1st shift change today when new BBD starts; flow-wrap itself does not print EXP date.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jody Howse",
+        "time_utc": "2026-08-01T12:31:06.682Z"
+      },
+      "status": "Resolved \u2014 approved to run, new BBD starts at shift change."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS wrong WIP on 21140 pallets \u2014 twice",
+      "summary": "Third shift found loose WIP from other products (truffle, Hershey caramel) on top of 21140 pallets on two separate occasions; cross-product contamination risk; L3 follow-up requested.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-01T10:49:35.365Z"
+      },
+      "status": "Open \u2014 Alan Todd asked to follow up with L3 on WIP handling."
+    },
+    {
+      "plant": "L2",
+      "title": "10 pallets inadequate film wrap",
+      "summary": "Ten finished pallets wrapped with insufficient film, cannot ship as-is; operators reminded of wrap standards, pallets flagged for re-wrap before release.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-01T01:11:11.924Z"
+      },
+      "status": "Open \u2014 pallets identified, re-wrap in progress."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding metal-detector test-card verification to hourly QA checklist on S2 jar line \u2014 today's failure at 15:32 was caught by scheduled check, but hourly frequency would tighten the window on any future failure."
+    },
+    {
+      "plant": "L1",
+      "text": "Review foreign-material controls on S4 \u2014 the cardboard-and-tape guard improvised by operators suggests either missing equipment or unclear escalation path when guards are inadequate."
+    },
+    {
+      "plant": "L2",
+      "text": "Standardize WIP staging and pallet-top protocols between L2 and L3 \u2014 twice tonight FFS received 21140 pallets with loose foreign WIP on top, cited as originating from L3."
+    }
+  ]
+}
