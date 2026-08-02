@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-02",
+  "headline": {
+    "eyebrow": "Sanitation gaps",
+    "text": "L3 had *2* cleaning verification issues \u2014 ML1 roller with heavy buildup, ML4 level 2 clean incomplete."
+  },
+  "summary": "Two sanitation gaps at L3 \u2014 ML1 roller requires deeper clean after heavy buildup found overnight, ML4 level 2 clean incomplete (spiral conveyors skipped). L2 investigating loose candies on WIP pallet.",
+  "holds": [],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "Loose candies found on WIP pallet",
+      "summary": "Candies found loose on top of Salted Caramel WIP pallet during material transfer; investigating whether source is truck delivery, warehouse handling, or L3 transfer.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-01T14:19:28.746Z"
+      },
+      "status": "Open, Alan Todd investigating source."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 level 2 clean incomplete",
+      "summary": "Level 2 clean reported complete with exception of spiral conveyors; cleaning protocol not fully executed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-01T14:25:32.983Z"
+      },
+      "status": "Reported as complete with known exception at shift end."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 roller heavily soiled, requires deeper clean",
+      "summary": "Overnight supervisor found cleaning roller was \"pretty dirty\" with \"built up pretty bad\" residue; team cleaned during shift but noted it needs deeper clean or more time to fully remove buildup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-02T03:06:41.204Z"
+      },
+      "status": "Partially cleaned during shift; deeper clean flagged as needed."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding cleaning roller inspection to ML1 post-clean verification checklist \u2014 based on today's heavy buildup that required mid-shift attention."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 level 2 clean sign-off procedures to ensure all equipment completed before marking protocol complete \u2014 based on spiral conveyors skipped today."
+    }
+  ]
+}

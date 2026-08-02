@@ -1,0 +1,161 @@
+{
+  "date": "2026-08-02",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 cooler failed repeatedly through the afternoon \u2014 maintenance applied water-spray workaround to keep running by *18:46*."
+  },
+  "per_plant_summary": {
+    "L1": "S2 ran caramel all day with routine quality checks. Cavanna 4 alarm at 07:51 cleared by 08:02. S3 completed weekend clean and is ready for Monday morning. Short-handed on second shift required pausing MMs during lunch rotation.",
+    "L2": "Foreign material found on top of WIP pallet at 08:19 \u2014 candies laying loose on Salted Caramel inventory. Alan following up on source.",
+    "L3": "ML1 fought recurring cooler failures from 15:09 through evening. Nozzle plate clog cleared by 08:22. Morcos tank heater lost power mid-morning, Nelson found blown fuses and loose wire. Marcos tank heater contacts tripping repeatedly in evening \u2014 Nelson suspects short in display. Line completed 60g order and started level 2 clean overnight."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Cavanna 4 alarm on screen",
+      "summary": "Cavanna 4 wrapper threw alarm; maintenance found loose back connections.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-01T13:51:18.776Z"
+      },
+      "resolution": "Cleared at 08:02 \u2014 \"Maintenance tightened some back connections on Cavanna 4 and it's already working\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "E-stop preventing S3 belt run test",
+      "summary": "Unknown e-stop preventing belt run test after weekend clean; searched C-19 and belt after MD before locating.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-02T04:30:10.376Z"
+      },
+      "resolution": "Cleared at 23:42 \u2014 e-stop found by Brandon Hernandez, \"5-min run test and sanitization of the belts completed\" (Conner Boyd)."
+    },
+    {
+      "plant": "L3",
+      "title": "Nozzle plate clogged at shift start",
+      "summary": "Depositor nozzle plate remained clogged after initial reassembly; crew removed, washed, reinstalled, and purged to clear before restarting production.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-01T13:16:16.665Z"
+      },
+      "resolution": "Cleared at 08:22 \u2014 nozzle plate cleaned and installed, purged, unclogged, \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Morcos tank not heating",
+      "summary": "Morcos tank temperature dropped to 38-40\u00b0F; Nelson Cook found VFD faulted and reset.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-01T15:18:55.446Z"
+      },
+      "resolution": "Cleared at 09:18 \u2014 \"heating up now\" after VFD reset (Nelson Cook)."
+    },
+    {
+      "plant": "L3",
+      "title": "Cooler lost temp, bars not demolding",
+      "summary": "Cooler temp rose to 62\u00b0F (set point 52\u00b0F) causing bars to stick in molds; maintenance found 2 blown fuses and a loose wire on heater panel.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-01T15:49:02.369Z"
+      },
+      "resolution": "Cleared at 10:18 \u2014 \"It's good now.\" Nelson Cook replaced 2 fuses and secured loose wire on heater contacts."
+    },
+    {
+      "plant": "L3",
+      "title": "Bad temper after lunch coverage",
+      "summary": "Line stopped depositing at 12:28 because covering operator took incorrect temper reading during regular operator's lunch break.",
+      "priority": "P3",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-01T18:28:05.993Z"
+      },
+      "resolution": "Cleared at 12:35 \u2014 new temper taken and \"Starting back up\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Mold alarm",
+      "summary": "Mold conveyor alarm triggered, maintenance called.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-01T23:19:51.711Z"
+      },
+      "resolution": "Cleared at 17:20 \u2014 \"Maintenance reset it\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "Printer and sticker timing off",
+      "summary": "Printer wasn't printing on side panel; sticker for display box applying too late on night shift startup.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-02T01:29:14.403Z"
+      },
+      "resolution": "Cleared at 19:29 \u2014 Nathan Gevenois adjusted printer position for correct timing and sticker speed."
+    },
+    {
+      "plant": "L3",
+      "title": "C6 belt drifted north",
+      "summary": "C6 belt tracking drifted north, line paused for maintenance adjustment.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-02T01:52:13.86Z"
+      },
+      "resolution": "Cleared at 20:09 \u2014 \"Line started 5 mins ago c6 belt is good now\" (Nathan Gevenois)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "Foreign material on WIP pallet",
+      "summary": "Loose candies found laying on top of Salted Caramel WIP pallet when Hector brought pallets to FFS line; unclear if from truck, warehouse steel, or L3 transfer.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-01T14:19:28.746Z"
+      },
+      "status": "Alan Todd notified at 08:11, said will follow up. Source not yet identified as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Cooler repeatedly overheating through afternoon",
+      "summary": "ML1 cooler failed 4 times between 15:09 and 16:59 despite VFD resets and compressor spraying; maintenance rigged continuous water spray on roof compressor as workaround.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-01T21:09:56.079Z"
+      },
+      "status": "Water-spray workaround implemented by 18:46; Efrain confirmed no more issues after continuous mist applied to compressor coil. Line ran remainder of shift on reduced speed with manual cooling."
+    },
+    {
+      "plant": "L3",
+      "title": "Marcos tank heater contacts tripping",
+      "summary": "Heater contacts for Marcos tank temperature control repeatedly tripping; Nelson Cook suspects short in display panel causing intermittent power loss.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-01T23:13:15.53Z"
+      },
+      "status": "Tripping continued through evening shift. Nelson suspects display short \u2014 \"when you wiggle it on the inside it will pull the contacts back in.\" All wires tight. Shift instructed not to adjust temper unless tank at set point."
+    }
+  ]
+}
