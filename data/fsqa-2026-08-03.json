@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-03",
+  "headline": {
+    "eyebrow": "Quiet 24 hours",
+    "text": "L1 Sollich 3 kitchen mixing tank scale reading *22% high* \u2014 caught before batch, no product impact."
+  },
+  "summary": "One quality flag today: L1 kitchen scale out of zero, reported before use. No holds, no food-safety events, no sanitation or allergen issues across all three plants.",
+  "holds": [],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 kitchen mixing tank scale reading 22% high",
+      "summary": "Scale should read zero but shows 22.0% higher than baseline \u2014 if undetected, could compromise recipe accuracy and product spec.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-08-03T11:57:13.251Z"
+      },
+      "status": "Open, no resolution documented in window."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding scale zero-verification to pre-batch startup checklist \u2014 based on the Sollich 3 mixing tank scale error discovered at 05:57 MT."
+    }
+  ]
+}

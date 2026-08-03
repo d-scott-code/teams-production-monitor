@@ -1,0 +1,82 @@
+{
+  "date": "2026-08-03",
+  "headline": {
+    "eyebrow": "Open issues",
+    "text": "L1 has *2 unresolved machine issues* \u2014 a butter pump waiting on reset and a mixing tank scale reading 22% high \u2014 while L2 and L3 each cleared startup delays."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 4 kitchen reported a butter pump needing reset at 04:52 and a mixing tank scale reading 22% high at 05:57; both had maintenance awareness but no resolution by window close.",
+    "L2": "ML3 had tank leaks at startup that delayed depositing until 06:36 after a gasket replacement. FFS and ML2 ran without breaks.",
+    "L3": "ML1 flow-wrap had a missing roller on the Cavana infeed during changeover, cleared in 3 minutes. MF Matrix is waiting on recipe creation for a new product. Truffle line ran clean."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Chad Stone borrowed 6 cans of chain lubricant from L1 for ML1 in L3; replacement order placed."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "Tank leaks preventing caramel flow to depositor on ML3",
+      "summary": "Leaks on the ML3 tank blocked caramel from reaching the depositor at shift startup, requiring a gasket replacement.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-03T11:42:11.149Z"
+      },
+      "resolution": "Gasket replaced; line purging by 06:12, depositing by 06:36 (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "Missing roller on Cavana infeed belt",
+      "summary": "A roller was discovered missing from the Cavana infeed during ML1 changeover, preventing belt operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-03T12:24:07.868Z"
+      },
+      "resolution": "Cleared at 06:27 \u2014 \"Cavanna is good to run now and replaced the missing roller\" (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Butter pump on Sollich 2 Kitchen needs reset",
+      "summary": "The butter pump tripped and requires a mechanic to reset before the kitchen can resume batching.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-08-03T10:52:36.001Z"
+      },
+      "status": "Maintenance notified at 04:58 (Justin Garner); no resolution reported by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Mixing tank scale reading 22% high on Sollich 3 kitchen",
+      "summary": "The mixing tank scale shows a 22% offset when it should read zero, affecting batch accuracy.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-08-03T11:57:13.251Z"
+      },
+      "status": "Reported at 05:57; no maintenance response or calibration action documented by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Waiting on maintenance to create recipes for new product on MF Matrix",
+      "summary": "MF Matrix cannot start production of a new SKU until maintenance loads the recipe configuration.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-03T12:31:09.875Z"
+      },
+      "status": "Reported at 06:31; no update on recipe creation or estimated completion by window close."
+    }
+  ]
+}
