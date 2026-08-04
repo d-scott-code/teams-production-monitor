@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-04",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L1 S2 mixer held after *production apron piece* found inside during post-clean inspection \u2014 rewash required before restart."
+  },
+  "summary": "Two active holds at L1: S2 mixer on hold after foreign material found post-cleaning, S3 holding 3 pallets after quarantined pistachios mistakenly reached production line. L2 ML3 count deviation (877 vs 800 target) traced to operator error \u2014 retrained.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S3 holding 3 pallets \u2014 quarantined pistachios reached line",
+      "summary": "At ~04:00, a quarantined pallet of pistachios was mistakenly brought to production and one full box poured onto the line; error identified immediately, 3 pallets of finished product isolated pending QA evaluation.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-04T12:17:41.521Z"
+      },
+      "status": "3 pallets isolated pending QA disposition \u2014 quarantined material removed from line."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 mixer on hold \u2014 apron piece found after cleaning",
+      "summary": "During post-cleaning inspection, a piece of production smock/apron was discovered inside the S2 mixer already cleaned for next product; mixer must be rewashed, sanitized, and inspected before production can resume.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-08-04T12:31:43.082Z"
+      },
+      "status": "On hold pending rewash and QA inspection \u2014 production cannot start until mixer verified clean."
+    }
+  ],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML3 box count 877 vs 800 target",
+      "summary": "Box counted at 877 pieces instead of target 800; root cause identified as new operator placing hand on box during weighing, causing scale to read incorrectly \u2014 operator retrained on procedure.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-08-04T01:15:59.084Z"
+      },
+      "status": "Resolved \u2014 scale adjusted, operator retrained, count brought back to target."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 temper spike caused product defects",
+      "summary": "Line stopped at 20:32 due to bad temper producing double and triple chocolates; only 3 boxes shipped before stop, all inspected with no damaged product found.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-08-04T02:32:26.876Z"
+      },
+      "status": "Resolved \u2014 temper brought back in range, defective product not packed, no bad product released."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS ink stains found in product boxes",
+      "summary": "Ink stains discovered in product boxes at FFS line; production flagged to monitor depositing during first and second shifts.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-08-04T12:03:16.986Z"
+      },
+      "status": "Open \u2014 operators notified to monitor for ink transfer on both shifts."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film punctures at vacuum station",
+      "summary": "Line down 03:15 to 04:27 for film punctures; maintenance found loose chain, bent pins holding fingers, and sharp rail edges \u2014 chain tightened, two rails replaced.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-04T09:15:35.297Z"
+      },
+      "status": "Resolved \u2014 chain tightened, bent pins addressed, rails replaced, no further tears observed."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding visual controls (color tags, staging zone barriers) to prevent quarantined materials from reaching production floor \u2014 based on S3 pistachio incident where quarantined pallet was mistakenly brought to line."
+    },
+    {
+      "plant": "L1",
+      "text": "Review post-cleaning inspection checklist for mixers to include physical hand-search of interior surfaces \u2014 based on S2 apron piece found after cleaning was marked complete."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider adding scale operator training module on proper hand placement and non-contact weighing technique \u2014 based on ML3 count deviation (877 vs 800) caused by operator touching boxes."
+    }
+  ]
+}

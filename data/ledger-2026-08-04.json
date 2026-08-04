@@ -1,0 +1,245 @@
+{
+  "date": "2026-08-04",
+  "headline": {
+    "eyebrow": "Safety flag",
+    "text": "L1 mixer contaminated with apron material at 06:31 \u2014 production paused, rewash in progress, *3 pallets* of L1 pistachios on hold after quarantine breach."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel on Sollich 3 with a Russell finex clog cleared in 37 minutes. Sollich 4 hit recurring motor overheating every 2\u20135 minutes; Theegarten techs onsite, line paused mid-shift. Sollich 2 discovered apron material in the mixer after clean \u2014 rewash required before restart.",
+    "L2": "L2 ML3 had temper and flow wrap issues through 2nd shift, all cleared by 03:23. ML2 ran with film puncture stops, maintenance replaced rails at 04:27 and line resumed. FFS ran steadily, minor 10-minute stop for cleaning.",
+    "L3": "L3 ML4 had sensor, coder, and packaging issues across all three shifts \u2014 most resolved but box coder still being worked. Truffle Line Cavanna 1 motor failed at 01:05, replacement installed at 03:19 but faulting persisted into dayshift; level 2 clean started 06:24. ML1 Bosch down since 05:10, maintenance unable to repair. MFM halted due to printer belt speed mismatch."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 matrix photo eye alarm faulting every 3 minutes",
+      "summary": "C11 and C12 matrixes shutting off repeatedly; alarm would not reset, stopping all matrixes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-04T07:32:15.236Z"
+      },
+      "resolution": "Fixed at 01:59 \u2014 maintenance found C12 photo eyes out of adjustment and corrected (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Russell finex clogged, unable to drain",
+      "summary": "Filter clogged during run; maintenance confirmed blockage, stopped line to clean before pin could break.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-08-04T06:51:35.54Z"
+      },
+      "resolution": "Unclogged at 01:28, tempering to resume \u2014 \"The Filter was unclogged, just getting tempering\" (Luis Falcon)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 temper spiked out of range, line stopped",
+      "summary": "Temper ran high at 20:32; adjustments made in wrong direction, line stopped to correct, some doubles and triples produced.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-08-04T02:32:26.876Z"
+      },
+      "resolution": "Back in range and running at 21:04 \u2014 \"Temper is in range\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film punctures on bottom, line down",
+      "summary": "Getting punctures at vacuum; maintenance found loose chain and bent pins on fingers, inspected rails for sharp edges.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-04T09:15:35.297Z"
+      },
+      "resolution": "Line up at 04:27 after replacing two rails \u2014 \"So far no more tears\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 scale overpacking boxes at 877 pieces vs. 800 target",
+      "summary": "New operator pressing hand on box during weighing; retrained on procedure and scale adjusted to hit target count.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-08-04T01:15:59.084Z"
+      },
+      "resolution": "Cleared at 19:36 \u2014 operator retrained, weight reduced to target (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap roller coming out of place",
+      "summary": "Operator noticed roller for one of the FW plates loose; maintenance replaced bearing to secure.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-04T06:24:21.481Z"
+      },
+      "resolution": "Fixed at 03:23 \u2014 \"Maintenance replaced the bearing. Roller is no longer moving\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 temper unit low-temperature alarm on scraper",
+      "summary": "Operators turned off sweco to replace lid, idled pump and scraper; scraper temp dropped below 35\u00b0C minimum on restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-04T12:00:54.865Z"
+      },
+      "resolution": "Reheat completed, tempering again at 06:15 \u2014 \"Temper unit is tempering again\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 door sensor broken",
+      "summary": "Sensor on one of the depositor 1 doors reading molds broke; line down at 12:41 for replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-03T18:41:39.953Z"
+      },
+      "resolution": "Depositing at 13:12 \u2014 temporary sensor installed, will not detect drip pan until replacement arrives (Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola down, pusher hitting bowed tray",
+      "summary": "All 3 TGs had issues at 14:52, monitoring system not on; gondola pusher hitting bent tray, tip blocks missing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-03T20:52:36.029Z"
+      },
+      "resolution": "Running again at 16:18 \u2014 replaced bent tray, maintenance reinstalled tip blocks (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 1 brush arm came loose twice",
+      "summary": "Brush arm on Cavanna 1 came loose at 19:16, over 30 bins of accumulation; maintenance tightened bolts on back end.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-04T01:16:58.493Z"
+      },
+      "resolution": "Fixed at 19:29 \u2014 \"Maintenance had to tighten up the bolts on the back end\" (Tyson Fausett)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 rear belt motor overheating every 2\u20135 minutes",
+      "summary": "Motor driving rear belt stops when it overheats, takes 2.5\u20135 minutes to restart, discarding ~7 lb caramel each time; Theegarten techs onsite troubleshooting drive parameters.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-08-03T16:24:55.285Z"
+      },
+      "status": "Line paused at 16:39, TG techs to return later for more troubleshooting; replacement motor ordered, no ship date provided as of 13:50."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 quarantined pistachio material poured onto line",
+      "summary": "Quarantined pallet mistakenly brought to line at 04:00, one full box poured before caught; 3 pallets of finished product placed on hold pending QA evaluation.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-04T12:17:41.521Z"
+      },
+      "status": "Three pallets isolated for QA review as of 06:17."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 mixer contaminated with apron material after clean",
+      "summary": "Piece of production apron found inside mixer during post-clean inspection; mixer already cleaned for next product, must be rewashed and sanitized before production can start.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-08-04T12:31:43.082Z"
+      },
+      "status": "Additional pieces still inside mixer as of 06:35, rewash in progress, QA inspection required before release."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap stopping repeatedly after restarts",
+      "summary": "Flow wrap down at 20:14 for multiple issues; after maintenance work, wrapper continues stopping itself every few seconds when restarted.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-04T02:14:34.956Z"
+      },
+      "status": "Still stopping as of 21:50 (end of 2nd shift), described as \"no se ha podido correr adecuadamente.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 1 motor belt failed, faulting after replacement",
+      "summary": "Cavanna 1 belt unable to move at 01:05, suspected motor; motor replaced by 03:19 but alarms persisted, still having issues through dayshift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-04T07:05:27.586Z"
+      },
+      "status": "Switched to Cavanna 2 at 02:14, alarms cleared at 05:50, but Cavanna 1 still down at 06:13 \u2014 \"Cavanna is running\" but context suggests issue ongoing."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch down, maintenance unable to fix",
+      "summary": "Bosch packaging unit down at 05:10; maintenance assessed and reported they are not able to fix at this time.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-04T11:10:50.973Z"
+      },
+      "status": "Still down as of 05:10, running only to Cavanna, Bosch not repairable by maintenance."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM double-head printer belt speed mismatch, line stopped",
+      "summary": "Borrowed double-head printer from L1 for Hershey product requiring two-side print; belts lack speed to send box through printers, no motorized solution available.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-03T22:15:25.612Z"
+      },
+      "status": "MFM stopped at 21:30, producing WIP without lot code on cases; Rose directed no MFM run on Aug 4."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 box laser coder down, maintenance working overnight",
+      "summary": "Line down at 22:56 for laser coder on end packaging; 12 bins of accumulation, maintenance still adjusting code through 3rd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-04T04:56:45.821Z"
+      },
+      "status": "QA approved code and accumulation passing at 02:40, but \"still working on printer\" updates continued through 01:44."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 metal detector blowoffs, seal and vacuum issues",
+      "summary": "TG5 experiencing frequent blowoffs on S40 setting at 03:19; maintenance also addressed metal detector blowoff, film sealing, and vacuum cleaner problems on machine 5.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-04T09:19:37.452Z"
+      },
+      "status": "Seal tested good at 03:32, but blowoffs and blue band causing chocolate to fall as of 05:15."
+    }
+  ]
+}
