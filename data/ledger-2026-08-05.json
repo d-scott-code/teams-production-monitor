@@ -1,0 +1,170 @@
+{
+  "date": "2026-08-05",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 Bosch depositor struggled *all night* \u2014 maintenance unable to fix, still adjusting at window close."
+  },
+  "per_plant_summary": {
+    "L1": "S4 heavy cream spoiled overnight (900 lbs scrapped, tank cleaned) but resumed production by midday. S4 Theegarten belt motor has been overheating every 30 minutes since 09:49; line stopped at 21:28 on door sensor fault and remains down.",
+    "L2": "Ran all three lines without major breaks. FFS had two brief maintenance stops for knife cleaning and conveyor adjustment, both cleared same shift. ML3 tracked smoothly after a 5-minute belt issue at 09:05.",
+    "L3": "ML1 Bosch depositor stopped repeatedly overnight \u2014 chocolate stuck, temper adjustments, crystallization tweaks \u2014 maintenance unable to resolve after full shift. ML4 saw 15+ Eaglestone conveyor jams and ongoing sticker applicator trouble causing product backlog. Truffle line ran coconut oil trial with multiple Cavanna belt stops (all cleared 5\u201310 min each) and finished production at 04:30."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Marcos Jimenez created a checklist to ensure heavy cream chiller stays on when product is left in tank overnight."
+    },
+    {
+      "plant": "L3",
+      "text": "Truffle finished trial run at 04:30, drained white tank by 04:52. Hershey job scheduled for 08/06, but 3 pallets remain unlabeled due to QA hold authorization not requested by third shift."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 heavy cream spoiled, 900 lbs scrapped",
+      "summary": "Tank found at 75\u00b0F with bad odor after chiller was left off overnight; cleaned, sanitized, and back in production by 09:12.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-08-04T13:21:08.146Z"
+      },
+      "resolution": "Tank cleaned and sanitized by 09:12, production resumed. Marcos created checklist to ensure chiller remains on when cream is left in tank."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 long belts stopped tracking",
+      "summary": "Packaging line halted at 09:05 when long belts lost tracking.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-04T15:00:15.235Z"
+      },
+      "resolution": "Back online within 5 minutes at 09:05 \u2014 \"The line is back.\""
+    },
+    {
+      "plant": "L2",
+      "title": "FFS knife cleaning and conveyor belt dragging",
+      "summary": "Maintenance cleaned knife twice during shift; QA also requested conveyor adjustment to stop belt dragging on floor.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-04T16:15:08.653Z"
+      },
+      "resolution": "Knife cleaning completed by 17:15, conveyor adjusted and running by 22:44 \u2014 \"Adjustment of conveyor after the bagging area for maintenance is good.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle trial coconut oil tote valve mismatch",
+      "summary": "Valve for trial coconut oil tote didn't fit the line connection; maintenance searched for adapter.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-04T19:45:15.192Z"
+      },
+      "resolution": "Cleared at 15:32 using corn syrup valve from L1 \u2014 \"We got it! It works\" (Candon Watt). Chad Stone retrieved valve and installed."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 belt stops (3 incidents)",
+      "summary": "Extended belt moved off track three times during third shift trial run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-08-05T05:47:09.936Z"
+      },
+      "resolution": "Fixed each time within 5\u201310 minutes. Final incident at 03:05 cleared by 03:10 \u2014 \"Is running good now.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle toffee ktron clogged",
+      "summary": "Depositor stopped at 02:24 because ktron feeder not working properly.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-05T08:24:59.732Z"
+      },
+      "resolution": "Operator cleaned out ktron, back running at 02:44 \u2014 \"Ktron was cleaned out and is back up and running.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 Theegarten belt motor overheating, door sensor fault",
+      "summary": "Belt motor has faulted every 30 minutes since 09:49; line stopped at 21:28 on protective door sensor and has not resumed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-04T15:49:00.847Z"
+      },
+      "status": "Line down since 21:28. Theegarten tech scheduled for 07:00 on 08/05 for programming updates. Conner posted fault at 21:28; no restart by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Pistachio halves on hold, cannot be used for production",
+      "summary": "Item 10221 (Pistachio Halves Roasted & Salted) flagged as on hold and unavailable for L1.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-08-05T13:13:47.38Z"
+      },
+      "status": "Charity Young posted at 07:13 warning not to bring hold pistachios to L1. No follow-up or release by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch depositor stopped repeatedly, maintenance unable to fix",
+      "summary": "Chocolate stuck in molds at 00:24, then depositor stopped 6+ times overnight for temper, crystallization, and mixing water adjustments; maintenance worked full shift without resolution.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-05T06:24:57.194Z"
+      },
+      "status": "Maintenance continues to make adjustments to the Bosch unit as of 07:12. Chad Stone asked Alan Greer to have operator stay over to observe what day shift does, as yesterday they \"didn't change anything\" and Bosch started up."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Eaglestone conveyor jamming repeatedly off spiral",
+      "summary": "Display boxes jamming 15+ times coming off spiral conveyor; lead stationed operator to manually clear jams.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-08-04T23:02:36.608Z"
+      },
+      "status": "Lead reported 15 jams by 18:32. Chad asked to station someone there; Tyson confirmed plan after lunches. Matt Hatch will talk to Eaglestone tomorrow; Preston had been working on solution before going out."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator issues causing backlog",
+      "summary": "Accumulation building due to sticker machine failures; maintenance working on applicator.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-05T02:59:47.961Z"
+      },
+      "status": "Sticker machine not working at 04:22, maintenance working on it. \"We have a lot of product backed up\" as of 04:25."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle 3 pallets unlabeled, chocolate on hold",
+      "summary": "Third shift left 3 pallets without final labels because chocolate is on hold and QA did not request authorization to change status.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-08-05T12:31:30.466Z"
+      },
+      "status": "Fredy posted at 06:31 that labels could not be completed because third shift Quality did not request authorization. No resolution by window close."
+    }
+  ]
+}
