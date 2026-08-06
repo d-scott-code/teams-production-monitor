@@ -1,0 +1,158 @@
+{
+  "date": "2026-08-06",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L2 caramel tank heaters burnt out, leakers persist on ML3 \u2014 L3 truffle tunnel cover dropped, *4,107 lbs chocolate on hold*."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran all lines with minimal interruption. Sollich 2 accumulated 34 bins at the matrix overnight, paused 20 minutes to clear at 05:51, floors back to normal by 06:04.",
+    "L2": "L2 ML3 leakers continue \u2014 5-10 per mold at shift start \u2014 despite air bubble mitigation. Caramel tank heaters burnt out at 06:37, maintenance replacing. Chocolate jam cleared in 6 minutes. FFS material shortage flagged for Friday startup.",
+    "L3": "L3 ML1 was down for C6 belt replacement until 05:25, back online but Bosch paper roller bouncing. Truffle Line lost tunnel 4 cover overnight, workaround in place, cooling tunnel repair pending. 4,107 lbs chocolate remains on hold awaiting resolution. MF Matrix roller not working at shift start, maintenance called."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Hershey chocolate loaded and running, no recipe in system \u2014 team selected closest match, action item opened to create new recipe."
+    },
+    {
+      "plant": "L2",
+      "text": "Theegarten vendor visit scheduled for 1:30 PM."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Matrix accumulation on Sollich 2",
+      "summary": "34 bins accumulated overnight at top of matrix, pouches on floor, paused 20 minutes to clear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-06T10:54:49.140Z"
+      },
+      "resolution": "Cleared by 06:04 \u2014 \"Floors are cleared\" (Jody Howse)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 chocolate stuck in conveyor",
+      "summary": "Chocolate jammed in conveyor at 07:09, brief line stop.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-06T13:09:32.536Z"
+      },
+      "resolution": "Line up at 07:15."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 line down for maintenance cleaning",
+      "summary": "Line stopped at 10:04 for maintenance to clean tooling.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-05T16:04:06.662Z"
+      },
+      "resolution": "Running again at 10:15."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 down for C6 belt replacement",
+      "summary": "Line down since prior shift for C6 belt failure, replacement and ATP in progress.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-06T10:48:02.522Z"
+      },
+      "resolution": "Belt running, line up, passed ATP at 05:25."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "ML3 caramel tank heaters burnt out",
+      "summary": "Tank temperature control lost, heaters need replacement before depositing can resume.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-08-06T12:37:15.743Z"
+      },
+      "status": "Maintenance on-site replacing heaters as of 06:37, depositing stopped at 07:04."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 leakers \u2014 5-10 per mold",
+      "summary": "Caramel air bubbles causing persistent seal leaks, mitigation attempted but issue continues.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-05T19:20:44.578Z"
+      },
+      "status": "Erandy identified air bubbles in caramel as root cause, manual dumping tested. Alan reports 5-10 leakers per mold still present at 06:24."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS material shortage for Friday run",
+      "summary": "Flow wrap, boxes, and WIP not staged at L2 for scheduled Friday startup.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-06T06:42:02.374Z"
+      },
+      "status": "Luis Pino tagged to order material, no confirmation of order placed as of 00:42."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line 4,107 lbs chocolate on hold",
+      "summary": "Three pallets without labels, awaiting FSQA resolution before final labeling can proceed.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-08-05T13:52:24.566Z"
+      },
+      "status": "Preston notes chocolate may have been added to melter July 15, needs to compare notes before releasing. No resolution as of 20:32."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line tunnel 4 cover dropped, cooling tunnel repair needed",
+      "summary": "Operator dropped tunnel 4 cover overnight, cooling tunnel requires maintenance fix.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-06T05:50:50.439Z"
+      },
+      "status": "Covers slid to close gap as workaround by 05:48. Maintenance to repair after ML1 belt work complete. Cover sitting on conveyor, needs proper staging."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bag roller not working properly",
+      "summary": "Roller that slides bags malfunctioning, delayed startup to 06:42.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-06T12:59:12.105Z"
+      },
+      "status": "Maintenance called at 06:59, no update by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch paper roller bouncing excessively",
+      "summary": "Paper feed roller on Bosch unit bouncing, impacting wrap quality.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-06T13:10:22.284Z"
+      },
+      "status": "Raised at 07:10, no resolution posted by window close."
+    }
+  ]
+}

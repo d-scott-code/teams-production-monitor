@@ -1,0 +1,152 @@
+{
+  "date": "2026-08-06",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L3 holds *4,108 lbs* of chocolate plus three unlabeled pallets pending traceability resolution \u2014 production line awaits final label guidance."
+  },
+  "summary": "One active hold at L3 Truffle Line (chocolate traceability). Quality challenges continue at L2 ML3 (5\u201310 leakers per mold, air bubbles in caramel) and L3 ML4 (TG3 sealing\u2014one tote of rework). L1 saw multiple sanitation gaps flagged during Plant Standards walk.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "Chocolate traceability hold \u2014 4,108 lbs plus 3 pallets",
+      "summary": "Truffle Line production placed on hold due to chocolate lot traceability uncertainty; Preston and Fredy coordinating to resolve discrepancy before releasing pallets for final labeling.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-08-05T13:52:24.566Z"
+      },
+      "status": "On hold pending traceability review \u2014 Preston indicated records show chocolate added July 15, needs reconciliation with current job before disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Broken parts found under ML4 Z conveyor",
+      "summary": "Two plastic parts discovered broken off Z conveyor during 3rd shift; Kimberly removed pieces and Chad requested vendor contact to order replacements.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-06T05:29:39.912Z"
+      },
+      "status": "Resolved \u2014 broken pieces removed from production area; replacement parts being sourced."
+    },
+    {
+      "plant": "L3",
+      "title": "Tunnel cooling cover dropped during 3rd shift",
+      "summary": "Truffle Line operator dropped Tunnel 4 cover while lifting; cover placed on conveyor then moved to wooden pallet per Chad's instruction to avoid recontamination.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-06T05:50:50.439Z"
+      },
+      "status": "Resolved \u2014 cover removed from food zone; conveyor cleaned; cover on pallet awaiting glue repair."
+    },
+    {
+      "plant": "L3",
+      "title": "Lost tools reported at MF Matrix",
+      "summary": "Operator posted image of lost tools; no further detail on recovery or line search provided in window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-06T12:29:06.218Z"
+      },
+      "status": "Open \u2014 no confirmation of tool recovery or completed line search."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML3 leakers persist \u2014 5\u201310 per mold",
+      "summary": "Caramel-filled chocolates leaking due to air bubbles in caramel depositor; Erandy worked manual dump workaround on 2nd shift, but 1st shift still seeing same rate this morning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-05T19:20:44.578Z"
+      },
+      "status": "Open \u2014 manual caramel dump reduced leaks to <5/mold overnight, but issue returned 1st shift 06:24; Alan requesting additional changes from Alex/Erandy."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 sealing failures \u2014 one tote of rework",
+      "summary": "Theegarten 3 producing bad seals throughout 1st shift; tech Marco made repeated adjustments but continued running, accumulating one full tote of unwrapped bars for rework.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-05T18:47:54.139Z"
+      },
+      "status": "Resolved \u2014 Ray confirmed fix (film centering) by 15:27; tote rewrapped overnight on alternate Theegarten machine per Marcos."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 C2 conveyor failed post-cleaning inspection",
+      "summary": "Luis Falcon reported excessive caramel buildup on C2 conveyor requiring full reclean before startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-08-06T11:17:42.502Z"
+      },
+      "status": "Resolved \u2014 conveyor recleaned; enrober declared ready 05:30."
+    },
+    {
+      "plant": "L1",
+      "title": "Plant Standards walk identifies multiple sanitation gaps",
+      "summary": "Kathleen and Jorel documented unlabeled buckets, food-contact buckets used for cleaning, dirty gaskets, improper glove storage, and mop buckets left uncleaned after use.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-08-06T12:38:26.264Z"
+      },
+      "status": "Open \u2014 findings posted with photos; corrective actions assigned to Jody, Justin, Jorel, Brandon."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 roller buildup flagged during CIL",
+      "summary": "Frederick posted image of excessive chocolate buildup on rollers; Chad directed team to add roller cleaning to 2-hour inspection interval.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-06T11:12:38.589Z"
+      },
+      "status": "Resolved \u2014 Raoul confirmed addition to shift report; new inspection frequency in place."
+    },
+    {
+      "plant": "L1",
+      "title": "Clean parts left uncovered at S3",
+      "summary": "Katya reminded Luis and Brandon to cover all clean parts until installation to prevent recontamination.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-06T13:15:33.612Z"
+      },
+      "status": "Open \u2014 coaching delivered; no confirmation of immediate compliance."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 dirty molds swapped mid-run",
+      "summary": "Operators replaced 37 dirty molds with clean ones to improve chocolate appearance; swap completed during 2nd shift.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-08-05T21:00:53.175Z"
+      },
+      "status": "Resolved \u2014 clean molds in place; no product held."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review color-coding and labeling protocol for sanitation tools and buckets \u2014 today's Plant Standards walk found white (food-contact) buckets used for cleaning and stored in non-food zones."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider pre-shift caramel viscosity or aeration check for ML3 \u2014 two consecutive days of air-bubble-driven leakers suggest upstream process variability not visible until deposition."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding cooling tunnel cover handling to ML4 and Truffle Line startup checklists \u2014 today's dropped cover at Truffle Line echoes a similar TG3 separator issue yesterday, both involving lifting procedures."
+    }
+  ]
+}
