@@ -1,0 +1,302 @@
+{
+  "date": "2026-08-07",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML2 demolder jammed repeatedly through the night \u2014 *8 separate stoppages* between 16:16 and morning shift handoff."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 had a foreign material event at 23:53 when a matrix screw head and nut went missing \u2014 one piece recovered by x-ray, 4 pallets on hold for re-screen. Matrix 6 went down at 01:32 with no bucket display, and Kitchen A condensed milk seal is leaking 4 pounds per batch. Sollich 3 metal detector belt kept stopping after 22:57. Sollich 4 discovered a torn perforated belt during cleaning.",
+    "L2": "ML2 demolder problems dominated the window \u2014 8 stops between 16:16 and shift end for mold jams and belt tracking. Line slowed to 12 MPM at 01:28 to get consistent BBD print. VFFS had scale issues at 02:29, partially cleared but still seeing blow-offs and double bags at 03:47. ML3 ran clean.",
+    "L3": "ML1 Cavanna flow wrap cut 3.4% of product at 10:12, went down at 10:53 for jaw adjustment, cleared by 12:04. Bosch E04 film error resolved at 16:57 but returned at 23:07. Sensor B100A failing to reject at 08:54. Temper dropped to -0.6 at 01:05, corrected by 02:05. Truffle line conveyor stuck at 07:04, cleared 07:09. Matrix ran incorrect lot code on BEQ at 02:42."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Third shift finished early (4 hours) for company party on 08/08 per Alan Greer."
+    },
+    {
+      "plant": "L1",
+      "text": "Sollich 2 will replace Kitchen A milk seal during upcoming BET 23g to PRS 12g changeover."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 caramel texture wrong after pause",
+      "summary": "After latest 5-minute pause caramel started coming out too soft, gap tool reading incorrect, no settings changed in kitchen.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-07T07:58:36.147Z"
+      },
+      "resolution": "Cleared at 03:29 \u2014 gap closed from 2.8 to below 2.5, caramel sticking to bottom drum and making decent bed, running again (Joseph Scott)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jam at demolder",
+      "summary": "Mold jammed entering demolder belt during 14 MPM trial run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-06T19:06:01.96Z"
+      },
+      "resolution": "Cleared at 13:09 \u2014 line back up (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS seal bar out of alignment",
+      "summary": "Seal bar needed adjustment, line down for maintenance work.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-07T12:11:20.274Z"
+      },
+      "resolution": "Cleared at 06:17 \u2014 seal bar adjusted, line running (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "Matrix bucket 2 scale not registering",
+      "summary": "Bucket 2 on MF Matrix stopped working, not reading pouches for filling.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-06T13:28:24.958Z"
+      },
+      "resolution": "Cleared at 08:28 \u2014 Nathan Ruiz completed span calibration on bucket and adjusted pouch infeed sensor."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna jaw pressure causing open flow wrap seals",
+      "summary": "Flow wrap was cutting during sealing, causing 3.4% of pieces to open in inspection \u2014 chocolate buildup on infeed and jaw pressure needed adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-06T14:29:15.677Z"
+      },
+      "resolution": "Cleared at 12:04 \u2014 Chris G. adjusted jaws, post-adjustment inspection found no open product or cut film; 14:09 QA confirmed 100% properly sealed (Isis Oses)."
+    },
+    {
+      "plant": "L3",
+      "title": "Bosch E04 film error recurring on ML1",
+      "summary": "E04 film following errors accumulated through first shift \u2014 12 errors by 15:41, caused by locking bar mechanism not secured.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-06T21:40:27.302Z"
+      },
+      "resolution": "Cleared at 16:57 \u2014 Efrain locked bar in place instead of threading up; Bojana observed 30 minutes with no errors (Bojana Kantar)."
+    },
+    {
+      "plant": "L3",
+      "title": "Bosch infeed belt north side not working",
+      "summary": "Infeed belt on Bosch ML1 stopped running, blocking flow to wrapper.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-07T00:10:15.475Z"
+      },
+      "resolution": "Cleared at 19:09 \u2014 maintenance removed belt, repaired off-line, reinstalled and belt running correctly."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper dropped below spec",
+      "summary": "Temper reading came in at -0.6, line pulled product and adjusted crystallization temperature by 0.1 from 78.7 to 78.8.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-07T07:05:29.252Z"
+      },
+      "resolution": "Cleared at 02:05 \u2014 hopper emptied at 01:15, line restarted at 01:25, temper read 0.3 and line running good (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line conveyor belt under cutter stuck",
+      "summary": "Belt feeding product under the cutter blade was not moving, blocking production start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-08-07T13:04:33.642Z"
+      },
+      "resolution": "Cleared at 07:09 \u2014 Nathan tensioned the conveyor and belt is moving (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 matrix screw and nut foreign material event",
+      "summary": "Matrix 7 missing rubber screw head with metal plate and nut at 23:53 \u2014 one piece found in x-ray reject at 11:15 PM, nut still missing, 4 finished pallets on hold for re-screen.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-07T05:53:33.756Z"
+      },
+      "status": "X-ray confirmed detection capability with test nut, all non-functional knobs removed from matrix 6/7/8 as precaution, investigation timeline documented at 01:28 by Ebrima Dibba, pallets awaiting re-screen."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 perforated belt torn on edge",
+      "summary": "Blue perforated belt center tearing discovered during cleaning \u2014 side of belt broken, no foreign material found in product, need replacement before start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-07T05:29:57.618Z"
+      },
+      "status": "Belt damage identified at 23:29, replacement needed before tomorrow's start per Conner Boyd."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 metal detector belt keeps stopping",
+      "summary": "Conveyor belt after metal detector experiencing issue and stopping repeatedly, maintenance on-site at 22:57.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-08-07T05:47:40.856Z"
+      },
+      "status": "Maintenance inspecting as of 23:47, no resolution reported by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Matrix 6 no bucket display",
+      "summary": "Matrix 6 stopped showing buckets at 01:32, not bagging, causing product accumulation while maintenance works issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-07T07:32:25.116Z"
+      },
+      "status": "Maintenance on-site as of 01:32, no resolution reported by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 Target depositor not cleaned to spec",
+      "summary": "Target depositor marked complete on quick view but pistachio dust present throughout equipment, needs re-clean and allergen test.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-07T08:56:33.642Z"
+      },
+      "status": "Re-cleaned by third shift, still needs QA inspection and allergen test as of 07:08."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Kitchen A condensed milk seal leaking",
+      "summary": "Seal blown on condensed milk line in Kitchen A \u2014 4 pounds of milk leaking into mixing tank A every batch made in Kitchen B.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-07T10:59:46.341Z"
+      },
+      "status": "Not urgent per discussion with Jody Howse, plan to replace during upcoming BET 23g to PRS 12g changeover."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolder jams recurring through 2nd and 3rd shift",
+      "summary": "Demolder jammed 8 separate times between 16:16 and morning handoff \u2014 mold flipping off belt, twisting disabled at 15:02 as workaround, belt tracking issues, turning arm pressure increased.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-06T22:16:13.232Z"
+      },
+      "status": "Raymond Fleming increased turning arm pressure and adjusted swing at 22:14, Lance cleaned and tracked belt, jams continued through night, last reported stop at 22:19 third shift."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS scale and blow-off issues partially cleared",
+      "summary": "Kick-offs and consistent zero error at 02:29, one side of scale not locked in \u2014 less blow-offs after fix but still seeing some plus double bags from product stuck in jaws.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-07T08:29:35.193Z"
+      },
+      "status": "Maintenance corrected unlocked scale side at 03:47, improved but Zack reports product still getting stuck between jaws causing doubles, plan to discuss with 1st shift."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 twins belt and laser printer work in progress",
+      "summary": "Line stopped at 06:26 for twins belt adjustment, came back at 07:11, then stopped again at 07:14 for laser printer trial.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-07T12:26:22.406Z"
+      },
+      "status": "Line down at window close, maintenance trying laser printer configuration."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 slowed to 12 MPM for BBD print quality",
+      "summary": "Could not get consistent best-by-date print on layflat bar at higher speed, line slowed from 14 MPM to 12 MPM.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-07T07:28:10.655Z"
+      },
+      "status": "Running at reduced speed as of 01:28, seeing better print results at 12 MPM."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sensor B100A failing to reject product",
+      "summary": "Sensor B100A not rejecting defective product, causing jams on rail and large remelt volume.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-06T14:54:31.716Z"
+      },
+      "status": "Maintenance notified at 08:54, no follow-up or resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch E04 error returned on third shift",
+      "summary": "E04 film error happening almost every other minute starting 23:07 when Nathan and Alan came to show Raoul the locking arm \u2014 same issue that was resolved earlier at 16:57.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-07T05:07:17.597Z"
+      },
+      "status": "Maintenance notified at 23:07, no resolution reported by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix BEQ ran with wrong lot code",
+      "summary": "BEQ pouches ran with lot code 26114 when correct lot is 26211 \u2014 may be just one pallet affected.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-07T08:42:03.355Z"
+      },
+      "status": "Identified at 02:42, no resolution or disposition reported by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line first batch soft and stuck in cutter",
+      "summary": "First batch of product coming out very soft at start of production, got stuck in cut blade.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-07T13:06:49.441Z"
+      },
+      "status": "Reported at 07:06, conveyor tensioned and moving but no update on soft product issue by window close."
+    }
+  ]
+}

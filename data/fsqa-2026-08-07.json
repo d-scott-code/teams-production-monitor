@@ -1,0 +1,157 @@
+{
+  "date": "2026-08-07",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "L1 S2 matrix piece found in product \u2014 *4 pallets* on hold pending X-ray re-screen, missing nut not recovered."
+  },
+  "summary": "One active hold at L1 S2 after metal matrix hardware entered product stream; X-ray caught it, similar piece tests positive. Target depositor at L1 S3 sent back for re-clean after pistachio allergen dust found post-sanitation. Reject sensor failure at L3 ML1 and incorrect lot code at L3 Matrix both caught and corrected on shift.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "4 pallets pretzel pouches held for FM re-screen",
+      "summary": "Matrix 7 lost rubber screw head with metal plate and nut into product stream around 23:15; X-ray rejected bag with plate inside, nut still missing \u2014 4 finished pallets from affected window pulled for re-inspection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-08-07T05:51:27.855Z"
+      },
+      "status": "On hold pending X-ray re-screening; test nut confirmed detectable by X-ray."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal matrix hardware in pretzel pouch product",
+      "summary": "Rubber screw head with metal plate from Matrix 7 found in X-ray rejected bag at 23:15; accompanying nut missing and not recovered despite area search \u2014 maintenance removed all unused matrix knobs as precaution.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-07T05:53:33.756Z"
+      },
+      "status": "Open \u2014 metal plate recovered in rejected bag, nut unaccounted for; 4 pallets on hold, test piece confirmed X-ray detectable."
+    },
+    {
+      "plant": "L3",
+      "title": "Reject sensor B100A failing on ML1",
+      "summary": "Sensor B100A not rejecting product, causing rail jams and large remelt volume at 08:54 \u2014 maintenance notified immediately.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-06T14:54:31.716Z"
+      },
+      "status": "Resolved \u2014 no follow-up messages indicate sensor corrected or bypassed; no product hold mentioned."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "VFFS scale causing blow-offs and double bags",
+      "summary": "One side of scale not locked in, causing consistent reject blow-offs and product stuck between jaws; maintenance corrected but some issues persisting at shift end (03:47).",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-07T08:29:35.193Z"
+      },
+      "status": "Open \u2014 scale repositioned and improved but not fully stable; 1st shift to monitor."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow wrap sealing failures on ML1 Cavanna",
+      "summary": "26 of 1,050 pieces (3.4%) found with cut film causing package to open at 10:13; maintenance adjusted jaws, follow-up inspection at 14:09 showed 100% seal pass rate.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-06T16:12:42.984Z"
+      },
+      "status": "Resolved \u2014 jaw adjustment corrected issue, confirmed by QA box inspection."
+    },
+    {
+      "plant": "L1",
+      "title": "Perforated belt tearing on S4",
+      "summary": "Blue perforated belt tearing in center during cleaning at 23:29; no FM found in product, no visible piece missing, belt marked for replacement before next run.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-07T05:29:57.618Z"
+      },
+      "status": "Resolved \u2014 belt isolated, no product impact; replacement scheduled before startup."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle product too soft at cutter",
+      "summary": "First batch from truffle line exiting very soft, sticking in cut blade at 07:06 \u2014 temper confirmed in range.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-07T13:06:49.441Z"
+      },
+      "status": "Open \u2014 blade cleaned and tensioned, first-batch startup issue."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Target depositor failed re-inspection on S3",
+      "summary": "Target depositor marked complete on cleaning board but found with pistachio dust throughout equipment during startup inspection at 02:56; crew sent back to re-clean.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-07T08:56:33.642Z"
+      },
+      "status": "Open \u2014 re-clean in progress, not yet re-inspected or ATP verified."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold ATP failures",
+      "summary": "8 mold totes tested at 15:56, only 6 passed ATP on first attempt; second round at 22:01 showed 7 of 7 pass.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-08-06T21:56:19.932Z"
+      },
+      "status": "Resolved \u2014 re-test passed, molds released for production."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Pistachio residue on Target depositor",
+      "summary": "Same event as sanitation item \u2014 Target depositor found with pistachio dust after marked complete, creating allergen cross-contact risk for next product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-07T08:56:33.642Z"
+      },
+      "status": "Open \u2014 re-clean in progress."
+    },
+    {
+      "plant": "L3",
+      "title": "Incorrect lot code on Matrix pallet",
+      "summary": "BEQ pallet ran with lot 26114 instead of correct lot 26211 at 02:42; scope unknown (may be single pallet or larger run).",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-07T08:42:03.355Z"
+      },
+      "status": "Open \u2014 pallet flagged for investigation, extent of mislabeling unclear."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding matrix hardware inspection to S2 pre-shift checklist \u2014 today's loose screw/plate on Matrix 7 mirrors similar hardware issues flagged earlier this week."
+    },
+    {
+      "plant": "L1",
+      "text": "Review cleaning sign-off protocol on S3 \u2014 Target depositor was marked complete but failed visual inspection for allergen residue, suggesting crew rushed or checklist missed food-contact surfaces."
+    },
+    {
+      "plant": "L2",
+      "text": "Add VFFS scale lock verification to startup SOP \u2014 today's blow-offs and double bags traced to unlocked scale side, a mechanical step that should be caught before product runs."
+    },
+    {
+      "plant": "L3",
+      "text": "Add lot-code verification step to Matrix startup checklist \u2014 BEQ pallet ran with wrong lot code (26114 vs 26211), caught only during post-run audit."
+    }
+  ]
+}
