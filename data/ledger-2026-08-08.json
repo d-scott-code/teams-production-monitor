@@ -1,0 +1,198 @@
+{
+  "date": "2026-08-08",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 WDS system has been down since *17:29* on servo errors \u2014 vendor call scheduled Monday 06:00."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran pretzel thins all day with brief temper and conveyor pauses, all cleared by mid-shift. Sollich 2 completed PRS jar run and level 2 clean. Sollich 4 finished production early for cleaning.",
+    "L2": "ML3 maltitol pump tripped breakers overnight \u2014 maintenance pulled it, needs Monday morning repair before York run starts. FFS had recurring scale rejections through first shift but all cleared same day. Level 2 cleans completed across lines.",
+    "L3": "ML4 WDS system failure started 17:29 \u2014 third shift troubleshot all night, unable to reset servos or PLCs, vendor call scheduled 06:00 Monday. ML1 ran with intermittent temper dips and printer faults but stayed online. Truffle line completed HER THX run and level 2 clean."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Drum pump borrowed from L3 overnight, returned 00:44 for York startup Monday."
+    },
+    {
+      "plant": "L3",
+      "text": "IMS reminded floor teams multiple times to upload chocolate labels and discarded flow wrap to SafetyChain for inventory accuracy."
+    },
+    {
+      "plant": "L1",
+      "text": "PRS jar run switched to alternate box size (40402) mid-run due to 41059 shortage; pallets flagged for rework due to non-conforming final pallet spec."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 temper out of range",
+      "summary": "Line paused at 07:41 for low temper, 6 adjustment points made.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-07T13:41:55.469Z"
+      },
+      "resolution": "Two good tempers, operations resumed 08:07."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C12 cross conveyor ground fault",
+      "summary": "Z conveyor cross belt faulted, showing ground fault error at HMI.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-07T14:14:55.574Z"
+      },
+      "resolution": "Electrical cord torn under motor, maintenance replaced cord and re-fed housing hooks at 09:47."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar weights low with incorrect data",
+      "summary": "Jar weight check found low weight values not matching spec sheet.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-08-07T21:45:58.231Z"
+      },
+      "resolution": "Team corrected data at 15:45 per Victor Mejia."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS check weight rejecting all pouches",
+      "summary": "Scale kicking off every pouch as underweight despite correct count, line cycling down and up.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-07T13:47:36.839Z"
+      },
+      "resolution": "Maintenance adjusted scale, line stable after 08:06 per Jeffrey Barney."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web frame out of tracking",
+      "summary": "Tracking error forced hard reset at 11:03, maintenance troubleshooting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-07T17:03:29.845Z"
+      },
+      "resolution": "Line running at 11:44."
+    },
+    {
+      "plant": "L2",
+      "title": "Spare pump broken, borrowed from L3",
+      "summary": "ML3 spare pump broke at base during setup, needed replacement from L3 to continue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-08T05:40:50.156Z"
+      },
+      "resolution": "Pump from L3 returned at 00:43."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate temper red, no sheets available",
+      "summary": "Depositing stopped at 14:53, no temper sheets to verify before restart.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-07T20:53:30.862Z"
+      },
+      "resolution": "Ran temper test with TL tempermeter (both read 0.0), restarted line at 16:03."
+    },
+    {
+      "plant": "L3",
+      "title": "South side depositor piping leak",
+      "summary": "Leak flagged at 08:19, split gasket replaced by 08:45.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-07T14:19:44.294Z"
+      },
+      "resolution": "Nelson found split gasket causing leak, replaced with new one, no more leaks at 08:45."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 flow wrap printer faulting",
+      "summary": "Printer stopped twice in 20 minutes, Cavanna offline waiting for restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-07T19:06:11.767Z"
+      },
+      "resolution": "Printer restarted, Cavanna running at 13:10."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt torn",
+      "summary": "Flow wrap belt discovered torn during run at 14:04, line paused.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-07T20:04:00.21Z"
+      },
+      "resolution": "Maintenance notified, belt issue addressed, rollers cleaned by 19:00."
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor 2 tank failed initial QA",
+      "summary": "Tank 2 flagged for recleaning at 15:46, crew waiting on QA since 15:16.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-07T21:16:51.443Z"
+      },
+      "resolution": "Recleaned, ATP cleared at 16:53 (Lorena Abreu)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Trash compactor not working",
+      "summary": "Plant-wide compactor offline, no detail on fault.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-08T05:19:42.916Z"
+      },
+      "status": "Reported at 23:19, no follow-up or resolution by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 maltitol pump tripping breakers",
+      "summary": "Pump intermittently fails to engage after breaker trips \u2014 low hum but won't start, then works if cycled.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-08T06:54:34.259Z"
+      },
+      "status": "Maintenance pulled pump for inspection at 01:47. Gustavo reported at 02:42 it needs Monday morning repair before York run; 73 buckets isomalt batched, zero maltitol."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS system failure, servos unresponsive",
+      "summary": "Entire WDS showing errors and not responding since 17:29 \u2014 cannot reset servos or enter manual mode despite full PLC power cycle.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-07T23:29:27.094Z"
+      },
+      "status": "Third shift checked all doors and sensors, power-cycled XM42 Rexroth controller, could not resolve. Kavin documented VFD errors showing safe lights triggered across all stations. Chad Stone scheduling vendor call for Monday 06:00."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "date": "2026-08-08",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S2 PRS jar pallets on *rework hold* \u2014 packed in wrong box size, spec mismatch on final pallet configuration."
+  },
+  "summary": "One active hold \u2014 L1 S2 PRS dark chocolate jars packed in wrong boxes, pallets moved to rework. Three quality issues: L2 FFS checkweigher rejecting good-weight pouches, L1 S3 running 20% over centerline speed with high doubles, L3 ML1 temper instability. Three sanitation gaps at L3 ML4: depositor tank recleaning, caramel chain buildup, chocolate-filled drains.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "PRS dark chocolate jars \u2014 wrong packaging",
+      "summary": "Pallets packed in 40402 boxes instead of specified 41059; final pallet configuration does not meet spec for box size, row count, or jar count \u2014 moved to rework pending disposition.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-08-08T04:55:02.118Z"
+      },
+      "status": "On hold for rework \u2014 Quality approved temporary use of wrong boxes but flagged final pallets as non-compliant."
+    }
+  ],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 running 20% over centerline speed",
+      "summary": "Line found running at 72 rows/min instead of 60; most bed centerlines out of compliance, high rate of doubles, triples, and quadruples observed \u2014 brought back to centerline by Quality.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-07T13:44:51.363Z"
+      },
+      "status": "Resolved \u2014 centerlines restored by 08:56, adjustments documented."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS checkweigher rejecting correct-weight pouches",
+      "summary": "Checkweigher repeatedly kicked all pouches as underweight despite bags containing correct count (10 bars each); maintenance adjusted, line restarted multiple times through first shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-07T13:47:36.839Z"
+      },
+      "status": "Resolved after maintenance adjustments \u2014 line ran stable by mid-shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper instability",
+      "summary": "Temper repeatedly dropped out of range throughout day; multiple pauses for adjustment and recovery, glycol below setpoint observed overnight.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-07T16:19:58.772Z"
+      },
+      "status": "Ongoing \u2014 line running but temper required frequent intervention; root cause unknown."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Donner 1 belt worn and damaged",
+      "summary": "Belt wear and damage discovered during 3rd shift cleaning; maintenance notified.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-08T08:27:05.763Z"
+      },
+      "status": "Open \u2014 flagged for maintenance action Monday."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar weight check \u2014 low weight with incorrect data",
+      "summary": "Weight check found jars low with incorrect data entry against spec; team corrected immediately.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-08-07T21:45:58.231Z"
+      },
+      "status": "Resolved on shift \u2014 corrected before further production."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 Depositor 2 tank recleaning",
+      "summary": "QA inspection at 15:46 flagged areas of tank 2 for recleaning; second inspection cleared at 16:53 after rework, ATP passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-08-07T21:46:31.68Z"
+      },
+      "status": "Resolved \u2014 recleaned and ATP cleared same shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 caramel buildup on chain",
+      "summary": "Considerable caramel buildup found on chain during shift changeover inspection; flagged for cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-08-07T21:50:22.959Z"
+      },
+      "status": "Being addressed \u2014 cleaning in progress per Preston's comment."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 drains full of chocolate",
+      "summary": "Drains found full of chocolate during 3rd shift cleaning at 00:57; FSQA flagged for MSS schedule review.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-08T06:57:12.4Z"
+      },
+      "status": "Cleaned same shift \u2014 Jorel recommended adding to regular maintenance schedule."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review packaging component verification at S2 job startup \u2014 based on PRS jars running 2,000+ pieces in wrong boxes before the mismatch was caught, requiring rework hold."
+    },
+    {
+      "plant": "L1",
+      "text": "Review shift handoff procedures for S3 centerline compliance \u2014 based on line found running 20% over speed with bed settings out of spec at start of 1st shift."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding ML4 drain cleaning to the master sanitation schedule on a fixed frequency \u2014 based on chocolate-filled drains found overnight that required unscheduled cleaning."
+    }
+  ]
+}
