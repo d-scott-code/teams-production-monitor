@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-10",
+  "headline": {
+    "eyebrow": "Quality adjustments",
+    "text": "L3 ML1 line stopped after *8 consecutive* temper readings at -0.8 \u2014 adjustments underway to bring chocolate back to spec."
+  },
+  "summary": "Two quality issues at L3 required line stoppages for adjustment: ML1 temper trending low, MF Matrix running underweight. L1 S3 decorator overflowed despite closed valve; crew cleaned. No active holds or food-safety events.",
+  "holds": [],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML1 temper running low \u2014 line stopped for adjustment",
+      "summary": "8 consecutive temper readings at -0.8 triggered line stop at 06:34; team adjusting water jacket to 89\u00b0F, mixing water to 84\u00b0F, cold water to 58\u00b0F to bring chocolate back into spec.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-10T12:34:16.61Z"
+      },
+      "status": "Open \u2014 operator making temperature adjustments, line down as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix weight issues flagged",
+      "summary": "Line running out of spec on weight; maintenance notified and making adjustments to production line.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-10T12:40:40.215Z"
+      },
+      "status": "Open \u2014 adjustments in progress as of 06:40."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix lot and date code corrected",
+      "summary": "Lot and date coding error identified and corrected during shift.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-08-10T12:11:29.939Z"
+      },
+      "status": "Resolved \u2014 coding corrected."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 decorator overflow despite closed valve",
+      "summary": "Decorator overflowed even with valve closed; crew cleaned the affected area.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-10T11:21:31.536Z"
+      },
+      "status": "Resolved \u2014 area cleaned."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S3 decorator valve and overflow protection \u2014 today's overflow despite a closed valve suggests a mechanical fault that could repeat."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding temper trend monitoring to ML1 startup checks \u2014 today's 8 consecutive low readings suggest the drift started earlier than the line stop."
+    }
+  ]
+}

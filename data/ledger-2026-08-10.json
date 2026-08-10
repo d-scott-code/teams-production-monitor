@@ -1,0 +1,130 @@
+{
+  "date": "2026-08-10",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 down *over 40 minutes* for temper adjustments with no resolution by window close \u2014 8 readings at -0.8."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 Kitchen butter pump was reset and cleared within an hour. Jar shortage flagged at 07:15 \u2014 short 40,987 units (need 82,368, have 41,381) for today and tomorrow production.",
+    "L2": "ML2 lost 30 minutes to a roller replacement on the flow-wrap twin vacuum belt but came back up before 07:00. ML3 waiting on tri clamp to complete pump swap.",
+    "L3": "ML1 down since 06:34 for temper adjustments with 8 readings at -0.8 and no clear resolution by 07:15. MF Matrix flagged weight issues with maintenance making adjustments. ML4 short correct blocking bars on depositor 4 and missing saved centerlines for HER King Size flow-wrap."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Alan Todd noted ML3 schedule for Aug 10 is missing the 2-hour chocolate-only dial-in window (06:00-08:00) that was agreed on weeks prior."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Kitchen butter pump not working",
+      "summary": "Butter pump failed and required mechanic reset before kitchen could proceed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-08-10T10:48:57.027Z"
+      },
+      "resolution": "Reset completed at 05:57 \u2014 \"The Sollinch 2 Kitchen butter pump was reseted and is now working properly\" (S4 Kitchen Tablet)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 roller failure on flow-wrap twin vacuum belt",
+      "summary": "Line stopped at 06:08 to replace roller on the twin vacuum belt inside the flow-wrap, down approximately 30 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-10T12:08:32.826Z"
+      },
+      "resolution": "Line restarted at 06:57 \u2014 \"Line start running up\" (ML2 FW). Down time confirmed at 30 minutes."
+    },
+    {
+      "plant": "L3",
+      "title": "Zone pressure gauge valve on red",
+      "summary": "Gauge valve hit red on ML1, maintenance responded and brought it back to green within 2 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-10T11:57:10.546Z"
+      },
+      "resolution": "Cleared at 05:59 \u2014 \"Back in the green now\" (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Jar shortage for SKU 40105-V3",
+      "summary": "Production needs 82,368 jars for today and tomorrow but only 41,381 are available \u2014 short 40,987 units.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-08-10T13:15:46.453Z"
+      },
+      "status": "Flagged at 07:15 with high importance, no response in window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 pump replacement waiting on tri clamp",
+      "summary": "L1 sent replacement pump but install is blocked waiting on tri clamp fitting; Alex checking L1 for spare.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-10T12:51:55.111Z"
+      },
+      "status": "Pump received from L1 at 06:54 but missing tri clamp; Alex went to L1 to search for one, no confirmation of install completion."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 down for temper adjustments",
+      "summary": "Line stopped at 06:34 with 8 temper readings at -0.8; multiple water temperature adjustments requested but no confirmation line is back up.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-10T12:34:16.61Z"
+      },
+      "status": "Down since 06:34, operator making adjustments per Shawn Jewkes guidance (water jacket to 89, mixing water to 84, cold water to 58). No resolution by 07:15 window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix weight issues",
+      "summary": "Line flagged weight variances; maintenance notified and making adjustments on the production line.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-10T12:40:40.215Z"
+      },
+      "status": "Maintenance on line making adjustments as of 06:40, no confirmation weights are back in spec."
+    },
+    {
+      "plant": "L3",
+      "title": "Wrong blocking bars on ML4 depositor 4",
+      "summary": "Blocking bars currently on depositor 4 are incorrect; Victor searching for the correct ones.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-10T12:38:59.88Z"
+      },
+      "status": "Victor looking for correct blocking bars as of 06:38, no update on whether they were located."
+    },
+    {
+      "plant": "L3",
+      "title": "Missing centerlines for HER King Size flow-wrap",
+      "summary": "ML4 has no saved centerlines for HER King Size FW in system, only snack size; operators need settings to run product.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-10T12:50:57.177Z"
+      },
+      "status": "Flagged to Shawn Jewkes at 06:50; Shawn responding he'll check when he arrives but names look different than expected."
+    }
+  ]
+}
