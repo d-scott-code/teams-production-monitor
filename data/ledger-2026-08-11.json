@@ -1,0 +1,298 @@
+{
+  "date": "2026-08-11",
+  "headline": {
+    "eyebrow": "Materials short",
+    "text": "L1 ran out of jars overnight \u2014 first delivery expected *09:00\u201310:00* this morning"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran dark chocolate pretzels with a decorator appearance issue that cleared after transferring chocolate and adjusting. S4 found a piece of plastic from a brown sugar bag in the filter before first batch \u2014 tank rinsed, started cooking at 06:13. Line ran out of jars around 03:00; first load picks up in SLC at 07:30 with delivery expected by mid-morning.",
+    "L2": "ML3 had recurring mold jams and doubles/triples issues through the day; black guide fix identified at 06:59 cleared the root cause. Flow wrapper sensor and TG3 metal detector issues caused intermittent stops. ML2 battled open seals on the flow wrapper for several hours until maintenance adjustments cleared it by 19:10. FFS tape machine went down twice, back running by 15:32. Macadamia delivery delayed to Friday due to additional micro testing.",
+    "L3": "ML4 stopped production at 05:04 after repeated mold jams and over 2,000 lbs scrap \u2014 root cause was dirty molds sticking together and licking roller 2 missing parts. Line ran empty, parts reinstalled, restarted at 03:23 with no further jams. TG discharge programming issues overnight after tech left without validating changes; Stefan called back in. TG3 metal detector and TG5 chocolate jams remain active. ML1 had a quick sensor repair on the Cavanna at 05:52, back running by 06:00."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Troy Baxter found the sealer gate stop setting had been turned off (HMI is password protected); corrected to prevent unsealed jars."
+    },
+    {
+      "plant": "L2",
+      "text": "Belt on ML2 first chicane was installed backwards at startup; corrected."
+    },
+    {
+      "plant": "L2",
+      "text": "Nose bars on ML3 metal detector belt were installed backwards, causing startup issues; team reminded of arrow markings."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 discovered depositor 2 and 3 pump systems were swapped after filling hoppers; required wash and reinstall."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 sealer gate stop disabled",
+      "summary": "Unsealed jars passing through because the gate stop setting had been turned off in the HMI, allowing jars to continue when sealer faulted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-10T14:30:21.659Z"
+      },
+      "resolution": "Cleared at 08:30 \u2014 Troy turned the setting back on and posted instructions."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 decorator chocolate appearance dark",
+      "summary": "Decoration coming out too dark after cooling; team transferred half the decorator tank to enrober and waited for new chocolate to melt and improve appearance.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-10T23:52:14.821Z"
+      },
+      "resolution": "Cleared by 19:03 \u2014 line running with acceptable appearance after tank transfer and QA approval (Jorel 18:33)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 plastic in mixing tank filter",
+      "summary": "Piece of white plastic from brown sugar bag found in S4 filter at 05:32 before batch started; tank already cleaned prior to finding.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-08-11T11:37:21.769Z"
+      },
+      "resolution": "Cleared by 05:57 \u2014 Ebrima reported tank completely rinsed, no additional pieces found; first batch started cooking at 06:13."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrapper open seals",
+      "summary": "Film seals coming out open despite cleaning, adjustments, and switching to new film roll; maintenance working through multiple iterations.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-10T20:33:18.739Z"
+      },
+      "resolution": "Cleared by 19:10 \u2014 Wilson reported \"packaging good seal appearance and passed water leak test.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 ramp conveyor stuck up",
+      "summary": "Ramp conveyor would not go down after multiple power cycles; switching to Hershey Mini recipe cleared it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-10T14:00:19.294Z"
+      },
+      "resolution": "Cleared at 08:29 when Alan Todd switched recipes to Hershey Mini \u2014 \"ramp went down.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 mold jams at demolder",
+      "summary": "Recurring mold jams at the demolder through first and second shift, multiple stops for clearance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-10T16:57:58.899Z"
+      },
+      "resolution": "Cleared by 06:59 \u2014 Alex identified black guide wasn't pushing molds correctly along the top, causing transition failures."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 doubles and triples spiking",
+      "summary": "High number of double and triple pieces observed in final box counts; pallet placed on hold pending adjustment.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-08-10T17:54:29.848Z"
+      },
+      "resolution": "Cleared at 12:41 \u2014 Maria Caldera reported \"no additional double pieces have been found, issue resolved\" after adjustments."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS tape machine failures",
+      "summary": "Tape machine not working, line stopped twice during second shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-10T19:47:43.289Z"
+      },
+      "resolution": "Cleared at 15:32 \u2014 Brandon Lance reported \"line is back up and running again.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 filling nozzle stuck",
+      "summary": "One depositor nozzle stuck, line stopped to clear.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-08-11T01:43:46.532Z"
+      },
+      "resolution": "Cleared at 19:57 \u2014 \"line running again.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 X Axis Servo faulting",
+      "summary": "X Axis Servo on depositor kept faulting out; troubleshooting revealed pump systems for depositors 2 and 3 had been swapped.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-10T16:02:35.607Z"
+      },
+      "resolution": "Cleared at 13:04 \u2014 Itzel reported \"running\" after identifying and correcting the swapped hoppers."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jams from dirty molds",
+      "summary": "Repeated mold jams coming out of cooler 1 into depositor 2; molds sticking together from buildup, licking roller 2 missing parts.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-08-11T05:53:35.857Z"
+      },
+      "resolution": "Cleared at 03:23 \u2014 Kimberly reported \"no further mold jams\" after licking roller 2 parts reinstalled and line ran empty to clear."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 drip pan sensor damage",
+      "summary": "Mold jam on depositor 2 ripped cable and bent the following sensor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-08-11T05:53:35.857Z"
+      },
+      "resolution": "Cleared at 01:09 \u2014 Jose made temporary repair, cable spliced; line back up."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna sensor retainer ring broken",
+      "summary": "Sensor nut broken on chain guard, line stopped while maintenance found replacement.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-11T11:52:02.118Z"
+      },
+      "resolution": "Cleared at 05:59 \u2014 Jose reported \"already fixed and running.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Jar shortage \u2014 line down overnight",
+      "summary": "L1 ran out of 40105-V3 jars around 03:00; first load scheduled for pickup in SLC at 07:30 with delivery expected 09:00\u201310:00.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-08-10T13:15:46.453Z"
+      },
+      "status": "Line down since ~03:00. Kirk confirmed first pickup at 07:30, delivery expected 09:00\u201310:00 per message at 02:51. Chad requested update at 07:16."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 top cover longitudinal crack",
+      "summary": "Top Cover #2 has a longitudinal crack with coating detachment in some areas; maintenance inspection recommended.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-08-10T20:19:54.86Z"
+      },
+      "status": "Identified at 14:19; no follow-up on inspection or repair as of window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sensor and TG3 metal detector issues",
+      "summary": "PG-11 cut position sensor faulting repeatedly; TG3 metal detector causing intermittent stops through overnight into first shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-10T22:22:51.444Z"
+      },
+      "status": "Alan noted PG-11 reteaching at 16:33; TG3 down for detector issues at 23:55, 01:35, and mentioned again at 04:41 as ongoing."
+    },
+    {
+      "plant": "L2",
+      "title": "Macadamia ingredient delayed to Friday",
+      "summary": "FTL of macadamias expected today was delayed due to additional micro testing by vendor; new ETA Friday 08/14.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Martin Carlos",
+        "time_utc": "2026-08-10T17:46:38.664Z"
+      },
+      "status": "Martin posted at 11:46 that production schedule will be pushed back accordingly."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS false overweight rejects",
+      "summary": "Checkweigher rejecting many pouches as overweight, but only 1 in 5 actually out of spec when hand-weighed.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-11T02:17:28.259Z"
+      },
+      "status": "Brandon reports maintenance will look into calibration; no follow-up as of 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG discharge programming issues",
+      "summary": "Theegarten tech made changes to reject programming without validating; discharge not working correctly, letting bad bars through and rejecting good product.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-11T02:40:23.175Z"
+      },
+      "status": "Tech left at ~21:00 without testing. Stefan called back in at 21:31 to reverse changes. Ray asked for gameboy connection to allow WDS remote troubleshooting overnight."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 metal detector faulting",
+      "summary": "TG3 keeps stopping due to metal detector issues; down multiple times overnight and into first shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-11T07:35:19.913Z"
+      },
+      "status": "Down at 23:55, maintenance notified. Down again at 01:35. Kimberly recommended stopping line at 04:41 due to ongoing TG3 issues and high scrap."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gameboy won't connect to WDS",
+      "summary": "Gameboy powers on but won't connect to WDS network at any connection box; issue appears to be on WDS side.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-08-11T06:16:37.76Z"
+      },
+      "status": "Kavin tested all connection boxes overnight, none worked. Left it connected. Chad asked Ray to notify WDS at 06:29."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 chocolate jamming",
+      "summary": "TG5 has been jamming on chocolate but maintenance did not have time to troubleshoot without consistent product flow.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-11T07:35:02.882Z"
+      },
+      "status": "Kimberly noted at 05:47 that TG5 had chocolate jam issues but couldn't be fully diagnosed during the production chaos."
+    }
+  ]
+}

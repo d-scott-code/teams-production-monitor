@@ -1,0 +1,210 @@
+{
+  "date": "2026-08-11",
+  "headline": {
+    "eyebrow": "Metal detector fault",
+    "text": "L3 ML4 metal detector ML1 rejecting *all* test cards since overnight \u2014 root cause unknown, TG3 down most of shift."
+  },
+  "summary": "One active hold on L2 ML3 for quality defects. Plastic found in L1 S4 mixing tank filter before product contact \u2014 no product exposed. L3 ML4 ran 2,000+ lbs scrap overnight due to dirty-mold jams and metal-detector faults; line stopped at shift end for deep troubleshooting.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Last pallet held for doubles, empties, open pieces",
+      "summary": "Final box inspection on ML3 peppermint cream run found open, empty, and double pieces; last pallet placed on hold pending maintenance adjustments, operator stationed at Z conveyor to hand-sort remainder of shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-08-10T23:44:59.595Z"
+      },
+      "status": "On hold pending disposition; manual sorting in place for continued production."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Plastic in S4 mixing tank filter",
+      "summary": "White plastic from brown sugar bag found in filter at 05:32 during batch prep; no product in tank, tank cleaned prior to finding, fully rinsed after \u2014 no additional pieces found.",
+      "severity": "high",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-08-11T11:37:21.769Z"
+      },
+      "status": "Resolved \u2014 tank rinsed, first batch dropped at 07:01 after full verification."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 metal detector TG3/ML1 rejecting all test cards",
+      "summary": "Metal detector at ML1 faulting continuously since overnight, rejecting all test cards; TG3 down most of third shift and into first; root cause unknown, WDS support engaged.",
+      "severity": "high",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-11T07:35:19.913Z"
+      },
+      "status": "Open \u2014 maintenance and WDS troubleshooting, line stopped at 05:10 after 2,000 lbs scrap."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 licking roller 2 missing parts at startup",
+      "summary": "Third shift found licking roller 2 disassembled with pieces missing; led to repeated mold jams from chocolate buildup; parts reinstalled, mold jams stopped.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-11T08:09:52.264Z"
+      },
+      "status": "Resolved after parts reinstalled at 03:23; depositing resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 top cover crack with coating detachment",
+      "summary": "Longitudinal crack identified in S4 top cover #2 with surface coating lifting in areas; potential for coating fragments to enter product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-08-10T20:19:54.86Z"
+      },
+      "status": "Open \u2014 inspection and evaluation by maintenance recommended, not yet addressed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 sealer gate setting off, unsealed jars passed",
+      "summary": "Sealer error allowed jars to pass while sealer was off; HMI setting 'Stop gates on error' had been turned off (password-protected screen); setting restored.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-10T14:30:21.659Z"
+      },
+      "status": "Resolved \u2014 setting re-enabled, unknown who disabled it."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrap open seals",
+      "summary": "Film seals opening despite cleaning, fill adjustments, and film roll change; maintenance worked issue for 3+ hours across second shift.",
+      "severity": "high",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-10T21:16:51.533Z"
+      },
+      "status": "Resolved \u2014 line running with good seals and water-leak-test pass by 19:10."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 decorator chocolate appearance dark after cooling",
+      "summary": "Decorator drizzle too dark after cooling tunnel; transferred half of decorator tank to enrober tank and added fresh chocolate, still pronounced; QA approved restart after buffer tank refresh.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-10T23:52:14.821Z"
+      },
+      "status": "Resolved \u2014 line restarted at 18:31 after QA approval."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 recurring doubles and triples",
+      "summary": "Mid-shift count found 750 pieces (target 744) with 15 doubles; issue resolved, then recurred at 13:09; sensor and forming-plate adjustments made.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-08-10T17:54:29.848Z"
+      },
+      "status": "Resolved by 12:41 after sensor/vacuum work; no further doubles found after 19:38 count."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS checkweigher false overweight rejections",
+      "summary": "High rate of overweight blow-offs on pouches; manual verification shows only 1 in 5 truly overweight, rest within spec.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-11T02:17:28.259Z"
+      },
+      "status": "Open \u2014 maintenance to investigate checkweigher calibration."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor pump systems cross-connected",
+      "summary": "Depositor 2 pump on depositor 3, depositor 3 pump on depositor 2; operators filled hoppers before discovery; both hoppers washed and swapped back.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-10T17:17:23.818Z"
+      },
+      "status": "Resolved after hoppers washed and reinstalled; depositing resumed at 13:04."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 drain epoxy chipping off",
+      "summary": "Epoxy coating on S3 drain starting to chip; potential foreign material risk if pieces detach into drainage system.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Candon Watt",
+        "time_utc": "2026-08-10T22:40:55.106Z"
+      },
+      "status": "Open \u2014 maintenance repair requested."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 salt residue after level 2 cleaning",
+      "summary": "Food-contact surfaces passed ATP, but salt particles remain on cable covers below belts, THG, and fixed-cover crevices; touch-up needed before caramel return.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-11T05:29:54.109Z"
+      },
+      "status": "Open \u2014 touch-up cleaning scheduled before next caramel run."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dirty molds caused overnight mold jams",
+      "summary": "Molds sticking together in cooling cabinet 1 exit due to buildup; 12+ jams from 06:00\u201313:00, over 2,000 lbs scrap; licking roller found off at start of third shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-08-11T11:16:18.377Z"
+      },
+      "status": "Line stopped at 05:10 to run empty and swap in clean molds; restart planned after inspection."
+    },
+    {
+      "plant": "L1",
+      "title": "Ladder with chocolate and caramel buildup",
+      "summary": "Ladder next to S2 tunnel 3 has chocolate and caramel on wheels and steps; not labeled per MSS, unclear which ladder designation.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Candon Watt",
+        "time_utc": "2026-08-10T22:26:34.766Z"
+      },
+      "status": "Open \u2014 needs cleaning and labeling per MSS."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 cross conveyor not cleaned",
+      "summary": "Cross conveyor near S2 pack appears uncleaned after changeover.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Candon Watt",
+        "time_utc": "2026-08-10T22:27:54.466Z"
+      },
+      "status": "Open \u2014 follow-up needed with sanitation."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "title": "S3 sealer gate setting off, unsealed jars passed",
+      "text": "Consider restricting HMI password access or adding a daily startup verification that 'Stop gates on error' is enabled \u2014 based on sealer gate setting found disabled with unknown cause, allowing unsealed jars to pass."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor pump systems cross-connected",
+      "text": "Consider adding color-coded tags or startup photo verification for depositor pump-system connections \u2014 based on pumps found swapped between depositors 2 and 3, requiring hopper wash-out."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 licking roller 2 missing parts at startup",
+      "text": "Consider adding licking-roller assembly check to ML4 startup checklist \u2014 based on roller found disassembled at third-shift start, causing 12+ mold jams and 2,000 lbs scrap before discovery."
+    }
+  ]
+}
