@@ -1,0 +1,165 @@
+{
+  "date": "2026-08-12",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S4 broken gasket piece *not detectable* by metal detector \u2014 piece remains missing after investigation."
+  },
+  "summary": "Two active holds \u2014 spatula-in-mix on L1 S4 (scrapped), gasket fragment possibly in product (MD does not detect). L1 S3 nut found in MD bin from scraper guard; maintenance found multiple bolts/nuts improperly secured. L3 ML1 broken plastic nut from safety sensor replaced with zip tie.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Spatula broken in caramel mix batch",
+      "summary": "Blade struck spatula during mixing at 09:41, broke it inside batch; batch and spatula scrapped per Hervin Herrera.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-08-11T15:41:49.799Z"
+      },
+      "status": "Resolved \u2014 batch and spatula scrapped; team reminded not to place utensils in bowl during active mixing."
+    },
+    {
+      "plant": "L2",
+      "title": "5 pallets incorrect lot code on one side of box",
+      "summary": "First shift coded boxes with correct lot on one side only; 5 pallets placed on rework, 2 at SV requested back for re-coding.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-08-11T20:48:06.827Z"
+      },
+      "status": "On hold \u2014 1st shift team scheduled to re-code all 5 pallets tomorrow morning; 2nd shift swapping cases from SV pallets."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Broken gasket piece missing \u2014 MD does not detect",
+      "summary": "Valve gasket to Sucrotherm tore at 14:20; missing fragment not found in candy, drained water, or barrel; test piece passed through MD without rejection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-08-11T20:22:23.648Z"
+      },
+      "status": "Open \u2014 reserve drained and flushed, fragment not recovered; MD test at 17:42 showed material not detectable."
+    },
+    {
+      "plant": "L1",
+      "title": "Nut found in S3 metal detector bin",
+      "summary": "Rafael found nut in MD bin at 06:46, traced to scraper guard bolts; maintenance found several bolts/nuts not properly installed or secured on same guard.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-08-12T12:46:03.866Z"
+      },
+      "status": "Resolved on shift \u2014 maintenance corrected all bolts/nuts on scraper guard and confirmed secure."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 Theegarten knife set damaged \u2014 recurring",
+      "summary": "Knife fingers bent, film fold plate knocked out at 07:01; Chris Jeffs: 'We know the root cause. We are running too long and too high of caramel.'",
+      "severity": "high",
+      "first_raised": {
+        "author": "Chris Jeffs",
+        "time_utc": "2026-08-12T13:01:12.269Z"
+      },
+      "status": "Open \u2014 maintenance repairing; root cause identified as caramel size out of spec for wrapper."
+    },
+    {
+      "plant": "L3",
+      "title": "Broken plastic nut from Cavanna safety sensor",
+      "summary": "Plastic nut securing safety door sensor broke during third shift; maintenance secured sensor with zip tie at 13:42.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-11T19:42:34.375Z"
+      },
+      "status": "Open \u2014 sensor temporarily secured with zip tie; permanent repair pending."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML3 doubles/triples from hole in same piece every mold",
+      "summary": "Raymond Fleming found same chocolate piece with hole on every mold at 14:38, likely causing FW doubles/triples.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-08-11T20:38:02.392Z"
+      },
+      "status": "Open \u2014 CIL performed at 14:30, depositor nozzles blown out; monitoring."
+    },
+    {
+      "plant": "L3",
+      "title": "Over 200 molds damaged on ML4",
+      "summary": "Itzel reported 200+ damaged molds in system at 06:32 after aligner programming issues and start/stops on first shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-12T12:32:55.027Z"
+      },
+      "status": "Open \u2014 damaged molds being cycled out; aligner programming corrected by Stefan."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate pallet label over different label",
+      "summary": "Grey Boscan flagged pallet at 08:39 with visible label underneath showing different number; assume original error led to re-labeling.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-11T14:39:00.485Z"
+      },
+      "status": "Open \u2014 pallet flagged for verification; no further disposition posted."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "ML2 chocolate dripped on molds \u2014 operator error",
+      "summary": "Filler operator reloaded recipe as training example at 02:32, forgot to turn branch pump back on; depositor ran dry and dripped on majority of molds.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-12T08:32:43.665Z"
+      },
+      "status": "Resolved on shift \u2014 all clean molds loaded, operators hand-cleaning affected molds while mold washer doors repaired."
+    },
+    {
+      "plant": "L3",
+      "title": "Caramel contamination in ML4 chocolate sweco",
+      "summary": "North sweco clogged at 02:43 with material tasting like caramel; traced to remelted chocolate from reject system; quick wash performed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-12T02:43:19.562Z"
+      },
+      "status": "Resolved \u2014 sweco washed and restarted at 04:21; Chad Stone directed stop all remelting until reject system validated for pure chocolate."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "title": "Consider pre-startup inspection checklist for S4 Theegarten knife set and guide alignment \u2014 today's second knife damage event in 24h cited caramel size out of wrapper spec as root cause.",
+      "text": "Consider pre-startup inspection checklist for S4 Theegarten knife set and guide alignment \u2014 today's second knife damage event in 24h cited caramel size out of wrapper spec as root cause."
+    },
+    {
+      "plant": "L1",
+      "title": "Review torque spec and PM frequency for S3 scraper guard bolts \u2014 today's nut found in MD bin came from guard where multiple bolts were also found loose or improperly secured.",
+      "text": "Review torque spec and PM frequency for S3 scraper guard bolts \u2014 today's nut found in MD bin came from guard where multiple bolts were also found loose or improperly secured."
+    },
+    {
+      "plant": "L2",
+      "title": "Review labeling protocol for ML2 temper recipe changes during training \u2014 today's operator forgot to re-enable branch pump after demo, causing depositor to drip on molds.",
+      "text": "Review labeling protocol for ML2 temper recipe changes during training \u2014 today's operator forgot to re-enable branch pump after demo, causing depositor to drip on molds."
+    },
+    {
+      "plant": "L3",
+      "title": "Add broken plastic parts inspection to ML1 startup checklist \u2014 today's Cavanna safety sensor nut broke on third shift and was temporarily zip-tied.",
+      "text": "Add broken plastic parts inspection to ML1 startup checklist \u2014 today's Cavanna safety sensor nut broke on third shift and was temporarily zip-tied."
+    },
+    {
+      "plant": "L3",
+      "title": "Review ML4 chocolate remelt acceptance criteria before reintroduction \u2014 today's caramel-contaminated chocolate clogged sweco, traced to reject system accepting mixed product.",
+      "text": "Review ML4 chocolate remelt acceptance criteria before reintroduction \u2014 today's caramel-contaminated chocolate clogged sweco, traced to reject system accepting mixed product."
+    }
+  ]
+}
