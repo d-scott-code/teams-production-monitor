@@ -1,0 +1,196 @@
+{
+  "date": "2026-08-13",
+  "headline": {
+    "eyebrow": "FM risk",
+    "text": "L3 ML4 depositor guide rail broke and fell during production \u2014 *no record* of product hold or inspection for foreign material before restart."
+  },
+  "summary": "One active hold (L1 S2 mislabeled chocolate barrel). L3 ML4 restarted after equipment breakage without documented product check. Five sanitation ATP failures or floor-storage violations \u2014 all corrected within shift. L2 FFS feeder misconfigured, causing underweight pouches.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Mislabeled chocolate barrel \u2014 dark in milk wrapper",
+      "summary": "One barrel of dark chocolate (item 10200) labeled as milk chocolate; IMS to relabel before release.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-12T19:37:07.391Z"
+      },
+      "status": "On hold pending IMS relabel; no product released."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "ML4 depositor guide rail fell off during run \u2014 no FM check logged",
+      "summary": "Green plastic guide rail behind depositor 1 broke off mid-shift; maintenance repaired and line restarted, but no QA hold or inspection of product for foreign material fragments documented.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-12T17:57:13.412Z"
+      },
+      "status": "Open \u2014 equipment repaired, line running; no record of product inspection or formal disposition of at-risk production."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 best-by date printing failures (missing, blurred)",
+      "summary": "Flow-wrap printer fault caused missing and blurred best-by dates on bars; affected product removed for rework, printer corrected, line resumed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-08-12T19:46:48.126Z"
+      },
+      "status": "Resolved \u2014 rework isolated, printer repaired, final cases inspected and cleared."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS checkweigher excessive false rejects",
+      "summary": "Significant pitch errors on overweight side and QA blow-offs for foreign objects that clear when re-passed through X-ray; suggests calibration drift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-13T05:12:56.495Z"
+      },
+      "status": "Open \u2014 tracking counts, will involve maintenance if trend continues."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS feeder target set to wrong weight",
+      "summary": "Feeder configured to 155 g instead of product target weight, causing low-weight pouches; Cy recalibrated checkweigher and corrected setting.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-13T13:09:23.281Z"
+      },
+      "status": "Resolved \u2014 feeder target corrected, checkweigher recalibrated."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 laser coder for caddies failed intermittently all shift",
+      "summary": "Caddy lot-code printer faulted multiple times throughout first shift, causing accumulation; maintenance fixed trigger sensor by 16:11, operators re-inspected and re-printed affected pallets.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-12T17:39:52.987Z"
+      },
+      "status": "Resolved \u2014 sensor repaired, one pallet spot-checked by QA, displays verified for lot and BB."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle flow-wrap sealing defects",
+      "summary": "Wrapper marks and tears easily during inspection at seal zone, compromising packaging integrity; operator advised to adjust.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-08-13T04:10:21.759Z"
+      },
+      "status": "Open \u2014 operator adjusting; monitoring continues."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 FD labels not peeling, jars scrapped",
+      "summary": "FD labels on S2 jar line will not peel off adhesive backing, forcing jars to be scrapped; vendor contact requested.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-12T13:29:45.937Z"
+      },
+      "status": "Open \u2014 vendor outreach in progress."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector sensitivity possibly too high",
+      "summary": "MD rejected 4 additional pieces after test cards passed; operator believes sensitivity setting may be elevated.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-08-12T21:27:36.646Z"
+      },
+      "status": "Open \u2014 flagged for QA review."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 scrap barrels not labeled",
+      "summary": "Scrap barrels at end of first shift had no labels; traceability gap for rework chocolate.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-12T21:32:24.221Z"
+      },
+      "status": "Open \u2014 first-shift supervisor notified."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Food-contact pots stored on floor",
+      "summary": "Multiple pots left on floor in violation of floor-storage prohibition; Wilson flagged to shift lead, pots washed, ATP passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-08-13T01:06:45.819Z"
+      },
+      "status": "Resolved \u2014 pots washed, ATP swab passed at 19:28 MT."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 Hapman magnet and rubber hose failed ATP",
+      "summary": "Initial ATP swab failure on Hapman magnet and rubber hose at start of third shift; rewashed and retested \u2014 passed second ATP.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-13T05:40:43.993Z"
+      },
+      "status": "Resolved \u2014 rewashed, passed ATP retest at 01:44 MT."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt rollers dirty, belt control difficult",
+      "summary": "C6 belt tracked off repeatedly; maintenance noted rollers and components dirty, making tension adjustment difficult; belt replaced but root cause is inadequate shift cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-08-13T10:41:15.704Z"
+      },
+      "status": "Open \u2014 new belt installed; maintenance suggested shift-by-shift roller cleaning to prevent recurrence."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 kitchen area left dirty after L1 cleaning",
+      "summary": "QA observed dirty parts in kitchen area after level-1 cleaning despite flagging to crew; third shift corrected.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-08-13T05:07:55.776Z"
+      },
+      "status": "Resolved \u2014 Victor Mejia confirmed areas cleaned properly at shift start."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dirty molds sticking together in cooler 5",
+      "summary": "Molds entering cooler 5 heavily fouled, sticking together; Shawn asked if licking roller and preheating were on.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-13T04:50:02.795Z"
+      },
+      "status": "Open \u2014 production checking licking roller and preheating settings."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Review FFS checkweigher and X-ray rejection tuning \u2014 excessive pitch errors and false QA rejects suggest calibration drift or overly tight tolerances, based on Zack's third-shift tracking."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding equipment-breakage response to ML4 startup checklist \u2014 today's depositor guide rail failure restarted without documented product hold or FM inspection, based on the chat record."
+    },
+    {
+      "plant": "L3",
+      "text": "Add C6 belt roller cleaning to ML1 shift checklist \u2014 today's repeated tracking failures trace to dirty rollers that maintenance could not adjust, per Jose's note after the third belt replacement."
+    }
+  ]
+}

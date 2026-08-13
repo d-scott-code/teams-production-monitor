@@ -1,0 +1,230 @@
+{
+  "date": "2026-08-13",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 was down *3 hours* on a laser printer fault \u2014 cleared at 16:11 after extended troubleshooting."
+  },
+  "per_plant_summary": {
+    "L1": "S2 ran almonds but the mini temper had multiple faults starting at 05:54 \u2014 pump, conveyor, and a leak \u2014 partially fixed by 06:48 but still needs ATP. S3 melting tank AD1 faulted out at 18:36 with no resolution. S4 struggled all shift with Hershey caramel spec vs. equipment mismatch.",
+    "L2": "ML2 had a 90-minute printer jam (13:27-13:44) and a 75-minute chocolate jam at the flow wrap (05:50-07:15), both cleared. FFS bucket 3 went down at 22:03 and is still out; blow-offs spiked overnight on pitch errors and false foreign-object rejects. Feeder target was set wrong at 07:09, causing low weights.",
+    "L3": "ML4 lost 3 hours to a laser code printer that kept faulting (13:30-16:11). ML1 replaced the C6 belt overnight, back up at 04:18, but the belt went off-track again at 05:47. Truffle enrober wire belt failed at 22:28, found further damage after first repair, finally cleared at 05:18. ML4 end spiral conveyor stopped at 07:03 as the window closed."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Almonds arrived at 01:04 for the S2 Hershey run."
+    },
+    {
+      "plant": "L3",
+      "text": "SMETA auditor arrived unannounced at 09:36 and conducted floor tours and employee interviews through first shift."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "ML2 chocolate jam at flow wrap",
+      "summary": "Bars jammed at the flow wrap; maintenance tightened the chain but it jammed again after 15 bars; chocolate under the belt identified as the root cause.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-13T11:50:59.261Z"
+      },
+      "resolution": "Cleared at 07:15 \u2014 \"Line star running up\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 printer fault",
+      "summary": "Line stopped at 13:27 when the flow-wrap printer faulted out; operators cleared and restarted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-12T19:27:47.509Z"
+      },
+      "resolution": "Cleared at 13:44 \u2014 \"Line star running up\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 Best If Used By date printing failures",
+      "summary": "Some bars had no date printed, others blurred; affected product removed for rework and final cases inspected.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-08-12T19:46:48.126Z"
+      },
+      "resolution": "Cleared at 13:47 \u2014 \"Running line; the batch printing is correct\" (Marlenis Fernandez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 laser code printer for caddies",
+      "summary": "Laser printer skipped codes on caddies all shift, creating accumulation; maintenance worked multiple faults; line paused at 14:04 to avoid handing off backlog to second shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-12T17:39:52.987Z"
+      },
+      "resolution": "Cleared at 16:11 \u2014 \"Line 4 trigger sensor for coder is fixed and running again\" (Shane Olsen). Line confirmed up at 16:11 by Shane."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober wire belt damaged",
+      "summary": "Wire belt failed at 22:28; maintenance replaced it but found further damage at 04:33; bottomer also repaired and depositing resumed on time.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-13T04:28:47.731Z"
+      },
+      "resolution": "Cleared at 05:18 \u2014 \"Bottomer has been repaired will be depositing on time at 5:50 AM for an on time start up\" (Alan Greer)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt replacement",
+      "summary": "C6 belt failed and needed replacement; maintenance swapped the belt and performed ATP before restarting.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-13T09:09:28.849Z"
+      },
+      "resolution": "Cleared at 04:18 \u2014 \"C6 belt up ml1 is up and running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Cute Cavanna silver showing on flow wrap",
+      "summary": "Too much silver foil visible inside and eventually outside the flow wrap; west side guide rail was out of place.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-12T17:30:21.006Z"
+      },
+      "resolution": "Cleared at 12:33 \u2014 \"west side guide rail was out of place. it's fixed now and the team is going to start back up\" (Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 guide rail failure",
+      "summary": "A piece fell off from depositor 1; the green guide rail behind the depositor came loose.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-12T17:57:13.412Z"
+      },
+      "resolution": "Cleared at 12:36 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola entrance jam",
+      "summary": "Line stopped for a jam at the gondola entrance; operators cleared and restarted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-12T18:37:57.859Z"
+      },
+      "resolution": "Cleared at 12:40 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 top conveyor belt jam",
+      "summary": "Jam at the top conveyor belt; operators cleared and adjusted guide rails to prevent recurrence.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-13T06:08:22.501Z"
+      },
+      "resolution": "Cleared at 00:45 \u2014 \"Depositing now\" (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 mini temper multiple faults",
+      "summary": "Chocolate won't flow properly from the mini temper; return conveyor 2 faulted, stirrer/pump faulted, and a leak appeared above the temper unit.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-13T11:54:34.68Z"
+      },
+      "status": "Leak tightened at 06:48, return belt 2 working as of 06:32, but C11 still needs visual check and ATP testing as of 07:04."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 melting tank AD1 faulting",
+      "summary": "Melting tank AD1 faults out when switched to manual mode.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-13T00:36:19.013Z"
+      },
+      "status": "Reported at 18:36; no resolution by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bucket 3 down",
+      "summary": "Buckets 3 and 4 stopped at end of second shift; bucket 4 restarted but bucket 3 is still down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-13T04:03:58.582Z"
+      },
+      "status": "Maintenance reached out at 22:03; no update by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS excessive blow-offs on scale and X-ray",
+      "summary": "Steady pitch-error blow-offs on the overweight side and QA rejects for foreign objects that clear when re-tested; tracking counts to determine if maintenance needed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-13T05:12:56.495Z"
+      },
+      "status": "As of 01:48, still seeing steady pitch errors and surprising QA false rejects."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS low weights, feeder target incorrect",
+      "summary": "Seeing many low weights; found the feeder target was set to 155.0g instead of product target weight.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-13T13:09:23.281Z"
+      },
+      "status": "Cy making adjustments and calibrating checkweigher scale as of 07:09."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt off-track recurrence",
+      "summary": "C6 belt went off-track again at 05:47, less than 90 minutes after the overnight replacement; moves to west side.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-13T11:47:12.64Z"
+      },
+      "status": "Maintenance notified at 07:03; sensor replaced at 06:39; operators noted dirty rollers contributing to tracking issues."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 end spiral conveyor stopped",
+      "summary": "End spiral conveyor stopped at the close of the window; maintenance on-site.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-13T13:03:31.481Z"
+      },
+      "status": "Maintenance here as of 07:03."
+    }
+  ]
+}
