@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-14",
+  "headline": {
+    "eyebrow": "Metal detector failure",
+    "text": "L1 S3 metal detector *failed to reject* pieces damaged by conveyor collision \u2014 X-ray caught them, 7 pallets inspected and cleared."
+  },
+  "summary": "Three active concerns: L1 S3 metal detector failed to reject product after equipment collision (X-ray caught, pallets cleared); L2 panning used quarantined pallet R237581 after mislabel, line under level 2 clean; L1 S2 MT1 stirrer arm sheered and bent during drain, metal fragments not confirmed.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "7 pallets Item 30809 held after metal-in-product event",
+      "summary": "Cross conveyor struck Z conveyor damaging pieces; metal detector did not reject, X-ray did \u2014 7 pallets isolated, 5 pouches/level inspected by QC, all negative, released 11:26.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-13T14:38:32.049Z"
+      },
+      "status": "Resolved \u2014 all 7 pallets inspected with negative results, released back to production."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S3 metal detector failed to reject damaged product",
+      "summary": "Cross conveyor collision with Z conveyor created metal-contaminated pieces; metal detector did not reject, X-ray did \u2014 7 pallets held and inspected (all clear), Z conveyor replaced, line cleared 08:59.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-13T14:38:32.049Z"
+      },
+      "status": "Resolved \u2014 damaged conveyor replaced, line clearance complete, pallets released; metal detector performance under review."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 MT1 stirrer arm sheered off and bent during drain",
+      "summary": "Sweep arm found sheered at top and bent into V-shape when emptying MT1; no grinding sounds noted, may have been bent previously \u2014 filter inspection showed only common iron rings.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jody Howse",
+        "time_utc": "2026-08-14T10:01:54.802Z"
+      },
+      "status": "Open \u2014 MT1 disassembled for inspection, glycol drained; ATP and allergen tests failed, full clean in progress."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 metal detector faulting and rejecting product",
+      "summary": "Metal detector on TG3 faulted repeatedly 20:41\u201322:44, kicking off significant product; test cards passing intermittently, belt staying open after reject cycles.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-14T02:34:11.699Z"
+      },
+      "status": "Open \u2014 maintenance troubleshooting; producing at reduced speed, monitoring reject rate."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 weight rejections at final checkweigher",
+      "summary": "Elevated rejects at final weight check 17:02; filler adjusted from target to 60g to reduce downstream rejections and prevent accumulation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-08-13T23:02:56.718Z"
+      },
+      "status": "Resolved \u2014 filler weight adjusted, rejections reduced, monitoring for stability."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 multiple double and open pieces at packaging",
+      "summary": "Production and QA detecting elevated doubles and open packages 05:37; line paused for maintenance adjustment to flow-wrap sealing parameters.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Leandro",
+        "time_utc": "2026-08-14T11:37:24.025Z"
+      },
+      "status": "Open \u2014 maintenance adjusting sealing; team checking initial boxes for affected units."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 MT1 failed ATP and allergen tests after stirrer failure",
+      "summary": "ATP and allergen swabs failed on MT1 following discovery of bent/sheered stirrer arm; unit disassembled for deep clean and inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-14T06:27:40.577Z"
+      },
+      "status": "Open \u2014 full disassembly and re-clean in progress, awaiting retest."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L2",
+      "title": "Quarantined pallet R237581 (10140) used in panning",
+      "summary": "Pallet R237581 (quarantined) physically mixed with R237578 (released); 3rd shift panned quarantined pallet before discovery \u2014 active pallet placed on hold, level 2 clean initiated on panning area.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-14T11:14:18.865Z"
+      },
+      "status": "Open \u2014 panned material from quarantined pallet on hold pending QA disposition; level 2 clean underway, open sugar/salt discarded."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding metal detector test-card verification to S3 startup checklist \u2014 today's conveyor collision event passed X-ray but not MD, suggesting sensitivity drift worth catching earlier."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider scheduled inspection interval for MT stirrer arms on S2 \u2014 today's bent arm showed no audible warning and may have been damaged over time."
+    },
+    {
+      "plant": "L2",
+      "text": "Review warehouse pull procedures for quarantined pallets \u2014 today's panning incident (R237581 mixed with R237578) suggests visual hold-status marking may need reinforcement at L2."
+    }
+  ]
+}

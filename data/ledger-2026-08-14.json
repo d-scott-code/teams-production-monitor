@@ -1,0 +1,306 @@
+{
+  "date": "2026-08-14",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML2 and ML3 both down *12+ hours* on recurring mold jams\u2014bent rails and stripped hardware found, repairs ongoing at shift change"
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran through foreign material event on Sollich 3 that required Z-conveyor swap and quality line clearance, cleared by midday. Sollich 4 fought bent TG parts twice and a power outage but stayed productive. Sollich 2 down for MT1 stirrer failure and allergen clean still in progress.",
+    "L2": "L2 had a brutal 24 hours. Both ML2 and ML3 jammed repeatedly on bent cooler rails and damaged guides with stripped bolts\u2014teams emptied coolers overnight, replaced multiple rails, but jams continued into first shift. Internet dropped twice. FFS and panning ran clean.",
+    "L3": "L3 ML4 cleared early separator and spiral jams but metal detector and separating belt issues persist. ML1 had recurring buffer tank temp drops and lost startup time to incomplete 3rd shift cleaning. Truffle and MF Matrix minor issues. Internet flickered through storms."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Power bump at 21:01 took the plant offline briefly; all lines recovered without chocolate loss"
+    },
+    {
+      "plant": "L2",
+      "text": "Stripped bolts on black guides at ML2 and ML3 demolders flagged for replacement\u2014maintenance tightened best they could"
+    },
+    {
+      "plant": "L3",
+      "text": "Storm caused water intrusion at east entrance and employee door; breaker #4 tripped and reset"
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Z-conveyor foreign material from cross-conveyor collision",
+      "summary": "Cross conveyor hitting Z conveyor created foreign material pieces; quality cleared line from C19 to MM end, inspected 7 pallets (negative results), swapped in new Z-conveyor.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-08-13T14:21:15.933Z"
+      },
+      "resolution": "New Z-conveyor installed and ATP passed; line resumed at 12:32\u2014\"We have resumed operations\" (S3 Enrober)"
+    },
+    {
+      "plant": "L1",
+      "title": "Theegarten folding plates and cover bent on Sollich 4",
+      "summary": "8 paper folding plates, paper feed plates, and second wheel cover all bent during manual rotation inspection at shift start; had to pull team to S1 clean while repairs underway.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-08-13T22:35:44.392Z"
+      },
+      "resolution": "Parts straightened and tested by 18:28; same parts bent again later but re-adjusted and running after power outage cleared"
+    },
+    {
+      "plant": "L1",
+      "title": "Power outage across L1 factory",
+      "summary": "Brief outage took all lines down; guillotine on Sollich 4 didn't respond after power returned (safety blown).",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-08-14T00:16:25.867Z"
+      },
+      "resolution": "Safety reset, everything workable by 22:56\u2014\"Everything is reset and workable\" (Caleb York)"
+    },
+    {
+      "plant": "L1",
+      "title": "Metal detector belt won't close on Sollich 3",
+      "summary": "Belt remained open too long after card swipe, then wouldn't close at all; line paused for CILT at Caleb's recommendation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-08-14T03:37:28.67Z"
+      },
+      "resolution": "CILT completed; line running again at 22:45\u2014\"The line is running again\" (William Beattie)"
+    },
+    {
+      "plant": "L1",
+      "title": "Melting tanks reading cold on Sollich 3",
+      "summary": "Temperature displays normal but pipework not warm to touch; 24v overload tripped, cutting heat.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-14T04:20:50.091Z"
+      },
+      "resolution": "Overload reset at 22:33\u2014\"Reset it and I'll keep an eye on temps\" (Caleb York)"
+    },
+    {
+      "plant": "L2",
+      "title": "Flow wrap chain cleaning and jam on ML3",
+      "summary": "Line down at 14:59 for chain cleaning; flow wrap issues on restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-13T20:59:14.49Z"
+      },
+      "resolution": "Maintenance fixed flow wrap; running again at 15:30\u2014\"Line is running again\" (Brandon Lance)"
+    },
+    {
+      "plant": "L2",
+      "title": "Internet outage across L2",
+      "summary": "WiFi down at 18:49, affecting tablets and label printing; ticket submitted to Tech Legion.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-14T00:49:05.417Z"
+      },
+      "resolution": "Restored by 22:47\u2014\"They are able to [print labels] at this time\" (Gustavo Rodas)"
+    },
+    {
+      "plant": "L2",
+      "title": "Power bump",
+      "summary": "Major power outage reported at 21:01; turned out to be a bump with power still on in building.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-14T03:02:03.839Z"
+      },
+      "resolution": "Power restored within minutes\u2014\"It's a bump, there is power on in the building\" (Zack Kurtz)"
+    },
+    {
+      "plant": "L3",
+      "title": "Separator rejecting all product to discharge on ML4",
+      "summary": "After demolding, separator sent everything to discharge; maintenance adjusted.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-13T13:16:58.005Z"
+      },
+      "resolution": "Fixed by 07:43\u2014\"Issue has been fixed\" (Itzel Chavez)"
+    },
+    {
+      "plant": "L3",
+      "title": "6 spiral jams on ML4 in 20 minutes",
+      "summary": "Recurring jams on spirals; new EEs not closing molds properly and sending them too close together.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-13T14:05:33.849Z"
+      },
+      "resolution": "Nelson moved laser back from film; separator switched to Auto; jams cleared by 08:43"
+    },
+    {
+      "plant": "L3",
+      "title": "Bosch down with B100A sensor alarm on ML1",
+      "summary": "Sensor rejecting chocolate; maintenance adjusting alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-13T14:43:56.809Z"
+      },
+      "resolution": "Sensor adjusted, belt C6 running correctly by 09:03\u2014\"Belt C6 is running correctly\" (Molding Line 1 Flow-Wrap)"
+    },
+    {
+      "plant": "L3",
+      "title": "Bosch down on ML1 at 00:19",
+      "summary": "2415 Bosch alarm; maintenance responding.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-14T06:19:32.207Z"
+      },
+      "resolution": "Cleared by 00:48 with photo confirmation of running product"
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line belt issue",
+      "summary": "Belt problem flagged to maintenance; no spare available.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-14T11:00:10.788Z"
+      },
+      "resolution": "Maintenance fixed the existing belt\u2014\"They fixed it\" (Raoul Lubain)"
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "AD4 failed ATP and allergen test on Sollich 2",
+      "summary": "After flushing with coconut oil, depositor failed both ATP and allergen; requires full disassembly and deep clean before next run.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-14T06:27:40.577Z"
+      },
+      "status": "Disassembly in progress as of 00:27; no timeline given for completion"
+    },
+    {
+      "plant": "L1",
+      "title": "MT1 sweep arm sheared and bent on Sollich 2",
+      "summary": "Stirrer arm broke off at top and bent into V shape; noticed during tank drain, may have been damaged for a while (no grinding sounds heard).",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jody Howse",
+        "time_utc": "2026-08-14T10:01:54.802Z"
+      },
+      "status": "Glycol drained, tank being disassembled as of 04:01; grates unable to pull due to hitting piston brackets at 05:53"
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 recurring mold jams\u2014bent rails and misaligned guides",
+      "summary": "Pattern identical to ML3: mold jams starting second shift, bent rail #35 replaced, then more jams; cooler emptied, rails #36 & #40 replaced, black guide at transition bent and loose with stripped bolts; additional bent rails found on 1st shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-13T21:44:39.947Z"
+      },
+      "status": "Metal brackets with black lugs removed to straighten at 04:45; maintenance re-aligning rails at 06:36; mold jam at same spot 06:03; Alan asking if bolts will be replaced at 06:47"
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 recurring mold jams\u2014bent rails and stripped guide bolts",
+      "summary": "Continuous mold jams at demolder from 17:02 onward; cooler emptied overnight, bent rails and loose black guides with stripped bolts found; pins on tray drop not working; multiple rail replacements made but jams continued into 1st shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-08-13T23:57:50.699Z"
+      },
+      "status": "Maintenance replaced rails and tightened guides with stripped bolts as best they could; Dave Ruff notified to order new bolts; line still jamming as of 06:34"
+    },
+    {
+      "plant": "L2",
+      "title": "Internet down again at L2",
+      "summary": "WiFi outage reported at 06:59 after earlier restoration.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-14T12:59:17.948Z"
+      },
+      "status": "Alan Todd notified at 06:59; no update on restoration"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank temperature keeps dropping",
+      "summary": "Buffer water temp falls to 47\u00b0F repeatedly (07:27, 10:28, 13:40, 17:01, 23:02); maintenance adjusting each time but issue recurs; affects temper stability.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-13T13:28:30.197Z"
+      },
+      "status": "Maintenance notified again at 13:55; temp normal at multiple checks but drops continue; root cause not identified"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 separating belts not working at higher speeds",
+      "summary": "Gondola belts fail to separate bars properly when WDS runs at 25; works correctly at 20 but defeats speed optimization; locked-in speed checkbox confusion with Stefan.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-13T21:34:36.195Z"
+      },
+      "status": "Running at 20 as of 20:39; Stefan to clarify HMI button behavior; Ray says leave locked-in unchecked for auto"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 metal detector faulting and rejecting on TG3",
+      "summary": "Metal detector kicking off excessive product; speed display showing 16.5 when actually running 20.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-14T02:34:11.699Z"
+      },
+      "status": "Sent to TG chat for monitoring at 20:44; no resolution posted in this window"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 late start\u20143rd shift cleaning incomplete",
+      "summary": "Line stopped at 06:20 with cleaning unfinished; 1st shift Cavanna operator found dirty scrapers; had to wait for molds to reach temperature after cleaning completed.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-14T12:38:13.298Z"
+      },
+      "status": "Line restarted 06:52 after molds reached temp; caused DT for 1st shift; investigating who requested deep clean"
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix candy feed issues",
+      "summary": "Line stopped at 06:48 startup due to candy feed problems; maintenance checking.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-14T13:15:50.632Z"
+      },
+      "status": "Maintenance on-site as of 07:15; line still stopped at window close"
+    }
+  ]
+}
