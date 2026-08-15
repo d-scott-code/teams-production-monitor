@@ -1,0 +1,146 @@
+{
+  "date": "2026-08-15",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L3 ML1 bulk boxes on hold \u2014 ran out of *correct* item 41238, using generic boxes with wrong label description and item number."
+  },
+  "summary": "Two quality holds active: L3 ML1 bulk boxes (incorrect packaging) and L2 ML3 partial pallet (doubles/triples/broken pieces). L1 S2 allergen cleaning flagged for Monday before almond run.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Partial pallet on hold \u2014 doubles, triples, broken pieces",
+      "summary": "L2 ML3 partial pallet with large number of doubles, triples, and broken pieces awaiting QA or production decision by Monday.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-08-15T13:05:31.121Z"
+      },
+      "status": "On hold pending disposition decision Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "Bulk boxes on hold \u2014 incorrect item number and label",
+      "summary": "L3 ML1 ran out of correct bulk boxes (item 41238), switched to generic boxes with incorrect label description and item number; QA placing product on hold.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-14T22:15:32.554Z"
+      },
+      "status": "On hold pending QA disposition and correct packaging availability."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Broken grease line on depositor 1 west Swaco",
+      "summary": "Broken grease line found during PM on ML4 depositor 1 west Swaco; maintenance to remove broken part and reinstall line during tonight's cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nelson Cook",
+        "time_utc": "2026-08-14T19:27:10.986Z"
+      },
+      "status": "Maintenance scheduled to remove broken part and reinstall during cleaning."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Four barrels of 10169 chocolate missing ID tags",
+      "summary": "Four barrels of 10169 chocolate found without proper identification tags at L1 S2; traceability gap flagged.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-14T15:30:33.938Z"
+      },
+      "status": "Tagging requested from production and warehouse."
+    },
+    {
+      "plant": "L1",
+      "title": "Chocolate barrels incompletely melted",
+      "summary": "Two barrels of chocolate for L1 S3 Macadamia production found with cold, un-melted centers; re-wrapped in heated jackets.",
+      "severity": "low",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-15T04:29:39.469Z"
+      },
+      "status": "Both barrels re-wrapped in heated jackets; cannot be used until fully melted."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Extended-handle brushes unavailable for buffer tank cleaning",
+      "summary": "L1 S3 buffer tanks ready for cleaning but extended-handle brushes missing; cannot reach all parts of tank without proper tools.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-15T00:58:19.676Z"
+      },
+      "status": "Open \u2014 awaiting tool procurement or alternative cleaning method."
+    },
+    {
+      "plant": "L1",
+      "title": "Decorator left unwrapped after cleaning",
+      "summary": "L1 S2 decorator found unwrapped after cleaning; idle equipment protection standard not followed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-14T14:34:35.815Z"
+      },
+      "status": "Wrapping and Idle Equipment Check update requested."
+    },
+    {
+      "plant": "L1",
+      "title": "Almond pieces found on floor next to candy bin",
+      "summary": "Almond pieces found on floor next to L1 S2 candy bin; housekeeping gap.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-14T16:32:54.189Z"
+      },
+      "status": "Reported; no follow-up action documented in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Cleaning rollers received dirty",
+      "summary": "L3 ML1 flow-wrap cleaning rollers received dirty/damaged; photo posted showing condition.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-14T13:51:59.502Z"
+      },
+      "status": "Rollers cleaned and returned to service; source of contamination not identified."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Allergen cleaning needed before Monday almond run",
+      "summary": "L1 S2 X-ray validation used Tates Cookies (wheat); packing area from checkweigher to tape machine needs wipe-down and allergen swabs before Monday almond production.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-08-15T01:51:46.881Z"
+      },
+      "status": "Cleaning scheduled for tonight or tomorrow per production; verification pending."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review idle-equipment wrapping checklist compliance \u2014 based on today's S2 decorator left unwrapped after cleaning."
+    },
+    {
+      "plant": "L1",
+      "text": "Verify extended-handle brush inventory and storage location before weekend deep cleans \u2014 based on S3 buffer tank cleaning delay when tools were unavailable."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding packaging inventory alerts to prevent mid-run bulk-box shortages \u2014 based on today's ML1 generic-box hold when item 41238 ran out."
+    },
+    {
+      "plant": "L3",
+      "text": "Review cleaning-tool inspection and handoff protocol \u2014 based on ML1 receiving dirty/damaged rollers from sanitation."
+    }
+  ]
+}
