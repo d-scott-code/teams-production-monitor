@@ -1,0 +1,81 @@
+{
+  "date": "2026-08-16",
+  "headline": {
+    "eyebrow": "Foreign material risk",
+    "text": "L1 S2 enrober belt *ripped during production* \u2014 line stopped and cleaned, but no product hold or QA disposition documented in window."
+  },
+  "summary": "One high-severity event: L1 S2 enrober belt failed during production run with potential for belt material contamination; line cleaned and belt replacement scheduled Monday. L3 ML1 caught belt fraying during startup before depositing. L2 ML2 mold cooler filters out for washing, awaiting reinstallation.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Enrober belt ripped during production run",
+      "summary": "S2 enrober belt ripped at 21:39 during active production; line stopped immediately and full cleaning performed with ATP pass, but no product hold or QA review of at-risk product documented in window.",
+      "severity": "high",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-08-15T21:39:12.713Z"
+      },
+      "status": "Line cleaned and shut down; C&E scheduled for belt replacement Monday 07:30; no mention of product disposition."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt fraying caught during startup",
+      "summary": "Belt fraying with loose fibers detected at 22:50 during startup sequence before depositing began; maintenance torched belt to secure frays.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-16T04:50:30.981Z"
+      },
+      "status": "Resolved during shift \u2014 belt torched, maintenance addressed multiple belt issues overnight, line eventually resumed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 mold cooler filters removed, awaiting reinstallation",
+      "summary": "Cooler filters pulled for washing at shift end; filters must be reinstalled before line can run.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Justin Halladay",
+        "time_utc": "2026-08-15T21:42:03.525Z"
+      },
+      "status": "Open \u2014 filters drying, not yet reinstalled; supervisor flagged for completion before startup."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 post-shutdown cleaning verification passed",
+      "summary": "Full line cleaning following belt failure verified by ATP; all tunnels, melting tank, and equipment passed at shift end.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-08-16T03:20:00.456Z"
+      },
+      "status": "Resolved \u2014 ATP pass confirmed 03:20, crew released."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 cleaning verifications during troubled startup",
+      "summary": "Multiple ATP checks (dosings, plate, rollers) all passed during night of repeated mechanical issues and line stops.",
+      "severity": "low",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-08-16T03:55:41.673Z"
+      },
+      "status": "Resolved \u2014 all sanitation checks passed despite multiple equipment teardowns."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding explicit product-hold step to equipment-failure response checklist \u2014 based on S2 belt rip during production with no QA disposition documented in window."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding conveyor-belt fraying inspection to ML1 startup checklist \u2014 based on C6 belt fraying caught during warmup, echoing recurring belt wear patterns."
+    }
+  ]
+}

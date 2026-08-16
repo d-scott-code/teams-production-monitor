@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-16",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 fought belt jams, clogged nozzles, and piston faults overnight \u2014 team stopped depositing at *04:57* and began flushing after 10 operators sent home."
+  },
+  "per_plant_summary": {
+    "L1": "S2 completed planned changeover and cleaning for Monday belt replacement at 21:20; C&E confirmed onsite 07:30.",
+    "L2": "ML2 mold cooler filters were pulled for cleaning at 15:42 and need reinstallation before the line can run.",
+    "L3": "ML1 had cascading equipment failures through the night \u2014 belt jams cleared by 00:38, but clogged nozzles and piston faults forced the team to call depositing and start flushing at 04:57. Truffle line belt replacement completed successfully at 05:44."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S2 enrober belt replacement scheduled Monday 07:30 with C&E; new gearbox staged at maintenance shop."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "M110 belt jammed and replaced",
+      "summary": "Belt had frays and jammed at 22:50, stopping the line; maintenance replaced the belt and verified it running properly by 00:38.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-16T04:50:30.981Z"
+      },
+      "resolution": "Belt replaced and tested running at 00:38 \u2014 \"Running the M110 the belt to make sure it's running properly\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line final product conveyor belt replaced",
+      "summary": "Broken conveyor belt was replaced overnight; visual inspection at 05:44 confirmed good condition and correct operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-16T11:41:38.779Z"
+      },
+      "resolution": "Replacement completed and verified at 05:44 \u2014 \"visual check...confirms that it is in good condition and operating correctly\" (Janeth Sanchez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "ML2 mold cooler filters out for drying",
+      "summary": "Filters were washed and pulled from the mold cooler at 15:42; they need to finish drying and be reinstalled before the line can run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Halladay",
+        "time_utc": "2026-08-15T21:42:03.525Z"
+      },
+      "status": "Filters drying as of 15:43; Alan Todd asked Alex Mendoza to ensure reinstallation, no follow-up in window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositing stopped after cascading equipment failures",
+      "summary": "Clogged nozzles at 01:22 led to block wash and dosing head pulls; right piston faulted three times at 04:31; team stopped depositing at 04:57, sent 10 operators home, and began flushing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-16T07:22:20.287Z"
+      },
+      "status": "Depositing stopped at 04:57; buffer tank emptied by 06:12, oil flush started at 06:31, chocolate emptied by 06:46."
+    }
+  ]
+}
