@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-17",
+  "headline": {
+    "eyebrow": "Food safety equipment",
+    "text": "L3 ML4 metal detector belt on TG5 *damaged and ripping* \u2014 line down at 07:02 pending maintenance inspection to assess contamination risk."
+  },
+  "summary": "Two L3 ML4 issues today: metal detector belt damage halted TG5, and dirty molds staged Friday caused candy exposure on approximately 1 in 3 bars until operator removal began. L2 ML2 shadow board missing wrench #13.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Metal detector belt damaged and ripping on TG5",
+      "summary": "Belt on ML4 TG5 metal detector is damaged and tearing; line stopped immediately to prevent belt material from entering product stream pending maintenance inspection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-17T13:01:28.641Z"
+      },
+      "status": "Open \u2014 line down pending maintenance inspection."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Candy exposure on ~33% of ML4 bars due to dirty molds",
+      "summary": "Approximately one bar per three molds showing candy exposure; root cause is dirty molds left in system Friday and staged in preheat cabinet before vision system activated Monday morning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-08-17T13:03:00.198Z"
+      },
+      "status": "Open at window close \u2014 operator removing affected bars; clean molds being swapped, ~60 min cycle remaining."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Wrench #13 missing from ML2 shadow board",
+      "summary": "First shift centerline check identified wrench #13 missing from ML2 flow wrap shadow board; tool control gap.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-17T12:33:27.512Z"
+      },
+      "status": "Open \u2014 wrench #13 unaccounted for as of first shift."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Consider implementing shift-end shadow board sign-off with photo documentation \u2014 based on today's missing wrench #13 discovery at ML2 first shift startup."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding visual mold cleanliness verification before staging in preheat cabinet \u2014 based on today's ML4 dirty molds that bypassed vision system checks and caused candy exposure on ~33% of bars."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding belt condition inspection to metal detector preventive maintenance checklist \u2014 based on today's TG5 damaged/ripping belt that halted production for food safety review."
+    }
+  ]
+}

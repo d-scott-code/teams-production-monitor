@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-17",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 FFS and L3 TG5 both down at window close \u2014 FFS tracking failure at 07:12, TG5 damaged belt at 07:01."
+  },
+  "per_plant_summary": {
+    "L1": "L1 S3 had an air fitting issue from Friday night that blocked tray printing setup; maintenance resolved it by 05:44 and the line started at 06:35. S4 completed routine sanitization and prep.",
+    "L2": "L2 ML2 had two quick stops \u2014 a mold temperature sensor issue (cleared in 7 minutes) and a vacuum blowout (cleared in 14 minutes). FFS went down at 07:12 with a tracking problem and was still down at window close.",
+    "L3": "L3 ML4 had a discharge belt jam that cleared by 06:47, but TG5 went down at 07:01 on a damaged metal detector belt and is waiting for maintenance. The line also has dirty molds causing candy exposure on roughly 1 in 3 bars; crew is pulling affected product and cycling clean molds through (60-75 minute process)."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Alan Todd reports ML2 will finish the Crunch order on first shift Monday then clean; ML3 will clean Monday and start HER Caramel on first shift Tuesday."
+    },
+    {
+      "plant": "L2",
+      "text": "ML2 first shift shadow board is missing wrench #13."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 air fitting mismatch blocked tray printer setup",
+      "summary": "L3 maintenance swapped air line fittings to wrong size on Friday; L1's hoses didn't fit and blocked tray printing for Macadamia run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-16T22:42:13.619Z"
+      },
+      "resolution": "Maintenance installed correct 3/8 fittings and restored air by 05:44 \u2014 \"Air Fitting are install and air is on\" (Lolo Bencomo). Line started at 06:35."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold temperature sensor causing deposit skips",
+      "summary": "Depositor stopped at 05:29 because many molds were flagged with temperature problems and the system was skipping deposits.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-08-17T11:29:57.204Z"
+      },
+      "resolution": "Cleared at 05:37 \u2014 \"Maintenance cleaned the sensor that reads the mold temp. We are depositing on every mold now\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 vacuum blowout stopped the line",
+      "summary": "Flow wrap line stopped at 06:03 when the vacuum system blew out.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-17T12:03:14.157Z"
+      },
+      "resolution": "Cleared at 06:17 \u2014 \"Line back up running\" (ML2 FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 discharge belt and aligner both stopped",
+      "summary": "At 06:30 the discharge belt stopped moving and the aligner stopped separating product at demolding.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-17T12:30:34.128Z"
+      },
+      "resolution": "Cleared at 06:47 \u2014 \"This has been resolved\" (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "FFS tracking failure took the line down",
+      "summary": "VFFS line went down at 07:12 with a tracking problem; no resolution posted by window close.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-17T13:12:04.315Z"
+      },
+      "status": "Line down as of 07:12; no updates on cause or ETA."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 metal detector belt damaged and ripping",
+      "summary": "The metal detector belt on TG5 is damaged and tearing; TG5 is down waiting for maintenance to inspect.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-17T13:01:28.641Z"
+      },
+      "status": "TG5 down as of 07:02, waiting for maintenance inspection."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dirty molds causing candy exposure on 1 in 3 bars",
+      "summary": "Dirty molds were left in the preheating cabinet marked as good over the weekend; approximately one bar per three molds has candy exposure and is being hand-pulled.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-17T12:52:53.701Z"
+      },
+      "status": "Crew is cycling out dirty molds and pulling affected bars; full cycle will take 60-75 minutes from 07:08."
+    }
+  ]
+}
