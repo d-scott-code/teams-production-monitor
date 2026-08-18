@@ -1,0 +1,172 @@
+{
+  "date": "2026-08-18",
+  "headline": {
+    "eyebrow": "Hold\u2014label error",
+    "text": "L2 panning discovered *Private Select* Mac nuts mislabeled as Costco; pallet on hold pending disposition\u2014ML3 metal detector assembled incorrectly after cleaning."
+  },
+  "summary": "One active hold at L2 (allergen/product mislabeling). Two food-safety equipment gaps at L2 and L1. Multiple quality and temper control challenges on L1 S2.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Private Select Mac nuts mislabeled as Costco",
+      "summary": "Panning crew discovered one pallet of 10140 Private Select macadamias labeled as Costco item; QA placed pallet on hold.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-18T10:08:43.078Z"
+      },
+      "status": "On hold pending QA disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "ML3 metal detector assembled incorrectly after cleaning",
+      "summary": "Metal detector reassembled incorrectly following cleaning; discovered at 04:58 during startup checks and corrected before production resumed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-18T10:58:00.84Z"
+      },
+      "status": "Resolved\u2014corrected before production start."
+    },
+    {
+      "plant": "L1",
+      "title": "Nut missing from S2 enrober tank, then recovered",
+      "summary": "Operator noticed one nut missing from caramel tank at 04:21; piece found 3 minutes later; line continued producing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-08-18T10:21:01.148Z"
+      },
+      "status": "Resolved\u2014piece recovered, line producing."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 jar piece counts 20% above target at startup",
+      "summary": "First jars contained 52\u201354 pieces vs. target 46; shaker turned off and bottoming roller adjusted; counts returned to spec by 08:38.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-17T13:51:40.379Z"
+      },
+      "status": "Resolved\u2014adjustments made, verified in spec."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 mini temper unstable, multiple pauses",
+      "summary": "Mini temper failed to achieve stable temper 2nd shift; buffer tank at 95\u00b0F vs. 90\u00b0F setpoint; reheat cycle required; temper spiked again 1st shift, line paused.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-08-18T00:11:12.661Z"
+      },
+      "status": "Open\u2014line down at window close awaiting temper."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM batch out of spec at startup",
+      "summary": "Batch not meeting specifications at line start; maintenance making adjustments.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-18T12:20:54.638Z"
+      },
+      "status": "Open\u2014maintenance adjusting."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM best-by date format incorrect",
+      "summary": "Best-by date printed in wrong format; Kavin Ayala working on correction.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-18T12:32:12.257Z"
+      },
+      "status": "Open\u2014being corrected."
+    },
+    {
+      "plant": "L2",
+      "title": "Dark macadamias in panned final product",
+      "summary": "Darker nuts observed in reject bin and on final pallet; test confirmed sorter detects them; tote cleared for use.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-08-18T01:25:16.729Z"
+      },
+      "status": "Resolved\u2014sorter verification passed, tote released."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle product lighter on south side vs. north",
+      "summary": "Operator noticed enrober shaker vibrating more on south side; product weight asymmetry; maintenance action created.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-18T02:57:36.528Z"
+      },
+      "status": "Open\u2014maintenance to investigate."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Cleaning documentation missing for S2 lines",
+      "summary": "QA cannot locate production cleaning records for S2 enrober lines; post-clean ATP records exist in SafetyChain but production sign-off missing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-08-17T16:42:55.138Z"
+      },
+      "status": "Open\u2014better training process in development."
+    },
+    {
+      "plant": "L1",
+      "title": "Housekeeping gaps in Wrap Room areas 1 & 2",
+      "summary": "Paper towels on floor, buckets left on table (WR1); floor under shelf dirty (WR2).",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-08-17T15:18:14.884Z"
+      },
+      "status": "Open\u2014flagged for cleanup."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "S2 allergen filter not in place at startup",
+      "summary": "Nut allergen filter missing during bed fill; operator installed filter before line ran product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-17T19:17:19.97Z"
+      },
+      "status": "Resolved\u2014filter installed before production."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Add allergen filter verification to S2 bed-fill startup checklist \u2014 based on today's missing filter at startup."
+    },
+    {
+      "plant": "L1",
+      "text": "Review cleaning sign-off process for production teams \u2014 QA cannot locate S2 cleaning records despite ATP pass."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider buffer-tank temperature alarm or interlock on S2 mini temper \u2014 today's 95\u00b0F vs. 90\u00b0F setpoint caused hour-long temper failure."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider barcode or visual verification step for Mac nut totes at panning station \u2014 based on today's Private Select/Costco mislabeling catch."
+    },
+    {
+      "plant": "L2",
+      "text": "Review ML3 metal detector reassembly checklist or add post-cleaning function test \u2014 based on today's incorrect assembly after cleaning."
+    }
+  ]
+}

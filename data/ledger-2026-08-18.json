@@ -1,0 +1,546 @@
+{
+  "date": "2026-08-18",
+  "headline": {
+    "eyebrow": "Materials shortage",
+    "text": "L2 FFS ran out of film at 07:14 and shut down after producing *9,063 cases short* of target \u2014 line clearing for changeover."
+  },
+  "per_plant_summary": {
+    "L1": "S2 ran caramel almond all shift with recurring mini-temper instability \u2014 line stopped at 07:10 without temper at decorator. S3 mac nut cluster ran clean through 3 shifts; brought nut usage down to 2.05% and piece count to target. Labeler feed issue unresolved.",
+    "L2": "FFS consumed final film roll and shut down at 07:14 due to material shortage, 9,063 cases short of plan. ML2 ran all shift with multiple brief blade and cooler stops, all cleared inside 10 minutes. ML3 passed off and started tempering for next run. Panning team found mislabeled Private Select mac nuts; pallet placed on hold.",
+    "L3": "ML4 had two brief line-down events for gondola jams (cleared in under 20 minutes each); gondola routing to TG5 remains intermittent, requiring TG4 stops. Truffle line ran Hershey bite through 1st shift, paused twice for Cavanna 1 infeed issues (fixed), then changed to toffee flavor at 05:50. MF Matrix batch out of spec at startup, maintenance adjusting. ML1 Donner belt 1 misaligned, maintenance notified."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Flagstone macadamia delivery received after COA request cleared; now in system."
+    },
+    {
+      "plant": "L1",
+      "text": "Erandy updated and laminated mini-temper startup checklist, left with other S2 checklists."
+    },
+    {
+      "plant": "L3",
+      "text": "Aasted rebuild tech expected at 08:00 MT per Chad Stone."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 mini-temper lost temper, line stopped 18:11",
+      "summary": "Decorator mini-temper would not achieve temper; Dakota stopped line at 18:11.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-08-18T00:11:12.661Z"
+      },
+      "resolution": "Dakota and Justin agreed to reheat cycle. Elizabeth reported temper at 21:11, line restarted at 21:23 \u2014 3 hours 12 minutes total (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 mini-temper gearbox replacement",
+      "summary": "Scheduled gearbox swap on mini-tempering unit; line held for maintenance and ATP.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-17T13:16:52.503Z"
+      },
+      "resolution": "Victor Romero: gearbox installed, ATP passed, QC approved at 09:13. Mariela confirmed mini-temper clean and ATP pass at 09:20."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 piece count 52\u201354 per jar (target 46)",
+      "summary": "First jars off S3 packing at 07:51 contained 52 and 54 pieces; max spec is 47.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-17T13:51:40.379Z"
+      },
+      "resolution": "Nathan turned off shaker, adjusted bottoming roller 70%\u2192100%, wire mesh 4.2\u21924.0. Ingrid confirmed jars at 46 pieces by 08:38."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 separating belt replacement",
+      "summary": "Separation belt cooked overnight, cooled, tested, and replaced per schedule.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-17T14:47:17.802Z"
+      },
+      "resolution": "Victor: belt replacement complete, ATP at 5 points all pass (0), sanitizer applied. QC approved at 10:38 (Victor Romero Sr., Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 MM-6 and MM-8 multi-mould faults",
+      "summary": "Multi-mould machines 6 and 8 cycling faults at 16:05; product not dropping into pouches.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-08-17T22:05:37.057Z"
+      },
+      "resolution": "Caleb York: MM-6 good, MM-8 good shortly (16:16). Elizabeth: 13-minute pause to clear backlog, both running at 16:55."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tray printer air fault recurrence on 2nd shift",
+      "summary": "Same air pressure issue returned on 2nd shift tray printer.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-17T22:15:50.121Z"
+      },
+      "resolution": "William followed Troy's instructions; got printer running at 16:15 (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 MM-7 product not dropping",
+      "summary": "Multi-mould 7 hopper blocked; product not feeding into pouches at 22:28.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-08-18T04:28:17.593Z"
+      },
+      "resolution": "Maintenance cleared; MM-7 working at 23:02 (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 decorator temper spiked into red",
+      "summary": "Decorator temper rose out of range at 01:44; product risk.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-18T07:44:14.847Z"
+      },
+      "resolution": "Joseph decreased mini-temper set point 0.2\u00b0; temper returned to range by 02:31."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 almond missing from tank, then found",
+      "summary": "Karen noticed nut missing from caramel tank at 04:21 \u2014 foreign material risk.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-08-18T10:21:01.148Z"
+      },
+      "resolution": "Piece located and recovered at 04:24; line continued (Karen Velastegui)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tray printer air pressure fault",
+      "summary": "Tray date-code printer faulting on air pressure; Troy diagnosed bad regulator at 08:23.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-17T14:23:33.234Z"
+      },
+      "resolution": "Troy swapped regulator from S2; printer working (Troy Baxter, 08:23)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 blade cutting failure (3 stops)",
+      "summary": "Flow wrapper blade failed to cut pouches; line stopped at 08:01, 08:42, and 10:15.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-17T14:01:36.089Z"
+      },
+      "resolution": "Maintenance shimmed blades; final restart at 10:25. No further blade stops through shift (Alex Mendoza, Claudio Tovar)."
+    },
+    {
+      "plant": "L2",
+      "title": "Missing COAs for Flagstone macadamia delivery",
+      "summary": "4 lot numbers of 10140 macadamias delivered without certificates of analysis; cannot receive.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joey Michael Dudney",
+        "time_utc": "2026-08-17T15:48:04.105Z"
+      },
+      "resolution": "Martin requested COAs from Flagstone at 10:46; Joey confirmed receipt and processed receiving by 11:47."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 videojet lot code clipped at top",
+      "summary": "Printer cutting off top of lot code on flow wrap; QA flagged at pack.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-17T20:52:45.475Z"
+      },
+      "resolution": "Line paused at 14:52, videojet cleaned, restarted 14:58 with good print (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "Sorting machine camera fault",
+      "summary": "Nut sorter throwing internal camera obstruction faults every few minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-08-17T22:03:46.697Z"
+      },
+      "resolution": "Mathew cleaned both internal glass screens at 16:42; no further faults after 17:00."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cooler jam",
+      "summary": "Molds stuck in cooling tunnel, line stopped at 16:12.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-17T22:12:43.306Z"
+      },
+      "resolution": "Cleared and restarted at 16:22 \u2014 10 minutes (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolder fault",
+      "summary": "Demolding station faulted, stopped line at 17:06.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-17T23:06:08.932Z"
+      },
+      "resolution": "Back running at 17:09 \u2014 3 minutes (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "Darker macadamia nuts in sorted product",
+      "summary": "QA flagged darker-than-spec nuts visible in final pallet of sorted macadamias.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-08-18T01:44:35.464Z"
+      },
+      "resolution": "Wilson separated suspect nuts and ran test lot through sorter; confirmed sorter detects and rejects them. Tote released at 20:39 (Wilson Amaris Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "Bucket 16 failure at shift change",
+      "summary": "Multihead bucket 16 not operational at 3rd shift start; no product dropping.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-18T04:08:02.92Z"
+      },
+      "resolution": "Cleared within same message \u2014 \"Bucket is working now. All buckets are operational\" (Zack Kurtz, 22:08 MT)."
+    },
+    {
+      "plant": "L2",
+      "title": "Mislabeled Private Select macadamias",
+      "summary": "Panning team opened tote labeled Costco 10140; contents were Private Select, wrong SKU.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-18T10:08:43.078Z"
+      },
+      "resolution": "QA placed pallet on hold at 04:08 (Zack Kurtz). Corrective action complete from L2 process standpoint."
+    },
+    {
+      "plant": "L2",
+      "title": "Lot change pause on FFS",
+      "summary": "Line stopped at 01:59 to execute lot changeover on vertical form-fill-seal line.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-18T08:07:42.178Z"
+      },
+      "resolution": "Line restarted at 02:11 \u2014 12 minutes total (Gustavo Rodas)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 infeed belt tracking fault",
+      "summary": "Cavanna 1 infeed belt missing bolt on nose cone bearing; belt tracking north.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-17T13:20:52.802Z"
+      },
+      "resolution": "Maintenance replaced bolt, issue fixed. 20-minute pause to clear 28 bins accumulation at 07:20 (Frederick Peairs)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 recurring faults after repair",
+      "summary": "Cavanna 1 continued cycling faults after initial bearing fix at 08:41.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-17T14:41:01.192Z"
+      },
+      "resolution": "Maintenance worked through issue; 25-minute pause to clear 20+ bins. Line stable after 08:41 (Frederick Peairs)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jam, line down 00:48",
+      "summary": "Bars accumulated entering gondola infeed; line stopped to clear at 00:48.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-18T06:48:14.302Z"
+      },
+      "resolution": "Cleared and restarted at 01:07 \u2014 19 minutes (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at connection section",
+      "summary": "Mold jammed at connection point between depositor and cooling at 06:48.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-18T12:48:30.441Z"
+      },
+      "resolution": "Cleared; line running at 06:50 \u2014 2 minutes (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Deposit 3 weight below range",
+      "summary": "Depositor 3 chocolate weight checks came in under minimum at 06:44.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-08-18T12:44:36.827Z"
+      },
+      "resolution": "Operator increased setting one point; Mirella confirmed weight back in range."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 mini-temper out of temper at 07:10",
+      "summary": "Decorator mini-temper spiked at 06:41, paused, but lost temper again; line stopped at 07:10.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-18T12:41:16.627Z"
+      },
+      "status": "Victor at 07:10: line down, no temper at decorator, waiting. Curt Willis coming to troubleshoot. Window closed at 07:15 with line still down."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 labeler feed shortens as roll depletes",
+      "summary": "Label applicator feed distance decreases as label roll diameter shrinks; new issue not seen before.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-17T18:32:02.569Z"
+      },
+      "status": "Troy at 12:32: cannot determine root cause, making constant adjustments. Jason observing. No solution posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 MM-8 printer cable broken",
+      "summary": "Multi-mould 8 printer cable severed; cannot print lot codes on MM-8 pouches.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-08-18T04:13:02.555Z"
+      },
+      "status": "Nathan Coles at 00:37: cable still broken, cannot locate breaker to safely replace without shutting down all printers. Waiting for reheat or caustic pause."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 damaged curtain exposing S1 area",
+      "summary": "Barrier curtain between S1 and S2 damaged; S1 product area exposed.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-08-17T17:06:33.97Z"
+      },
+      "status": "Mariela flagged Charity and Victor at 11:06. No repair update posted."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line down \u2014 out of film at 07:14",
+      "summary": "Vertical form-fill-seal consumed last partial roll and shut down; 9,063 cases short of production target, 850k+ WIP to consume.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-18T11:02:45.563Z"
+      },
+      "status": "Alex Mendoza confirmed line down at 07:14, executing line clearance and dark material return. No film in NS; changeover moved to end of 1st shift today per Zack Kurtz 21:29."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pitch error causing overweight rejects",
+      "summary": "Pitch timing off on VFFS; within 10 minutes of 3rd shift start had bin of overweight blowoffs.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-18T04:31:38.753Z"
+      },
+      "status": "Zack requested maintenance at 22:31. No update on resolution as of window close."
+    },
+    {
+      "plant": "L2",
+      "title": "Panning conveyor to tote not working",
+      "summary": "Discharge conveyor from panner to tote drum failed; cannot collect panned macadamias.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-18T05:03:46.747Z"
+      },
+      "status": "Zack reported failure at 23:03, getting maintenance. No follow-up posted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 metal detector assembled incorrectly",
+      "summary": "Operator flagged metal detector reassembly error during startup checks.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-18T10:58:00.84Z"
+      },
+      "status": "Gustavo posted photo at 04:58. No resolution or corrective action posted by 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 line down at 02:55",
+      "summary": "Line stopped at 02:55 per Kimberly Morales; no context or reason posted.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-18T08:55:25.503Z"
+      },
+      "status": "Single message at 02:55, no follow-up restart or resolution by 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle aligning belt damaging product",
+      "summary": "Product entering Cavanna shows damage; aligning belt suspected.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-08-17T20:56:56.304Z"
+      },
+      "status": "Melissa at 14:56: appears aligning belt causing damage, maintenance looking at it. No resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober shaker shaking more on south side",
+      "summary": "South-side product consistently lighter weight; operator noticed shaker amplitude higher on south than north.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-18T02:57:36.528Z"
+      },
+      "status": "Tyson at 20:57: put action for maintenance to check tonight, maybe something loose. Chad acknowledged 21:00. No maintenance update."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 emergency exit blocked by scrap drums",
+      "summary": "3rd shift received area with drums of scrap blocking emergency exit.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-18T04:58:19.622Z"
+      },
+      "status": "ML4 TG at 22:58: receiving shift with emergency exit blocked again, needs to remain clear. Tyson acknowledged 23:47, will talk to team. No confirmation drums moved."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix batch out of spec at startup",
+      "summary": "First batch after changeover to PRS dark-wrapped pouch not meeting specifications.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-18T12:20:54.638Z"
+      },
+      "status": "mfmatrix at 06:20: batch not meeting spec, maintenance on line making adjustments. No follow-up posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Donner belt 1 misaligned during clean",
+      "summary": "Belt 1 on Donner (Bosch area) found tracking off during level-2 cleaning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-18T12:54:13.688Z"
+      },
+      "status": "Imperial at 06:54: noticed misalignment, maintenance notified to fix. No update on repair."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola not routing to TG5 without stopping TG4",
+      "summary": "Recurring issue where gondola will not send molds to TG5 unless TG4 is manually stopped.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-18T12:56:22.012Z"
+      },
+      "status": "Itzel at 06:56: same issue as yesterday, have to stop TG4 to get TG5 fed. Chad Stone tagged but no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at demolding section 07:13",
+      "summary": "Mold jammed at demold station at 07:13, 2 minutes before window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-18T13:13:32.526Z"
+      },
+      "status": "Itzel posted jam at 07:13. Shawn Jewkes asked about Theegarten settings at 07:15 (window close). No resolution."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle cute Cavanna scale missing",
+      "summary": "Checkweigh scale for cute Cavanna wrapper not on line; cannot verify piece weight.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-17T20:57:09.108Z"
+      },
+      "status": "Tyson asked Frederick, Itzel, Rich at 14:57. Rich at 20:59: have not seen it. Not located."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix best-by date wrong format",
+      "summary": "Date printer producing incorrect best-by format on MF Matrix pouches.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-18T12:32:12.257Z"
+      },
+      "status": "Itzel at 06:32: format incorrect, Kavin Ayala working on it. No resolution posted."
+    }
+  ]
+}
