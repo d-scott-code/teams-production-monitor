@@ -1,0 +1,122 @@
+{
+  "date": "2026-08-19",
+  "headline": {
+    "eyebrow": "Active holds",
+    "text": "L2 finished goods on quarantine after *5 barrels* of quarantine-status caramel loaded and run \u2014 13 LPNs of caramel on hold at L3 for FM."
+  },
+  "summary": "Three active holds: L2 finished goods quarantined after quarantine-status caramel used in production, L3 caramel lot on hold for foreign material, L1 Mac nut pallet on hold for undersize. L1 S2 caramel viscosity ran 5k\u201319k cPs vs 19k minimum through full run \u2014 approved to continue but root cause unknown.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Finished goods quarantined after quarantine caramel used",
+      "summary": "5 barrels of caramel (21117) in quarantine status were loaded and run \u2014 3 on 2nd shift, 2 on 3rd shift \u2014 before catch; 180 of 191 barrels total are quarantine status, finished product placed on quarantine pending disposition.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-19T07:27:30.48Z"
+      },
+      "status": "Finished goods on quarantine; 8 OK-status barrels available to continue production."
+    },
+    {
+      "plant": "L3",
+      "title": "Caramel lot on hold for foreign material",
+      "summary": "FM found in caramel item 10256 lot 61H16X161H this morning \u2014 13 LPNs placed on systematic hold (11 initially, 2 added after inventory adjustment).",
+      "severity": "high",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-08-19T04:50:34.431Z"
+      },
+      "status": "On hold \u2014 13 LPNs labeled and isolated by warehouse."
+    },
+    {
+      "plant": "L1",
+      "title": "Mac nut pallet on hold \u2014 undersize for Costco spec",
+      "summary": "One pallet of Mac nuts labeled for Costco found with very small pieces during 2nd shift S3 \u2014 removed from line and placed on hold pending QA disposition.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-19T01:30:22.097Z"
+      },
+      "status": "On hold \u2014 pallet isolated, QA notified."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Foreign material in caramel ingredient lot",
+      "summary": "FM discovered in caramel item 10256 lot 61H16X161H \u2014 13 LPNs of ingredient placed on hold; lot used at ML4.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-08-19T04:50:34.431Z"
+      },
+      "status": "13 LPNs on hold and labeled; team instructed to stop using lot."
+    },
+    {
+      "plant": "L3",
+      "title": "Damaged belt piece found at Theegarten 5 startup",
+      "summary": "Small piece of belt received by operator at start of 3rd shift ML4 Theegarten 5 \u2014 maintenance replaced blue belt to prevent foreign material risk, ATP verified before installation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-19T04:51:19.989Z"
+      },
+      "status": "Resolved \u2014 belt replaced, ATP passed, line running."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 chocolate tempering issues \u2014 melting tank overtemp",
+      "summary": "Mini temper unit producing high temper (1.1+) \u2014 investigation found decorator melting tank set at 60\u00b0C (should be 52\u00b0C), causing buffer tank to heat over time and degrade temper performance.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-18T14:36:18.473Z"
+      },
+      "status": "Resolved \u2014 melting tank corrected to 52\u00b0C, buffer stable at 87\u201390\u00b0F, temper holding below 1.0 through 3rd shift."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 caramel viscosity significantly low all shifts",
+      "summary": "Caramel viscosity measured 5k cPs at startup vs 19k minimum spec \u2014 first batch scrapped, second batch also low (11k\u201320k range); R&D approved to run as-is but noted inconsistency and questioned testing standard.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-08-18T15:13:05.399Z"
+      },
+      "status": "Running with QA approval \u2014 viscosity holding 11k\u201320k cPs range, below historical but deposit appearance acceptable; root cause not identified."
+    },
+    {
+      "plant": "L2",
+      "title": "WIP from previous lot found on floor at FFS",
+      "summary": "Piece of WIP from previous lot found on ground next to FFS during 3rd shift walk \u2014 line clearance not complete before batch change.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-19T04:21:51.054Z"
+      },
+      "status": "Isolated \u2014 reminder issued to all shifts to conduct full line sweep and inspect all areas for leftover WIP."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S2 caramel cook process and Sucrotherm settings \u2014 today's viscosity ran 5k\u201320k cPs vs 19k minimum across three cooks with no process changes identified."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider adding ingredient status verification step to ML2 caramel loading checklist \u2014 based on today's 5 barrels of quarantine-status caramel loaded before catch."
+    },
+    {
+      "plant": "L2",
+      "text": "Reinforce FFS line clearance procedure and add floor-area inspection requirement \u2014 today's WIP piece from previous lot found on ground at shift start."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding flow-wrap belt integrity inspection to ML4 Theegarten startup checklist \u2014 today's damaged belt piece at shift start echoes earlier packaging belt issues."
+    }
+  ]
+}

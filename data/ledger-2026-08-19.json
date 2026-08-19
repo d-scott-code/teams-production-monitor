@@ -1,0 +1,430 @@
+{
+  "date": "2026-08-19",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML3 ramp conveyor and blow-offs caused *multiple stoppages* through 1st shift \u2014 still troubleshooting by handoff"
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel cluster all day with temper struggles on Sollich 2 \u2014 team dialed it in by mid-2nd shift after melting tank temp fix and new caramel batch. Sollich 3 finished mac nut run and went down at 05:51 after running out of chocolate.",
+    "L2": "L2 ML3 fought ramp conveyor and blow-off issues from startup through end of 1st shift \u2014 multiple stops, some progress by 15:04 but recurring. ML2 cleared several quick jams and released 180 quarantined caramel barrels. FFS replaced damaged seal bar with original as temp fix.",
+    "L3": "L3 ML4 had 6 mold jams in demolding overnight \u2014 root cause identified as east plow rail misalignment, corrected by 04:52. Truffle bottomer wire took 3 hours to repair, cleared by 04:43. ML1 reported torn C1 belt."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "All 180 FEA caramel barrels (21117) released from quarantine after Charity approval at 07:09."
+    },
+    {
+      "plant": "L2",
+      "text": "Air compressor capacity hit limit when running FFS, sorting, ML3, and mold blow-dry at once \u2014 resolved by staggering loads."
+    },
+    {
+      "plant": "L3",
+      "text": "13 LPNs of caramel lot 61H16X161H on hold for foreign material (item 10256)."
+    },
+    {
+      "plant": "L1",
+      "text": "3 pallets of expired chocolate (10102) extended 30 days after QA inspection."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 chocolate tempering out of range after melting tank misconfiguration",
+      "summary": "Melting tank set to 60\u00b0C (should be 52\u00b0C) caused buffer tank to overheat, pushing mini temper out of spec through morning \u2014 team brought temps down and stabilized by 16:26.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-18T13:52:45.227Z"
+      },
+      "resolution": "Lowered melting tank to 52\u00b0C, cycled through reheat, adjusted mini temper settings \u2014 temper steady below 1.0 by 16:26 per Elizabeth Hernandez."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 caramel viscosity well below spec (5k vs 19k target)",
+      "summary": "First batch tested at 5,000 cP against 19,000 target \u2014 all ingredients and cook temp (238\u00b0F) correct, no equipment issue found.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-08-18T15:13:05.399Z"
+      },
+      "resolution": "Scrapped low-viscosity batch, cooked new batch at 238\u00b0F \u2014 subsequent tests in acceptable range per Jorel at 21:22."
+    },
+    {
+      "plant": "L1",
+      "title": "MM8 printer screen malfunctioned",
+      "summary": "Screen failure on MM8 printer \u2014 borrowed MM5 printer to continue, cable repaired but unit still needs tech visit.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-18T13:52:45.227Z"
+      },
+      "resolution": "Cable repaired at 08:21 per Chris Jeffs \u2014 running on borrowed MM5 printer, tech visit scheduled."
+    },
+    {
+      "plant": "L1",
+      "title": "Mac nut pallet with undersized pieces",
+      "summary": "One pallet labeled for Costco contained very small pieces outside spec \u2014 caught during production.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-19T01:30:22.097Z"
+      },
+      "resolution": "Pallet removed from line and placed on hold, QA notified at 19:30 per William Beattie."
+    },
+    {
+      "plant": "L1",
+      "title": "3 pallets of chocolate (10102) expired",
+      "summary": "Operator discovered 3 pallets past printed expiration date before use \u2014 slight bloom visible but otherwise good condition.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-19T03:13:24.128Z"
+      },
+      "resolution": "QA inspected, extended expiration 30 days per Angelica Perez at 22:04 \u2014 approved for use."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS tape machine not sealing boxes",
+      "summary": "Tape machine failure at 15:40 preventing box sealing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-18T21:40:00.852Z"
+      },
+      "resolution": "Working fine at 15:46 per Brandon Lance \u2014 6-minute stop."
+    },
+    {
+      "plant": "L2",
+      "title": "Air compressors unable to keep up with demand",
+      "summary": "Running FFS, sorting, ML3, and blow-drying molds simultaneously exceeded compressor capacity \u2014 shutting down ML3 and FFS intermittently at 16:43.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-18T22:43:25.58Z"
+      },
+      "resolution": "Staggered air usage, stopped blow-dry hoses \u2014 under control and running at 17:52 per Alan Todd."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 caramel tank leak",
+      "summary": "Leak detected on caramel tank requiring maintenance repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-19T04:13:33.933Z"
+      },
+      "resolution": "Maintenance repaired leak at 22:24 per Gustavo Rodas."
+    },
+    {
+      "plant": "L2",
+      "title": "180 caramel barrels (21117) in quarantine status loaded by mistake",
+      "summary": "3 barrels loaded on 2nd shift plus 2 on 3rd shift were all quarantine status \u2014 180 of 191 total barrels quarantined, only 8 OK barrels available.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-19T07:27:30.48Z"
+      },
+      "resolution": "After Charity verification, all FEA barrels released from quarantine at 07:09 per Hervin Herrera."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS side seal bar damaged",
+      "summary": "Side seal bar failure at 04:06 requiring replacement.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-19T10:06:52.668Z"
+      },
+      "resolution": "Maintenance installed original sealer bar as temporary fix, holding at 04:16 per Zack Kurtz."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars jamming at flow wrap entrance",
+      "summary": "Bars stacking at FW entrance causing line stoppage at 04:07.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-19T10:07:00.019Z"
+      },
+      "resolution": "Line up at 04:23 per Gustavo Rodas \u2014 16-minute stop."
+    },
+    {
+      "plant": "L2",
+      "title": "Panning conveyor stuck with product buildup",
+      "summary": "Low-profile panning conveyor not running \u2014 belt stuck with product and powder.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-08-19T02:56:39.27Z"
+      },
+      "resolution": "Cleared and running at 05:21 per Dave Ruff \u2014 belt just needed cleaning."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 nozzle clog causing broken bars",
+      "summary": "Single nozzle clogged on depositor, generating broken-bar scrap at 22:13.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-19T04:13:33.933Z"
+      },
+      "resolution": "Clog cleared by 22:20 per Gustavo Rodas \u2014 one bar affected."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 white rail misaligned on blue packaging belt",
+      "summary": "Packaging belt white rail out of position, line stopped for adjustment at 22:29.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-19T04:29:23.996Z"
+      },
+      "resolution": "Line back up at 22:31 \u2014 2-minute stop per Gustavo Rodas."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 deflector hitting belt on packaging line",
+      "summary": "Line stop deflector making contact with belt at 06:20.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-19T12:20:34.676Z"
+      },
+      "resolution": "Line running at 06:23 per ML2 FW \u2014 3-minute stop."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jams in demolding area (6 incidents overnight)",
+      "summary": "Recurring mold jams at demolding turner \u2014 6 jams between 01:07 and 04:44, excessive chocolate buildup from scraper leaving residue.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-08-19T06:46:33.787Z"
+      },
+      "resolution": "Root cause identified as east side plow rail misalignment causing chocolate buildup \u2014 corrected, last jam cleared at 04:52 per Kimberly Morales."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jams at discharge (multiple)",
+      "summary": "Gondola jam at 12:59, chocolate packed under belt causing belt misalignment \u2014 second jam at 16:18 requiring belt realignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-18T18:59:46.996Z"
+      },
+      "resolution": "Cleaned front end and trays, started back up at 18:45 per Shane Olsen \u2014 ran well rest of shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 blue belt jamming from rotation issues",
+      "summary": "Blue belt on Theegarten 5 causing jams when rotating \u2014 small belt piece found at shift start indicating potential FM risk.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-19T04:51:19.989Z"
+      },
+      "resolution": "Maintenance replaced belt, washed for ATP, installed and verified \u2014 running normally at 00:06 per ML4 TG."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle bottomer wire needs repair",
+      "summary": "Bottomer wire issue blocking truffle line startup at 01:37 \u2014 maintenance working, called Nathan from L1 to assist with training.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-19T07:37:34.893Z"
+      },
+      "resolution": "Repair complete at 04:43 per Alan Greer \u2014 3-hour repair with cross-plant help."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 discharge belt misaligning bars (M2 conveyor)",
+      "summary": "Belt M2 on discharge misaligning chocolate bars, generating scrap at 00:15.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-19T06:15:55.227Z"
+      },
+      "resolution": "Maintenance assisted, capture test correct at 00:18 per Janeth Sanchez."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Cluster Cases (40964) short for Thursday start \u2014 need 12,800, have 3,248",
+      "summary": "Scheduled to start cluster production Thursday, BOM calls for 12,800 boxes but only 3,248 in stock.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ricardo Tovar",
+        "time_utc": "2026-08-19T08:27:13.779Z"
+      },
+      "status": "Question posted to planning at 02:27, no receipt date or supply plan confirmed."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 bag count inventory discrepancy of 751 units",
+      "summary": "System shows 12,219 bags but physical count is 11,468 \u2014 difference of 751 bags reported to IMS at 09:08.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-18T15:08:17.536Z"
+      },
+      "status": "Discrepancy reported to IMS, no adjustment or root cause identified as of 10:35."
+    },
+    {
+      "plant": "L1",
+      "title": "L1 second floor HVAC feels humid and sticky",
+      "summary": "Upstairs environment uncomfortable, possible HVAC issue at 09:55.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-08-18T15:55:04.935Z"
+      },
+      "status": "William Lopez acknowledged at 12:35, no update on inspection or findings."
+    },
+    {
+      "plant": "L1",
+      "title": "Chocolate depositor melting tank cold after power trip",
+      "summary": "Main power switch tripped during earlier power outage \u2014 melting tank cold, chocolate solidified, needs time to reheat and melt.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-18T21:46:43.448Z"
+      },
+      "status": "Still heating to melt chocolate block as of 15:46 \u2014 won't be used in near future per William Beattie."
+    },
+    {
+      "plant": "L1",
+      "title": "Multiple areas need repair (photos posted)",
+      "summary": "Ebrima posted photos of areas needing maintenance fixes at 02:26, tagged Jody and Brandon.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-19T08:26:35.673Z"
+      },
+      "status": "Photos posted, no maintenance response or work plan as of window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 ramp conveyor and blow-offs causing repeated line stops",
+      "summary": "Ramp conveyor moving up/down randomly, excessive blow-offs past metal detector \u2014 line stopped multiple times from 08:04 through 10:55 on 1st shift, CIL performed at 10:55.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-18T13:20:29.43Z"
+      },
+      "status": "Packaging running better at 11mpm by 15:04 per Alan Todd after Raymond made changes, but recurring stops reported through shift end \u2014 dialing in continues."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blow-off nozzles struggling, causing zero errors",
+      "summary": "Nozzles not blowing off bags properly, generating zero errors at 22:50 \u2014 maintenance adjusting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-19T04:50:03.108Z"
+      },
+      "status": "Nozzles being adjusted by maintenance as of 22:51, second zero error occurred \u2014 no confirmation of fix."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 caramel cannot be entered into system, status needs changing",
+      "summary": "Chocolate adjustment blocked \u2014 caramel status preventing system entry at 01:03.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Haydee Hidalgo Gonzales",
+        "time_utc": "2026-08-19T07:03:43.727Z"
+      },
+      "status": "Escalated to Alan Todd, Nidia, Sofia, Gustavo, Zack at 01:03 \u2014 no status change or workaround confirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 caramel lot 61H16X161H on hold for foreign material (13 LPNs)",
+      "summary": "FM found in caramel item 10256 this morning \u2014 lot 61H16X161H placed on systematic hold, 13 LPNs total.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-08-19T04:50:34.431Z"
+      },
+      "status": "13 LPNs on hold and labeled per Angel Cabrera as of 22:50, no investigation findings or disposition."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 belt torn",
+      "summary": "C1 belt torn, maintenance aware at 00:45.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-19T06:45:34.568Z"
+      },
+      "status": "Maintenance aware as of 00:45 per Raoul Lubain, no repair update through window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate melting tank door not closing properly from heat",
+      "summary": "Door fails to close properly, heat-related warping \u2014 recurring issue at 17:02.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-08-18T23:02:20.869Z"
+      },
+      "status": "No solution found yet per Chad Stone at 21:24 \u2014 still working on it."
+    },
+    {
+      "plant": "L3",
+      "title": "Product staging area has 20+ pallets of returns and incorrect staging",
+      "summary": "Had to move over 20 pallets of product returns and incorrect staging \u2014 no standard being followed.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-08-19T11:46:40.483Z"
+      },
+      "status": "Pallets moved, escalated to Chad, Rose, Alan, Rich, Marcos, Tyson, Frederick at 05:46 \u2014 need to establish standard."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle nose bar rollers starting to wear, rough spots developing",
+      "summary": "Some M3 conveyor nose bar rollers showing rough spots but none seized yet \u2014 measurements taken to order replacements.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-08-19T12:39:53.142Z"
+      },
+      "status": "Parts being ordered for replacement and stock per Kavin at 06:39, no timeline for install."
+    }
+  ]
+}
