@@ -1,0 +1,221 @@
+{
+  "date": "2026-08-20",
+  "headline": {
+    "eyebrow": "Safety flag",
+    "text": "L1 found *foreign material* in almonds overnight\u2014line down for 4-hour allergy clean, product on hold pending investigation."
+  },
+  "per_plant_summary": {
+    "L1": "S2 ran through multiple high-temper cycles that resolved shift by shift, then QA found suspected insect larvae in almonds at 02:28\u2014line is down for allergy clean as of 07:10. S3 completed a caramel deposit trial and replaced a delaminating belt.",
+    "L2": "ML2 had a stuck agitator knob (cleared in 8 minutes) and replaced a peeling drive belt. ML3 fought depositor chocolate buildup through 2nd shift and snapped a drive belt overnight\u2014belt replaced and line restarted by 05:30.",
+    "L3": "Truffle line adjusted Cavanna jaws in the morning, ran out of V2 flow wrap at 17:34 but staged V3 and resumed depositing by 19:50. ML1 replaced depositor agitator bushings. MF Matrix and ML4 ran clean."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 recurring high temper readings",
+      "summary": "Enrober temper spiked above 1.0 multiple times through 1st shift, requiring line stops and adjustments to mini-tempering unit and mass cooling.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-08-19T15:06:26.583Z"
+      },
+      "resolution": "Stabilized after repeated adjustments; final reading 0.8 at 12:48 and line ran through end of 1st shift (S2 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal detector air supply shut off",
+      "summary": "Detector tested correctly but reject mechanism didn't open; maintenance found air supply valve closed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-08-19T13:28:48.272Z"
+      },
+      "resolution": "Air restored, detector detected and opened correctly on retest (Mariela Gudino, 07:28)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C22 belt delaminating",
+      "summary": "C22 belt showing delamination; maintenance replacing belt and will require ATP/allergen retest.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-19T16:57:32.442Z"
+      },
+      "resolution": "All jar system for S3 complete including C5-18 by 16:03 (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "MM8 printer control board failure",
+      "summary": "MM8 printer down; VideoJet vendor dispatched for on-site repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-19T19:02:21.203Z"
+      },
+      "resolution": "Control board replaced by VideoJet, printer back up and running at 14:00 (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 enrober filter missing locking clip",
+      "summary": "Operator found filter not assembled correctly and missing the locking clip during inspection.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-19T21:09:18.692Z"
+      },
+      "resolution": "Operator assembled filter correctly with clip (Victor Romero Sr., 15:09)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap sensor fault (PG45/PG46)",
+      "summary": "Line stopped; maintenance called to resolve PG45 and PG46 sensor issues on flow wrapper.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-19T17:30:53.21Z"
+      },
+      "resolution": "Cleared at 11:40 \u2014 \"The line is running\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sensor B31 triggering line stop",
+      "summary": "Line stopped due to sensor B31 fault; maintenance on-site troubleshooting.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-19T19:07:02.59Z"
+      },
+      "resolution": "Sensor issue resolved, line running at 13:18 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 drive belt snapped on rear motor",
+      "summary": "Drive belt on back far right drive motor failed; depositor emptied end of 2nd shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-20T03:57:27.154Z"
+      },
+      "resolution": "Belt replaced by maintenance, depositing started at 05:30 (Fernando Flores, Molding Line 3 Filler)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 double belt drive side peeling",
+      "summary": "Drive-side belt on double belt system delaminating, creating jams; maintenance replaced belt.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Leandro",
+        "time_utc": "2026-08-20T11:57:19.86Z"
+      },
+      "resolution": "New belt cleaned, passed ATP, installed, and line running at 06:51 (Zack Kurtz, Victor Leandro)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 down ramp cycling intermittently",
+      "summary": "Down ramp triggering every few minutes, getting worse; performed CIL to attempt fix.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-20T01:02:02.204Z"
+      },
+      "resolution": "Down ramp stable after CIL; only one trigger in 30 minutes vs. every few minutes before (Brandon Lance, 20:06)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 depositor chocolate buildup",
+      "summary": "Chocolate building up on depositor back and around blades, causing deposit issues; pulled and cleaned twice.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-08-20T02:45:43.762Z"
+      },
+      "resolution": "Line running fine after second cleaning at 21:08 (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 caramel tank agitator not spinning",
+      "summary": "Agitator motor in caramel holding tank stopped turning; maintenance called to investigate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-20T10:17:06.237Z"
+      },
+      "resolution": "Potentiometer knob stuck on inside, freed and agitator working again at 04:25 (Gustavo Rodas, Fernando Flores)."
+    },
+    {
+      "plant": "L3",
+      "title": "Ran out of V2 flow wrap mid-shift",
+      "summary": "Line paused at 17:34 waiting for FW 40793-V3 after consuming all V2 packaging.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-08-19T23:34:16.679Z"
+      },
+      "resolution": "V3 arrived at 19:33, depositing restarted at 19:50 \u2014 \"We've started depositing\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna jaw pressure causing open units",
+      "summary": "Maintenance adjusted jaw pressure and backlash on Cavanna 1 to eliminate open units in flow wrap.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-19T17:26:09.068Z"
+      },
+      "resolution": "Cleared at 11:31 \u2014 \"Adjusted jaw pressure and backlash no more open units being produced and they look a lot better\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor agitator bushings worn",
+      "summary": "Maintenance replacing worn agitator bushings on depositor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Greer",
+        "time_utc": "2026-08-20T08:26:29.938Z"
+      },
+      "resolution": "Depositor back in place with new bushings at 06:11 (Kavin Ayala)."
+    },
+    {
+      "plant": "L3",
+      "title": "Tempermeter not printing test results",
+      "summary": "Tempermeter system failed to print out temper test documentation.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-20T05:58:31.849Z"
+      },
+      "resolution": "Cleared at 00:08 \u2014 \"Its working now\" (TruffleLine Enrober)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Foreign material found in almonds\u2014line down for allergy clean",
+      "summary": "QA found almond with suspected insect damage and mold at 02:28, then gray/tan fiber-like material resembling larvae in multiple pallets across lot numbers; all production from 02:00 onward on hold.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-08-20T08:28:50.397Z"
+      },
+      "status": "Line down since 04:24, emptying chocolate from melting tanks (both empty as of 07:10), 4-hour allergy clean in progress, product hold active pending investigation completion."
+    }
+  ]
+}
