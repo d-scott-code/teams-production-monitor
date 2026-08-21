@@ -1,0 +1,270 @@
+{
+  "date": "2026-08-21",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 was down *4 hours* overnight for enrober wire belt replacement \u2014 reheating in progress at window close."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 enrober belt failed overnight with a broken link, line down since 03:10 and still reheating by 07:15. Sollich 2 return pipe leak reported to maintenance. Multiple Matrix X-ray issues resolved during first shift, but salt-driven false rejections remain elevated. Sollich 4 caramel buckets ran smoothly after startup checks.",
+    "L2": "ML2 and ML3 ran through multiple CIL stops for mold jamming and flow wrap repairs, all cleared same-shift. Lines ran strong after interventions. FFS vibrato fuse replaced, now operational.",
+    "L3": "ML1 started tempering with two leaks flagged (buffer pump, PLT-to-shacker) and low temper trending down through first shift. Truffle line guillotine and tunnel sensors both down early shift, both cleared within 30 minutes. ML4 cleaning cycle identified missing TG3 scraper and stuck product on conveyors."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Corner boards (40725) inventory at 700 units; supplier expediting shipment."
+    },
+    {
+      "plant": "L1",
+      "text": "Jars (40105-V3) truckload scheduled for pickup Monday morning to cover production needs."
+    },
+    {
+      "plant": "L3",
+      "text": "ML1 filter basket installation added to PTL/buffer tank SU checklist after miss during plain chocolate run."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MM3 & MM4 arm alignment and heating element",
+      "summary": "Line stopped at 10:04 for MM4 arm alignment and MM3 loose sealing bar heating element; maintenance corrected both issues.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-20T16:04:51.410Z"
+      },
+      "resolution": "Cleared at 10:26 \u2014 \"Operations have been resumed\" (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 X-ray reject arms striking on MM3 & MM4",
+      "summary": "X-ray Matrix units 3 and 4 detected test cards correctly but reject arms struck after bags had passed through.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-20T16:09:06.979Z"
+      },
+      "resolution": "Cleared at 10:27 \u2014 \"Issue with the arms on X-Ray Matrix units 3 and 4 has been resolved. Verification performed again\u2026results were satisfactory\" (Ingrid Moreno Angarita)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 metal detector blocking caramel",
+      "summary": "Metal detector would not pass caramel buckets through, halting line flow.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-08-20T22:16:48.697Z"
+      },
+      "resolution": "Cleared at 16:18 \u2014 \"The operator restarted it and it's now operational\" (Angelica Perez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap piece damaged",
+      "summary": "Flow wrap component damaged at 07:48, maintenance called to pack area.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-08-20T13:48:53.701Z"
+      },
+      "resolution": "Cleared at 07:57 \u2014 \"The line is running\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 hard reset required",
+      "summary": "Line stopped at 07:51 for a hard reset of the control system.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-20T13:51:24.479Z"
+      },
+      "resolution": "Cleared at 08:12 \u2014 \"Line back up running\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jamming requiring CIL",
+      "summary": "Line stopped at 10:53 for CIL cleaning due to high volume of molding jams.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-20T16:53:15.258Z"
+      },
+      "resolution": "Cleared at 11:27 \u2014 \"The line star running\" (ML2 FW). Alex Mendoza confirmed at 15:56 \"line is running strong, no issues with jams after CIL.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 bubbles in product after changeover",
+      "summary": "Product showed bubbles during first shift startup; adjustments made to depositor settings.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-08-21T12:16:10.067Z"
+      },
+      "resolution": "Cleared at 06:16 \u2014 \"We were having bubbles in the product. Made some adjustments and running again\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line guillotine not turning on",
+      "summary": "Guillotine failed to power on at 05:11; maintenance called to troubleshoot electrical and sensor issues.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-21T11:11:50.924Z"
+      },
+      "resolution": "Cleared at 05:42 \u2014 \"After finished power cycle the sensor. The guillotine is working\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line tunnel sensors offline",
+      "summary": "All sensors on cooling tunnel were not powering on, blocking line startup.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-21T11:37:30.503Z"
+      },
+      "resolution": "Cleared at 05:39 \u2014 \"The sensor are working (fixed)\" (Raoul Lubain) after maintenance power cycled them."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line auger pin lost during washing",
+      "summary": "Auger pin misplaced during wash-down, delaying startup while operators searched for the part.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-21T12:08:09.736Z"
+      },
+      "resolution": "Cleared at 06:34 \u2014 \"We the pin\" [found] (Raoul Lubain). Chad Stone confirmed at 06:37."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 enrober wire belt broken link",
+      "summary": "Enrober mesh belt failed overnight with broken link; line down since 03:10 for 17-link replacement, requiring full retemper after repair.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-21T06:42:13.321Z"
+      },
+      "status": "Maintenance nearly complete as of 06:03, reheating in progress to restore temper before startup."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 X-ray false rejections due to salt",
+      "summary": "All three Matrix X-ray units rejecting high volumes of pouches due to salt in BET pecan product; settings at minimum threshold to still catch QA cards.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-20T18:48:38.172Z"
+      },
+      "status": "Caleb York raised slope on MM5 at 19:30 to reduce false rejects; waiting one hour of runtime to verify before adjusting MM3 and MM4. Reject bins filling every 10\u201315 minutes as of 19:49."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 missing spacers on MM3 pouch arms",
+      "summary": "Maintenance discovered spacers for pouch-grabbing arms were missing, causing alignment issues that required full realignment after earlier fixes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-20T20:07:21.996Z"
+      },
+      "status": "Root cause identified at 14:07, arms will need to be realigned again with proper spacers installed."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 return pipe leaking",
+      "summary": "Return pipe actively leaking; maintenance notified at 06:58 but no update on repair status by window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-21T12:58:01.357Z"
+      },
+      "status": "Maintenance notified at 06:58, no follow-up on repair progress as of 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank pump leaking",
+      "summary": "Leak detected on electrical pump from buffer tank to tempering unit during startup at 04:40.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-08-21T10:40:13.112Z"
+      },
+      "status": "Leak reported to maintenance and leadership at 04:40, no repair update by 07:15."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate leak from PLT to shacker",
+      "summary": "Chocolate leak found on line from PLT to shacker at 04:45 during tempering startup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-08-21T10:45:55.060Z"
+      },
+      "status": "Leak flagged to maintenance and leadership at 04:45, no resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper running low and slow to trend",
+      "summary": "Temper reading \u22120.8 at startup despite multiple water temp adjustments; continued trending issues through first shift with settings at edge of normal range.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-21T11:01:21.662Z"
+      },
+      "status": "As of 06:44 temper trending down to acceptable range after adjustments to mixing water, crystallization, and cold water temps; holding for next reading to confirm stability."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt mold heater running high",
+      "summary": "Mold heater on C6 belt reading very high; Leon requested one hour of run-in time before sending chocolate to verify belt stays centered.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-21T12:07:32.778Z"
+      },
+      "status": "Nathan Ruiz dropped heater from 40% to 20% at 06:52 due to new heat shield efficiency; belt awaiting runtime verification as of 07:02."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 missing scraper before cleaning",
+      "summary": "Theegarten 3 scraper not found in expected location when crew started cleaning cycle at 23:24.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-21T05:24:54.713Z"
+      },
+      "status": "Scraper missing as of 23:24, no follow-up on whether part was located or replaced."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 top conveyors need reclean for stuck product",
+      "summary": "Product still stuck on packaging-side top conveyors after cleaning; QA flagged need for additional cleaning pass.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-08-21T06:22:32.365Z"
+      },
+      "status": "Reclean requested at 00:22, no confirmation of completion by window close."
+    }
+  ]
+}

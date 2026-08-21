@@ -1,0 +1,97 @@
+{
+  "date": "2026-08-21",
+  "headline": {
+    "eyebrow": "Equipment damage",
+    "text": "L1 S3 enrober wire belt ran with *broken link* until caramel exhausted \u2014 replaced during planned stop, no FM found."
+  },
+  "summary": "One active hold resolved (L3 ML4 auger pin found after 26-minute search). L1 S3 enrober wire belt ran with broken link under supervision until batch complete. L3 ML1 filter basket startup miss highlights checklist gap.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "ML4 auger pin lost during washing",
+      "summary": "Auger pin lost during TG3 cleaning at 06:08; operators held on shift to search, pin recovered at 06:34 \u2014 26-minute delay to startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-21T12:08:09.736Z"
+      },
+      "status": "Resolved \u2014 pin found at 06:34, startup resumed."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S3 enrober wire belt broken link",
+      "summary": "Broken link discovered on enrober belt at 00:42; maintenance and lead approved running caramel to completion under continuous inspection, line stopped at 03:10 for 17-link replacement, restarted at 06:03.",
+      "severity": "high",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-21T06:42:13.321Z"
+      },
+      "status": "Resolved \u2014 belt replaced, line restarted after reheat at 06:03."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 metal detector malfunction",
+      "summary": "Metal detector wouldn't pass caramel buckets at 16:16; operator power-cycled, unit operational within 2 minutes.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-08-20T22:16:48.697Z"
+      },
+      "status": "Resolved \u2014 operator restart successful at 16:18."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 packaging damage scrap",
+      "summary": "Broken box and bag resulted in 50 lb product scrap at 03:03.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Haydee Hidalgo Gonzales",
+        "time_utc": "2026-08-21T09:03:10.368Z"
+      },
+      "status": "Scrap recorded, no further action."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 filter basket not installed at startup",
+      "summary": "2000-micron filter basket missing from PTL/buffer tank startup; discovered during Phil's inspection at 04:59, basket installed before chocolate push \u2014 checklist exists for crisp only, not plain runs.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-08-21T10:59:18.830Z"
+      },
+      "status": "Open \u2014 Adriana updating SOP/checklist to add filter basket step for all products."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 scraper missing before cleaning",
+      "summary": "TG3 scraper reported missing before 3rd shift cleaning start at 23:24; unclear if lost earlier or not installed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-08-21T05:24:54.713Z"
+      },
+      "status": "Open \u2014 no follow-up posted on disposition or search."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding enrober wire belt inspection to S3 pre-shift checks \u2014 broken link discovered during production run at 00:42."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding 2000-micron filter basket installation to ML1 startup checklist for all products, not just crisp \u2014 based on plain chocolate startup miss at 04:59."
+    },
+    {
+      "plant": "L3",
+      "text": "Review TG3 scraper accountability and pre-cleaning inspection protocol \u2014 scraper found missing before shift start with no clear loss event."
+    }
+  ]
+}
