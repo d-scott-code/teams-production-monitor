@@ -1,0 +1,186 @@
+{
+  "date": "2026-08-22",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 lost *3 hours* to wire mesh and communication failures, cleared by mid-morning \u2014 L1 Sollich 2 shut down at window close on low kitchen reserve."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 recovered from a 3-hour startup delay caused by wire mesh tension loss and machine communication failure, then handled four smaller stoppages through the day. Sollich 4 completed Crumbl production, cleaned over to Hershey caramel, and ran into a brief conbar feed issue that cleared in 17 minutes. Sollich 2 ran out of corner boards overnight and shut down at 07:02 on low kitchen reserve with no restart by window close.",
+    "L2": "All three lines ran production with routine CIL breaks. ML2 and ML3 ran caramel products across all shifts with standard quality checks. FFS ran bag filling with batch changes overnight. No unplanned stoppages.",
+    "L3": "ML1 replaced a failed sticker machine overnight and cleared a Cavanna belt tracking issue by morning. ML4 and Truffle Line ran routine production. MF Matrix reported a bag-detect sensor malfunction at 08:04 yesterday with no posted resolution, though production continued."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Brandon Lance sent 24 empty caramel drums to L3 for oil flushing at 14:31, and the wash caddy transferred over at 14:58."
+    },
+    {
+      "plant": "L1",
+      "text": "Corner boards item 40725 are out of stock plant-wide; 2,160 units arriving Monday morning, pallets wrapping without them under QA rework status."
+    },
+    {
+      "plant": "L3",
+      "text": "ML1 sticker applicator was swapped with the ML4 unit overnight; ML1 unit has been repaired and is ready to swap back per Kavin."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Enrober wire mesh lost tension, machines not communicating",
+      "summary": "Wire mesh would not extend when turning on belt tension after reheat; machines stopped communicating with each other.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-21T13:28:10.4Z"
+      },
+      "resolution": "Hard reset restored communication by 07:54; maintenance cleaned nuts by tensioning roller to restore tension at 08:09. Tempering started 08:37, two good tempers by 10:28, operations resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "Cross conveyor 1 scraper rubbing belt, debris found",
+      "summary": "Scraper on cross conveyor 1 rubbing hard against belt creating wavy pattern; belt debris found in cover and on scraper structure after inspection.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-21T19:51:11.186Z"
+      },
+      "resolution": "Line paused at 13:51, inclusion hopper emptied, tunnel 1 belt inspected, maintenance burned edges of cross conveyor 1, area cleaned and sanitized. ATP test passed at 15:00, operations resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "MM5 pouch-opening arms not working properly",
+      "summary": "Arms failed to open pouches correctly at 11:24, line paused for accumulation while Nathan made adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-21T17:28:27.804Z"
+      },
+      "resolution": "Troy cleared by 12:32 \u2014 \"everything is working properly now.\""
+    },
+    {
+      "plant": "L1",
+      "title": "MM5 X-ray outfeed belt stopped, bag jammed in gears",
+      "summary": "Outfeed belt on MM5 X-ray stopped at 12:43; maintenance found a bag of product trapped underneath the belt in the gears.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-21T18:43:56.99Z"
+      },
+      "resolution": "Cleared by 12:52 \u2014 \"Matrix 5 is back up and running. Verification performed using test cards, equipment responded correctly\" (Ingrid)."
+    },
+    {
+      "plant": "L1",
+      "title": "Caramel not feeding from buffer tank to conbar tower",
+      "summary": "Caramel ready in buffer tank at 15:33 but not sending to conbar tower on Sollich 4 after changeover from Crumbl.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-21T21:33:46.362Z"
+      },
+      "resolution": "Marcos and Caleb York resolved at 15:50 \u2014 \"We have caramel at the conbar tower now.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Glycol pumps shut off on both melting tanks",
+      "summary": "Enrober operator noticed glycol pumps were off for both melting tanks at 16:19, chocolate temperature dropped significantly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-21T22:19:12.245Z"
+      },
+      "resolution": "Pumps turned back on immediately at 16:19; no production impact posted in subsequent 15 hours of window."
+    },
+    {
+      "plant": "L1",
+      "title": "Russell Finex top valve causing pump faults",
+      "summary": "Top valve issue on Russell Finex causing return pump and riser pump to fault out at 17:06; line paused with 19 bins accumulation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-21T23:06:24.475Z"
+      },
+      "resolution": "Caleb York found the air valve switch off, unplugged and replugged position sensor. Line running again at 17:35."
+    },
+    {
+      "plant": "L1",
+      "title": "THG rejecting pieces that stick together after tunnel 2",
+      "summary": "First batch on Sollich 4 HER caramel showing pieces exiting tunnel 2 separated but conjoining on small belt before THG, then being rejected.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-21T23:37:00.043Z"
+      },
+      "resolution": "Lowered cooling in tunnel 2 at 17:38 to prevent sticking; THG running great by 22:18 per Conner, centerline posted at 23:30."
+    },
+    {
+      "plant": "L3",
+      "title": "Sticker machine failure on ML1",
+      "summary": "Unit stopped working properly overnight; maintenance swapped in the ML4 sticker applicator as a temporary fix.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-08-22T06:22:57.522Z"
+      },
+      "resolution": "Maintenance replaced the unit with ML4's sticker applicator by 01:00 and verified it working properly at 01:17 (Janeth)."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna C6 belt tracking alarm causing line stops",
+      "summary": "Belt stopped moving repeatedly with tracking alarms on the Cavanna screen starting at 06:49.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-08-22T12:49:24.381Z"
+      },
+      "resolution": "Nathan realigned the Imperial demolding belt at 07:11 \u2014 \"belt needed a slight alignment, operator caught it right away\" \u2014 C1 running correctly by 07:12."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 line shut down on low kitchen reserve",
+      "summary": "All condensed milk is cold and pumping slowly; kitchen reserve held between 30-60% overnight but line shut down at 07:02 due to low reserve.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-22T12:36:58.048Z"
+      },
+      "status": "Line down as of 07:02, 13 minutes before window close. No restart posted."
+    },
+    {
+      "plant": "L1",
+      "title": "Out of corner boards item 40725 on Sollich 2",
+      "summary": "Line ran out of corner boards overnight; wrapping pallets without them and QA placing all pallets on hold/rework status until parts arrive Monday.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-22T07:13:12.219Z"
+      },
+      "status": "2,160 corner boards inbound Monday morning per Ethan Bean. All pallets produced without corner boards under rework status. Warehouse full, may need to send pallets to SV for rework with two more shifts today (Jody, 06:48)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bag-detect sensor malfunction",
+      "summary": "Sensor that detects bag for product filling not working at 08:04 yesterday; product falling outside the bag.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-21T14:04:27.546Z"
+      },
+      "status": "Maintenance notified at 08:04 on Aug 21. No resolution posted in 23 hours of remaining window, though production continued through changeovers and into overnight."
+    }
+  ]
+}

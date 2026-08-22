@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-22",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S2 wrapping without approved corner boards \u2014 *all pallets* on rework hold pending Monday delivery."
+  },
+  "summary": "One active hold at window close: L1 S2 packaging without approved corner boards (40725), pallets marked rework status until Monday delivery. L1 S3 belt debris event resolved after 4-hour line stop, cleaning, and ATP pass. L1 S3 MM5 X-ray belt jam cleared and test-card verified.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 pallets wrapped without approved corner boards",
+      "summary": "Line ran out of item 40725 corner boards; QA placed all pallets produced without corner boards on rework status pending Monday material arrival.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-22T07:13:12.219Z"
+      },
+      "status": "Open \u2014 2,100 corner boards arrive Monday morning, pallets will remain on rework until then."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S3 belt debris found in cross conveyor 1 cover and scraper",
+      "summary": "Belt debris discovered on Cross Conveyor 1 scraper and cover; line stopped, inclusion hopper emptied, tunnel 1 inspected for FM, edges burned, area cleaned/sanitized, ATP passed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-08-21T20:06:57.751Z"
+      },
+      "status": "Resolved \u2014 ATP passed at 2026-08-21T21:00:45.565Z, operations resumed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 MM5 X-ray outfeed belt stopped \u2014 product bag jammed in gears",
+      "summary": "MM5 X-ray belt stopped; maintenance found product bag trapped underneath belt in gears, cleared, X-ray test cards passed verification.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-21T18:32:00.716Z"
+      },
+      "status": "Resolved \u2014 belt cleared, X-ray verified with test cards, normal operations resumed at 2026-08-21T18:52:10.094Z."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM bag-detection sensor failure \u2014 product falling outside pouch",
+      "summary": "Sensor detecting bag position for filling malfunctioned, causing product to fall outside the bag; maintenance notified and corrected.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-21T14:04:27.546Z"
+      },
+      "status": "Resolved \u2014 maintenance corrected sensor issue, line resumed normal operations."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding cross-conveyor belt edge inspection to S3 mid-shift checklist \u2014 based on the belt debris found on Cross Conveyor 1 scraper at 2026-08-21T20:06:57.751Z."
+    },
+    {
+      "plant": "L1",
+      "text": "Review packaging-material inventory triggers and lead-time buffers \u2014 based on S2 corner board stockout (40725) forcing quality hold on all production at 2026-08-22T07:13:12.219Z."
+    }
+  ]
+}
