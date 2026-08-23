@@ -1,0 +1,106 @@
+{
+  "date": "2026-08-23",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L3 demolding belt went down for *90 minutes* overnight but cleared with L1 maintenance assist; L1 flagged a bird's nest in the new sol 1 chiller that remains open."
+  },
+  "per_plant_summary": {
+    "L1": "Ran caramel production across Sollich 2 with no line breaks. Two maintenance flags: a bird's nest discovered in the new sol 1 chiller at 01:47 and a completely plugged drain pipe next to the conbar at 03:39, both awaiting resolution. Second shift reinstalled a suction bar bracket on MM8 that was found loose at handoff.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML1 ran Imperial all day with one unplanned stop \u2014 the demolding belt moved north and required L1 maintenance from 00:16 to 01:47. Crew worked through display box version confusion on second shift but kept running. ML1 drain reported clogged at 06:13 and escalated to facilities. ML4 ran routine ATP checks with no issues."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Heavy wash performed on Dishwasher 2, visual inspection passed at 11:38."
+    },
+    {
+      "plant": "L1",
+      "text": "Floor cleaning results for tested area came back negative; containment curtain cleared to come down at 16:21."
+    },
+    {
+      "plant": "L3",
+      "text": "Tyson moved purple drain brush to cabinet by truffle line, will label and stock Monday."
+    },
+    {
+      "plant": "L3",
+      "text": "MFM discovered an IMS issue during box removal; 30718-bulk200 run will continue Monday."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "MM8 suction bar bracket found loose at shift handoff",
+      "summary": "Bracket from bottom suction bar on MM8 was discovered outside the machine during handoff; no product contamination risk as it was set aside.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-22T21:14:44.946Z"
+      },
+      "resolution": "Part reinstalled at 15:19 \u2014 \"The part is complete; nothing is missing. We are going to install it\" (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 demolding belt un-aligned and drifting north",
+      "summary": "Imperial demolding belt moved toward north side, line went down at 00:16 requiring L1 maintenance escalation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-23T06:16:31.317Z"
+      },
+      "resolution": "Cleared at 01:47 \u2014 \"Line is back up, we're cleaning side belt while emptying out cooler\" (Kimberly Morales). L1 maintenance assisted."
+    },
+    {
+      "plant": "L3",
+      "title": "Display box version mismatch on ML1",
+      "summary": "Warehouse delivered two different display case versions (both marked V4, same item number) causing scanning and tracking confusion on second shift.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-22T21:40:49.659Z"
+      },
+      "resolution": "Cleared at 21:32 \u2014 Preston approved continued use: \"I don't see any problem using them, if possible, we should keep them separated the best we can though.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Bird's nest found in new chiller of sol 1",
+      "summary": "What appears to be a bird's nest was discovered inside the new chiller on Sollich 1 during overnight shift.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-23T07:47:30.342Z"
+      },
+      "status": "Reported at 01:47 with photo; no follow-up action or clearance documented as of window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Drain pipe next to conbar completely plugged",
+      "summary": "Drain line adjacent to conbar is blocked solid and not draining; facilities contacted for assistance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-23T09:39:38.476Z"
+      },
+      "status": "Jordan from facilities assessed at 03:39; pipe is \"rock solid inside\" with no resolution yet."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 drain clogged and requires unclogging",
+      "summary": "Molding Line 1 drain is clogged and needs immediate attention to restore proper sanitation functionality.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-23T12:13:32.552Z"
+      },
+      "status": "Preston escalated to William Lopez (facilities) at 06:47 asking for team assistance; no resolution posted as of 07:15."
+    }
+  ]
+}

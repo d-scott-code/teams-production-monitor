@@ -1,0 +1,121 @@
+{
+  "date": "2026-08-23",
+  "headline": {
+    "eyebrow": "Pest sighting",
+    "text": "Bird's nest found in L1 sol 1 new chiller at *01:47* \u2014 status unknown, pest control not yet mentioned."
+  },
+  "summary": "One active hold \u2014 mixed plain/crunch chocolate tote at L3 ML4. Bird's nest discovered in L1 sol 1 chiller early shift; no follow-up posted. Two drain clogs flagged (L1 conbar pipe, L3 ML1), both open.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "Mixed chocolate tote held on ML4",
+      "summary": "Tote of plain and crunch chocolate bars mixed together removed from ML1 remelt and placed on ML4 with QA hold tag and do-not-use sign.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-23T05:18:30.227Z"
+      },
+      "status": "On hold pending disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Bird's nest in sol 1 new chiller",
+      "summary": "What appears to be a bird's nest was discovered inside the new chiller of sol 1 at 01:47 \u2014 no follow-up actions or pest control escalation mentioned in window.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-23T07:47:30.342Z"
+      },
+      "status": "Open, no remediation or investigation posted within window."
+    },
+    {
+      "plant": "L1",
+      "title": "MM8 suction bar bracket found loose at handoff",
+      "summary": "Metal bracket from bottom suction bar on MM8 discovered loose at shift handoff \u2014 was set aside outside machine with no product contact risk, reinstalled same shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-22T21:14:44.946Z"
+      },
+      "status": "Resolved \u2014 bracket confirmed intact and reinstalled on shift."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Conbar drain pipe completely plugged",
+      "summary": "Drain pipe next to conbar on S2 completely plugged, rock solid inside \u2014 maintenance attempted but unable to clear.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-23T09:39:38.476Z"
+      },
+      "status": "Open, maintenance unable to clear blockage."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 drain clogged",
+      "summary": "ML1 drain clogged and requires immediate attention; shift requested best time to unclog and complete full sanitation process.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-23T12:13:32.552Z"
+      },
+      "status": "Open, escalated to facilities for scheduling."
+    },
+    {
+      "plant": "L1",
+      "title": "Dishwasher 2 heavy wash completed",
+      "summary": "Heavy wash performed on Dishwasher 2 with QA visual inspection passed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-08-22T17:38:43.722Z"
+      },
+      "status": "Resolved \u2014 visual inspection passed."
+    },
+    {
+      "plant": "L1",
+      "title": "Floor cleaning verification passed",
+      "summary": "All three floor cleaning samples returned negative results; area curtain cleared to come down.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-08-22T22:21:42.801Z"
+      },
+      "status": "Resolved \u2014 all samples negative, area released."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 level 2 clean completed",
+      "summary": "ML1 level 2 clean completed following belt alignment downtime \u2014 visual inspection and ATP passed off by QA.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-23T12:25:32.994Z"
+      },
+      "status": "Resolved \u2014 ATP and visual checks passed."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "title": "Equipment inspection protocol",
+      "text": "Consider adding suction bar bracket integrity to MM8 pre-shift inspection checklist \u2014 based on today's loose bracket discovery at handoff on S2."
+    },
+    {
+      "plant": "L1",
+      "title": "Drainage maintenance scheduling",
+      "text": "Review preventive maintenance schedule for production floor drains \u2014 two separate blockages flagged today (conbar pipe on S2 rock-solid, sol 1 chiller area)."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate remelt segregation",
+      "text": "Review remelt tote labeling and handling procedures on ML1 \u2014 based on mixed plain/crunch tote placed on hold today."
+    }
+  ]
+}
