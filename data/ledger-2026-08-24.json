@@ -1,0 +1,113 @@
+{
+  "date": "2026-08-24",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 demolding belt shifted twice in *3 hours* \u2014 centered and monitoring through 11:00."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran three Sollich lines through startup with no outages. S4 has a materials constraint on Hershey's WIP bags and a bent cutter folder that needs attention.",
+    "L2": "L2 ML3 was down 49 minutes on a clogged vacuum and cleared by 06:48. ML2 stopped briefly for a belt adjustment and is back running, but the S-2 long belt is tearing at the edge.",
+    "L3": "L3 ML1 demolding belt shifted north at 04:30, was centered, then misaligned again at 06:44 \u2014 maintenance re-aligned and the team is monitoring for 4 hours. Truffle line and ML4 ran without breaks."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "ML3 vacuum clogged, line down",
+      "summary": "Depositor vacuum clogged with chocolate accumulation, attributed to infrequent filter cleaning and water on pleated filters.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-08-24T11:59:19.437Z"
+      },
+      "resolution": "Line cleared and running as of 06:48 \u2014 \"The line is running\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 long belt stopped for adjustment",
+      "summary": "Line stopped at 06:56 to adjust the long belt, restarted 4 minutes later.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-08-24T12:56:46.194Z"
+      },
+      "resolution": "Line restarted at 07:00 \u2014 \"The line start running\" (ML2 FW)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 Hershey's WIP bags unavailable",
+      "summary": "Item 40767 bags are out of stock for making Hershey's WIP on Sollich 4; team is evaluating alternative bag options.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-08-24T12:59:45.867Z"
+      },
+      "status": "Justin and Nathan are looking at other bags to use, no decision as of 07:14."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 cutter end folders bent",
+      "summary": "Folder #2 on the cutter end is bent and needs repair or replacement.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-08-24T12:25:12.962Z"
+      },
+      "status": "Reported at 06:25, no follow-up in the window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 S-2 long belt tearing at edge",
+      "summary": "The edge of the S-2 long belt is being damaged because the belt is not positioned under the cover.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Halladay",
+        "time_utc": "2026-08-24T13:04:08.893Z"
+      },
+      "status": "Justin flagged the root cause at 07:04; no correction completed by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 demolding belt tracking issues",
+      "summary": "Demolding belt shifted north at 04:30, was centered by maintenance, then the chain misaligned again at 06:44 requiring a second maintenance intervention.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-24T10:30:45.567Z"
+      },
+      "status": "Maintenance re-aligned chain links and turned off air at 06:59; team monitoring for 4 hours at 5 mpm with reference marks to detect further movement."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 foreign material on line",
+      "summary": "Labels and boxes with labels attached were found on the production line.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-08-24T11:48:59.202Z"
+      },
+      "status": "Reported at 05:48, no corrective action or clearance documented in the window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 filter lid missing handle",
+      "summary": "Operator found a filter lid with the handle missing during inspection.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-24T11:42:23.938Z"
+      },
+      "status": "Reported at 05:42 with photo, no resolution or follow-up by window close."
+    }
+  ]
+}

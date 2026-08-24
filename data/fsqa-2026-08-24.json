@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-24",
+  "headline": {
+    "eyebrow": "Missing part",
+    "text": "L3 ML1 filter lid handle unaccounted for \u2014 *metal component* lost during shift, location unknown."
+  },
+  "summary": "One open foreign-material investigation: missing metal handle from L3 ML1 Imperial filter lid discovered during inspection. Two process gaps surfaced today: line-clearance failure at L3 ML1 (labels/boxes found on line after changeover) and cleaning verification gap at L2 ML3 (vacuum clogged from inadequate filter maintenance).",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Missing filter lid handle on Imperial depositor",
+      "summary": "Operator discovered metal handle missing from Imperial filter lid during inspection; handle not located, potential foreign material risk in production area.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-24T11:42:41.642Z"
+      },
+      "status": "Open, no follow-up investigation or product hold visible in window."
+    },
+    {
+      "plant": "L1",
+      "title": "Bent cutter folders on S4 line",
+      "summary": "Cutter end folder #2 reported bent; damaged metal component in food-contact zone poses foreign material risk if pieces detach.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-08-24T12:25:12.962Z"
+      },
+      "status": "Open, no investigation or maintenance follow-up visible in window."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Labels and boxes found on ML1 line",
+      "summary": "Loose labels and labeled boxes discovered on line during shift; line-clearance failure after changeover or prior run.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-08-24T11:48:59.202Z"
+      },
+      "status": "Open, material reported but no disposition or corrective action visible."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "ML3 vacuum clogged from cleaning gap",
+      "summary": "Vacuum down 49 minutes due to considerable chocolate buildup; supervisor attributed to insufficient filter cleaning frequency and improper use of water on pleated filters.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-08-24T12:23:40.371Z"
+      },
+      "status": "Resolved \u2014 line restarted at 06:48 after clearing; root cause identified as cleaning process gap."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Add S4 cutter folder condition check to pre-run or maintenance rounds \u2014 based on today's bent folder #2 with no visible investigation protocol."
+    },
+    {
+      "plant": "L2",
+      "text": "Review ML3 vacuum filter cleaning frequency and add pleated-filter care (dry cleaning only) to operator training \u2014 based on today's 49-minute clog attributed to insufficient cleaning and water damage."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding filter hardware integrity check (handles, clips, fasteners) to ML1 Imperial pre-startup inspection \u2014 based on today's missing handle discovered mid-shift."
+    },
+    {
+      "plant": "L3",
+      "text": "Reinforce line-clearance verification and shadow-board discipline at ML1 changeover \u2014 based on labels and boxes found on line during today's shift."
+    }
+  ]
+}
