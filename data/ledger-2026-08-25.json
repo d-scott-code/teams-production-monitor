@@ -1,0 +1,218 @@
+{
+  "date": "2026-08-25",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 4 folding fingers and cutter damaged \u2014 line stopped at 07:10, maintenance working but no restart by window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel across three Sollich lines with minor hiccups. Sollich 3 had a quick cleanup for chocolate buildup on the nut chute at 12:04, back running inside 20 minutes. Sollich 4 stopped at 07:10 when all folding fingers and the cutter were found bent \u2014 maintenance is on it but the line was still down at window close. Sollich 2 started the day with a mystery LOTO lock that had to be cut at 06:24 to get going.",
+    "L2": "L2 cleared several short stops across moulding and FFS. ML2 had leakers on bar bottoms at 09:09 that disappeared after a vibration adjustment. FFS took a few hits \u2014 a machine jam at 17:25, a blade alignment fix at 04:53, and a seal bar tape swap at 05:29, all cleared quickly. The line ran out of 5oz film at 02:04 and used the downtime to changeover to 3oz, back online at 06:12. One open issue: expiration date misprints from yesterday still need rework or hold.",
+    "L3": "L3 had a tough day on the truffle line. M4 belt tracking issues from yesterday escalated \u2014 the belt was damaged enough that maintenance cut it at 04:36 and it's not back yet. Separately, 3rd shift left the oil pump running overnight and flooded the chocolate system; QA and production spent 01:27 to 07:09 draining, restarting, and running capture tests to recover temper. ML4 couldn't install PTL2 yesterday because a gasket is missing, still no spare. WiFi went down at 01:58 with no update. ML1 ran clean."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "FFS overproduced by 2,526 cases due to a countdown tracker copy error from yesterday morning."
+    },
+    {
+      "plant": "L3",
+      "text": "Shawn Jewkes reminded teams that M4 tracking faults were being reset without escalation, leading to belt damage \u2014 standard is to escalate, not just clear alarms."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "LOTO lock on Cavanna 4 vacuum with missing key",
+      "summary": "A lockout-tagout lock was found on the vacuum with no key available; operator searched cabinets and toolboxes.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-08-25T12:02:16.742Z"
+      },
+      "resolution": "Resolved at 06:24 \u2014 device removal form completed, lock cut, line started (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "Chocolate buildup on nut chute before enrober",
+      "summary": "Buildup on the chute was causing issues; team paused to clean and evaluate spacing between enrober and belt.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-24T17:57:46.646Z"
+      },
+      "resolution": "Cleared at 12:18 \u2014 \"The chute was cleaned up, and the spacing looks good\" (S3 Enrober)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS machine cone filled with product",
+      "summary": "The FFS cone filled and machine faulted, requiring a maintenance reset; problem started at 16:56.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-24T23:17:30.026Z"
+      },
+      "resolution": "Fixed at 17:25 \u2014 \"The machine is ready. We running again\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "Leakers on bar bottoms out of spec",
+      "summary": "Leakers appearing on the bottom of caramel bars despite dimensions being in range; vibration adjustment attempted.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-24T15:09:35.17Z"
+      },
+      "resolution": "Cleared at 10:19 \u2014 \"The leaks at the bottom of the bar have disappeared\" after lowering vibration to both horizontal shakers (Claudio Tovar)."
+    },
+    {
+      "plant": "L2",
+      "title": "Film jam at flow-wrapper after CIL",
+      "summary": "Line came up from CIL cleaning but jammed immediately at the flow-wrapper.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-25T04:20:37.472Z"
+      },
+      "resolution": "Cleared at 22:22 \u2014 \"Minor jam is clear and the line is running\" (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS cutting blade angled, causing corner defects",
+      "summary": "QA flagged corner defects on pouches; maintenance found the cutting blade was offset and angled.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-25T04:38:48.694Z"
+      },
+      "resolution": "Fixed at 22:53 \u2014 blade straightened and tightened, \"Line is back up\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS ran out of 5oz film, changeover to 3oz",
+      "summary": "Last roll of 5oz film ran out at 02:04; team used downtime to changeover from 5oz to 3oz format.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-25T08:04:57.854Z"
+      },
+      "resolution": "Completed at 06:12 \u2014 \"successfully completed the switch from 5 oz to 3 oz\" (Claudio Tovar)."
+    },
+    {
+      "plant": "L2",
+      "title": "Seal bar tape replacement needed",
+      "summary": "Line stopped so maintenance could replace the tape on the FFS seal bar.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-25T05:23:24.878Z"
+      },
+      "resolution": "Done at 23:29 \u2014 \"Line is up\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line guillotine blade and ultrasonic cutter faults",
+      "summary": "Cutter blade broke down, reset 5 times; ultrasonic not working; traced to wrong recipe being saved over the correct one.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-08-25T02:32:58.273Z"
+      },
+      "resolution": "Fixed at 23:12 \u2014 \"Spencer saved over the recipe... You can now hear the sonic blade working. Team needs to do a reheat then they will start up\" (Tyson Fausett)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 folding fingers and cutter bent, line down",
+      "summary": "All folding fingers are bent and the cutter is damaged; maintenance working to realign and repair, line is stopped.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-08-25T13:10:30.494Z"
+      },
+      "status": "Line stopped at 07:10, maintenance on-site; no restart posted by window close at 07:15."
+    },
+    {
+      "plant": "L1",
+      "title": "High candy rejection rate at Sollich 4 end-of-line",
+      "summary": "Seeing elevated rejections despite weight and dimensions being in spec; supervisor and operators troubleshooting root cause.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-08-25T04:03:24.632Z"
+      },
+      "status": "Raised at 22:03; no update or resolution posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS expiration date misprints with extra digit",
+      "summary": "Pouches printed with an extra digit on expiration date (20279 vs 20278); attempting rework or will hold affected pallets.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-08-24T13:36:11.397Z"
+      },
+      "status": "Flagged at 07:36 yesterday; plan to rework or hold, no final disposition posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M4 belt tracking damage, belt cut",
+      "summary": "M4 belt tracked north over multiple shifts with repeated alarms being cleared instead of escalated; belt damaged, maintenance cut and replacing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-24T15:24:21.95Z"
+      },
+      "status": "Belt damaged by 09:24 yesterday, cut by maintenance at 04:36; no restart posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line chocolate contaminated with excess oil",
+      "summary": "2nd shift left oil pump running while chocolate tank emptied; sent surplus oil into system, chocolate off-spec and oily to touch.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-25T07:27:20.524Z"
+      },
+      "status": "Draining tunnel and buffer tank since 02:06, still draining at 06:00, doing capture test at 07:09 to verify temper recovery."
+    },
+    {
+      "plant": "L3",
+      "title": "Missing gasket for ML4 PTL2 installation",
+      "summary": "One gasket is missing to complete PTL2 install; maintenance has no spares, team asked to check other buildings.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-24T13:50:11.122Z"
+      },
+      "status": "Raised at 07:50 yesterday; no spare found, PTL2 cannot be installed as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "WiFi down in building",
+      "summary": "Building WiFi network is offline.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-25T07:58:56.335Z"
+      },
+      "status": "Down as of 01:58; no update posted."
+    }
+  ]
+}

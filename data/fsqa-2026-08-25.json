@@ -1,0 +1,108 @@
+{
+  "date": "2026-08-25",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L2 FFS pallets held for *label rework* \u2014 extra digit printed on expiration date, Alex Mendoza assessing scope."
+  },
+  "summary": "One active hold for label error at L2 FFS. L3 Truffle Line scrapped chocolate after oil pump left running overnight sent excess oil into product. L1 S4 folding fingers and cutter bent \u2014 maintenance repairing, potential FM risk mitigated by line-down state.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "FFS expiration date label error",
+      "summary": "Pallets held for rework after printer added extra digit to expiration date (printed 20279 on one side, 20278 on other) during batch 64B\u201364E run.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-08-24T13:36:11.397Z"
+      },
+      "status": "On hold pending rework \u2014 Alex Mendoza assessing pallet count and personnel availability."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 folding fingers and cutter bent",
+      "summary": "All folding fingers bent and cutter damaged on S4 wrapper \u2014 maintenance realigning while line stopped, potential metal fragment risk if pieces detached during prior operation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-08-25T13:10:30.494Z"
+      },
+      "status": "Line stopped \u2014 maintenance actively repairing, Justin and Nathan on-site."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Truffle Line chocolate oil contamination",
+      "summary": "Chocolate soft and oily at shift start (01:28 MT) \u2014 2nd shift left oil pump running while tank emptied, sent surplus oil into product; buffer tank drained to 30%, product scrapped, capture test restart in progress.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-25T07:28:51.502Z"
+      },
+      "status": "Buffer tank draining complete at 05:10 MT, melting tank refill started 03:40 MT, temper recovery underway."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 high candy rejections at checkweigher",
+      "summary": "Elevated reject rate at end-of-line even though piece weights and dimensions within spec \u2014 supervisor and operators troubleshooting sensor fault.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-08-24T04:03:24.632Z"
+      },
+      "status": "Investigation ongoing \u2014 no resolution posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 high scrap in pecan sifting",
+      "summary": "Averaging 13 lbs nuts + 32 lbs chocolate scrap per 45 lb bucket during sifting \u2014 significantly above normal waste levels.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-24T20:10:16.282Z"
+      },
+      "status": "Reported by Nathan Topham to Justin, Curt, and Katya \u2014 no corrective action posted."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS cutting blade offset",
+      "summary": "QA flagged corner seal defects on pouches caused by angled cutting blade \u2014 maintenance tightened and realigned blade.",
+      "severity": "low",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-25T04:38:48.694Z"
+      },
+      "status": "Resolved \u2014 Fernando Flores adjusted blade, line restarted 04:53 MT."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Personal items in GMP area",
+      "summary": "Items found in GMP zone \u2014 Hervin Herrera coaching team leads to reinforce standard and identify owner.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-08-25T12:59:59.176Z"
+      },
+      "status": "Open \u2014 team leads tasked with identifying responsible party and coaching."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S4 checkweigher sensor calibration schedule \u2014 high reject rate with in-spec pieces suggests false-positive drift."
+    },
+    {
+      "plant": "L2",
+      "text": "Add lot-code verification photo to FFS batch-change checklist \u2014 today's extra-digit label error went undetected until pallets staged."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding oil-pump shutdown to chocolate tank drain checklist \u2014 today's Truffle Line oil contamination event caused by pump left running overnight when tank emptied."
+    }
+  ]
+}
