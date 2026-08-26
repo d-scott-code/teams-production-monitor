@@ -1,0 +1,196 @@
+{
+  "date": "2026-08-26",
+  "headline": {
+    "eyebrow": "FM risk",
+    "text": "L3 ML4 molds hit guard rail creating *debris throughout* \u2014 20 molds pulled for inspection, demolding area cleaned."
+  },
+  "summary": "One active hold (L1 S2 film breaking continuously). L3 ML4 mold debris event resolved same shift; L1 S2 found Hershey product in Z-conveyor during changeover, areas inspected and cleared. L3 ML4 Level 3 cleaning incomplete at shift end \u2014 gondola visible soiling flagged.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Film rolls breaking \u2014 QC hold",
+      "summary": "S2 film rolls (item 40338 v2) breaking continuously during SRS run; QC placed on hold at 13:43.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-25T19:43:10.05Z"
+      },
+      "status": "On hold pending QC disposition; changeover to BUC completed."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "ML4 mold damage \u2014 debris throughout line",
+      "summary": "Molds hitting black guard rail damaged molds and created debris throughout demolding area; maintenance fixed rail, team removed 20 molds for inspection and cleaned area before restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-08-26T11:13:04.203Z"
+      },
+      "status": "Resolved \u2014 guard rail repaired, 20 molds pulled, demolding area cleaned, production resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 burnt caramel scrapped",
+      "summary": "Caramel from 14:30 dark and smells burnt after kitchen pressure issues; scrapped and started fresh batch.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-08-25T22:23:31.112Z"
+      },
+      "status": "Resolved \u2014 caramel scrapped, fresh batch started, line running."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 product in Z-conveyor during changeover",
+      "summary": "Hershey product found in white Z-conveyor cover when switching to PRS; team inspected all areas including Cavannas and removed anything that could compromise product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-08-26T02:30:33.429Z"
+      },
+      "status": "Resolved \u2014 all areas inspected and cleared, PRS production started 20:47."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 Theegarten damage from height rail adjustment",
+      "summary": "Height rail adjusted yesterday allowing oversized pieces into Theegarten, damaging machine; all rails moved back to paint lines, three stations of fold fingers and knife film guide repaired.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chris Jeffs",
+        "time_utc": "2026-08-25T17:23:08.55Z"
+      },
+      "status": "Resolved \u2014 rails corrected to paint lines, repairs complete, centerline updated to reflect correct settings."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 high flow-wrap reject rate",
+      "summary": "High number of open wrappers and flow-wrap rejects; caramel edges stiff enough to puncture film after tunnel cooling adjustment.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-08-26T01:04:40.989Z"
+      },
+      "status": "Ongoing \u2014 adjusting length and cooling to reduce punctures."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 oversize rejects at checkweigher",
+      "summary": "Many rejects at 17.8g due to high caramel measure; team adjusting.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-08-26T10:03:27.592Z"
+      },
+      "status": "Ongoing \u2014 piece weight being dialed in."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS open bags and weight loss",
+      "summary": "Line down for open bags at 09:55; maintenance adjusted long seal bar; later saw many bags with weight loss, knife cleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-26T09:55:03.49Z"
+      },
+      "status": "Resolved \u2014 seal bar adjusted, knife cleaned, line running well."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 water buffer temp outside setpoint",
+      "summary": "Water buffer tank temperature 43\u00b0F (outside setpoint), chocolate 38\u00b0F; team aware.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-26T12:37:22.822Z"
+      },
+      "status": "Open \u2014 temperature being monitored."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 mixed display versions",
+      "summary": "Line received with mixed displays of different versions; QA notified, team separating versions.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-26T12:38:00.872Z"
+      },
+      "status": "Open \u2014 QA engaged, versions being separated."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 pre-treatment out of range",
+      "summary": "Pre-treatment weight out of range at startup; team aware.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-26T12:39:25.895Z"
+      },
+      "status": "Open \u2014 weight being adjusted."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 valve seal leaking caramel",
+      "summary": "Valve seal YS140/23 leaking caramel; replacement requested.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-08-25T17:35:15.509Z"
+      },
+      "status": "Open \u2014 seal replacement in progress."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 jar orientation \u2014 4 pallets rework",
+      "summary": "Jars not facing outward on many pallets; 4 pallets identified for rework per SafetyChain requirement.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-08-25T23:38:50.429Z"
+      },
+      "status": "Resolved \u2014 4 pallets reworked in ~2 hours, team coached on correct placement."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 wrap residue after marked complete",
+      "summary": "TG4 marked complete by 2nd shift but still has wrap residue visible at 12:13.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-25T18:13:49.826Z"
+      },
+      "status": "Open \u2014 flagged to QA and maintenance."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Level 3 cleaning incomplete at shift end",
+      "summary": "Level 3 cleaning gondola and cross-conveyor gondola allergen cleaning pending \u2014 visible soiling noted, not handed over to afternoon shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-08-26T08:59:54.458Z"
+      },
+      "status": "Open \u2014 pending completion, photos attached."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review equipment adjustment authorization on S4 \u2014 yesterday's unauthorized height rail change caused Theegarten damage and three stations of repairs."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding guard rail position check to ML4 startup checklist \u2014 today's mold damage and debris echo similar mechanical interference risks."
+    },
+    {
+      "plant": "L3",
+      "text": "Review Level 3 cleaning handoff procedures for ML4 \u2014 today's incomplete gondola cleaning with visible soiling was not communicated to next shift."
+    }
+  ]
+}

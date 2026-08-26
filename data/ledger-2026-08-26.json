@@ -1,0 +1,246 @@
+{
+  "date": "2026-08-26",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L1 Sollich 4 lost *3 hours* to kitchen pressure alarm before clearing at 18:01 \u2014 L3 ML4 mold jam damaged equipment but maintenance cleared by mid-morning."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 4 kitchen pressure alarm kept the line down from 14:25 to 18:01 \u2014 team found caramel buildup in lines causing the fault, cleared and resumed. Sollich 3 completed overnight cleaning and is waiting on temper as of 07:16. Sollich 2 ran through bad film rolls before changeover, no further impact.",
+    "L2": "ML3 and FFS ran clean. FFS had a brief seal bar adjustment at 04:04 that cleared open bag issue. All three lines tracking to daily targets.",
+    "L3": "ML4 mold jam at 04:53 caused by molds hitting guard rail \u2014 maintenance fixed rail, pulled 20 molds to inspect for debris. Truffle line lost 90 minutes to enrober reheat overnight but back up by 00:45. ML4 still has wrap residue on TG4, broken part on TG5, and gondola cleaning incomplete from 3rd shift."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "New Hershey caramel weight spec went live \u2014 target down to 11.5g from 12.5g, team reporting better wrapper performance on S4."
+    },
+    {
+      "plant": "L1",
+      "text": "Culligan delivered water rack change-out as scheduled."
+    },
+    {
+      "plant": "L3",
+      "text": "Chocolate inventory mismatch (item 10278 vs 10310) discovered during Unreal push \u2014 team proceeding with current labels, cycle count deferred until after trial."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 kitchen pressure alarm blocking caramel flow",
+      "summary": "High pressure alarm triggered at 14:25 when trying to send caramel to conbar \u2014 team found caramel buildup on pipe walls and burnt caramel restricting flow.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-08-25T20:16:44.943Z"
+      },
+      "resolution": "Cleared at 18:01 \u2014 team drained buffer tank to barrel, flushed lines, caramel flowing normally. Dakota confirmed \"S4 is sending caramel\" (William Beattie, Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 Theegarten height rail misadjusted causing equipment damage",
+      "summary": "Height rail adjusted yesterday allowing oversized pieces into wrapper, damaged fold fingers and knife film guide on three stations.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chris Jeffs",
+        "time_utc": "2026-08-25T17:23:08.55Z"
+      },
+      "resolution": "Cleared at 11:53 \u2014 Chris Jeffs repaired damaged stations, all rails returned to paint line positions, centerlines updated. Nathan Topham confirmed \"everything returned to proper position\" and ran test section successfully."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 caramel valve seal YS140/23 leaking",
+      "summary": "Valve seal leaking caramel during production run, maintenance called on-site.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-08-25T17:35:15.509Z"
+      },
+      "resolution": "Cleared at 15:38 \u2014 Caleb York replaced gasket, valve sealed properly."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 film rolls 40338 v2 breaking continuously",
+      "summary": "Film breaking repeatedly during SRS run, QA placing rolls on hold for quality issue.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-25T19:43:10.05Z"
+      },
+      "resolution": "Cleared at 13:59 \u2014 Victor Romero confirmed \"finished running the film, finished SRS, making changeover to BUC.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 VFD failure on C1 belt",
+      "summary": "Line paused at shift start for maintenance to replace failed VFD on cooling belt 1 motor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-25T21:26:57.888Z"
+      },
+      "resolution": "Cleared at 16:11 \u2014 VFD replaced, William Beattie confirmed \"line is running again.\""
+    },
+    {
+      "plant": "L2",
+      "title": "FFS long seal bar out of adjustment causing open bags",
+      "summary": "Line down at 03:55 with high open bag rate, seal bar misaligned.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-26T09:55:03.49Z"
+      },
+      "resolution": "Cleared at 04:04 \u2014 maintenance adjusted long seal bar, VFFS running well per operator message."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS weight loss bags due to dirty knife",
+      "summary": "High volume of underweight bags flagged at 07:02, knife buildup suspected.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-26T13:02:50.188Z"
+      },
+      "resolution": "Cleared at 07:08 \u2014 knife cleaned, VFFS confirmed \"the line is running.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam damaging equipment and molds",
+      "summary": "Molds hitting black guard rail at 04:53, damaging molds and scattering debris across demolding area.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 2",
+        "time_utc": "2026-08-26T10:53:53.821Z"
+      },
+      "resolution": "Cleared at 05:28 \u2014 Kimberly Morales confirmed maintenance fixed guard rail, team removed 20 molds for debris inspection and cleaned demolding area."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line enrober out of temper",
+      "summary": "Enrober problem at 22:08 required full reheat cycle, cross conveyor slitter had no tension.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-26T04:08:33.699Z"
+      },
+      "resolution": "Cleared at 00:45 \u2014 enrober completed reheat and tempering by 23:35, truffle line restarted production."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line chocolate misalignment causing accumulation",
+      "summary": "Chocolate pieces not aligning properly at 01:31, maintenance called to adjust conveyor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-08-26T07:31:15.203Z"
+      },
+      "resolution": "Cleared at 01:38 \u2014 maintenance corrected alignment, centerline posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line down passing 3rd shift accumulation",
+      "summary": "Line down since 05:30 to clear product buildup handed off from overnight, operator restarting kitchen.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-26T12:34:45.65Z"
+      },
+      "resolution": "Cleared at 06:34 \u2014 Itzel confirmed line started depositing again."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 waiting on chocolate temper to start production",
+      "summary": "Line ready to run after overnight cleaning and decorator install at 05:55, bed loaded at 06:22, but still waiting on temper at window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-08-26T12:22:12.411Z"
+      },
+      "status": "Nathan Topham at 07:16 said \"currently waiting on temper\" and will get pieces before enrober once ready."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Level 3 gondola and cross-conveyor cleaning incomplete",
+      "summary": "Allergen cleaning for gondola and cross-conveyor gondola not completed by 3rd shift due to visible soiling, allergen swab cannot proceed.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-08-26T08:59:54.458Z"
+      },
+      "status": "Janeth at 02:59 posted photos and updated schedule showing task still pending, no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM missing quarter pallet trays for assorted run",
+      "summary": "No trays available for Matrix MFM quarter pallets, showing in transit from Spring Valley in transfer truck.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-26T12:28:17.437Z"
+      },
+      "status": "Itzel at 06:28 said all trays in transfer truck, Mayra Ortega checking, no ETA posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 has wrap residue after cleaning",
+      "summary": "Transfer gear 4 marked completed by 2nd shift but Itzel found wrap residue still present at 12:13.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-25T18:13:49.826Z"
+      },
+      "status": "Maintenance notified at 12:13, no follow-up posted on completion of re-clean."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 broken part needs replacement",
+      "summary": "Broken component found on transfer gear 5 during inspection, maintenance and Kimberly tagged.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-25T19:25:58.702Z"
+      },
+      "status": "Photo posted at 13:25, maintenance tagged (Nelson Cook, Kimberly Morales, Alan Greer), no update on part availability or install."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 mixed display carton versions on floor",
+      "summary": "Line received with mixed display versions, QA notified, ops trying to separate versions manually.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-26T12:38:00.872Z"
+      },
+      "status": "Imperial at 06:38 reported issue, no follow-up on how many affected or resolution plan."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 pre-piece weight out of range at startup",
+      "summary": "Pre-treatment weight check failing at 06:39, outside acceptable range.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-26T12:39:25.895Z"
+      },
+      "status": "Imperial posted at 06:39, no follow-up in window on whether adjustments brought it back in range."
+    }
+  ]
+}
