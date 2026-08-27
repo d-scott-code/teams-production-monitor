@@ -1,0 +1,163 @@
+{
+  "date": "2026-08-27",
+  "headline": {
+    "eyebrow": "FM & sanitation",
+    "text": "L1 S4 THG belt peeling found at *unknown start time* \u2014 surface smoothed, ATP passed, monitoring continues."
+  },
+  "summary": "Four foreign-material events across L1 and L3: belt peeling on S4, two plastic incidents on ML4 trial, and a broken bolt on S2 (all pieces accounted for). One ATP failure and one labeling catch rounded out the 24 hours.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Quarter-pallet rework \u2014 wrong header version",
+      "summary": "All S2 first-shift quarter pallets flagged for rework after operators validated V1 headers that were miscoded as shrouds in IMS; V2 headers required.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-08-26T21:41:08.064Z"
+      },
+      "status": "Open \u2014 full first-shift output held pending header replacement."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "THG belt peeling on S4",
+      "summary": "Belt #1 and #2 surfaces found peeling at 03:58; unclear when peeling started; maintenance removed peeled areas, smoothed surface, ATP passed (11 RLU), line will monitor for recurrence.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-27T09:58:10.868Z"
+      },
+      "status": "Resolved after cleaning and ATP \u2014 monitoring for continued peeling."
+    },
+    {
+      "plant": "L1",
+      "title": "Broken bolt on S2 melting tank #1 lid",
+      "summary": "Bolt fractured on melting tank #1 lid at 09:49; both pieces located and accounted for before production resumed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-26T15:49:38.77Z"
+      },
+      "status": "Resolved \u2014 both pieces recovered, maintenance replaced bolt."
+    },
+    {
+      "plant": "L3",
+      "title": "Plastic shavings from mold scraper on ML4",
+      "summary": "Plastic shavings found on trial run at 16:08, traced to scraper blade for mold sides; QA collected FM samples, maintenance adjusted blade clearance to stop contact; not touching product inside molds.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Aubrey Howe",
+        "time_utc": "2026-08-26T22:08:53.956Z"
+      },
+      "status": "Resolved \u2014 scraper adjusted, bin cleaned, startup complete."
+    },
+    {
+      "plant": "L3",
+      "title": "Second plastic FM on ML4 sweco",
+      "summary": "Different plastic texture found on southwest sweco at 20:36, distinct from earlier scraper shavings; texture suggests buffer-tank cleaning brushes as source.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-08-27T02:36:52.827Z"
+      },
+      "status": "Open \u2014 investigation ongoing into brush source."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Wrong Yamato recipe on MFM",
+      "summary": "Recipe in system did not match 15.03-oz bag spec; new recipe created at 08:22 to correct weight and flavor ratios.",
+      "severity": "low",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-26T14:22:41.075Z"
+      },
+      "status": "Resolved \u2014 new recipe validated and running."
+    },
+    {
+      "plant": "L3",
+      "title": "Incomplete coating on ML4 trial product",
+      "summary": "Peppermint-cup trial run showed parts with incomplete back coating and some units missing mint filling; in-line inspections continuing to dial in process.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-08-27T02:25:33.595Z"
+      },
+      "status": "Open \u2014 trial run optimization in progress."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle-line X-ray rejections without cause",
+      "summary": "X-ray rejecting intermittently since 04:00, no metal confirmed on product, sensitivity under review; no hold required.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Kevin Del Valle",
+        "time_utc": "2026-08-27T10:35:00.808Z"
+      },
+      "status": "Open \u2014 investigating sensitivity and intermittent trigger."
+    },
+    {
+      "plant": "L3",
+      "title": "Incorrect date format on ML1 pouches",
+      "summary": "Operator caught wrong lot-code format during startup checklist at 06:57, line stopped, QA notified, correct format entered before resuming.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-27T12:57:25.053Z"
+      },
+      "status": "Resolved \u2014 corrected before any product released."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "ML2 hand-pack belt ATP failure",
+      "summary": "Blue hand-pack belt failed ATP at 318 RLU due to chocolate residue at 22:03; maintenance reports belt cannot be disassembled for deep cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-08-27T04:03:22.908Z"
+      },
+      "status": "Open \u2014 design limitation preventing thorough cleaning."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector salt buildup",
+      "summary": "Repeated metal-detector stops traced to salt accumulation under belt; maintenance added slight tension to reduce spike, notes extensive buildup remains.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-08-26T22:39:44.765Z"
+      },
+      "status": "Open \u2014 temporary fix applied, deep clean recommended."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 shaker area received dirty",
+      "summary": "First-shift operator reported shaker area not cleaned to standard at shift handoff 06:59.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-27T12:59:01.031Z"
+      },
+      "status": "Noted \u2014 no production impact."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding THG belt surface inspection to S4 startup checklist \u2014 today's peeling had unknown start time, echoing design gaps flagged on other visual-wear items."
+    },
+    {
+      "plant": "L2",
+      "text": "Review hand-pack belt design on ML2 \u2014 ATP failure at 318 RLU cannot be remedied due to non-removable construction, suggesting replacement or redesign needed."
+    },
+    {
+      "plant": "L3",
+      "text": "Add sensor centerline-mark verification to MFM changeover checklist \u2014 second shift left sensors out of position, caught only after startup delay."
+    }
+  ]
+}

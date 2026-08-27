@@ -1,0 +1,354 @@
+{
+  "date": "2026-08-27",
+  "headline": {
+    "eyebrow": "Trial complexity",
+    "text": "L3 ML4 peppermint trial hit *6 separate issues* overnight, while shroud shortage paused MFM quarter-pallet run until Tuesday"
+  },
+  "per_plant_summary": {
+    "L1": "Caramel lines ran mostly clean. S2 label and metal-detector issues cleared by mid-shift. S4 Theegarten motor swap completed; belt peeling addressed and ATP-passed. S3 reject-box overflow flagged but not yet resolved.",
+    "L2": "Moulding ran steady. ML2 PTL pressure resolved after bottom-handle adjustment; sweco screen swap fixed salt clogging. ML3 accumulator belts replaced. One hand-pack belt failed ATP and cannot be disassembled\u2014still open.",
+    "L3": "Heavy trial activity on ML4 for Unreal peppermint\u2014ingredient tank, cold stamp, plastic shavings, and demolding errors all cleared by shift end. MFM quarter-pallet run paused at 10:48 due to shroud shortage; supplier delivery expected Tuesday. Cavanna setting changes recurring for third time this week."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Quality team collected extensive trial data on ML4\u2014weight, viscosity, organoleptic checks all documented for Unreal review."
+    },
+    {
+      "plant": "L2",
+      "text": "FFS seal-bar cleaning revealed heavy product buildup that may explain recent double-bag issues."
+    },
+    {
+      "plant": "L1",
+      "text": "Case labels for quarter pallets clarified\u2014one license plate per four-unit stack, placed top-right corner facing out."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 label wrinkled, then printing over text",
+      "summary": "Labeler producing wrinkled labels; after fix, printer positioned too close and overprinting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-26T15:10:23.757Z"
+      },
+      "resolution": "Cleared by 10:04\u2014Troy corrected wrinkle issue, moved to Labeler B setup, working (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 melting tank lid screw broke",
+      "summary": "Bolt sheared on melting tank #1 cover; second piece unaccounted for initially.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-08-26T15:49:38.77Z"
+      },
+      "resolution": "Cleared by 10:11\u2014both pieces accounted for, Justin Garner confirmed (Justin Garner, Victor Romero Sr. at 14:30)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector repeatedly stopping line",
+      "summary": "MD belt triggering false rejects; line pausing frequently.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-08-26T21:24:03.248Z"
+      },
+      "resolution": "Fixed at 15:30\u2014Caleb York added slight belt tension, spike from extension cleared; salt under belt noted (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 Theegarten belt surface peeling",
+      "summary": "Belt #1 and #2 showing surface degradation; unclear when peeling started.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-08-27T09:58:10.868Z"
+      },
+      "resolution": "Addressed by 05:17\u2014maintenance removed peeled areas, smoothed surface; cleaned, swabbed, ATP passed at result 11 (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 individual weight running high",
+      "summary": "Piece weight at 24g against 23g spec; operator notified to adjust.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-08-26T14:22:59.164Z"
+      },
+      "resolution": "Corrected by 08:22\u2014adjustment made, waiting for product to verify (Nancy Quiroz)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 missing screw found during belt walk",
+      "summary": "Loose screw discovered with unknown origin; stored for identification.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-26T22:47:55.704Z"
+      },
+      "resolution": "Returned by 17:42\u2014Caleb York identified as bottom back corner of safety latch assembly, reinstalled (Caleb York)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 high PTL pressure, no sweco flow",
+      "summary": "Post-cleaning startup showing excessive pressure on PTL system; no material reaching sweco.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-27T06:48:47.526Z"
+      },
+      "resolution": "Fixed at 00:48\u2014bottom handle set in wrong position with loose set screw; repositioned and tightened, flow restored (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 salt clogging sweco screen",
+      "summary": "Sea-salt application plugging filter screen; needed different mesh size.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-27T07:11:02.218Z"
+      },
+      "resolution": "Resolved by 04:00\u2014swapped to 6M mesh after consultation with Hervin Herrera, good flow achieved (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 Z-conveyor stopped working",
+      "summary": "Conveyor fault with maintenance troubleshooting; line continued running.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-26T18:08:56.686Z"
+      },
+      "resolution": "Cleared same shift\u2014line still running per Alex message 12:08; no follow-up downtime reported."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 accumulator bad belts",
+      "summary": "Two belts damaged on accumulation line; replacement and cleaning required.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-08-27T05:10:09.902Z"
+      },
+      "resolution": "Completed by 23:36\u2014Fernando replaced belts, cleaned area, reported good to go (Fernando Flores)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS seal bars full of product buildup",
+      "summary": "Heavy chocolate accumulation between blade and seal bars; potential cause of double-bag defects.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-08-27T07:58:59.105Z"
+      },
+      "resolution": "Cleaned by 03:38\u2014Fernando removed seal bars and blade, cleared product buildup from both sides (Fernando Flores)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 wrong sliders installed",
+      "summary": "Depositor running with incorrect slider set during peppermint trial setup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-26T14:51:31.45Z"
+      },
+      "resolution": "Correct peppermint cr\u00e8me sliders located and installed by 09:01 (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tank not pumping cream to hopper",
+      "summary": "Automated cream feed failing during trial; maintenance troubleshooting pump and agitator connection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-26T15:46:20.051Z"
+      },
+      "resolution": "Cleared by 00:01\u2014Kavin Ayala completed electrical troubleshooting, verified pump operation, tank now working in auto mode."
+    },
+    {
+      "plant": "L3",
+      "title": "Plastic shavings from mold scraper",
+      "summary": "Plastic debris found on product during ML4 trial; source traced to side-of-mold scraper damaging molds.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Aubrey Howe",
+        "time_utc": "2026-08-26T22:08:53.956Z"
+      },
+      "resolution": "Cleared at 17:07\u2014Spencer made scraper adjustments, bin cleaned, QA collected FM samples, line restarted (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle X-ray false positives since 04:00",
+      "summary": "Metal detector rejecting product repeatedly with no actual contamination found; team investigated sensitivity settings and confirmed no hold required.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kevin Del Valle",
+        "time_utc": "2026-08-27T10:35:00.808Z"
+      },
+      "resolution": "Cleared by 05:48\u2014team confirmed no metal on product, passed quality checks, identified likely source as object near detector per Shawn Jewkes."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 demolding belt control timeout repeating",
+      "summary": "Demolding section throwing repeated belt-control faults; maintenance called multiple times as line continued to stop.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-08-27T10:36:25.921Z"
+      },
+      "resolution": "Fixed at 06:02\u2014Kavin Ayala adjusted corner block inward 1-2mm to prevent tracking collision (red corner catching green corner)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM Z-conveyor D not moving",
+      "summary": "Conveyor stopped; maintenance dispatched to troubleshoot.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-27T12:39:35.509Z"
+      },
+      "resolution": "Cleared at 06:46\u2014fill sensor out of position, Nathan Ruiz repositioned (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 incorrect product date printed",
+      "summary": "Date code found in wrong format during startup check; line stopped and QA notified.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-27T12:57:25.053Z"
+      },
+      "resolution": "Corrected at 06:57\u2014line stopped, correct format entered, startup checklist flagged the error (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM sensor setup off centerline marks",
+      "summary": "Photo-eye sensors positioned incorrectly for new SKU; setup instructions not followed by previous shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-08-26T14:10:43.343Z"
+      },
+      "resolution": "Fixed by 08:15\u2014Shawn Jewkes reset sensors to centerline marks and validated angle (Shawn Jewkes)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 reject boxes too small, overflowing at MM3/MM4",
+      "summary": "Rejection bins insufficient for volume when defect count exceeds 30 pieces; causing accumulation and spillover.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-08-26T17:47:07.812Z"
+      },
+      "status": "Flagged to Nathan Topham at 11:47; larger boxes or alternate solution requested but no decision as of 07:15."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tunnel 1 belt setting change recommended",
+      "summary": "William Beattie recommends updating centerline from 1.7 to 1.0 to improve bed depth and reduce pecan usage variance.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-27T01:13:26.638Z"
+      },
+      "status": "Recommendation made at 19:13 to Erandy Garcilazo Ceja; Erandy committed to update tomorrow but change not yet implemented in centerline."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 hand-pack belt failed ATP, cannot disassemble",
+      "summary": "Blue hand-pack belt reading 318 RLU from chocolate residue; maintenance reports belt cannot be taken apart for deep cleaning.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-08-27T04:03:22.908Z"
+      },
+      "status": "Failed swab at 22:03; Hervin Herrera and Brandon Lance notified but no alternate cleaning method identified by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM quarter-pallet run paused\u2014shroud shortage",
+      "summary": "Item 41082 shrouds too small and tearing on trays; BOM calls for 41107 which is shared with L1 and only 9 pallets available for both plants to finish orders.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-26T13:47:47.033Z"
+      },
+      "status": "Line paused at 10:48 after packaging material in hoppers; supplier delivery expected Tuesday 9/1 per Kirk Nickel message at 13:56."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 foreign material plastic on sweco",
+      "summary": "Different plastic texture found on sweco during trial; suspected to be from buffer-tank cleaning brushes.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-08-27T02:36:52.827Z"
+      },
+      "status": "Identified at 20:36 as distinct from earlier scraper shavings; texture suggests brush source but no corrective action documented."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna chicane settings changed again\u20143rd time this week",
+      "summary": "Operator finding incorrect chicane numbers repeatedly; someone overwriting settings between shifts.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-08-27T12:43:40.705Z"
+      },
+      "status": "Nathan corrected numbers at 06:43; no root cause identified for recurring unauthorized changes."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 shaker area received dirty",
+      "summary": "Condition of shaker station unacceptable at shift handoff.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-27T12:59:01.031Z"
+      },
+      "status": "Flagged to Rich Brierley at 06:59 with photo; no confirmation of cleaning or accountability follow-up."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle printer received with ink cartridge at zero",
+      "summary": "Flow-wrap printer handed off to shift with one color depleted.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-08-27T13:08:50.685Z"
+      },
+      "status": "Reported at 07:08 with photo; no follow-up on cartridge replacement as of window close."
+    }
+  ]
+}
