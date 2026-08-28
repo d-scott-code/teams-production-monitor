@@ -1,0 +1,209 @@
+{
+  "date": "2026-08-28",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 THG faulted out *three times* with no root cause identified; L3 truffle M4 belt needs two operators to hand-feed until Saturday repair"
+  },
+  "per_plant_summary": {
+    "L1": "Ran caramel cluster all day with three separate THG faults\u2014two restarts (7 and 10 minutes each) plus a belt tracking issue that cleared after CILT. Maintenance has no root cause yet. Weights dipped below spec at 08:13, recovered by 10:54.",
+    "L2": "Two temper unit faults: overnight reheat took 2 hours (back up 04:10), midday fault cleared in 7 minutes. FFS paused 23 minutes for checkweigher calibration. All lines running at window close.",
+    "L3": "ML4 trial hit sensor issues on wrap\u2014team manually wrapped ~50K pieces. Truffle line M4 drive roller slipping; two operators hand-aligning product to reduce rejects until Saturday repair. ML1 rice hopper faulted twice, cleared both times. MFM printer fault created 2 pallets without dates (on hold for rework)."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 THG startup failure\u2014first occurrence",
+      "summary": "THG refused to start at 09:36, line stopped while maintenance investigated root cause",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-28T15:31:08.954Z"
+      },
+      "resolution": "Cleared at 09:43\u2014\"THG is back up and running we will start the line back up\" (Nathan Topham). Down 7 minutes."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 THG HMI screen went blank\u2014second occurrence",
+      "summary": "THG unresponsive at 11:32 with blank HMI screen, different issue than first fault; maintenance performed hard reset",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-28T17:32:28.951Z"
+      },
+      "resolution": "Cleared at 11:42\u2014\"Line is starting back up the hard reset did fix this issue\" (Nathan Topham). Down 10 minutes. Safety switches on swinging doors were generating faults; maintenance realigned switches and performed master reset."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 weights below acceptable limits",
+      "summary": "Piece weights dropped below spec at 08:13; team adjusted and weights recovered to acceptable range by 10:54",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-08-28T14:13:32.094Z"
+      },
+      "resolution": "Team addressed issue starting 08:23; weights confirmed in range by 10:54 per Nathan Topham"
+    },
+    {
+      "plant": "L1",
+      "title": "S4 THG belt pausing without alarm",
+      "summary": "First section of THG belts pausing intermittently with no alarm on HMI at 15:32; 30-minute pause scheduled for CILT and troubleshooting",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-28T21:32:25.049Z"
+      },
+      "resolution": "Cleared by 16:41\u2014Erandy retracted belt into auto track during CILT, sensors back on; Conner reported no fault for ~10 minutes after restart"
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 temper unit low mass temperature fault\u2014overnight",
+      "summary": "Temper unit faulted at 02:16 on low mass temperature with buffer at 63% and no obvious cause; maintenance troubleshooting",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-28T02:16:56.612Z"
+      },
+      "resolution": "Cleared at 04:10\u2014reheat completed, temper in range, depositing resumed. One heater was cooler to touch (likely tripped). Down approximately 2 hours."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 temper unit pressure fault\u2014midday",
+      "summary": "Temper unit faulted at 12:36 on pressure; scraper stopped working; reheat initiated",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-28T18:36:07.262Z"
+      },
+      "resolution": "Cleared at 12:43\u2014\"Did a reheat until mass cooling hit 35C. Scraper is back working and we are tempering again\" (Alex Mendoza). Down 7 minutes. Pump compensator turned off, buffer set to 48\u00b0C."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS checkweigher accuracy concern",
+      "summary": "Alan Todd requested Troy Baxter verify checkweigher accuracy during production at 07:40",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-08-28T13:40:18.968Z"
+      },
+      "resolution": "Cleared at 08:33\u2014Troy performed span calibration and slowed belt from 75m/min to 65m/min; variance now 1-1.5g, running well"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 rice hopper stopped\u2014first occurrence",
+      "summary": "Rice hopper stopped working at 07:16; maintenance notified",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-28T13:16:13.952Z"
+      },
+      "resolution": "Cleared at 07:37\u2014operators with Shawn's help disconnected and reconnected sensor; running again. Maintenance to inspect sensor post-production to determine root cause."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM printer faulted, 2 pallets without date codes",
+      "summary": "Printer faulted at 07:18 on MFM, creating 2 pallets with no date printed on pouches; maintenance en route",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-28T13:18:51.138Z"
+      },
+      "resolution": "Printer working again by 08:04; 2 pallets placed on hold for rework after order completion per Frederick Peairs"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 rice hopper stopped\u2014second occurrence",
+      "summary": "Rice hopper stopped working again at 07:53; maintenance notified",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-28T13:53:27.893Z"
+      },
+      "resolution": "Cleared at 08:19\u2014Shawn adjusted weight-sensing piece on hopper valve that was positioned too far back; monitoring to confirm fix holds"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor nozzle clog",
+      "summary": "Line paused at 00:48 due to clogged nozzle on depositor; operator working to clear",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-28T06:48:43.928Z"
+      },
+      "resolution": "Cleared at 01:57\u2014\"Nozzle unclog, started running back up\" (Raoul Lubain). Down approximately 1 hour."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 THG root cause unknown after three faults",
+      "summary": "THG faulted three separate times (09:36, 11:32, 15:32) with different symptoms each time; maintenance cleared each fault but has no root cause identified",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-28T15:31:08.954Z"
+      },
+      "status": "All three faults cleared and line running at window close, but Nathan reported at 11:56 that \"Maintenance doesn't know a root cause to either of the issues that happened today.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Cross Conveyor 2 bent knob and loose wheels",
+      "summary": "During cleaning at 16:29, EEs noticed one knob severely bent and two wheels very loose on Cross Conveyor 2",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-28T22:29:35.648Z"
+      },
+      "status": "Caleb York and William Lopez asked for details on what happened to prevent recurrence; no repair status provided by window close"
+    },
+    {
+      "plant": "L3",
+      "title": "MFM 3 pallets with incorrect (past) date on labels",
+      "summary": "At 08:43 shift check found 3 pallets with past date on labels despite correct date verified at shift start",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-08-28T14:43:54.553Z"
+      },
+      "status": "3 pallets identified with past date; no follow-up on hold status or corrective action by window close"
+    },
+    {
+      "plant": "L3",
+      "title": "MFM C6 conveyor sensor moved, caused flavor mixing",
+      "summary": "Sensor on C6 conveyor Z moved out of position at 09:29, failed to detect product, causing backup and flavor mixing at the top",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-28T15:29:45.397Z"
+      },
+      "status": "Sensor issue reported at 09:29; no follow-up on resolution or corrective action by window close"
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M4 belt drive roller slipping",
+      "summary": "M4 drive roller slipping causes chicane misalignment and sensor rejects; two employees manually aligning product to reduce waste",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-08-28T18:16:22.986Z"
+      },
+      "status": "Workaround in place with manual alignment as of 13:27. Jason Jensen noted slides not greased properly and drive roller slipping; repair scheduled for Saturday cleaning downtime per Grey Boscan at 13:27."
+    }
+  ]
+}

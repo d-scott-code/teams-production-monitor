@@ -1,0 +1,100 @@
+{
+  "date": "2026-08-28",
+  "headline": {
+    "eyebrow": "Active holds",
+    "text": "Two L3 MFM holds \u2014 *2 pallets* missing dates after printer fault, plus sensor malfunction caused flavor cross-contact at depositor."
+  },
+  "summary": "Three holds across L1 and L3 today. L3 MFM printer faulted mid-run creating 2 pallets with no date codes (on hold for rework); separate C6 sensor shift caused product backup and flavor mixing (disposition unknown). L1 S4 Twist Wrap underweight pouches flagged by QA and corrected same shift. One sanitation gap: L3 ML1 buffer tank handed off uncleaned between shifts.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "MFM printer fault \u2014 2 pallets no date code",
+      "summary": "Printer faulted during production run, creating 2 full pallets of pouches with missing best-before dates; pallets isolated for manual rework after order complete.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-28T13:18:51.138Z"
+      },
+      "status": "On hold pending rework \u2014 Frederick confirmed pallets will be reworked after order completion."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM sensor shift caused flavor mixing",
+      "summary": "C6 conveyor Z sensor moved out of position, product backed up at depositor and mixed with other flavors; cross-contact risk for allergen-sensitive varieties.",
+      "severity": "high",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-28T15:29:45.397Z"
+      },
+      "status": "Open \u2014 sensor repositioned and line restarted; no disposition posted for affected product."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 Twist Wrap underweight pouches",
+      "summary": "QA flagged pouch weights below spec at 08:13 MT; side pieces light while center pieces on-target; team adjusted and weights recovered by 10:54 MT.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-08-28T14:13:32.094Z"
+      },
+      "status": "Resolved \u2014 weights improved to acceptable range and monitored through end of shift per Nathan Topham."
+    }
+  ],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 Cross Conveyor 2 damaged hardware",
+      "summary": "One knob severely bent, two wheels very loose on Cross Conveyor 2 discovered during cleaning; damage mode and timeline unknown.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-28T22:29:35.648Z"
+      },
+      "status": "Open \u2014 William Lopez requested details on what happened to prevent recurrence."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM past-date labels found on 3 pallets",
+      "summary": "Labels verified correct at shift start, but mid-shift check found 3 finished pallets labeled with incorrect (past) best-before date.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-08-28T14:43:54.553Z"
+      },
+      "status": "Open \u2014 flagged by QA, no corrective action or disposition posted."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank handed off uncleaned",
+      "summary": "Buffer tank received by 1st shift in unwashed condition; shift handoff cleaning accountability gap.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-28T13:46:09.986Z"
+      },
+      "status": "Open \u2014 flagged in chat with photo; no response or corrective action posted."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review Cross Conveyor 2 operation on S3 \u2014 severe hardware damage (bent knob, loose wheels) discovered during cleaning with unknown cause."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider pre-run printer test protocol on MFM \u2014 today's mid-run fault created 2 pallets of undated product before detection."
+    },
+    {
+      "plant": "L3",
+      "text": "Review C6 sensor mounting on MFM \u2014 sensor shift at 09:29 caused flavor cross-contact at the depositor."
+    },
+    {
+      "plant": "L3",
+      "text": "Add buffer tank to ML1 shift handoff checklist \u2014 tank handed off uncleaned at 07:46 today, suggesting gap in accountability."
+    }
+  ]
+}
