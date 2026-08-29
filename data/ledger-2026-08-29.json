@@ -1,0 +1,269 @@
+{
+  "date": "2026-08-29",
+  "headline": {
+    "eyebrow": "Quality hold",
+    "text": "L1 almond sorting effort stopped after *3 hours* \u2014 foreign material found in two lots, no resolution path yet"
+  },
+  "per_plant_summary": {
+    "L1": "S2 down most of the night sorting almonds for foreign material \u2014 stopped at 05:19 with no clear path forward. S3 found metal contamination in two separate incidents, maintenance investigating. Materials shortages (MMK jars, labels, ALDI pouches) limiting schedule flexibility.",
+    "L2": "ML2 temper unit faulted twice but cleared both times \u2014 back depositing by 00:35. ML3 cleared a mold jam but guide rails are bent and need replacement parts. FFS finished job and completed level 2 clean.",
+    "L3": "ML1 and ML4 both mid-changeover \u2014 ML1 buffer flush and Hershey almond setup on track, ML4 level 3 clean going well. Truffle line worked through 62 bins of rework from belt alignment issues, down to 8 bins by end of 2nd shift. MF Matrix sensors caused two overflows on 2nd shift."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 THG angle conveyor auto-track fault",
+      "summary": "First THG belt section pausing with no HMI alarm, auto-track sensor not engaging.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-08-28T21:32:25.049Z"
+      },
+      "resolution": "Cleared at 16:41 after CILT and retracting belt into auto-track \u2014 sensor back on (Erandy Garcilazo Ceja)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 black spots on caramel",
+      "summary": "Black contamination visible on caramel surface at end of tunnel 2, 3 EEs sorting.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-08-29T02:07:28.72Z"
+      },
+      "resolution": "Decision at 20:44 to run out caramel and caustic clean kettles starting at 21:00 (Dakota Adair, Curt Willis)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 expired ingredient blocked bed loading",
+      "summary": "Item 10203 staged at line was expired, preventing bed from loading at 07:06.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-08-29T13:06:22.389Z"
+      },
+      "resolution": "Bed loading started at 08:24 after locating in-date material (Katya Farnsworth)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 temper unit pressure fault (first occurrence)",
+      "summary": "Scraper faulted at 12:36, pressure climbed from 5.3 to 6.7 bar.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-28T18:36:07.262Z"
+      },
+      "resolution": "Reheat to 35C completed, scraper working and tempering again at 12:43 (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 temper unit pressure fault (second occurrence)",
+      "summary": "Scraper faulted at 23:08, bar at 5.8, third shift starting reheat.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-08-29T05:07:56.375Z"
+      },
+      "resolution": "DQ1 fuse replaced for heat exchanger at 23:55, two good tempers, depositing at 00:35 (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 mold jam at cooler bottom",
+      "summary": "6 molds jammed at very bottom of mold return conveyor, tight space with bent guide rails.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-08-29T03:00:36.354Z"
+      },
+      "resolution": "All molds cleared at 21:04, line back up and running (Brandon Lance, Raymond Fleming)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars kicking sideways at flow wrap",
+      "summary": "Machine kicking bars sideways every couple of bars, jamming belt near packaging.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-08-29T07:54:02.55Z"
+      },
+      "resolution": "Line running at 02:03, maintenance shimmed the blade (ML2 FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M4 belt alignment causing sensor rejects",
+      "summary": "Drive roller slipping, chicane misaligning product, 2 EEs manually aligning, 62 bins accumulated.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-08-28T18:16:22.986Z"
+      },
+      "resolution": "Worked down to 8 bins remaining at 21:36 (Shane Olsen). Drive roller to be addressed at next cleaning downtime."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sensor missing after changeover",
+      "summary": "Sensor missing from equipment during shift exchange, location unknown.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-08-29T10:09:03.673Z"
+      },
+      "resolution": "Sensor handed over at shift exchange, reinstalled at 04:46 (Kavin Ayala, Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Forklift #5 fork pins out, LOTO applied",
+      "summary": "Fork pins came out, retaining pieces and bolts missing, other two forklifts inspected and tightened.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-08-29T10:30:19.049Z"
+      },
+      "resolution": "Pin reinstalled with new bolts, tightened, LOTO removed at 05:39 (Kavin Ayala)."
+    },
+    {
+      "plant": "L3",
+      "title": "LOTO lock left on ML1 imperial air valve",
+      "summary": "Lock preventing air to imperial, blocking hopper trial, unknown owner.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-29T15:06:08.695Z"
+      },
+      "resolution": "Form filled, lock cut with bolt cutters at 09:41 (Itzel Chavez, Chad Stone)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector belt failed ATP",
+      "summary": "Belt marked complete but failed visual inspection during level 3 clean.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-29T07:20:22.084Z"
+      },
+      "resolution": "ATP passed at 03:14 after re-cleaning (Gina Vazquez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 almond lots J and P foreign material hold",
+      "summary": "FM found in two almond lots during startup, manual sorting very slow (3 hours for <1/4 tote each), stopped at 05:19 pending new direction from Curt Willis and Alan Todd.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-08-29T06:14:01.196Z"
+      },
+      "status": "Sorting stopped at 05:19, findings bagged and saved. Almond sorting plan with optical sorter in development for Monday (Chad Stone 10:25)."
+    },
+    {
+      "plant": "L1",
+      "title": "Materials shortage limiting schedule flexibility",
+      "summary": "MMK jars only 3 days supply, labels 2 days, ALDI pouches and TAT materials incomplete \u2014 no flexibility to adjust schedule.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Daniel Bringas",
+        "time_utc": "2026-08-29T14:52:01.999Z"
+      },
+      "status": "Pretium producing MMK jars now, ~146K/week available. ALDI tight turnaround, cannot bring forward (Kirk Nickel 10:20). Almond plan as backup."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal contamination in finished product",
+      "summary": "Bolt found inside bag from MM5 at 10:47, second piece of metal found in cluster at 11:04, both rejected by x-ray and metal detector.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-29T16:47:42.908Z"
+      },
+      "status": "Line paused at 10:47 to locate source, maintenance investigating as of 11:04 (Mariela Gudino, Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 and MM5 pausing after every dump",
+      "summary": "Matrix machines 3 and 5 pausing after each dump, impacting throughput, Jason working with Troy.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-29T16:19:12.1Z"
+      },
+      "status": "Still troubleshooting as of 10:19, Troy engaged (Katya Farnsworth, Jason, Justin Garner)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 temper unit recurring pressure faults on dark sea salt",
+      "summary": "Two faults in 11 hours on new FEA dark chocolate with salt added at melter, suspected salt accumulation at scraper bottom.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-28T18:36:07.262Z"
+      },
+      "status": "Summary posted at 06:28, Jakob requested to review DCSS today if available (Chad Stone 07:12, Alan Todd, Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 mold return guide rails bent, need replacement",
+      "summary": "Both guide rails at cooler bottom very bent after clearing jam, should order replacement parts.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-08-29T03:03:17.125Z"
+      },
+      "status": "Jam cleared but rails still pretty bad, running. Replacement parts needed (Raymond Fleming 21:03)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M4 drive roller slipping, needs repair",
+      "summary": "Drive roller slip causing chicane issues and product misalignment, 2 EEs manually aligning to reduce rejects.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-28T19:27:10.945Z"
+      },
+      "status": "Rework bins cleared to 8 by 21:36, but root cause (drive roller) will be addressed at next cleaning downtime (Grey Boscan, Jason)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix sensor overflows on all quadrants",
+      "summary": "Sensors caused product overflow across all quadrants twice during 2nd shift (17:31 and 19:23).",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-08-28T23:31:17.441Z"
+      },
+      "status": "Sensor head angles not adjusted, Bojana continuously monitoring and will adjust if it happens again (Bojana McLeod 20:39, Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 drum pump broke during changeover",
+      "summary": "Pump leaking oil, fell apart when operators removed it, needed for ML1 flush.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-29T02:04:47.979Z"
+      },
+      "status": "Borrowed pump from L2, in use (Marcos Montano 20:07, Brandon Lance confirmed 21:30)."
+    }
+  ]
+}

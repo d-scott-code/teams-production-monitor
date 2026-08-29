@@ -1,0 +1,141 @@
+{
+  "date": "2026-08-29",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S3 had *two* metal findings in 15 minutes \u2014 X-ray caught screw at MM5, metal detector caught piece in cluster \u2014 both Matrix lines, investigation open."
+  },
+  "summary": "Two active holds: expired ingredient on L1 S3 (Item 10203, 3 pallets) and almond lots J & P on L1 S2 for FM/pest activity. L3 ML1 metal detector belt failed visual inspection after being marked clean.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Almond lots J & P held for FM and pest activity",
+      "summary": "Crew hand-sorting found thread-like FM, insect damage, and suspected pest activity in roasted almond lots; lot P formally held at 00:27 MT, lot J continued sorting until stopped at 05:19 MT.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-08-29T06:27:06.177Z"
+      },
+      "status": "On hold pending disposition \u2014 sorting stopped, findings bagged and saved for FSQA review, alternative sourcing plan in progress."
+    },
+    {
+      "plant": "L1",
+      "title": "Expired ingredient Item 10203 \u2014 3 pallets",
+      "summary": "Line could not load bed because Item 10203 expired; 3 pallets on hand all same lot, crew searching for usable stock.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-08-29T13:06:22.389Z"
+      },
+      "status": "Resolved \u2014 usable material located, line loaded by 08:24 MT."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Foreign material and pest activity in almond lots",
+      "summary": "Hand-sorting of roasted almonds (lots J and P) revealed thread-like FM, insect damage, holes, and split nuts with suspected pest feeding \u2014 crew sorted ~3 hours and found recurring defects.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-08-29T06:14:01.196Z"
+      },
+      "status": "On hold pending disposition \u2014 lots bagged for FSQA review, team exploring optical sorter as alternative screening method."
+    },
+    {
+      "plant": "L1",
+      "title": "Screw found in MM5 reject bin",
+      "summary": "X-ray at Matrix 5 rejected a bag; inspection found a screw inside the product \u2014 team investigating source, line paused to locate origin.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-29T16:48:27.195Z"
+      },
+      "status": "Open \u2014 maintenance investigating source as of 10:48 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal piece in cluster rejected by metal detector",
+      "summary": "Metal detector rejected cluster piece; crew inspected reject box, found metal inside product \u2014 second metal event on S3 in 15 minutes.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-08-29T17:04:52.191Z"
+      },
+      "status": "Open \u2014 maintenance investigating source as of 11:04 MT."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Black spots on caramel pieces",
+      "summary": "Crew observed black specks on caramel surface; 3 EEs assigned to sort out affected pieces; decision made to run out kettles and caustic-clean rather than risk contamination.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-08-29T02:07:41.041Z"
+      },
+      "status": "Resolved \u2014 kettles ran out by 21:00 MT, caustic clean completed."
+    },
+    {
+      "plant": "L1",
+      "title": "Spec mismatch \u2014 pouch vs. internal spec",
+      "summary": "Pouch label called for 458 g and 26 pieces; internal spec called for 448 g min and 24 pieces \u2014 after consultation, team followed pouch guidelines.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-29T15:28:57.383Z"
+      },
+      "status": "Resolved \u2014 spec update requested to align with pouch, no product at risk."
+    },
+    {
+      "plant": "L2",
+      "title": "Temper unit faulting on pressure repeatedly",
+      "summary": "ML2 temper unit faulted 3 times (1st, 2nd, 3rd shifts) due to scraper pressure climbing above setpoint; reheats, fuse replacement, and adjustments required to restart.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-08-28T18:36:07.262Z"
+      },
+      "status": "Open \u2014 tempering but recurring fault suggests equipment or recipe issue; summary posted for engineering review."
+    },
+    {
+      "plant": "L2",
+      "title": "Best By date not centered on wrapper",
+      "summary": "QA flagged that expiration date was printing off-center; operator adjusted immediately.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-08-29T15:17:48.012Z"
+      },
+      "status": "Resolved \u2014 corrected before end of shift."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Metal detector belt marked clean but failed visual",
+      "summary": "Changeover checklist marked ML1 metal detector belt as cleaned and complete, but visual inspection during startup found it failed \u2014 required re-clean before ATP.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-29T07:20:22.084Z"
+      },
+      "status": "Resolved \u2014 belt re-cleaned, ATP passed at 03:14 MT."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider reviewing Matrix metal detection sequence at S3 \u2014 today's screw was caught by X-ray but not the upstream metal detector, raising the question whether detector sensitivity or positioning needs adjustment."
+    },
+    {
+      "plant": "L1",
+      "text": "Evaluate optical sorter trial for incoming almonds \u2014 based on today's FM/pest findings in lots J and P, an automated pre-screen could catch defects before hand-sorting or line use."
+    },
+    {
+      "plant": "L3",
+      "text": "Add metal detector belt to post-cleaning visual verification checklist \u2014 today's ML1 belt was marked complete but failed visual inspection, suggesting the signoff step needs a defined inspection standard."
+    }
+  ]
+}
