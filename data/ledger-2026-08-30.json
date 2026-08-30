@@ -1,0 +1,134 @@
+{
+  "date": "2026-08-30",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L2 cleared a *3-hour* temper fault via reheat \u2014 L1 carries three equipment issues into the weekend."
+  },
+  "per_plant_summary": {
+    "L1": "Completed nut contamination inspection across two pallets (0.5% defect rate on lot J). Three equipment items need attention: Sollich 3 sprinkler belt has a burnt plug with no replacement on hand, kitchen motor faulting on E-stop, and Sollich 4 tunnel cover repair curing through Sunday morning.",
+    "L2": "ML2 ran dark chocolate sea salt with temper faults mid-shift due to scraper motor driver. Reheat at 15:27 cleared the issue, system stabilized by 18:15 and ran clean through close. New program saved.",
+    "L3": "ML1 completed a full Marcos tank flush and changeover to zero-sugar chocolate, ready for Monday startup. ML4 finished level 3 clean and loaded molds after warehouse staged additional totes overnight."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Caramel waste barrels flagged for odor and need removal before next production day."
+    },
+    {
+      "plant": "L3",
+      "text": "Preston Tregaskis approved plan to push initial zero-sugar chocolate to drums Monday before filling system, given trace residue risk."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Nut lot contamination inspection completed",
+      "summary": "First and second pallets of lot J inspected for foreign material (eggs, fuzzy debris) after quality hold, 0.5% defect rate documented.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-29T19:06:03.968Z"
+      },
+      "resolution": "Inspection completed by 22:37 \u2014 two pallets processed, defect pieces removed, new LPNs created for IMS."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 temper unit scraper motor fault",
+      "summary": "Scraper motor driver faulted multiple times starting at 14:30, dropping bar pressure to 0.1 and halting tempering.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-29T20:30:43.389Z"
+      },
+      "resolution": "Cleared via full reheat at 15:27 and riser pump adjustment to 1100 kg/h. System stabilized by 18:15 \u2014 \"seeing better results now\" (Brandon Lance)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold shortage during changeover",
+      "summary": "Warehouse staged insufficient mold totes for overnight changeover, crew could not reach remaining stock without forklift.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-30T03:31:45.682Z"
+      },
+      "resolution": "WH operator Alan Ramirez delivered additional totes by 23:51. Mold loading started 04:38."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 kitchen motor E-stop fault",
+      "summary": "Kitchen motor will not turn on, E-stop signal showing on panel with no clear source.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-29T19:32:47.229Z"
+      },
+      "status": "Panel reset temporarily at 13:36, same fault occurring on S2 main line. Jason investigating as of 13:32."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 sprinkler belt burnt plug",
+      "summary": "Sprinkler belt motor faulting out, plug burnt and no replacement available in stock.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-30T03:28:34.011Z"
+      },
+      "status": "Maintenance notified at 21:28, part needed for repair. Belt down until replacement sourced."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 shrouds stock-out",
+      "summary": "Line ran out of shrouds mid-shift, 1.25 pallets of product affected.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-29T20:54:19.668Z"
+      },
+      "status": "Stock depleted at 14:54, affected product awaiting packaging material."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 tunnel 1 cover corner detached",
+      "summary": "Corner piece on tunnel cover (previously glued) fell off during cleaning, taped temporarily then brought to maintenance.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-30T01:35:50.602Z"
+      },
+      "status": "Adhesive applied to both sides at 20:42, requires 12-hour cure time before sanding and painting."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 pump block water connection leak",
+      "summary": "One of the water connections on the pump block is actively leaking.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-29T18:24:52.925Z"
+      },
+      "status": "Maintenance notified at 12:24, no follow-up on repair status in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Leaking sunflower oil totes",
+      "summary": "Multiple totes of sunflower oil arriving with leaks on the bottom.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-30T02:32:37.215Z"
+      },
+      "status": "Reported as recurring issue at 20:32, no supplier follow-up or containment plan in messages."
+    }
+  ]
+}

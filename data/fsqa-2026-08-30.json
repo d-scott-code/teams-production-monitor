@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-30",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 Sollich 2 nut lot held after crew found *eggs and insect material* during hand-sort \u2014 0.5% defect rate on first pallet, second pallet complete, inspection ongoing."
+  },
+  "summary": "One active ingredient hold at L1 (nut contamination). L1 Sollich 4 tunnel cover fell off during cleaning \u2014 corner piece previously glued, now taped and being re-adhered. L3 ML1 Z-conveyor failed initial ATP, passed after re-sanitization. All other cleaning verifications passed across three plants.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Nut lot held for hand-sort after foreign material found",
+      "summary": "Incoming nut lot showing eggs and fuzzy material (possible insect larvae) \u2014 crew hand-sorting, first pallet 0.5% defect rate, second pallet completed by 22:37, inspection continuing.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-29T19:06:03.968Z"
+      },
+      "status": "Open \u2014 second pallet sorted, additional pallets queued for inspection."
+    },
+    {
+      "plant": "L3",
+      "title": "Cr\u00e8me de menthe barrel held by first shift",
+      "summary": "One barrel of cr\u00e8me de menthe on ML4 line flagged on hold by first shift \u2014 QA identified at 20:39, recommended appropriate action.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-08-30T02:30:01.679Z"
+      },
+      "status": "Open \u2014 awaiting disposition, flagged for supervisor review."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Tunnel cover corner fell off during Sollich 4 cleaning",
+      "summary": "Cooling tunnel cover corner piece detached when first cover lifted \u2014 had been glued previously, now taped and sent to maintenance for adhesive repair (12-hour cure time required).",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-08-30T01:35:50.602Z"
+      },
+      "status": "Resolved \u2014 cover removed from production area, adhesive applied, curing in maintenance shop until 08:43 Monday."
+    },
+    {
+      "plant": "L1",
+      "title": "Second washer found on Sollich 3 belt during assembly check",
+      "summary": "Metal washer located on side of belt (not in product path) \u2014 maintenance confirmed it matches type used in recent assembly, both washers now accounted for.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-08-29T18:30:24.792Z"
+      },
+      "status": "Resolved \u2014 both washers accounted for, found outside product contact zone."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 Z-conveyor failed initial ATP, passed after re-clean",
+      "summary": "Z-conveyor unwrapped and swabbed at 20:32 \u2014 initial ATP failed, re-sanitized and passed second ATP at 21:04.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-08-30T02:31:49.811Z"
+      },
+      "status": "Resolved \u2014 passed second ATP after sanitization, cleared for production."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 tank changeover required multiple flush cycles for residue",
+      "summary": "Chocolate residue visible in Marcos tank after initial flush \u2014 crew concern raised about draining through bottom vs pipe system, multiple oil-fill-drain cycles executed until acceptable at 08:57.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-08-30T10:12:31.837Z"
+      },
+      "status": "Resolved \u2014 agitator repositioned, additional flushing completed, tank filled with zero-sugar chocolate and set to night mode."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "title": "Consider permanent tunnel cover repair or replacement \u2014 based on Sollich 4 corner piece falling off after repeated glue repairs."
+    },
+    {
+      "plant": "L3",
+      "title": "Consider adding tank drain method to ML1 changeover checklist \u2014 based on shift confusion over bottom drain vs pipe-flush protocol and residue remaining after initial flush."
+    }
+  ]
+}
