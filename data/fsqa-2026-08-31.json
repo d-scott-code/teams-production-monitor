@@ -1,0 +1,130 @@
+{
+  "date": "2026-08-31",
+  "headline": {
+    "eyebrow": "Temperature control",
+    "text": "L1 S4 chiller not maintaining tunnel temps \u2014 line paused at 12:44, *low glycol* suspected, maintenance refilling before restart."
+  },
+  "summary": "Two active food-safety events: L1 S4 chiller failure paused production due to inadequate tunnel cooling; L1 discarded a bulging heavy cream tote. L3 ML4 lost most of shift to depositor piston faults and repeated ATP failures after maintenance disassembly. One rework hold on L1 S3.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Pallet 41107 tagged for rework",
+      "summary": "S3 Pack isolated pallet 41107 for rework; QA applied hold tag at end of window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-08-31T19:30:05.826Z"
+      },
+      "status": "On hold pending rework disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 chiller failure \u2014 tunnels not reaching temp",
+      "summary": "Chiller unable to maintain correct tunnel temperatures; line paused at 12:44, maintenance believes low glycol is root cause and is refilling system before restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T18:44:09.011Z"
+      },
+      "status": "Line paused; maintenance refilling glycol to restore cooling capacity."
+    },
+    {
+      "plant": "L1",
+      "title": "Heavy cream tote bulging \u2014 discarded",
+      "summary": "One tote of heavy cream found bulging (\"ready to pop\"); discarded to prevent potential rupture and contamination risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-31T14:51:30.991Z"
+      },
+      "status": "Resolved \u2014 tote discarded."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 MM6 printer failure",
+      "summary": "MM6 printer threw unrecoverable error twice; Videojet diagnostic says cannot be repaired without service call \u2014 touchscreen also non-functional; decision made to swap with rework printer to keep line running.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-31T18:49:21.102Z"
+      },
+      "status": "Resolved for production \u2014 swapped with rework printer; Videojet service call to be scheduled."
+    },
+    {
+      "plant": "L1",
+      "title": "Almonds past expiration date",
+      "summary": "S2 operator flagged almonds past expiration date; requested verification with IMS on whether expiration will be extended.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-31T19:25:17.124Z"
+      },
+      "status": "Open \u2014 awaiting Mary Montilla and Charity Young confirmation on expiration extension."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 damaged slider and bent fins",
+      "summary": "East-side depositor slider damaged enough to bind during chocolate deposit; fins also bent from previous drop of sliders \u2014 both discovered during troubleshooting of piston faults.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-08-31T15:53:33.809Z"
+      },
+      "status": "Slider and fins identified; line did not achieve production startup today due to ongoing depositor issues."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Two allergen swabs failed on panning equipment",
+      "summary": "Two allergen verification swabs failed during post-clean ATP testing on panning/sorting equipment; both recleaned and passed by 16:20.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-08-31T15:25:50.98Z"
+      },
+      "status": "Resolved \u2014 both areas recleaned and passed allergen verification."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 failed ATP after maintenance work",
+      "summary": "Depositor 1 disassembled for piston fault troubleshooting; failed ATP post-reassembly despite passing last week \u2014 hopper, nozzle plate, and sliders re-washed and re-tested until all passed by 16:51.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-31T15:48:07.364Z"
+      },
+      "status": "Resolved \u2014 all depositor 1 components passed ATP after re-wash; line still down at window close due to recurring piston faults."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 chutes modified, ATP tested before reinstall",
+      "summary": "Maintenance modified cereal belt and cross-conveyor chutes to address product spillage; parts cleaned and ATP tested before reinstallation at 14:48.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T14:48:55.28Z"
+      },
+      "status": "Resolved \u2014 chutes passed ATP and reinstalled; line restarted at 15:02."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review chiller glycol level monitoring and PM schedule for S4 \u2014 today's line pause due to low glycol suggests fill interval may need tightening."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider pre-shift visual inspection checklist for dairy totes (bulging, leaks, damage) across all lines \u2014 today's bulging heavy cream tote on S2 caught late in shift."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding depositor slider handling and inspection SOP to ML1 and ML4 startup procedures \u2014 today's bent fins and damaged slider at ML1 both traced to dropping during disassembly."
+    }
+  ]
+}

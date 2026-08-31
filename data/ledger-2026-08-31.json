@@ -1,0 +1,245 @@
+{
+  "date": "2026-08-31",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 depositor problems kept both ML1 and ML4 down most of the shift \u2014 ML4 piston faults persisted through *multiple* rebuilds and is still faulting at window close."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 cleared a 3-hour chute modification and came back at 09:02. Sollich 2 fought recurring almond Hapman clogs all day and high decorator temper through end of shift. Sollich 4 chiller lost glycol and stopped depositing at 13:01.",
+    "L2": "ML2 ran clean after a wrapping quality tweak at 09:00. ML3 and FFS passed all checks with no interruptions.",
+    "L3": "ML4 piston torque faults on depositors 1 and 4 kept the line down from 05:12 through window close despite pump teardowns, re-washes, and WDS calls. ML1 depositor also faulted on a blown rotary cylinder \u2014 maintenance pulling the hopper to rebuild. Truffle line ran after clearing a separator table alignment at startup."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 line stopped for chute modification",
+      "summary": "Mess from cereal belt and cross conveyor 1 forced a line stop at 06:24 while maintenance modified and ATP-tested new chutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T12:24:34.131Z"
+      },
+      "resolution": "Line back up at 09:02 after parts modified, cleaned, ATP tested, and installed (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 kitchen and Sucrotherm hard reset",
+      "summary": "Kitchen and Sucrotherm required hard reset due to operational problems; caramel production delayed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-31T16:21:53.151Z"
+      },
+      "resolution": "Reset completed, caramels ready at drain within 1.5 hours; line proceeded to tempering (Katya Farnsworth, 10:21)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 enrober return pump air connection damaged",
+      "summary": "Damaged air connection on enrober return pump needed replacement before tempering could start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-31T16:21:53.151Z"
+      },
+      "resolution": "Maintenance replaced connection; tempering started on both enrober and mini tempering unit at 10:34 (Justin Garner)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 MM6 printer failure",
+      "summary": "MM6 printer threw unrepairable error twice and touchscreen not working; no way to rework print if not swapped.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-08-31T18:49:21.102Z"
+      },
+      "resolution": "Swapped MM6 printer with rework printer at 13:13; will manage rework during accumulation, Videojet scheduled for repair (Justin Garner)."
+    },
+    {
+      "plant": "L1",
+      "title": "Wrong chocolate code in BOM",
+      "summary": "BOM showed 10121 for chocolate when it should have been 10226 on Sollich 3.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T12:49:41.297Z"
+      },
+      "resolution": "Updated at 06:58 \u2014 \"Done, it's been updated!\" (Deisy Lopez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 wrapping quality below target",
+      "summary": "Wrapping appearance needed improvement to meet spec.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-08-31T14:56:09.073Z"
+      },
+      "resolution": "Operator made adjustments at 09:00, better results confirmed at 09:22 (Claudio Tovar)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line separator table misaligned with cutter",
+      "summary": "Separator table misalignment would cause last row to go to trim and product accumulation at startup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-31T11:35:26.96Z"
+      },
+      "resolution": "Operators aligned the separator table by 05:49 without maintenance assistance (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M4 and M6 belt chocolate carryover",
+      "summary": "M4 belt not running correctly caused chocolate clumping and sensor rejections; later M6 belt had chocolate turning issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-08-31T12:37:51.552Z"
+      },
+      "resolution": "Maintenance adjusted belts; at 12:31 \"chocolates better aligned now, sensor not rejecting\" (TruffleLine FW)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 almond Hapman repeatedly clogging",
+      "summary": "Almond Hapman clogged at top four times during shift (07:56, 11:49, 12:03, 12:49) requiring maintenance each time.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-31T13:56:47.929Z"
+      },
+      "status": "Last clog at 12:49, maintenance called, no clear resolution by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 chiller not keeping tunnels at temp",
+      "summary": "Chiller unable to maintain correct tunnel temperatures, suspected low glycol; line paused then stopped depositing at 13:01.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T18:44:09.011Z"
+      },
+      "status": "Maintenance refilling glycol as of 13:01; waiting to restart after refill complete."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 decorator temper running high",
+      "summary": "Mini tempering unit reading 93\u00b0F, decorator buffer 96\u00b0F despite setpoint of 90\u00b0F; multiple temper readings high throughout shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-08-31T18:17:01.951Z"
+      },
+      "status": "At 13:19 lowered mini tempering from 29.5 to 29\u00b0C and buffer tank to 87\u00b0F; still troubleshooting at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MM3 missing part since start of shift",
+      "summary": "MM3 component missing from start of A-shift; production team unable to locate.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T18:37:46.867Z"
+      },
+      "status": "Asked Brandon at 12:37 if he knows location, no response by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 almonds past expiration date",
+      "summary": "Almonds flagged as past expiration; waiting confirmation if date will be extended.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-08-31T19:25:17.124Z"
+      },
+      "status": "Verified with IMS at 13:25, awaiting extension confirmation from Mary Montilla and Charity Young."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 tablets not working due to battery drain",
+      "summary": "Both tablets on Sollich 4 not functioning; ongoing issue since Friday due to operators not charging between shifts.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T15:07:47.072Z"
+      },
+      "status": "Ticket open since Friday; shift exchange action created to charge tablets each shift going forward (Erandy, 09:25)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 computer stuck in standby mode",
+      "summary": "ML2 line computer will not come out of standby mode.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-08-31T12:42:47.17Z"
+      },
+      "status": "Reported at 06:42, no resolution or follow-up posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositors 1 and 4 recurring piston torque faults",
+      "summary": "Depositor 1 piston fault at 05:12 preventing purge; sliders cleaned, pump system torn down, parts re-washed and ATP'd, reassembled \u2014 still faulting with chocolate at 13:20. Depositor 4 showing same fault at 08:22.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-31T11:12:00.697Z"
+      },
+      "status": "After reinstalling depositor 1 at 13:20, empty pumping worked but faulted again with chocolate; WDS engaged throughout, line still down at 13:30."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor piston fault from blown rotary cylinder",
+      "summary": "Piston torque fault traced to east rotary air cylinder with large blow-by; attempted fix did not work, now draining depositor to replace cylinder.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-08-31T14:16:26.513Z"
+      },
+      "status": "At 11:55 waiting for hopper removal and glycol shut-off so maintenance can start cylinder rebuild; two rebuild kits on hand."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 creme ingredient tank not heating to 110\u00b0F",
+      "summary": "Ingredient tank for creme not reaching target temperature of 110\u00b0F.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-08-31T14:29:32.286Z"
+      },
+      "status": "Nelson working on it as of 08:29, no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 scale power cable missing",
+      "summary": "Power cable for scale cannot be located; production and maintenance unable to find it.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-08-31T15:11:34.498Z"
+      },
+      "status": "Still searching at 10:31, no cable found by window close."
+    }
+  ]
+}
