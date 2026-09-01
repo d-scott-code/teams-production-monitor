@@ -1,0 +1,156 @@
+{
+  "date": "2026-09-01",
+  "headline": {
+    "eyebrow": "Equipment failures",
+    "text": "L3 ML1 metal detector failed test cards at startup; L1 S4 *4 slitter units damaged*, 9 blades replaced \u2014 neither ran product before repair."
+  },
+  "summary": "Two critical equipment failures caught before product exposure: ML1 metal detector not rejecting test cards until sensitivity adjusted; S4 slitter blades damaged mid-shift. Two ingredient holds (expired, no traceability). L1 S2 Sweco filter confirmed running without magnet.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Two totes almonds without traceability",
+      "summary": "Two corn-syrup totes filled with almonds arrived with no LPNs or traceability; discarded after unable to establish origin.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-09-01T12:02:12.490Z"
+      },
+      "status": "Discarded \u2014 no traceability info available after investigation with L1 and 3rd shift."
+    },
+    {
+      "plant": "L1",
+      "title": "Expired ingredient on S4",
+      "summary": "Angelica Perez placed expired ingredient on hold due to sour taste; disposal approved, COD in process.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-09-01T01:04:01.626Z"
+      },
+      "status": "Approved for disposal, Certificate of Destruction to be created."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 slitter blades damaged \u2014 9 replaced",
+      "summary": "Four slitter units damaged mid-shift; maintenance replaced 9 blades total; no product ran through damaged equipment.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-01T14:35:18.401Z"
+      },
+      "status": "Resolved \u2014 line disassembled, 9 blades replaced by maintenance."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Sweco filter has no magnet",
+      "summary": "Katya confirmed current Sweco filter setup not designed for magnet; one will be needed for Hershey production.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-01T15:16:53.989Z"
+      },
+      "status": "Open \u2014 no magnet installed, acknowledged as gap for future HER runs."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector failed startup validation",
+      "summary": "THS metal detector set to Feastables recipe; QA test cards not rejected until maintenance adjusted sensitivity to Hershey recipe \u2014 all three cards then passed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-09-01T04:02:27.584Z"
+      },
+      "status": "Resolved \u2014 recipe corrected, all 3 test cards rejected, no product on hold (had not demolded yet)."
+    },
+    {
+      "plant": "L1",
+      "title": "Caramel bucket lids missing or loose in warehouse",
+      "summary": "MDLZ tour found one caramel bucket missing lid, another with several lids lifted/loose; stored among hold items.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-09-01T16:35:35.551Z"
+      },
+      "status": "Resolved \u2014 Justin dispatched employees to secure lids and remove open buckets."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Donner belt 3 frayed",
+      "summary": "Donner belt 3 shifted north and frayed with considerable damage; maintenance replaced before product resumed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-01T13:15:45.840Z"
+      },
+      "status": "Resolved \u2014 belt replaced by 14:03 MT."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 underweight product \u2014 low almond count",
+      "summary": "Visual inspection revealed underweight pieces with low almond quantity; operator notified and adjusting.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-01T17:20:08.517Z"
+      },
+      "status": "Open \u2014 operator making adjustments at end of window."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS lot-number printing defects",
+      "summary": "Batch printing faint and misplaced every ~20 bags; line paused, defective pouches pulled, issue resolved on new film roll.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-31T23:34:27.012Z"
+      },
+      "status": "Resolved \u2014 defective pouches removed, new roll printing correctly."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Truffle Cavannas left very dirty by 3rd shift",
+      "summary": "1st shift found Cavannas extremely dirty with significant chocolate buildup on Bottomer and Enrober mesh; paused to clean and reheat.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-01T13:13:02.499Z"
+      },
+      "status": "Resolved \u2014 machines cleaned, reheat completed, production resumed."
+    },
+    {
+      "plant": "L2",
+      "title": "Almonds on floor after sorting",
+      "summary": "Brandon Lance found almonds on floor on other side of curtain after sorting shift; Alex and Jeffrey to ensure cleanup.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-08-31T21:40:20.954Z"
+      },
+      "status": "Resolved \u2014 supervisor sent to clean immediately."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding slitter blade inspection to S4 startup checklist \u2014 today's damaged blades and 9-blade replacement echo the need for pre-shift verification of food-contact cutting surfaces."
+    },
+    {
+      "plant": "L2",
+      "text": "Require LPN verification before moving ingredient totes between plants \u2014 today's two almond totes arrived with no labels and had to be discarded for lack of traceability."
+    },
+    {
+      "plant": "L3",
+      "text": "Review metal-detector recipe verification procedure for ML1 \u2014 today's startup caught wrong recipe (Feastables vs. Hershey) only when test cards failed to reject."
+    },
+    {
+      "plant": "L3",
+      "text": "Add Cavanna cleanliness check to Truffle end-of-shift signoff \u2014 1st shift lost production time cleaning heavy chocolate buildup left by 3rd."
+    }
+  ]
+}

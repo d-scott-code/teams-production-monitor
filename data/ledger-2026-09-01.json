@@ -1,0 +1,246 @@
+{
+  "date": "2026-09-01",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 lost *10 hours* to mold demolding failures \u2014 now running with portable heater workaround at reduced speed"
+  },
+  "per_plant_summary": {
+    "L1": "S4 chiller failed twice in 24 hours \u2014 fixed at 16:12 yesterday, down again at 08:15 for freon fill. S2 stopped 20 minutes on low temper at 08:40, cleared. S4 slitters damaged at 08:35, 9 blades replaced. S3 and S2 ran caramel with routine quality checks.",
+    "L2": "ML3 demolder jammed three times between 08:06 and 10:11, maintenance adjusting. Almond sorting running at 15% reject versus 1.5% spec \u2014 Candon set intentionally high. FFS lost 11 minutes at 17:34 yesterday on lot print defects, cleared. ML2 routine.",
+    "L3": "ML1 fought demolding failures from 23:08 yesterday through 10:34 today \u2014 20 of 20 test molds stuck at 04:24, all molds cleaned, decision at 10:34 to run with yellow portable heater. ML4 depositor 1 not purging since 07:56, calling WDS hotline at 10:34. Truffle line inherited 27 bins and dirty Cavannas at 07:13, took reheat to recover, M4 belt needs replacement."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S3 production count discrepancy flagged at 11:07 \u2014 countdown showed 1199 quarter-pallets needed, system showed 637."
+    },
+    {
+      "plant": "L2",
+      "text": "Two almond totes received without LPNs; after Candon and Hervin discussion, decision to discard for traceability."
+    },
+    {
+      "plant": "L3",
+      "text": "Nathan Ruiz confirmed M4 belt tightened all the way, estimates 4 hours to replace; Chris Givens scuffing drive roller as temporary fix."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 chiller not reaching tunnel temp",
+      "summary": "Tunnels could not cool caramel, maintenance suspected low freon; line paused at 13:01 on 8/31 to troubleshoot.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-08-31T18:44:09.011Z"
+      },
+      "resolution": "Cleared at 16:12 on 8/31 \u2014 \"fixed awhile ago, seems like it was a sticking solenoid valve\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 temper readings 1.1, line stopped",
+      "summary": "Two consecutive temper readings of 1.1 at 08:40 forced line stop; out of acceptable range for enrobing.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-09-01T14:40:20.986Z"
+      },
+      "resolution": "Cleared at 09:02 \u2014 Curt Willis adjusted setpoint to 27, line restarted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 demolder plate stuck",
+      "summary": "Mold plate jammed in demolder at 08:06, line down while maintenance worked to free.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-01T14:06:23.646Z"
+      },
+      "resolution": "Cleared at 08:25 \u2014 \"The line is running\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS lot printing defects on bags",
+      "summary": "Machine down at 17:34 yesterday, lot numbers printing light and misplaced every 20 bags; quality risk.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-08-31T23:34:27.012Z"
+      },
+      "resolution": "Cleared at 17:45 yesterday \u2014 Brandon Lance reported running again on new roll with no issues, defective bags pulled."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 hopper flapper mechanism preventing almond feed",
+      "summary": "Pneu-Con hopper flapper bent during install, not closing fully; almonds not flowing to depositor.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-09-01T01:09:04.496Z"
+      },
+      "resolution": "Cleared at 03:55 on 8/31 \u2014 \"We have initiated the chocolate deposition process\" (Bojana McLeod) after cleaning flapper and capture testing."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M6 belt chocolate misalignment causing rejects",
+      "summary": "Chocolate turning sideways on belt M6, sensor rejecting pieces; throughput and scrap impact.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-08-31T17:41:07.955Z"
+      },
+      "resolution": "Cleared at 12:31 on 8/31 \u2014 \"The chocolates are better aligned now, and the sensor isn't rejecting them\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 THS metal detector wrong recipe",
+      "summary": "Metal detector set for Feastables product, not reading Hershey test cards; validation blocked.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-09-01T04:17:21.459Z"
+      },
+      "resolution": "Cleared at 22:33 on 8/31 \u2014 Angel Cabrera changed recipe to Hershey, all three cards read and rejected."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Donner belt 3 frayed and shifted north",
+      "summary": "Transfer belt moved out of position and frayed at edge, risking product jam or belt failure.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-01T13:15:45.84Z"
+      },
+      "resolution": "Cleared at 08:03 \u2014 \"Donner belt done \u2705\" (Mirella Mamani)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial demolding belt shifted south",
+      "summary": "Demolding conveyor tracking south, risking mold misalignment and jams.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-01T14:42:58.467Z"
+      },
+      "resolution": "Cleared at 09:19 \u2014 \"Demolding belt is good to go\" (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 chiller failing again \u2014 freon fill in progress",
+      "summary": "Chiller could not reach temp at 08:15, line paused; same unit that failed yesterday with sticking solenoid; now suspected low refrigerant.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-09-01T14:15:43.807Z"
+      },
+      "status": "HVAC tech in middle of freon fill at 11:09, will inspect S4 after lunch per Matt Hatch."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 slitter \u2014 4 blades damaged",
+      "summary": "Four slitter blades damaged at 08:35, no product ran through; line disassembled for repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-01T14:35:18.401Z"
+      },
+      "status": "9 blades replaced as of 10:38; no indication line restarted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 MM6 seal bar issues, unauthorized cam changes",
+      "summary": "Seal bar problems on MM6 at 10:33; cam settings changed without CL documentation or Teams post; Troy Baxter flagged settings mismatch with MM7.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-09-01T16:33:02.994Z"
+      },
+      "status": "Passwords need changed again per Chris Jeffs at 10:41; product reported underweight with low almonds at 11:20."
+    },
+    {
+      "plant": "L2",
+      "title": "Almond sorting reject rate 15% versus 1.5% spec",
+      "summary": "Optical sorter rejecting 15% across four totes versus 1.5% supplier spec; Gustavo flagged at 09:02 and again at 05:59.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-09-01T09:02:07.041Z"
+      },
+      "status": "Candon confirmed at 08:14 that Scott Maxfield wanted 15% reject; Chad at 03:23 suggested segregating anything over 10% to re-sort."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 demolder jamming repeatedly",
+      "summary": "Mold jams at 08:06, 08:28, 08:56; cleared each time but recurring; Justin Barney adjusting demolder as of 10:11.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-01T14:06:23.646Z"
+      },
+      "status": "Line still down at 10:11, Justin adjusting demolder per last message in window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 molds not demolding \u2014 10-hour troubleshoot",
+      "summary": "Bars sticking to molds starting 23:08 yesterday; 20/20 test molds failed at 04:24, all molds washed, multiple speed and temp trials, decision at 10:34 to run with yellow portable mold heater.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-01T05:08:07.219Z"
+      },
+      "status": "Running test at 10 mpm with portable heater as of 10:34; Chad Stone directed to move forward with heater versus further optimization attempts."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 piston servo drive faulty",
+      "summary": "Depositor 1 will not purge after physical swap with depositor 4 at 09:53; programming issue suspected, WDS called overnight.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-01T13:56:41.757Z"
+      },
+      "status": "Nelson Cook requested to call US WDS hotline at 10:34; depositor 4 now working, depositor 1 still down."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line left with 27 bins, dirty Cavannas",
+      "summary": "Third shift handed off 27 bins of accumulation and very dirty Cavanna machines at 07:13; first shift paused to clean and took reheat.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-01T13:13:02.499Z"
+      },
+      "status": "Reheat completed, line restarted at 10:07 with temper; Grey noted significant chocolate buildup on wire mesh required intervention."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M4 belt insufficient tension, not spreading product",
+      "summary": "Belt M4 running same speed as M3 despite setting 11 vs 3; chocolate backing up onto M5, misaligning by M6, sensor rejecting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-01T14:47:49.332Z"
+      },
+      "status": "Nathan Ruiz tightened fully, confirmed belt needs replacement \u2014 4-hour job; Chris Givens scuffed drive roller as temporary fix at 10:23."
+    }
+  ]
+}
