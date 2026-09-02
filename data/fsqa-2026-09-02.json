@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-02",
+  "headline": {
+    "eyebrow": "Foreign material risk",
+    "text": "L3 Truffle Line ran with damaged wire-mesh belts on bottomer and enrober before *overnight repair* \u2014 metal shavings possible in product stream."
+  },
+  "summary": "Two active holds resolved within window: L1 S2 buffer-tank chocolate cleared after allergen investigation, L3 ML1 lot-code error sorted and released. Truffle Line mesh-belt damage flagged as foreign-material risk; belts replaced overnight. Two traceability gaps at L2 (missing FW part, unlabeled almond pallets) under investigation.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Buffer tank AD5 chocolate\u2014suspected nut allergen cross-contact",
+      "summary": "Valve stuck open caused overflow; initially held pending nut allergen disposition, then cleared after maintenance confirmed feed-valve design prevents enrober (nut) chocolate from entering non-nut buffer.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-09-02T03:30:11.35Z"
+      },
+      "status": "Resolved\u2014chocolate confirmed clean (melting tank source), hold lifted after investigation."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 lot-code mismatch\u201460 lbs super-sack product",
+      "summary": "Operators changed lot code before super-sack swap; top 60 lbs removed, sorted, and re-inspected before release.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-09-02T06:52:45.994Z"
+      },
+      "status": "Resolved\u2014sorted product released at 01:44, line resumed production."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Truffle Line wire-mesh belts torn\u2014bottomer & enrober",
+      "summary": "Mesh belts on bottomer (16:45) and enrober (22:08) found torn and gap widening during production; line ran until 21:40 before shutdown for overnight replacement\u2014metal shavings or wire fragments possible in product.",
+      "severity": "high",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-01T22:45:52.692Z"
+      },
+      "status": "Open\u2014belts replaced by 01:00, ATP passed; production resumed 03:20. Recommend hold/inspection of product from 16:45\u201321:40 window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 caramel buildup in vibration platform 3",
+      "summary": "Hardened caramel found between depositor 3 and cooling cabinet 3 during mold removal; platform unable to open initially\u2014foreign material risk if pieces broke loose.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-02T02:43:02.268Z"
+      },
+      "status": "Resolved\u2014area cleaned, no loose pieces detected in product stream."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrap machine part missing",
+      "summary": "Part missing since start of first shift 11:43; operators forgot to post, now lost\u2014traceability gap on what product may have run without the part in place.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-01T19:40:40.794Z"
+      },
+      "status": "Open\u2014investigation ongoing, IMS inventory check requested."
+    },
+    {
+      "plant": "L2",
+      "title": "Almond pallets without labels/traceability",
+      "summary": "Multiple pallets received from L1 without LP labels; no traceability to lot or source\u2014Quality flagged for scrap disposition pending cycle count.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Sofia Carcamo",
+        "time_utc": "2026-09-02T14:19:01.915Z"
+      },
+      "status": "Open\u2014cycle count in progress, unlabeled pallets held for scrap."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna receiving area dirty at shift start",
+      "summary": "First-shift operator received Cavanna with vacuum and area beneath chain dirty; cleaning standard not met during overnight changeover.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-02T13:08:58.753Z"
+      },
+      "status": "Resolved\u2014first-shift operator cleaned before startup."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Reinforce shadow-board discipline on ML2 flow-wrap\u2014missing part went unreported for full shift, delaying investigation and creating traceability gap."
+    },
+    {
+      "plant": "L2",
+      "text": "Institute receiving verification for almond pallets\u2014today's unlabeled pallets from L1 created scrap event and cycle-count burden that could have been caught at dock."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding cleaning-roller blade inspection to ML4 startup checklist\u2014today's caramel buildup in vibration platform 3 suggests gap in pre-shift visual checks for stuck product."
+    },
+    {
+      "plant": "L3",
+      "text": "Review Truffle Line mesh-belt inspection frequency\u2014both bottomer and enrober belts failed within 5 hours, suggesting wear not caught during pre-shift or CIL checks."
+    }
+  ]
+}
