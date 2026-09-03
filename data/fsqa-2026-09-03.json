@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-03",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S2 almond clusters held after *metal detector* caught aluminum cup fragment \u2014 X-ray did not detect same piece."
+  },
+  "summary": "Two active holds \u2014 underweight pouches on L1 S2 (morning shift handoff issue, corrected by 08:00), and ongoing metal-in-product investigation on L1 S2 almond clusters where aluminum temper cup fragments entered the line. Metal detector rejected product successfully, but side-by-side testing confirmed X-ray failed to detect the same fragment. Hourly MD checks and enrober wash scheduled.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 underweight pouches from overnight shift",
+      "summary": "Morning QA found pouches underweight (34\u201336 pieces vs. spec), insufficient decoration \u2014 operator reported receiving shift with these conditions and made adjustments.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-03T13:50:49.755Z"
+      },
+      "status": "Resolved by 07:56 \u2014 weight, decoration, and count now within spec after operator adjustments. Previous pallets recommended for hold pending disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 metal-in-product \u2014 aluminum temper cup in almond clusters",
+      "summary": "Piece of aluminum temper cup found in product at 20:26 MT; cup incomplete with parts missing. Metal detector rejected successfully, but X-ray failed to detect same fragment in testing.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-03T02:26:56.787Z"
+      },
+      "status": "Open \u2014 hourly MD checks in place, all rejected product retested 3\u00d7 with no further hits by end of window. Team investigating who dropped cup. Enrober wash scheduled 3pm next day."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 MM3 and MM5 pouch weights out of spec",
+      "summary": "Matrix 3 and Matrix 5 centerweight units producing pouches outside spec at shift start \u2014 neither machine matched target.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-09-03T13:44:29.236Z"
+      },
+      "status": "Resolved \u2014 adjustments made to both machines, weights corrected and confirmed within spec by 07:50 MT."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider pre-shift temper cup inspection or accountability log \u2014 based on today's S2 incomplete cup with metal fragments in product."
+    },
+    {
+      "plant": "L1",
+      "text": "Review X-ray sensitivity for thin aluminum \u2014 based on S2 side-by-side testing where metal detector caught cup fragment but X-ray did not."
+    },
+    {
+      "plant": "L1",
+      "text": "Review weight/count handoff protocol for S2 Twist Wrap \u2014 based on morning shift receiving out-of-spec pouches from overnight without flag or hold."
+    }
+  ]
+}

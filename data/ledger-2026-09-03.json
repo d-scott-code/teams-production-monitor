@@ -1,0 +1,330 @@
+{
+  "date": "2026-09-03",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 branch pump seized overnight \u2014 *5 hours down* clearing salt buildup, back running at 08:09."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran three lines with mixed results. Sollich 2 battled enrober temper spikes and a worn shaft coupler through first shift, cleared by 17:02, then hit a metal contamination event at 20:26 when an aluminum temperature cup broke into product \u2014 metal detector caught every piece, protocol established, no further hits after 06:57. Sollich 3 ran caramel clusters smoothly after clearing a tunnel jam at 03:51. Sollich 4 adjusted cooling tunnel temps to lift product weight into spec.",
+    "L2": "L2 Moulding Line 2 was down from 21:47 to 08:09 \u2014 5 hours \u2014 on a seized branch pump motor. Salt and buildup locked the gears; maintenance disassembled, cleaned, greased, and reassembled. Line started depositing at 08:09, hit a printer fault at the start but cleared quickly. ML3 had a 12-minute feed belt stop at 07:06, back running at 07:19. Panning line ran clean all day.",
+    "L3": "L3 had a rough night. Truffle splitting table bearings failed at 03:40, line down until both were swapped at 05:11. M3 belt tracked off repeatedly \u2014 root cause was low guides and a misaligned eye sensor, fixed by Leon at 07:07, but tracking issues returned by 08:16 and a full belt replacement was underway at window close. ML1 cleared a clogged nozzle and a C6 belt off-track incident by mid-shift, then ran well. MF Matrix ran out of orange flavor at 06:37, adjusted the recipe to stretch toffee inventory, back running at 07:42. ML4 WDS commissioning continues with the vendor tech on-site."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "MLDZ audit completed \u2014 air systems back on for all shifts per Curt at 18:29."
+    },
+    {
+      "plant": "L2",
+      "text": "Out of shrouds (item 41107) \u2014 1st and 2nd shift sent home, delivery expected 09:00\u201310:00 today per Ethan Bean."
+    },
+    {
+      "plant": "L3",
+      "text": "WDS tech David arrived last night, working with Nelson Cook and production to commission ML4 depositors and clear jam in cooling tunnel 3."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 enrober temper spikes and shaft coupler failure",
+      "summary": "Enrober temper ran high starting at 11:40, decorator spiked repeatedly; spider/shaft coupler on return pump wore out at 12:43, causing pipe vibrations.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-02T17:40:03.775Z"
+      },
+      "resolution": "Maintenance replaced love joy bushing at 13:27 and spider by 13:40. Temper stabilized after three cycles, line started at 17:02."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 aluminum temperature cup contamination",
+      "summary": "Piece of aluminum temperature cup found in product at 20:26, parts missing from the set; metal detector rejecting all pieces but x-ray not detecting.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-03T02:26:56.787Z"
+      },
+      "resolution": "Testing confirmed metal detector catches even smallest pieces on underside. Curt established protocol at 02:14: hourly MD checks, retest rejected product 3\u00d7 while running, pause if pattern emerges. No further hits reported after 06:57."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 metal detector opening constantly",
+      "summary": "Metal detector at 00:31 opened constantly with no product present, halting the line.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-03T06:31:44.554Z"
+      },
+      "resolution": "Maintenance fixed the issue by 00:52 \u2014 \"Maintenence has fixed the issue\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 steam leak on A2 kettle piping",
+      "summary": "Steam leak discovered on A2 kettle piping in Sollich 2 kitchen at 12:51.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-09-02T18:51:11.983Z"
+      },
+      "resolution": "Maintenance fixed the steam leak by 13:10 (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Tunnel 3 belt slipping, product sticking",
+      "summary": "Tunnel 3 belt slipped and product stuck at 17:31 due to salt buildup on drive rollers; air had been off during audit.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-09-02T23:31:39.196Z"
+      },
+      "resolution": "Team cleaned drive motor rollers and scrapers, line running at 18:26."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 Tunnel 2 jam and bent finel piece",
+      "summary": "Product jammed against metal base in Tunnel 2 at 02:56, causing belt to stop and bending the finel piece.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-03T08:55:58.766Z"
+      },
+      "resolution": "Maintenance cleared jam, line back running at 03:51 (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MM3 and MM5 wrong weights",
+      "summary": "MM3 and MM5 combination weighers out of spec at 07:44.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-09-03T13:44:29.236Z"
+      },
+      "resolution": "Adjustments made on machines, fixed weight by 07:50 (Nancy Quiroz)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 product underweight and low decoration count",
+      "summary": "At 07:50 product was underweight with insufficient decoration and 34\u201336 pieces per pouch (vs. spec).",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-03T13:50:49.755Z"
+      },
+      "resolution": "Operator made adjustments, weight/decoration/count back in spec at 09:33 (Ingrid Moreno Angarita)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 branch pump motor seized",
+      "summary": "Branch pump motor locked up at 21:47 on 2nd shift; gears seized with salt and buildup, would not spin.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-09-03T03:55:10.385Z"
+      },
+      "resolution": "Maintenance disassembled pump, cleaned gears, separated lovejoy, greased internals, and reassembled. Pump spinning freely by 04:26, chocolate push completed at 04:40. Tempering and depositor install done, line started depositing at 08:09."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 feed belt to firewall stopped",
+      "summary": "Incoming feed to the firewall stopped at 07:06, line down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-03T13:07:59.221Z"
+      },
+      "resolution": "Maintenance worked on it, line running at 07:19."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 printer fault at startup",
+      "summary": "Line ready to start at 08:30 but printer issues prevented start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-03T15:13:21.349Z"
+      },
+      "resolution": "Hervin and Jorel resolved the printer issue, line running at 09:08."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober wire mesh broken",
+      "summary": "Wire mesh on enrober broken at 11:43, line paused for repair.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-02T17:43:21.303Z"
+      },
+      "resolution": "Wire mesh fixed by 13:21, scraper reinstalled at 13:47. Waited for temper, started back up at 14:07."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle splitting table bearings worn out",
+      "summary": "Splitting table bearing came loose at 03:40, causing chocolate bites to stick together and pulling splitting bands to one side.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-03T09:40:26.52Z"
+      },
+      "resolution": "Both bearings worn out. Jose Vasquez retrieved replacements from L1. Both bearings replaced by 05:11."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt off track multiple times",
+      "summary": "C6 belt tracked completely off at 04:49, happened three times by 05:52 while maintenance worked on it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-03T10:49:36.292Z"
+      },
+      "resolution": "Leon identified root cause at 07:59: guides too low and tight, low-speed eye bracket angled wrong causing belt to stay at high speed during jams. Fixed guides and eye bracket, belt centered and running well at 10:56."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor nozzle clogged",
+      "summary": "Nozzle clogged at 00:14, followed clogged nozzle flowchart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-03T06:14:33.907Z"
+      },
+      "resolution": "Nozzle unclogged, started depositing and taking temper at 01:57. Line back up at 02:02."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix out of orange flavor",
+      "summary": "Line ran out of orange flavor at 06:37, stopping production.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-03T12:37:04.727Z"
+      },
+      "resolution": "Jenny Medina directed recipe adjustment at 07:23: reduce toffee by 2 pieces, add 1 dark and 1 orange to stay in spec and optimize quantity. Line running at 07:42."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 sensor rejecting all chocolate",
+      "summary": "Cavanna 1 sensor at 08:26 rejecting all chocolate, plus chocolate wasn't coming out right and plastic wrap not cutting properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-03T14:26:07.464Z"
+      },
+      "resolution": "Line paused at 08:27 for Chris to resolve. Cavanna 1 running well by 09:10."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bucket #2 fell off inside cone",
+      "summary": "Bucket #2 fell off inside the cone at 08:52.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-03T14:52:52.472Z"
+      },
+      "resolution": "Bucket reinstalled, line running at 09:10 (Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Bosch rail misalignment jamming chocolate",
+      "summary": "Bosch machine stopped at 10:42, rails misaligned and jamming chocolate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-03T16:42:11.462Z"
+      },
+      "resolution": "Bosch technician adjusted rails, machine started working again."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 torn supersack",
+      "summary": "Supersack torn at 00:36 during changeover.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-03T06:36:22.266Z"
+      },
+      "resolution": "Torn sack replaced and new one placed by 00:45 (Gina Vazquez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 return pump faulting intermittently",
+      "summary": "Return pump faulting out starting at 20:17, team resetting it each time it faults.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-09-03T02:17:59.634Z"
+      },
+      "status": "Team continues resetting pump when it faults as of 20:17. No further updates on root cause or permanent fix by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 non-allergen milk buffer tank valve failed",
+      "summary": "Valve failed at 01:49, causing tank to be filled and overfilled by the melting tank en route to the nut buffer tank.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-03T07:49:02.481Z"
+      },
+      "status": "Valve failure reported at 01:49 with photo. No resolution or follow-up by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 small pieces falling below weight again",
+      "summary": "At 10:30, small pieces observed falling below required weight after earlier fix.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-03T16:30:31.14Z"
+      },
+      "status": "Reported at 10:30. No follow-up on adjustments or resolution by window close at 11:02."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M3 belt replacement in progress",
+      "summary": "M3 belt tracking issues returned at 08:16 despite earlier fix; Chris started full belt replacement at 09:22.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-03T14:16:49.499Z"
+      },
+      "status": "Belt replacement started at 09:22. No completion reported by window close. Shawn noted concern at 09:35 about seized nosebar roller on southwest side needing replacement at same time."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS commissioning ongoing with vendor tech",
+      "summary": "WDS system commissioning continues with vendor tech David on-site; system powered down for work, encountered stuck switch at 06:55, depositor centerlines completed by 08:47, jam in cooling tunnel 3 at 09:09.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-09-02T19:30:30.666Z"
+      },
+      "status": "Vendor tech David on-site working with Nelson Cook and production. Depositor centerlines completed by 08:47, clearing jam in cooling tunnel 3 as of 09:09. System not yet fully operational."
+    }
+  ]
+}
