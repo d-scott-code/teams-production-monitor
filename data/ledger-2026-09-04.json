@@ -1,0 +1,186 @@
+{
+  "date": "2026-09-04",
+  "headline": {
+    "eyebrow": "Depositing trouble",
+    "text": "L3 ML1 fought depositing jams for *6 hours* \u2014 dousing head pulled, cleaned, reinstalled but line still working through it at window close"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 recovered a pin from the melting tank with a magnet in under 40 minutes and ran the rest of the shift. Sollich 4 ran out of bags and boxes for WIP packing at 08:15 and is using slip sheets and layer pads as a workaround.",
+    "L2": "ML3 ran out of caramel mid-morning; new material arrived from L1 and the line restarted under quarantine status with written approval from Bequet. Three pallets on the grinding line are waiting for new work-order labels. A pallet jack failed and was locked out.",
+    "L3": "ML1 had repeated depositing problems starting at 07:02 \u2014 Cavanna tearing film, air locks, right-side nozzle jams. Maintenance pulled and cleaned the dousing head; it was reinstalled and tested but the line was still troubleshooting at window close. ML4 cleared a scraper alignment issue in 44 minutes. Truffle line M3 belt alarmed at 09:55 and maintenance was called."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "MD safety covers were found removed on Sollich 3; Nathan Topham locked it out and will pass to next shift for proper LOTO procedure."
+    },
+    {
+      "plant": "L2",
+      "text": "Materials for FFS restart staged at SE; level 1 requests submitted overnight for film and cases."
+    },
+    {
+      "plant": "L3",
+      "text": "Truffle line conveyor handle is very loose after an operator's smock caught it; maintenance lubed the cylinder to close it but it needs tightening on the next clean."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Pin fell into Sollich 3 melting tank",
+      "summary": "Latch knob disconnected and pin fell into AD1 melting tank during chocolate loading; pump shut off immediately, line speed reduced to 50 on one tank.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-04T00:49:16.555Z"
+      },
+      "resolution": "Pin recovered at 19:28 using a long magnet; line speed restored to 72. Total impact under 40 minutes."
+    },
+    {
+      "plant": "L1",
+      "title": "AD2 melting tank latch pin rotated and stuck",
+      "summary": "Pin on second melting tank rotated and jammed, preventing lid closure and stirrer function on Sollich 3.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-04T01:18:49.556Z"
+      },
+      "resolution": "Maintenance freed the pin by 19:32; line speed increased back to 72."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix depositing cone fell off",
+      "summary": "Cone detached from MF Matrix line at 13:44; line stopped, maintenance called.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-03T19:43:19.611Z"
+      },
+      "resolution": "Line restarted at 14:10 after maintenance repair. Down 26 minutes."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt tracking issue after tension adjustment",
+      "summary": "Maintenance adjusted C6 belt tension at 05:11, which caused tracking problems; line stopped.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-04T11:26:42.494Z"
+      },
+      "resolution": "Cleared at 05:37 \u2014 \"line is back up and running\" (Imperial). Down 26 minutes."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 scrapers installed in wrong position",
+      "summary": "Scrapers rubbing rollers and causing metal dust; line down, Kavin Ayala working on it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-04T13:31:51.97Z"
+      },
+      "resolution": "Fixed at 08:15 \u2014 \"This was fixed at 8:15, TG5 is now running\" (Itzel Chavez). Down 44 minutes."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank temp below normal",
+      "summary": "Buffer tank temperature dropped below target; maintenance was notified and responded.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-04T09:26:12.861Z"
+      },
+      "resolution": "Cleared at 04:38 \u2014 \"Maintenance has gotten the temp back to normal on the buffer tank\" (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 out of bags and boxes for WIP packing",
+      "summary": "Line ran out of correct bags (41264) and boxes for packing HER WIP candy at 08:15; approximately 2,940 bags used in prior 24 hours.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-04T14:15:26.124Z"
+      },
+      "status": "Using slip sheets top and bottom of pallets for protection and layer pads per QA request as temporary workaround; Curt Willis asked for usage math at 08:52."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MD safety covers removed improperly",
+      "summary": "Machine operator or lead removed safety covers from the MD without following lockout/tagout procedure; screws were missing.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-04T15:40:39.29Z"
+      },
+      "status": "Nathan locked out the MD and secured screws by supervisor binder; will pass to next shift for proper LOTO. Chris Jeffs reminded that only maintenance should remove/install covers."
+    },
+    {
+      "plant": "L2",
+      "title": "Pallet jack not working",
+      "summary": "Electric pallet jack charged but will not move forward or backward; not a safety risk but operationally down.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-03T22:43:27.678Z"
+      },
+      "status": "Alan Todd locked it out with key at 16:47 on 9/3 to prevent use; requested HOJ service but no update in window."
+    },
+    {
+      "plant": "L2",
+      "title": "Grinding line pallets waiting for new work-order labels",
+      "summary": "Three pallets of ground product completed but need new WO created for date change before labels can be applied.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Haydee Hidalgo Gonzales",
+        "time_utc": "2026-09-04T12:12:12.994Z"
+      },
+      "status": "Pallets still waiting as of 06:12; Gustavo Rodas, Nidia Lopez, Sofia Carcamo, and Joey Dudney tagged."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositing stopped, repeated jams and flow-wrap tears",
+      "summary": "Cavanna stopping frequently at 11 MPM due to flow wrap tearing starting at 07:02; alarm triggered at 07:25, air lock cleared at 07:44; right-side depositing stopped again at 08:20, hopper jammed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-04T13:02:49.998Z"
+      },
+      "status": "Maintenance removed dousing head at 09:34, cleaned it, reinstalled and tested by 10:24. Waiting for hopper temp to drop before filling. Line still troubleshooting at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 PTL2 not working in auto mode",
+      "summary": "PTL2 running in manual only; Nelson Cook working on getting auto mode restored.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-04T13:40:59.981Z"
+      },
+      "status": "Nelson still working on it as of 07:40; no resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M3 belt alarm triggered",
+      "summary": "M3 belt alarm activated at 09:55; maintenance has been called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-04T15:55:22.083Z"
+      },
+      "status": "Maintenance called at 09:55; no update on arrival or resolution by window close."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-04",
+  "headline": {
+    "eyebrow": "Metal events",
+    "text": "L3 ML4 scraper generated *metal dust* in product zone, L1 S3 latch pin fell into melting tank\u2014both resolved within shift."
+  },
+  "summary": "Two metal-in-product events today, both caught and resolved before reaching finished goods. L1 S4 running without proper packaging due to bag/box shortage\u2014QA approved slip-sheet workaround. L1 S2 found foreign material in chocolate sock filter; metal detector did not detect it on recheck.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S3 melting-tank latch pin fell into chocolate",
+      "summary": "Latch knob disconnected, stainless pin dropped into AD1 melting tank at 00:49; pump stopped immediately, pin retrieved with magnet by 01:28.",
+      "severity": "high",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-04T00:49:16.555Z"
+      },
+      "status": "Resolved\u2014pin recovered, bagged, tank returned to service."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 foreign material in chocolate sock\u2014MD did not detect",
+      "summary": "Operators found debris (possible temper-cup fragment) in first sock filter at 05:42; ran trays through metal detector for verification\u2014MD did not hit.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-04T11:42:18.408Z"
+      },
+      "status": "Open\u2014material found in sock, second sock clear; MD performance under review."
+    },
+    {
+      "plant": "L3",
+      "title": "TG5 scraper misaligned\u2014metal dust generated",
+      "summary": "Scrapers installed wrong on TG5, rubbing rollers and creating metal dust in product zone; line stopped at 07:32, maintenance corrected by 08:15.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-04T13:31:51.97Z"
+      },
+      "status": "Resolved\u2014TG5 running, scraper repositioned correctly."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 out of bags and boxes\u2014using slip sheets",
+      "summary": "L1 S4 exhausted 21182 WIP bags and boxes mid-shift; QA approved temporary use of slip sheets top/bottom of pallets to protect loose product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-04T14:15:26.124Z"
+      },
+      "status": "Open\u2014slip-sheet workaround in place, procurement working replenishment."
+    },
+    {
+      "plant": "L3",
+      "title": "3 damaged chocolate pallets",
+      "summary": "Fork damage on 3 pallets of chocolate; lead scraped affected chocolate from damaged areas per Nathan Gevenois approval.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Frederick Peairs",
+        "time_utc": "2026-09-04T08:32:02.456Z"
+      },
+      "status": "Resolved\u2014scraped material handled, pallets dispositioned by production."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S3 melting-tank latch hardware PM schedule\u2014two latches failed within 2 hours (AD1 pin dropped, AD2 pin stuck), suggesting wear-out mode."
+    },
+    {
+      "plant": "L1",
+      "text": "Audit S2 metal-detector sensitivity\u2014debris found in chocolate sock did not trigger reject when test-passed through MD at 06:05."
+    },
+    {
+      "plant": "L1",
+      "text": "Review S4 packaging min/max\u2014line ran out of bags/boxes mid-shift with no on-site backup, requiring non-standard slip-sheet workaround."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding scraper position/clearance verification to ML4 TG5 startup checklist\u2014today's misalignment generated metal dust before operators caught it."
+    }
+  ]
+}
