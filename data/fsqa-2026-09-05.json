@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-05",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "L3 PTL 2 plastic bearing fell into *chocolate* during Hershey chip grid removal \u2014 tank drained to recover piece."
+  },
+  "summary": "One active hold \u2014 L2 ML3 awaiting supplier COA clearance to start. Three foreign-material finds at L1: washer on S2 return conveyor, missing washer/nut on S2 bolt, rip on S4 speeding table. L2 sorter failed allergen test; Level 4 clean continues Tuesday.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "ML3 line held pending ingredient COA",
+      "summary": "ML3 startup delayed awaiting written COA clearance from Bequet for ingredient; line expected to remain down until Tuesday.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Candon Watt",
+        "time_utc": "2026-09-04T17:05:43.828Z"
+      },
+      "status": "On hold \u2014 decision made to wait for COA clearance rather than quarantine finished goods."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Washer found on S2 return conveyor 1",
+      "summary": "Employee inspecting product on S2 return conveyor 1 found a washer; QA notified, maintenance requested to inspect tunnel 2 section.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-09-04T23:46:05.539Z"
+      },
+      "status": "Open \u2014 maintenance inspection ongoing as of 18:22 to locate source and confirm no other hardware missing."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 tunnel bolt missing washer and nut",
+      "summary": "Bolt on west side of S2 found missing washer and nut; nut believed to be on floor if anywhere.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-05T00:22:37.570Z"
+      },
+      "status": "Open \u2014 floor search and equipment inspection in progress; no report of nut recovered."
+    },
+    {
+      "plant": "L3",
+      "title": "Plastic bearing fell into chocolate on PTL 2",
+      "summary": "Bearing dislodged during Hershey chip grid removal on PTL 2; chocolate drained into bins to recover the piece.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-04T22:07:51.714Z"
+      },
+      "status": "Resolved \u2014 chocolate drained and bearing recovered; no report of pieces entering product stream."
+    },
+    {
+      "plant": "L1",
+      "title": "Rip found on S4 speeding table",
+      "summary": "Tear discovered on S4 speeding table during cleaning; potential for belt fragments to contact product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-09-05T10:00:31.684Z"
+      },
+      "status": "Open \u2014 reported during cleaning; no disposition or repair plan posted by window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 weights high, demolding issues",
+      "summary": "Bar weights above target on capture test; 10 totes of dirty molds rejected due to demolding failures throughout 3rd shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-05T04:28:17.520Z"
+      },
+      "status": "Resolved \u2014 final refrigerator temperature lowered from 56.8\u00b0F to 53\u00b0F; demolding improved, mold rejections stopped by 06:57."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Layer 2 and 3 weights out of range",
+      "summary": "Depositor layer weights for Layer 2 and Layer 3 both out of spec during first-shift morning checks.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-09-05T13:30:15.788Z"
+      },
+      "status": "Resolved \u2014 operator and lead corrected settings; final bar weight and organoleptic passed at 08:13."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 metal detector hard to clean without disassembly",
+      "summary": "S3 metal detector has multiple areas impossible to clean without removing covers; sanitation team flagged gaps during changeover.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-09-04T22:32:01.101Z"
+      },
+      "status": "Resolved per shift \u2014 team cleaned accessible areas; supervisor advised to do best possible and retest ATP."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L2",
+      "title": "Panning sorter failed allergen testing",
+      "summary": "Sorter could not pass allergen verification after Level 4 clean attempt; cleaning deferred to continue Tuesday.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-09-05T11:41:45.773Z"
+      },
+      "status": "Open \u2014 Level 4 clean incomplete; sorter remains down pending successful allergen test Tuesday."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding hardware-integrity checks to S2 tunnel pre-start inspections \u2014 today's two separate fastener events (washer on conveyor, missing bolt hardware) suggest systematic vibration or assembly gaps."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider scheduling allergen-clean dry runs during slower weeks \u2014 today's sorter failure to pass after Level 4 clean cost a full line day and points to procedure or equipment design issues."
+    },
+    {
+      "plant": "L3",
+      "text": "Review PTL grid-removal procedure for securing loose components \u2014 today's bearing drop into chocolate echoes the need for contained workspaces during ingredient-change tasks."
+    }
+  ]
+}

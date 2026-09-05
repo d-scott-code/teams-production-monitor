@@ -1,0 +1,266 @@
+{
+  "date": "2026-09-05",
+  "headline": {
+    "eyebrow": "Safety flag",
+    "text": "L3 crew cleaned Truffle line without lockout; L2 sorter down awaiting allergen test clearance for Tuesday restart."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel cluster through the weekend shutdown with no line-down events. Maintenance found and addressed minor hardware issues during cleaning\u2014a washer on S2 return conveyor and a missing nut on S2 tunnel. S4 spreading table has a rip noticed during clean.",
+    "L2": "L2 sorter failed allergen testing and remains down; level 4 clean will continue Tuesday. ML2 ran bars all day with routine film changes. ML3 held for COA clearance and completed level 2 cleaning, all ATP passed.",
+    "L3": "L3 ML4 fought demolding problems from 20:10 until overnight\u2014bars sticking, mold exchange actuators releasing stacks, rejected molds piling up. Final refrigerator temp dropped from 56.8 to 53\u00b0F; molds stopped rejecting by 06:57. Two safety flags: emergency exit blocked and EEs cleaning Truffle line without lockout."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "Big Joe #6 battery drains from 100% to 5% in 15 minutes."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 missing about 400 pieces per Nathan's count at 06:37."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Inclusion auger hose dripping into hopper",
+      "summary": "Hose pulled tight to connection, dripping liquid pooling near hopper entry point.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-09-04T17:57:41.404Z"
+      },
+      "resolution": "Chad Stone gave hose slack at 11:57, stopped drip."
+    },
+    {
+      "plant": "L1",
+      "title": "Cavanna down 20+ minutes for threading",
+      "summary": "Trainees struggled with threading, hopper drained as down time exceeded 20 minutes.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-05T01:58:24.703Z"
+      },
+      "resolution": "Operators completed threading, Cavanna restarted per 20:30 post."
+    },
+    {
+      "plant": "L1",
+      "title": "Damaged chocolate pallet with debris",
+      "summary": "Pallet damage found, QA inspected and directed scrap of affected pieces.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-05T03:23:27.454Z"
+      },
+      "resolution": "QA cleared scrap action at 21:24."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 level 2 clean and ATP",
+      "summary": "Caramel tank, sweco, and line passed all ATP checks after allergen clean.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-05T01:53:38.341Z"
+      },
+      "resolution": "Marlenis confirmed all ATP passed at 21:36."
+    },
+    {
+      "plant": "L3",
+      "title": "Plastic bearing fell into chocolate tank",
+      "summary": "Bearing from grid removal fell into PTL 2 chocolate during Hershey chip changeover.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-04T22:07:51.714Z"
+      },
+      "resolution": "Crew drained chocolate into bins and recovered the bearing."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bars sticking to molds, high reject rate",
+      "summary": "Demolding failures starting at 20:10, mold exchange actuators releasing stacks, 10 totes of dirty molds by 23:05.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-05T02:10:16.724Z"
+      },
+      "resolution": "Final refrigerator temp lowered from 56.8 to 53\u00b0F; demolding improved and molds no longer rejecting as of 06:57."
+    },
+    {
+      "plant": "L3",
+      "title": "BOM missing chocolate SKU mid-run",
+      "summary": "Buffer tank 1 running low, chocolate not scanning because BOM lacked dual-chocolate percentages.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-04T22:41:43.442Z"
+      },
+      "resolution": "IMS created new WO 43359 with chocolate 10312 at 16:59, line running."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 line down for WO access conflict",
+      "summary": "Work order open on another packing computer, blocking access at 00:58.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-05T06:58:06.508Z"
+      },
+      "resolution": "IMS closed WO on floor, all labels uploaded, line back up at 01:11."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 layer 2 & 3 weights out of spec",
+      "summary": "Depositor layers 2 and 3 above range during 1st shift capture test at 07:30.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-09-05T13:30:15.788Z"
+      },
+      "resolution": "Operators and lead adjusted; final bar weight within range by 07:53."
+    },
+    {
+      "plant": "L3",
+      "title": "Mold jam in mold exchanger area",
+      "summary": "Jam at 08:04, plate popped up on restart putting molds in same direction.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-05T14:04:02.647Z"
+      },
+      "resolution": "Nathan Ruiz removed jammed mold and zero-positioned chain; good to go at 08:27, line restarted after 35 minutes."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 washer found on return conveyor 1",
+      "summary": "EE found loose washer during inspection; QA notified, maintenance inspecting tunnel 2 section.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-09-04T23:46:05.539Z"
+      },
+      "status": "Under inspection as of 17:46, maintenance checking section."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 missing washer and nut on tunnel bolt",
+      "summary": "West side bolt missing washer and nut; nut likely on floor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-05T00:22:37.57Z"
+      },
+      "status": "Found at 18:22, no repair or replacement posted."
+    },
+    {
+      "plant": "L1",
+      "title": "ML1 flow wrap opening up on chocolate contact",
+      "summary": "Cavanna stopped at 21:08, chocolate causing flow wrap to open up.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-05T03:08:07.818Z"
+      },
+      "status": "Stopped for 6 minutes at 21:08, no clear resolution in thread."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 cooling tunnel 1 broken piece",
+      "summary": "Component broken, identified by Caleb York during cleaning.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-05T03:21:26.754Z"
+      },
+      "status": "Reported at 21:21, no replacement or repair follow-up."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 spreading table has rip",
+      "summary": "Rip discovered during cleaning; no repair action posted.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-09-05T10:00:31.684Z"
+      },
+      "status": "Noted at 04:00 during shutdown clean, no repair scheduled."
+    },
+    {
+      "plant": "L2",
+      "title": "Sorter failed allergen ATP, line down",
+      "summary": "Level 4 clean incomplete; sorter will not restart until allergen testing passes on Tuesday.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-09-05T11:41:45.773Z"
+      },
+      "status": "Down at end of window, clean continues Tuesday per 05:41 post."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 held for COA clearance",
+      "summary": "Bequet written approval received but Kathleen and Aubrey decided to wait for COA before starting.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Candon Watt",
+        "time_utc": "2026-09-04T16:47:27.132Z"
+      },
+      "status": "Line held as of 11:05, awaiting COA clearance for Tuesday."
+    },
+    {
+      "plant": "L3",
+      "title": "Emergency exit completely blocked",
+      "summary": "Exit obstructed; Benjamin Hicks flagged for clearance.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-09-05T04:26:02.767Z"
+      },
+      "status": "Blocked as of 22:26, no clearance confirmation."
+    },
+    {
+      "plant": "L3",
+      "title": "EEs cleaning Truffle line without lockout",
+      "summary": "Benjamin Hicks observed cleaning crew on energized Truffle equipment.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-09-05T05:00:10.299Z"
+      },
+      "status": "Flagged to Phillip, Kimberly, Raoul at 23:00; no lockout or stop confirmation."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator jamming",
+      "summary": "Sticker applicator trouble causing accumulation on 2nd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-04T21:22:13.212Z"
+      },
+      "status": "Crew working on it at 15:22, no clear resolution posted."
+    }
+  ]
+}
