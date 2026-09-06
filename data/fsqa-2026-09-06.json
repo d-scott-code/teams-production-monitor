@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-06",
+  "headline": {
+    "eyebrow": "FM events",
+    "text": "L3 ML4 flagged *three* foreign-material concerns \u2014 cardboard in filter, cooler 3 covers off with loose bolts, worn auger guard."
+  },
+  "summary": "Three foreign-material flags on L3 ML4 (cardboard found in filter, cooler 3 covers potentially off during production with bolts loose in corners, worn guard on licking roller 2 auger), plus almond dust cross-contact residue flagged at L2 FFS during cleaning. No active holds.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Cardboard found in PTL 2 filter",
+      "summary": "Cardboard found in filter during investigation for potentially lost plastic bearing; team confirms second bearing was not actually lost after check.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-05T21:23:36.893Z"
+      },
+      "status": "Cardboard removed from filter; plastic bearing investigation closed \u2014 second bearing confirmed not lost."
+    },
+    {
+      "plant": "L3",
+      "title": "Cooler 3 covers off, loose bolts in corners",
+      "summary": "Plastic covers found off cooler 3 when 3rd shift opened for cleaning; bolts sitting loose in corners; potentially ran with covers off Wednesday.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-06T05:01:23.942Z"
+      },
+      "status": "Open, awaiting investigation to confirm whether line ran with covers off."
+    },
+    {
+      "plant": "L3",
+      "title": "Worn guard on licking roller 2 auger",
+      "summary": "Wear marks observed on auger guard after cleaning licking roller 2; documented with photo during shift 2 cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-06T01:47:53.546Z"
+      },
+      "status": "Flagged for maintenance assessment; no immediate action taken."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Gondola cleaning handoff unclear",
+      "summary": "3rd shift found gondola parts left by prior shift with unclear completion status; shift supervisor asked which shift cleaned it.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-06T11:27:02.156Z"
+      },
+      "status": "Resolved \u2014 Level 2 clean completed and passed final verification by QA at 06:57."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L2",
+      "title": "Almond dust in FFS vibratory loader",
+      "summary": "Almond dust residue observed in FFS vibratory loader during sorting area cleaning; team flagged for cleaning before Tuesday product run.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-09-05T17:04:26.932Z"
+      },
+      "status": "Identified during weekend clean; cleaning scheduled before next product changeover Tuesday."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Consider adding allergen residue inspection to FFS area post-clean checklist before product changeover \u2014 based on almond dust found in vibratory loader during weekend sorting-area clean."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding cooler cover and fastener integrity check to ML4 pre-shift walk \u2014 based on cooler 3 covers found off with bolts loose in corners after potentially running Wednesday."
+    },
+    {
+      "plant": "L3",
+      "text": "Review gondola cleaning sign-off protocol to ensure completion status is visible at shift handoff \u2014 based on unclear status when 3rd shift opened for Level 2 clean."
+    }
+  ]
+}

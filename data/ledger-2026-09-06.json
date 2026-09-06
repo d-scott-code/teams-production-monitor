@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-06",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L3 cleared ingredient pump vapor lock and mold jam, but cooler 3 may have run with *covers off*."
+  },
+  "per_plant_summary": {
+    "L1": "No activity in the last 24 hours.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML4 had a mold jam and table alignment issue in the morning, both cleared quickly. Ingredient tank 2 pump failed with a loud screech at 19:58 but maintenance found it was vapor-locked and cleared it by 09:02. Line stopped for level 2 cleaning at 13:01 and restarted successfully at 05:09. Quality found cooler 3 plastic covers off during overnight cleaning with bolts sitting loose, potentially ran with them off."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Flow wrap packaging for Tuesday's truffle product was staged in ML4 area but machine setup not yet ready."
+    },
+    {
+      "plant": "L2",
+      "text": "Almond dust observed in FFS vibratory loader during Saturday cleaning, cleanup suggested before Tuesday run."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "Ingredient tank 2 pump failure",
+      "summary": "Loud screeching from red valve on ingredient tank 2, maintenance called at 19:58 and diagnosed blown pump.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-06T01:58:24.966Z"
+      },
+      "resolution": "Cleared at 09:02 \u2014 \"vapor locked, had an air pocket at the pump, cleared the air and it is working properly now\" (Nelson Cook). Two spare pumps ordered for stock."
+    },
+    {
+      "plant": "L3",
+      "title": "Mold jam in mold exchanger area",
+      "summary": "WDS auto-stopped for mold jam, cleared and restarted within 2 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-05T16:33:06.263Z"
+      },
+      "resolution": "Cleared at 10:35 \u2014 \"WDS startup; it was stopped for 15 min\" (ML4 WDS)."
+    },
+    {
+      "plant": "L3",
+      "title": "Table tilting from loose bolts",
+      "summary": "Depositor table tilted due to loose mounting bolts, causing alignment issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-05T16:33:25.589Z"
+      },
+      "resolution": "Cleared at 10:33 \u2014 \"Tightened them up and running again\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 line stop for level 2 cleaning",
+      "summary": "Depositing stopped at 13:01 for scheduled level 2 weekend cleaning, line down overnight.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-09-05T19:11:59.335Z"
+      },
+      "resolution": "Cleared at 05:09 \u2014 \"Long Belt is running well\" (ML4 WDS). Level 2 clean completed and passed final visual and ATP at 06:57."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L3",
+      "title": "Cord floor strip repeatedly missing",
+      "summary": "Safety cover strip missing for 4th time after replacement, creating trip hazard at floor junction.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-05T18:22:23.622Z"
+      },
+      "status": "New requirement implemented at 12:22 requiring each shift to post confirmation strip is in place until plant can prove safety culture compliance."
+    },
+    {
+      "plant": "L3",
+      "title": "Plastic bearing tracking concern in PTL 2",
+      "summary": "Attempted retrieval of plastic bearing from yesterday, not found in filter or PTL 2 hopper; question about potential second bearing dropped by operator.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-05T21:23:36.893Z"
+      },
+      "status": "Filter and hopper checked at 16:19, second bearing concern investigated and not found, but retrieval of original bearing incomplete."
+    },
+    {
+      "plant": "L3",
+      "title": "Cooler 3 plastic covers off during production",
+      "summary": "Plastic covers found removed from cooler 3 during overnight cleaning with bolts sitting loose in corners, line may have run Wednesday with covers off.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-06T05:01:23.942Z"
+      },
+      "status": "Discovered at 23:01 during 3rd shift cleaning setup; Shane confirmed 2nd shift did not touch cooler 3, work was done Wednesday, investigation pending."
+    },
+    {
+      "plant": "L3",
+      "title": "Gondola parts left by prior shift",
+      "summary": "Unidentified hardware and components found at gondola during overnight cleaning, unknown if prior shift work was completed.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-06T11:27:02.156Z"
+      },
+      "status": "Raised at 05:27 by 3rd shift lead; Chad requested shift identification at 08:22, Rose investigating as of 08:57."
+    }
+  ]
+}
