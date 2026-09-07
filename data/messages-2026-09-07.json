@@ -1,0 +1,60 @@
+{
+  "window": {
+    "start_utc": "2026-09-06T18:15:13.525689+00:00",
+    "end_utc": "2026-09-07T18:15:13.525689+00:00",
+    "start_mt": "2026-09-06T12:15:13-06:00",
+    "end_mt": "2026-09-07T12:15:13-06:00",
+    "tz": "America/Denver",
+    "hours": 24
+  },
+  "chat_count": 2,
+  "message_count": 3,
+  "chats": [
+    {
+      "id": "19:9d982dc3c86644deb69a31840db6458c@thread.v2",
+      "topic": "L3 ML1 Information  Exchange",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3A9d982dc3c86644deb69a31840db6458c%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1788804391328",
+          "from": "Leon Brueger",
+          "from_upn": null,
+          "sent_utc": "2026-09-07T18:06:31.328Z",
+          "sent_mt": "2026-09-07T12:06:31-06:00",
+          "text": "ML1 C-6 M100 Accumulating conveyor Update:\nThe 2 new Belt Eyes are now powered and active in the program.\nPurpose: Monitor the belt position at the exit. If the belt blocks either eye for longer than 3 seconds, it will Fault and stop the belt to help prevent damage.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    },
+    {
+      "id": "19:cfccea066d034acba94704d396eb0481@thread.v2",
+      "topic": "L3 ML4 Information Exchange",
+      "plant": "L3",
+      "web_url": "https://teams.microsoft.com/l/chat/19%3Acfccea066d034acba94704d396eb0481%40thread.v2/0?tenantId=46913ced-e190-4f33-b3f3-2a38ddf9cac4",
+      "messages": [
+        {
+          "id": "1788801874164",
+          "from": "Chad Stone",
+          "from_upn": null,
+          "sent_utc": "2026-09-07T17:24:34.164Z",
+          "sent_mt": "2026-09-07T11:24:34-06:00",
+          "text": "Thank you for calling out Kimberly Morales, \n \nThese were taken off when taking all the molds out manually on Tuesday / Wednesday.  We didn't want to put them back on until we were sure we solved the problem. \n \nWe will need to put these back in and it can be done on Monday.  I will follow up with the teams.",
+          "importance": "normal",
+          "web_url": null
+        },
+        {
+          "id": "1788802100289",
+          "from": "Kimberly Morales",
+          "from_upn": null,
+          "sent_utc": "2026-09-07T17:28:20.289Z",
+          "sent_mt": "2026-09-07T11:28:20-06:00",
+          "text": "They were placed back after the clean.",
+          "importance": "normal",
+          "web_url": null
+        }
+      ]
+    }
+  ]
+}
