@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-08",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 sucrotherm was down *4+ hours* on cascading kettle valve gasket failures \u2014 gasket pieces recovered but system still draining."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 sucrotherm out from 06:48 with cascading gasket failures on both kettle return valves \u2014 still draining to recover gasket fragments as of window close. Sollich 3 ran but had extensive post-cleaning assembly issues including missing bolts, damaged C20 belt, and ongoing MM3 indexer problems. Sollich 4 ran clean.",
+    "L2": "ML3 demolder mold clamps failed at 08:32, replaced and running by 08:42. Film printer issues at 10:15 \u2014 some rolls missing batch codes or open \u2014 under inspection. ML2 and FFS ran without issues.",
+    "L3": "ML4 depositor 1 riser pump faulting from 05:56, tempering achieved by 10:53 but pump issue unresolved. Truffle line M4 belt alarm at 11:04, maintenance checking. ML1 had C2 belt break at 09:30, cleared by 10:27. MF Matrix ran clean."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "ML3 demolder mold clamps failing, molds dropping after demold",
+      "summary": "Both clamps not holding molds in place on demolder plate, causing molds to fall out after demolding.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-08T14:32:06.08Z"
+      },
+      "resolution": "Both clamps replaced on demolder plate by 08:42 \u2014 \"Line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C2 belt moved south and broke",
+      "summary": "C2 belt tracking failure caused southward shift and belt break.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-08T15:30:54.186Z"
+      },
+      "resolution": "Cleared at 10:27 \u2014 \"C2 belt is good to go now\" (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 sucrotherm down on cascading kettle return valve gasket failures",
+      "summary": "Sucrotherm failed at 06:48; both kettle B and kettle A return valve gaskets found broken and incomplete, requiring replacement and system drain to recover fragments.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-08T12:48:24.469Z"
+      },
+      "status": "Gasket pieces found in filter at 11:28. System still draining caramel, will wash and restart cooking."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 multiple post-cleaning assembly defects and equipment issues",
+      "summary": "C20 belt damaged from missing bolt on nose bar roller, multiple scrapers and covers not installed after cleaning, MM3 indexer and heating element cables improperly configured.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-08T13:26:14.345Z"
+      },
+      "status": "MM3, 4, and 5 operational as of 10:04, but MM3 indexer and heating element cable issues flagged at 11:14 \u2014 maintenance tightening."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film printer producing rolls without batch codes or open seals",
+      "summary": "Some film rolls missing printed batch code, others coming out open; printer inspection requested.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-09-08T15:54:07.834Z"
+      },
+      "status": "Five affected boxes removed and inspected; product passed water test and specs. Printer inspection ongoing as of 10:19."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 riser pump faulting in temper mode",
+      "summary": "Riser pump shuts off when placed in temper mode; works in reheat mode, suggesting incorrect pump setting or pipe blockage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-09-08T11:56:47.358Z"
+      },
+      "status": "Jakob adjusted pump setting and valve, reheat completed, temper achieved at 10:53, but pump issue unresolved \u2014 suspected pipe buildup."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M4 belt alarm triggered",
+      "summary": "M4 belt alarm going off, maintenance called to check M3 and M4.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-08T17:04:51.535Z"
+      },
+      "status": "Maintenance checking M3 and M4 as of 11:09."
+    }
+  ]
+}

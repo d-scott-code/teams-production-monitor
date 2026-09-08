@@ -1,0 +1,152 @@
+{
+  "date": "2026-09-08",
+  "headline": {
+    "eyebrow": "FM hold",
+    "text": "L1 S2 caramel system held after *two* broken kettle gaskets shed pieces into reservoir \u2014 filtered, pieces recovered, system washing at window close."
+  },
+  "summary": "One active hold: L1 S2 caramel on hold after broken gasket pieces entered system; pieces found and caramel drained. Multiple cleaning verification gaps: L3 ML4 started with dirty belts, L1 S3 ran after incomplete assembly (missing bolts, scrapers) and damaged C20 belt.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 caramel on hold \u2014 broken gasket pieces in system",
+      "summary": "Return valve gaskets on both kettles A and B broke during operation; missing pieces likely entered caramel reservoir and required full drain through filter before wash-out.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-08T13:51:27.066Z"
+      },
+      "status": "Gasket pieces found in filter; caramel drained, system being washed before restart."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 caramel lots on quarantine pending COA",
+      "summary": "Incoming caramel lots held on quarantine status until supplier COA received and verified by FSQA.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-09-08T13:41:05.120Z"
+      },
+      "status": "Resolved \u2014 COA received, lots released to OK status at 08:21."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 broken gasket pieces in caramel food-contact zone",
+      "summary": "Two kettle return valve gaskets failed and broke during operation; pieces missing and suspected in caramel reservoir required full drain through filter and system wash.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-08T13:51:27.066Z"
+      },
+      "status": "Gasket pieces recovered in filter; all caramel drained, system wash in progress."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Matrix 5 lid missing before startup",
+      "summary": "MM5 check-weigher lid missing at startup; line lead instructed not to run unit until part located to prevent foreign material risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-09-08T12:41:40.890Z"
+      },
+      "status": "Open \u2014 lid not located by window close, MM5 not run."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 MM3 indexer and heater cables misconfigured",
+      "summary": "Matrix 3 indexer set incorrectly, pouches not gripped securely; heating element cables loose and hitting pouches, causing inconsistent temps.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-09-08T17:14:29.402Z"
+      },
+      "status": "Open \u2014 maintenance tightening cables and adjusting indexer at window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film missing batch codes and open seals",
+      "summary": "Flow-wrap film printing intermittent; some rolls missing batch code, others with open seals; team pulled 5 affected boxes for inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-09-08T15:54:07.834Z"
+      },
+      "status": "Resolved \u2014 all 5 boxes inspected and passed; weight, texture, batch, seal integrity within spec."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold-reject button not selected at startup",
+      "summary": "Startup checklist missed mold-reject button; bad molds marked by inspection system ran through to packing without rejection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-09-08T16:41:54.617Z"
+      },
+      "status": "Resolved \u2014 button selected, added to startup checklist and saved in program."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 scale drift affecting caramel weights",
+      "summary": "Caramel depositor scale dropping weight over time; actual reading 7.0g vs. displayed higher; affecting piece weight accuracy.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-09-08T13:24:52.887Z"
+      },
+      "status": "Resolved \u2014 faulty scale replaced by maintenance."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 incomplete assembly after Level 2 cleaning",
+      "summary": "Multiple parts not installed after cleaning: C20 end nose bar missing bolt (caused roller to hang off and damage belt), scrapers missing on C20-26, C19 pneumatic cover missing, belt tracking arm not positioned; belts not run before startup.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-08T13:26:14.345Z"
+      },
+      "status": "Resolved \u2014 all parts installed, C20 belt repaired and tracked, ATP completed; run-after-assembly flagged to 2nd shift cleaning lead."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Sweco screen installed incorrectly after cleaning",
+      "summary": "Sweco screen gasket stretched and unit installed incorrectly; discovered at startup when vibration indicated assembly issue.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-08T11:34:40.477Z"
+      },
+      "status": "Resolved \u2014 team made adjustments and reinstalled correctly."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dirty gondola and transfer belts at startup",
+      "summary": "First shift found gondola area and transfer belts dirty at 05:45 startup; night shift cleaning not completed before handoff.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-09-08T11:46:08.317Z"
+      },
+      "status": "Resolved \u2014 first shift cleaned areas before startup; delayed depositing to 05:40."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding belt-run verification step to S3 post-Level-2-clean checklist \u2014 today's startup with missing bolts and scrapers damaged C20 belt and delayed production 3+ hours."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 shift-handoff cleaning verification protocol \u2014 gondola and transfer belts not cleaned before 1st shift arrived, delaying startup."
+    },
+    {
+      "plant": "L3",
+      "text": "Add mold-reject-button status to ML4 startup checklist \u2014 button not selected today, allowing bad molds through inspection system."
+    }
+  ]
+}
