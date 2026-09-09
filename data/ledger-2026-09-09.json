@@ -1,0 +1,362 @@
+{
+  "date": "2026-09-09",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 TG3 was down the *entire first shift* \u2014 no production after running overnight issues."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 recovered from a gasket contamination that forced a 2-hour drain and re-cook cycle, then cleared belt tracking and white-powder issues. Sollich 3 replaced a pecan flap and resolved a metal fragment find. MM8 outfeed belt still against the wall.",
+    "L2": "ML2 removed four rolls of film with insufficient glue \u2014 two during second shift, two more at end of first shift. FFS long sealer heating pad came off twice but was secured. Speed/sensor issue on FFS remains open.",
+    "L3": "ML4 TG3 was out of service the entire first shift after overnight gasket issues. ML1 cleared multiple Cavanna infeeder and belt problems. Truffle Line has buildup needing reheat and a broken wire mesh. Metal found on sweco screen under investigation."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Rose Smuin coordinating with Culligan on water jug shortage and addressing bikes blocking emergency exit."
+    },
+    {
+      "plant": "L2",
+      "text": "Theegarten arriving Monday 9/14 to launch FEA 12g bars on ML2 \u2014 two days of programming and setup planned."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 gasket contamination forced drain and re-cook",
+      "summary": "Gasket pieces found in caramel at 11:28; all caramel drained, kettles cleaned, and fresh batch cooked \u2014 line restarted at 13:46, down approximately 2 hours.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-08T17:28:52.764Z"
+      },
+      "resolution": "Cleared at 13:46 \u2014 \"We've started running the line\" after drain, clean, and re-cook (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 conbar scraper buildup causing soft caramel",
+      "summary": "Scraper on second drum conbar had heavy buildup preventing proper caramel contact; cleaned, reinstalled, and line restarted after 15\u201320 minute pause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-08T17:47:10.084Z"
+      },
+      "resolution": "Cleared at 12:31 \u2014 \"Line is back up and running\" after scraper clean and reinstall (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 return belt #2 tracking and white powder",
+      "summary": "Belt shifted and rubbed against door, generating white powder; maintenance re-tracked belt, area cleaned, ATP test performed and passed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-08T20:14:52.737Z"
+      },
+      "resolution": "Cleared at 15:24 \u2014 \"Line running now\" after maintenance adjusted tracking and ATP passed (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 pecan bed flap replacement for piece-count control",
+      "summary": "Running out bed and hopper at 07:23 to replace flap for better pecan distribution; new flap installed, adjustments made to achieve target 9 pieces per pouch by 09:42.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-09-09T13:23:47.445Z"
+      },
+      "resolution": "Resolved at 09:42 \u2014 weight 186.5g, 9 pieces achieved after flap install and adjustments (S3 Pack)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 screw with washer found on M6 pass belt",
+      "summary": "Hardware fell to floor during production; source identified as C11 belt cover, no metal detected in pouches by X-ray.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-09T14:32:11.442Z"
+      },
+      "resolution": "Source identified at 08:47 \u2014 \"it's from a cover on the C11 belt\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 metal fragment in chocolate coating",
+      "summary": "Magnetic metal fragment found inside chocolate coating during detector verification at 10:51; maintenance investigating source.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-09T16:51:41.833Z"
+      },
+      "resolution": "Investigation underway at 11:03 \u2014 \"involving maintenance right now,\" confirmed magnetic (Nathan Topham)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrap film with insufficient glue",
+      "summary": "Film seals opening due to inadequate glue on two rolls during second shift (19:52\u201320:30), rolls swapped; two additional bad rolls removed at 10:31 on first shift and saved for supplier review.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-09T01:52:41.834Z"
+      },
+      "resolution": "First issue cleared at 20:30 \u2014 \"changed and we are running better\" (Brandon Lance). Additional rolls removed 10:31 and samples saved for Ethan Bean (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS long sealer heating pad came off twice",
+      "summary": "Heating pad detached at 20:48, maintenance fixed, then came off again; secured by 21:06 and running.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-09-09T02:48:56.383Z"
+      },
+      "resolution": "Cleared at 21:06 \u2014 \"Line is running\" after second fix (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 video jet printer sensor calibration",
+      "summary": "Video jet printer issue at 14:21; maintenance calibrated sensors and line resumed within 3 minutes.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-08T20:19:52.699Z"
+      },
+      "resolution": "Cleared at 14:24 \u2014 \"Line is running again\" after sensor calibration (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film stuck and broken during roll change",
+      "summary": "Film got stuck and broke during automatic roll changeover at 14:51; cleared in 4 minutes.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-08T20:51:20.521Z"
+      },
+      "resolution": "Cleared at 14:55 \u2014 \"Line running again\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 accidental E-stop on gameboy",
+      "summary": "Someone bumped the emergency stop on gameboy controller, stopping line briefly at 07:33.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-09T13:33:19.28Z"
+      },
+      "resolution": "Cleared at 07:40 \u2014 \"Line is back up. Someone accidentally bumped the E-stop\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna infeeder rails loose with chocolate buildup",
+      "summary": "Bars misaligning at Cavanna infeeder starting 19:50, causing 20-minute stop; loose rails discovered with chocolate buildup underneath, cleaned and secured by maintenance at 21:57.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-09T01:50:33.472Z"
+      },
+      "resolution": "Cleared at 21:57 \u2014 \"Problem was fixed by maintenance\" after cleaning buildup and securing rails (Bojana McLeod)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 gasket shifted out of position",
+      "summary": "Gasket on TG4 moved during third shift (reported 03:10), maintenance worked overnight; TG4 and TG5 running without issues by 06:00.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-09T09:10:08.228Z"
+      },
+      "resolution": "Cleared at 06:00 \u2014 \"TG 4,5 are currently running without issues\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt alarm 15 triggering and sensor adjustments",
+      "summary": "Alarm 15 triggered frequently starting 09:27 due to belt movement; maintenance adjusted belt tracking and sensors WB100A/WB100B, centered and running well by 10:59.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-09T15:22:44.875Z"
+      },
+      "resolution": "Cleared at 10:59 \u2014 \"The C6 belt is centered and running well at this time\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt too high on top pass",
+      "summary": "C6 liner belt too high at 00:19, causing line stop; maintenance lowered belt and line restarted within 7 minutes.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-09T06:18:42.747Z"
+      },
+      "resolution": "Cleared at 00:26 \u2014 \"Top belt was too high maintenance lowered the belt line is back running\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt drifting south, liner needing adjustment",
+      "summary": "C6 belt moving south at 03:06, maintenance adjusting belt and liner; back up and running at 03:26.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-09T09:06:59.486Z"
+      },
+      "resolution": "Cleared at 03:26 \u2014 \"Maintenance is still working on c6 liner belt needs adjusting 0315 back up\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "L3 water jugs out of stock",
+      "summary": "Out of water jugs at 05:09; Rose Smuin committed to calling Culligan same morning.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-09T11:09:48.29Z"
+      },
+      "resolution": "Action committed at 05:41 \u2014 \"I will call Culligan this morning\" (Rose Smuin)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C7 belt issue on Cavanna",
+      "summary": "C7 belt problem at 06:04, maintenance called; cleared within 26 minutes.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-09T12:04:51.734Z"
+      },
+      "resolution": "Fixed by 06:30 shown in shift-end summary posted at 06:30 (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "Bikes blocking emergency exit",
+      "summary": "Bikes in building blocking emergency exit and path at 08:16; Rose committed to speak with employees that day.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-09-09T14:16:02.672Z"
+      },
+      "resolution": "Action committed at 08:24 \u2014 \"I will speak with the employees about the bikes today\" (Rose Smuin)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 MM8 outfeed belt against the wall",
+      "summary": "MM8 multihead outfeed belt is pressed against the wall, reported at 21:37 by Caleb York.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-09T03:37:02.328Z"
+      },
+      "status": "Reported at 21:37 on third shift. No follow-up or resolution posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS machine speed stuck at 63\u201370 despite 87 setting",
+      "summary": "FFS set for 87 bags/min but only running 63\u201370; possible sensor problem, maintenance called to investigate at 14:25.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-08T20:25:51.281Z"
+      },
+      "status": "Issue reported at 14:25, maintenance called. No resolution or follow-up by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 down entire first shift after overnight issues",
+      "summary": "TG3 has been out of service since third shift with packaging coming out open; maintenance worked overnight but line did not run at all during first shift (06:00\u201314:00).",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-09T13:50:21.518Z"
+      },
+      "status": "Maintenance working since third shift, briefly attempted restart but went out again. Shawn Jewkes confirmed at 10:42 TG3 \"has not run this shift at all.\" Rose requesting TG support at 11:01."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line enrober heavy buildup requiring reheat",
+      "summary": "Both enrobers showing large buildup at 04:22 requiring a reheat cycle to clear; no timeline or completion posted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-09T10:22:44.071Z"
+      },
+      "status": "Large buildup documented at 04:22 with photos. No follow-up on reheat completion by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line bottomer wire mesh broken at corner",
+      "summary": "Wire mesh on bottomer broken at one corner at 06:39; concern it could get caught in detailer and break completely, Nelson Cook asked to repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-09T12:39:49.967Z"
+      },
+      "status": "Reported to Nelson Cook and leadership at 06:56. No repair completion posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 rails accumulating chocolate, sensors not rejecting",
+      "summary": "Cannot increase speed at 07:21 because chocolate accumulating on rails and C6 sensors not rejecting incorrectly positioned product; maintenance called to check.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-09T13:21:56.974Z"
+      },
+      "status": "Maintenance called at 07:21, new centerline (Cavanna 8.5g) provided by Shawn at 07:51. No clear resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 metal piece found on sweco screen during shift",
+      "summary": "Metal piece discovered on southwest side of screen at 10:19 during screen check; caught at sweco so line did not stop, but source investigation in progress.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-09T16:19:11.366Z"
+      },
+      "status": "Under investigation as of 10:40, Kevin Del Valle investigating source. Preston Tregaskis keeping close eye and requested updates."
+    },
+    {
+      "plant": "L3",
+      "title": "Four light fixtures not working in washroom",
+      "summary": "Four light fixtures out in L3 washroom at 07:01; Nelson Cook asked to inspect and repair.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-09-09T13:01:13.82Z"
+      },
+      "status": "Nelson asked to look at 07:01. No completion update by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M4 belt alarm triggered",
+      "summary": "M4 belt alarm went off at 10:29, maintenance notified; no resolution or follow-up posted.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-09T16:29:38.35Z"
+      },
+      "status": "Alarm triggered at 10:29, maintenance notified. No update by window close at 11:10."
+    }
+  ]
+}

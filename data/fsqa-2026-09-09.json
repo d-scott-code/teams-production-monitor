@@ -1,0 +1,140 @@
+{
+  "date": "2026-09-09",
+  "headline": {
+    "eyebrow": "Metal events",
+    "text": "L1 S3 metal detector caught *metal fragment* embedded in chocolate coating \u2014 investigation open, source unknown."
+  },
+  "summary": "Three metal-related events within 24 hours: L1 S3 metal fragment in product (caught by detector, source under investigation), L1 S2 screw+washer found on M6 belt (X-ray rejected pouches but none contained metal, source identified), L3 ML4 metal on screen (caught at sweco, no line impact). L2 ML2 running with non-adhesive film \u2014 4 bad rolls pulled.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Gasket pieces found in S2 caramel system",
+      "summary": "Gasket pieces discovered in caramel line; all caramel drained, kettles cleaned and rinsed, cooking restarted after 2-hour pause.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-08T17:28:52.764Z"
+      },
+      "status": "Resolved \u2014 line restarted after drain, clean, and rinse at 13:46 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "Screw with washer found on S2 M6 pass belt",
+      "summary": "Screw and washer fell onto floor from M6 pass belt; X-ray rejected some pouches but inspection confirmed none contained metal; source identified as cover on C11 belt.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-09T14:32:11.442Z"
+      },
+      "status": "Resolved \u2014 source found and secured, no metal in rejected product."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal fragment found embedded in chocolate coating on S3 jar line",
+      "summary": "Product dropped during metal-detector card verification re-tested and triggered detector; search found magnetic metal fragment inside chocolate coating \u2014 metal detector caught it, investigation ongoing with maintenance to identify source.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-09T16:51:41.833Z"
+      },
+      "status": "Open, awaiting maintenance investigation to identify metal source."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal piece found on ML4 screen check",
+      "summary": "Metal found on southwest side of screen during routine check; caught at sweco before product contact, line continued running while Kevin Del Valle investigates source.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-09T16:19:11.366Z"
+      },
+      "status": "Investigation ongoing \u2014 sweco effective, no product hold required."
+    },
+    {
+      "plant": "L3",
+      "title": "Wire mesh broken at corner on Truffle bottomer",
+      "summary": "Wire mesh on bottomer enrober broke at one corner; concern it could catch in detailer and break completely; maintenance requested for repair.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-09T12:39:49.967Z"
+      },
+      "status": "Open, awaiting maintenance repair to prevent full failure."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "Non-adhesive film on ML2 flow-wrap line",
+      "summary": "Film without proper glue caused open wraps throughout 2nd and 3rd shift; 4 rolls total removed (2 rolls 2nd shift, 2 rolls 1st shift); samples saved for supplier review.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-09T01:52:41.834Z"
+      },
+      "status": "Resolved \u2014 bad rolls removed, line running on good film, samples held for Ethan Bean."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS long sealer heating pad detached twice in 30 minutes",
+      "summary": "Heating pad on long sealer came off, maintenance fixed, then detached again within 30 minutes; second repair held.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-09-09T02:48:56.383Z"
+      },
+      "status": "Resolved \u2014 line running after second repair at 21:06 MT."
+    },
+    {
+      "plant": "L2",
+      "title": "Sorter visual inspection failed",
+      "summary": "Small reject conveyor on sorter failed visual inspection check; QA notified, awaiting disposition.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-09-09T02:56:24.040Z"
+      },
+      "status": "Open, pending QA disposition on sorter reject area."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "White powder from S2 return belt rubbing on door",
+      "summary": "Return conveyor belt #2 rubbing against door generated white powder; maintenance adjusted belt tracking, production cleaned area, ATP test passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-08T20:32:08.890Z"
+      },
+      "status": "Resolved \u2014 ATP passed after cleaning and belt adjustment at 15:13 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 drain cleaning documentation gap clarified",
+      "summary": "Question raised whether 3rd shift completed drain cleaning after 2nd shift ended production Friday 10:20 PM; operator entered in SafetyChain, MSS filled by supervisor.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-09-08T22:08:12.147Z"
+      },
+      "status": "Resolved \u2014 documentation confirmed complete in SafetyChain and MSS."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding equipment-integrity checks (bolts, covers, gaskets) to S2 and S3 startup checklists \u2014 based on today's gasket fragments in caramel, screw on M6 belt, and metal fragment in S3 product."
+    },
+    {
+      "plant": "L2",
+      "text": "Review film supplier QC or incoming inspection for adhesive coverage \u2014 based on 4 rolls with insufficient glue across ML2 over 18 hours."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding wire-mesh condition check to ML4 and Truffle bottomer pre-shift inspections \u2014 based on today's broken corner on Truffle bottomer with risk of detailer damage."
+    }
+  ]
+}
