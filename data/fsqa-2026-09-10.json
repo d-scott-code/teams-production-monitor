@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-10",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L3 ML4 unfilled bars reached packaging \u2014 *2 pallets* held for inspection after mold jams caused scrape-off failures."
+  },
+  "summary": "One active hold at L3 ML4 (unfilled bars). L3 ML1 had two food-safety events overnight \u2014 glycol leak onto molds/hopper and gasket failure into chocolate system \u2014 both resolved after cleaning and QA sign-off. L2 sorter still down pending felt-material replacement QA won't approve for cleaning.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "2 pallets held \u2014 bars with no filling",
+      "summary": "Packaging found bars with only chocolate (no caramel/cream center); 2 pallets and 1 partial isolated for rework after mold jams caused poor scrape-off at demolding.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-10T15:57:36.903Z"
+      },
+      "status": "On hold pending rework \u2014 team knows how to identify affected bars, rework form in progress per Preston's request."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Plate gasket broke \u2014 pieces into chocolate system",
+      "summary": "ML1 hopper plate gasket failed at 03:20 MT, piece lodged in nozzle block; hopper drained, all gasket fragments recovered and counted by QA before cleaning.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-10T03:20:51.536Z"
+      },
+      "status": "Resolved \u2014 hopper cleaned, ATP passed, new gasket installed, line restarted 08:40 MT."
+    },
+    {
+      "plant": "L3",
+      "title": "Glycol leak onto molds and hopper interior",
+      "summary": "Glycol valve opened during operation, leaked onto 2 molds and inside ML1 hopper; molds and hopper pulled, cleaned, ATP passed before restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-09-10T09:47:28.941Z"
+      },
+      "status": "Resolved \u2014 all affected parts cleaned, ATP passed, valve hose connection corrected and inspected by maintenance."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal scraper found by guillotine",
+      "summary": "Nathan found a metal scraper near the S4 guillotine at 08:42 MT; no metal scrappers allowed in that zone \u2014 team reminded to follow tool control.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-10T14:42:15.079Z"
+      },
+      "status": "Resolved \u2014 scraper removed, supervisors reminded crew of tool restriction for that area."
+    },
+    {
+      "plant": "L3",
+      "title": "C6 belt patch detaching \u2014 FM risk",
+      "summary": "ML1 C6 belt tear was patched; Angel flagged bottom patch already came off and top patch may follow \u2014 concerned pieces could enter product as foreign material.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-09-09T21:55:19.544Z"
+      },
+      "status": "Open \u2014 maintenance confirmed 4 spare C6 belts in stock; belt still in use with monitoring as of window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S1 metal detector sensitivity fault",
+      "summary": "Metal detector triggered 5 times in short period at 10:00 MT with no metal found in product; over-sensitive after morning adjustment, Jorel corrected settings.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-10T15:59:48.515Z"
+      },
+      "status": "Resolved \u2014 sensitivity dialed back, no false rejects in final 30 minutes of shift per Jorel at 10:32 MT."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Sorter felt material \u2014 QA won't approve",
+      "summary": "QA will not pass L2 sorter for production until felt-material guide piece is replaced; material cannot be cleaned adequately to meet standard.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-09-10T09:38:25.380Z"
+      },
+      "status": "Open \u2014 Dave Ruff reached out for quote on all sorter consumables; exploring metal-detectable silicone rubber replacement."
+    },
+    {
+      "plant": "L2",
+      "title": "Sorting area Level 4 ATP failure",
+      "summary": "Level 4 sanitation zone in sorting area failed ATP verification; still not passed as of 05:33 MT.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-09-10T11:33:26.017Z"
+      },
+      "status": "Open \u2014 awaiting re-clean and re-test; no update posted by window close."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Nut allergen spatula near wash area",
+      "summary": "Jorel found nut-allergen spatula stored in tote by wash area \u2014 housekeeping/segregation gap, no cross-contact event reported.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-09T18:59:01.125Z"
+      },
+      "status": "Open \u2014 Jorel requested removal at 12:59 MT; no confirmation posted."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Audit sorter and panner for non-cleanable materials \u2014 today's felt guide piece flagged by QA as unapprovable; Dave's ordering consumables, but worth checking entire L2 moulding for similar items before next sanitation audit."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding mold auto-reject flags during line-down events to ML4 recipe \u2014 today's unfilled bars traced to mold jams causing poor scrape-off, and Preston noted settings exist to auto-flag high-risk molds when line stops."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML1 glycol valve connection procedure \u2014 today's leak at 03:47 MT was caused by improper hose seating; Raoul's video showed tube wasn't inserted far enough, and Chad noted lack of slack created pinch/bend point."
+    }
+  ]
+}
