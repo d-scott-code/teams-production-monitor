@@ -1,0 +1,221 @@
+{
+  "date": "2026-09-11",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 VFFS down *2 hours* on web tracking fault at window close \u2014 Syntegon support engaged but no resolution yet"
+  },
+  "per_plant_summary": {
+    "L1": "S1 ran changeover from crunch to variety pack and started depositing at 08:18. S3 hit metal contamination twice in pecan lot \u2014 switched lots mid-shift and monitoring. S4 ran Bequet caramel all shift.",
+    "L2": "VFFS completed milk caramel run and started 15.5oz variety pack changeover at 16:09, fought sealing issues through 2nd shift, then went down at 09:24 on web tracking controller conflict \u2014 still down at 11:01 waiting on Syntegon remote support. ML2 and ML3 ran clean.",
+    "L3": "ML1 depositor had hopper clog and Cavanna sensor jams \u2014 both cleared by 2nd shift. Truffle line down all 3rd shift repairing broken enrober wire mesh, back up at 07:06. ML4 fought mold jams all night, replaced bent cooler rails, slowed to 25 MPM \u2014 reject system still bypassing bad bars to packaging, manual trigger workaround in place."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L2",
+      "title": "VFFS sealing issues after changeover to 15.5oz variety pack",
+      "summary": "Open bags and poor seals after line clearance and changeover from milk caramel zero sugar.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-11T00:58:23.73Z"
+      },
+      "resolution": "Running by 19:56 after multiple stops for adjustments and refresh cycles \u2014 improvement seen, stable by end of 2nd shift."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS bags folding improperly at 07:09",
+      "summary": "Bags coming out with folded edge; affected product removed and reworked.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-11T13:09:12.911Z"
+      },
+      "resolution": "Line running at 07:30 after maintenance adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober wire mesh broken during reheat",
+      "summary": "Excessive chocolate buildup without mesh running caused breakage; multiple tears found and repaired overnight.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-11T05:12:45.091Z"
+      },
+      "resolution": "Wire mesh repaired by 04:47, enrober error cleared, temper achieved, depositing at 07:06."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 nozzle clog at 01:36",
+      "summary": "Followed flowchart, cleaned dosing head and nozzles, passed ATP, reassembled and filled hopper.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-11T07:36:25.951Z"
+      },
+      "resolution": "Line running normally by 04:11 \u2014 \"Line is running normally\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 hopper clog on right depositor side",
+      "summary": "Clog cleared after draining hopper and finding stirrer hitting wall; adjusted and clog eliminated by 17:00.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-10T20:29:56.691Z"
+      },
+      "resolution": "Cleared at 17:00 \u2014 \"We have got rid of the clog\" and stirrer no longer hitting wall per Tyson at 17:16."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator belt worn and shredding",
+      "summary": "Belt shifting into motor block, shaft and bearings worn out; slowed line to 10 MPM and applied stickers by hand.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-10T23:48:14.074Z"
+      },
+      "resolution": "Belt replaced and working properly by 10:21 (1st shift)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna jamming on infeed and transfer belts",
+      "summary": "Product jams between c7 & c8 belt and infeed; sensors B150, B140, B141, WB150s adjusted for sensitivity.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-09-11T00:14:47.802Z"
+      },
+      "resolution": "Running well at 08:23 after maintenance adjusted sensors and cleaned excess chocolate from chain teeth."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix cone weld cracking",
+      "summary": "Weld on cone cracking with potential for metal particle contamination if pieces break off.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-11T02:25:15.479Z"
+      },
+      "resolution": "Cone replaced by maintenance; no broken pieces found in area (Angel Cabrera at 20:43)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 cooling cabinet temperature fluctuating 58.8F to 53.4F",
+      "summary": "Chocolate not demolding; cooler temp unstable causing poor release from molds.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-11T10:27:14.756Z"
+      },
+      "resolution": "Running normal at 05:26 \u2014 maintenance reset HMI and checked fan (Raoul)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 temper out of range at shift start",
+      "summary": "Multiple adjustments needed to bring depositor 2 chocolate temper into acceptable range.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-11T12:36:23.211Z"
+      },
+      "resolution": "In range by 06:48 after operator adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M3 belt drifting",
+      "summary": "Belt moving out of position on truffle flow-wrap line.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-11T13:23:01.033Z"
+      },
+      "resolution": "Maintenance adjusted belt by 07:52."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 metallic contamination in pecan lot 26635-N",
+      "summary": "Two magnetic metal fragments (slag from stick welding) found embedded in chocolate pieces within 2 hours; X-ray caught both, metal detector did not.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-11T15:40:52.322Z"
+      },
+      "status": "Switched to pecan lot 26632-N at 10:54. Monitoring for third hit (3 in 8 hours = line shutdown and full investigation). Alternate lot staged and ready."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 metal debris found under blue incline after Eaglestone work",
+      "summary": "Metal found on floor under blue belt after technicians finished work on belt sides; area had been cleaned and inspected.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-11T15:28:40.061Z"
+      },
+      "status": "Sticky roller used to clean floor. Line running but metal source unclear; rollers were not removed during work."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS down on web tracking and HMI conflict",
+      "summary": "Both web tracking and HMI active simultaneously when only one should be enabled; controller fault preventing operation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-11T15:24:12.075Z"
+      },
+      "status": "Down since 09:24. Dave on hold with US Support, Ray reached out to Syntegon (Larry), still waiting at 10:48 window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 reject system bypassing unfilled bars to packaging",
+      "summary": "Photo eye before reject not triggered long enough when bars are spaced; system fails to kick bad bars especially in larger groups.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-09-10T20:45:41.954Z"
+      },
+      "status": "Manual trigger workaround in place \u2014 operator stationed at de-mold to manually activate reject when WDS light shows. TG support requested overnight; awaiting programming fix."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jams at cooler 1 and mold exchange",
+      "summary": "Recurring jams at cooling cabinet entrance/exit and reject lifter; bent rails replaced overnight, line slowed to 25 MPM.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-10T21:34:31.677Z"
+      },
+      "status": "Running at 25 MPM as of 04:05 after replacing bent cooler rails. Reject lifter flipped and adjusted; monitoring for further jams."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 buffer tank 1 not auto-filling from PTL",
+      "summary": "Operators manually filling buffer 1; auto transfer from post-temper loop not functioning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-11T11:46:26.006Z"
+      },
+      "status": "Still filling manually at shift end 11:01. Chris Givens to investigate root cause 1st shift."
+    }
+  ]
+}

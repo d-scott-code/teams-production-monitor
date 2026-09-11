@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-11",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S3 held on *two* magnetic metal fragments found in chocolate \u2014 X-ray caught both, metal detector missed. Pecan lot suspected; line running with alternate lot staged."
+  },
+  "summary": "Two active metal-in-product events at L1 S3 \u2014 both magnetic fragments passed metal detector but caught by X-ray. L3 Truffle wire mesh broke during reheat, repaired three times. L3 ML4 reject system allowing unfilled bars through to packaging, manual monitoring now in place. L2 Panning allergen test failed after cleaning; re-clean complete.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal fragments in chocolate \u2014 metal detector bypass",
+      "summary": "Two magnetic metal fragments found embedded in chocolate at S3 Matrix 3; X-ray rejected both, but metal detector did not detect \u2014 suspected welding slag from pecan lot 26635-N.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-11T15:40:52.322Z"
+      },
+      "status": "Open \u2014 line running on lot 26635-N with alternate lot 26632-N staged; agreement to switch lots if third hit occurs within 8 hours."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober wire mesh broke during reheat",
+      "summary": "Wire mesh broke in three places due to excessive chocolate buildup during reheat cycle; mesh repaired (not replaced) and line restarted after extended downtime.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-11T05:12:45.091Z"
+      },
+      "status": "Resolved \u2014 mesh repaired, line running; no broken pieces found in production area; two spare meshes ordered."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix cone weld cracking",
+      "summary": "Feed cone weld cracking noted as contamination risk if metal particles break off during operation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-11T02:25:15.479Z"
+      },
+      "status": "Resolved \u2014 cone replaced by maintenance; area inspected, no broken pieces found."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cleaning roller missing bolt",
+      "summary": "Cleaning roller 1 discovered missing tension bolt/screw during downtime inspection \u2014 potential metal contamination if bolt fell into product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-09-11T06:13:28.992Z"
+      },
+      "status": "Resolved \u2014 bolt from unused roller installed as replacement; no debris found in production area."
+    },
+    {
+      "plant": "L3",
+      "title": "Unfilled bars bypassing ML4 reject system",
+      "summary": "Bars missing caramel or vanilla creme reaching packaging at ML4 \u2014 Theegarten reject photo-eye timing fault allows spaced bad bars to pass when stopper disabled.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-11T07:34:41.482Z"
+      },
+      "status": "Open \u2014 manual operator stationed at demolding to trigger reject when WDS light activates; TG support ticket submitted."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "FFS web tracking malfunction \u2014 extended downtime",
+      "summary": "Web tracking and HMI both active simultaneously causing line stoppage; Syntegon remote support engaged, issue unresolved after 90+ minutes.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-11T15:24:12.075Z"
+      },
+      "status": "Open at window close \u2014 Ray Garcia contacted Syntegon, Dave Ruff on hold with US support."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Panning sorter allergen test failure",
+      "summary": "Allergen test failed on sorter hopper, long conveyor, and short conveyor after cleaning; equipment re-cleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-09-11T11:45:48.163Z"
+      },
+      "status": "Resolved \u2014 equipment re-cleaned and passed second allergen verification."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider metal detector sensitivity audit on S3 jar line \u2014 today's two magnetic fragments passed MD but were caught by X-ray, suggesting MD threshold may need adjustment."
+    },
+    {
+      "plant": "L2",
+      "text": "Review Panning cleaning procedure for sorter belts and hopper \u2014 today's allergen test failure suggests residue persisting after standard clean."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding Truffle enrober wire-mesh inspection to weekly PM checklist \u2014 today's three-point failure during reheat suggests fatigue from buildup accumulation."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding cleaning-roller hardware inspection to ML4 startup checklist \u2014 today's missing bolt echoes similar fastener issues on this line in recent weeks."
+    }
+  ]
+}
