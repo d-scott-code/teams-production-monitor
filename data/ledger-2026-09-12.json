@@ -1,0 +1,293 @@
+{
+  "date": "2026-09-12",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 FFS web tracking failed \u2014 line was down *most of 24 hours*, still unresolved at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel cluster and pecan products with several small issues resolved inside the window \u2014 metal found in pecans prompted a lot change, IMS ran out of thermal ribbon overnight but L2 supplied a replacement, and a chiller compressor reset cleared a glycol temperature alarm. Cardboard bailer remains locked out while waiting on replacement safety sensors.",
+    "L2": "L2 FFS was down most of the day fighting web tracking and film alignment issues \u2014 maintenance worked with Syntegon support but could not get the sensors calibrated by window close, with Monday startup planned. ML2 ran moulded bars without major incident after a belt trim.",
+    "L3": "L3 ML4 ran through multiple quality flags \u2014 bottom shell thickness out of spec due to high depositor weights, defective flow wrap rolls, and 281 pounds of truffle scrap from an 80g weight miss. ML1 was down several hours for a depositor gasket replacement and shut-off rack alignment, back online by 10:00."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 thermal ribbon out, line stopped for labels",
+      "summary": "Matrix packing lines could not print labels because IMS ran out of thermal ribbon, halting production overnight.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-12T05:53:51.272Z"
+      },
+      "resolution": "Ribbon sourced from L2, line running again by 05:16 (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal detection hit in pecans",
+      "summary": "Metal found in pecan lot during production \u2014 Jorel requested immediate lot change to avoid hitting the 3-strike rule and shutting down the line.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-11T19:12:39.451Z"
+      },
+      "resolution": "New lot mixed in by 14:18, hold placed on affected pecan lot (Charity Young)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 chiller 2nd compressor not starting",
+      "summary": "Glycol temperature rising on Tunnel 2 because the second chiller compressor failed to turn on, triggering air temperature alarms on the enrober.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-11T22:57:15.856Z"
+      },
+      "resolution": "Compressors reset at 16:57, glycol temperature dropping, product unaffected (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 MM9 belt tension low after CILT",
+      "summary": "After performing clean-in-place on MM9 and cross conveyor, operators noticed belt tension needed adjustment before restarting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-12T01:31:13.414Z"
+      },
+      "resolution": "Caleb York added tension, line restarted at 19:55."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 MM9 infeed conveyor not running",
+      "summary": "Infeed conveyor for MM9 stopped running due to a cover interlock message on the screen.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-11T23:55:32.696Z"
+      },
+      "resolution": "Covers put back down, belt running again (Caleb York, 17:55)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 belt after 90\u00b0 tearing badly",
+      "summary": "Belt downstream of the 90-degree turn started tearing and needed replacement or repair to avoid failure.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-11T19:09:30.541Z"
+      },
+      "resolution": "Maintenance trimmed the belt by 13:15 (Alex Mendoza, Hervin Herrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "Peco pallet inventory inaccurate in RF Smart",
+      "summary": "RF Smart showed Hershey Peco pallets transferred to L1/L3 when 750 were physically at L2, blocking VFFS from staging the 150 needed.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Luis Pino",
+        "time_utc": "2026-09-11T16:55:03.806Z"
+      },
+      "resolution": "Sofia Carcamo completed adjustment by 15:41."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M3 conveyor belt moving laterally",
+      "summary": "M3 conveyor belt was tracking side to side, causing positioning issues at flow wrap.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-11T22:16:06.305Z"
+      },
+      "resolution": "Maintenance corrected by 16:32, belt running properly."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M3 conveyor belt moving again overnight",
+      "summary": "Same M3 conveyor belt issue recurred on third shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-12T04:13:41.906Z"
+      },
+      "resolution": "Maintenance corrected by 22:23."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 3 cream weight high at startup",
+      "summary": "Cream capture test came back at top of spec range (high weights contribute to thin bottom shells and bad backs on bars).",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T12:52:26.638Z"
+      },
+      "resolution": "Retest at 07:56 showed cream in range; cream barrels from earlier operator error placed on hold with LPNs (Preston Tregaskis, 09:42)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 operator forgot to turn on cream depositor",
+      "summary": "Operator completed capture test but forgot to turn the power button back on \u2014 depositor stopped mid-run, creating 4 molds of defective bars.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T14:06:39.823Z"
+      },
+      "resolution": "Four molds marked bad, bars manually rejected by EEs stationed at de-mold, operator coached (Rich Brierley, 08:06)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 tape machine roller rubber broken",
+      "summary": "Tape machine at case packing stopped working properly when the roller rubber broke.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-12T15:21:13.108Z"
+      },
+      "resolution": "Borrowed roller from MFM, replaced by 09:35 (ML4 WDS)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 color variations \u2014 180 trays on hold",
+      "summary": "Pecan clusters showing streaking and white spots inconsistent enough that uniform palletizing was not possible.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-12T04:02:36.19Z"
+      },
+      "status": "180 trays on hold as of 22:02. Next shift informed to continue sorting as same defects appearing."
+    },
+    {
+      "plant": "L1",
+      "title": "Cardboard bailer locked out, safety sensors bad",
+      "summary": "Maintenance locked out the cardboard bailer because safety sensors failed and no replacement parts are in stock.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Jody Howse",
+        "time_utc": "2026-09-12T08:30:39.301Z"
+      },
+      "status": "Workaround in place: stacking cardboard on pallets for IP trailer pickup. William Lopez ordered replacement sensors as of 09:04."
+    },
+    {
+      "plant": "L1",
+      "title": "Internet outage across L1",
+      "summary": "Plant-wide internet connectivity lost, forcing IMS team and Nathan Topham to work off phone hotspots.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-12T13:12:01.885Z"
+      },
+      "status": "Nathan emailing tech support as of 07:12. No resolution posted in window."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web tracking sensor failure",
+      "summary": "Film web sensor could not be calibrated \u2014 tracking drifted out of range repeatedly throughout first and second shift, causing line stoppages and preventing consistent pouch production.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-09-11T16:33:17.807Z"
+      },
+      "status": "Line down at end of third shift (05:21). Raymond Fleming attempted recalibration 3 times overnight without success. Alan Todd requested Syntegon support and maintenance on-site Monday morning for startup."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 no lid cover for depositor",
+      "summary": "Depositor missing protective lid cover at end of second shift.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-09-12T03:32:28.109Z"
+      },
+      "status": "Noted at 21:32. No follow-up."
+    },
+    {
+      "plant": "L2",
+      "title": "Almond residue in panning machine",
+      "summary": "Visual inspection at start of second shift found almond residue inside the panning/sorting machine after cleaning.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-09-12T03:56:32.04Z"
+      },
+      "status": "Failed visual inspection posted at 21:56. No re-clean or follow-up posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor down for gasket and shut-off rack",
+      "summary": "ML1 was down from early first shift through mid-morning \u2014 chocolate leaked from depositor front during piston test, gasket found out of position, and shut-off rack switch 2 was stiff and not sliding correctly.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-12T14:24:49.562Z"
+      },
+      "status": "Maintenance adjusted shut-off rack, new gasket installed and ATP passed by 09:35. Line running properly by 10:17 (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle bites underweight, 281 lbs scrap",
+      "summary": "Truffle bite weights came out at 80g instead of 88-90g spec \u2014 too low to adjust, entire batch scrapped.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-12T05:02:01.221Z"
+      },
+      "status": "281 pounds of chocolate scrap recorded at 23:02. No root cause or corrective action posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bottom shell thickness out of spec",
+      "summary": "Bottom chocolate shell measured 1.25mm average versus 1.5mm minimum \u2014 Preston Tregaskis attributed this to cream and caramel depositor weights running at top of spec.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T14:21:36.551Z"
+      },
+      "status": "One later check at 09:46 showed 2.09mm (in spec), but Preston requested continued monitoring every 30 minutes through flagged mold population. Still monitoring as of 08:41."
+    },
+    {
+      "plant": "L3",
+      "title": "Defective flow wrap with silvering",
+      "summary": "Two rolls of flow wrap from first shift yesterday had silvering around the lettering \u2014 QA flagged them. Today three more unlabeled rolls found with same defect.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-12T15:49:46.155Z"
+      },
+      "status": "Angel Cabrera instructed Daniel McCarty to work with IMS to create new total-quantity label and complete hold disposition through NetSuite. Pallet to be moved to hold area by aisle one (10:07)."
+    },
+    {
+      "plant": "L3",
+      "title": "L3 back door not locking",
+      "summary": "Rear exterior door in L3 will not lock, creating a security and climate-control risk.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-12T04:58:05.327Z"
+      },
+      "status": "Reported at 22:58. No maintenance response posted in window."
+    }
+  ]
+}

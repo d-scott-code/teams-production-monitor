@@ -1,0 +1,189 @@
+{
+  "date": "2026-09-12",
+  "headline": {
+    "eyebrow": "Cleaning failure",
+    "text": "L2 panning failed visual inspection for *almond residue* inside machine at changeover \u2014 allergen cross-contact risk."
+  },
+  "summary": "Three active holds: metal-in-product pecan lot at L1 S3, overweight cream barrels at L3 ML4, and 180 trays of L1 S3 pecan clusters for color defects. One sanitation failure at L2 panning (almond residue), one foreign-material risk at L3 ML4 (gasket found out of position during depositor maintenance).",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Pecan lot on hold after metal detection",
+      "summary": "S3 detected metal in pecan lot mid-shift; Jorel Gourdin requested immediate lot change and hold on affected pecans.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-11T20:13:51.504Z"
+      },
+      "status": "On hold pending disposition \u2014 Charity Young asked if entire lot or just tote; no final scope confirmed in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Four cream barrels on hold \u2014 depositor 3 overweight",
+      "summary": "ML4 depositor 3 capture test showed cream weight out of range (high end of spec); Preston Tregaskis ordered hold, Nathan Gevenois marked and transported barrels to hold area.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-09-12T12:56:36.468Z"
+      },
+      "status": "Physical hold labels applied, barrels moved to hold area, awaiting IMS LPN creation for formal disposition tracking."
+    },
+    {
+      "plant": "L1",
+      "title": "180 trays S3 pecan clusters \u2014 color variation",
+      "summary": "Second shift QA flagged streaking and white spots insufficient for uniform palletizing; tech instructed to continue sorting on next shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-12T04:02:36.190Z"
+      },
+      "status": "On hold for sorting \u2014 next shift notified to continue segregation as same defects appearing."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow wrap rolls \u2014 silvering defect",
+      "summary": "Two rolls flagged yesterday with silvering around lettering; today three more found without QA labels.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-12T15:49:46.155Z"
+      },
+      "status": "Angel Cabrera instructed Daniel McCarty to work with IMS to create new label with total quantity and complete hold disposition via NetSuite."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal detected in S3 pecan lot",
+      "summary": "Metal detector flagged pecan lot during production; line supervisor immediately requested lot change to prevent 3-hit shutdown rule.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-11T20:13:51.504Z"
+      },
+      "status": "Lot change completed, affected lot on hold pending scope determination (full lot vs. single tote)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor gasket found out of position",
+      "summary": "During troubleshooting of shut-off rack fault, operators removed nozzle plate and found gasket displaced; QA inspected gasket for completeness before reinstallation with new gasket.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-12T14:42:51.307Z"
+      },
+      "status": "Resolved \u2014 gasket confirmed complete by QA, new gasket installed, nozzle plate washed and reinstalled per Grey Boscan 14:47 MT."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 operator error \u2014 cream depositor off during run",
+      "summary": "Operator forgot to turn on cream depositor power button after capture test; four molds marked bad, manual rejection required as auto-reject not functioning for this defect type.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T14:06:39.823Z"
+      },
+      "status": "Resolved \u2014 defective molds flagged, two EEs stationed at reject to manually ensure bad bars removed, operator coached per Rich Brierley."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Truffle line 281 lbs scrap \u2014 weight failure",
+      "summary": "Truffle bite weights came in at 80g vs. 88\u201390g spec, too low to adjust; entire batch scrapped.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-12T05:02:01.221Z"
+      },
+      "status": "Resolved \u2014 281 lbs chocolate scrap documented, third shift completed changeover to milk chocolate."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 3 capture test out of range",
+      "summary": "Initial capture test showed cream weight high; operator indicated would adjust but not retest \u2014 Preston insisted on passing in-spec test before restart.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T12:52:26.638Z"
+      },
+      "status": "Resolved \u2014 retest at 07:56 MT showed in-spec for both cream and caramel, but both at top end; barrels produced during out-of-spec window placed on hold."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bottom shell thickness out of spec",
+      "summary": "Mirella Mamani reported average 1.25 mm vs. 1.5 mm minimum spec at 08:21 MT; Preston attributed to high cream and caramel deposit weights at top end of spec.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T14:21:36.551Z"
+      },
+      "status": "Under monitoring \u2014 Preston requested continued checks every 30 min (vs. hourly) until flagged molds clear system; 09:42 update confirmed rejection working better and bars looking good."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 yellow bars missing cream",
+      "summary": "Operator failed to turn cream depositor back on after capture test; defect caught, EE coached.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-09-12T13:18:38.417Z"
+      },
+      "status": "Resolved \u2014 operator coached, molds flagged, manual rejection confirmed at de-mold station."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Panning visual inspection failed \u2014 almond residue",
+      "summary": "Wilson Amaris Cabrera reported almond residue found inside panning machine during pre-run visual inspection at 03:56 MT.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-09-12T03:56:32.040Z"
+      },
+      "status": "Open \u2014 no follow-up posted in window showing re-clean or ATP retest results."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 pack area equipment left running overnight",
+      "summary": "Third-shift maintenance (Dakota) found pack area belts and X-rays running at startup; Nathan Coles shut down, coaching requested.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jody Howse",
+        "time_utc": "2026-09-12T08:37:00.250Z"
+      },
+      "status": "Resolved \u2014 equipment shut down, Jody Howse requested team coaching on shutdown procedures."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM level 2 clean completed and passed",
+      "summary": "Janeth Sanchez confirmed visual and ATP checks satisfactory after overnight level 2 clean.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-09-12T10:12:56.696Z"
+      },
+      "status": "Resolved \u2014 visual and ATP both passed, line ready for production."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S1 end-of-shift shutdown checklist completeness \u2014 pack area belts and X-rays were left running overnight."
+    },
+    {
+      "plant": "L2",
+      "text": "Review panning pre-op inspection sign-off process \u2014 based on almond residue found at 03:56 with no documented resolution or re-clean verification in the 6+ hours remaining in the window."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding depositor gasket position to ML4 startup visual checklist \u2014 based on today's out-of-position gasket found during shut-off rack troubleshooting."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 capture-test-to-startup handoff procedure \u2014 today's operator forgot to re-enable cream depositor after test, and a separate event showed resistance to retesting after out-of-spec result."
+    }
+  ]
+}
