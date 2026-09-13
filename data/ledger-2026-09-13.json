@@ -1,0 +1,197 @@
+{
+  "date": "2026-09-13",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 caramel depositor has been down since *01:15* with foreign material found in the reserve tank \u2014 origin still under investigation at window close."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran pecan cluster through the day with a changeover at midday and hit 24,480 pouches by 23:28. Two resolved machine issues: a scraper causing chocolate buildup (cleared in 18 minutes) and a temper pause (cleared in 16 minutes). Overnight, the caramel depositor went down at 01:15 and a soft plastic foreign material was found in the reserve tank at 01:20 \u2014 maintenance couldn't determine the origin and the search continues.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML1 and ML4 both completed level 2 clean on schedule. ML4 had unfilled bars slipping past de-molding despite marked molds \u2014 the checkweigh caught them and the team was coached. A Sweco screen was shredded when an operator turned on the wrong unit during reassembly; the screen was replaced and cleaning continued. Minor material shortage on blue shrink wrap, workaround in place."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Scraper not in position causing chocolate buildup on rollers",
+      "summary": "A loose scraper was sticking downward and caused chocolate to build up on rollers, nearly pulling an air line into the roller before the line was stopped.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-12T21:58:48.957Z"
+      },
+      "resolution": "Cleared at 16:33 \u2014 \"We resume production\" (Francisco Gudino Torres). Scraper repositioned and line restarted after 18 minutes."
+    },
+    {
+      "plant": "L1",
+      "title": "Line paused for temper adjustment",
+      "summary": "Sollich 3 paused at 17:41 to wait for two tempers before restarting; ran accumulation while waiting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-09-12T23:41:10.315Z"
+      },
+      "resolution": "Cleared at 17:59 \u2014 \"Line resuming temper is good\" and \"Line resume production\" (S3 Enrober, Francisco Gudino Torres). Temper came back in spec after 16 minutes."
+    },
+    {
+      "plant": "L1",
+      "title": "Proximity sensors missing, line equipment not working",
+      "summary": "William Lopez found replacement proximity sensors and installed them, restoring full function.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William  Lopez",
+        "time_utc": "2026-09-12T20:47:45.505Z"
+      },
+      "resolution": "Cleared at 14:47 \u2014 \"Luckily I found some proximity sensors and installed them. Everything is working fine now\" (William Lopez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Sweco screen shredded during ML4 clean",
+      "summary": "An operator set a Sweco screen on a disassembled unit then turned on the wrong Sweco during testing, shredding the screen; operator coached on LOTO and food-contact surface handling.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-13T01:48:34.927Z"
+      },
+      "resolution": "Cleared at 20:16 \u2014 \"New Sweco screen for south side passed ATP\" (Daniel McCarty). Replacement screen washed and installed, lock placed on Sweco."
+    },
+    {
+      "plant": "L3",
+      "title": "C6 belt moved south side on ML1",
+      "summary": "The C6 conveyor belt shifted south during production; maintenance was notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-13T02:44:06.944Z"
+      },
+      "resolution": "Cleared at 05:55 \u2014 \"New belt on C 6 has been installed\" (Jose Vasquez). Belt replaced during level 2 clean."
+    },
+    {
+      "plant": "L3",
+      "title": "Imperial water jacket temperature too high",
+      "summary": "ML1 Imperial water jacket rose above acceptable range during production.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-12T22:54:04.366Z"
+      },
+      "resolution": "Cleared at 17:03 \u2014 \"Adjustment made to get out of yellow\" (Imperial). Shawn Jewkes confirmed it's acceptable as long as temper stays solid."
+    },
+    {
+      "plant": "L3",
+      "title": "Machine keys missing from ML1",
+      "summary": "Imperial depositor keys were missing during the shift.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-13T01:03:46.796Z"
+      },
+      "resolution": "Cleared at 19:20 \u2014 \"Found machine keys\" (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Caramel depositor down on Sollich 3",
+      "summary": "The caramel depositor stopped working; line is running product already in the tunnels but cannot deposit new product.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-13T07:15:10.272Z"
+      },
+      "status": "Line down on depositor as of 01:15, running existing tunnel inventory. No further updates by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Foreign material found in Sollich 3 reserve tank",
+      "summary": "Soft plastic material (appears to be a seal or gasket) was discovered in the caramel reserve tank during a verification check; candy shipment to deposit suspended, tank drained, and FM separated for evaluation.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-09-13T07:20:54.375Z"
+      },
+      "status": "FM identified and removed at 01:20. Maintenance could not determine origin; Luis Falcon continuing search as of 01:24. No resolution by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Insufficient staffing for Sollich 4 cleaning",
+      "summary": "Level 2 cleaning of lanes 10\u201317 and Theegarten was completed, but the rest of the line was left undone due to staffing shortages.",
+      "priority": "P3",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-09-13T04:33:40.766Z"
+      },
+      "status": "Partial clean completed at 22:33; remainder of line not cleaned. No follow-up plan stated in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Unfilled bars slipping past de-molding on ML4",
+      "summary": "Checkweigh scales rejected caddies due to low weight; unfilled bars were found even though molds were marked and two people were stationed at de-molding.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T19:07:19.151Z"
+      },
+      "status": "Unfilled bars identified and removed at 13:41. Preston coached de-molding team at 13:46 to keep close watch and cover breaks. No further rejects reported, but ongoing vigilance required."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate pallet inventory discrepancy on Truffle Line",
+      "summary": "A pallet of chocolate (Item 10257, LPN R344375) was present at the start of inventory on September 11\u201312 but missing by the end; appears to have been consumed without being recorded in the system.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-09-12T17:29:59.542Z"
+      },
+      "status": "Fredy reported at 11:29 that the pallet was consumed at the beginning of the shift and will proceed with inventory adjustment. Adjustment not yet confirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "Missing bolt on ML4 depositor 2 nozzle plate",
+      "summary": "An operator noticed a bolt is missing from the nozzle plate on depositor 2 during cleaning.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-12T20:54:09.519Z"
+      },
+      "status": "Shane reported at 14:54 he will call maintenance when reassembling to get another bolt. No follow-up confirmation that bolt was replaced."
+    },
+    {
+      "plant": "L3",
+      "title": "Out of blue shrink wrap on ML1",
+      "summary": "ML1 ran out of blue allergen shrink wrap; WHS team not in on the weekend.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-09-13T04:42:08.58Z"
+      },
+      "status": "Workaround at 22:42: wrapping partial supersack with clear wrap and labeling as Allergen. No restock plan by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Hydraulic cylinder on ML1 mold heater lid needs replacement",
+      "summary": "An employee is using a wrench to hold up the south-side mold heater lid because the hydraulic cylinder has failed.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-13T09:06:54.105Z"
+      },
+      "status": "Kimberly asked Chad Stone at 03:06 if replacement has been ordered. No response by window close."
+    }
+  ]
+}

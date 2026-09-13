@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-13",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L1 S3 candy reserve tank drained after *soft plastic* material found during verification \u2014 origin unknown, maintenance could not identify source."
+  },
+  "summary": "One foreign material investigation open at L1 S3 \u2014 soft plastic recovered from candy reserve tank, origin not yet determined. Three additional food-safety flags: missing bolt at L3 ML4 depositor, wrenches left on L1 S2 conveyor, and damaged Sweco screen at L3 ML4 (replaced, ATP passed). L1 S4 level-2 clean incomplete due to staffing.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Soft plastic FM found in S3 candy reserve tank",
+      "summary": "During candy level verification at 01:20, kitchen operator found soft plastic material in reserve tank; tank drained and material recovered, but maintenance unable to determine origin because material type not normally used in that area.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-09-13T07:20:54.375Z"
+      },
+      "status": "Investigation ongoing \u2014 material secured for evaluation, origin unknown."
+    },
+    {
+      "plant": "L1",
+      "title": "Wrenches left on S2 conveyor C13",
+      "summary": "Operator found two wrenches left on top of C13 conveyor \u2014 tools on food-contact surface, no evidence of entry into product stream.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-12T21:23:32.775Z"
+      },
+      "status": "Resolved \u2014 tools removed, owner not identified."
+    },
+    {
+      "plant": "L3",
+      "title": "Missing bolt on ML4 depositor 2 nozzle plate",
+      "summary": "Operator identified missing bolt on depositor 2 nozzle plate during disassembly at shift end; maintenance to install replacement during reassembly.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-12T20:54:09.519Z"
+      },
+      "status": "Resolved \u2014 bolt replaced during cleaning window before next production run."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Sweco screen damaged during cleaning",
+      "summary": "Operator placed clean Sweco screen on disassembled unit without LOTO, then powered wrong Sweco, shredding screen; operator coached on GMP and LOTO procedures.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-13T01:48:34.927Z"
+      },
+      "status": "Resolved \u2014 replacement screen installed, washed, ATP passed before startup."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 unfilled bars reached checkweigher",
+      "summary": "Checkweigher rejected caddies at 13:07 due to low weight; inspection found unfilled bars that had been marked at de-molding but still passed through with two operators present.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-12T19:07:19.151Z"
+      },
+      "status": "Resolved \u2014 defective bars removed, supervisor coached de-molding team on break coverage and continuous visual verification."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S4 level-2 clean incomplete at shift end",
+      "summary": "Night shift completed level-2 clean and ATP on lanes 10\u201317 and Theegarten only; rest of line left undone due to insufficient staffing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-09-13T04:33:40.766Z"
+      },
+      "status": "Open \u2014 partial clean documented with photos, remaining areas to be addressed."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "ML1 allergen supersack wrap substitution",
+      "summary": "Blue shrink wrap for allergen supersacks unavailable (WHS out); partial supersack wrapped in clear wrap and labeled as Allergen per team decision.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-09-13T04:42:08.580Z"
+      },
+      "status": "Resolved \u2014 supersack wrapped with clear material and labeled Allergen; blue wrap restocked needed."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding scraper position and security check to S3 startup checklist \u2014 today's loose scraper caused chocolate buildup and nearly pulled air line into roller before operator stopped line."
+    },
+    {
+      "plant": "L3",
+      "text": "Review LOTO enforcement during ML4 equipment disassembly \u2014 today's Sweco screen was damaged when operator powered unit without verifying isolation."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider visual inspection audit frequency at ML4 de-molding \u2014 today's unfilled bars were marked but still reached checkweigher with two operators present."
+    }
+  ]
+}
