@@ -1,0 +1,178 @@
+{
+  "date": "2026-09-14",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "L1 S1 *screw* found in sealed MM9 pouch at 09:14 \u2014 no hold or disposition documented."
+  },
+  "summary": "One HIGH severity event: metal screw found in finished pouch at L1 S1, status unknown. Three additional FM risks flagged today \u2014 broken filter pin at L1 S3, torn Sweco chute at L3 ML1, metal chips post-drilling at L1 S1. L3 checkweigher rejecting high volume of out-of-spec bags; L1 S1 X-ray detecting belt anomalies.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Russell finex filter pin broke on S3 enrober",
+      "summary": "Broken pin discovered on food-contact enrober filter at shift start 07:51 \u2014 maintenance completed repair, no mention of recovering broken piece or verifying it didn't enter product.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-14T13:51:05.941Z"
+      },
+      "status": "Repair complete, missing piece disposition not documented."
+    },
+    {
+      "plant": "L1",
+      "title": "Screw found in finished MM9 pouch",
+      "summary": "Nancy Quiroz discovered a screw inside a sealed pouch on Matrix 9 at 09:14 \u2014 no hold, investigation, or lot isolation documented in the window.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-09-14T15:14:34.078Z"
+      },
+      "status": "Open, no disposition or hold documented."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal chips on floor after conveyor drilling work",
+      "summary": "Metal chips found on blue belt area floor and structure at 06:17 after weekend drilling work \u2014 team immediately deployed sticky rollers before line start, passed ATP at 07:20.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-09-14T12:17:36.952Z"
+      },
+      "status": "Resolved \u2014 area cleaned with sticky rollers, ATP passed, line released."
+    },
+    {
+      "plant": "L3",
+      "title": "Sweco rubber chute torn on ML1",
+      "summary": "Operator inspecting Sweco at 05:21 found torn rubber chute \u2014 torn elastomer in ingredient path is a foreign material source, no repair or replacement documented.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-14T11:21:58.005Z"
+      },
+      "status": "Open, no repair or mitigation documented."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S1 X-ray detecting belt anomalies, not product",
+      "summary": "Ishida X-ray rejecting pouches at 10:42 due to belt signal, not product contamination \u2014 Troy confirmed no metal in product but unable to resolve belt detection issue.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-09-14T16:42:03.198Z"
+      },
+      "status": "Open, X-ray system anomaly unresolved, product confirmed clean."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix checkweigher rejecting high volume",
+      "summary": "Line throwing out lots of heavy and underweight bags starting 06:58 \u2014 maintenance called but had not arrived by 07:18, high scrap rate continuing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-14T12:58:38.981Z"
+      },
+      "status": "Open at window close, maintenance response pending."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bars not demolding, visually out of spec",
+      "summary": "Product failed to demold at 07:23 due to temper issue \u2014 visually out of spec until 08:18 when good product resumed after temper corrections.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-14T13:23:29.532Z"
+      },
+      "status": "Resolved at 08:18 \u2014 good product demolding, temper stable."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bars with cream exposure on side",
+      "summary": "Two bars per 30-bar mold showing cream exposure at 11:46 \u2014 operator making adjustments, co-worker manually removing affected bars at line.",
+      "severity": "low",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-09-14T17:46:43.806Z"
+      },
+      "status": "Open, adjustments ongoing, defects removed at line."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 heavy cream valve gasket leaking",
+      "summary": "Heavy cream valve gasket on Kitchen 2 leaking at 09:58 \u2014 maintenance requested to replace gasket, potential ingredient contamination risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-09-14T15:58:43.796Z"
+      },
+      "status": "Open, awaiting maintenance gasket replacement."
+    },
+    {
+      "plant": "L1",
+      "title": "Trash separation failure in wash area 4",
+      "summary": "Trash can full of caramel and clusters instead of separated waste at 05:20 \u2014 coaching requested for EEs on waste separation protocol.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-14T11:20:44.071Z"
+      },
+      "status": "Open, supervisor coaching requested."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar filling belt has chocolate residue",
+      "summary": "Chocolate buildup on jar filling belt noted at 07:31 \u2014 belt requires cleaning before next run.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-14T13:40:50.764Z"
+      },
+      "status": "Open, cleaning needed."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 water leak at combat boiler pipe",
+      "summary": "Water leaking from pipe to combat boiler at 11:31 \u2014 maintenance requested to tighten connection, sanitation zone integrity concern.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-09-14T17:31:24.176Z"
+      },
+      "status": "Open, maintenance tightening requested."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "Almonds on pallet without label at ML1",
+      "summary": "Almonds found sitting on chocolate pallet without label at 05:03 \u2014 Imperial operator flagged traceability concern, Isis investigating, no resolution documented.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-14T11:03:35.864Z"
+      },
+      "status": "Open, awaiting disposition from QA."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding broken-piece recovery and verification steps to food-contact equipment repair protocol \u2014 today's S3 Russell finex filter pin breakage had no documented recovery of the broken piece before restart."
+    },
+    {
+      "plant": "L1",
+      "text": "Review post-maintenance FM verification checklist for drilling/metal-working \u2014 today's S1 blue belt area metal chips were caught by operators, not by a structured handoff inspection."
+    },
+    {
+      "plant": "L3",
+      "text": "Add pre-shift Sweco inspection to ML1 startup checklist \u2014 torn rubber chute discovered mid-run at 05:21 could have been caught earlier with structured visual check."
+    },
+    {
+      "plant": "L3",
+      "text": "Review MF Matrix checkweigher maintenance response time \u2014 high reject rate flagged at 06:58, maintenance still not on-site by 07:18 despite sustained scrap loss."
+    }
+  ]
+}

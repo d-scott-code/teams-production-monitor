@@ -1,0 +1,306 @@
+{
+  "date": "2026-09-14",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 FFS has been down since 11:50 fighting web tracking \u2014 top edge won't track back up as of *12:28*."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 1 completed a complex startup with multiple delays (QA inspection, caramel program, temper loss) and ramped from 36 to 62 rows per rack by mid-shift. Sollich 3 ran smoothly after a quick filter pin repair.",
+    "L2": "ML2 had a brief belt damage stop (10 minutes) then ran cleanly through a changeover to FEA 12g. FFS fought web tracking faults all shift \u2014 ran from 08:46 to 10:59, down again at 11:50, still down at window close.",
+    "L3": "Truffle line's M3 belt shifted three times despite maintenance work. ML1 (Imperial) had a slow startup with chain alignment and sensor issues but is running. ML4 had demolding problems early shift, cleared by 08:18, but quality is flagging cream exposure on 2 bars per mold. MF Matrix is rejecting heavy and light bags with no maintenance response since 06:58."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Sollich 1 is ramping speed per plan with Eaglestone \u2014 5 rows per rack every 90 minutes."
+    },
+    {
+      "plant": "L1",
+      "text": "Hyfoama ingredient usage is not being tracked in NetSuite; IMS team flagged at 11:10."
+    },
+    {
+      "plant": "L3",
+      "text": "Truffle line switched chocolate from item 10226 to 10121 at 09:09 after depleting stock."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 temper loss after e-stop, riser pump fault",
+      "summary": "Depositor continued when line stopped for accumulation; tech hit e-stop, lost temper, riser pump faulting at 10:40.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-14T16:40:34.512Z"
+      },
+      "resolution": "Partial reheat completed, Brian turned riser pump down from 2300 to 2100; line running at 12:39."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 separating table #2 belt stops when raised",
+      "summary": "Belt runs in down position but stops when raised to align with enrober at 05:56.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-14T11:56:53.491Z"
+      },
+      "resolution": "Able to get the belt to run by 06:17 \u2014 \"We were able to get the separating belt to run.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 Russell finex filter pin broke",
+      "summary": "Pin for the enrober filter broke at start of shift, noticed during pre-op.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-14T13:51:05.941Z"
+      },
+      "resolution": "Maintenance informed and repair complete, no timeline given but reported as done."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 checkweigher sensor not working, line paused",
+      "summary": "CW sensor malfunction at 10:24 caused line stop while Troy and Russ troubleshot.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-14T16:24:06.581Z"
+      },
+      "resolution": "Russ fixed sensor sensitivity and Troy increased CW belt speed to 72m/min; running by 10:39."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web tracking sensor out of range at startup",
+      "summary": "Web frame fault and sealing failure starting at 06:17; tracking sensor replaced Friday with incorrect settings.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-14T12:17:02.231Z"
+      },
+      "resolution": "Dave Ruff found sensor settings weren't set properly after Friday replacement; fold corrected and line running at 08:46."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 long belt damage at startup",
+      "summary": "Line stopped at 05:59 for damage on the long belt.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-14T11:59:47.958Z"
+      },
+      "resolution": "Back up at 06:09 \u2014 \"Line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle tunnel 3 not turning on",
+      "summary": "Cooling tunnel 3 would not power on at 04:23; air supply was turned off.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-14T10:28:28.659Z"
+      },
+      "resolution": "Maintenance opened panel with hex key and restored air; running at 05:14."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial chain misaligned, unusual noise",
+      "summary": "Operator heard unusual noise at startup; chain was misaligned and mold lifting on one side.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-14T11:02:39.535Z"
+      },
+      "resolution": "Nelson centered the chain at 06:22; slight lift remains but cleared to start and running by 06:44."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 product not demolding, temper question",
+      "summary": "Bars not releasing from molds at 07:23; temper readings being verified on external meter.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-14T13:23:29.532Z"
+      },
+      "resolution": "Product demolding and appearance improving by 08:03; good bars at TG by 08:18."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at preheating",
+      "summary": "Mold stuck in preheating area 2 at 04:46, could not be removed manually.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-09-14T10:46:19.205Z"
+      },
+      "resolution": "Jam cleared by maintenance at 05:04."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola belt chocolate jam, 30-minute stop",
+      "summary": "Chocolate stuck in gondola exit belt and formed a ball; maintenance removed roller to clean at 11:19.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-14T17:19:11.351Z"
+      },
+      "resolution": "Roller cleaned and reinstalled; line restarted after 30 minutes at 11:31."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 screw found in MM9 pouch",
+      "summary": "Foreign object (screw) discovered in Matrix 9 pouch at 09:14.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-09-14T15:14:34.078Z"
+      },
+      "status": "Single find reported; no follow-up on source or corrective action in thread."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 X-ray false positives from belt",
+      "summary": "Ishida X-ray hitting on the belt itself, not product; rejecting good pouches starting at 10:42.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-09-14T16:42:03.198Z"
+      },
+      "status": "Troy wiped top of belt at 11:08; Jorel suggested checking underside; no resolution posted."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 MM10 missing pouch opening fingers",
+      "summary": "Matrix 10 is missing its pouch opening fingers; borrowed one set from MM9 to continue at 08:50.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-14T14:50:38.854Z"
+      },
+      "status": "Workaround in place using MM9 parts; original fingers not located."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 one caramel deposit removed, running short",
+      "summary": "One deposit not working correctly at 09:31; piston removed to avoid downtime.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-14T15:31:27.445Z"
+      },
+      "status": "Running with deposit removed; no repair timeline posted."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 heavy cream valve gasket leaking",
+      "summary": "Kitchen 2 heavy cream valve gasket leaking at 09:58; maintenance needed to replace.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-09-14T15:58:44.127Z"
+      },
+      "status": "Maintenance called for gasket replacement; no follow-up on completion."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 water leak in combat boiler pipe",
+      "summary": "Water leaking from pipe leading to combat boiler at 11:31; needs tightening.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-09-14T17:31:24.176Z"
+      },
+      "status": "Maintenance requested to tighten; no confirmation of repair posted."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web tracking issue, line down since 11:50",
+      "summary": "Film tracking working but top edge too far down and will not track back up; line stopped at 11:50 after earlier sensor swap at 10:59.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-09-14T17:50:13.275Z"
+      },
+      "status": "Collar removed, cleaned and lubed at 12:13; still down with top edge issue as of 12:28."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M3 belt keeps shifting, recurring issue",
+      "summary": "Belt shifted at 07:03, again at 08:06, 08:22, 08:52, and 10:22 despite maintenance adjustments each time.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-14T12:03:04.046Z"
+      },
+      "status": "Maintenance called again at 10:22 after fourth shift; no update after that point."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle aligner not working properly",
+      "summary": "Aligner malfunction flagged at 06:30 with maintenance tagged.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-14T12:30:05.927Z"
+      },
+      "status": "No follow-up or resolution in the thread."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM throwing heavy and light bags, no maintenance response",
+      "summary": "Multihead filler rejecting out-of-spec bags since 06:58; maintenance called but has not arrived as of 07:18.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-14T12:58:38.981Z"
+      },
+      "status": "Maintenance called at 06:58; still no response at 07:18, no further updates in thread."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cream exposure on 2 bars per mold",
+      "summary": "Bars showing cream exposure on the side; operator adjusting, coworker removing affected bars \u2014 2 out of 30 bars per mold impacted.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-09-14T17:46:43.806Z"
+      },
+      "status": "Operator making adjustments at 11:46; manual removal of bad bars continues."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Sweco rubber chute torn",
+      "summary": "Inspection found the Sweco rubber chute is torn at 05:21.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-14T11:21:58.005Z"
+      },
+      "status": "Reported during inspection; no repair or follow-up mentioned."
+    }
+  ]
+}
