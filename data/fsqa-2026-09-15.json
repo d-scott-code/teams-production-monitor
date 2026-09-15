@@ -1,0 +1,130 @@
+{
+  "date": "2026-09-15",
+  "headline": {
+    "eyebrow": "Metal risk",
+    "text": "L1 S1 metal detector caught test cards but *did not reject* \u2014 belt mechanism failed open, investigation ongoing."
+  },
+  "summary": "Three active food-safety events: L1 S1 metal detector passed cards without rejecting, L3 ML4 depositor screws left out during weekend cleaning (all accounted for and replaced), and L1 S3 metal detector missing bolts found during reassembly. One hold: L1 S1 pallet for watery chocolate after chiller fault.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Pallet held for watery chocolate after chiller fault",
+      "summary": "Chiller breaker tripped during shift causing temper loss and wet/watery chocolate on final pieces; one pallet inspected, most product scrapped, two trays released.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-09-14T22:23:26.221Z"
+      },
+      "status": "Resolved \u2014 pallet inspected, out-of-spec product scrapped, two trays released back to production."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal detector test cards detected but not rejected",
+      "summary": "S1 metal detector recognized test cards but belt did not open to reject them; belt cleaned and retested, passed after cleaning but root cause of initial failure under investigation.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-09-14T22:47:34.677Z"
+      },
+      "status": "Open \u2014 detector now passing test cards after belt cleaning; maintenance monitoring for recurrence."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal detector missing bolts during reassembly",
+      "summary": "S3 metal detector disassembled for cleaning; during reassembly third shift discovered insufficient screws available, all missing bolts replaced with new hardware by maintenance.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-15T08:14:21.734Z"
+      },
+      "status": "Resolved \u2014 all missing bolts replaced, metal detector reassembled and back in service; action to check for additional missing hardware during next cleaning."
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor screws left out during weekend cleaning",
+      "summary": "Two screws securing magneto base in depositor 4 were left out after weekend cleaning; all screws accounted for and reinstalled by maintenance.",
+      "severity": "high",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 2",
+        "time_utc": "2026-09-15T03:22:05.655Z"
+      },
+      "status": "Resolved \u2014 all screws accounted for, magneto base re-secured, no parts entered product stream."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S1 X-ray excessive false rejections at higher belt speed",
+      "summary": "X-ray began rejecting many pouches after belt speed increased from 40 to 60 m/min to match line speed increase; cleaned belt and re-learned product, monitoring for recurrence.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-14T19:22:22.051Z"
+      },
+      "status": "Open \u2014 X-ray cleaned and sensitivity adjusted, line speed reduced to 54 DPM per Curt Willis; Troy Baxter monitoring for artifact pattern recurrence."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web tracking drift causing white line on pouches",
+      "summary": "Web tracking shifted left-over-right throughout shift causing white line on pouch front; standard confirmed at max 3mm, operator reworked last pallet, ongoing adjustments required.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-09-14T21:01:55.287Z"
+      },
+      "status": "Open \u2014 standard posted on line, operators adjusting tracking as needed; web centerline unstable."
+    },
+    {
+      "plant": "L2",
+      "title": "Master case labeling mismatch for item 41238",
+      "summary": "Master cases labeled item 41238 correctly but contain wrong inner boxes (60g variety pack instead of correct product); all 26 pallets in warehouse affected.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-15T04:07:06.956Z"
+      },
+      "status": "Open \u2014 Brandon Lance and team verified boxes do not match BOM; investigating whether BOM is incorrect or cases mislabeled."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 allergen residue found in baggers after cleaning",
+      "summary": "Pretzel and pecan pieces found on bottom of MM3 and MM5 baggers plus chocolate/pecan residue in upper bagger areas during startup; affected areas re-cleaned, ATP and allergen tests passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-15T14:07:06.595Z"
+      },
+      "status": "Resolved \u2014 affected areas re-cleaned to level 4, ATP and allergen tests passed, line released to run at 09:29."
+    },
+    {
+      "plant": "L2",
+      "title": "Sorting line failed visual inspection",
+      "summary": "Sorting line failed visual inspection due to residue; recleaning in progress.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-09-15T02:50:15.84Z"
+      },
+      "status": "Open \u2014 recleaning underway, awaiting re-inspection."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding a hardware accountability step to S3 metal detector cleaning checklist \u2014 today's missing bolts were discovered only during reassembly, and S1 matrix pouch-opening arms were found stored in a Sol 2 cabinet."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider cycle count and label audit for item 41238 \u2014 all warehouse inventory appears mislabeled or BOM incorrect, 26 pallets affected."
+    },
+    {
+      "plant": "L3",
+      "text": "Review depositor disassembly/reassembly checklists to include screw/fastener count verification before and after cleaning \u2014 based on today's magneto base screws left out on ML4 depositor 4."
+    }
+  ]
+}
