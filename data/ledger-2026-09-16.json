@@ -1,0 +1,270 @@
+{
+  "date": "2026-09-16",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 1 lost *3 hours* to motor replacement after Eaglestone damaged the incline belt drive during relocation work."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 1 down 07:47\u201309:10 for emergency motor replacement after contractor damage, then chiller faulted three more times through mid-shift. Sollich 2 kitchen clogged pump cleared by 05:47, ran ALDI caramels with texture adjustments, some early product flagged for rework. Sollich 3 had two metal contamination scares\u2014missing screws on MM5 (pallets cleared) and MM3 (arm replaced, x-ray caught the piece).",
+    "L2": "ML2 ran Feastables 12g all three shifts at 10\u201311 mpm with brief pauses for CIL and tech adjustments. ML3 demolder clamps popped off twice in early shift, turning arm pressure corrected by 05:07. LABELVIEW case label printing failed plant-wide at 08:46, still waiting on IT at window close.",
+    "L3": "ML1 nozzle jammed 06:26, Gerrit on-site 07:04, back depositing 09:05 after dosing head clean. ML4 ran with one mold jam (cleared in 2 minutes) and TG5 bars showing poor back appearance from 10:57 forward. Truffle line paused 13:03\u201317:28 for wire mesh repair and estop guard install, then ran with brief underweight corrected by 05:18."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Shawn noted almond inclusion temps at 74\u00b0F after rotary valve jams, establishing new standard to empty inclusion hopper each time."
+    },
+    {
+      "plant": "L2",
+      "text": "Brandon Lance reported ML2 ran great on 2nd shift with 6 EEs, line held 10 mpm through night."
+    },
+    {
+      "plant": "L3",
+      "text": "Leon Brueger found AB1 Solich high limit fork bent together at 11:31, tabs opened, now running auto."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MM5 bag-opener arm screw missing",
+      "summary": "Operator noticed missing screw at 01:30, MM5 cleaned and searched, maintenance replaced screw by 02:15, pallets from 01:30\u201302:15 held then released.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-16T08:17:58.550Z"
+      },
+      "resolution": "Screw replaced by 02:33, pallets identified and held, QA cleared for release at 06:32 (Ebrima Dibba)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 incline belt motor damaged by contractor",
+      "summary": "Eaglestone broke the motor during relocation work at 07:47, sourced replacement, installed and cleaned by 09:10, running 72 rr by 09:45.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-09-16T13:47:41.067Z"
+      },
+      "resolution": "Motor replaced and area cleaned, QA approved at 09:10. Line running 72 rr by 09:45 (Justin Garner)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 MM3 bag-opener arm broke",
+      "summary": "Small arm broke at 10:25, piece stuck and rejected by x-ray, metal found inside opened pouch.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-09-16T16:25:41.828Z"
+      },
+      "resolution": "Maintenance replaced broken arm at 11:03, x-ray caught the reject, all pieces accounted for (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 THG air compressor off",
+      "summary": "THG stopped at 22:33, displaying air pressure message, compressor found off for unknown reason.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-16T04:33:09.187Z"
+      },
+      "resolution": "Air compressor restarted at 22:39, running again (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 kitchen B cleaning pump clogged",
+      "summary": "Pump would not move liquid during flush at 03:54, maintenance pulled and cleaned heavily plugged pipe, caustic and cook complete by 05:47.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-16T09:54:06.793Z"
+      },
+      "resolution": "Pipe cleaned, system flushed, caustic complete, cooking by 05:47 \u2014 \"It was very plugged\" (Joseph Scott)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 demolder clamps popping off",
+      "summary": "Rubber parts on both sides came apart at 03:11, happened again at 04:40 after starting WDS to warm molds.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-09-16T09:11:28.238Z"
+      },
+      "resolution": "Replaced at 05:07 \u2014 turning arm set too high, reaching 100 psi, pressure corrected (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 vacuum clogged",
+      "summary": "Vacuum clog reported at 06:09, line down briefly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-16T12:09:54.891Z"
+      },
+      "resolution": "Line back up at 06:21 (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 line down for technical adjustments",
+      "summary": "TG tech adjustments at 09:08.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-16T15:08:13.430Z"
+      },
+      "resolution": "Line running at 09:34, back to 11 mpm at 10:30 (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 line down for CIL cleaning",
+      "summary": "Scheduled CIL stop at 06:54.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-16T12:54:17.012Z"
+      },
+      "resolution": "Line back up at 07:20 (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober wire mesh loose",
+      "summary": "Wire had come apart, line paused at 13:03 for mesh repair and estop guard install after accidental press.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-15T17:58:03.705Z"
+      },
+      "resolution": "Mesh repaired, estop guard installed, started depositing at 17:28 (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial depositor right rotary valve clogged",
+      "summary": "Nozzle clog at 06:26, hopper water temp issue, Gerrit called on-site to remove and wash dosing head.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-16T12:26:13.222Z"
+      },
+      "resolution": "Dosing head washed, installed, temps reached, started depositing at 09:05 (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle underweight on south last 2 positions",
+      "summary": "Weight checks at 03:25 found truffles underweight, adjustments made to shaker.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-09-16T09:25:11.441Z"
+      },
+      "resolution": "Weight corrected by 05:18, running with no issues (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam control sensor in cooling cabinet",
+      "summary": "Down at 09:46 for sensor issue, operators working on it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-16T15:46:45.549Z"
+      },
+      "resolution": "Running at 09:48 (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt shifted and triggered alarm",
+      "summary": "Belt tracking alarm at 10:58, maintenance called for adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-16T16:58:59.003Z"
+      },
+      "resolution": "C6 belt adjusted and centered by maintenance at 11:24 (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "AB1 Solich not requesting chocolate from PTL2",
+      "summary": "Small tank high limit fork bent together at 11:31, tabs touching when should be straight down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-09-16T17:31:40.575Z"
+      },
+      "resolution": "Opened fork tabs, now OK to run in auto (Leon Brueger)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 chiller faulting repeatedly",
+      "summary": "Chiller faulted three times in 24 hours (15:35, 18:31, 20:05 on 9/15, then again 10:58 on 9/16), tunnel 2 temps spiking to 10\u00b0C, chocolate soft.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-15T21:35:02.760Z"
+      },
+      "status": "Line restarted at 11:16 after latest fault, Matt emailed Sollich, Ricardo watching chiller as of 11:12."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 ALDI caramels early product needs rework",
+      "summary": "First sections packed before Italu and Ira gave approval, caramel below viscosity target min, product needs cases opened and reworked into z-conveyor.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ira Robison",
+        "time_utc": "2026-09-16T17:00:56.636Z"
+      },
+      "status": "QA identified cases, rework plan in place as of 11:18, line running steady state by 11:22."
+    },
+    {
+      "plant": "L2",
+      "title": "LABELVIEW case label printing down plant-wide",
+      "summary": "All buildings unable to print case labels from LABELVIEW starting 08:46, IT working the issue.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nidia Lopez Corea",
+        "time_utc": "2026-09-16T14:46:49.225Z"
+      },
+      "status": "Waiting for IT to resolve as of 08:47, affects L2 and L3."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 B130 sensor problem and bent rails",
+      "summary": "Sensor issues at 11:21, maintenance straightening bent rails on C7 and C8.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-16T17:21:46.333Z"
+      },
+      "status": "Maintenance adjusting rails as of 11:25, no clear resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 bars poor appearance on back since 10:57",
+      "summary": "Bars coming with bad appearance outside spec, coworker pulling but cannot remove all affected bars, gondola adjustments made at 09:03 helped initially.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-09-16T17:27:56.481Z"
+      },
+      "status": "Still presenting issue at 11:27, Shawn asked if front or back at 11:37, confirmed back of bar."
+    }
+  ]
+}

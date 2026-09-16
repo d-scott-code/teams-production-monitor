@@ -1,0 +1,129 @@
+{
+  "date": "2026-09-16",
+  "headline": {
+    "eyebrow": "Hardware events",
+    "text": "L1 S3 MM5 missing screw never recovered \u2014 *2 pallets* held 4.5h, released after investigation found all arm pieces accounted for at X-ray."
+  },
+  "summary": "Three hardware-in-product events in 24 hours: L1 S3 MM5 missing screw (held/released), MM3 broken arm caught by X-ray with metal confirmed, and L3 ML1 missing C6 bolt plus damaged conveyor belts. L1 S1 chiller faulted repeatedly causing tunnel temps to spike; dark caramel particles approved to run.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S3 MM5 missing screw \u2014 2 pallets held, released",
+      "summary": "Operator noticed missing screw on MM5 bag-opening arm base at 01:30; pallets from 01:30\u201302:15 window held pending investigation; screw never found but all arm pieces accounted for; released at 06:32.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-16T08:22:31.517Z"
+      },
+      "status": "Resolved \u2014 pallets released after confirming all hardware accounted for via X-ray inspection and arm replacement verification."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S3 MM3 broken arm \u2014 metal detected in pouch",
+      "summary": "MM3 bag-opening arm broke at 10:31; X-ray rejected piece; pouch opened and metal confirmed inside; maintenance replaced arm.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-16T16:31:34.557Z"
+      },
+      "status": "Resolved \u2014 X-ray caught reject, metal piece recovered, arm replaced, system functioning as designed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 missing bolt and damaged belts",
+      "summary": "C6 belt missing bolt at 22:50, maintenance replaced; belts C4/C5 show fiber damage and excessive cutting at 07:09, flagged for maintenance inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-16T04:50:27.123Z"
+      },
+      "status": "Bolt replaced; fiber damage on C4/C5 conveyor belts flagged to maintenance for inspection \u2014 no line stoppage, monitoring ongoing."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S1 chiller faulting \u2014 tunnel temps spiked to 10\u00b0C",
+      "summary": "Chiller faulted 3+ times across shifts; tunnel 2 rose from 3\u00b0C setpoint to 10\u00b0C at 10:59, causing soft chocolate; line paused 17 min to recover temp.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-15T21:35:02.76Z"
+      },
+      "status": "Open \u2014 chiller intermittently faulting, Sollich contacted via email; operators monitoring tunnel temp closely and resetting as needed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 dirty molds and cold almonds",
+      "summary": "Dirty molds causing film jams and bowing/heavy weights at 01:54; almond temp 74\u00b0F (too cold) discovered at 08:33; inclusion hopper emptying standard established.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-09-16T07:54:28.517Z"
+      },
+      "status": "Resolved \u2014 cleaner molds producing best bars by 10:12; new standard to empty inclusion hopper during rotary valve jams."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bar appearance issues at TG5",
+      "summary": "Bars with poor back-side appearance at TG5 starting 10:57; operator pulling defects but volume exceeds removal capacity.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-09-16T17:27:56.481Z"
+      },
+      "status": "Open at window close \u2014 Nelson adjusted gondola earlier (resolved first occurrence at 09:03), issue recurred at 10:57, active at 11:27."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 caramel bleeding in jars",
+      "summary": "Decent amount of bleeding caramels observed at 12:13; inspection found ~10% of pieces showing bubbles intermittently; no soft/watery texture confirmed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-09-15T18:12:49.405Z"
+      },
+      "status": "Closed \u2014 QA inspected, caramel temp slope within range, hypothesized chocolate texture contributor but not confirmed as root cause."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 dark particles in caramel",
+      "summary": "Dark particles detected in caramel at 07:10; QA approved to run after inspection.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-09-16T13:10:51.127Z"
+      },
+      "status": "Resolved \u2014 Mary Montilla approved caramel for running after visual inspection."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle underweight pieces",
+      "summary": "Weight checks at 03:25 found underweight truffles; south last 2 lanes most affected; shaker adjusted, sorter positioned to remove.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-09-16T09:25:11.441Z"
+      },
+      "status": "Resolved \u2014 weight corrected by 05:18, QA verified spec compliance."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding bag-opening arm hardware inspection to MM5 pre-shift checklist \u2014 today's missing screw echoes the MM3 broken arm, both in bag-handling equipment."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding conveyor belt integrity check to ML1 startup \u2014 today's C6 missing bolt and C4/C5 fiber damage suggest belt hardware needs systematic attention."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML1 almond inclusion hopper protocols \u2014 today's 74\u00b0F temp discovery (vs required warm temp for chocolate deposit) drove new standard to empty hopper during rotary valve jams."
+    }
+  ]
+}
