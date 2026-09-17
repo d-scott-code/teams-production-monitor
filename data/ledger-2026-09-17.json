@@ -1,0 +1,378 @@
+{
+  "date": "2026-09-17",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 was down *7 hours* on a gasket failure in the imperial seal \u2014 cleared at 08:40 after sourcing metal-detectable parts."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran three caramel lines. S3 cleared a printer issue that caused wrong best-by dates on MM3 \u2014 caught 4 trays, corrected. S3 ran out of Canada trays at 07:17, line paused 41 minutes until trays arrived from Springville. S1 chiller went down at 12:33, came back by 12:45 but issue persists \u2014 waiting on programmer response.",
+    "L2": "L2 ML2 ramped to 12 mpm and held steady through the shift; recipe saved at 16:50. ML2 scale was reading inaccurate weights overnight; leveled and fixed by 06:01. FFS had a broken roller flagged at 11:29.",
+    "L3": "L3 ML1 almond line was down 7 hours after an imperial seal gasket failed and pulled into the pistons at 01:57 \u2014 sourcing metal-detectable gasket delayed restart until 08:40. ML4 had repeated gondola jams and broken bars from TG5 exit; upper pusher appears too high, maintenance investigating. MF Matrix started with wrong lot code \u2014 3 pallets on hold, corrected by 08:12. Truffle line ran clean."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Whole milk pallets (3) were extended 3 days to 9/19 after organoleptic testing \u2014 all acceptable."
+    },
+    {
+      "plant": "L2",
+      "text": "ML2 dialed in at 12 mpm \u2014 Theegarten tech Sebastian adjusted false rejects and saved recipe."
+    },
+    {
+      "plant": "L3",
+      "text": "Maintenance created teflon sliders to prevent gasket damage when installing the hopper on ML1 imperial."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S1 chiller went down during production",
+      "summary": "Chiller tripped offline at 12:33, temps rose; line paused.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-16T18:33:07.151Z"
+      },
+      "resolution": "Temps stabilized by 12:45, line restarted \u2014 down 12 minutes (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 TG safety module security fault",
+      "summary": "TG threw security error on safety module at 17:10, line stopped.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-16T23:10:18.066Z"
+      },
+      "resolution": "Hard reset on TG panel cleared fault, ready to run at 17:43 (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 ran out of Canada trays mid-shift",
+      "summary": "Line paused at 07:17 \u2014 insufficient Canada trays staged, next delivery not until Friday.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-17T13:17:56.372Z"
+      },
+      "resolution": "Emergency trailer dispatched from Springville; trays arrived 07:54, line restarted 08:18 (41 min down)."
+    },
+    {
+      "plant": "L1",
+      "title": "Cavanna #4 failed allergen test after product changeover",
+      "summary": "Metal film entry point on Cavanna #4 did not pass allergen test at shift handoff; passed after cleaning.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-16T21:13:28.236Z"
+      },
+      "resolution": "Cleaned area, QA re-tested at 16:40 \u2014 passed (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 printer displayed wrong best-by date",
+      "summary": "Printer froze and reset to USA recipe instead of Canada, printing incorrect best-by on MM3.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-17T05:47:10.643Z"
+      },
+      "resolution": "Corrected recipe to Canada spec at 23:48, only 4 trays affected before catch (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 printer froze again, wrong recipe loaded",
+      "summary": "Printer froze a second time at 05:50, defaulted to USA recipe; caught before more rework created.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-09-17T12:21:32.447Z"
+      },
+      "resolution": "Operator caught it immediately, corrected to Canada, 4 trays reworked (Brandon Hernandez 06:40)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 settings changed off centerline",
+      "summary": "Multiple cam settings and switch position were changed from centerline, causing timing and pouch issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-09-17T17:19:27.708Z"
+      },
+      "resolution": "Troy reset all settings to centerline at 11:30, running better (Troy Baxter)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS open bags on long seal",
+      "summary": "Flow-wrap producing open pouches on the long seal during 2nd shift startup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-16T23:20:01.557Z"
+      },
+      "resolution": "Raymond cleaned long seal sealer and adjusted, resolved by 17:27 (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 scale reading inaccurate weights",
+      "summary": "Inline scale not accurate \u2014 QA checking previous pallets for potential rework.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-09-17T11:01:41.799Z"
+      },
+      "resolution": "Scale leveled by Cy, now accurate at 06:01 (Victor Leandro)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 mold jams from bad clamps on demolder",
+      "summary": "Brand-new mold clamps coming apart, causing jams at demolder.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-09-17T11:26:12.712Z"
+      },
+      "resolution": "Replaced clamps with new parts, working well (Fernando Flores 05:27)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrap chain loose, causing issues",
+      "summary": "Chain tension low on flow-wrap, affecting wrapping quality.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-09-17T11:27:14.488Z"
+      },
+      "resolution": "Maintenance tightened chain, running well (Fernando Flores 05:27)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 molds stuck on lifting table Z",
+      "summary": "Molds jamming on lifting table depositor 2 \u2014 back lifting plate stuck in up position.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-16T23:01:20.765Z"
+      },
+      "resolution": "Maintenance adjusted green rails to widen gap on insert side, running at 17:54 (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 right rotary valve clogged with almonds",
+      "summary": "Almond rotary valve jammed, hopper drained to clean dousing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-17T01:27:20.658Z"
+      },
+      "resolution": "Cleaned rotary valve and magnet, ATP passed, running at 21:13 (Melissa Zavala 20:28)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 imperial seal gasket failed, pulled into pistons",
+      "summary": "Gasket from nozzle plate pulled into pistons at 01:57 \u2014 piece missing, 7-hour downtime sourcing metal-detectable replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-17T07:57:21.129Z"
+      },
+      "resolution": "Sourced detectable gasket, ATP passed, all parts clean, line started 08:40 (Rose Smuin, Gina Vazquez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 exit belt buildup causing rough bars",
+      "summary": "Chocolate and caramel buildup on TG exit frame making bars come in rough.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-17T03:22:06.116Z"
+      },
+      "resolution": "Cleaned buildup with new tool, bars smooth at 21:26 (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 belt burning edge",
+      "summary": "Belt on Cavanna 2 moving to the side, starting to burn the edge.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-17T09:13:22.081Z"
+      },
+      "resolution": "20-minute gap made for maintenance to fix belt, restarted 03:36 (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt out of alignment",
+      "summary": "C6 belt shifted out of alignment during overnight run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-17T12:33:27.95Z"
+      },
+      "resolution": "Maintenance adjusted belt at 06:52, centered and running well (Nathan Ruiz 07:01)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix wrong lot code at startup",
+      "summary": "Line started with incorrect lot code programmed \u2014 3 pallets produced before catch.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-17T13:49:39.844Z"
+      },
+      "resolution": "Lot corrected, 3 pallets on hold, running with correct code at 08:12 (Mirella Mamani)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 water drain clogged",
+      "summary": "Drip tray drain on depositor 2 plugged, dripping outside the machine.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-09-17T16:10:50.81Z"
+      },
+      "resolution": "Lead unclogged drain and verified valve open, working properly at 10:18 (ML4 WDS Tablet 1)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 chiller recurring faults, waiting on programmer",
+      "summary": "Chiller went down at 12:33, cleared by 12:45 but root issue persists \u2014 Ricardo waiting on programmer response.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-16T18:33:07.151Z"
+      },
+      "status": "Temps stable, line running; Vallerie attempting fix on 2nd shift if doesn't hold (Katya 12:53)."
+    },
+    {
+      "plant": "L1",
+      "title": "Condensation dripping onto caramel from overhead pipes",
+      "summary": "Water condensation on pipes above S2 caramel depositor occasionally getting on product.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-09-16T23:20:10.671Z"
+      },
+      "status": "Curt tagged maintenance to insulate pipes at 18:15; no follow-up on completion."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM3 printer changing settings on its own",
+      "summary": "Printer froze twice this shift, resetting recipe each time; Troy can't troubleshoot without seeing it break live.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-17T12:40:47.397Z"
+      },
+      "status": "Troy monitored, no abnormalities found at 08:11; will watch but hard to fix without live break."
+    },
+    {
+      "plant": "L1",
+      "title": "Zip tie piece found on S2 salt magnet, not MD-detectable",
+      "summary": "Operator found zip tie fragment on Hapman salt magnet during inspection; passed through MD without detection \u2014 from maintenance work on decorator pipes.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-17T15:03:02.95Z"
+      },
+      "status": "Root cause identified (maintenance cleanup from pipe work); prevention plan posted at 09:17 by William Lopez."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 salt coverage light on sea salt caramels",
+      "summary": "Salt shaking off into bags during packaging; coverage on pieces looks acceptable but could be better.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-17T17:05:22.087Z"
+      },
+      "status": "Ira approved increasing salt at 11:15; team discussing whether more salt will just fall off."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrap sensor B320 causing false rejects",
+      "summary": "Getting 4 kickouts every 5 minutes on flow-wrap; sensor won't allow re-teach from HMI.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-09-17T01:09:19.882Z"
+      },
+      "status": "Posted to Theegarten chat for Sebastian's help at 19:13; no resolution as of window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS broken roller flagged",
+      "summary": "One roller broken on FFS line, maintenance notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-17T17:29:21.731Z"
+      },
+      "status": "Line down at 11:29, no follow-up on repair or restart."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pouch pickup issues causing skipped dumps",
+      "summary": "Bag material same as bequet twist wrap \u2014 poor pickup causing machine to skip product dump on many pouches.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-17T13:02:01.36Z"
+      },
+      "status": "Shawn and maintenance working on it; 89% acceptable weight at 08:45, need to improve pouch pick (Shawn)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 upper pusher causing broken bars at gondola",
+      "summary": "Shawn observed 25 bad bars in 30 minutes, all from upper belt \u2014 pusher appears too high, trapping bar edge.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-17T15:38:12.297Z"
+      },
+      "status": "Maintenance checking rails and pusher height; Nelson investigating as of 09:39."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 first licking roller turned off, unknown reason",
+      "summary": "Licking roller #1 was on last night, found off at shift start; bin not being changed out.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-16T20:37:07.321Z"
+      },
+      "status": "Itzel confirmed it was on during morning clean at 14:44; no explanation for why it turned off."
+    }
+  ]
+}

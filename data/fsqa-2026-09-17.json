@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-17",
+  "headline": {
+    "eyebrow": "Metal detector gap",
+    "text": "L1 S2 zip tape found on salt magnet inlet \u2014 metal detector *did not detect* piece when QA tested it."
+  },
+  "summary": "Three active holds: 41 pallets of Canada s'mores on L1 S3 (wrong Best By), 3 pallets on L3 MF Matrix (wrong lot code), and L2 ML2 reviewing pallets after discovering inaccurate scale. Foreign material event on L1 S2 \u2014 metal detector failure confirmed.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "41 pallets \u2014 incorrect Canadian Best By date",
+      "summary": "MM3 printer froze and reset to USA recipe; 41 pallets from 2nd shift printed with wrong date before operators caught it.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-17T05:47:10.643Z"
+      },
+      "status": "On hold \u2014 Springville identifying which pallets came from MM3 for rework; MM4/MM5 pallets will be released."
+    },
+    {
+      "plant": "L3",
+      "title": "3 pallets \u2014 incorrect lot code at MF Matrix setup",
+      "summary": "Lot code error at startup; first 3 pallets produced before correction placed on hold.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-17T13:49:39.844Z"
+      },
+      "status": "On hold pending QA disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Zip tape on salt magnet \u2014 metal detector did not detect",
+      "summary": "Operator found zip tie piece attached to Hapman salt magnet during inspection; QA passed piece through metal detector and it did not reject.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-17T15:03:02.95Z"
+      },
+      "status": "Open \u2014 maintenance confirms zip ties used during decorator pipe cleaning; new plan implemented to prevent recurrence."
+    },
+    {
+      "plant": "L3",
+      "title": "Imperial gasket broke \u2014 piece missing into pistons",
+      "summary": "Nozzle plate gasket pulled into pistons during assembly; piece missing, QA inspected and confirmed remainder accounts for all but one small piece.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-17T07:38:27.942Z"
+      },
+      "status": "Resolved \u2014 missing piece cut from original gasket and tested 5x through metal detector, detected each time; confident it will be caught if in product."
+    },
+    {
+      "plant": "L3",
+      "title": "Non-detectable gaskets found in maintenance stock",
+      "summary": "QA sorting through ML1 gasket bag after break event found mixed stock \u2014 some gaskets do not pass metal detector.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-09-17T12:21:39.32Z"
+      },
+      "status": "Resolved \u2014 detectable gaskets separated and given to line; non-detectable gaskets held by QA."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "Inaccurate checkweigher \u2014 previous pallets under review",
+      "summary": "ML2 case scale discovered not accurate; portable scale moved to line, QA checking previous pallets to determine if rework needed based on pallet weight.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-09-17T11:01:41.799Z"
+      },
+      "status": "Resolved \u2014 scale leveled by maintenance and now reading accurately; QA reviewing historical pallets."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Cavanna #4 allergen test failure during cleaning",
+      "summary": "Metal area where film enters on Cavanna #4 failed allergen verification; operator re-cleaned and passed on second test.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-16T21:13:28.236Z"
+      },
+      "status": "Resolved \u2014 area re-cleaned, passed allergen test at 22:40, released back to production."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding zip tie inspection/accountability to decorator pipe cleaning checklist \u2014 today's piece on salt magnet was not detected by metal detector and maintenance confirmed similar fasteners used during pipe work."
+    },
+    {
+      "plant": "L1",
+      "text": "Review MM3 printer fault recovery procedure \u2014 printer froze twice in 24 hours, resetting to wrong recipe each time; second event put 41 pallets on hold."
+    },
+    {
+      "plant": "L2",
+      "text": "Add checkweigher accuracy verification to ML2 startup checklist \u2014 inaccurate scale discovered mid-shift, requiring pallet review."
+    },
+    {
+      "plant": "L3",
+      "text": "Review metal-detectable part verification at receiving \u2014 maintenance bag contained mixed gaskets, some non-detectable; supplier QA or incoming inspection gap."
+    }
+  ]
+}
