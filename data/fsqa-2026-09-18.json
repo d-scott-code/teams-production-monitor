@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-18",
+  "headline": {
+    "eyebrow": "Labeling error",
+    "text": "L3 Matrix pouches ran with *wrong lot code* for unknown duration \u2014 piece code used instead of date code."
+  },
+  "summary": "One traceability gap at L3 Matrix, one contamination-exposure event at L3 ML4 (tote scrap instructed), and one metal-detector operational issue at L1 S2 (nuisance rejects, not detection failure).",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 metal detector nuisance rejects \u2014 salt blower interference",
+      "summary": "Metal detector read test cards correctly but opened constantly during production; Caleb York adjusted salt blower air valve to resolve.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-09-17T22:42:06.610Z"
+      },
+      "status": "Resolved on shift \u2014 air valve partially closed, detector functioning correctly after adjustment."
+    },
+    {
+      "plant": "L3",
+      "title": "Punctured chocolate tote \u2014 exposed product",
+      "summary": "Angel Cabrera flagged a new tote with punctured liner exposing the bottom chocolate layer; instructed third shift to scrap the exposed portion when reached.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-09-17T19:29:05.992Z"
+      },
+      "status": "Resolved on shift \u2014 scrap instruction issued, no confirmation of completion in window."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 gondola sync failures \u2014 repeated broken bars",
+      "summary": "Gondola belt repeatedly jammed and became unsynced with infeed conveyor, breaking bars throughout third shift; maintenance troubleshot 04:47\u201306:48.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-18T10:47:27.605Z"
+      },
+      "status": "Investigation ongoing \u2014 Kavin Ayala and Nelson Cook still troubleshooting at window close (06:48)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor mass-supply alarm bypassed",
+      "summary": "Depositor 1 mass supply A minimum value found set to 0%, allowing hopper to run empty without fault; Shawn Jewkes flagged, corrected to 10%.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-18T11:06:57.952Z"
+      },
+      "status": "Resolved \u2014 QA reset value to 10% and confirmed with team."
+    },
+    {
+      "plant": "L2",
+      "title": "Grinding scrap not logged in safety chain",
+      "summary": "Haydee Hidalgo flagged that scrap was not reported in safety chain, no details on quantity or root cause.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Haydee Hidalgo Gonzales",
+        "time_utc": "2026-09-18T12:18:49.675Z"
+      },
+      "status": "Open \u2014 management notified, no resolution confirmed."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "Matrix pouches printed with incorrect lot code",
+      "summary": "Matrix line ran pouches with piece lot code instead of current date lot code; Nathan Gevenois confirmed error at 04:05, unknown run duration or quantity affected.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-18T01:33:45.066Z"
+      },
+      "status": "Open \u2014 error confirmed by supervisor, no disposition or hold action documented in window."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S2 metal-detector checklist to include salt-blower air-valve position \u2014 today's nuisance rejects resolved by valve adjustment, suggesting drift over time."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding lot-code verification to Matrix startup checklist \u2014 today's wrong-code event ran for unknown duration before QA caught it."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 gondola preventive maintenance schedule \u2014 repeated belt-sync failures and jams echo chronic issues flagged earlier this month."
+    }
+  ]
+}

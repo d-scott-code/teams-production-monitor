@@ -1,0 +1,258 @@
+{
+  "date": "2026-09-18",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 gondola was down *5+ hours* on a belt-sync fault \u2014 maintenance still troubleshooting at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran all three Sollich lines but hit a 26-minute tray outage on S2 mid-shift that cleared when the truck arrived. S2 also lost 90 minutes in the morning to a Cavanna 3 printer fault that Troy traced to a disabled recipe setting. S3 took two planned CILT stops for roller cleaning, both under 30 minutes.",
+    "L2": "L2 ran ML3 and grinding with no line breaks. One roof leak flagged in the GMP area during rain, bucket placed. Scrap entry missed in safety chain on grinding.",
+    "L3": "L3 ML4 lost over 5 hours to a gondola belt-sync fault starting at 04:47 that caused bars to break at infeed \u2014 Kavin and Nelson worked it through first shift with no clear resolution by 11:05. ML1 had two dosing-block clogs that cleared inside 30 minutes total and a buffer-tank temp issue that needed a new control unit but resolved. MF Matrix pouching line is skipping product dumps on 50%+ of pouches due to a vacuum-seal trigger fault, still live at window close. Truffle line paused 105 minutes overnight to refill a low buffer tank."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Ethan secured 24 pallets of item 40694-V2 trays for delivery today and a full truckload Monday to cover the rest of September."
+    },
+    {
+      "plant": "L1",
+      "text": "Multiple roof and window leaks reported during rain \u2014 two ceiling leaks by S1, water under roll-up door, and bay-door window seals failing."
+    },
+    {
+      "plant": "L3",
+      "text": "Warehouse roof leaking in aisles 5 and 7, pallets moved, roofers to be contacted."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 ran out of trays mid-shift",
+      "summary": "S2 line stopped at 17:53 when item 40694-V2 trays ran out \u2014 truck with resupply was en route from SV.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-09-17T23:53:25.338Z"
+      },
+      "resolution": "Trays arrived at 18:15, unloaded, and line restarted at 18:40. Downtime 26 minutes (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Cavanna 3 printer not printing",
+      "summary": "Cavanna 3 printer stopped working during Bucees setup at 05:54, maintenance and Troy troubleshooting through morning.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-18T08:58:56.927Z"
+      },
+      "resolution": "Cleared at 07:47 \u2014 Troy found printer disabled in recipe settings, re-enabled. \"Cavanna printer is working now\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 CILT roller cleaning stops",
+      "summary": "Planned downtime for CILT cleaning on rollers at start of tunnel 1, marshmallow area, and tracking roller.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Topham",
+        "time_utc": "2026-09-18T16:20:50.764Z"
+      },
+      "resolution": "All rollers cleaned and reinstalled by 10:47. \"Line should be back up shortly\" (Nathan Topham). Total downtime under 30 minutes."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 buffer tank temperature controller failure",
+      "summary": "Buffer tank setpoint at 55 would not rise, blocking tempering \u2014 maintenance replaced the temperature control unit.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-17T23:38:03.774Z"
+      },
+      "resolution": "Nathan Ruiz installed new temperature control unit at 09:35, temperature climbing normally. Confirmed good at 09:38."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 conveyor belt ripped and fraying",
+      "summary": "270 belt on TG5 ripped and fraying on north side at 18:01, line stopped for replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-18T00:01:29.761Z"
+      },
+      "resolution": "Belt replaced by 20:09 \u2014 \"TG5 belt was replaced we are starting it up now\" (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line buffer tank empty due to melting tank temperature",
+      "summary": "Buffer tank at 10% at 00:07, melting tank too cold to stir or send chocolate, line paused to refill.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-18T06:07:52.724Z"
+      },
+      "resolution": "Line stopped at 00:20, started filling buffer tank at 01:25, line restarted at 03:00. Total downtime 105 minutes."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M3 belt stopping intermittently",
+      "summary": "M3 conveyor belt kept stopping, maintenance called for adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-18T02:20:12.848Z"
+      },
+      "resolution": "Maintenance made adjustment, belt running again. Confirmed by Tyson Fausett and Bojana McLeod."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 return pump breaker tripped",
+      "summary": "Return pump faulted at 00:38, pipes warm, pump not running \u2014 safety concern for overfill.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-18T06:38:38.066Z"
+      },
+      "resolution": "Kavin Ayala found breaker tripped at 01:17, reset and pump running. Sensor had chocolate covering it, cleaned."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 dosing block clogs, two occurrences",
+      "summary": "Dosing block clogged at 02:48, cleared and restarted, then clogged again at 03:17 requiring 16-minute stop.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-18T08:48:17.845Z"
+      },
+      "resolution": "First clog cleared by 03:05, second cleared by 03:56. Line back up and running at 03:56 (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 molds not demolding at startup",
+      "summary": "25 molds failed to demold at 04:57, likely due to mold temperature at deposit start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-18T10:57:35.4Z"
+      },
+      "resolution": "Cleared at 05:09 \u2014 \"Had 25 molds not demolding back running again\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt guide rail bracket failure",
+      "summary": "C6 conveyor belt repeatedly moved off-center triggering alarms throughout the shift due to damaged guide rail bracket.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-18T13:15:43.544Z"
+      },
+      "resolution": "Nathan Ruiz repaired and reinstalled C6 guide rail bracket at 07:37. Belt centered and running well by 11:05 (Molding Line 1 Flow-Wrap)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 plow belt faulting and areas need re-cleaning",
+      "summary": "Plow belt faulting during Bucees setup at 05:54, plus chicana band had unknown bag and label, several areas needed re-cleaning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-18T11:54:42.016Z"
+      },
+      "status": "Product paused in tunnels at 05:54 while maintenance works on plow belt and areas re-cleaned. Printer issue resolved separately by 07:47."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 trays low inventory through weekend",
+      "summary": "Item 40694-V2 trays at 4,820 count, need 8,180 more to cover Saturday 19th through Friday 25th \u2014 delivery scheduled but tight window.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-09-18T16:11:15.627Z"
+      },
+      "status": "Ethan secured 24 pallets (6,720 trays) arriving today to cover weekend and Monday, plus FTL Monday 7:30 AM for rest of month. Short-term risk if weekend volume spikes."
+    },
+    {
+      "plant": "L2",
+      "title": "GMP area roof leak during rain",
+      "summary": "Water leaking through GMP area roof when raining \u2014 bucket placed to catch water.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-09-18T16:10:38.115Z"
+      },
+      "status": "Alan Todd notified at 10:10, Dave Ruff and William Lopez to inspect this afternoon (10:33 William confirmed)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pouching machine skipping 50%+ product dumps",
+      "summary": "Pouch machine not coordinating correctly \u2014 vacuum seal not triggering, causing pouches to open but not fill. Running at reduced speed (38-40 ppm) with high scrap rate.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-18T03:58:06.958Z"
+      },
+      "status": "Troy Baxter on-site troubleshooting as of 08:49. Physical alignment and setup good but vacuum seal not triggering dump. Slowed to 38 ppm, still missing pouches. Last update 10:43: \"Did maintenance have any input on the vacuum pump not triggering?\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola belt unsynced with conveyor, breaking bars",
+      "summary": "Gondola infeed belt became misaligned with conveyor at 04:47 causing continuous jams and broken bars \u2014 Kavin and Nelson troubleshooting through first shift with no resolution.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-18T10:47:27.605Z"
+      },
+      "status": "Line down since 04:47, ran intermittently with jams. Maintenance (Kavin, Nelson) still working at 06:36. CIL cleaning performed during downtime. No clear fix by window close at 11:05."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line wire belt turns on instead of off during reheat",
+      "summary": "Bottomer reheat setting inverted \u2014 turns wire belt on when it should turn off.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-18T10:46:56.234Z"
+      },
+      "status": "Reported at 04:46 with photo. No follow-up on fix attempt by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 centerline out of date, mass supply alarm disabled",
+      "summary": "Third shift using outdated centerline for depositor 1 \u2014 mass supply A minimum value set to 0%, disabling low-hopper alarm (safety issue).",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-18T11:00:09.961Z"
+      },
+      "status": "Shawn flagged at 05:00. Operator changed mass supply A min back to 10% at 05:15. Kimberly printing correct centerline to show differences."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line changeover delayed \u2014 no clean towels, loose hardware",
+      "summary": "Line stopped for changeover at 04:10 but found dirty, no clean towels available, multiple loose screws discovered during inspection.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-18T11:37:12.452Z"
+      },
+      "status": "Cleaning started 04:25 but only dishwash parts cleaned as of 05:37 due to no towels. Raoul confirmed limited rags available at 05:46. Safety meeting and LOTO completed, cleaning in progress at window close. Goal to start by 12:30."
+    }
+  ]
+}
