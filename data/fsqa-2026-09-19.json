@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-19",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L1 S1 Tunnel 1 belt frayed into product \u2014 cereal bed cleared, *no belt fragments* found in packed product after secondary inspection."
+  },
+  "summary": "One active hold at L1 S3 for product packaged without tie sheets. Belt fraying at L1 S1 triggered cereal bed removal; no foreign material found downstream. L3 ML4 overnight cleaning uncovered a damaged scraper left behind depositor and a frayed TG-3 belt flagged for replacement.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S3 product held \u2014 no tie sheets",
+      "summary": "Die Cut Tie Sheets exhausted mid-shift; QA placed all product packaged without tie sheets on hold pending Monday delivery.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-09-19T16:18:17.628Z"
+      },
+      "status": "On hold pending tie sheet arrival Monday and rework."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S1 Tunnel 1 belt fraying \u2014 cereal bed cleared",
+      "summary": "Belt frays observed at Tunnel 1 exit at 18:25; team stopped line, cleared cereal bed from tunnel, passed all Tunnel 2 and downstream product \u2014 no frays found in packed pouches.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-19T01:27:11.284Z"
+      },
+      "status": "Resolved \u2014 cereal bed discarded, all downstream product inspected and released."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 damaged scraper left in WDS area",
+      "summary": "3rd shift found a metal scraper component left behind depositor during teardown; flagged to 1st shift for removal and coaching.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-19T00:33:36.54Z"
+      },
+      "status": "Resolved \u2014 item removed; shift coached on teardown protocol."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG-3 belt fraying observed",
+      "summary": "QA flagged frayed TG-3 curved belt during 2nd shift inspection; team replaced belt, ATP passed, and flagged second frayed belt for replacement at next cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-09-19T01:38:50.148Z"
+      },
+      "status": "Resolved \u2014 first belt replaced; second belt flagged for Monday clean replacement."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 lot code error \u2014 2 pallets reworked",
+      "summary": "Packing area changed to wrong lot code and date; 2 pallets flagged and being reworked to correct labeling.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-19T06:31:37.374Z"
+      },
+      "status": "Open \u2014 2 pallets in rework queue."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 soft caramel at startup",
+      "summary": "First tunnel batch came out soft; team removed ~1 cover worth, subsequent product met consistency spec.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-18T20:15:11.774Z"
+      },
+      "status": "Resolved \u2014 startup product discarded, line stabilized."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 checkweigher high reject rate",
+      "summary": "Checkweigher rejected many pouches overnight; maintenance verified scale accuracy, rejects confirmed as true over/underweight.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-19T03:28:54.349Z"
+      },
+      "status": "Resolved \u2014 checkweigher accurate, upstream dosing variability addressed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 blooming product at demold",
+      "summary": "Product bloomed after sitting in cooling cabinets overnight from 3rd shift downtime; team pulled bloomed bars, resumed with fresh product meeting spec.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-18T21:03:24.012Z"
+      },
+      "status": "Resolved \u2014 bloomed product removed, line resumed within spec."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding belt-edge inspection to Tunnel 1 startup checklist \u2014 today's fraying event and visual checks every 30 minutes caught buildup before it reached product."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 cleaning teardown shadow board or checklist \u2014 the scraper left behind WDS and previous similar incidents suggest a tool-accountability gap."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding TG belt condition to ML4 pre-shift or cleaning inspection \u2014 two frayed belts flagged within 24 hours suggest wear pattern worth monitoring."
+    }
+  ]
+}

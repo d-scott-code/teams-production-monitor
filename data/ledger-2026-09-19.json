@@ -1,0 +1,209 @@
+{
+  "date": "2026-09-19",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 theegarten wrapper TG4 down *8+ hours* on belt and motor issues \u2014 still not running at window close."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran all shift with a kettle valve workaround and a tie-sheet shortage that required QA hold workaround by 10:18. Sollich 1 found belt frays at 19:27, cleared tunnels, and restarted by 19:42. Sollich 2 and 4 ran steady after brief fixes.",
+    "L2": "No production activity in the last 24 hours. FFS, ML2, and grinding lines completed level 2 and level 4 weekend cleaning.",
+    "L3": "ML1 started 90 minutes late due to 3rd shift temper mode confusion, cleared by 09:01. ML4 had recurring gondola jams and broken bars all day causing multiple stops; TG3 belt replaced and back by 18:03, but TG4 went down at 02:08 and remained down through window close despite motor swap. Truffle line finished CPK run with 30 bins of flow-wrap scrap, then found sweco clamp and scraper motor damage during clean."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 tunnel 1 belt fraying, foreign material stop",
+      "summary": "String from tunnel 1 belt found in cross-conveyor at 19:11, line stopped to clear cereal bed from both tunnels.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-19T01:11:20.449Z"
+      },
+      "resolution": "All product from tunnel 2 and accumulation passed, tunnels cleared, line restarted at 19:42 (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 soft caramel exiting tunnel, first 2nd shift batch",
+      "summary": "First cover of caramel from tunnel came out too soft at 14:15, weights 10.8\u201311.3g against spec.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-18T20:15:11.774Z"
+      },
+      "resolution": "Removed one cover of soft product, subsequent caramel \"came out with better consistency and texture\" at 14:52 (Nathan Topham)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Cavanna 3 wrapper alarm, 3rd shift",
+      "summary": "Cavanna 3 flow wrapper threw alarm at 22:51, only Cavanna 4 running, accumulation hit 19 containers.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-09-19T04:51:32.838Z"
+      },
+      "resolution": "Maintenance cleared fault, line finished SRS order with 24k pieces remaining by 23:21 (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 curved belt broke during 2nd shift",
+      "summary": "Theegarten 3 conveyor belt on curve section failed, line stopped at 16:52.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-18T22:50:33.528Z"
+      },
+      "resolution": "New belt installed, ATP passed, TG3 running at 18:03 (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam after cooling cabinet 1",
+      "summary": "Molds jammed exiting first cooling cabinet shortly after 13:07 startup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-18T19:18:12.129Z"
+      },
+      "resolution": "Cleared and running again at 13:23 (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 3 HMI screen froze, line down 35 minutes",
+      "summary": "Depositor 3 touchscreen unresponsive during 3rd shift capture test, full line stop.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-19T04:34:41.978Z"
+      },
+      "resolution": "HMI reset, operator cleaned crucial areas, depositing at 23:09 (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle melting tank level sensor showing false 92% reading",
+      "summary": "New melting tank HMI incorrectly displayed Morcos tank at 92%, blocking chocolate transfer to buffer.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-19T12:46:13.07Z"
+      },
+      "resolution": "Nathan Ruiz recalibrated level sensor at 08:45, tank filling properly, chocolate pushed to buffer by 08:58."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper placed in melting mode by 3rd shift, line delayed 90 minutes",
+      "summary": "3rd shift put temper in melting when they should have only purged chocolate, causing 1st shift to wait on temper and hopper temps before running.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-19T13:43:45.899Z"
+      },
+      "resolution": "Line running at 09:01 after temper slope, capture test, and weight checks passed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sensor B150 rejecting product",
+      "summary": "Metal detector sensitivity out of calibration, rejecting good product.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-19T16:18:12.4Z"
+      },
+      "resolution": "Cleared at 10:27 \u2014 \"Sensitivity needed minor adjustment it was not detecting product\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 long belt fault, brief stop on 3rd shift",
+      "summary": "Long belt tripped fault at 00:39, cause not specified in messages.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-19T06:39:36.113Z"
+      },
+      "resolution": "Line back up at 00:46 (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 kettle C2 drain valve not opening in auto mode",
+      "summary": "At shift start 02:26, HMI showed caramel draining to reserve tank but no flow observed; had to switch to manual, worked after two tries.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-19T08:26:55.724Z"
+      },
+      "status": "Maintenance troubleshooting to determine root cause as of 02:26; no resolution posted by end of window."
+    },
+    {
+      "plant": "L1",
+      "title": "Die cut tie sheets (40746) shortage across L1 and L3",
+      "summary": "S3 down to partial pallet at 07:50, will last half of 1st shift; L3 also out of stock per 03:49 Ricardo check.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-19T13:02:08.179Z"
+      },
+      "status": "Justin approved continuing S3 production with QA hold on product without tie sheets as of 10:18; vendor delivery expected Monday per Ethan 21:49."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jamming and kicking out broken bars since 1st shift startup",
+      "summary": "Gondola repeatedly jamming at entrance and exit, breaking bars or kicking them to floor; issue persisted through all three shifts with multiple monitoring and clearing actions.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-18T19:35:30.953Z"
+      },
+      "status": "Operators monitoring and pulling broken bars at multiple stations; Nelson and Chad planning chain adjustment Sunday; TG5 reporting constant jams from damaged chocolate as of 06:29 (ML4 TG)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 theegarten TG4 down since 02:08, belt stopping intermittently",
+      "summary": "TG4 conveyor belt stops randomly while machine running, causing chocolate jams; motors swapped at 07:19 but cutting function then lost.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-19T08:08:18.712Z"
+      },
+      "status": "Still down at 10:40 window close; maintenance working intermittently, left to address other areas per 05:27 update (ML4 WDS)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle sweco clamp damaged during cleaning, assembly blocked",
+      "summary": "Over-tightening during previous operation damaged sweco clamp; discovered when disassembling for level 2 clean at 06:33.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-19T12:33:05.95Z"
+      },
+      "status": "Sweco cleaned and ready to reassemble but waiting on clamp repair; maintenance to address when available per 06:33 message."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle tunnel 1 discharge scraper motor damaged during cleaning",
+      "summary": "Motor housing on scraper to tunnel 1 damaged while team was cleaning, preventing motor from being closed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-19T12:38:24.141Z"
+      },
+      "status": "Nathan Ruiz working on scraper as of 09:00 per Itzel; no completion posted by window close."
+    }
+  ]
+}
