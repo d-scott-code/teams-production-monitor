@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-20",
+  "headline": {
+    "eyebrow": "Sanitation gap",
+    "text": "ML4 gondola cleaning incomplete \u2014 fault prevented full rotation, some parts *uncleaned* at shift close."
+  },
+  "summary": "Two sanitation gaps on L3 ML4: gondola fault left portions uncleaned, depositors 1 & 4 tops skipped by shutdown crew. L3 ML1 worn C7 cleaning-roller replaced \u2014 potential debris risk caught during belt inspection.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Worn cleaning roller replaced on ML1",
+      "summary": "C7 roller on cleaning belt found worn during inspection at 15:42; maintenance replaced immediately \u2014 worn roller could shed debris into product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-19T21:42:29.464Z"
+      },
+      "status": "Resolved \u2014 new roller installed at 15:45, belt running satisfactory."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "MM3 printer freeze on S3",
+      "summary": "Printer froze at 17:27, operator stopped immediately; reset completed and QA verified lot code and BBD before resuming.",
+      "severity": "low",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-20T00:02:30.52Z"
+      },
+      "status": "Resolved \u2014 printer operational, lot code verification passed."
+    },
+    {
+      "plant": "L3",
+      "title": "Damaged mold caught before use on ML1",
+      "summary": "Operator noticed damage on mold during pre-use inspection at 16:52; mold discarded and IMS notified to remove from system.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-19T22:52:20.234Z"
+      },
+      "status": "Resolved \u2014 mold removed from service, system updated."
+    },
+    {
+      "plant": "L3",
+      "title": "Hopper sensor damaged during overnight cleaning on ML1",
+      "summary": "Sensor damaged during overnight disassembly, replaced by maintenance; sensitivity may require adjustment for correct operation.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-09-20T13:39:51.33Z"
+      },
+      "status": "Resolved \u2014 new sensor installed, sensitivity flagged for startup verification."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 depositors 1 & 4 tops not cleaned by shutdown crew",
+      "summary": "Second shift found depositor tops skipped during first shift shutdown; these surfaces should be cleaned by the crew that shuts down.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-20T00:48:01.4Z"
+      },
+      "status": "Flagged to Quality Managers for crew follow-up Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola cleaning incomplete due to fault",
+      "summary": "Machine fault during level 2 clean prevented full slat rotation at 04:37; QA reports gondola not cleaned in entirety, some parts left uncleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-20T10:37:27.601Z"
+      },
+      "status": "Open \u2014 fault unresolved at window close, gondola clean incomplete for startup."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding cleaning-roller condition check to ML1 belt inspection startup checklist \u2014 today's worn C7 roller caught during cleaning may indicate wear pattern worth monitoring."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 shutdown checklist execution with first shift \u2014 depositors 1 & 4 tops were skipped, and electrical cabinets were opened/turned off without handoff, delaying second shift startup."
+    }
+  ]
+}

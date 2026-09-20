@@ -1,0 +1,173 @@
+{
+  "date": "2026-09-20",
+  "headline": {
+    "eyebrow": "L3 machine day",
+    "text": "L3 cleared *two P1 outages* on ML4 but gondola rotation fault left cleaning incomplete \u2014 glycol leak and 3 other machine issues still open"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran caramel cluster through day shift, paused twice for buffer tank refills and tray shortages. Finished production at 19:00 and began level 4 clean. Sollich 4 completed level 2 clean. Sollich 1 showing e-stop alarms that can't be located or reset as of 07:17.",
+    "L2": "No production activity. New work order issued for Monday's run on ML2.",
+    "L3": "ML4 went down at 14:53 for TG3 power loss and WDS communication errors \u2014 both cleared by 16:46. ML1 ran bars all shift with a clog that cleared in 69 minutes. Level 2 cleans completed on ML1 and ML4, but gondola rotation fault left ML4 incomplete. Tempering unit glycol leak, hopper sensor needing calibration, splitter shock replacement, and Truffle tank heating issue all unresolved."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "MM3 printer froze mid-shift",
+      "summary": "Operator stopped using the printer at 17:27, printer reset and BBD/lot-code verified good by 18:08.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-20T00:02:30.52Z"
+      },
+      "resolution": "Cleared at 18:08 \u2014 \"MM3 printer is good again\" (William Beattie)."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 not powering on",
+      "summary": "TG3 showed no power at 14:53, only half the cabinet getting power, blocking cleaning start.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-19T20:52:49.283Z"
+      },
+      "resolution": "Cleared at 16:45 \u2014 \"Maintenance found a bad transformer in TG3. They replaced it and it is up and running\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "WDS communication errors blocking deposit 2 cleaning",
+      "summary": "Communication errors on mold exchange, cold stamp, and depositor 3 screens at 15:34, couldn't reset E-stop or open piston arms.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-19T21:34:02.338Z"
+      },
+      "resolution": "Cleared at 16:46 \u2014 \"Efrain was able to reset the servo and the WDS is now working properly. We will start cleaning deposit 2\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 clog",
+      "summary": "Clog reported at 17:48, line stopped for clearing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-19T23:48:13.486Z"
+      },
+      "resolution": "Cleared at 18:57 \u2014 \"Clog is gone and we are running again\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle sweco ring bent edges",
+      "summary": "Sweco ring edges bent, blocking proper operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-19T17:59:42.184Z"
+      },
+      "resolution": "Cleared at 12:48 \u2014 \"Rings are back on. Bent edges were straightened out by the power of a hammer and a crescent wrench\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 worn belt",
+      "summary": "Worn belt found during ML4 cleaning inspection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-19T19:51:49.075Z"
+      },
+      "resolution": "Cleared at 13:51 \u2014 \"Worn belt was replaced with a new one on TG3\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "C7 roller worn out on ML1",
+      "summary": "Belt check found C7 roller worn, maintenance notified at 15:42, new roller installed by 15:45.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-19T21:42:29.464Z"
+      },
+      "resolution": "Cleared at 15:45 \u2014 \"C7 got new roller\" (Molding Line 1 Flow-Wrap)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 e-stop alarms showing but can't be cleared",
+      "summary": "Multiple emergency stop alarms visible on screen but no physical e-stops found that need resetting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-20T13:17:07.723Z"
+      },
+      "status": "Reported at 07:17, no resolution as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Sollich tank not heating above 32\u00b0F",
+      "summary": "Tank not reaching melt temperature, Nathan assigned to investigate after sweco ring repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-19T18:00:20.938Z"
+      },
+      "status": "Flagged at 12:00 for Nathan to check after sweco work, no resolution posted as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 tempering unit leaking glycol",
+      "summary": "Glycol leak discovered on tempering unit at 16:23, maintenance contacted immediately.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-19T22:23:41.128Z"
+      },
+      "status": "Maintenance contacted at 16:23, no resolution posted as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola rotation fault left cleaning incomplete",
+      "summary": "Gondola clean paused at 04:37 due to fault preventing slat rotation, ATP passed but not all parts cleaned.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-20T10:37:27.601Z"
+      },
+      "status": "Fault active as of 06:06, gondola passed visual and ATP but Quality noted machine was not fully operated and some parts remained uncleaned."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 splitter enclosure shock bent, no replacement in stock",
+      "summary": "Bent shock discovered on splitter enclosure, maintenance searched for replacement with no success.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-20T13:10:38.855Z"
+      },
+      "status": "Kavin working on it as of 07:10, reported at 07:29 couldn't find replacement, checking with Nelson Cook."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 hopper sensor replaced, may need sensitivity adjustment",
+      "summary": "Sensor damaged during hopper disassembly overnight, new sensor installed but sensitivity may need tuning for correct operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-09-20T13:39:51.33Z"
+      },
+      "status": "New sensor installed, flagged at 07:39 that sensitivity may need adjustment to run correctly."
+    }
+  ]
+}
