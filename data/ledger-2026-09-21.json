@@ -1,0 +1,278 @@
+{
+  "date": "2026-09-21",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 1 lost *6 hours* to a broken pump coupler and frozen return line \u2014 back online at 12:17"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 1 had a rough startup with emergency-stop alarms and a broken pump coupler that kept the line down until 12:17. Sollich 4 ran a caustic clean after finding black specs in caramel, restarted cooking at 09:33. Sollich 2 is still manually loading product to Matrix due to a failed C13 motor.",
+    "L2": "ML2 and ML3 ran mostly clean with quick film stops and centerline adjustments. ML2's dancing arm bolt is slightly bent and vibrating but will hold until the next CIL. FFS completed a level 4 allergen clean.",
+    "L3": "ML4 had early chiller and mold jam issues, all cleared by mid-shift, then gondola lost tracking at 09:07 and dumped product \u2014 back running at 10:32. ML1's C6 belt keeps drifting despite multiple fixes. Truffle Line started at 07:50 after fixing a frozen riser pump and swapping a spreading table belt strip."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "10 pallets of s'mores trays arrived from Flexpak at 08:54, enough for 20 hours \u2014 full truck delivering to SV at 11:00."
+    },
+    {
+      "plant": "L1",
+      "text": "Favorite Day Pecan clusters tomorrow will start with 40666-V1 labels, then switch to V2 when V1 runs out."
+    },
+    {
+      "plant": "L2",
+      "text": "L1 borrowed a 30-inch sweco screen; L2 has one spare left and three more on order."
+    },
+    {
+      "plant": "L3",
+      "text": "Chad Stone documented extensive WDS and gondola cleaning issues from prior shift in a detailed message at 14:39."
+    },
+    {
+      "plant": "L3",
+      "text": "MF Matrix running with 8 operators instead of 10 due to callouts, speed reduced to 39."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 broken pump coupler and frozen return line",
+      "summary": "Coupler in the sweco pump broke and return pipe to buffer tank clogged with solid chocolate, blocking tempering and preventing line start for over 6 hours.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-09-21T11:15:38.557Z"
+      },
+      "resolution": "Coupler replaced by 10:02, then frozen pipe torched and gasket changed at 11:19 \u2014 started tempering at 11:20 and depositing at 12:17."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 black specs in caramel requiring caustic clean",
+      "summary": "Kitchen found widespread black contamination in reserve and tunnel caramel; kettles were dirty enough to require a full caustic clean mid-shift.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-21T12:59:12.073Z"
+      },
+      "resolution": "Caustic clean completed by 09:29, kettles inspected and approved, cooking restarted at 09:33."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 Conbar lower cooling drum fault",
+      "summary": "Lower cooling drum faulted, blocking line run while waiting for maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-21T17:05:25.492Z"
+      },
+      "resolution": "E-stop on HMI by Conbar was pressed; cleared and line running at 11:38."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film jam at wrapper",
+      "summary": "Line stopped due to film problem at forming plate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-21T17:21:40.915Z"
+      },
+      "resolution": "Cleared and running again at 11:29, about 8 minutes of downtime."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 piston torque out of centerline",
+      "summary": "Piston A and B percentages were running at 200% instead of the 150% centerline target.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-09-21T14:35:49.221Z"
+      },
+      "resolution": "Adjusted to 150% and posted updated centerlines at 08:44."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola lost tracking and dumped bars",
+      "summary": "Gondola lost all tray tracking at 09:07 and began dumping chocolate bars; crew manually pulled product into bins to save it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-21T15:07:02.496Z"
+      },
+      "resolution": "Gondola cleared, TG issues resolved by Chad at 10:31 \u2014 WDS restarted at 10:32."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line riser pump frozen",
+      "summary": "Riser pump would not turn on due to frozen chocolate blocking circulation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-21T11:06:29.425Z"
+      },
+      "resolution": "Installed reheat mode at 05:32, pump running at 05:03."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line hose league near failure",
+      "summary": "One of the enrober hose connections was about to break and leaking.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-21T11:17:46.928Z"
+      },
+      "resolution": "Nathan trimmed hose and replaced worn clamp at 05:47 \u2014 severe leak resolved."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chiller 2 motor tripped",
+      "summary": "Stamp cooling chiller kept faulting out, blocking depositing startup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-21T12:01:39.394Z"
+      },
+      "resolution": "Nathan found tripped motor at 06:05, reset and circulating good \u2014 depositing resumed at 06:19."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam on cooling cabinet 2",
+      "summary": "Mold jammed on upper level of cabinet 2 during startup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-21T12:33:14.721Z"
+      },
+      "resolution": "Nelson and Juan cleared jam, running at 06:45."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line spreading table belt strip came loose",
+      "summary": "One belt strip on the spreading table came loose and was hanging underneath the machine, affecting chocolate lane alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-21T14:18:13.962Z"
+      },
+      "resolution": "Nathan brought replacement strip, cleaned and ATP-tested at 09:54, installed and running."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 2 jaws not cutting correctly",
+      "summary": "Cavanna 2 wrapper jaws were not cutting film cleanly, creating packaging defects.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-21T14:46:56.308Z"
+      },
+      "resolution": "Nathan added shims to all 3 blades at 10:42 \u2014 cutting issues resolved."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna tooth fell out",
+      "summary": "A tooth broke off at the Cavanna wrapper.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-21T15:27:19.323Z"
+      },
+      "resolution": "Pivot in the unit was damaged, Nathan replaced it by 10:01."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam post-restart",
+      "summary": "Brief mold jam after gondola restart.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 2",
+        "time_utc": "2026-09-21T17:02:14.887Z"
+      },
+      "resolution": "Fixed at 11:04, 2 minutes of downtime."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 C13 belt motor failed",
+      "summary": "C13 motor is extremely hot and faulted; belts 10, 11, and 12 are not running, forcing crew to manually load product to Matrix lines.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-09-21T12:51:27.075Z"
+      },
+      "status": "Motor identified as failed at 10:17, maintenance working to replace it as of last update at 10:17."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 flow-wrap rollers loose and shifting",
+      "summary": "Flow-wrap rollers are loose and shifting sideways, causing silver wraps and open seals that result in product buildup and scrap.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-21T15:48:41.438Z"
+      },
+      "status": "Reported at 09:48, no maintenance response posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 label mismatch in system",
+      "summary": "Production BOM shows 22-pound labels but line is running 25-pound product; label view displaying wrong weight.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-21T18:33:59.276Z"
+      },
+      "status": "Escalated to Charity and Mary at 12:33, no resolution posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 dancing arm bolt bent",
+      "summary": "Dancing arm bolt is slightly bent and causing rollers to vibrate, especially during splicing to a new roll.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-21T18:30:40.934Z"
+      },
+      "status": "Running with vibration; maintenance will replace bolt during next CIL per plan at 12:30."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt drifting to north side",
+      "summary": "C6 belt keeps moving north despite multiple centering attempts; caused by jams from doubles and bent guide rails.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-21T15:03:53.387Z"
+      },
+      "status": "Centered at 10:58, drifted again at 11:44 and 12:17 \u2014 maintenance in line as of 11:54 but still drifting by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line M3 belt tension too low",
+      "summary": "M3 and M4 separator belts have no tension, causing them to cut chocolate and forcing a line stop; 22 bins accumulated.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-21T15:13:01.478Z"
+      },
+      "status": "Line stopped at 09:13 with 22 bins backed up, Nathan and Chris called but were supporting ML4 and ML1 \u2014 separator turned off until maintenance can adjust tension per Shawn at 09:18."
+    }
+  ]
+}

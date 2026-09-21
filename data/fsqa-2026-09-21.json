@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-21",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L1 S4 caramel scrapped on *black specs* \u2014 kettles caustic cleaned, plus three equipment-integrity flags across L1 and L3."
+  },
+  "summary": "Four food-safety events today: L1 S4 black specs in caramel required full scrap and caustic clean of kettles; L3 ML1 Cavanna tooth failure; L3 TL Spreading Table belt strip came loose mid-run; L1 S2 non-approved scissors removed from bottomer area. No active holds at window close.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Black specs in caramel \u2014 S4 product scrapped, kettles caustic cleaned",
+      "summary": "Production found black specs in caramel at depositor and reserve; all caramel drained from tunnel and reserve, kettles inspected and found dirty, caustic clean completed before resuming cook.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-21T12:59:12.073Z"
+      },
+      "status": "Resolved \u2014 kettles cleaned and ready to cook as of 09:29."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna tooth broke off at ML1",
+      "summary": "Equipment tooth fell out at Cavanna flow-wrap; maintenance replaced damaged pivot, line resumed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-21T15:27:19.323Z"
+      },
+      "status": "Resolved \u2014 pivot replaced, line running."
+    },
+    {
+      "plant": "L1",
+      "title": "Non-approved scissors removed from S2 bottomer area",
+      "summary": "Plant Standards walk found unapproved scissors in production zone at S2; immediately confiscated.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-09-21T15:23:17.355Z"
+      },
+      "status": "Resolved \u2014 scissors removed from line."
+    },
+    {
+      "plant": "L3",
+      "title": "Spreading Table belt strip came loose mid-run \u2014 Truffle Line",
+      "summary": "Belt strip detached and hung beneath Spreading Table; QA verified no FM concerns, crew manually guided chocolate lanes to finish Hershey order, then replaced belt strip after cleaning and ATP.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-21T14:18:13.962Z"
+      },
+      "status": "Resolved \u2014 replacement strip installed and ATP passed as of 09:54."
+    }
+  ],
+  "quality": [],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding kettle visual inspection to S4 pre-cook checklist \u2014 today's black specs traced to dirty kettles that passed into production."
+    },
+    {
+      "plant": "L3",
+      "text": "Review Cavanna and Spreading Table PM schedules \u2014 two separate equipment-part failures (tooth, belt strip) on ML1 and TL in one shift suggest wear inspection gaps."
+    }
+  ]
+}
