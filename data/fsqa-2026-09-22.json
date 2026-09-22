@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-22",
+  "headline": {
+    "eyebrow": "FM hold",
+    "text": "L1 S3 pecan lot on hold for *foreign material* \u2014 Level 1 screen found none, disposition pending from L3."
+  },
+  "summary": "One active hold: L1 S3 pecan (10024) isolated after FM flag. L2 FFS plastic fragment identified and removed from line; source confirmed as leftover from prior run. L1 S3 kitchen drain plugged with paper towels and mild caps.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Pecan 10024 on hold for FM",
+      "summary": "One pallet flagged for foreign material and placed on hold; Level 1 screen at 00:24 found no FM, awaiting L3 disposition.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ricardo Tovar",
+        "time_utc": "2026-09-22T06:06:12.883Z"
+      },
+      "status": "On hold pending QA disposition from L3."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "Plastic piece found near FFS product zone",
+      "summary": "Plastic fragment identified by Brandon Lance and Raymond Fleming as remnant from previous run; rest of pieces removed from overhead area and line pouches pulled.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-22T02:51:08.191Z"
+      },
+      "status": "Resolved \u2014 source identified, remaining pieces removed, affected pouches taken off line per Wilson confirmation at 03:03."
+    },
+    {
+      "plant": "L1",
+      "title": "Kitchen drain plugged with paper towels and caps",
+      "summary": "S3 kitchen operator found drain overflowing due to clump of paper towels and mild caps; cleared and coaching requested for proper waste disposal.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-22T13:47:35.254Z"
+      },
+      "status": "Resolved \u2014 drain cleared, teams reminded to use trash cans."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Wrong jars and lids staged for S3 job",
+      "summary": "Line leader noticed jars and lids on S3 did not match spec; correct lids not in building, awaiting trailer.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-22T13:17:58.788Z"
+      },
+      "status": "Open \u2014 staging error caught before use, waiting on correct lids."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade loose due to wrong bolt",
+      "summary": "3rd shift operator Fernando Flores found flow wrapper blade loose at cleaning; two bolts tight but wrong pattern used, corrected to proper bolt.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-09-22T04:57:50.284Z"
+      },
+      "status": "Resolved \u2014 proper bolt installed, blade verified tight at 01:12."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Shipping/receiving foot bath not working",
+      "summary": "Foot bath at shipping and receiving entrance reported non-functional.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Aubrey Howe",
+        "time_utc": "2026-09-21T21:53:47.336Z"
+      },
+      "status": "Open as of window close; no follow-up posted."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding packaging verification step to S3 pre-run checklist \u2014 today's wrong jar/lid staging was caught by line leader but spec mismatch should trigger earlier in staging process, based on event at 07:17."
+    },
+    {
+      "plant": "L2",
+      "text": "Review FFS blade torque procedure and tooling \u2014 loose blade at cleaning (wrong bolt pattern) suggests maintenance standard may not specify correct hardware, based on Fernando's 22:57 discovery."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider visual sweep protocol for overhead areas during changeovers \u2014 plastic piece from prior run found today echoes risk of leftover parts entering product zone, based on Brandon Lance event at 20:51."
+    }
+  ]
+}

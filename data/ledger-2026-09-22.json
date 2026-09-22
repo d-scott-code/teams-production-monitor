@@ -1,0 +1,362 @@
+{
+  "date": "2026-09-22",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 TG4 wrapper was down *9 hours* on chain sensor failure \u2014 cleared 08:14 when Nelson replaced sensor B1."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran through an internet outage and a 9-hour steamer valve repair on S3. S3 steam valve was installed backwards, causing pressure and temp issues \u2014 maintenance corrected it and cooking started 10:37. S1 had three quick stops (rollers, MD bin, depositor freeze) all cleared inside 15 minutes.",
+    "L2": "L2 ML2 fought film tears on the wrapper through 3rd shift \u2014 sensor, film lot, and tension adjustments brought it back by 00:12. FFS ran pouch centering tweaks and a 30-minute scale calibration mid-morning. Batch/expiration print still not legible as of 06:14.",
+    "L3": "L3 ML4 lost TG4 for 9 hours overnight when the chain sensor failed and bars jammed the infeed \u2014 Nelson swapped sensor B1 at 08:14 and all wrappers running by 09:16. Truffle had a 1-hour Cavanna seal jam cleared by sensor adjust. ML1 C6 belt drifted north repeatedly through 1st shift due to jams."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Internet firewall died at 14:30, new firewall live 18:08 \u2014 labels caught up by 20:14."
+    },
+    {
+      "plant": "L2",
+      "text": "Internet firewall died at 14:30, new firewall live 18:08 \u2014 labels caught up by 20:14."
+    },
+    {
+      "plant": "L3",
+      "text": "Internet firewall died at 14:30, new firewall live 18:08 \u2014 labels caught up by 20:05."
+    },
+    {
+      "plant": "L1",
+      "text": "Hansel created a new Sollich 1 enrober shutdown checklist covering PTL tank and Sweco filter cleaning."
+    },
+    {
+      "plant": "L3",
+      "text": "Benjamin flagged three LOTO keys without locks and one lock without a key during audit \u2014 counterparts being searched."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 steamer valve failure blocking cook start",
+      "summary": "Steam valve seal blew and check valves were installed backwards, preventing drainage and causing pressure/temp errors \u2014 cooking delayed 9 hours.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-22T07:17:20.724Z"
+      },
+      "resolution": "Nathan and crew reseated steam line, corrected backward check valves, and finished repairs by 10:37 \u2014 \"Maintenance is finished with the steam valves. We are going to start cooking.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S1 tunnel 1 rollers installed over belt instead of under",
+      "summary": "Belt was running on top of rollers instead of underneath, risking tracking and product damage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-21T17:50:55.476Z"
+      },
+      "resolution": "Corrected by 12:17 \u2014 Justin: \"Rollers have been installed correctly. We have started depositing.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S1 caramel depositor freezing mid-run",
+      "summary": "Depositor control panel froze, stopping deposition and risking temper loss.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-22T01:15:22.286Z"
+      },
+      "resolution": "Caleb and Dakota reset via Sollich panel at 19:26 \u2014 temper and chiller held, ~5 min downtime."
+    },
+    {
+      "plant": "L1",
+      "title": "Grease trap access blocked by pallets",
+      "summary": "Pumpers Plus arrived to service grease trap but couldn't access lid due to pallet storage on top.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Marco Rodriguez",
+        "time_utc": "2026-09-21T19:02:15.511Z"
+      },
+      "resolution": "Justin and warehouse moved pallets by 13:16 \u2014 Katya: \"I am sending WH there now.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S1 MD bin full, belt activations spiking",
+      "summary": "Metal detector bin filled with rejects; belt speed too slow to clear product, risking overflow.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-21T22:52:22.799Z"
+      },
+      "resolution": "Emptied bin, Caleb increased blue belt speed 45\u219250 at 16:59; QA re-ran rejects with no FM detected."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 drain clogged with paper towels and caps",
+      "summary": "Kitchen operator draining reserve found drain overflowing with trash \u2014 paper towels and mild caps wadded in pipe.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-22T13:47:35.254Z"
+      },
+      "resolution": "Cleared immediately at 07:47 \u2014 Katya: \"We cleared the drain.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S1 cereal and marshmallows stuck at tunnel 2 exit",
+      "summary": "One mold section overloaded with cereal/marshmallow got wedged in tunnel door, jamming exit.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-22T15:13:36.304Z"
+      },
+      "resolution": "Cleared and cleaned by 10:07 \u2014 Victor: \"it got stuck in one of the doors, causing the problem\u2014but it's been resolved now.\""
+    },
+    {
+      "plant": "L2",
+      "title": "FFS plastic foreign material in product zone",
+      "summary": "Plastic piece found in line; source traced to leftover part sitting above machine from prior run.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-22T02:51:08.191Z"
+      },
+      "resolution": "Brandon and Raymond identified source, removed all pieces, and pulled affected pouches by 21:03 \u2014 \"all the parts account for.\""
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade loose during CIL",
+      "summary": "Two bolts tight but blade assembly loose; wrong bolt pattern used, risking blade detachment into product.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-09-22T04:57:50.284Z"
+      },
+      "resolution": "Fernando replaced with correct bolts and re-torqued by 01:12 \u2014 \"Blade is tight we need to make sure we are using the correct bolt pattern always.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrapper film tearing on both sides",
+      "summary": "Film tore repeatedly on startup, blamed on sensor PG15, bobin grab, and tension \u2014 4 rolls wasted from 2nd shift, 4 from 3rd.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-09-22T04:59:36.506Z"
+      },
+      "resolution": "Adjusted PG15 sensor, drive roller height, bobins, and dancing arm tension; switched to new film lot; line running 00:12 per Zack."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouch front/back centering off",
+      "summary": "Hole punch and graphics misaligned on new 3oz ZS SKU \u2014 front appeared right of center, back showed white edge.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Aubrey Howe",
+        "time_utc": "2026-09-22T03:28:36.738Z"
+      },
+      "resolution": "Operators re-centered through 21:28\u201321:56; Marlenis posted improved images. Aubrey: \"I think the progress this evening was really substantial.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 demolder roller buildup and vacuum clog",
+      "summary": "Extensive chocolate buildup on demolder roller and clogged vacuum found during morning CIL \u2014 may have contributed to 3rd shift FW issues.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-22T12:50:05.082Z"
+      },
+      "resolution": "Cleaned during extended CIL at 06:50 \u2014 Alex will post update after running."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 chain sensor failure jamming wrapper infeed",
+      "summary": "Chain sensor B1 failed, causing bars to sit high and jam the machine \u2014 TG4 down from 22:40 until Nelson replaced the sensor at 08:14.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-22T05:31:50.263Z"
+      },
+      "resolution": "Nelson replaced sensor B1 at 08:14 \u2014 \"Replaced sensor b1 on tg4 it is now running.\" All TGs confirmed running 09:16."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 cutter not sealing or cutting",
+      "summary": "Cavanna 1 stopped sealing flow wrap and cutting bites, forcing single-cavanna run and 30 bins of accumulation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-22T08:52:11.471Z"
+      },
+      "resolution": "Maintenance adjusted jaw and reseated sensor at 03:13 \u2014 Raoul: \"Sensor wasn't reading properly and they adjusted the jaw.\" Line restarted 04:10."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle bottomer screw drive error on changeover",
+      "summary": "Error code halted changeover to 21175 CPK Dark, delaying deposit start.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-22T05:01:10.949Z"
+      },
+      "resolution": "Error cleared 00:25 \u2014 \"Bottomer screw drive error code has been fixed, and change over has resumed process.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle guillotine stopped mid-deposit",
+      "summary": "Guillotine tested fine before start but stopped cutting when chocolate hit the line.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-22T07:54:26.381Z"
+      },
+      "resolution": "Raoul confirmed working 01:59 \u2014 \"The Guillotine is working\u2026 Product going through the guillotine.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS pre-heating 2 hitting and making noise",
+      "summary": "Pre-heater 2 scraping or knocking, traced to chocolate accumulation pushing components up.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-22T12:31:47.702Z"
+      },
+      "resolution": "Kimberly cleared chocolate accumulation at 06:34 \u2014 \"chocolate accumulation caused it to push up.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator jam causing packaging backup",
+      "summary": "Sticker applicator jammed, accumulating product on packaging area and forcing 15-minute line pause.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-22T16:53:48.083Z"
+      },
+      "resolution": "Maintenance cleared jam, line resumed 11:17 after running accumulation through."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 water drain clogged",
+      "summary": "Right-side water drain for depositor 2 stopped flowing, risking overflow during CIL.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-22T17:11:55.338Z"
+      },
+      "resolution": "Unclogged and running 11:17 \u2014 Itzel: \"Running.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 wrong jars and lids staged, correct lids not in building",
+      "summary": "Line lead discovered staged jars and lids didn't match spec at all \u2014 no correct lids on-site, waiting for inbound trailer.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-22T13:17:58.788Z"
+      },
+      "status": "Warehouse couldn't locate trailer as of 08:22 despite task ID and trailer number provided by Ricardo. No confirmation of receipt by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Foot bath at shipping/receiving entrance not working",
+      "summary": "Foot sanitizer station offline, creating GMP compliance gap at high-traffic entry point.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Aubrey Howe",
+        "time_utc": "2026-09-21T21:53:47.336Z"
+      },
+      "status": "Reported 15:53, no maintenance response or fix posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS batch and expiration date print not legible",
+      "summary": "Ink or coder issue rendering batch number and best-by unreadable on pouches \u2014 quality hold risk.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-09-22T12:14:13.864Z"
+      },
+      "status": "Maintenance called at 06:14 to adjust coder and improve visibility; no follow-up posted confirming legibility by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt drifting north on jam cycles",
+      "summary": "C6 belt repeatedly walked north through 1st shift \u2014 posted 11:44, 12:17, 12:43 \u2014 confirmed by Nathan at 13:10 as jam-related.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-21T17:44:01.189Z"
+      },
+      "status": "Maintenance in line multiple times; blowoff confirmed working; jams causing belt walk as of 13:40, no final fix posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 dolly lift wire worn with metal strands exposed",
+      "summary": "Wire on dolly lift showing wear, creaking under load, with metal strands sticking out \u2014 safety and equipment risk.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-22T02:41:11.859Z"
+      },
+      "status": "Jenny flagged at 20:41 with photos of frayed wire; Marcos acknowledged; no work order or replacement confirmation by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle tunnel 3 scraper tray missing from station",
+      "summary": "Scraper tray not in place under tunnel 3 \u2014 risk of chocolate drip on floor or into next zone.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-22T06:32:04.664Z"
+      },
+      "status": "Flagged 00:32, no update on location or replacement by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 vacuum hose cover missing",
+      "summary": "Action item to locate missing cover for Cavanna 2 vacuum hose \u2014 Grey and line lead searched, couldn't find it.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-22T17:03:48.848Z"
+      },
+      "status": "Searched line and surrounding area at 11:03, unable to locate as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Pallets blocking fire extinguisher",
+      "summary": "Pallets staged in front of fire extinguisher, blocking emergency access.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-09-22T17:21:36.421Z"
+      },
+      "status": "Benjamin asked German to move them at 11:21; no confirmation of clearance by window close."
+    }
+  ]
+}
