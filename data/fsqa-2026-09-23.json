@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-23",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S4 had *two* metal contamination events \u2014 Theegarten finger broke during operation, then metal spatula pulled into slitter hours later. Both required line stops and equipment inspection."
+  },
+  "summary": "Three active holds or FM flags across two plants. L1 S4 Theegarten finger broke off mid-run (piece missing, level-2 clean performed); hours later a metal spatula was pulled into the same line's slitter. L3 ML4 had a broken piece found by the line and depositor magnet bolts discovered missing. All under investigation.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Dark caramel held for color deviation",
+      "summary": "S4 caramel ran very dark after extended downtime \u2014 color does not meet customer spec, QA placed batch on hold.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-09-23T09:05:13.206Z"
+      },
+      "status": "On hold \u2014 Ebrima confirmed hold at 03:38 MT, pending disposition decision."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 Theegarten finger broke off during operation",
+      "summary": "Wrapping machine finger broke at 22:56 MT, piece missing \u2014 QA requested level-2 clean of Theegarten before restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-09-23T05:56:10.310Z"
+      },
+      "status": "Resolved \u2014 level-2 clean completed, ATP passed at 08:23 MT, line restarted."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 metal spatula pulled into slitter",
+      "summary": "EE used metal spatula to remove watery caramel from belt; spatula pulled into slitter at 06:13 MT, scratched multiple components \u2014 maintenance replaced all slitter and scraper blades as precaution.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-23T12:13:37.376Z"
+      },
+      "status": "Resolved \u2014 all affected blades replaced by 08:23 MT, equipment inspected and cleared, line restarted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 broken piece found by production line",
+      "summary": "Spencer found broken fragment near ML4 at 16:42 MT \u2014 maintenance confirmed issue fixed, but part origin and product exposure window unclear.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-09-22T22:42:29.467Z"
+      },
+      "status": "Resolved \u2014 Spencer confirmed fix at 17:01 MT same evening, no further details posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 magnet trap bolts missing",
+      "summary": "Magnet and heating plate on depositor 4 not functioning \u2014 inspection found bolts missing on south side at 15:48 MT.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-22T21:48:36.003Z"
+      },
+      "status": "Resolved \u2014 maintenance repaired same shift, magnet ATP passed at 16:41 MT."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 flow wrap failures \u2014 pieces unwrapped or improperly sealed",
+      "summary": "Significant number of pieces coming out without wrap or poorly sealed at 12:57 MT \u2014 operator adjusted, then CILT performed and Theegarten cleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-22T18:57:06.327Z"
+      },
+      "status": "Resolved \u2014 wrap quality improved after cleaning at 14:49 MT, confirmed good at 14:56 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 watery batch identified \u2014 incomplete mixing",
+      "summary": "Watery batch found during 3rd shift production at 05:41 MT \u2014 residual sugar discovered in mixing tank, indicating batch not fully mixed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-23T11:41:30.225Z"
+      },
+      "status": "Open \u2014 batch identified and flagged, no posted disposition or corrective action yet."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S4 tunnel 1 belt dirty, rails misaligned after reassembly",
+      "summary": "Operators inspecting tunnel 1 at shift start found belt very dirty, rails in wrong locations, some installed upside down and unlatched \u2014 suggests cleaning/reassembly gap on prior shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-23T14:30:50.538Z"
+      },
+      "status": "Resolved \u2014 operators corrected rail alignment and cleaned belt same morning before restart."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding metal utensil ban and non-metal tool staging to S4 caramel removal SOP \u2014 today's spatula-in-slitter event echoes risk when EEs improvise during long downtimes."
+    },
+    {
+      "plant": "L1",
+      "text": "Review S4 tunnel 1 reassembly checklist and shift handoff \u2014 rails found inverted/unlatched this morning suggest gap in post-maintenance verification or unclear visual standards for correct orientation."
+    },
+    {
+      "plant": "L3",
+      "text": "Add depositor magnet bolt torque check to ML4 startup inspection \u2014 today's missing bolts on depositor 4 were only caught when heating failed, not during pre-shift walkthrough."
+    }
+  ]
+}

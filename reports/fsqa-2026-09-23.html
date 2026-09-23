@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSQA briefing — 2026-09-23 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
+.fsqa-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.fsqa-head h1 {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.fsqa-head .sub {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.fsqa-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.fsqa-head .meta img {
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Summary block ---------- */
+.fsqa-summary {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 14pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Stats strip ---------- */
+.fsqa-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8pt;
+  margin: 0 0 14pt 0;
+}
+.fsqa-stats .stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8pt 10pt;
+  text-align: left;
+}
+.fsqa-stats .stat .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fsqa-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 18pt; line-height: 1;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2pt;
+}
+
+/* ---------- Section blocks ---------- */
+.fsqa-section {
+  margin: 16pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.fsqa-section .sec-head {
+  display: flex; align-items: center; gap: 6pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 4pt; margin-bottom: 6pt;
+}
+.fsqa-section .sec-head h3 {
+  font-size: 10.5pt; font-weight: 700;
+  margin: 0; color: var(--fg-1);
+}
+.fsqa-section .sec-head .sec-icon {
+  width: 14px; height: 14px; color: var(--fg-2);
+}
+.fsqa-section .sec-head .sec-count {
+  margin-left: auto;
+  font-size: 8pt; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Entry rows ---------- */
+.fsqa-entry {
+  display: grid;
+  grid-template-columns: 26pt 1fr auto;
+  gap: 8pt;
+  align-items: start;
+  padding: 6pt 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.fsqa-entry:last-child { border-bottom: 0; }
+.fsqa-entry .sev-col { text-align: center; padding-top: 1pt; }
+.fsqa-entry .body { min-width: 0; }
+.fsqa-entry .title-line {
+  font-weight: 600; color: var(--fg-1);
+  font-size: 9.5pt; line-height: 1.3;
+}
+.fsqa-entry .plant-tag {
+  display: inline-block;
+  font-size: 7pt; font-weight: 700;
+  color: var(--fg-2);
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  padding: 1pt 6pt;
+  margin-right: 6pt;
+  vertical-align: 1pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fsqa-entry .summary {
+  display: block; font-size: 8.5pt; color: var(--fg-2);
+  margin-top: 2pt; line-height: 1.35;
+  text-wrap: pretty;
+}
+.fsqa-entry .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt; line-height: 1.4;
+  text-wrap: pretty;
+}
+.fsqa-entry .status::before {
+  content: "→ "; font-style: normal; color: var(--fg-3);
+}
+.fsqa-entry .raised {
+  font-size: 7.5pt; color: var(--fg-3);
+  text-align: right; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.fsqa-entry .raised .author { color: var(--fg-2); font-weight: 600; display: block; }
+
+/* ---------- Empty state ---------- */
+.fsqa-section .empty {
+  padding: 6pt 0 4pt 0;
+  font-style: italic; font-size: 9pt;
+  color: var(--fg-3);
+}
+
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+  margin: 18pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.opp-box {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 9pt 11pt 10pt 11pt;
+}
+.opp-box .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4pt;
+}
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
+}
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
+  color: var(--fg-1);
+  padding: 2pt 0;
+  text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<section class="sheet">
+  <div class="fsqa-head">
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>September 23, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Sep 22 11:51 MT → Sep 23 11:51 MT</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Audience</div><div class="v">FSQA Manager</div></div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Metal-in-product</div>
+    <p class="headline">L1 S4 had <span class="accent">two</span> metal contamination events — Theegarten finger broke during operation, then metal spatula pulled into slitter hours later. Both required line stops and equipment inspection.</p>
+  </div>
+
+  <p class="fsqa-summary">Three active holds or FM flags across two plants. L1 S4 Theegarten finger broke off mid-run (piece missing, level-2 clean performed); hours later a metal spatula was pulled into the same line&#x27;s slitter. L3 ML4 had a broken piece found by the line and depositor magnet bolts discovered missing. All under investigation.</p>
+
+  <div class="fsqa-stats"><div class="stat"><div class="eyebrow">Holds</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">Food safety</div><div class="num">4</div></div><div class="stat"><div class="eyebrow">Quality</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">Sanitation</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">Allergen</div><div class="num">0</div></div><div class="stat"><div class="eyebrow">High severity</div><div class="num">3</div></div></div>
+
+  <section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="package"></i><h3>Active holds</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Dark caramel held for color deviation</div><span class="summary">S4 caramel ran very dark after extended downtime — color does not meet customer spec, QA placed batch on hold.</span><span class="status">On hold — Ebrima confirmed hold at 03:38 MT, pending disposition decision.</span></div><div class="raised"><span class="author">Karen Velastegui</span><span>03:05 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-alert"></i><h3>Food safety</h3><span class="sec-count">4</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S4 Theegarten finger broke off during operation</div><span class="summary">Wrapping machine finger broke at 22:56 MT, piece missing — QA requested level-2 clean of Theegarten before restart.</span><span class="status">Resolved — level-2 clean completed, ATP passed at 08:23 MT, line restarted.</span></div><div class="raised"><span class="author">S4 Pack Tablet</span><span>23:56 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S4 metal spatula pulled into slitter</div><span class="summary">EE used metal spatula to remove watery caramel from belt; spatula pulled into slitter at 06:13 MT, scratched multiple components — maintenance replaced all slitter and scraper blades as precaution.</span><span class="status">Resolved — all affected blades replaced by 08:23 MT, equipment inspected and cleared, line restarted.</span></div><div class="raised"><span class="author">Luis Falcon</span><span>06:13 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 broken piece found by production line</div><span class="summary">Spencer found broken fragment near ML4 at 16:42 MT — maintenance confirmed issue fixed, but part origin and product exposure window unclear.</span><span class="status">Resolved — Spencer confirmed fix at 17:01 MT same evening, no further details posted.</span></div><div class="raised"><span class="author">Marcos Montano</span><span>16:42 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 depositor 4 magnet trap bolts missing</div><span class="summary">Magnet and heating plate on depositor 4 not functioning — inspection found bolts missing on south side at 15:48 MT.</span><span class="status">Resolved — maintenance repaired same shift, magnet ATP passed at 16:41 MT.</span></div><div class="raised"><span class="author">Shane Olsen</span><span>15:48 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-check"></i><h3>Quality flags</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S4 flow wrap failures — pieces unwrapped or improperly sealed</div><span class="summary">Significant number of pieces coming out without wrap or poorly sealed at 12:57 MT — operator adjusted, then CILT performed and Theegarten cleaned.</span><span class="status">Resolved — wrap quality improved after cleaning at 14:49 MT, confirmed good at 14:56 MT.</span></div><div class="raised"><span class="author">Mariela Gudino</span><span>12:57 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S4 watery batch identified — incomplete mixing</div><span class="summary">Watery batch found during 3rd shift production at 05:41 MT — residual sugar discovered in mixing tank, indicating batch not fully mixed.</span><span class="status">Open — batch identified and flagged, no posted disposition or corrective action yet.</span></div><div class="raised"><span class="author">Luis Falcon</span><span>05:41 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="spray-can"></i><h3>Sanitation</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S4 tunnel 1 belt dirty, rails misaligned after reassembly</div><span class="summary">Operators inspecting tunnel 1 at shift start found belt very dirty, rails in wrong locations, some installed upside down and unlatched — suggests cleaning/reassembly gap on prior shift.</span><span class="status">Resolved — operators corrected rail alignment and cleaned belt same morning before restart.</span></div><div class="raised"><span class="author">Katya Farnsworth</span><span>08:30 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="triangle-alert"></i><h3>Allergen</h3><span class="sec-count">0</span></div><p class="empty">No allergen events.</p></section>
+
+  <div class="opportunities-eyebrow">Opportunities — by plant</div><div class="opportunities-row"><div class="opp-box"><div class="eyebrow">L1</div><h4>L1 Caramel</h4><ul><li>Consider adding metal utensil ban and non-metal tool staging to S4 caramel removal SOP — today&#x27;s spatula-in-slitter event echoes risk when EEs improvise during long downtimes.</li><li>Review S4 tunnel 1 reassembly checklist and shift handoff — rails found inverted/unlatched this morning suggest gap in post-maintenance verification or unclear visual standards for correct orientation.</li></ul></div><div class="opp-box"><div class="eyebrow">L2</div><h4>L2 Moulding</h4><p class="empty">No opportunities flagged today.</p></div><div class="opp-box"><div class="eyebrow">L3</div><h4>L3 Chocolate</h4><ul><li>Add depositor magnet bolt torque check to ML4 startup inspection — today&#x27;s missing bolts on depositor 4 were only caught when heating failed, not during pre-shift walkthrough.</li></ul></div></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
+    Production briefing for the same day:
+    <a class="archive-link" href="2026-09-23.html">reports/2026-09-23.html</a> ·
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">FSQA briefing · 2026-09-23</span>
+    <span class="page-no">Page 1 of 1</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

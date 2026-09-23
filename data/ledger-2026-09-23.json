@@ -1,0 +1,306 @@
+{
+  "date": "2026-09-23",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 4 was down *multiple times* through the window on THG failure, dark caramel, and a spatula-in-slitter incident \u2014 blades replaced by 06:49 but tunnel issues still being corrected at shift end."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 4 had the roughest day: THG finger broke at 23:56 requiring a level 2 clean, dark caramel flagged and held, watery batch with unmixed sugar, then a metal spatula pulled into the slitter at 06:13 requiring blade replacement. Tunnel 1 belt and rails found dirty and misaligned at 08:30. Sollich 2 ran caramel cluster all shift but had two belt issues mid-morning (C1 and Matrix 8) that weren't clearly resolved. Sollich 3 completed the SRS order and changed to PRS, with one brief Matrix 5 pouch jam cleared in 17 minutes. Sollich 1 fought a slipping blue incline belt overnight \u2014 tensioning nuts backed off, maintenance ordered locking collars and fixed by 08:53.",
+    "L2": "FFS ran HER 5.1oz rolls but needed frequent shoulder cleaning for smudges \u2014 down 09:26 to 09:31, then again at 11:19 for bags not opening, cleared by 11:40. Low weight kickoffs (6 bars instead of 7) were the biggest quality concern; speed dropped from 90 to 80 ppm at 10:30 to reduce rejects. ML2 ran FEA with scheduled CILs every shift; flow-wrap rollers jammed at 11:01, maintenance cleared by 11:19. ML3 vibration section 2 failed at startup (05:23), turned off and depositing started at 05:35; label splicing issues overnight on 2nd shift, but 1st shift ran 4 clean splices with no trouble.",
+    "L3": "Truffle Line's Cavanna 1 had a door safety switch taped instead of bolted (corrected at 07:29), then roller issues flagged at 09:51 with maintenance still working through accumulated product at 11:38. Metal detector belt shifted 1.5 inches and was corrected by 10:24. ML4 had a strong overnight \u2014 1,746 cases, highest of the week \u2014 but TG3 splitter needed parameter adjustments at 07:28 (running good by 07:43) and a gondola jam at 06:10 cleared by 06:31. Molds jumping at conveyor 1 were traced to chain phasing out of sync; WDS scheduled onsite fix. MF Matrix belt B jammed at 16:41 on 9/22 with no resolution posted."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Erandy marked the Sollich 1 Sweco sifters with orientation marks and reminded teams to reassemble in exact position after cleaning."
+    },
+    {
+      "plant": "L1",
+      "text": "Hansel updated all Sollich 2 checklists to include cleaning 90-degree elbows to prevent mold buildup."
+    },
+    {
+      "plant": "L2",
+      "text": "Troy replaced the SD card in MM3 printer to fix freezing issue; teams asked to report if it reoccurs."
+    },
+    {
+      "plant": "L3",
+      "text": "Grey color-coded and labeled Cavanna 1 and 2 glycol hose connections to prevent misassembly; added to startup checklist."
+    },
+    {
+      "plant": "L3",
+      "text": "Chad announced firewall upgrade at 12:30 today with brief internet outage; teams to reboot if Wi-Fi issues after install."
+    },
+    {
+      "plant": "L3",
+      "text": "German found unreal mint patties in warehouse aisle 1 section 33B."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 blue incline conveyor slipping",
+      "summary": "Blue belt skipping overnight; tensioner found loose, speed reduced to 62.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-22T22:26:21.41Z"
+      },
+      "resolution": "Fixed by 08:53 \u2014 \"Tensioning nuts backed off causing the belt to slip. Matt is ordering locking collars to prevent this from happening again\" (Curt Willis). Speed returned to 72."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 THG metal parts colliding",
+      "summary": "Two metal parts from THG hitting each other at 05:38, line down.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-23T11:38:11.098Z"
+      },
+      "resolution": "Cleared at 05:38 \u2014 \"maintenance fixed it and line is running again\" (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 ultrasonic cutter stopped",
+      "summary": "Cutter stopped at 11:03; maintenance performed a reset and the line started running again.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-23T17:03:55.636Z"
+      },
+      "resolution": "Cleared at 11:17 \u2014 \"Maintenance performed a reset, and we started running the line again\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 Matrix 5 pouches not opening",
+      "summary": "Matrix 5 pouches failing to open at 08:59; Troy working on adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-09-23T14:59:04.708Z"
+      },
+      "resolution": "Fixed at 09:16 \u2014 \"inside top suction cups were too high and not providing a good seal...dropped them by 2mm and it has solved the issue\" (Troy Baxter)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 vibration section 2 failure at startup",
+      "summary": "Vibration section 2 problem prevented depositing at 05:23, maintenance working.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-09-23T11:23:26.85Z"
+      },
+      "resolution": "Cleared at 05:35 \u2014 \"turn off vibration 2 section\" (Alex), \"started depositing at 5:35 am\" (Filler)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line down for shoulder cleaning",
+      "summary": "Smudges on pouches at 09:26, line stopped to clean the shoulder.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-23T15:26:40.003Z"
+      },
+      "resolution": "Cleared at 09:31 \u2014 \"Line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrap rollers jammed",
+      "summary": "Flow-wrap rollers problem at 11:01, maintenance called.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-23T17:01:17.379Z"
+      },
+      "resolution": "Cleared at 11:19 \u2014 \"The line is running\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bags not opening properly",
+      "summary": "Bags failing to open at 11:19, line down.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-23T17:19:08.561Z"
+      },
+      "resolution": "Cleared at 11:40 \u2014 \"The line is running\" (VFFS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 down with 413 error",
+      "summary": "TG3 went down at 16:07 with 413 error, all sensors referencing 0.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-22T22:07:37.093Z"
+      },
+      "resolution": "Cleared at 16:38 \u2014 \"Line is back up and running\" (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold crash at pre-heating 2",
+      "summary": "Mold crash at pre-heating 2 at 19:56, jams being cleared.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-09-23T01:56:54.496Z"
+      },
+      "resolution": "Cleared at 20:42 \u2014 \"Mold jams are cleared...Line is up and running now\" (Shane/Marcos)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jammed with chocolate",
+      "summary": "Gondola jammed with chocolate at 06:10, line down.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-09-23T11:15:42.894Z"
+      },
+      "resolution": "Cleared at 06:31 \u2014 \"Line is back up running at 25 mpm\" (ML4 WDS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 splitter timing issue",
+      "summary": "TG3 down since 07:15 for splitter adjustment, Kavin working on parameter settings.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-23T13:28:36.762Z"
+      },
+      "resolution": "Fixed at 07:43 \u2014 \"I adjusted the splitter settings...TG3 running good\" (Kavin Ayala). Adjusted factor for synchronous speed from 1420 to 1380 and beginning of let through range from 1372 to 1350."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 1 door safety switch taped",
+      "summary": "Door safety switch held on by tape prevented startup; corrected with bolts.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-23T13:29:04.032Z"
+      },
+      "resolution": "Fixed at 07:29 \u2014 \"corrected the issue by using bolts and it should no longer be a problem\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 mold jam",
+      "summary": "Mold jam at depositor 2 at 09:48.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-23T15:48:22.507Z"
+      },
+      "resolution": "Cleared immediately at 09:48 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line metal detector belt shifted",
+      "summary": "Metal detector belt moved about 1.5 inches to south side at 10:09.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-23T16:09:13.525Z"
+      },
+      "resolution": "Fixed at 10:24 \u2014 \"metal detector belt has been moved back to the correct position\" (Rich Brierley)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 THG finger broke, dark caramel, and tunnel 1 issues",
+      "summary": "THG finger broke at 23:56 stopping wrapping; level 2 clean ordered. Dark caramel flagged at 03:05 and placed on hold. Watery batch with unmixed sugar found at 05:41. Metal spatula pulled into slitter at 06:13 requiring blade replacement. Tunnel 1 belt found dirty with rails misaligned at 08:30.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-09-23T05:56:10.31Z"
+      },
+      "status": "Slitter blades replaced by 06:49 and line running by 07:17. Tunnel 1 rails being corrected as of 08:30. Dark caramel on hold. THG finger replacement and level 2 clean completion not confirmed by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 Belt C1 and Matrix 8 belt issues",
+      "summary": "Belt C1 reported stopping at 09:55 and Matrix 8 belt not working at 10:37, both with maintenance called; Justin asked for update at 10:44 with no follow-up posted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-23T15:55:44.727Z"
+      },
+      "status": "Maintenance called on both belts as of 10:37; no resolution or status update posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS low weight kickoffs with 6 bars per pouch",
+      "summary": "Line producing pouches with only 6 bars instead of 7 since morning; maintenance troubleshooting, speed reduced from 90 to 80 ppm at 10:30 to reduce rejects.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-23T13:13:16.991Z"
+      },
+      "status": "Speed adjustment made at 10:30, monitoring hourly. Root cause not identified as of 11:51."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 magnet and plate not heating",
+      "summary": "Depositor 4 magnet and plate not heating up at 14:48 on 9/22; bolts found missing on south side, maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-22T21:48:36.003Z"
+      },
+      "status": "Issue identified with missing bolts at 14:48 on 9/22; no resolution or follow-up posted through end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix belt B jammed on conveyor",
+      "summary": "Belt B jamming at 16:36 on 9/22, hitting top metal part; maintenance informed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-22T22:36:34.039Z"
+      },
+      "status": "Belt jammed as of 16:41 on 9/22; no resolution or status update posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 molds jumping at conveyor 1 \u2014 chain phasing issue",
+      "summary": "Molds jumping rather than smooth transition into conveyor 1 after long loop at 05:15; WDS diagnosed chain phasing out of sync with servo drive timing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-23T05:15:59.894Z"
+      },
+      "status": "WDS identified phasing issue; Marcel scheduled to correct synchronization and train maintenance during onsite visit. Line running but issue unresolved."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 1 roller issues",
+      "summary": "Cavanna 1 roller not working flagged at 09:51; maintenance adjusting. Accumulated product being transferred via Cavanna 2 as of 11:38.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-23T15:51:08.139Z"
+      },
+      "status": "Maintenance continues working on Cavanna 1 rollers as of 11:38; accumulated material being run through Cavanna 2 while work in progress."
+    }
+  ]
+}
