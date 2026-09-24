@@ -1,0 +1,318 @@
+{
+  "date": "2026-09-24",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 FFS fought a bad film roll for *15 hours* \u2014 print mark sensor couldn't read, still troubleshooting gussets at window close"
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran solid production across all four Sollich lines. Matrix 10 on S1 had a cone buildup that caused rejections mid-shift but was cleared by swapping the cone at 17:12. S2 had a brief temper spike at 10:30 that was resolved in 26 minutes. S4 started up with high caramels that weren't wrapping properly; operators dialed in the height by 08:45. One unresolved item: the caramel hopper level sensor on S1 is misreading, possibly due to window light reflection \u2014 maintenance and Solich support engaged at window close.",
+    "L2": "L2 FFS was down most of the shift wrestling with 5oz York film \u2014 every third bag has a line through the print mark and the sensor can't read it consistently. After an overnight fight the line started at 10:53 running 65 ppm, but at 11:55 maintenance was still adjusting gussets and fold. ML2 had a rough start on third shift with a 40-minute PTL safety fault, then recurring film-bunching issues that cost another 40 minutes around 01:00. First shift ran clean after sensor adjustments. ML3 had a brutal blade problem \u2014 doubles and triples all night \u2014 that required multiple blade replacements, shimming, and belt swaps. Final fix at 11:04 after Fernando replaced all blades and one anvil overnight.",
+    "L3": "L3 MF Matrix fought pouch pick-up and weight issues the entire window \u2014 suction cups swapped at 17:45 helped briefly, but material bunching returned by 20:03 and weight variance continued into first shift. Still troubleshooting at 11:56. ML1 passed a quiet cleaning day; one note is the almond chain was found rusted out at 11:44. ML4 had a separator belt lose sync at 18:49 (workaround in place) and depositor 1 had a bad buildup at 07:00 that caused a 13-minute stop. Truffle Line had the toughest run: Cavanna belts caused recurring jams and overheating rollers all window. A seized roller was discovered at 05:58 during cleaning and was being addressed at shift change."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Midnight Indulgences trial spec sheet in progress; meeting invite next week from Anisa."
+    },
+    {
+      "plant": "L1",
+      "text": "Tates White Chocolate ingredient results expected tomorrow; schedule unchanged."
+    },
+    {
+      "plant": "L2",
+      "text": "Kirk Nickel flagged: FEA 12g film rolls have off-center cores causing line setup issues."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Chocolate supply ran out at enrober",
+      "summary": "Last pallet of 10232 staged at 20:19, expected to run out around 21:00; trailer in yard but not yet dropped.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-24T02:19:28.775Z"
+      },
+      "resolution": "Driver dropped trailer by 21:11; warehouse pulled chocolate to line within 10 minutes."
+    },
+    {
+      "plant": "L1",
+      "title": "Matrix 10 packing with low weight, high rejects",
+      "summary": "Cone buildup caused one deposit to fall into trailing pouch; high reject rate at checkweigher.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-23T20:37:56.091Z"
+      },
+      "resolution": "Cleaned and re-zeroed MM10, then swapped to spare S1 42 cone at 17:12 \u2014 \"MM is running much better\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 THG not wrapping caramels at startup",
+      "summary": "Caramel pieces too high; twist-wrap heads unable to grip and wrap properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-24T13:55:26.917Z"
+      },
+      "resolution": "Operators adjusted caramel deposit height; mechanically fine by 08:45, running with occasional high pieces managed (Katya)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 temper dropped to 0.9, line paused",
+      "summary": "Temper reading low at 08:43, line stopped for adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-24T14:43:37.713Z"
+      },
+      "resolution": "Temper restored by 09:27; line running with maintenance making adjustments (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal detector on S1 opening randomly with no product",
+      "summary": "MD began opening at 09:03 for no apparent reason; no product passing through.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-24T15:15:51.622Z"
+      },
+      "resolution": "Maintenance increased C1 speed to 50; MD issue resolved and \"line is in operation\" at 09:27 (Ingrid)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 bark breaker belt tracking off west side",
+      "summary": "Belt tracking off, auto-track bar jammed by a screw in the wrong location.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-09-24T16:01:58.047Z"
+      },
+      "resolution": "Maintenance moved the screw to correct location; auto-track bar freed and belt tracking properly by 10:12."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 line stopped due to high temper",
+      "summary": "Enrober temper reading high at 10:30, line halted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-09-24T16:30:55.474Z"
+      },
+      "resolution": "Chris J checked for mechanical issues; line running at 10:56 (Katya Farnsworth)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 blades not cutting, doubles and triples",
+      "summary": "Accumulator blades producing excessive doubles and triples; shimming ineffective initially.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-24T01:48:05.134Z"
+      },
+      "resolution": "Fernando replaced all four blades, shimmed new ones, replaced one anvil, and replaced accumulator belts overnight; no more doubles at 11:04 after final shim adjustment (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 PTL safety fault on VFD, line down",
+      "summary": "Pre-temper loop safety fault stopped line; third shift start delayed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-09-24T02:57:33.835Z"
+      },
+      "resolution": "Raymond popped the fuse from DC bus and reseated it; fault cleared, PTL running at 22:55 (Raymond Fleming)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film bunching at bobbins, sensor fault",
+      "summary": "Film bunching up, print mark not being read; PG11 sensor out of adjustment at 5.4.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-09-24T06:58:12.726Z"
+      },
+      "resolution": "Maintenance adjusted sensor from 5.4 to 6.9 and corrected print mark reading; line up at 01:46 after ~40 min (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 vacuum system plugged badly",
+      "summary": "Mid-shift CIL found vacuum ports plugged; line down to clean vacuum and perform CIL.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-23T22:49:02.331Z"
+      },
+      "resolution": "All ports cleared and cleaned by 16:58; line starting back up at 17:11 (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrap roll change caused brief stoppage",
+      "summary": "Line stopped after roll change at 14:31; film didn't break but faults triggered.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-23T21:15:15.508Z"
+      },
+      "resolution": "Faults cleared; line running again at 14:52 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna accumulation belt #3 shredded",
+      "summary": "Belt #3 shredded; shaft and bearings seized inside roller, replacement roller also bad.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-09-23T18:29:04.527Z"
+      },
+      "resolution": "Maintenance freed bearings in shop, replaced belt and roller; line running by ~14:22 after cleaning (Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 bad buildup blocking sensor",
+      "summary": "Severe buildup on depositor 1 blocked sensor, hopper didn't fill, line stopped depositing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-24T13:00:43.587Z"
+      },
+      "resolution": "Buildup cleaned, line restarted at 07:09 after 13 minutes downtime (ML4 WDS Tablet 1)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix metal detector container had water particles",
+      "summary": "Water particles found inside MD container at 07:02; potential contamination concern.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-24T13:02:42.179Z"
+      },
+      "resolution": "Container emptied and inspected; determined to be residual moisture from third-shift cleaning, not a leak (Ingrid at 08:04)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 cleaning roller not working correctly",
+      "summary": "One roller on TG4 not functioning; Nelson removed to clean and fix.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-09-24T15:31:06.509Z"
+      },
+      "resolution": "Problem resolved, roller working at 10:53 (ML4 TG)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jam at entrance (twice)",
+      "summary": "Molds jammed at gondola entrance at 07:11, then again at 08:26.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-24T14:26:36.19Z"
+      },
+      "resolution": "Both jams cleared quickly; first in ~1 minute (07:12), second in ~3 minutes (08:29) per Itzel."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 caramel hopper level sensor misreading",
+      "summary": "Sensor giving false readings, suspected light reflection from window or sensitivity issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-09-24T17:39:19.059Z"
+      },
+      "status": "Attempted blocking light; Chris Jeffs asked to check sensitivity. Justin requested Jorge reach out to Solich for programming support at 11:57."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS 5oz York film print mark unreadable, line struggling",
+      "summary": "Every third bag has a line through the print mark; photo eye sensor cannot read consistently, causing stuttering.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raymond Fleming",
+        "time_utc": "2026-09-24T02:57:33.835Z"
+      },
+      "status": "Fought all night and into first shift. Sensor reading by 07:49, but still working on pleat, tracking, forming, and gussets. Running 65 ppm at 10:53. At 11:55 still adjusting fold or gusset to hold corners."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pouch pick-up and weight variance ongoing",
+      "summary": "Pouches not opening properly, missing every 10th or so; weight keeps ejecting bags even at reduced speed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-23T22:18:35.322Z"
+      },
+      "status": "Swapped suction cups at 16:42, helped briefly. Material bunching issue identified at 20:24 (\"very difficult to get it to advance without bunching\"). Weight problems continued through first shift (07:35, 07:56). Still ejecting bags at speed 38 as of 11:56."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna rollers overheating, causing jams",
+      "summary": "Infeed belt rollers getting overheated, chocolate accumulating on Cavanna 1 & 2 rails, causing product jams.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-09-24T01:48:56.805Z"
+      },
+      "status": "Multiple cleaning pauses overnight (built 30+ bins twice). Rollers found not spinning at 21:08, fixed temporarily. At 05:58 another drive roller seized and won't spin by hand. Maintenance addressed during cleaning but line struggled all window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 separator belt lost sync, spinning bars",
+      "summary": "Separator belt lost synchronization, causing bars to spin; divider moved as workaround.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-24T00:49:17.191Z"
+      },
+      "status": "Divider repositioned to continue production at 18:49; underlying sync issue not addressed."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix underweight bags found in bin without ID",
+      "summary": "Second-shift underweight bags discovered in unlabeled bin; no documentation on why they were saved.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-24T13:35:10.665Z"
+      },
+      "status": "Charity flagged need to investigate why bags were left without identification. No resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 almond chain found rusted out",
+      "summary": "While searching for master link, discovered old almond chain is rusted through.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-24T17:44:05.711Z"
+      },
+      "status": "Discovered at 11:44; no follow-up action posted by window close."
+    }
+  ]
+}

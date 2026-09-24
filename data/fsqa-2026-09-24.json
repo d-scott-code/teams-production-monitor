@@ -1,0 +1,156 @@
+{
+  "date": "2026-09-24",
+  "headline": {
+    "eyebrow": "Metal in production",
+    "text": "Metal stick found under L3 ML4 cleaning roller 1 during *overnight shift* \u2014 removed before startup, no product contact confirmed."
+  },
+  "summary": "One active metal-in-equipment event on L3 ML4, resolved before depositing resumed. L1 S1 metal detector faulted mid-shift without product passing; maintenance reset. L1 S2 inline magnet HACCP control flagged as not consistently followed.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Underweight bags held without ID",
+      "summary": "Bin of underweight bags from 2nd shift found unidentified in L1 S1 area \u2014 QA investigating origin and disposition.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-24T13:35:10.665Z"
+      },
+      "status": "Open \u2014 QA investigating reason bags were left without identification; disposition pending."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Inline magnet HACCP control not followed",
+      "summary": "QA flagged inline magnet not installed on S2 at startup \u2014 HACCP plan requires inline magnet at all times during run.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-09-24T15:20:38.193Z"
+      },
+      "status": "Resolved \u2014 scraper and inline magnet installed by 08:47 MT; line resumed production."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal stick found under ML4 cleaning roller",
+      "summary": "Maintenance found metal stick under cleaning roller 1 during overnight shift before depositing started \u2014 no product contact, removed before line startup.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-09-24T01:22:47.231Z"
+      },
+      "status": "Resolved \u2014 metal stick removed before depositing; no product at risk."
+    },
+    {
+      "plant": "L1",
+      "title": "Water particles in S1 metal detector container",
+      "summary": "QA found water particles inside metal detector collection container at 07:02 MT \u2014 source suspected to be residual moisture from 3rd shift cleaning, not active leak.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-24T13:02:42.179Z"
+      },
+      "status": "Resolved \u2014 container emptied, scrapped; monitoring for recurrence; test cards passed after inspection."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 metal detector faulting without product",
+      "summary": "Metal detector began opening at 09:03 MT with no product passing through \u2014 maintenance reset, no product was on line during fault period.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-24T15:15:51.622Z"
+      },
+      "status": "Resolved \u2014 maintenance increased C1 speed to 50 and reset; line resumed 09:28 MT."
+    },
+    {
+      "plant": "L3",
+      "title": "Rusted chain found in ML1 almond system",
+      "summary": "Maintenance discovered old almond chain rusted out while locating master link \u2014 chain not in active use but present in food zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-24T17:44:05.711Z"
+      },
+      "status": "Open \u2014 maintenance located issue; disposition of rusted chain not yet reported."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Wrapped product found in S2 pre-op",
+      "summary": "Pre-op inspection found one wrapped chocolate on Matrix 6 top scale and two chocolates in window \u2014 no source identified.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-09-24T16:31:27.523Z"
+      },
+      "status": "Open \u2014 QA and supervision investigating origin; Curt Willis, Justin Garner, Jody Howse notified."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 wrapper producing double wraps and cut foil",
+      "summary": "THG wrapper producing double-wrapped pieces and misaligned/cut paper \u2014 production removing defects; root cause identified as piece height variance.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-24T16:05:14.983Z"
+      },
+      "status": "Resolved \u2014 maintenance inspected; issue was caramel height variance, operators adjusted and monitoring closely."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "FEA roll contamination prevention protocol",
+      "summary": "FEA rolls being removed from protective bags before staging instead of at point of use \u2014 risk of contamination before installation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-09-23T19:06:07.123Z"
+      },
+      "status": "Open \u2014 supervisors notified; teams reminded rolls must remain bagged until machine loading."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 SWECO collection trays found dirty at shift start",
+      "summary": "Yellow collection trays under SWECO machines dirty at 3rd shift startup \u2014 1st shift did not leave clean for next shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-09-23T21:36:38.875Z"
+      },
+      "status": "Open \u2014 trays cleaned by 3rd shift; coaching needed for 1st shift on shift-end cleaning protocol."
+    },
+    {
+      "plant": "L1",
+      "title": "Unlabeled white bucket used for scrap",
+      "summary": "White bucket (unlabeled) found on stairs in S1 used for scrap \u2014 scrap buckets must be yellow and labeled per GMP.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-09-24T15:29:04.483Z"
+      },
+      "status": "Resolved \u2014 bucket corrected immediately; supervisor Katya Farnsworth confirmed."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S1 metal detector maintenance checklist for water ingress sources \u2014 today's moisture in collection container suggests cleaning protocol may need drying step or inspection point."
+    },
+    {
+      "plant": "L1",
+      "text": "Add inline magnet verification to S2 startup checklist with photo requirement \u2014 today's HACCP control was missed at line start."
+    },
+    {
+      "plant": "L2",
+      "text": "Review FEA roll staging procedures with MRCs \u2014 today's bagged-roll protocol violation suggests training gap on contamination prevention during material handling."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding post-cleaning verification to ML4 operator handoff checklist \u2014 today's dirty SWECO trays suggest shift-end cleaning not consistently completed."
+    }
+  ]
+}
