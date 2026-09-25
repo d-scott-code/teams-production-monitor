@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Production briefing — 2026-09-25 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- Sheet 1 — plant cards ---------- */
+.plant-card {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 10pt 12pt;
+  box-shadow: var(--shadow-sm);
+  page-break-inside: avoid;
+}
+.plant-card .head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 5pt; margin-bottom: 6pt;
+}
+.plant-card .title { font-weight: 700; font-size: 10pt; color: var(--fg-1); }
+.plant-card .scale { font-size: 7.5pt; color: var(--fg-3); letter-spacing: 0.08em; }
+.plant-card .row {
+  display: flex; justify-content: space-between;
+  padding: 2pt 0; font-size: 8.5pt;
+}
+.plant-card .row .v {
+  font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1);
+}
+
+/* ---------- Per-plant sheet — cover band (logo lockup at 42pt) ---------- */
+.plant-sheet-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.plant-sheet-head .plant-name {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.plant-sheet-head .plant-id {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.plant-sheet-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.plant-sheet-head .meta img {
+  /* Logo PNGs carry a 4% transparent margin so artwork renders at 38px when
+     the box is 42px — matches the design system's cover-head lockup. */
+  height: 42px; width: auto; display: block; margin-left: auto;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Plant narrative ---------- */
+.plant-narrative {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 12pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Entry table (used for both resolved and needs_attention) ---------- */
+.entry-table {
+  margin-top: 4pt;
+}
+.entry-table thead th {
+  font-size: 7.5pt;
+  vertical-align: bottom;
+  padding: 5pt 6pt;
+}
+.entry-table tbody td {
+  vertical-align: top;
+  padding: 5pt 6pt;
+  font-size: 8.5pt;
+}
+.entry-table .pri-col { width: 22pt; text-align: center; }
+.entry-table .pri-num {
+  font-weight: 800; color: var(--fg-1); font-variant-numeric: tabular-nums;
+}
+.entry-table .issue-cell .title-line {
+  display: block; font-weight: 600; color: var(--fg-1);
+}
+.entry-table .issue-cell .summary {
+  display: block;
+  font-size: 8pt; color: var(--fg-2);
+  line-height: 1.35; margin-top: 2pt;
+  text-wrap: pretty;
+}
+.entry-table .issue-cell .resolution,
+.entry-table .issue-cell .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt;
+  text-wrap: pretty;
+}
+/* No emoji — section heading "Resolved" and the italic resolution text
+   carry the meaning. */
+.entry-table .cat-cell { white-space: nowrap; }
+.entry-table .cat-cell .cat-icon {
+  display: inline-block; width: 12px; height: 12px;
+  vertical-align: -2px; margin-right: 4pt;
+  color: var(--fg-2);
+}
+.entry-table .raised-cell {
+  white-space: nowrap; color: var(--fg-2); font-size: 8pt;
+}
+.entry-table .raised-cell .author { color: var(--fg-1); font-weight: 600; }
+.entry-table .pri-cell { text-align: center; }
+
+/* ---------- Floor notes (sheet 1 + plant sheets) ---------- */
+.floor-notes {
+  margin: 10pt 0 14pt 0;
+  padding: 8pt 12pt;
+  background: #FAF9F4;
+  border-left: 3pt solid var(--primary);
+  border-radius: var(--radius-sm);
+  font-size: 8.5pt;
+  page-break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.floor-notes .eyebrow { margin-bottom: 4pt; }
+.floor-notes ul { margin: 0; padding-left: 14pt; }
+.floor-notes li { padding: 1pt 0; color: var(--fg-1); }
+.floor-notes li .plant-tag {
+  font-weight: 700; color: var(--fg-2); margin-right: 4pt;
+}
+
+/* ---------- Empty state for sections with no content ---------- */
+.empty-state {
+  padding: 8pt 0;
+  color: var(--fg-3); font-style: italic; font-size: 9pt;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<!-- ========== SHEET 1 — ORG-WIDE BRIEFING SUMMARY ========== -->
+<section class="sheet">
+  <div class="cover-head">
+    <div class="brand">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+    </div>
+    <div class="doc-meta">
+      <div class="eyebrow" style="font-size: 7pt;">Production briefing</div>
+      <div>September 25, 2026 &nbsp;·&nbsp; 08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <h1>Production briefing</h1>
+  <p class="lead">Last 24 hours across Lindon 1 — Caramel, Lindon 2 — Moulding, Lindon 3 — Chocolate. Distribution: Operations, FSQA, plant leadership.</p>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Sep 24 11:57 MT → Sep 25 11:57 MT</div></div>
+    <div class="item"><div class="eyebrow">Messages</div><div class="v">491 across 15 chats</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Items today</div><div class="v">43</div></div>
+  </div>
+
+  <h2>Executive summary</h2>
+
+  <div class="hero">
+    <div class="eyebrow">Line down</div>
+    <p class="headline">L1 Sollich 3 labeler A still down after <span class="accent">3 hours</span> on wrinkle issues — labeler B running, product reworked without labels.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">32</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">11</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">2</div><div class="sub">Urgent items still live</div></div>
+    <div class="stat"><div class="eyebrow">Total raised</div><div class="num">43</div><div class="sub">All items mentioned today</div></div>
+  </div>
+
+  <h3 class="section-label">By plant</h3>
+  <div class="audience-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="plant-card">  <div class="head"><div class="title">Lindon 1 — Caramel</div>    <div class="scale">L1</div></div>  <div class="row"><span>Resolved</span><span class="v">8</span></div>  <div class="row"><span>Needs attention</span><span class="v">2</span></div>  <div class="row"><span>P1 open</span><span class="v">2</span></div></div><div class="plant-card">  <div class="head"><div class="title">Lindon 2 — Moulding</div>    <div class="scale">L2</div></div>  <div class="row"><span>Resolved</span><span class="v">4</span></div>  <div class="row"><span>Needs attention</span><span class="v">2</span></div>  <div class="row"><span>P1 open</span><span class="v">0</span></div></div><div class="plant-card">  <div class="head"><div class="title">Lindon 3 — Chocolate</div>    <div class="scale">L3</div></div>  <div class="row"><span>Resolved</span><span class="v">20</span></div>  <div class="row"><span>Needs attention</span><span class="v">7</span></div>  <div class="row"><span>P1 open</span><span class="v">0</span></div></div>
+  </div>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li><span class="plant-tag">L1</span>White chocolate for Tate&#x27;s cleared for production at 18:40.</li><li><span class="plant-tag">L2</span>WDS software update completed at 00:46; tech confirmed warning message is non-blocking and can be ignored.</li><li><span class="plant-tag">L3</span>Shawn added crystallization pump speed to ML1 temper check in QISoft at 08:48.</li></ul></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 14pt;">
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">Production briefing · 2026-09-25</span>
+    <span class="page-no">Page 1 of 4</span>
+  </div>
+</section>
+
+
+<!-- ========== SHEET 2 — Lindon 1 — Caramel ========== -->
+<section class="sheet">
+  <div class="plant-sheet-head">
+    <div>
+      <h1 class="plant-name">Lindon 1 — Caramel</h1>
+      <div class="plant-id">L1 · Production briefing</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>September 25, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">L1 ran four Sollich lines with mixed results. S3 labeler A went down at 08:00 on wrinkle issues and stayed down through end of window — B-side labeling only, product staged as rework. S1 fought metal detector faults all shift; incline belt skipping cleared but MD parameter change at 10:16 didn&#x27;t hold. S4 ran clean after a 20-minute garden-area sensor pause at 16:26.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">8</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">2</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">2</div><div class="sub">Urgent items still live</div></div>
+  </div>
+
+  <h3 class="section-label">Needs attention</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">S1 metal detector opening randomly</span><span class="summary">Metal detector keeps opening on its own; parameter change at 10:16 didn&#x27;t resolve; shielded cable and filter to be installed tomorrow.</span><span class="status">Matt changed motor controller parameter at 10:50 but it &quot;doesn&#x27;t appear to help much.&quot; Electrician will add shielded cable and iron core filter tomorrow.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Ingrid Moreno Angarita</span><br><span>07:41 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">S3 labeler A down on wrinkle issues</span><span class="summary">Labeler A cannot produce good labels due to jar quality; B-side running but product staged as rework without A-side labels.</span><span class="status">Leon requested at 10:16 to assist; jars noted as too soft and bending. Both lots tested showed same issue. Labeler A still down as of 10:14, B-side labeling only.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Katya Farnsworth</span><br><span>08:00 MT</span></td></tr></tbody>
+</table>
+
+  <h3 class="section-label">Resolved in the last 24 hours</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">S1 temper unit pump faulted on pressure</span><span class="summary">Pump on temper unit shut down due to pressure fault, requiring full reheat procedure.</span><span class="resolution">Cleared at 06:05 — &quot;The pump turned on and is working. Tempering the chocolate again&quot; (Joseph Scott).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Joseph Scott</span><br><span>05:50 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">S4 garden area mark registration sensor fault</span><span class="summary">Mark registration sensor causing 20-minute pause in garden area.</span><span class="resolution">Fixed at 16:35 — &quot;I believe I&#x27;ve fixed the issues with the mark registration sensor&quot; (Caleb York).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">S4 Kitchen Tablet</span><br><span>16:26 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">S1 double pieces issue</span><span class="summary">Seeing more double pieces than usual; maintenance adjusted gap between Tunnel 1 and separator table, then lowered caramel drop size.</span><span class="resolution">Cleared at 17:21 after dropping caramel from 6.0 to 5.9 and angling blower forward — &quot;should see further improvement&quot; (Conner Boyd).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Angelica Perez</span><br><span>16:31 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">S3 tape machine jamming at pack area</span><span class="summary">Caddie sticker machine tape broke; operator repaired it, then maintenance made further adjustments after second jam.</span><span class="resolution">Cleared by 06:49 after maintenance worked on it; line resumed production.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Phillip Perez</span><br><span>02:43 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">S1 incline conveyor skipping on startup</span><span class="summary">Belt started skipping when line came up; pause called to pass accumulation at top of MMs.</span><span class="resolution">Cleared at 07:21 after maintenance adjusted belt speed to 55; skipping stopped and line resumed.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Justin Garner</span><br><span>07:06 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">S3 belt after demolding ripping on north side</span><span class="summary">Belt was ripping due to tracking issues; maintenance adjusted tracking and QA approved continued run.</span><span class="resolution">Fixed by 08:17 — &quot;This has been fixed&quot; (Itzel Chavez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>07:09 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">S4 tropical syrup vault stuck</span><span class="summary">Vault to tropical syrup got stuck, causing 20-minute pause without caramel.</span><span class="resolution">Cleared by 07:41 — caramel sent to conbar and production resumed.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">S4 Kitchen Tablet</span><br><span>07:26 MT</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line">S1 caramel hopper level sensor fluctuating</span><span class="summary">Level sensor showing inaccurate readings due to sunlight interference; cardboard placed around sensor as temporary fix.</span><span class="resolution">Fixed at 12:08 — level reading improved 95% and remained stable after blocking sunlight (Erandy Garcilazo Ceja).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Marcos Jimenez</span><br><span>12:03 MT</span></td></tr></tbody>
+</table>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>White chocolate for Tate&#x27;s cleared for production at 18:40.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 1 — Caramel · Production briefing · 2026-09-25</span>
+    <span class="page-no">Page 2 of 4</span>
+  </div>
+</section>
+<!-- ========== SHEET 3 — Lindon 2 — Moulding ========== -->
+<section class="sheet">
+  <div class="plant-sheet-head">
+    <div>
+      <h1 class="plant-name">Lindon 2 — Moulding</h1>
+      <div class="plant-id">L2 · Production briefing</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>September 25, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">L2 moulding line struggled with flow wrapper all shift. Line stopped at 06:50 on bar-spacing jams from curved conveyor, cleared by 07:39. Film jams and double-wrapping forced two CILTs (04:56, 09:58). FFS and ML3 ran routine with no issues.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">4</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">2</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">0</div><div class="sub">Urgent items still live</div></div>
+  </div>
+
+  <h3 class="section-label">Needs attention</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">ML2 losing temp in PTL</span><span class="summary">Pre-tunnel losing temperature; maintenance has been notified.</span><span class="status">Maintenance notified at 06:41. No follow-up indicating resolution.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Alex Mendoza</span><br><span>06:41 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">ML2 flow wrapper film jamming frequently</span><span class="summary">Film jamming frequently on FW, becoming difficult to feed correctly; people spraying rollers with silicone/oil causing issues.</span><span class="status">Justin making adjustments as of 07:50. Still having blow-offs and jams but &quot;less&quot; per 07:50 update. Ongoing issue with roller spray.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">ML2 FW</span><br><span>07:21 MT</span></td></tr></tbody>
+</table>
+
+  <h3 class="section-label">Resolved in the last 24 hours</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">ML2 bars not coming straight from curved conveyor</span><span class="summary">Bars misaligned from curved conveyor causing blow-offs and jams; long belts appeared to have been changed.</span><span class="resolution">Cleared at 07:39 — &quot;Line is back up&quot; after Justin adjusted bar spacing (Alex Mendoza).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Alex Mendoza</span><br><span>07:01 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">ML2 film jam on flow wrapper</span><span class="summary">Film jammed on FW from 04:01 to 04:14, 13-minute stoppage.</span><span class="resolution">Cleared at 04:14 per timestamp in chat.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">ML2 FW</span><br><span>04:07 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">ML2 line down for CIL at 04:56</span><span class="summary">Line struggling after midnight stop, CIL needed to clean and restart.</span><span class="resolution">Completed by 05:31; line resumed production.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Zack Kurtz</span><br><span>04:56 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">ML2 double and triple wrapping after CIL</span><span class="summary">Flow wrapper producing double- and triple-wrapped chocolates after 09:58 CIL; maintenance making adjustments.</span><span class="resolution">Fixed at 10:41 — &quot;Line is back up&quot; (ML2 FW).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">ML2 FW</span><br><span>10:27 MT</span></td></tr></tbody>
+</table>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>WDS software update completed at 00:46; tech confirmed warning message is non-blocking and can be ignored.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 2 — Moulding · Production briefing · 2026-09-25</span>
+    <span class="page-no">Page 3 of 4</span>
+  </div>
+</section>
+<!-- ========== SHEET 4 — Lindon 3 — Chocolate ========== -->
+<section class="sheet">
+  <div class="plant-sheet-head">
+    <div>
+      <h1 class="plant-name">Lindon 3 — Chocolate</h1>
+      <div class="plant-id">L3 · Production briefing</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>September 25, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">L3 ran five lines with temper and equipment friction. ML1 went down at 05:15 on high temper (0.8), cleared by 06:28 after pump speed changes. Truffle line completed a 3-hour reheat overnight, then fought Cute Cavanna sensor faults and a frozen water-cooling stage at 09:54. Matrix ran out of WIP at 11:36 and paused for changeover. ML4 tape machine jammed twice but cleared inside 30 minutes each time.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">20</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">7</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">0</div><div class="sub">Urgent items still live</div></div>
+  </div>
+
+  <h3 class="section-label">Needs attention</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">Plant Standards electrical box smashed</span><span class="summary">Electrical box got smashed; discussion of whether it can be fixed tonight or needs later repair.</span><span class="status">Reported at 21:53. Benjamin asked if it can be fixed tonight or later. Bojana posted in wrong group initially. No clear resolution.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="triangle-alert"></i>Safety</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Spencer Andrus</span><br><span>21:53 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">ML4 TG3 splitter problems</span><span class="summary">Problems continue to occur with splitter on TG3; recurring issue.</span><span class="status">Ongoing issues reported at 04:34. No resolution messages in thread.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">ML4 TG</span><br><span>04:34 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">ML1 QIsoft temper spec at 0.7 now red</span><span class="summary">QIsoft showing 0.7 as red when previously it was yellow on paper sheets; team stopped chocolate flow and asking for clarification on spec.</span><span class="status">Question raised at 09:16 to Shawn and Rose about whether to treat 0.7 as red going forward. Temper came back to 0.6 at 09:22 and chocolate resumed, but spec question unanswered.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Grey Boscan</span><br><span>09:16 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">Truffle M3/M4 belt tracking alarm</span><span class="summary">M4 belt set on track but tension adjustment to prevent alarm causes incorrect operation; new belt system on order.</span><span class="status">Nathan reports at 10:12 that new belt/tracking system coming in. Until then, must keep resetting alarm. Belts tracked but tension loosening causes issues.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Nathan Ruiz</span><br><span>10:12 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">Truffle Cavanna 2 door safety issue</span><span class="summary">Cavanna 2 door does not always stay securely in open position; sometimes comes down creating safety risk.</span><span class="status">Reported at 11:17. Grey adding action to Area Owner and asking Nathan to check what can be done to fix.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="triangle-alert"></i>Safety</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Grey Boscan</span><br><span>11:17 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">Matrix line ran out of WIP</span><span class="summary">Ran out of TW caramels; WIP in transit from SV on transfer truck. Line down for level 2 clean and changeover to quarter pallets.</span><span class="status">Line down as of 11:36. LOTO performed and safety meeting held. Waiting on transfer truck arrival from SV.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>11:36 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">Plant Standards magnetic filter basket missing</span><span class="summary">Greenwood magnetics magnetic filter basket is missing; Matt asked if anyone has seen it.</span><span class="status">Reported at 09:45. William responded &quot;I have not&quot; at 10:32. No further updates.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Matt Hatch</span><br><span>09:45 MT</span></td></tr></tbody>
+</table>
+
+  <h3 class="section-label">Resolved in the last 24 hours</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">ML1 temper high at 0.8, line down</span><span class="summary">Temper slope reading 0.8 (out of spec), line stopped at 05:15 to bring temper down.</span><span class="resolution">Cleared by 06:28 after slowing to 15 MPM and increasing crystallization pump speed — temper back in yellow range.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Raoul Lubain</span><br><span>05:48 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">ML4 tape machine problem at 06:18</span><span class="summary">Problem with tape machine; maintenance working on it, line down passing accumulation.</span><span class="resolution">Cleared at 06:49 — maintenance finished, line resumed (Kimberly Morales at 06:30 confirmed maintenance still working).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">ML4 TG</span><br><span>06:18 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">Matrix pouch loading rail issues</span><span class="summary">Pouch loader having problems grabbing pouches; maintenance called.</span><span class="resolution">Resolved by maintenance during shift; no further updates suggest issue cleared.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Phillip Perez</span><br><span>00:49 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">ML4 caddie sticker tape busted</span><span class="summary">Tape on caddie sticker machine broke; operator had to fix it.</span><span class="resolution">Fixed at 02:43 by operator.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Phillip Perez</span><br><span>02:43 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">ML4 gondola jam at 03:22</span><span class="summary">Gondola jammed, causing brief stoppage.</span><span class="resolution">Fixed at 03:31 — &quot;Gondola fixed&quot; (ML4 TG).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">ML4 TG</span><br><span>03:22 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">Truffle line cold coconut oil clogging</span><span class="summary">Cold coconut oil pallet connected, causing clog; line lost flow to buffer tank.</span><span class="resolution">Cleared at 06:08 — pallet changed, new oil requested and connected.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine Enrober</span><br><span>05:02 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">Truffle line Cute Cavanna film position issues</span><span class="summary">Cute Cavanna down for 20 minutes on film position problems.</span><span class="resolution">Fixed at 06:00 — &quot;Cute cavanna was fixed and we are starting the quick clean&quot; (TruffleLine FW).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine FW</span><br><span>05:32 MT</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line">ML1 chocolate not melting issue</span><span class="summary">Chocolate not melting properly; maintenance called to troubleshoot.</span><span class="resolution">Fixed at 06:29 — Jose working on it, issue resolved.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Imperial</span><br><span>06:27 MT</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line">ML4 belt after demolding ripping</span><span class="summary">Belt on north side after demolding was ripping.</span><span class="resolution">Fixed at 08:17 — &quot;This has been fixed&quot; (Itzel Chavez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>07:09 MT</span></td></tr><tr><td class="pri-col pri-num">10</td><td class="issue-cell"><span class="title-line">Truffle line conveyor belt backup at 07:34</span><span class="summary">Issues with conveyor belts causing product backup past Cute Cavanna; maintenance working.</span><span class="resolution">Cleared by 07:39 per subsequent messages showing normal operation.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine FW</span><br><span>07:34 MT</span></td></tr><tr><td class="pri-col pri-num">11</td><td class="issue-cell"><span class="title-line">ML1 water jacket temperature issue</span><span class="summary">Water jacket not maintaining proper temperature.</span><span class="resolution">Fixed at 07:48 — &quot;Water jacket is now happy&quot; (Shawn Jewkes).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Shawn Jewkes</span><br><span>07:48 MT</span></td></tr><tr><td class="pri-col pri-num">12</td><td class="issue-cell"><span class="title-line">ML1 molds lifting on south side</span><span class="summary">Molds lifting on south side; maintenance checking chain alignment.</span><span class="resolution">Fixed at 08:14 — southside chain off by 1 sprocket, moved accordingly, no longer rubbing (Nathan Ruiz).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Grey Boscan</span><br><span>08:08 MT</span></td></tr><tr><td class="pri-col pri-num">13</td><td class="issue-cell"><span class="title-line">Truffle line Cute Cavanna sensor issues</span><span class="summary">Cute Cavanna sensor light red instead of blue, machine shutting off on its own.</span><span class="resolution">Fixed at 09:53 — loose lock nut on fin wheel found and tightened, magnetic holder installed for hatch (Nathan Ruiz).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine FW</span><br><span>08:10 MT</span></td></tr><tr><td class="pri-col pri-num">14</td><td class="issue-cell"><span class="title-line">ML4 gondola jam at 08:21</span><span class="summary">Gondola jammed at entrance, brief stoppage.</span><span class="resolution">Cleared at 08:23 — &quot;Running&quot; (Itzel Chavez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>08:21 MT</span></td></tr><tr><td class="pri-col pri-num">15</td><td class="issue-cell"><span class="title-line">ML4 compressor faulted out</span><span class="summary">Compressor faulted but was reset without affecting temper.</span><span class="resolution">Cleared at 09:24 — reset immediately, did not affect temper.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>09:24 MT</span></td></tr><tr><td class="pri-col pri-num">16</td><td class="issue-cell"><span class="title-line">Truffle line water cooling stage froze piping</span><span class="summary">Water Cooling Stage set to 11 instead of 13 in recipe, causing piping to freeze during kitchen pause.</span><span class="resolution">Fixed at 10:17 — setting adjusted to 13, short reheat completed, recipe updated (Grey Boscan / Rich Brierley).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Grey Boscan</span><br><span>09:54 MT</span></td></tr><tr><td class="pri-col pri-num">17</td><td class="issue-cell"><span class="title-line">ML1 belt M220 dragging on C2</span><span class="summary">Sideways belt M220 positioned too low, dragging onto belt C2 and causing damage.</span><span class="resolution">Fixed at 11:44 — raised belt slightly to prevent further damage (Nathan Ruiz).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Nathan Ruiz</span><br><span>11:44 MT</span></td></tr><tr><td class="pri-col pri-num">18</td><td class="issue-cell"><span class="title-line">ML4 gondola jam at 11:42</span><span class="summary">Gondola jammed at entrance again.</span><span class="resolution">Cleared at 11:54 — &quot;Running&quot; (Itzel Chavez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>11:46 MT</span></td></tr><tr><td class="pri-col pri-num">19</td><td class="issue-cell"><span class="title-line">Plant Standards missing guard</span><span class="summary">Guard missing from equipment; Nathan looking for it.</span><span class="resolution">Fixed at 01:02 — &quot;I put it back on&quot; (Nathan Gevenois).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="triangle-alert"></i>Safety</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Nathan Gevenois</span><br><span>00:27 MT</span></td></tr><tr><td class="pri-col pri-num">20</td><td class="issue-cell"><span class="title-line">Plant Standards parking lot issue</span><span class="summary">Two vehicles parked in employee-of-the-month spot incorrectly.</span><span class="resolution">Cleared at 01:44 — both employees notified and moving vehicles (Phillip Perez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Nathan Gevenois</span><br><span>01:09 MT</span></td></tr></tbody>
+</table>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>Shawn added crystallization pump speed to ML1 temper check in QISoft at 08:48.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 3 — Chocolate · Production briefing · 2026-09-25</span>
+    <span class="page-no">Page 4 of 4</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

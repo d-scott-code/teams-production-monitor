@@ -1,0 +1,546 @@
+{
+  "date": "2026-09-25",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 3 labeler A still down after *3 hours* on wrinkle issues \u2014 labeler B running, product reworked without labels."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran four Sollich lines with mixed results. S3 labeler A went down at 08:00 on wrinkle issues and stayed down through end of window \u2014 B-side labeling only, product staged as rework. S1 fought metal detector faults all shift; incline belt skipping cleared but MD parameter change at 10:16 didn't hold. S4 ran clean after a 20-minute garden-area sensor pause at 16:26.",
+    "L2": "L2 moulding line struggled with flow wrapper all shift. Line stopped at 06:50 on bar-spacing jams from curved conveyor, cleared by 07:39. Film jams and double-wrapping forced two CILTs (04:56, 09:58). FFS and ML3 ran routine with no issues.",
+    "L3": "L3 ran five lines with temper and equipment friction. ML1 went down at 05:15 on high temper (0.8), cleared by 06:28 after pump speed changes. Truffle line completed a 3-hour reheat overnight, then fought Cute Cavanna sensor faults and a frozen water-cooling stage at 09:54. Matrix ran out of WIP at 11:36 and paused for changeover. ML4 tape machine jammed twice but cleared inside 30 minutes each time."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "White chocolate for Tate's cleared for production at 18:40."
+    },
+    {
+      "plant": "L2",
+      "text": "WDS software update completed at 00:46; tech confirmed warning message is non-blocking and can be ignored."
+    },
+    {
+      "plant": "L3",
+      "text": "Shawn added crystallization pump speed to ML1 temper check in QISoft at 08:48."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S1 temper unit pump faulted on pressure",
+      "summary": "Pump on temper unit shut down due to pressure fault, requiring full reheat procedure.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-25T11:50:34.316Z"
+      },
+      "resolution": "Cleared at 06:05 \u2014 \"The pump turned on and is working. Tempering the chocolate again\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 garden area mark registration sensor fault",
+      "summary": "Mark registration sensor causing 20-minute pause in garden area.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-09-24T22:26:14.564Z"
+      },
+      "resolution": "Fixed at 16:35 \u2014 \"I believe I've fixed the issues with the mark registration sensor\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 double pieces issue",
+      "summary": "Seeing more double pieces than usual; maintenance adjusted gap between Tunnel 1 and separator table, then lowered caramel drop size.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-09-24T22:31:57.431Z"
+      },
+      "resolution": "Cleared at 17:21 after dropping caramel from 6.0 to 5.9 and angling blower forward \u2014 \"should see further improvement\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tape machine jamming at pack area",
+      "summary": "Caddie sticker machine tape broke; operator repaired it, then maintenance made further adjustments after second jam.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-25T08:43:01.165Z"
+      },
+      "resolution": "Cleared by 06:49 after maintenance worked on it; line resumed production."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 incline conveyor skipping on startup",
+      "summary": "Belt started skipping when line came up; pause called to pass accumulation at top of MMs.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-09-25T13:06:28.556Z"
+      },
+      "resolution": "Cleared at 07:21 after maintenance adjusted belt speed to 55; skipping stopped and line resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 belt after demolding ripping on north side",
+      "summary": "Belt was ripping due to tracking issues; maintenance adjusted tracking and QA approved continued run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-25T13:09:19.592Z"
+      },
+      "resolution": "Fixed by 08:17 \u2014 \"This has been fixed\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 tropical syrup vault stuck",
+      "summary": "Vault to tropical syrup got stuck, causing 20-minute pause without caramel.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-09-25T13:26:11.231Z"
+      },
+      "resolution": "Cleared by 07:41 \u2014 caramel sent to conbar and production resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 caramel hopper level sensor fluctuating",
+      "summary": "Level sensor showing inaccurate readings due to sunlight interference; cardboard placed around sensor as temporary fix.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-09-24T18:03:31.814Z"
+      },
+      "resolution": "Fixed at 12:08 \u2014 level reading improved 95% and remained stable after blocking sunlight (Erandy Garcilazo Ceja)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars not coming straight from curved conveyor",
+      "summary": "Bars misaligned from curved conveyor causing blow-offs and jams; long belts appeared to have been changed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-25T13:01:06.062Z"
+      },
+      "resolution": "Cleared at 07:39 \u2014 \"Line is back up\" after Justin adjusted bar spacing (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film jam on flow wrapper",
+      "summary": "Film jammed on FW from 04:01 to 04:14, 13-minute stoppage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-25T10:07:36.938Z"
+      },
+      "resolution": "Cleared at 04:14 per timestamp in chat."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 line down for CIL at 04:56",
+      "summary": "Line struggling after midnight stop, CIL needed to clean and restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-09-25T10:56:53.777Z"
+      },
+      "resolution": "Completed by 05:31; line resumed production."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 double and triple wrapping after CIL",
+      "summary": "Flow wrapper producing double- and triple-wrapped chocolates after 09:58 CIL; maintenance making adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-25T16:27:46.918Z"
+      },
+      "resolution": "Fixed at 10:41 \u2014 \"Line is back up\" (ML2 FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper high at 0.8, line down",
+      "summary": "Temper slope reading 0.8 (out of spec), line stopped at 05:15 to bring temper down.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-25T11:48:25.506Z"
+      },
+      "resolution": "Cleared by 06:28 after slowing to 15 MPM and increasing crystallization pump speed \u2014 temper back in yellow range."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 tape machine problem at 06:18",
+      "summary": "Problem with tape machine; maintenance working on it, line down passing accumulation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-09-25T12:18:26.994Z"
+      },
+      "resolution": "Cleared at 06:49 \u2014 maintenance finished, line resumed (Kimberly Morales at 06:30 confirmed maintenance still working)."
+    },
+    {
+      "plant": "L3",
+      "title": "Matrix pouch loading rail issues",
+      "summary": "Pouch loader having problems grabbing pouches; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-25T06:49:45.752Z"
+      },
+      "resolution": "Resolved by maintenance during shift; no further updates suggest issue cleared."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 caddie sticker tape busted",
+      "summary": "Tape on caddie sticker machine broke; operator had to fix it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-25T08:43:01.165Z"
+      },
+      "resolution": "Fixed at 02:43 by operator."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jam at 03:22",
+      "summary": "Gondola jammed, causing brief stoppage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-09-25T09:22:32.702Z"
+      },
+      "resolution": "Fixed at 03:31 \u2014 \"Gondola fixed\" (ML4 TG)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line cold coconut oil clogging",
+      "summary": "Cold coconut oil pallet connected, causing clog; line lost flow to buffer tank.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-25T11:02:22.802Z"
+      },
+      "resolution": "Cleared at 06:08 \u2014 pallet changed, new oil requested and connected."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line Cute Cavanna film position issues",
+      "summary": "Cute Cavanna down for 20 minutes on film position problems.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-25T11:32:49.82Z"
+      },
+      "resolution": "Fixed at 06:00 \u2014 \"Cute cavanna was fixed and we are starting the quick clean\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate not melting issue",
+      "summary": "Chocolate not melting properly; maintenance called to troubleshoot.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-25T12:27:30.033Z"
+      },
+      "resolution": "Fixed at 06:29 \u2014 Jose working on it, issue resolved."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 belt after demolding ripping",
+      "summary": "Belt on north side after demolding was ripping.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-25T13:09:19.592Z"
+      },
+      "resolution": "Fixed at 08:17 \u2014 \"This has been fixed\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line conveyor belt backup at 07:34",
+      "summary": "Issues with conveyor belts causing product backup past Cute Cavanna; maintenance working.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-25T13:34:10.689Z"
+      },
+      "resolution": "Cleared by 07:39 per subsequent messages showing normal operation."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 water jacket temperature issue",
+      "summary": "Water jacket not maintaining proper temperature.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-25T13:48:07.296Z"
+      },
+      "resolution": "Fixed at 07:48 \u2014 \"Water jacket is now happy\" (Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 molds lifting on south side",
+      "summary": "Molds lifting on south side; maintenance checking chain alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-25T14:08:02.292Z"
+      },
+      "resolution": "Fixed at 08:14 \u2014 southside chain off by 1 sprocket, moved accordingly, no longer rubbing (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line Cute Cavanna sensor issues",
+      "summary": "Cute Cavanna sensor light red instead of blue, machine shutting off on its own.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-25T14:10:30.117Z"
+      },
+      "resolution": "Fixed at 09:53 \u2014 loose lock nut on fin wheel found and tightened, magnetic holder installed for hatch (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jam at 08:21",
+      "summary": "Gondola jammed at entrance, brief stoppage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-25T14:21:30.076Z"
+      },
+      "resolution": "Cleared at 08:23 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 compressor faulted out",
+      "summary": "Compressor faulted but was reset without affecting temper.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-25T15:24:29.633Z"
+      },
+      "resolution": "Cleared at 09:24 \u2014 reset immediately, did not affect temper."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line water cooling stage froze piping",
+      "summary": "Water Cooling Stage set to 11 instead of 13 in recipe, causing piping to freeze during kitchen pause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-25T15:54:32.901Z"
+      },
+      "resolution": "Fixed at 10:17 \u2014 setting adjusted to 13, short reheat completed, recipe updated (Grey Boscan / Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 belt M220 dragging on C2",
+      "summary": "Sideways belt M220 positioned too low, dragging onto belt C2 and causing damage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-25T17:44:44.249Z"
+      },
+      "resolution": "Fixed at 11:44 \u2014 raised belt slightly to prevent further damage (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola jam at 11:42",
+      "summary": "Gondola jammed at entrance again.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-25T17:46:09.218Z"
+      },
+      "resolution": "Cleared at 11:54 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Plant Standards missing guard",
+      "summary": "Guard missing from equipment; Nathan looking for it.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-09-25T06:27:17.524Z"
+      },
+      "resolution": "Fixed at 01:02 \u2014 \"I put it back on\" (Nathan Gevenois)."
+    },
+    {
+      "plant": "L3",
+      "title": "Plant Standards parking lot issue",
+      "summary": "Two vehicles parked in employee-of-the-month spot incorrectly.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-09-25T07:09:06.92Z"
+      },
+      "resolution": "Cleared at 01:44 \u2014 both employees notified and moving vehicles (Phillip Perez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 metal detector opening randomly",
+      "summary": "Metal detector keeps opening on its own; parameter change at 10:16 didn't resolve; shielded cable and filter to be installed tomorrow.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-25T13:41:28.376Z"
+      },
+      "status": "Matt changed motor controller parameter at 10:50 but it \"doesn't appear to help much.\" Electrician will add shielded cable and iron core filter tomorrow."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 labeler A down on wrinkle issues",
+      "summary": "Labeler A cannot produce good labels due to jar quality; B-side running but product staged as rework without A-side labels.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-25T14:00:23.779Z"
+      },
+      "status": "Leon requested at 10:16 to assist; jars noted as too soft and bending. Both lots tested showed same issue. Labeler A still down as of 10:14, B-side labeling only."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 losing temp in PTL",
+      "summary": "Pre-tunnel losing temperature; maintenance has been notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-25T12:41:14.902Z"
+      },
+      "status": "Maintenance notified at 06:41. No follow-up indicating resolution."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrapper film jamming frequently",
+      "summary": "Film jamming frequently on FW, becoming difficult to feed correctly; people spraying rollers with silicone/oil causing issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-25T13:21:57.437Z"
+      },
+      "status": "Justin making adjustments as of 07:50. Still having blow-offs and jams but \"less\" per 07:50 update. Ongoing issue with roller spray."
+    },
+    {
+      "plant": "L3",
+      "title": "Plant Standards electrical box smashed",
+      "summary": "Electrical box got smashed; discussion of whether it can be fixed tonight or needs later repair.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Spencer Andrus",
+        "time_utc": "2026-09-25T03:53:06.925Z"
+      },
+      "status": "Reported at 21:53. Benjamin asked if it can be fixed tonight or later. Bojana posted in wrong group initially. No clear resolution."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 splitter problems",
+      "summary": "Problems continue to occur with splitter on TG3; recurring issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-09-25T10:34:34.111Z"
+      },
+      "status": "Ongoing issues reported at 04:34. No resolution messages in thread."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 QIsoft temper spec at 0.7 now red",
+      "summary": "QIsoft showing 0.7 as red when previously it was yellow on paper sheets; team stopped chocolate flow and asking for clarification on spec.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-25T15:16:03.134Z"
+      },
+      "status": "Question raised at 09:16 to Shawn and Rose about whether to treat 0.7 as red going forward. Temper came back to 0.6 at 09:22 and chocolate resumed, but spec question unanswered."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M3/M4 belt tracking alarm",
+      "summary": "M4 belt set on track but tension adjustment to prevent alarm causes incorrect operation; new belt system on order.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-25T16:12:28.473Z"
+      },
+      "status": "Nathan reports at 10:12 that new belt/tracking system coming in. Until then, must keep resetting alarm. Belts tracked but tension loosening causes issues."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 door safety issue",
+      "summary": "Cavanna 2 door does not always stay securely in open position; sometimes comes down creating safety risk.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-25T17:17:12.66Z"
+      },
+      "status": "Reported at 11:17. Grey adding action to Area Owner and asking Nathan to check what can be done to fix."
+    },
+    {
+      "plant": "L3",
+      "title": "Matrix line ran out of WIP",
+      "summary": "Ran out of TW caramels; WIP in transit from SV on transfer truck. Line down for level 2 clean and changeover to quarter pallets.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-25T17:36:18.447Z"
+      },
+      "status": "Line down as of 11:36. LOTO performed and safety meeting held. Waiting on transfer truck arrival from SV."
+    },
+    {
+      "plant": "L3",
+      "title": "Plant Standards magnetic filter basket missing",
+      "summary": "Greenwood magnetics magnetic filter basket is missing; Matt asked if anyone has seen it.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Matt Hatch",
+        "time_utc": "2026-09-25T15:45:08.559Z"
+      },
+      "status": "Reported at 09:45. William responded \"I have not\" at 10:32. No further updates."
+    }
+  ]
+}

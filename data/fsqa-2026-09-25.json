@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-25",
+  "headline": {
+    "eyebrow": "Belt integrity",
+    "text": "L1 S3 tunnel belt fraying on *both sides* \u2014 QA approved run-to-downtime after cutting loose material, foreign-material risk present until repair."
+  },
+  "summary": "One active belt-fraying event on L1 S3 with foreign-material risk approved to run until scheduled repair. L3 ML4 belt ripped and was fixed same-shift. Sanitation gaps flagged at L1 wash areas and L3 Truffle Cavanna 2.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Tunnel 1 belt fraying on both sides",
+      "summary": "Belt tracked back and forth, rubbed on bolt, frayed on both edges \u2014 frayed pieces cut off, QA approved continued run with plan to burn edges tonight during downtime.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-24T18:38:33.865Z"
+      },
+      "status": "Open \u2014 approved to run until downtime, edges to be burned tonight."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 cleaning rollers received without covers",
+      "summary": "Belts C5 and C6 cleaning rollers received with excess product and covers missing \u2014 food-contact equipment left exposed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-25T12:41:04.034Z"
+      },
+      "status": "Resolved \u2014 rollers cleaned, covers reinstalled by 09:20."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 demolding belt ripping (North side)",
+      "summary": "Belt after demolding ripped on north side \u2014 maintenance notified, issue resolved same shift at 08:17.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-25T13:09:19.592Z"
+      },
+      "status": "Resolved on shift \u2014 fixed at 08:17."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 jar labelers \u2014 persistent wrinkles on labels",
+      "summary": "Both A and B side labelers struggling with wrinkled labels \u2014 suspected jar material too soft and bends easily during application, two lots tested with same result.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-25T14:00:23.779Z"
+      },
+      "status": "Open \u2014 running WIP (unlabeled jars to rework), Leon called to troubleshoot, labeler B functional by 11:31."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Wash area 1 and 2 \u2014 dirty buckets and pipe on floor",
+      "summary": "Yellow bucket with cream or butter residue, dirty water bucket, and pipe left on floor in both wash areas \u2014 flagged for cleanup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-09-24T20:37:39.555Z"
+      },
+      "status": "Open \u2014 cleanup requested from Justin Garner."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 received dirty at shift start",
+      "summary": "Matrix 1 clean, but Cavanna 2 scrapers, fingers, and belts not cleaned during 3rd shift CILT \u2014 led to production pause for cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-25T13:31:32.387Z"
+      },
+      "status": "Resolved \u2014 cleaned during pause, feedback provided to 3rd shift team."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding tunnel belt edge-condition inspection to S3 startup checklist \u2014 today's fraying on both sides echoes tracking issues and could have been caught earlier."
+    },
+    {
+      "plant": "L3",
+      "text": "Review CILT checklist completeness verification at Truffle line \u2014 Cavanna 2 scrapers, fingers, and belts were missed by 3rd shift, requiring re-clean at 1st shift startup."
+    },
+    {
+      "plant": "L3",
+      "text": "Add cleaning-roller cover installation to ML1 handoff checklist \u2014 rollers on C5 and C6 were received without covers and with product buildup."
+    }
+  ]
+}
