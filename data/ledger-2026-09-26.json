@@ -1,0 +1,290 @@
+{
+  "date": "2026-09-26",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 4 lost *2.5 hours* to a pump coupling failure and torn valve \u2014 both cleared by 19:03, but 3rd shift was already canceled."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran Labeler B only after label material defects sidelined Labeler A all day \u2014 QA accepted minor bubbles at 16:16. Sollich 4 lost 2.5 hours to a pump coupling failure and a torn valve gasket, both fixed by 19:03. Sollich 2 canceled a Tate's run when chocolate drums arrived too solid to use and pivoted to a level 4 clean. Sollich 1 saw recurring belt threads near the tunnel; maintenance trimmed loose pieces and the team is monitoring with extra eyes.",
+    "L2": "ML3 had three brief stoppages \u2014 sensor alignment at 17:01, two label breaks, and a vibrator fault at 19:17 all cleared inside 10 minutes. ML2 branch pump increased to 50% at 16:10 to prevent hopper pausing, running well since. VFFS basket #5 and X-ray recipe both needed quick fixes mid-shift. Hershey Peco pallet delivery arrived late at 16:55 but covered the week.",
+    "L3": "Truffle Line bottomer wire mesh tore at 19:50, repaired by 07:33, broke again during adjustment at 07:36, final fix at 11:09. ML1 completed a level 2 clean with ATP pass at 07:24 and cleared four quick mechanical issues overnight \u2014 rotary valve air hose, C6 dirty rollers, aligning belt, and M220 belt height. MF Matrix finished a changeover to assorted 1/4 pallets by 13:33."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Four chocolate drums sent from L1 to L3 warm room at 10:39 to be held through the weekend for rescheduled Tate's run (~Oct 6)."
+    },
+    {
+      "plant": "L3",
+      "text": "Warm room ramped to 113\u00b0F overnight for L1 chocolate barrels, returned to 100\u2013103\u00b0F at 08:06."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 Labeler A down on label material defect",
+      "summary": "Pecan MMK labels had ridges and bubbles across multiple lot codes; team tested three lots, all showed wrinkles or ridges, determined vendor material issue.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-09-25T17:31:17.989Z"
+      },
+      "resolution": "QA accepted small bubbles and wrinkles outside main display panel at 16:16; line ran on Labeler B only for remainder of shift."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 Conbar pump coupling broken",
+      "summary": "Caramel pump stopped transferring to Conbar at 14:38; maintenance found coupling between motor and pump damaged.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-09-25T20:38:37.669Z"
+      },
+      "resolution": "Coupling repaired, caramel flowing again at 15:21 \u2014 \"Sollich 4 is running again\" (S4 Kitchen Tablet)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 valve gasket ripped during run",
+      "summary": "Damaged valve discovered at 16:05; line stopped, caramel drained, and crew began cleaning while waiting on part.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-25T22:07:28.950Z"
+      },
+      "resolution": "Gasket replaced by 19:03; caustic clean completed by 22:51 (3rd shift not running for unrelated scheduling reasons)."
+    },
+    {
+      "plant": "L1",
+      "title": "Fructose (10268) delivery delayed for SOL 4 Kitchen",
+      "summary": "Had 540 lbs on hand (enough for today), needed more for Monday 2nd shift; 6,750 lb shipment arrived Springville at 10:00 but not in system.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-09-25T19:24:46.443Z"
+      },
+      "resolution": "Received in system at 15:53, CoA cleared at 16:24 \u2014 \"CoA had been received\" (Nisheena Etcitty)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 C1 belt pausing intermittently",
+      "summary": "Belt paused multiple times; line stopped <5 minutes at 13:29 to allow maintenance reset.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-09-25T19:29:06.837Z"
+      },
+      "resolution": "Maintenance reset completed, line resumed."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sensor misalignment stopping line",
+      "summary": "Line down at 17:01; maintenance worked on aligning sensors.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-25T23:01:21.487Z"
+      },
+      "resolution": "Sensors aligned, line running at 17:10."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 vertical vibrator overheating fault",
+      "summary": "Line down 5 minutes at 19:17; fault code indicated vibrator overheating, but product quality remained good.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-09-26T01:17:41.798Z"
+      },
+      "resolution": "Raymond Fleming turned off horizontal vibrator (not needed); fault cleared at 19:28, chocolate quality unchanged."
+    },
+    {
+      "plant": "L2",
+      "title": "Hershey Peco pallet delivery delayed",
+      "summary": "Today's delivery missing; had 250 pallets on hand, needed 118 to finish week, another delivery scheduled Monday.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joey Michael Dudney",
+        "time_utc": "2026-09-25T19:22:19.661Z"
+      },
+      "resolution": "Delivery arrived at 16:55 \u2014 \"PECO pallets Hershey's arrived at L2\" (Jovani Castellanos)."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS basket #5 not working",
+      "summary": "Basket #5 stopped functioning at 14:26; maintenance called.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-25T20:26:16.511Z"
+      },
+      "resolution": "Fixed at 14:32 \u2014 \"Running again!\""
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS X-ray rejecting excess bags",
+      "summary": "X-ray over-rejecting good product at 14:31; maintenance reconfigured recipe settings.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-25T20:31:21.730Z"
+      },
+      "resolution": "Recipe adjusted, running normally at 14:32."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 branch pump not keeping hopper full",
+      "summary": "Hopper running low and pausing; Alan increased branch pump from default to 50% at 16:10 and ran capture test.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-09-25T22:10:10.615Z"
+      },
+      "resolution": "Pump adjustment successful \u2014 \"no issues with the hopper running empty\" as of 20:54 (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label breaks on roll change (2 instances)",
+      "summary": "Label broke during roll change at 17:31 and again at 20:22; brief stoppages each time.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-25T23:31:11.431Z"
+      },
+      "resolution": "Both breaks cleared quickly \u2014 17:34 and 20:26 respectively."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line bottomer wire mesh damaged twice",
+      "summary": "Wire mesh torn at 19:50, maintenance called; repaired by 07:33 but north end broke again during slight adjustment at 07:36.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-26T01:43:25.285Z"
+      },
+      "resolution": "Spencer completed final repair at 11:09 \u2014 \"Yes. Spencer Andrus just got done with the repair\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 M220 belt dragging on C2 belt",
+      "summary": "Sideways belt M220 positioned too low at 11:44, dragging onto belt C2 and causing damage.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-25T17:44:44.249Z"
+      },
+      "resolution": "Raised slightly to prevent further damage."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 aligning belt dropping chocolates underneath",
+      "summary": "Chocolates going under aligning belt at 21:29; maintenance notified.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-26T03:28:46.526Z"
+      },
+      "resolution": "Fixed at 21:38 \u2014 \"It works good now.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 right rotary valve not working",
+      "summary": "Right side rotary valve stopped at 23:21; maintenance on-site.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-26T05:21:43.148Z"
+      },
+      "resolution": "One air hose unplugged from fitting, reconnected at 23:27 \u2014 \"just We put back in\" (Jose Vasquez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 belt tracking side to side",
+      "summary": "C6 belt moving erratically at 00:46; inspection found dirty rollers.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-09-26T06:46:37.588Z"
+      },
+      "resolution": "Rollers cleaned, line running at 01:04 \u2014 \"ML1 it is already running.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 C1 kettle discharge valve failing",
+      "summary": "Valve has 16-second delay before opening when screen shows green (open); operator Donato reported at 13:52, may be progressively worsening.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-09-25T19:52:44.225Z"
+      },
+      "status": "Maintenance notified; Chris Jeffs confirmed part not in stock at 14:12, requesting quote now."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 belt fraying near tunnel 1",
+      "summary": "Operators found belt material (threads, pieces) by tunnel 1 at 15:25 and again at 17:13; belt not severely fraying but shedding small pieces.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-09-25T21:25:04.371Z"
+      },
+      "status": "Maintenance trimmed loose pieces at 17:36; running with 3 EEs at depositor and 2 before enrober monitoring closely; QA watching as well. 3rd shift scheduled to replace belt tonight or over weekend."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 corn syrup hose leaking",
+      "summary": "Kitchen 3 operator noticed corn syrup hose leak at 04:52; maintenance checking for replacement hose availability.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-09-26T10:52:07.918Z"
+      },
+      "status": "Maintenance notified as of 04:52, no update posted on part availability or repair."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix sensor fault causing pause",
+      "summary": "Line paused at 19:40 due to sensor fault during 2nd shift run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-26T01:40:23.788Z"
+      },
+      "status": "Pause reported at 19:40; no clear resolution or restart message posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C2 belt has cut running throughout",
+      "summary": "Belt C2 discovered with a cut running the length of the belt at 07:08 during post-clean inspection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-09-26T13:08:12.318Z"
+      },
+      "status": "Reported at 07:08 with photo; no follow-up on replacement or repair plan."
+    }
+  ]
+}

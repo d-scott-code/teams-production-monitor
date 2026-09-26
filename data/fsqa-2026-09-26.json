@@ -1,0 +1,130 @@
+{
+  "date": "2026-09-26",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "L1 S1 belt fraying with multiple findings in product zone \u2014 line continued under *enhanced monitoring* after maintenance trim."
+  },
+  "summary": "Two active foreign-material risks: L1 S1 belt threads found repeatedly near depositor and tunnel, L3 ML1 belt C2 cut throughout discovered during clean. L1 S2 Tate's rework held pending X-ray verification after no initial checks performed.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Tate's Dark rework held for X-ray verification",
+      "summary": "Rework from prior run requires X-ray verification before release because no verification checks were performed on the X-ray during original production.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-09-26T14:02:05.854Z"
+      },
+      "status": "On hold pending X-ray verification check by QA; scheduled for Monday after S2 level 4 clean completes."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S1 belt material found in product zone \u2014 multiple occurrences",
+      "summary": "Operators found belt threads near tunnel 1 at 15:25 MT and again at 17:13 MT; maintenance trimmed loose pieces during MD check, line continued with 5 EEs monitoring.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-09-25T21:25:04.371Z"
+      },
+      "status": "Open \u2014 line running under enhanced monitoring; third shift expected to replace belt tonight or tomorrow."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 belt C2 cut throughout discovered during clean",
+      "summary": "Maintenance found belt C2 has a cut running the length of the belt during morning reassembly; belt was in service prior to level 2 clean.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-09-26T13:08:12.318Z"
+      },
+      "status": "Open \u2014 belt damage documented, ATP testing completed and line cleared to run; no product hold initiated."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle bottomer wire mesh damaged overnight",
+      "summary": "Bottomer wire mesh torn during 2nd shift operation; maintenance repaired by 07:36 MT before startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-26T01:43:25.285Z"
+      },
+      "status": "Resolved \u2014 mesh repaired, line running; no product held."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 Pecan MMK label quality issues \u2014 ridges, bubbles, wrinkles",
+      "summary": "All three lots of Pecan MMK labels showed ridges or poor adhesion; QA accepted small bubbles/wrinkles outside main display panel after 50-jar test with Salted Caramel labels passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-09-25T20:03:33.562Z"
+      },
+      "status": "Resolved \u2014 running Labeler B with Lot 1, minor cosmetic defects accepted; Labeler A material issue confirmed."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caramel texture dry during startup",
+      "summary": "QA flagged dry caramel texture and cutting issues; approximately 15 minutes of production reviewed and accepted, subsequent batches normal.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-25T19:35:39.797Z"
+      },
+      "status": "Resolved \u2014 texture returned to normal, production continued."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Truffle level 2 clean passed ATP",
+      "summary": "Level 2 clean completed and ATP testing passed at 07:33 MT.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-26T13:24:28.687Z"
+      },
+      "status": "Completed \u2014 ATP passed, line released."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 level 2 clean passed ATP",
+      "summary": "Level 2 clean completed and ATP testing passed; QA signed off at 07:45 MT.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-26T13:27:15.04Z"
+      },
+      "status": "Completed \u2014 ATP passed, line released."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 environmental swabs completed for inclusion & cold stamp",
+      "summary": "Three environmental swabs completed for inclusion plate/parts and three for cold stamp plates; all routine midnight shift verification.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-26T16:19:54.509Z"
+      },
+      "status": "Completed \u2014 all swabs taken, results pending."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding belt inspection to S1 startup and mid-shift checks \u2014 today's fraying belt required multiple interventions and raised FM risk during production."
+    },
+    {
+      "plant": "L1",
+      "text": "Verify X-ray safety-chain verification is captured for all rework batches \u2014 today's Tate's Dark rework was created without initial X-ray checks recorded."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML1 belt inspection protocol during reassembly \u2014 the C2 cut was discovered by maintenance post-clean rather than during visual inspection before startup."
+    }
+  ]
+}
