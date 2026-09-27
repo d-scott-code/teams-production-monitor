@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-27",
+  "headline": {
+    "eyebrow": "Staffing flag",
+    "text": "L3 ML4 lost Saturday coverage when *all operators called out* \u2014 mold rotation skipped, Monday readiness questioned."
+  },
+  "per_plant_summary": {
+    "L1": "Saturday cleaning shifts cleared four quick fixes across Sollich 1\u20134, including a metal detector noise issue and a bark breaker that still needs final tooth cleaning Monday.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML4 completed a level 2 clean but lost all Saturday operators \u2014 mold rotation didn't happen and management is asking whether first shift needs early arrival Monday. TG3 threw a conveyor misalignment error overnight with no clear fix, and the truffle line needs wire mesh replacement Monday morning."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 metal detector noise on incline conveyor",
+      "summary": "Electrical noise was triggering false rejects; electricians installed shielded cable on the incline conveyor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Matt Hatch",
+        "time_utc": "2026-09-27T15:56:32.413Z"
+      },
+      "resolution": "Fixed by electricians at 09:56 \u2014 \"finished putting shielded cable on the incline conveyor and it appears to have fixed the noise\" (Matt Hatch)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 Conbar not cleaned after first shift",
+      "summary": "Katya walked the line and found the Conbar hadn't been cleaned and tools were left unsigned.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-26T17:54:09.804Z"
+      },
+      "resolution": "Cleaned by overnight at 22:25 \u2014 \"Conbar has been cleaned, we just need it to be tested\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 capper had tape on it",
+      "summary": "Capper was found with tape on it and needed adjustment to run correctly.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-09-26T22:50:06.161Z"
+      },
+      "resolution": "Fixed at 16:50 \u2014 \"Removed the tape and adjusted it correctly\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "Wiring cable by C7 not secured, touching floor",
+      "summary": "Chad Stone flagged loose cable touching the floor near C7 as a safety hazard.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-27T05:19:16.859Z"
+      },
+      "resolution": "Fixed at 23:19 \u2014 Caleb York \"found a part that has it re-secured keeping it off the ground\" (Conner Boyd)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 belts S3 and M2 stopped",
+      "summary": "Two belts weren't running; Jose was called to diagnose and repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-27T13:57:21.561Z"
+      },
+      "resolution": "Fixed at 07:57 \u2014 \"Jose told me. He was able to fix the the 2 belts (S3 & M2)\" (Raoul Lubain)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 bark breaker teeth cleaning incomplete",
+      "summary": "Bark breaker passed visual inspection except for teeth, which still need final cleaning before full sign-off.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-27T05:16:19.14Z"
+      },
+      "status": "Deferred to Monday start \u2014 MD is in place and won't interfere with CPK order, teeth cleaning to finish during startup."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 conveyor 2 misalignment error",
+      "summary": "TG3 threw an error message indicating conveyor 2 is misaligned; no follow-up on whether it was cleared.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-27T06:13:55.466Z"
+      },
+      "status": "Error reported at 00:13; no resolution or update in the thread as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Saturday shift \u2014 all operators called out",
+      "summary": "Line lead Anthony and all scheduled operators didn't show up Saturday, preventing mold rotation in the WDS and raising Monday readiness concerns.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-09-27T15:17:41.014Z"
+      },
+      "status": "Rose Smuin asking pointed questions at 11:01 and 11:21 about who worked, whether Monday needs early arrival, and missing ATP areas."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line enrober wire mesh replacement needed",
+      "summary": "Rose Smuin requested wire mesh replacement on the TL enrober and asked if it could be done Saturday.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-09-27T17:26:53.359Z"
+      },
+      "status": "Scheduled for Monday morning with delayed line start \u2014 2 hours planned, parts in stock (Chris Givens, 11:40)."
+    }
+  ]
+}

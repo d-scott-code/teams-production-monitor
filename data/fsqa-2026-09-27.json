@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-27",
+  "headline": {
+    "eyebrow": "Verification gap",
+    "text": "L3 ML4 Level 2 clean marked complete with *7+ sections* still awaiting ATP \u2014 verification checklist missed during Saturday crew shortage."
+  },
+  "summary": "Three sanitation gaps flagged across weekend cleaning shifts \u2014 L3 ML4 ATP incomplete on multiple sections, L1 S2 bark breaker deferred to Monday, L1 S4 Conbar initially missed then recovered. L1 S2 almond peels found in Tunnel 2; no disposition documented. Electrical work at L1 S1 (drilling, cutting) requires cleaning Monday morning before startup.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Almond peels found in Tunnel 2",
+      "summary": "Foreign material (almond peels) discovered in Tunnel 2 on L1 S2 line; no follow-up disposition or root cause documented in window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nancy Quiroz",
+        "time_utc": "2026-09-26T18:16:01.104Z"
+      },
+      "status": "Open, no documented follow-up or corrective action."
+    },
+    {
+      "plant": "L1",
+      "title": "Electrical work near production areas \u2014 metal debris risk",
+      "summary": "Drilling, copper wire cutting, and possible stud welding on lower level and incline conveyor of L1 S1; cleaning required before Monday startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-09-27T15:57:41.938Z"
+      },
+      "status": "Identified, cleaning planned for Monday morning pre-startup."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S4 Conbar initially not cleaned",
+      "summary": "Conbar found uncleaned during Friday walk; crew cleaned overnight and reported ready for ATP verification by Saturday morning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-26T17:54:09.804Z"
+      },
+      "status": "Resolved \u2014 cleaning completed, awaiting ATP verification."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Level 2 clean \u2014 ATP verification incomplete on 7+ sections",
+      "summary": "Level 2 clean marked complete, but ATP still needed on TG 3&4, Dep 2, Sweeco 1 & 2 south sides, Rollers Sec 1 & 2, and Scraper; operator absences Saturday may have contributed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-09-27T17:21:59.259Z"
+      },
+      "status": "Open, awaiting ATP verification completion before Monday startup."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 bark breaker teeth cleaning deferred to Monday",
+      "summary": "Bark breaker visual inspection failed due to incomplete cleaning on teeth; metal detector passed and reassembled on line, remaining cleaning deferred to Monday startup.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-09-27T05:16:19.14Z"
+      },
+      "status": "Deferred to Monday startup; will not delay CPK order per crew lead."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review foreign-material investigation SOP for Tunnel 2 almond peels \u2014 no disposition, source identification, or corrective action was documented in the 24-hour window."
+    },
+    {
+      "plant": "L1",
+      "text": "Add maintenance hot-work pre-notification to FSQA for S1 line \u2014 electrical work (drilling, cutting, welding) happened without advance cleaning coordination, flagged only when shift lead asked post-work."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider requiring real-time ATP sign-off in the cleaning checklist itself, not post-completion review \u2014 based on ML4's Level 2 clean marked complete with 7+ sections still awaiting verification."
+    }
+  ]
+}
