@@ -1,0 +1,215 @@
+{
+  "date": "2026-09-28",
+  "headline": {
+    "eyebrow": "Metal detector fail",
+    "text": "L1 S3 metal detector failed to reject test cards at startup \u2014 X-ray caught metal later, *MD did not*. Line held, MD adjusted, now passing."
+  },
+  "summary": "Three active holds today: L1 S3 jar line held for metal detector failure; two boxes at L2 ML2 pulled for missing batch codes; L1 S2 held while maintenance replaced bearing with missing balls. Four sanitation gaps flagged \u2014 weekend cleaning left swecos/magnets dirty at L1 S1 and S3, butter tank uncleaned at S4, and sticky caramel at S2 capper.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S3 jar line held \u2014 metal detector failure",
+      "summary": "Metal detector failed to reject test cards at startup; X-ray later caught metal-in-product that MD missed. Line held, MD adjusted by maintenance, now rejecting correctly.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T13:45:48.584Z"
+      },
+      "status": "Resolved \u2014 MD adjusted at 08:05, cards reading correctly, line released."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 line held \u2014 bearing failure, missing balls",
+      "summary": "Decrystalizer bearing destroyed with balls missing; potential foreign material in product zone. Line shut down, bearing replaced, chocolate emptied for inspection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T16:21:27.989Z"
+      },
+      "status": "Resolved \u2014 bearing replaced in 40 minutes, line restarted at 11:50. Maintenance confirms balls cannot enter pump (fell to floor)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 boxes held \u2014 missing batch code",
+      "summary": "Videojet printer shut off during run; two boxes reached pack area without printed lot code. Boxes pulled from line and isolated for inspection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-09-28T17:56:23.371Z"
+      },
+      "status": "On hold pending QA disposition \u2014 two boxes isolated, awaiting decision."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 tunnel roller creating shavings",
+      "summary": "Tunnel 3 assembly error \u2014 roller cover hitting side, creating small metal shavings. Caught during maintenance inspection after bearing replacement.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T19:52:11.432Z"
+      },
+      "status": "Open, awaiting maintenance fix \u2014 assembly wasn't done correctly, producing shavings."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 metal debris on floor near MD",
+      "summary": "Metal debris found on floor in MD area and S1 incline belt zone this morning. Production cleaned, QA inspected, ATP passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-28T12:09:01.461Z"
+      },
+      "status": "Resolved \u2014 area cleaned, ATP passed, QA released."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 foreign material during belt change",
+      "summary": "Found foreign material under Z-belt during routine wire replacement on pack line. QA consulted on next steps; area cleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T12:44:25.198Z"
+      },
+      "status": "Resolved \u2014 QA assessed as non-product-contact zone, cleaned, released."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 belt fraying",
+      "summary": "Infeed belt on Cavanna 1 shifting, fraying, leaving material behind. Line paused, belt repositioned, area cleaned, QA inspected before restart.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-28T12:39:41.988Z"
+      },
+      "status": "Resolved \u2014 lead adjusted belt/scrapers, QA inspected at 07:19, released to run. Monitoring ongoing."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 MD extra rejection after test",
+      "summary": "Metal detector opened one extra time after 1:30 PM card check completed successfully. QA monitoring for recurrence.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-28T19:45:09.109Z"
+      },
+      "status": "Open, monitoring \u2014 cards read correctly but extra reject triggered; will report if repeats."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML1 equipment assembly errors",
+      "summary": "Sweco screen installed backwards; brass gasket in wrong position causing piston failures. Both caught at startup, corrected by operators.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-28T11:50:56.762Z"
+      },
+      "status": "Resolved \u2014 operators corrected both, depositing properly by 07:11. Flagged for weekend cleaning crew review."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 broken bars at demolding",
+      "summary": "Chocolate accumulation on inverter plate causing bars to break at demolding. Operators caught, cleaned plate, issue resolved.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-09-28T16:13:42.729Z"
+      },
+      "status": "Resolved \u2014 plate cleaned at 10:27, no further broken bars observed."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 swecos/magnets left dirty",
+      "summary": "Swecos and magnets found dirty this morning at S1 \u2014 same issue as S3. Part of shutdown checklist not followed over weekend.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-09-28T12:47:36.662Z"
+      },
+      "status": "Resolved \u2014 cleaned by day shift. Coaching required for weekend crew on shutdown checklist."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 swecos/magnets left dirty",
+      "summary": "Swecos and magnets found dirty this morning \u2014 should have been cleaned at end of weekend run. Operators cleaned during shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-09-28T12:47:52.433Z"
+      },
+      "status": "Resolved \u2014 cleaned by day shift. Shutdown checklist adherence flagged for coaching."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 butter tank not cleaned over weekend",
+      "summary": "Heavy burnt butter buildup found on melting grate this morning \u2014 should have been cleaned as part of weekend shutdown checklist.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T15:41:07.959Z"
+      },
+      "status": "Resolved \u2014 cleaned during lunch rotation. Coaching required; part of shutdown SOP."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 capper belts sticky with caramel",
+      "summary": "Capper and labeling area belts stained with sticky caramel. Cleaning performed; wrong cleaning solution suspected (sanitizer instead of degreaser).",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-28T16:10:08.567Z"
+      },
+      "status": "Resolved \u2014 area cleaned. Solution identified as sanitizer; coaching on chemical selection."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold turner not cleaned",
+      "summary": "Mold turner found uncleaned at startup \u2014 missed during weekend cleaning. Flagged during first-shift inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-28T14:26:20.319Z"
+      },
+      "status": "Open \u2014 flagged for follow-up with weekend cleaning crew."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola exit rollers very dirty",
+      "summary": "Gondola exit rollers received very dirty at startup. Team cleaned rollers before start.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-28T11:30:55.508Z"
+      },
+      "status": "Resolved \u2014 team cleaned at 05:30 before startup."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding sweco/magnet cleaning verification photo to S1 and S3 weekend shutdown checklists \u2014 based on both lines starting Monday with dirty equipment that should have been cleaned per SOP."
+    },
+    {
+      "plant": "L1",
+      "text": "Review S4 weekend shutdown checklist sign-off process \u2014 butter tank buildup suggests checklist steps were marked complete without actual inspection."
+    },
+    {
+      "plant": "L1",
+      "text": "Add MD test-card verification to S3 startup checklist as hard stop before product release \u2014 based on MD failing cards while X-ray caught metal downstream."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding critical assembly steps (gasket position, sweco orientation) with photos to ML1 weekend cleaning checklist \u2014 based on two separate assembly errors caught at startup today."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 weekend cleaning sign-off procedure \u2014 checklist had only 2 of 12+ items signed off, yet line was released; mold turner also missed."
+    }
+  ]
+}

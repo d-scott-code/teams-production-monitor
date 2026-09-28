@@ -1,0 +1,306 @@
+{
+  "date": "2026-09-28",
+  "headline": {
+    "eyebrow": "Major belt work",
+    "text": "L3 ML1 was down *4 hours* for C2 belt replacement \u2014 back up at 13:19 \u2014 while L3 ML4 fought TG belt issues all morning before stabilizing at full speed."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel and cluster lines with two significant mechanical issues that both cleared. S2 enrober bearing failed at 10:21, replacement took 40 minutes and line restarted by 11:50. S3 had a Z-belt wire replacement that caused downstream temper loss; temper regained and line running by 07:41. S1 Matrix 10 had sealing issues through mid-morning, resolved at 09:16 after cleaning and adjustment. S3 MM5 has multiple bucket alignment issues that need maintenance when downtime allows.",
+    "L2": "L2 FFS started with a 17-minute pouch quality stop (top/bottom fold) at 07:32, cleared by 07:49. ML2 had two printer faults \u2014 video jet cartridge replacement at 11:56 and a makeup fault at 13:01, both cleared quickly. ML3 replaced a belt before the twin belts at 07:41, swabbed and back up by 07:50. Otherwise clean day.",
+    "L3": "L3 had the heaviest mechanical load. ML1 discovered a brass gasket installed wrong at startup (center pistons not working), corrected by 07:10. C2 belt sensor failed at 08:18, line ran reduced speed until maintenance replaced the belt and corrected bent hardware on C1 and C6; back at full speed 13:19 after 4+ hours down. ML4 started with a depositor screen freeze (fixed by 05:33), then gondola outfeed failure at 06:42 (41 minutes down, power cycle cleared), followed by TG3 and TG5 blue belt issues from 07:32 through 11:30 when all three TGs finally ran at 25 mpm. Truffle Line had two Cavanna 1 issues (belt fraying and chocolate flipping), both cleared by mid-morning, but the temperter is still working incorrectly and M4 belt requires manual guiding."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "ML1 brass gasket was installed in the wrong position during weekend clean \u2014 second similar setup error in two weeks per Chad Stone; review with cleaning crew scheduled."
+    },
+    {
+      "plant": "L3",
+      "text": "Unreal trial run on MF Matrix completed successfully \u2014 62 cases (372 pouches) produced, pallet LPN R425360, 14 cases staged for L2 shipment prep."
+    },
+    {
+      "plant": "L1",
+      "text": "S3 swecos and magnets were found dirty at start of shift Monday morning \u2014 shutdown checklist not fully completed over weekend per Troy Baxter."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 enrober bearing failure",
+      "summary": "Enrober shut down at 10:21 with bearing completely destroyed and missing balls, emptying chocolate for replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T16:21:27.989Z"
+      },
+      "resolution": "Cleared at 11:32 \u2014 \"Fix only took 40min\" and enrober tempering; kitchen sent caramel to line at 11:50 (Erandy Garcilazo Ceja, Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Z-belt wire replacement and temper loss",
+      "summary": "Z conveyor wire being replaced at 06:26, after replacement had temper issues and adjustments needed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-09-28T12:26:25.773Z"
+      },
+      "resolution": "Cleared at 07:41 \u2014 \"We have temper and the line is running\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Matrix 10 cable disconnect, not picking bags",
+      "summary": "Matrix 10 not grabbing bags, appeared to have no air at 06:47.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-28T12:48:20.74Z"
+      },
+      "resolution": "Cleared at 07:17 \u2014 \"A cable on Matrix 10 was disconnected, maintenance fixed it\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector not rejecting cards",
+      "summary": "Line paused at 07:45 because MD was not rejecting test cards, QA flag.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T13:45:48.584Z"
+      },
+      "resolution": "Cleared at 08:05 \u2014 \"Maintenance adjusted MD. Cards scanned and read correctly, line now back in operation\" (Ingrid Moreno Angarita)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Matrix 10 sealing issues",
+      "summary": "Matrix 10 having sealing issues at 08:20, not all bags sealing properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-28T14:05:40.954Z"
+      },
+      "resolution": "Cleared at 09:16 \u2014 \"All the bags are sealing. I cleaned the sealers and adjusted the bag position\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouches rejected for top/bottom fold",
+      "summary": "Line stopped at 07:32 when QA rejected pouches coming out with improper fold geometry.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-28T13:32:27.892Z"
+      },
+      "resolution": "Cleared at 07:49 \u2014 \"Line is up\" (Jeffrey Barney). 17 minutes down."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 small belt before twin belts replacement",
+      "summary": "Line down at 07:41 for maintenance to replace the small belt before the twin belts.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-28T13:41:00.992Z"
+      },
+      "resolution": "Cleared at 07:50 \u2014 \"Line is back up. Belt was replaced and swab tests were performed, which were successfully passed\" (Claudio Tovar)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 video jet printer shut off",
+      "summary": "Line down at 11:39 when printer shut off, had to reset and replace ink and makeup cartridges.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-09-28T17:53:20.637Z"
+      },
+      "resolution": "Cleared at 11:56 \u2014 \"Line is back up\" after reset and cartridge replacement (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 printer makeup fault",
+      "summary": "Line down at 12:49 for printer fault, team prepared to swap video jet from ML3.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-28T18:49:49.225Z"
+      },
+      "resolution": "Cleared at 13:01 \u2014 \"Maintenance was able to clear the makeup fault\" without swapping printers (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 depositor brass gasket installed wrong, pistons not working",
+      "summary": "ML1 center pistons not working properly at startup (06:10), team troubleshooting found brass gasket installed between wrong plates.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-28T12:10:43.192Z"
+      },
+      "resolution": "Cleared at 07:10 \u2014 \"We completed a test after correcting the brass gasket position, and everything is working properly now\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola outfeed belts not moving, system showing 100% full",
+      "summary": "Gondola showed 100% full but was not, outfeed conveyors in grey (off), line down at 06:42 waiting for maintenance.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-28T12:39:51.784Z"
+      },
+      "resolution": "Cleared at 07:17 \u2014 power cycle resolved communication error, gondola working, filling hoppers to restart. 41 minutes down (Nelson Cook, Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 and TG5 blue belt alignment issues",
+      "summary": "TG3 and TG5 down with blue belts coming out of position and stopping machines, bent twin belt roller found on TG5, only TG4 running at reduced speed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-28T13:32:54.382Z"
+      },
+      "resolution": "Cleared at 11:30 \u2014 TG3 started at 10:30 with intermittent issues, TG5 back at 11:30, line at 25 mpm with all three TGs running (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C2 belt sensor failure and replacement",
+      "summary": "C2 belt sensor not detecting at 08:18, belt stopping on its own, maintenance tried aligner modification but belt had to be replaced along with bent nose guide hardware.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-28T14:18:08.287Z"
+      },
+      "resolution": "Cleared at 13:19 \u2014 \"Line is back up and running\" after C2 belt replaced, all bent hardware replaced, C2 tracking connector tightened, C1 and C6 realigned (Rich Brierley, Nathan Ruiz). Over 4 hours down."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 screen frozen at startup",
+      "summary": "Depositor 4 screen turned off and frozen, team could not purge the depositor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 2",
+        "time_utc": "2026-09-28T10:05:06.005Z"
+      },
+      "resolution": "Cleared at 05:33 \u2014 Nathan opened back of screen, disconnected and reconnected wire (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 infeed belt shifting and fraying",
+      "summary": "One of the infeed belts on Cavanna 1 was shifting to one side and leaving material debris, maintenance was busy on ML4.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-28T12:39:41.988Z"
+      },
+      "resolution": "Cleared at 07:19 \u2014 lead repositioned belt, adjusted scrapers, QA inspected, \"belt is no longer fraying\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 chocolate flipping on belt transfer",
+      "summary": "Chocolate jumping and flipping over when switching belts, landing in wrong space and causing sensor rejects.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-28T15:03:30.52Z"
+      },
+      "resolution": "Cleared at 09:27 \u2014 \"Adjusted pre-insert from 60 to 70. Adjusted insert from 85 to 80. Looking good now\" (Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola exit belts jammed with bars",
+      "summary": "Bars jammed between the belts and metal at gondola exit, line down at 11:20.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-28T17:23:37.405Z"
+      },
+      "resolution": "Cleared at 11:25 \u2014 \"Running\" (Itzel Chavez). 5 minutes down."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 MM3 and MM4 bag discharge failure",
+      "summary": "On MM3 and MM4 at 08:52, bag not coming out and instead falling inside, machine not completing discharge cycle.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-09-28T14:52:37.611Z"
+      },
+      "status": "Troy aware and working on solution as of 08:52, no resolution posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM5 multiple bucket alignment and vibration issues",
+      "summary": "MM5 has mechanical issues on buckets #1 (touching lower bucket), #3 and #4 (touching at bottom), and #14 (bent plate), plus some vibrating plates in wrong locations.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T15:32:20.703Z"
+      },
+      "status": "Most buckets recalibrated with 600g weights, but buckets #1, #3, #4, and #14 will need maintenance when downtime available (09:32)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 return conveyors 1, 2, 3 sticky with caramel, need re-clean",
+      "summary": "During morning inspection return conveyors 1, 2, 3 found very sticky with caramel residue, belts need to be cleaned again.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-09-28T17:50:15.13Z"
+      },
+      "status": "Identified at 11:49 during QA inspection, re-cleaning required, impact discussion pending with Katya."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line temperter working incorrectly",
+      "summary": "Temperter flagged as working incorrectly at 08:35, no follow-up resolution in the window.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-09-28T14:35:02.118Z"
+      },
+      "status": "Issue reported at 08:35, no updates or resolution posted by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M4 belt shifting north, requires manual guidance",
+      "summary": "M4 belt definitely shifting north at 09:34, operators manually guiding it south until maintenance freed up.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-09-28T15:34:47.349Z"
+      },
+      "status": "Operators manually guiding belt as of 09:34, waiting for maintenance to make permanent adjustment."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 dosing head cover sporadic chocolate leak",
+      "summary": "Chocolate leaking from one of the dosing head covers at 07:45, operator replaced screws with shorter ones in case existing screws prevented proper seal.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-28T13:45:51.04Z"
+      },
+      "status": "Screws replaced and area cleaned at 08:13, team monitoring to see if this resolves the sporadic leak (Grey Boscan)."
+    }
+  ]
+}
