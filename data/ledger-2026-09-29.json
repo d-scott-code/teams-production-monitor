@@ -1,0 +1,350 @@
+{
+  "date": "2026-09-29",
+  "headline": {
+    "eyebrow": "Materials short",
+    "text": "L3 ML4 ran out of flow wrap at 10:35, stopped depositing; L2 ML2 ran out of rice at 11:00, *1 hour down* until material arrived at 12:15"
+  },
+  "per_plant_summary": {
+    "L1": "Ran caramel lines with routine adjustments. S1 riser pump faulted at 05:41 but cleared after reheat. Live cockroach found on pallet during 3rd shift\u2014pallet removed, area inspection underway. S2 bottomer west bearing flagged as deteriorating.",
+    "L2": "ML2 printer faulted four times across 2nd and 3rd shifts, cleared each time by priming mixing tank. Ran out of rice at 11:00, back up at 12:15 once material arrived. ML3 belt broke at 18:51, replaced and running again by 19:12.",
+    "L3": "ML4 TG5 drive belt came off at 16:26, roller seized\u2014cleared by 16:57. Ran out of flow wrap at 10:35, stopped depositing PTLs. Dirty molds causing bar stains; sensitivity adjustment requested. Roof leak continues, follow-up scheduled."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S1 hopper level configuration adjusted to reduce caramel scrap\u2014new setpoints running stable throughout shift."
+    },
+    {
+      "plant": "L2",
+      "text": "FFS pouch film arrived and staged at 12:20."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 Tunnel 3 roller cover hitting side",
+      "summary": "Roller cover not assembled correctly after maintenance work, creating small shavings during operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-28T19:52:11.432Z"
+      },
+      "resolution": "Covers properly installed, cleaned, and approved to keep running by 14:38 (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar label positioning off-center",
+      "summary": "Labels visibly misaligned on new short jar geometry due to 2mm taper from top to bottom.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-09-28T21:18:21.796Z"
+      },
+      "resolution": "Approved to run as-is by Kandy Mondragon and Curt Willis at 15:40 with documentation."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 water activity out of range",
+      "summary": "Initial caramel aW test result high; QA concerned even after second reading still slightly elevated.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-09-29T00:35:37.069Z"
+      },
+      "resolution": "Third sample tested at 19:17, result within range (Angelica Perez to Italu Martinez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 riser pump high-pressure fault",
+      "summary": "Pump faulted and stopped at 05:41, temper system down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-09-29T11:41:43.59Z"
+      },
+      "resolution": "Pre-reheat done long enough for pump to restart at 05:50, temper running again (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 chocolate filter pin missing",
+      "summary": "Filter could not be installed because retaining pin was not in place after Thursday issue.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-28T21:04:32.496Z"
+      },
+      "resolution": "Pin found by Nathan Coles at 23:00, filter installed and pressure verified OK."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 conveyor belt broken",
+      "summary": "Belt snapped at 18:51, line stopped for replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-29T00:51:20.624Z"
+      },
+      "resolution": "New belt installed, line running again at 19:12."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film cutting blades not working",
+      "summary": "Blades not cutting film cleanly starting at 03:59, line stopped for troubleshooting.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-09-29T09:59:07.28Z"
+      },
+      "resolution": "Back up at 04:52 after cleaning chocolate from under forming plate, CIL, soft reset, and B19 sensor adjustment (Fernando Flores)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 ran out of rice",
+      "summary": "Depositing stopped at 11:00 when rice hopper emptied, cooler running empty.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-29T17:10:33.823Z"
+      },
+      "resolution": "Rice arrived and loaded into Hapman by 12:03, depositing again at 12:15 (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 printer faults recurring",
+      "summary": "Printer threw makeup fault four times across 2nd and 3rd shifts starting at 12:49, requiring line stops each time.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-28T18:49:49.225Z"
+      },
+      "resolution": "Cleared each time by priming mixing tank per Shawn's instructions; VJ tech replaced solvent control module last week, full ink system replacement on backorder."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 drive belt off, roller seized",
+      "summary": "Small belt not spinning at 16:17, drive belt frayed and came off seized roller causing bars to melt.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-28T22:17:00.659Z"
+      },
+      "resolution": "Belt replaced and TG5 running again at 16:57 after burning off frayed material (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper slope high throughout shift",
+      "summary": "Slope hitting 0.7 repeatedly during 2nd shift, requiring stops; pre-cooling temp elevated.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-28T21:07:52.321Z"
+      },
+      "resolution": "Cold water dropped to 48\u00b0, pre-cooling to 89.5\u00b0 per Shawn's guidance; confirmed acceptable to run at 0.7 per Feastables spec update at 20:00."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM bags with stains and defective units",
+      "summary": "Stains on bag fronts, many poorly sealed or empty units reaching boxes during 2nd shift.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-09-28T22:47:22.036Z"
+      },
+      "resolution": "Area cleaned, team instructed to check and remove defects; verified corrected by 18:10 (Lorena Abreu)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M4 belt shifting out of position",
+      "summary": "M4 belt tracking north repeatedly across shift; scraper also not contacting belt properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-28T22:48:41.125Z"
+      },
+      "resolution": "Maintenance adjusted belt position at 17:00 and scraper position at 00:57 (Jose Vasquez), belt centered and stable."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola filling level warning",
+      "summary": "Gondola hit 88% full at 19:49, alarm sounded and stopped WDS.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-09-29T01:49:02.993Z"
+      },
+      "resolution": "Percentage back in green, line resumed; reduced to 18 mpm until TG back to two lines, then returned to 25 mpm."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 bouncing as if loose",
+      "summary": "TG3 alarm at 23:47, visibly bouncing during operation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-29T05:47:33.892Z"
+      },
+      "resolution": "Lifted and tightened at 23:56, back up (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 frozen pipes at startup",
+      "summary": "Line couldn't start at shift open, pipes frozen.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-09-29T10:00:23.216Z"
+      },
+      "resolution": "Temper unit back to good temper, started running at 04:25 (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM suction cups not opening bags",
+      "summary": "Machine not opening bags correctly at 08:17, suspected suction cup misalignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-29T14:17:37.753Z"
+      },
+      "resolution": "Nelson adjusted suction cups, now lined up and working at 08:49."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 door randomly opened and bent",
+      "summary": "Door opened on its own at 11:37, difficult to close due to bent condition.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-29T17:36:57.771Z"
+      },
+      "resolution": "Nelson Cook straightened door, fixed by 11:40."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 live cockroach found on pallet",
+      "summary": "Employee saw live cockroach on finished-goods pallet during 3rd shift; pallet removed from production area.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-09-29T04:54:17.244Z"
+      },
+      "status": "Pallet taken away by 23:24; Curt Willis instructed Jody Howse to inspect area for additional insects as of 23:29."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 bottomer west bearing deteriorating",
+      "summary": "Maintenance identified bearing going out, potential for failure if not replaced soon.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-29T13:57:56.826Z"
+      },
+      "status": "Maintenance keeping an eye on it as of 07:57."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 first row chocolates damaged by conveyor",
+      "summary": "First row coming out damaged due to belt movement, needs person assigned to remove damaged pieces.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-29T14:38:52.745Z"
+      },
+      "status": "QA requested staffing to remove damaged pieces as of 08:38; operator indicated issue is belt movement."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 pallet missing 'L' from lot code",
+      "summary": "Pallet just set aside at 11:24 due to incomplete lot label printing (missing letter L).",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-09-29T17:24:22.566Z"
+      },
+      "status": "Team lead reviewing pallet to check jars as of 11:24."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 out of flow wrap film",
+      "summary": "Ran out of flow wrap at 10:35, stopped adding chocolate to PTLs to avoid accumulation.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-29T16:35:33.926Z"
+      },
+      "status": "Depositing stopped at 10:35 due to packaging shortage; 36,750 FW on hold may have been discarded."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 printer fault, parts needed",
+      "summary": "Printer stopped at 20:32 on 2nd shift; maintenance swapped in printer from ML4 TG4 but mixing tank parts remain on backorder.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-29T02:32:34.573Z"
+      },
+      "status": "Running on TG4 printer as of 03:52; Chris Givens following up with VJ on ink system ETA as of 08:04."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 dirty molds causing bar stains",
+      "summary": "Bars showing small stains every 8 molds due to dirty molds not being rejected automatically by vision system.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-29T16:18:07.491Z"
+      },
+      "status": "Itzel cleaning licking roller and looking into sensitivity adjustment as of 10:25; QA requested automatic rejection sensitivity increase."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM bag opening problems persisting",
+      "summary": "Machine continues having trouble opening bags correctly despite earlier suction cup adjustment at 08:49.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-29T18:13:21.332Z"
+      },
+      "status": "Maintenance present as of 12:13, problem ongoing."
+    },
+    {
+      "plant": "L3",
+      "title": "Roof leak above warehouse area",
+      "summary": "Same roof area leaking again after last week's patch; buckets placed, pallets moved by WH.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Edwin Caluna",
+        "time_utc": "2026-09-28T23:40:17.712Z"
+      },
+      "status": "Superior Roofing patched last Wednesday; Rose and Preston following up as of 18:29."
+    }
+  ]
+}

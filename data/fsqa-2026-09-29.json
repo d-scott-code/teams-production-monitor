@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-29",
+  "headline": {
+    "eyebrow": "Pest sighting",
+    "text": "L1 S1 live cockroach found on finished-product pallet at *22:54* \u2014 pallet pulled, area inspection ordered."
+  },
+  "summary": "One active pest sighting at L1 requiring follow-up inspection. Foreign material caught at checkweigher on L1 S3. Metal detector at L1 S1 opened extra times beyond test protocol. L3 truffles scrapped 8 bins for damage.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "8 bins truffles scrapped for damage",
+      "summary": "QA ordered 8 of 12 accumulated bins scrapped because chocolate was heavily scuffed and damaged.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-09-29T13:06:38.26Z"
+      },
+      "status": "Resolved \u2014 bins scrapped per QA direction."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Live cockroach on S1 finished-product pallet",
+      "summary": "Employee reported live cockroach on pallet at 22:54; pallet removed for inspection and insect disposal.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-09-29T04:54:17.244Z"
+      },
+      "status": "Open \u2014 pallet pulled, maintenance ordered to inspect area for additional insects."
+    },
+    {
+      "plant": "L1",
+      "title": "Plastic part in S3 bag rejected at checkweigher",
+      "summary": "Piece fell from MM4 top into bag during packing; rejected at checkweigh station due to excess weight, part recovered.",
+      "severity": "high",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-09-29T17:12:35.618Z"
+      },
+      "status": "Resolved \u2014 foreign material rejected by weight check, QC notified part was found."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 metal detector opened extra times after test",
+      "summary": "During 13:30 and 14:30 checks, MD test cards detected correctly but detector opened 1\u20132 additional times afterward each check; did not open again after 14:30.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-28T19:45:09.109Z"
+      },
+      "status": "Resolved \u2014 no further anomalies after 14:30 check; monitoring continues."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 dirty molds not auto-rejecting",
+      "summary": "Bars coming out with small stains from dirty molds that vision system is not catching; team manually removing affected molds.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-09-29T16:18:07.491Z"
+      },
+      "status": "Open \u2014 investigating vision sensitivity adjustment to auto-reject dirty molds."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding metal detector self-test log to capture spurious openings \u2014 based on S1 MD opening extra times beyond test protocol on 9/28."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider scheduling pest control sweep of S1 pack area \u2014 based on live cockroach sighting on finished-product pallet at 22:54."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider recalibrating ML4 vision rejection threshold for dirty molds \u2014 based on stained bars passing inspection that required manual removal."
+    }
+  ]
+}
