@@ -1,0 +1,378 @@
+{
+  "date": "2026-09-30",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 Truffle Line down all of 1st shift after broken riser pump found at 07:31\u2014parts disassembled in shop by 09:25, no repair timeline yet."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel across S1, S2, S4 with multiple hiccups. S1 lost temper overnight when riser pump faulted but recovered by 03:33. S4 had a conbar clog at 06:30 cleared by 09:04 and 7 pallets of low-salt caramel tagged for rework. S2 continues to fight X-ray rejections on the small jar\u2014jars jam at the transition to C16, floor stationed an EE there as workaround. Tray shortage for quarter pallets remains unresolved with shipment not due until 10/03.",
+    "L2": "L2 ran moulding lines and FFS with scattered stoppages. FFS had blow nozzle and seal issues that cleared same-shift. ML3 went down twice for label and sensor faults, both resolved quickly. ML2 had VFD faults on PTL overnight\u2014status unclear by window close. Computer screen on ML3 cracked, touchscreen failing.",
+    "L3": "L3 Truffle Line lost the morning to a broken turbo temper pump\u2014disassembled by maintenance at 09:25, 1st shift cancelled. ML1 fought Cavanna jams overnight, cleared by 05:16. ML4 had a damaged cable when EEs bumped an ingredient tank with only 2 people (should've had 3), pump replaced by 04:57. MF Matrix dialed in pouch pickup by 1st shift after high scrap overnight. Possible Canada cellophane use under investigation."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Chocolate delivery diverted from Orem to L1, then unloaded at Springville by mistake\u2014transfer arranged, load left Springville at 10:45."
+    },
+    {
+      "plant": "L1",
+      "text": "S1 ran 3 pallets overnight with wrong matrix label (M5 printed, M9 ran)\u2014quality approved for shipment."
+    },
+    {
+      "plant": "L3",
+      "text": "Pipe leaks in GMP area reported at 20:27, maintenance investigating\u2014no cause determined by window close."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S1 temper unit riser pump faulted overnight",
+      "summary": "Pump faulted out at 01:43 on high pressure, lost start temperature\u2014chocolate re-tempered by 03:33, finished remaining caramel by 05:23.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-09-30T07:43:01.029Z"
+      },
+      "resolution": "Pump restarted at 02:43, enrober re-tempered, line finished caramel run by 05:23\u2014'Pump has started and enrober is tempering to finish out the caramel' (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 conbar pump clogged, line down from 06:30",
+      "summary": "Caramel pump to conbar at 200 psi, shutting down\u2014elbow above conbar blocked with hardened caramel.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-30T13:45:55.895Z"
+      },
+      "resolution": "Cleared at 09:04\u2014'We cleaned the blockage, and the system is now ready to run' (Marcos Jimenez). Hot-water temp lowered from 190\u00b0F to 175\u00b0F to prevent recurrence."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 blue belt skipping at capping machine",
+      "summary": "Belt skipping, jars accumulating at transitions\u2014sprocket positioned too far outside.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-29T18:42:00.712Z"
+      },
+      "resolution": "Cleared at 12:42\u2014'Maintenance found that the sprocket is in the wrong position (too far outside). That is being fixed right now' (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 aligner belt torn, could shed particles",
+      "summary": "Belt after Tunnel 2 torn and fraying\u2014maintenance trimmed damaged material, operators monitoring every 30 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-29T21:57:07.869Z"
+      },
+      "resolution": "Cleared at 19:49\u2014'Maintenance has finished. No loose pieces or material that could come off are visible' (Angelica Perez). Running with inspection protocol."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 7 pallets of Bequet caramel low on salt",
+      "summary": "3rd shift produced 7 pallets with very little or no salt on bottom of pieces\u2014tagged for rework, approved to blend at L3.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-09-30T13:32:06.960Z"
+      },
+      "resolution": "Resolved at 09:30\u2014'7 pallets... will be sent to L3 with Rework status to be blended with production that is within specification. This rework has been approved by Quality' (Mary Montilla)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 chiller screen went blank at 10:32",
+      "summary": "Chiller screen blank, line stopped\u2014breaker tripped out, maintenance reset by 10:40.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-30T16:32:06.540Z"
+      },
+      "resolution": "Cleared at 10:40\u2014'It was tripped out. Maintenance reset it' (Katya Farnsworth). Temper had to be recovered."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 label machine wrinkling thin labels",
+      "summary": "New label roll very thin, causing wrinkles\u2014machine adjusted, now 1 wrinkled jar per 20-30 good.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Elizabeth Hernandez",
+        "time_utc": "2026-09-30T00:55:37.315Z"
+      },
+      "resolution": "Cleared at 22:04\u2014'the labeling machine is working well\u2014only one jar comes out with a wrinkled label for every 20 to 30 jars that are labeled correctly' (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label issues at 15:12",
+      "summary": "Line down for label issues, parameters needed readjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-29T21:12:17.332Z"
+      },
+      "resolution": "Cleared at 15:24\u2014'Line running again, some parameters needed to be readjusted' (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 PG 11 sensor moving the cut",
+      "summary": "Sensor causing cut position to shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-29T23:26:39.940Z"
+      },
+      "resolution": "Cleared at 17:28\u2014'Line running again' (Molding Line 3 Pack). Brandon confirmed at 18:21: 'PG 11 sensor issues (these have been corrected)'."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blow nozzle / flap folding wrong at 06:44",
+      "summary": "Line down, flap folding to wrong side\u2014maintenance adjusted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-30T12:44:38.125Z"
+      },
+      "resolution": "Cleared at 07:01\u2014'The line is running' (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS long seal coming open at 11:25",
+      "summary": "Pouches coming out with long seal open.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-30T17:25:12.161Z"
+      },
+      "resolution": "Cleared at 12:15\u2014'Long seal fixed' (Maria Caldera)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna jamming overnight and into 3rd shift",
+      "summary": "Products jamming in Cavanna, flow wrap ripping\u2014maintenance adjusted film and jaw cut position.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-09-30T03:28:37.227Z"
+      },
+      "resolution": "Cleared at 05:16\u2014'Kavin adjusted the film, and jaw cut position' (Raoul Lubain), confirmed resolved and running."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix high pouch scrap overnight",
+      "summary": "74 pouches scrapped by 3rd shift, pouches not picking up\u2014suction cups changed twice, material not sliding well.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-09-30T03:35:22.633Z"
+      },
+      "resolution": "Cleared by 07:59\u2014'Pouch picking/opening works almost flawlessly depending on material loading' (Shawn Jewkes). Multiple time studies at 7% reject or better, rate now above standard."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tank bumped, cables damaged",
+      "summary": "Two EEs bumped tank moving it to depositor 2, damaged cables\u2014should have had three people.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-09-30T09:46:43.943Z"
+      },
+      "resolution": "Cleared at 04:57\u2014'The pump has been replaced' (Jose Vasquez). Chad Stone reinforced 3-person requirement at 05:11."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line chocolate pallet used without system label",
+      "summary": "Pallet R365953 opened and partially consumed without label loaded in IMS\u2014cycle count completed, records adjusted.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-09-30T13:36:02.891Z"
+      },
+      "resolution": "Cleared at 09:03\u2014'The cycle count for Item 10257 has been completed... we will now enter the label and adjust the records to match the actual physical stock on the line' (Fredy Montalvan)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Tray shortage for quarter pallet production",
+      "summary": "Need 5,400 trays for 900 pallets, only have 2,354 on hand\u2014next shipment 10/03, but shipping needs final pallets by 10/02.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jazmin Vazquez",
+        "time_utc": "2026-09-30T15:56:48.798Z"
+      },
+      "status": "Laura Brady confirmed at 12:10 that waiting for 10/03 shipment won't work\u2014'We have to ship the final pallets on 10/2.' Kandy Mondragon asked at 12:22 if partial shipping to nearby states is possible."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 X-ray rejections on small jar continue",
+      "summary": "Jars jamming at X-ray exit to C16, too close together without spacing\u2014EE stationed at transition as workaround, belt speed adjustment discussed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-09-29T21:42:34.770Z"
+      },
+      "status": "EE stationed at X-ray exit to manually clear jams as of 17:13. William Lopez proposed increasing inlet belt speed at 17:17."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 chocolate found under conveyors after wrap",
+      "summary": "Fair amount of chocolate under belts on C-24 through C-26 discovered after conveyors wrapped\u2014matrix tops covered, re-clean required.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Chris Whitaker",
+        "time_utc": "2026-09-30T12:55:53.198Z"
+      },
+      "status": "Conveyors 24-26 unwrapped, chocolate found on rollers and frames, areas marked for re-clean as of 06:55."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 possible Canada cellophane used on 3rd shift",
+      "summary": "14.5 rolls found with barcodes on cellophane pallet, may have been used overnight\u2014QA inspecting last night's production.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-30T17:37:49.121Z"
+      },
+      "status": "Under investigation as of 11:49. Justin coordinating with Charity, will inspect product and check for barcodes on finished goods."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Level 4 clean missing QA signatures",
+      "summary": "Multiple gaps found in 2nd shift cleaning paperwork, quality supervisor signatures missing throughout.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-30T13:30:37.547Z"
+      },
+      "status": "Katya posted pictures of missing signatures at 07:30. Justin confirmed follow-up required at 07:30."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 VFD faults on PTL overnight",
+      "summary": "Power supply 090-vfd1 faulted out multiple times around 22:00, issue with 090-gs1 sensor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-09-30T10:28:53.460Z"
+      },
+      "status": "Fernando reported at 04:28 that sensor was not made, VFD faults occurred on PTL. No resolution or follow-up posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 computer screen cracked, touchscreen failing",
+      "summary": "Crack on top right corner of screen, touchscreen not working in that area, mouse pad difficult to use.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-09-30T13:35:44.431Z"
+      },
+      "status": "Replacement may be needed as of 07:35. Zack Kurtz unaware of when damage occurred\u2014'This wasn't brought to my attention last night.'"
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line turbo temper riser pump broken",
+      "summary": "Low pressure led to discovery of broken riser pump at 07:31\u2014pump removed, disassembled in shop, 1st shift production cancelled.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-09-30T13:31:48.157Z"
+      },
+      "status": "Pump disassembled in maintenance shop as of 09:25 to find further damage. No repair timeline. Team reassigned to rework and ML4 clean."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold return failed visual inspection",
+      "summary": "Still dirty areas on mold return after clean\u2014insufficient manpower on 3rd shift to re-clean.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-09-30T10:15:59.308Z"
+      },
+      "status": "Scheduled for re-clean on next shift as of 04:28\u2014'Mold return will need to be re-cleaned tomorrow as we don't have the man power tonight' (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 case labels from 3rd shift have wrong lot number",
+      "summary": "3rd shift labels incorrect, 1st shift fixing their pallet, 3rd shift pallets on hold pending rework form.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-09-30T13:43:29.113Z"
+      },
+      "status": "Rework in progress as of 07:43. Jenny working on rework form."
+    },
+    {
+      "plant": "L3",
+      "title": "Possible Canada TW cellophane used on 3rd shift",
+      "summary": "Canada cellophane may have been used last night\u2014QA inspecting product, checking for barcodes on cellophane.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-09-30T17:44:59.848Z"
+      },
+      "status": "Under investigation as of 11:44. Justin coordinating with Charity on rework form. Preston requested documentation."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bucket 15 fell during 2nd shift",
+      "summary": "Pause for fallen bucket at 17:34.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-09-29T23:34:14.155Z"
+      },
+      "status": "Line paused at 17:34. No follow-up on repair or cause posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Pipe leaks in GMP area under investigation",
+      "summary": "Multiple leaks from pipes in GMP, possibly condensation or overspray from wash area.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-09-30T02:27:45.513Z"
+      },
+      "status": "Maintenance investigating as of 20:27. Angel asked for update at 20:55 but no cause determined by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 three unlabeled flow wrap rolls received from 3rd shift",
+      "summary": "Three rolls on unlabeled pallet, no LPN visible\u2014IMS checking system to verify if pallet was loaded.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-09-30T14:31:00.389Z"
+      },
+      "status": "Under investigation as of 08:31. Grey Boscan asked IMS to check if pallet was scanned in system. No answer posted by window close."
+    }
+  ]
+}

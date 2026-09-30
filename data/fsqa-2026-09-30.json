@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-30",
+  "headline": {
+    "eyebrow": "Holds + FM event",
+    "text": "Two holds active \u2014 *low-salt* Bequet on L1 S4 (8 pallets for rework), wrong case labels on L3 ML1. Metal debris found in L3 ML4 PTL2 filter during cleaning."
+  },
+  "summary": "Two quality holds in progress for rework/relabel. One foreign-material flag \u2014 metal debris found inside L3 ML4 PTL2 filter during changeover cleaning. L1 S4 torn belt trimmed but remained in service in product-contact zone. L1 S3 cleaning failure \u2014 chocolate found under belts after allergen clean was signed off.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "8 pallets Bequet caramel \u2014 insufficient salt",
+      "summary": "Third-shift production on S4 yielded 7\u20138 pallets with very little or no salt on bottom of pieces; QA approved rework plan to blend with in-spec product at L3.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-09-30T13:38:01.016Z"
+      },
+      "status": "Tagged QA Rework, scheduled for transfer to L3 for blending with compliant production."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 pallets \u2014 wrong case lot number",
+      "summary": "Third-shift case label left for first shift had incorrect lot number; first-shift pallet corrected, third-shift pallets on hold pending rework form.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-09-30T13:43:29.113Z"
+      },
+      "status": "On hold pending rework documentation; first-shift pallet already corrected."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 aligner belt torn, trimmed in service",
+      "summary": "Belt after Tunnel 2 found torn with potential to shed material onto product in direct contact zone; maintenance trimmed damaged area but residual loose material visible, line resumed after second trim and sanitation.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-09-29T21:57:07.869Z"
+      },
+      "status": "Resolved on shift \u2014 belt trimmed twice, sanitized, monitored every 30 minutes; no further shedding observed by end of second shift."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 possible Canada cellophane use",
+      "summary": "Second shift found 14.5 rolls of cellophane with barcodes (Canada-market indicator) on opened pallet; QA inspecting third-shift production to confirm if wrong packaging was applied.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-09-30T17:49:16.907Z"
+      },
+      "status": "Investigation ongoing \u2014 QA inspecting all third-shift product; first shift also flagged to inspect TW before running."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal debris in ML4 PTL2 filter",
+      "summary": "During first-shift ML4 clean, operator found foreign item (appears metallic) inside PTL2 filter; photo posted 08:51 MT.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-09-30T14:51:25.790Z"
+      },
+      "status": "Open \u2014 filter was being cleaned as part of scheduled changeover; no indication item entered product stream."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S1 Matrix 9 \u2014 wrong printer display on 3 pallets",
+      "summary": "Third-shift date change resulted in 3 pallets with case labels showing M5 instead of M9; printer output correct, matrix assignment incorrect.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-09-30T15:03:02.177Z"
+      },
+      "status": "Resolved \u2014 Quality approved pallets for shipment after verification."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 cleaning verification failure \u2014 chocolate under belts",
+      "summary": "During Matrix reassembly first shift unwrapped conveyors C-24 through C-26 and found chocolate under belts, on rollers, scrapers, and frames after allergen clean was signed off and wrapped; Matrix tops re-covered pending re-clean.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chris Whitaker",
+        "time_utc": "2026-09-30T12:55:53.198Z"
+      },
+      "status": "Open \u2014 areas marked for re-cleaning; second-shift cleaning paperwork also missing multiple QA signatures."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review belt inspection and hold criteria for product-contact zones \u2014 S4 torn belt was trimmed and returned to service twice before stable; establish clear replacement threshold for equipment damage in direct-contact areas."
+    },
+    {
+      "plant": "L1",
+      "text": "Review material scanning/traceability SOP \u2014 S4 wrong cellophane pallet and L3 truffle line un-scanned chocolate pallet both indicate gaps in scan-before-use enforcement."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding moving-equipment damage inspection to startup checklist \u2014 today's ingredient tank bump (cables damaged) and PTL2 filter debris both occurred during equipment repositioning after cleaning."
+    }
+  ]
+}
