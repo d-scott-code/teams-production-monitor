@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-01",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 S3 temper dropped out of range at 12:30 and L2 ML2 fought broken bars and blow-offs *most of 3rd shift* \u2014 both lines now stabilizing."
+  },
+  "per_plant_summary": {
+    "L1": "Four lines ran caramel cluster with steady output. S1 cleared a metal detector jam and several hardware fixes (shaker nut, blue tab screw) before noon. S3 hit enrober pressure issues mid-shift and temper fell out of range late \u2014 line stopped at 12:30 to recover. S4 fought a conbar belt peeling issue that's still open.",
+    "L2": "FFS ran through print mark and seal issues most of the day but stayed on rate. ML2 had the roughest shift: long belts replaced on 2nd, then 3rd shift spent hours troubleshooting broken bars and blow-offs \u2014 issue cleared by 08:07 after nozzle cleaning. Caramel tank water pump is failing but still holding temp. ML3 ran clean.",
+    "L3": "Truffle line reported a damaged belt at 06:17 with no follow-up. ML4 is deep in commissioning \u2014 cold stamp and nozzle plates failed micro tests and are being re-cleaned. ML1 and MF Matrix both ran well; MF Matrix dialed in an 11oz pouch recipe mid-shift."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Kitchen 1 floor left dirty by 2nd shift at shift change \u2014 3rd shift lead escalated for coaching."
+    },
+    {
+      "plant": "L1",
+      "text": "Walk Global pallet confusion for PriceMart order resolved after photo comparison; spec will be updated with identifying image."
+    },
+    {
+      "plant": "L2",
+      "text": "Crisp countdown tool added to supervisor toolkit on the S-drive."
+    },
+    {
+      "plant": "L3",
+      "text": "Grey posted updated kitchen tank emptying plan for Saturday changeover \u2014 stop adding chocolate at 11:00 instead of noon to account for trim remelt."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Washer fell into pouch from M10 cone",
+      "summary": "X-ray inspection caught washer inside pouch during check; operator had cleaned M10 cone but didn't replace washer properly, causing it to fall into product.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-30T20:43:21.568Z"
+      },
+      "resolution": "X-ray detected and rejected the pouch; washer secured back on M10 cone at 14:46 (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "Cereal loader not opening properly",
+      "summary": "Loader not opening on S1, likely overfilled and blocking up; operators emptying loader before bed thins out.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-10-01T04:27:37.381Z"
+      },
+      "resolution": "Operators emptied loader; issue resolved shortly after 22:27 (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 C2 kettle lid leaking air",
+      "summary": "Second batch won't send up due to air leak on kettle lid, maintenance working on it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-01T09:45:58.091Z"
+      },
+      "resolution": "Maintenance tightened lid and fixed leak; batch started up at 04:27 (S4 Kitchen Tablet)."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal detector not opening on S1",
+      "summary": "MD reading cards correctly but not opening; significant buildup on MD may be blocking operation, maintenance waiting for area to be cleaned.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-01T13:10:46.894Z"
+      },
+      "resolution": "Production cleaned MD and maintenance adjusted belt; test cards read and MD opened properly at 08:19 (Mariela Gudino, Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "Hair found in product before enrober",
+      "summary": "Operator found hair on west side of conveyor just before enrober; QA and depositor operator notified, all employees coached to wear two hats and secure hair.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-09-30T21:46:49.453Z"
+      },
+      "resolution": "Cleared at 15:48 \u2014 employees coached on double hats and hair restraint (Delia Zambrano)."
+    },
+    {
+      "plant": "L1",
+      "title": "M9 pouch shaker nut missing",
+      "summary": "First shift found shaker piece missing the nut that secures it; operator reported it tightened during her previous shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-01T13:36:34.247Z"
+      },
+      "resolution": "Maintenance replaced nut and secured it at 07:51 (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "Hopper sensor affected by sun reflection",
+      "summary": "Hopper not filling properly because sensor affected by sun reflection through window; temporary cardboard barriers were removed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-01T15:07:09.285Z"
+      },
+      "resolution": "Temporary barriers replaced to block sunlight from sensor; issue resolved and running at 09:07 (Marcos Jimenez)."
+    },
+    {
+      "plant": "L1",
+      "title": "M10 blue tab missing screw and nut",
+      "summary": "Blue tab on M10 not installed correctly, missing screw and nut, was force-fitted and doesn't fit properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-01T16:39:50.155Z"
+      },
+      "resolution": "Maintenance adjusted part and installed missing screw and nut at 10:45 (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "Bottomer exposing parts on S1",
+      "summary": "Bottomer needs adjustment because several chocolate pieces have exposed bottoms.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-01T14:31:32.265Z"
+      },
+      "resolution": "Leader adjusted the bottomer by 09:03 (Mariela Gudino, S1 Enrober)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bags cutting badly at 14:10",
+      "summary": "Machine down because mars cutting bags badly; maintenance reset machine.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-09-30T20:09:54.67Z"
+      },
+      "resolution": "Machine reset; production started at 15:00 (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 air rejector throwing everything away",
+      "summary": "Line down since 17:40, air rejector having issues and rejecting all product.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-09-30T23:42:42.629Z"
+      },
+      "resolution": "Line running again at 17:49 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 VideoJet printer stopped at 20:01",
+      "summary": "Line stopped because VideoJet printer stopped; no product without lot code was packed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-10-01T02:01:47.247Z"
+      },
+      "resolution": "Mixing tank needed to be primed; printer cleared and line running at 20:28 (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 broken bars and blow-offs through 3rd shift",
+      "summary": "Bars breaking at demolder due to cold chocolate; extensive troubleshooting of vacuum belt, sensors, centerlines, and demolder settings through 3rd shift.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-10-01T05:00:19.01Z"
+      },
+      "resolution": "Operator removed nozzles and cleaned between nozzles during CIL; no more broken bars by 08:07 (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS long seal not sealing every pouch at 06:49",
+      "summary": "Long seal failing to seal every pouch after line start; Cy adjusting.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-01T12:48:59.972Z"
+      },
+      "resolution": "Adjusting pressure on long seal remedied the problem at 07:04 (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouches not sealing, no air retention at 08:53",
+      "summary": "Pouches not completely sealing and don't contain air after batch change; Justin working on adjustments.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-01T15:01:19.185Z"
+      },
+      "resolution": "Moved long seal 2mm and tightened side belts after cleaning; line up at 09:10 (Jeffrey Barney)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 Sweco screen had rice buildup",
+      "summary": "Tempering stopped to change Sweco screen which had rice buildup; appears PTL to Sweco flush was not done.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-10-01T00:23:31.111Z"
+      },
+      "resolution": "Sweco screen changed; new screen passed ATP at 18:27 (Wilson Amaris Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 belt after curve coming loose",
+      "summary": "Section of belt after curve starting to detach, could compromise product safety; monitoring while production continues.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-10-01T03:48:57.612Z"
+      },
+      "resolution": "Belt replaced by maintenance and passed ATP test at 22:33 (Fernando Flores, Jose Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 printer problem at 05:42",
+      "summary": "Printer having problems, maintenance fixing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-01T11:42:03.179Z"
+      },
+      "resolution": "Fixed at 05:45 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix no recipe for 11oz pouch",
+      "summary": "Setting up 11oz pouch but no recipe exists in Yamato or checkweigher; machine set up with pouch and code but needs recipe created.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-01T11:41:54.636Z"
+      },
+      "resolution": "Recipes created on MFM, checkweight, and x-ray at 06:42 (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle kitchen turbotemper temp out of range",
+      "summary": "Kitchen turbotemper temperature outside acceptable range at 09:02, maintenance notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-10-01T15:02:33.707Z"
+      },
+      "resolution": "Glycol tank low causing air pockets; topped off glycol, verified pressure, temp rising to setpoint at 10:14 (Nathan Ruiz)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 scale causing accumulation and pauses",
+      "summary": "Scale issues causing lots of accumulation, line paused at 02:27 while maintenance investigates.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-01T08:27:32.735Z"
+      },
+      "status": "Maintenance looking at scale as of 02:27; no update posted by end of window."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 temper out of range, line stopped at 12:30",
+      "summary": "Temper fell out of range; line stopped to bring temper back within spec.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-10-01T18:30:27.34Z"
+      },
+      "status": "Line stopped at 12:30, working to bring temper back in range; no follow-up by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 chiller amperage spike under investigation",
+      "summary": "Meter installed to monitor chiller breaker trips; meter shows amperage spike indicating chiller problem, not breaker.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Matt Hatch",
+        "time_utc": "2026-09-30T20:58:51.294Z"
+      },
+      "status": "Matt will discuss next steps with Sollich vendor on-site today; meter confirmed chiller issue at 10:25."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 conbar belt scraping and peeling",
+      "summary": "Conbar belt getting scraped and peeling; maintenance notified to investigate what's causing the damage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-01T14:44:37.677Z"
+      },
+      "status": "Maintenance notified at 08:44; no resolution posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 enrober return pipe pressure climbing",
+      "summary": "Return pipe pressure from enrober at 5.3 bar and rising; maintenance recommends increasing screw drive temp and manual purge every 5-10 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-10-01T16:53:08.006Z"
+      },
+      "status": "Screw drive temp increased from 29\u00b0C to 32\u00b0C; operators doing manual purge every 5-10 minutes as of 11:05."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 CPK order done but 5 pallets need labels",
+      "summary": "CPK production order completed but 5 pallets still need labels applied.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-01T17:55:14.66Z"
+      },
+      "status": "5 pallets waiting for labels as of 11:55."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS print mark detection recurring",
+      "summary": "Still having issues with print mark not being detected; problem mentioned multiple times through 2nd and 3rd shifts.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-09-30T19:58:07.049Z"
+      },
+      "status": "Lance called back at 04:28 for ongoing print mark issues; recurring throughout window with no permanent fix."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 caramel tank water pump failing",
+      "summary": "Water pump not circulating and making loud noise; no spare pumps available, checking with L1 for spare; tank 65% full and holding temp.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-01T08:44:09.87Z"
+      },
+      "status": "Pump failing but tank holding temp at 65% full as of 02:44; plan to run out caramel before swapping tanks."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line damaged belt reported",
+      "summary": "Damaged belt reported at 06:17, maintenance notified; operators left area organized for 1st shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-01T12:16:58.724Z"
+      },
+      "status": "Maintenance notified of damaged belt at 06:17; no follow-up or resolution posted in window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp plate failed 3 micro tests",
+      "summary": "Cold stamp plate failed all 3 rounds of environmental testing; needs re-clean before commissioning can proceed.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-10-01T15:18:25.722Z"
+      },
+      "status": "Plates re-cleaned, dried, and swabbed; results pending as of 10:55."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 nozzle plate failed micro tests",
+      "summary": "Nozzle plates had issues during environmental testing; not as bad as cold stamp but need re-clean.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-10-01T15:19:09.524Z"
+      },
+      "status": "Nozzle plates disassembled, re-cleaned, and passed ATP at 10:04; environmental test underway."
+    }
+  ]
+}

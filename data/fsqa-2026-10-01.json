@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-01",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S1 metal washer deposited into pouch after M10 cleaning \u2014 *X-ray caught it*, metal detector did not reject. Investigation open."
+  },
+  "summary": "Two active holds \u2014 metal washer at L1 S1 and unsealed pouches at L2 FFS. L3 ML4 cold stamp plate failed all three microbial cleaning rounds; re-clean and re-test in progress. Hair found in L1 S1 product before enrober; hygiene coaching reinforced.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Metal washer in pouch \u2014 M10 cone",
+      "summary": "X-ray rejected pouch containing washer from M10 cone; operator cleaned cone but did not replace washer, which fell into product stream during operation.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-09-30T20:43:21.568Z"
+      },
+      "status": "Resolved \u2014 washer replaced on M10 cone, X-ray functioned correctly, rejected pouch isolated."
+    },
+    {
+      "plant": "L2",
+      "title": "Unsealed pouches \u2014 long seal failure",
+      "summary": "FFS long seal failed to seal completely after batch change to 68AUC; pouches open and not holding air.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-01T14:53:35.195Z"
+      },
+      "status": "Resolved \u2014 affected product removed for rework, long seal moved 2mm and pressure adjusted, line released at 09:10 MT."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Hair found in product \u2014 before enrober",
+      "summary": "Single hair found on west side of conveyor just before enrober; depositor operator and QA notified, hygiene coaching given (double hair nets, secure tie-back).",
+      "severity": "high",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-09-30T21:46:49.453Z"
+      },
+      "status": "Open \u2014 corrective action (double hat requirement) communicated to shift, monitoring ongoing."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 belt scraping and peeling",
+      "summary": "Kitchen band showing scraping and peeling damage; maintenance notified to inspect for potential debris generation in food-contact zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-01T14:43:05.148Z"
+      },
+      "status": "Open \u2014 maintenance investigating cause and extent of damage."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Metal detector failure to open \u2014 S1",
+      "summary": "MD reading test cards correctly but reject gate not opening; significant buildup on belt identified as root cause.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-01T13:10:46.894Z"
+      },
+      "status": "Resolved \u2014 production cleaned MD, maintenance adjusted belt, test cards pass and gate opens correctly as of 08:20 MT."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 broken bars \u2014 depositor/demolder",
+      "summary": "High rate of broken bars in molds before demold; chocolate too cold, plus nozzle and vibration issues.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-10-01T05:00:19.01Z"
+      },
+      "status": "Resolved \u2014 operators purged nozzles, reduced vibration and demolder pressures, mold temp confirmed at 86.5\u00b0F, broken rate reduced to 1 per 5\u20136 molds by end of shift."
+    },
+    {
+      "plant": "L1",
+      "title": "M9 pouch shaker missing nut",
+      "summary": "First-shift operator found shaker securing nut missing; same operator had verified it tightened previous shift.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-01T13:31:13.917Z"
+      },
+      "status": "Resolved \u2014 maintenance replaced nut and secured at 07:51 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "Matrix 9 & 10 dirty plates causing weight drift",
+      "summary": "Significant product stuck to matrix plates causing weight issues; plates not cleaned between shifts.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-01T13:44:35.653Z"
+      },
+      "status": "Resolved \u2014 matrices cleaned, weights back in spec."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp plate microbial failures",
+      "summary": "Cold stamp plate failed all three rounds of environmental microbial testing; nozzle plate also showed issues.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-10-01T15:18:25.722Z"
+      },
+      "status": "Open \u2014 plates disassembled, re-cleaned, dried, and swabbed; awaiting micro results. Plates sanitized after swab collection at 10:55 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "Kitchen 1 floor left dirty by 2nd shift",
+      "summary": "LA kitchen 1 area floor dirty and full of food scraps at 3rd-shift arrival; 2nd shift did not complete end-of-shift cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S1 Kitchen",
+        "time_utc": "2026-10-01T13:21:16.907Z"
+      },
+      "status": "Open \u2014 3rd-shift leader flagged issue for coaching."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 Sweco screen rice buildup",
+      "summary": "Rice buildup on Sweco screen; line stopped to replace screen mid-shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-10-01T00:23:31.111Z"
+      },
+      "status": "Resolved \u2014 new screen installed and ATP passed; backup screen washed and ATP'd as spare."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding washer/fastener verification to M9/M10 cleaning and reassembly checklist \u2014 based on today's M10 washer-in-product and M9 missing nut events."
+    },
+    {
+      "plant": "L1",
+      "text": "Review end-of-shift cleaning sign-off for Kitchen 1 \u2014 based on floor left dirty with food scraps at shift handoff."
+    },
+    {
+      "plant": "L2",
+      "text": "Review PTL-to-Sweco flush procedure on ML2 \u2014 based on rice carryover requiring mid-shift screen swap."
+    },
+    {
+      "plant": "L3",
+      "text": "Evaluate ML4 cold stamp cleaning SOP effectiveness \u2014 based on three consecutive micro test failures on same component."
+    }
+  ]
+}
