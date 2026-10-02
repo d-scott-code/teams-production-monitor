@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-02",
+  "headline": {
+    "eyebrow": "Allergen flag",
+    "text": "Pecan cluster box found in *milk chocolate caramel* jar area at L1 S2 \u2014 cross-contact risk caught before product release."
+  },
+  "summary": "One allergen cross-contact incident at L1 S2 (pecan box in wrong area), three sanitation gaps flagged (L1 vacuums, L3 ML4 cleaning access, L1 S4 hose), and ongoing quality challenges at L2 ML2 with loose nozzles causing bar cracks and FFS cross-seal doubles.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "Loose nozzles causing bar cracks",
+      "summary": "Two depositor nozzles found loose on ML2 third shift; bars showed cracks and weight variation; line stopped at 03:57 to tighten.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-10-02T09:57:29.935Z"
+      },
+      "status": "Resolved \u2014 nozzles tightened, line restarted; no formal hold documented but cracked bars would have been rejected at QA."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Cross conveyor slitter damaged and out of position",
+      "summary": "S4 cross conveyor slitter out of alignment and being damaged; belt replaced yesterday, now at risk again \u2014 potential metal shavings if continues.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-02T13:51:35.133Z"
+      },
+      "status": "Open \u2014 maintenance and operator notified for adjustment; monitoring in place."
+    },
+    {
+      "plant": "L1",
+      "title": "Foreign material risk \u2014 cardboard under Conbar",
+      "summary": "Cardboard found under S4 Conbar during shift; Katya flagged for follow-up with operators.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-02T14:02:04.787Z"
+      },
+      "status": "Open \u2014 coaching requested, no product impact reported."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 folding arms bent \u2014 caramel length out of spec",
+      "summary": "Folding arms #2 and #3 slightly bent; caramel pieces 31\u201333 mm (too long for machine); product removed from tunnel 2, cut length adjusted.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-10-02T16:52:59.11Z"
+      },
+      "status": "Resolved \u2014 caramel length corrected, arms bent but functional."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS cross-seal jaws \u2014 doubles and product-between-jaws alarms",
+      "summary": "ML2 FFS alarming every 5\u201310 minutes for product between jaws; cross-seal cleaned twice second shift, adjustments made third shift, still recurring at window close.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-10-01T22:10:55.357Z"
+      },
+      "status": "Investigation ongoing \u2014 Fernando committed to inspect during L1 clean; doubles reduced ~80% by raising max weight allowable but root cause unresolved."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 print head blurry \u2014 multiple cleanings required",
+      "summary": "Ink-jet print head producing illegible dates; cleaned and restarted twice during mid-shift; defective pieces pulled and opened.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-10-02T15:25:33.452Z"
+      },
+      "status": "Resolved \u2014 print legible after second cleaning at 10:51; defective product segregated."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars breaking after demolder",
+      "summary": "Bars breaking easily after demolder second shift; cooler temp raised from 48\u00b0F to 50\u00b0F after consulting FSQA.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-10-01T22:15:34.078Z"
+      },
+      "status": "Resolved \u2014 pieces improved at 50\u00b0F."
+    },
+    {
+      "plant": "L2",
+      "title": "Nozzle plate off-center on ML2",
+      "summary": "Depositor nozzle plate found not centered at start of first shift; operator adjusted.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-02T12:21:24.156Z"
+      },
+      "status": "Resolved \u2014 plate centered, added to centerline checklist per Alan Todd."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "All vacuums clogged with product and paper towels",
+      "summary": "Every vacuum at L1 found clogged with product or paper towels, canisters full at shift start; operators not emptying after use.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-02T14:39:30.705Z"
+      },
+      "status": "Open \u2014 coaching requested for all shifts."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 hose not cleaned after heavy cream ran out",
+      "summary": "Second shift did not clean hose when heavy cream depleted; discovered by first shift kitchen operator.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-02T15:34:38.666Z"
+      },
+      "status": "Open \u2014 hose flagged, coaching needed for second shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Cooling Cabinet 4 upper areas not cleaned",
+      "summary": "Some upper cabinet areas still had chocolate after clean; chain not on so team couldn't move cooler slots to reach them; accessible areas passed visual and ATP.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-02T12:37:46.329Z"
+      },
+      "status": "Resolved \u2014 Juan manually rotated all slats, cleaning completed; work method updated to jog lines during cleans per Shawn."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate between ML1 camera diffuser and lens",
+      "summary": "Leon found chocolate between Imperial camera 2 diffuser cover and lens during sensor swap; cleaned with damp towel; believes covers wiped with dirty saturated rag allowing water ingress.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-10-02T18:23:25.5Z"
+      },
+      "status": "Resolved \u2014 diffuser and lens cleaned; coaching opportunity on cleaning method."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Pecan cluster box found in milk chocolate caramel jar area",
+      "summary": "Box of Dark Chocolate Pecan Clusters (item contains pecans) found in S2 jar staging area while running Milk Chocolate Sea Salt Caramel \u2014 cross-contact risk.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-02T12:46:39.702Z"
+      },
+      "status": "Resolved \u2014 box removed, no product contact reported; follow-up on root cause needed."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding vacuum cleaning and canister emptying to end-of-shift checklist \u2014 today all vacuums found clogged with product or paper towels."
+    },
+    {
+      "plant": "L1",
+      "text": "Review product staging and allergen segregation protocols at S2 jar area \u2014 pecan cluster box found in milk chocolate caramel zone today."
+    },
+    {
+      "plant": "L1",
+      "text": "Add S4 cross conveyor slitter alignment to startup inspection \u2014 second damage event in two days suggests setup or training gap."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider adding ML2 nozzle plate centering to startup checklist \u2014 today's off-center plate now added to centerline per Alan Todd."
+    },
+    {
+      "plant": "L2",
+      "text": "Review FFS cross-seal jaw cleaning frequency \u2014 today's product-between-jaws alarms persisted despite two full cleans; preventive schedule may reduce doubles."
+    },
+    {
+      "plant": "L3",
+      "text": "Update ML4 Level 2 clean procedure to include manual paternoster jog before cabinet cleaning \u2014 today's upper areas missed until Juan rotated slats."
+    }
+  ]
+}

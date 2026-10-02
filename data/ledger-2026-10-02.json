@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-02",
+  "headline": {
+    "eyebrow": "Materials hit",
+    "text": "L1 tapioca delayed at port until 10/6\u201310/8, forcing S4 down at *noon today* and wiping Monday's Canada run \u2014 kitchen also ran dry twice on caramel overnight."
+  },
+  "per_plant_summary": {
+    "L1": "S4 ran out of tapioca mid-shift and will shut down around noon for level 2 clean until 10/5. Kitchen couldn't keep up with S2 jar speed overnight \u2014 caramel dropped twice, forcing pauses. S1 enrober return valve stuck during cleaning (workaround in place), S3 caustic drain valve also stuck mid-clean.",
+    "L2": "ML2 printer fought back all morning \u2014 blurry dates forced an 80-minute stop across multiple head cleanings before clearing at 10:51. FFS cross seal jaws caused doubles and product-between-jaws alarms for 18 hours straight; multiple cleaning cycles, last fix at 11:40 cut the issue significantly.",
+    "L3": "ML4 wrapped overnight level 2 clean at 07:33 after jogging cooling cabinet slats manually to reach chocolate in upper areas. ML1 camera 2 had 133 failures due to chocolate between diffuser and lens \u2014 cleaned and back online. Truffle line and MF Matrix ran clean; Matrix produced 47 pallets overnight."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Bequet confirmed tapioca arriving 10/6\u201310/8; Canada single-piece run postponed from Monday."
+    },
+    {
+      "plant": "L1",
+      "text": "Maintenance installed metal detector key lock on S1 allowing reject bin access without belt stop."
+    },
+    {
+      "plant": "L2",
+      "text": "Jeffrey adjusted FFS weighright max allowable to accommodate 12-piece bags, cutting blowoffs ~80%."
+    },
+    {
+      "plant": "L3",
+      "text": "Phillip Perez labeling all Theegarten belts with Felix's layout documentation for clearer communication."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 folding arms #2 and #3 bent",
+      "summary": "Caramel pieces running 31\u201333 mm (too long for machine) bent folding arms; product removed from tunnel 2 while cut length adjusted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-10-02T16:52:59.110Z"
+      },
+      "resolution": "Cleared at 11:02 \u2014 caramel length adjusted, pieces back in spec (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 brookies supply gap",
+      "summary": "Line paused at 12:11 when item 21081 ran out; product arrived and line restarted by 12:25.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-10-02T18:11:19.965Z"
+      },
+      "resolution": "Cleared at 12:25 \u2014 \"We are running\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 twin belts adjustment",
+      "summary": "Line down at 12:57 for Justin to adjust twin belts.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-01T18:57:44.030Z"
+      },
+      "resolution": "Line back up at 13:08 (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars breaking after demolder",
+      "summary": "Chocolate bars breaking easily post-demolder; cooler temperature adjusted from 48\u00b0 to 50\u00b0 to improve temper.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-10-01T22:15:34.078Z"
+      },
+      "resolution": "Resolved at 18:52 \u2014 \"I think 50 is perfect\" after monitoring, bars looking better (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold twist breaking bars",
+      "summary": "Twisting motion of mold during demolding caused chocolate bars to break; maintenance reduced movement intensity.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-10-02T08:45:13.766Z"
+      },
+      "resolution": "Cleared at 02:45 \u2014 \"The bar has now improved significantly\" after maintenance reduced intensity (Jose Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 nozzle plate off-center",
+      "summary": "One bar consistently cracking out of cooler; investigation traced to nozzle plate not centered, causing uneven fill weight.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-10-02T09:54:33.598Z"
+      },
+      "resolution": "Line back up at 06:38 \u2014 \"Operator adjusted nozzle plate, it was not centered\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS shoulder jam",
+      "summary": "Film passed through and line stopped for shoulder jam at flow wrap.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-02T17:52:59.278Z"
+      },
+      "resolution": "Cleared and line running at 11:58 \u2014 \"Had a shoulder jam. It's been cleared and now reassembling\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera 2 high failure rate",
+      "summary": "Camera 2 had 133 failures with new sensor due to overexposed images; chocolate found between diffuser cover and camera lens.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-10-02T18:23:25.500Z"
+      },
+      "resolution": "Cleared at 12:23 \u2014 removed and cleaned diffuser and lens with damp towel, good image after clean (Leon Brueger)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 90-degree belt missing",
+      "summary": "Belt was missing from 90-degree transfer; Shane located and reinstalled it.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-02T05:23:58.976Z"
+      },
+      "resolution": "Reinstalled at 23:23 \u2014 belt back in place (Shane Olsen with photo)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 assembly delay",
+      "summary": "Parts cleaned but not reassembled; maintenance was on ML1 and Cavanna changeover and didn't receive radio call.",
+      "priority": "P3",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-10-02T05:51:47.294Z"
+      },
+      "resolution": "Ready for ATP at 03:15 \u2014 maintenance returned and completed assembly (Jose Vasquez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cooling cabinet 4 cleaning access",
+      "summary": "Upper areas of cooling cabinet 4 still had chocolate, hard to reach without chain moving; team couldn't clean during regular wash.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-02T12:37:46.329Z"
+      },
+      "resolution": "Resolved at 07:33 \u2014 Juan manually rotated all cooling cabinet slats with WDS doors closed, team cleaned all areas (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper slope consistently high",
+      "summary": "Imperial temper slope reading high; Shawn requested crystallization temp adjustment down 0.2 and recalculation.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-02T18:16:40.599Z"
+      },
+      "resolution": "Adjustment made at 12:19 \u2014 operator came down 0.2 on crystallization temp and recalculated (Shawn Jewkes confirmed receipt)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Tapioca shortage forcing S4 shutdown",
+      "summary": "Item 10267 tapioca delayed at port, won't arrive until 10/6\u201310/8; S4 will run out around noon today and shut down for level 2 clean until 10/5, wiping Monday's Canada run.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Kirk Nickel",
+        "time_utc": "2026-10-02T14:09:07.846Z"
+      },
+      "status": "Confirmed shutdown plan at 08:13 \u2014 line stopping ~noon, level 2 clean and caustic in kitchen, set up for One Shot on 10/5 (Justin Garner). Canada postponed."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caramel supply interruptions",
+      "summary": "Kitchen unable to keep pace with line speed \u2014 caramel ran out at 07:22 due to cold tapioca ingredient, again at 08:02 with only 11% in reserve and batches not ready.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-02T07:47:09.617Z"
+      },
+      "status": "Multiple pauses for caramel catch-up; 33-minute stop at 08:02, kitchen batching behind demand (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C1 kettle caustic drain valve not opening",
+      "summary": "Operator opened/closed valve to drain caustic during clean but valve is not physically opening; finishing reserve tank product before maintenance can drain at tank and troubleshoot.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-10-02T11:35:36.570Z"
+      },
+      "status": "Maintenance working on it as of 06:05; caustic clean completed by 07:00 but valve repair status unclear."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 cross conveyor slitter out of position",
+      "summary": "Slitter out of position and being damaged; operator and maintenance notified to make adjustment \u2014 belt was just replaced yesterday.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-02T13:51:35.133Z"
+      },
+      "status": "Operator and maintenance notified at 07:51, no follow-up posted on resolution (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 enrober return pump valve stuck",
+      "summary": "Valve isn't opening during enrober cleaning; maintenance plugged air line as workaround to allow wash to proceed, sent photo to Jakob for troubleshooting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-10-02T16:30:13.737Z"
+      },
+      "status": "Workaround in place at 10:38 \u2014 air line plugged to close valve manually, wash completed, but underlying valve issue unresolved (Matt Hatch)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 enrober pressure faults on riser and return pumps",
+      "summary": "Riser pump and return pump faulting due to high pressure in return pipe; raised riser pump kg/h 2200\u21922500 and mass cooling temp +0.1 to increase liquid chocolate flow.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-10-02T16:43:13.653Z"
+      },
+      "status": "Adjustments made at 10:43, monitoring return pipe pressure and Russell finex filter (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 suction pump not working",
+      "summary": "Suction pump failure; maintenance has been notified to troubleshoot and resolve.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-02T17:21:40.903Z"
+      },
+      "status": "Maintenance notified at 11:21, no update on repair status (Marcos Jimenez with photo)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 Canada BOM and spec mismatch",
+      "summary": "Production BOM showing item 21167 (US single piece) but Canada spec calls for 21195; film wrap numbers don't match between documents.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-02T18:08:40.063Z"
+      },
+      "status": "Ira confirmed correct item is 21195 at 12:14, but Katya reports BOM still giving same issue at 12:18 (unresolved in system)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS cross seal jaws recurring issues",
+      "summary": "Product-between-jaws alarm and double bags recurring for 18 hours; multiple cleaning and adjustment cycles on feeders, timing, and amperage.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-01T23:12:31.405Z"
+      },
+      "status": "Dave found bags hanging on punch at 11:40, cleaned ball/punch/cylinder/shaft. Running better, only normal doubles when waiting for product. Issue significantly reduced but monitoring continues."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 printer blurry date code",
+      "summary": "Date printing blurry and missing top print; line down 09:31\u201310:51 (80 minutes) for multiple print head and nozzle cleanings before resolving.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-10-02T15:25:33.452Z"
+      },
+      "status": "Line back up at 10:51 after cleaning print head and nozzle twice, final startup successful (Alex Mendoza)."
+    }
+  ]
+}
