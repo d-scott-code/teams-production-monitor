@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-03",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S2 caramel held on *bitter taste* after 1-hour separator downtime \u2014 sample pulled for R&D, root cause under review."
+  },
+  "summary": "One active hold: dark/bitter caramel on L1 S2 following separator cleaning delay. L1 S2 metal detector found unplugged during 2nd shift; duration unknown. L3 ML4 spiral conveyors marked clean but not inspected; bars found on re-check.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Dark/bitter caramel after separator delay",
+      "summary": "Caramel turned darker with bitter taste after separator belt cleaning took over an hour; product packed and held pending sensory review and R&D analysis.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-10-03T12:16:16.771Z"
+      },
+      "status": "On hold pending disposition \u2014 full jar sample in QA area for R&D."
+    },
+    {
+      "plant": "L2",
+      "title": "Film roll \u2014 incomplete print on packaging",
+      "summary": "ML2 film roll placed on hold due to incomplete printing on finished packaging; printer from ML3 swapped in at end of 2nd shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-10-03T04:24:37.922Z"
+      },
+      "status": "On hold \u2014 film roll isolated, printer replaced, five displays reworked."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 metal detector unplugged",
+      "summary": "Metal detector found unplugged during 2nd shift; operator noted it was running moments before; no explanation for disconnect in chat.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-10-03T01:49:20.861Z"
+      },
+      "status": "Open \u2014 no resolution or investigation update posted in window."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 melting tank level drop unexplained",
+      "summary": "Chocolate 10121 in melting tank #1 reported at 62% yesterday end-of-shift, found at 52% this morning \u2014 10% loss unexplained.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-03T13:33:46.351Z"
+      },
+      "status": "Open \u2014 no investigation or explanation posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 cold tapioca reported at 06:30",
+      "summary": "Cold tapioca flagged at 06:30 meeting; no follow-up detail on cause, batch disposition, or corrective action in chat.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jody Howse",
+        "time_utc": "2026-10-03T06:49:58.887Z"
+      },
+      "status": "Open \u2014 reported at stand-up, no resolution posted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 blurry print \u2014 five displays reworked",
+      "summary": "Printer produced blurry output mid-shift; issue caught quickly, five displays pulled for rework, printer cleaned and returned to service.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Wilson Amaris Cabrera",
+        "time_utc": "2026-10-03T03:20:38.906Z"
+      },
+      "status": "Resolved \u2014 printer cleaned, five displays reworked, line running."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S4 kitchen and conbar re-clean required",
+      "summary": "Post-clean inspection found residue in kitchen and conbar areas; conbar still looking fatty; Victor flagged for re-clean before production restart.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-10-03T05:42:31.96Z"
+      },
+      "status": "Open \u2014 re-clean in progress, no pass-off posted at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 spiral conveyors \u2014 checklist vs. actual",
+      "summary": "Spiral conveyors marked complete on checklist but techs had no memory of inspecting; safety chain form incomplete; re-inspection found multiple bars on packaging spiral.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-10-03T05:45:41.963Z"
+      },
+      "status": "Open \u2014 maintenance working on spirals, no final pass-off posted."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider installing tamper-evident labels or indicator lights on metal detector power connections \u2014 based on S2 detector found unplugged with no explanation mid-shift."
+    },
+    {
+      "plant": "L1",
+      "text": "Review hold-time limits for S2 separator downtime events \u2014 today's 1-hour delay in holding kettle caused sensory deviation requiring full batch hold."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider requiring photo evidence or two-person sign-off for spiral conveyor cleaning verification \u2014 today's ML4 spirals were marked complete but not actually inspected."
+    }
+  ]
+}
