@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-04",
+  "headline": {
+    "eyebrow": "Line impact",
+    "text": "L1 Sollich 2 labeler problems forced WIP production overnight and left *11 pallets in rework* \u2014 team switched to backup labeler but issues persisted through shift end."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 fought labeler issues all night \u2014 bubbles and wrinkles forced a switch to backup labeler B, which also struggled. Sollich 3 had two brief temper pauses but recovered both times. Equipment on all three lines failed allergen swabs and needed re-clean.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML1 wrapped belt testing successfully after maintenance corrected drift and sensor faults. Truffle line completed level 2 clean and milk changeover for Monday. One process flag: mesh found running during reheat, program not saved correctly."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Caustic restocked from Orem warehouse \u2014 last barrel on site as of 01:16."
+    },
+    {
+      "plant": "L3",
+      "text": "Correct pallets for Matrix line arrived and staged for Monday startup."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 tempering delay after reheat",
+      "summary": "Line held for 30 minutes waiting on temper after reheat completed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-10-03T18:21:56.657Z"
+      },
+      "resolution": "Cleared at 12:58 \u2014 \"The line is back in production\" (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 jar shortage paused line",
+      "summary": "Line stopped at 15:29 waiting for jars to arrive.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-10-03T21:29:55.408Z"
+      },
+      "resolution": "Cleared by 16:00 \u2014 line resumed production based on subsequent updates."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 lost temper on overnight shift",
+      "summary": "Line paused at 18:57 due to lost temper, resumed within 6 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-10-04T00:57:41.819Z"
+      },
+      "resolution": "Cleared at 19:03 \u2014 \"We are resuming the line\" (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "Caustic supply depleted",
+      "summary": "L1 ran out of caustic during overnight cleaning operations.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-04T05:29:59.27Z"
+      },
+      "resolution": "Cleared at 01:16 \u2014 \"We brought the barrel of caustic from orem warehouse to L1. It is the last one we have.\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "Missing COA for inbound materials",
+      "summary": "Receiving blocked on two shipments due to missing certificates of analysis and incomplete documentation.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tiffanee Taylor",
+        "time_utc": "2026-10-03T19:00:40.697Z"
+      },
+      "resolution": "Cleared at 14:46 \u2014 \"the correct COA and PO # was just sent via email\" (Kirk Nickel)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 unspecified maintenance fault",
+      "summary": "Issue flagged during first shift, maintenance called in.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-03T21:03:48.842Z"
+      },
+      "resolution": "Cleared at 15:18 \u2014 \"Maintenance has corrected the issue\" (Caleb York)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 belt drift and sensor faults during testing",
+      "summary": "C5 drifted north, Belt 200 loose, Belt 240 had sensor fault and tension issue during pre-startup belt testing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-03T22:17:04.056Z"
+      },
+      "resolution": "Cleared at 17:43 \u2014 \"Belts ran successfully after being fixed. They ran for 15 minutes with no issues.\" (Phillip Perez). Efrain confirmed at 17:20: \"All belts are running good every sensor was adjusted.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor 3 leak from missing gasket",
+      "summary": "Depositor fitting leaked due to missing gasket on ML4 line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-10-04T12:54:22.739Z"
+      },
+      "resolution": "Fixed at 06:54 \u2014 \"Depositor 3 leak fixed fitting was missing a gasket\" (Rose Smuin, acknowledging Jose Vasquez repair)."
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor 2 circuit fault",
+      "summary": "Circuit #2 fault flagged on depositor 2, cause unknown initially.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-10-04T12:59:57.871Z"
+      },
+      "resolution": "Cleared at 08:42 \u2014 \"The O ring was missing .I put a new one .\" (Jose Vasquez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line coconut oil solid in staging",
+      "summary": "Staged coconut oil mostly solid, team unsure if correct brand, needed access to warm room tote.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-04T09:31:29.684Z"
+      },
+      "resolution": "Cleared at 05:51 \u2014 \"We used the Columbus brand we usually use.\" (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 labeler causing bubbles, wrinkles, and rework",
+      "summary": "Primary labeler failed with bubbles and wrinkles starting at 18:56, team switched to labeler B but issues persisted \u2014 line ran into WIP, 11 pallets marked rework by shift end.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-10-04T00:56:03.078Z"
+      },
+      "status": "Line producing WIP as of 21:29, 11 pallets in rework status at 22:58 \u2014 labeler B \"can't keep up and labeling one jar and not the one after.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 HMI potential corruption",
+      "summary": "Eaglestone tech scheduled to remote in and diagnose whether HMI is corrupted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-10-03T21:31:37.328Z"
+      },
+      "status": "Awaiting vendor remote diagnostic as of 15:31, no update posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 allergen test failures on clean equipment",
+      "summary": "C19, C20, C26, and Zbelt failed allergen swabs and required re-cleaning.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-04T13:48:56.251Z"
+      },
+      "status": "Re-clean initiated at 07:48, no confirmation posted on pass results by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line belt missing nuts and bolts",
+      "summary": "Small crossover belt missing hardware on one side, flagged to maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-04T05:05:19.301Z"
+      },
+      "status": "Maintenance notified at 23:05, no confirmation of repair by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line mesh running during reheat",
+      "summary": "Bottomer and enrober found on reheat with mesh belt still running \u2014 program not saved to disable mesh during reheat mode.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-04T04:41:05.483Z"
+      },
+      "status": "Confirmed at 23:39 that program setting not saved correctly \u2014 requires operator awareness until program corrected."
+    }
+  ]
+}

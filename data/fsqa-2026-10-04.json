@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-04",
+  "headline": {
+    "eyebrow": "Active holds",
+    "text": "L1 S2 jar line held *11 pallets* on label failures; L3 truffle belt missing nuts and bolts flagged as foreign material risk."
+  },
+  "summary": "One active quality hold at L1 S2 \u2014 11 pallets awaiting disposition after labeler could not apply labels consistently. L3 truffle line crossover belt discovered missing hardware; maintenance notified. Four pieces of L1 S3 equipment failed allergen tests during cleaning verification and are being re-cleaned.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "11 pallets rework \u2014 label application failures on S2 jar line",
+      "summary": "Labeler produced bubbles and wrinkles throughout 2nd and 3rd shifts, eventually unable to apply labels consistently; 11 pallets went through sealing and X-ray but are held for label rework.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-10-04T04:58:40.300Z"
+      },
+      "status": "On hold pending QA disposition; line completed level 2 clean and staged for Monday."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Truffle line crossover belt missing nuts and bolts",
+      "summary": "Small belt that crosses sideways discovered missing nuts and bolts on one side during 3rd shift cleaning; potential for hardware to fall into product zone.",
+      "severity": "high",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-04T05:05:19.301Z"
+      },
+      "status": "Open \u2014 maintenance notified at 07:16 MT, no resolution posted by window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 jar labeler reliability \u2014 bubbles, wrinkles, skipped jars",
+      "summary": "Labeler A produced defective labels (bubbles, wrinkles) starting 2nd shift; crew switched to Labeler B which also could not keep pace, skipping jars intermittently.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-03T21:02:19.198Z"
+      },
+      "status": "Resolved on shift \u2014 crew switched to Labeler B and made WIP; 11 pallets held for rework."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 allergen test failures \u2014 C19, C20, C26, Zbelt",
+      "summary": "Four pieces of equipment failed allergen verification tests during cleaning; crew initiated re-clean.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-04T13:48:56.251Z"
+      },
+      "status": "Being re-cleaned; retest results not posted by window close."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding labeler pre-shift function checks and daily preventive maintenance window \u2014 S2 labeler failures today resulted in 11 pallets on hold and ~3 hours of line disruption across both labelers."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding hardware inspection (nuts, bolts, fasteners) to belt reassembly checklist \u2014 truffle line crossover belt found missing hardware after cleaning, creating foreign material risk."
+    },
+    {
+      "plant": "L3",
+      "text": "Review depositor assembly and gasket/O-ring replacement procedures \u2014 ML4 Depositor 3 leak traced to missing O-ring that maintenance replaced today."
+    }
+  ]
+}
