@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-05",
+  "headline": {
+    "eyebrow": "Safety flag",
+    "text": "L1 S4 spatula found in mixing tank at 07:59 \u2014 full system clean and line restart by *11:15*, no contamination confirmed."
+  },
+  "per_plant_summary": {
+    "L1": "S1 had a rough morning with riser pump blockages and belt skipping but cleared by midday and ran the rest of the shift. S4 discovered a broken spatula in the mixing tank at 07:59, executed a full system clean, and restarted by 11:15. S1 is running with heavy piece weights requiring a count workaround. S2 moved to Labeler B after A wouldn't stop wrinkling.",
+    "L2": "Three quick mechanical stops across ML2 (silver adjustment, mold jam, Theegarten jam) all cleared inside 20 minutes. ML3 ran clean with two brief label breaks on 2nd shift. FFS had a film jam at midday that cleared, then bags started coming out open late in the shift while cleaning. ML2 seeing broken bars at demold as of 14:42.",
+    "L3": "ML4 spent the morning fighting depositor cavity-fill issues until Klaus enabled double deposit at 09:37 and the line came good. Truffle Line borrowed a Cavanna sensor from ML1 to stay running. MF Matrix suction cups adjusted by 09:36. TG4 assembly errors discovered during afternoon inspection."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Reminder sent to all leads: do not use utility knives to cut plastic when winding the blue roller on the labeling machine."
+    },
+    {
+      "plant": "L1",
+      "text": "Xray and printers on S1 were not shut down properly; continued procedure violations may damage equipment long-term."
+    },
+    {
+      "plant": "L3",
+      "text": "Flow wrap for Truffle Line was not staged Sunday night; staging verification process needs tightening."
+    },
+    {
+      "plant": "L2",
+      "text": "Schedule change: grinding grahams moved up to start 2nd shift today and 3rd shift tonight; staffing and material staging in progress."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S1 riser pump high pressure faults and blockages",
+      "summary": "Riser pump faulted on startup with high pressure, then continued shutting off when tempering; unheated pipe section caused hard chocolate buildup and valve blockage.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-10-05T12:50:48.475Z"
+      },
+      "resolution": "Cleared by 12:04 \u2014 Jakob removed and washed valve to clear blockage, decorator came to temper, and \"Line is running right now\" (S1 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 spatula broken inside mixing tank",
+      "summary": "Metal scraper blade and plastic handle pieces found in mixing tank and filter; full caramel batch drained, entire system cleaned and inspected.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-05T13:58:45.739Z"
+      },
+      "resolution": "Cleared by 11:15 \u2014 metal part recovered from tank, plastic cleared from filter, all piping/tank/kettle cleaned and sanitized, first batch made, viscosity in range, \"started running continuously\" (Marcos Jimenez)."
+    },
+    {
+      "plant": "L1",
+      "title": "Packaging belt skipping violently all morning",
+      "summary": "Belt tensioners on first and second conveyors were left in release position after shutdown, causing violent skipping from start of shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Matt Hatch",
+        "time_utc": "2026-10-05T15:24:43.459Z"
+      },
+      "resolution": "Tensioners corrected by 09:30 \u2014 \"Packaging belts are now functional\" (Matt Hatch). Matt will remove the last two tensioner handles to prevent future confusion."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Labeler A producing wrinkled labels",
+      "summary": "Jar labels coming out wrinkled on Labeler A; Troy unable to eliminate wrinkles after adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-05T13:57:43.027Z"
+      },
+      "resolution": "Workaround at 08:15 \u2014 \"I couldn't get Labeler A to have no wrinkles. We've moved to Labeler B\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "Pretzels jamming between metal detector and ES conveyor",
+      "summary": "Gap between metal detector and blue ES conveyor catching pretzels; metal detector also drifting and guard plate set up incorrectly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jorge Carrillo",
+        "time_utc": "2026-10-05T18:55:24.769Z"
+      },
+      "resolution": "Cleared at 13:36 \u2014 \"moved the MD closer to the incline belt and we found a cover that was loose. Problem is fixed for now\" (Justin Garner). Chris J also adjusted the guard plate."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars jamming at Theegarten entrance",
+      "summary": "Bars jamming at entrance of Theegarten wrapper; maintenance performed hard reset, then Theegarten door faulted requiring second hard reset.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-10-05T17:45:56.337Z"
+      },
+      "resolution": "Running by 12:00 \u2014 \"Line star running 12:00 pm\" (ML2 FW). Maintenance also checked vacuum and cleaned chocolate from belts."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jam at demolder",
+      "summary": "Mold jam stopped the line at the demolder station.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-05T14:53:09.612Z"
+      },
+      "resolution": "Cleared at 09:04 \u2014 \"Line back up\" (Jeffrey Barney), 11 minutes down."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS film passed through machine",
+      "summary": "Film jammed or passed through incorrectly, line down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-05T18:56:47.468Z"
+      },
+      "resolution": "Running at 13:18 \u2014 \"Line is running\" (VFFS), cleared in 21 minutes."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 line down for large silver changeover",
+      "summary": "Line stopped to adjust PG19 and PG20 for large silver product.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-05T12:13:20.735Z"
+      },
+      "resolution": "Back up at 06:26 \u2014 \"Line is running\" (Jeffrey Barney), 12 minutes down."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label breaks on wrapper",
+      "summary": "Two brief label breaks on 2nd shift, line stopped both times.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-05T20:09:37.234Z"
+      },
+      "resolution": "Both breaks cleared quickly \u2014 first at 14:13 (\"Line running\"), second at 14:54 (\"Line running again\"). Operator cleaned vacuum lines and checked roller tightness."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor not filling cavities completely",
+      "summary": "Depositor unable to fill bar cavities all the way despite maxing out settings; bars not demolding, chocolate drops on molds, circuit 2 fault on depositor 2.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-05T13:55:53.926Z"
+      },
+      "resolution": "Resolved at 09:37 \u2014 Klaus updated programming to enable double deposit on depositor 1, \"Depositing double now. Cavity's are all the way full\" (Itzel Chavez), full molds demolding properly."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix bag opener suction cups not working",
+      "summary": "Bag opening having a lot of trouble, suction cups not working correctly, maintenance busy on another line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-10-05T14:02:18.53Z"
+      },
+      "resolution": "Fixed at 09:36 \u2014 \"Maintenance adjusted the suction cups\" (Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cute Cavanna printer sensor failed",
+      "summary": "Printer font size getting bigger on its own then returning to normal; sensor needs replacement but none in inventory at any location.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-05T14:39:07.103Z"
+      },
+      "resolution": "Fixed at 10:32 \u2014 \"borrowed a sensor from ML1 Cavanna that wasn't in use\" (Nathan Ruiz), 5 sensors on order, Cute Cavanna good to go."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cute Cavanna film not sealing",
+      "summary": "Truffle pieces coming out open, film not sealing properly, several packs unsealed coming out of machine.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-10-05T18:22:36.306Z"
+      },
+      "resolution": "Running better by 13:45 \u2014 Chris Givens adjusted jaws and operator changed film roll, \"The seal improved\" (Mirella) at 13:29, \"running better now\" at 13:45."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line temper range not displaying in QIsoft",
+      "summary": "Operator took two temperature readings but program not showing the range; using paper chart as backup.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-10-05T11:36:30.596Z"
+      },
+      "resolution": "Fixed at 07:08 \u2014 Shawn added temper ranges and production break in QIsoft, \"now have temper ranges\" after reload."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Hapman lids and cones failed environmental swabs",
+      "summary": "High environmental test results on Hapman lids and cones; parts need multiple recleans with APC swabs after each clean.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-05T16:47:58.976Z"
+      },
+      "status": "Requires 3 recleans with APC swab after each clean per Charity at 14:11. Inline filter also flagged but results still pending due to lab issue as of 14:12."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Labeler A still producing wrinkled labels",
+      "summary": "After moving to Labeler B in the morning, Area A labeler still having issues as of midday; Chris and Troy working on it while Area B compensates.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-05T17:40:33.981Z"
+      },
+      "status": "As of 12:54 Chris and Troy working on Area A, Area B running fine. One roll placed on hold for cut-off printing. No confirmation Area A was repaired by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 final piece weight 35% over spec",
+      "summary": "Enrobed pretzel pieces weighing 8.2g vs 6.07g max spec, causing bags to hit 576g pouch weight with only 65 pieces instead of target 85+; blower and shaker both at 100%.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-10-05T19:20:17.311Z"
+      },
+      "status": "Running with workaround as of 13:50 \u2014 confirmed can go as low as 85 pieces per pouch as long as pouch weight is met. First 4 pallets placed on hold for low count, rework ordered. Root cause (excessive chocolate) not addressed."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Eagle Stone conveyor gap dropping pretzels to floor",
+      "summary": "Gap between Eagle Stone conveyor feeding Matrix 9 and the ramp allowing pretzels to fall through, wasting product.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jorge Carrillo",
+        "time_utc": "2026-10-05T21:13:51.311Z"
+      },
+      "status": "Maintenance request sent to Matt Hatch, Dakota Adair, and Chris Jeffs at 15:13. No response by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 broken bars coming through demolding",
+      "summary": "Estimated 4 broken bars per mold coming through demolder; worker manually removing bars from belt to prevent packaging.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-10-05T20:42:30.732Z"
+      },
+      "status": "Line leader notified at 14:42. Adjustments made at 14:54 (demolding hammers changed from 2.2 to 1.9, caramel temp raised from 47 to 49). No confirmation issue resolved by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bags coming out open",
+      "summary": "Bags not sealing properly, coming out open from the VFFS machine.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-05T20:53:41.121Z"
+      },
+      "status": "Cleaning machine as of 14:53. Maintenance (Brandon Lance, Mathew Draper) tagged. No follow-up by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 wrapper assembly errors",
+      "summary": "Multiple installation errors discovered on TG4: rollers on wrong location on turning belt, conveyor M270 installed above rails causing belt rip, plastic piece installed outside instead of inside metal detector bin.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-05T18:29:15.743Z"
+      },
+      "status": "Documented at 12:29. Nelson replaced M270 belt. No confirmation all installation errors corrected by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line missing bolt on splitter cover",
+      "summary": "One bolt missing from the splitter cover.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-05T10:22:14.401Z"
+      },
+      "status": "Reported at 04:22. No follow-up on replacement or impact by window close."
+    }
+  ]
+}

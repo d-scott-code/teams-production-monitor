@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-05",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S4 kitchen down 6 hours after metal spatula *broke inside mixing tank* \u2014 metal and plastic pieces recovered from filter, full system clean completed."
+  },
+  "summary": "One hold at L1 S1 (underweight pouches, rework in progress). Two metal contamination events at L1: broken spatula in S4 kitchen and screw fragment in S1 decorator pump. Sanitation re-cleans underway at L1 (Hapman lids) and L3 ML4 (flow wrap parts).",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "4 pallets held for low piece count",
+      "summary": "First four pallets of S1 pretzel pouches placed on hold due to piece count below spec (65 pieces vs 85+ required) caused by overweight individual pieces.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-10-05T21:14:48.483Z"
+      },
+      "status": "Rework authorized \u2014 pallets to be opened and rerun back onto line per Curt Willis at 15:15 MT."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal spatula broke in S4 mixing tank",
+      "summary": "Metal scraper blade and plastic handle fragments found in S4 kitchen mixing tank and filter during batch preparation \u2014 metal part recovered intact after full drain, plastic residue cleared from filter.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-05T13:58:45.739Z"
+      },
+      "status": "Resolved \u2014 kettle, mixing tank, filter, and all piping washed and sanitized; first post-clean batch in spec at 11:15 MT."
+    },
+    {
+      "plant": "L1",
+      "title": "Screw piece found in S1 decorator pump",
+      "summary": "Piece of screw discovered in decorator riser pump motor housing during fault troubleshooting \u2014 origin unknown, maintenance cleaned pump chamber and line resumed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-10-05T17:15:34.177Z"
+      },
+      "status": "Open \u2014 screw fragment recovered, pump cleaned, line running; source of screw not yet identified."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 jar label roll misprinted",
+      "summary": "One roll of S2 jar labels with text cut off at trailing edge \u2014 QA pulled roll and placed on hold.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-05T17:05:10.405Z"
+      },
+      "status": "Resolved \u2014 defective roll removed from line and held; Ethan Bean notified for supplier follow-up."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 pretzel piece weight 35% over spec",
+      "summary": "Individual piece weight running 8.2g vs 5.9g target, causing pouch piece count to drop to 65 (spec 85-95) despite meeting minimum pouch weight \u2014 blower and shaker both at 100%.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-10-05T19:20:17.311Z"
+      },
+      "status": "Open at window close \u2014 team dialing in chocolate coverage; spec allows 85 pieces minimum as long as pouch weight holds."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars breaking at demold",
+      "summary": "Approximately 4 broken bars per mold coming through demolding \u2014 worker stationed at belt to hand-sort and prevent packaging.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-10-05T20:42:30.732Z"
+      },
+      "status": "Open \u2014 demolding hammers adjusted from 2.2 to 1.9 bar and mold temp raised from 47\u00b0C to 49\u00b0C at 14:45 MT; monitoring for improvement."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix recipe weights modified without authorization",
+      "summary": "16oz recipe weights and tare (34g) found changed in scale with no record of who or why \u2014 actual output still within spec minimum.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-10-05T13:42:52.839Z"
+      },
+      "status": "Resolved \u2014 weights corrected back to spec in scale at 07:45 MT; no rework required as all pouches met spec minimum."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Hapman lids & cones failed APC verification",
+      "summary": "Elevated APC results on S3 Hapman lids and cones after cleaning \u2014 equipment requires 3 re-cleans with APC swab after each cycle.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-05T16:47:58.976Z"
+      },
+      "status": "Open \u2014 first of three required re-cleans in progress; inline filter for S3 also pending lab results due to lab issue."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 flow wrap parts box 39 failed environmental swab",
+      "summary": "Environmental testing on TG flow wrap parts showed out-of-spec results on box 39 only \u2014 parts re-cleaned same day during line-down window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-10-05T17:48:50.803Z"
+      },
+      "status": "Resolved \u2014 box 39 parts re-cleaned and first environmental re-test taken at 12:48 MT; results pending."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding pre-shift kitchen tool inspection to S4 startup checklist \u2014 today's broken metal spatula in mixing tank required 6-hour line-down and full system sanitization."
+    },
+    {
+      "plant": "L1",
+      "text": "Review metal-detector and X-ray test card protocols on S1 \u2014 screw fragment found in decorator pump suggests possible equipment degradation post-maintenance or installation."
+    },
+    {
+      "plant": "L3",
+      "text": "Add post-cleaning assembly verification step to ML4 Theegarten procedure \u2014 today's TG4 reassembly errors included belt installed above rails (causing rip), plastic and metal parts swapped in metal detector, and rollers in wrong positions."
+    },
+    {
+      "plant": "L3",
+      "text": "Enforce recipe change authorization on MF Matrix \u2014 today's unauthorized weight and tare modifications went untracked until QA audit; consider lockout or two-person rule for recipe edits."
+    }
+  ]
+}
