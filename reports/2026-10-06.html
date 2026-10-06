@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Production briefing — 2026-10-06 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- Sheet 1 — plant cards ---------- */
+.plant-card {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 10pt 12pt;
+  box-shadow: var(--shadow-sm);
+  page-break-inside: avoid;
+}
+.plant-card .head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 5pt; margin-bottom: 6pt;
+}
+.plant-card .title { font-weight: 700; font-size: 10pt; color: var(--fg-1); }
+.plant-card .scale { font-size: 7.5pt; color: var(--fg-3); letter-spacing: 0.08em; }
+.plant-card .row {
+  display: flex; justify-content: space-between;
+  padding: 2pt 0; font-size: 8.5pt;
+}
+.plant-card .row .v {
+  font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1);
+}
+
+/* ---------- Per-plant sheet — cover band (logo lockup at 42pt) ---------- */
+.plant-sheet-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.plant-sheet-head .plant-name {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.plant-sheet-head .plant-id {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.plant-sheet-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.plant-sheet-head .meta img {
+  /* Logo PNGs carry a 4% transparent margin so artwork renders at 38px when
+     the box is 42px — matches the design system's cover-head lockup. */
+  height: 42px; width: auto; display: block; margin-left: auto;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Plant narrative ---------- */
+.plant-narrative {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 12pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Entry table (used for both resolved and needs_attention) ---------- */
+.entry-table {
+  margin-top: 4pt;
+}
+.entry-table thead th {
+  font-size: 7.5pt;
+  vertical-align: bottom;
+  padding: 5pt 6pt;
+}
+.entry-table tbody td {
+  vertical-align: top;
+  padding: 5pt 6pt;
+  font-size: 8.5pt;
+}
+.entry-table .pri-col { width: 22pt; text-align: center; }
+.entry-table .pri-num {
+  font-weight: 800; color: var(--fg-1); font-variant-numeric: tabular-nums;
+}
+.entry-table .issue-cell .title-line {
+  display: block; font-weight: 600; color: var(--fg-1);
+}
+.entry-table .issue-cell .summary {
+  display: block;
+  font-size: 8pt; color: var(--fg-2);
+  line-height: 1.35; margin-top: 2pt;
+  text-wrap: pretty;
+}
+.entry-table .issue-cell .resolution,
+.entry-table .issue-cell .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt;
+  text-wrap: pretty;
+}
+/* No emoji — section heading "Resolved" and the italic resolution text
+   carry the meaning. */
+.entry-table .cat-cell { white-space: nowrap; }
+.entry-table .cat-cell .cat-icon {
+  display: inline-block; width: 12px; height: 12px;
+  vertical-align: -2px; margin-right: 4pt;
+  color: var(--fg-2);
+}
+.entry-table .raised-cell {
+  white-space: nowrap; color: var(--fg-2); font-size: 8pt;
+}
+.entry-table .raised-cell .author { color: var(--fg-1); font-weight: 600; }
+.entry-table .pri-cell { text-align: center; }
+
+/* ---------- Floor notes (sheet 1 + plant sheets) ---------- */
+.floor-notes {
+  margin: 10pt 0 14pt 0;
+  padding: 8pt 12pt;
+  background: #FAF9F4;
+  border-left: 3pt solid var(--primary);
+  border-radius: var(--radius-sm);
+  font-size: 8.5pt;
+  page-break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+}
+.floor-notes .eyebrow { margin-bottom: 4pt; }
+.floor-notes ul { margin: 0; padding-left: 14pt; }
+.floor-notes li { padding: 1pt 0; color: var(--fg-1); }
+.floor-notes li .plant-tag {
+  font-weight: 700; color: var(--fg-2); margin-right: 4pt;
+}
+
+/* ---------- Empty state for sections with no content ---------- */
+.empty-state {
+  padding: 8pt 0;
+  color: var(--fg-3); font-style: italic; font-size: 9pt;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<!-- ========== SHEET 1 — ORG-WIDE BRIEFING SUMMARY ========== -->
+<section class="sheet">
+  <div class="cover-head">
+    <div class="brand">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+    </div>
+    <div class="doc-meta">
+      <div class="eyebrow" style="font-size: 7pt;">Production briefing</div>
+      <div>October 6, 2026 &nbsp;·&nbsp; 08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <h1>Production briefing</h1>
+  <p class="lead">Last 24 hours across Lindon 1 — Caramel, Lindon 2 — Moulding, Lindon 3 — Chocolate. Distribution: Operations, FSQA, plant leadership.</p>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Oct 5 12:54 MT → Oct 6 12:54 MT</div></div>
+    <div class="item"><div class="eyebrow">Messages</div><div class="v">584 across 17 chats</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Items today</div><div class="v">60</div></div>
+  </div>
+
+  <h2>Executive summary</h2>
+
+  <div class="hero">
+    <div class="eyebrow">Net closure</div>
+    <p class="headline">L1 missing evaporated milk forced schedule change; L2 broken bars at <span class="accent">16 per minute</span> still high after adjustments; L3 ML4 chiller faulting</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">36</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">24</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">5</div><div class="sub">Urgent items still live</div></div>
+    <div class="stat"><div class="eyebrow">Total raised</div><div class="num">60</div><div class="sub">All items mentioned today</div></div>
+  </div>
+
+  <h3 class="section-label">By plant</h3>
+  <div class="audience-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="plant-card">  <div class="head"><div class="title">Lindon 1 — Caramel</div>    <div class="scale">L1</div></div>  <div class="row"><span>Resolved</span><span class="v">14</span></div>  <div class="row"><span>Needs attention</span><span class="v">11</span></div>  <div class="row"><span>P1 open</span><span class="v">2</span></div></div><div class="plant-card">  <div class="head"><div class="title">Lindon 2 — Moulding</div>    <div class="scale">L2</div></div>  <div class="row"><span>Resolved</span><span class="v">9</span></div>  <div class="row"><span>Needs attention</span><span class="v">4</span></div>  <div class="row"><span>P1 open</span><span class="v">1</span></div></div><div class="plant-card">  <div class="head"><div class="title">Lindon 3 — Chocolate</div>    <div class="scale">L3</div></div>  <div class="row"><span>Resolved</span><span class="v">13</span></div>  <div class="row"><span>Needs attention</span><span class="v">9</span></div>  <div class="row"><span>P1 open</span><span class="v">2</span></div></div>
+  </div>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li><span class="plant-tag">L1</span>Evaporated milk (10011) shortage traced to incorrect BOM; item not called in NetSuite WOs until December but needed today for sugar-free caramel trial.</li><li><span class="plant-tag">L2</span>Display version mismatch clarified: use V1 only until V2 approval received; CNC next if V1 runs out.</li><li><span class="plant-tag">L3</span>3rd shift left 15 molds stuck in north washroom; flagged for coaching.</li></ul></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 14pt;">
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">Production briefing · 2026-10-06</span>
+    <span class="page-no">Page 1 of 4</span>
+  </div>
+</section>
+
+
+<!-- ========== SHEET 2 — Lindon 1 — Caramel ========== -->
+<section class="sheet">
+  <div class="plant-sheet-head">
+    <div>
+      <h1 class="plant-name">Lindon 1 — Caramel</h1>
+      <div class="plant-id">L1 · Production briefing</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>October 6, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">Sollich 3 cleared a 3-hour Russell Finex clog and pistachio buildup by midday and is running. Sollich 4 delayed ~1 hour on cold corn syrup but delivered caramel by 12:40. Sollich 2 labeling issues on Jar A persisted through window close despite roll changes. Missing 140 lbs evaporated milk for sugar-free caramel; ETA 12:30 from purchasing.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">14</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">11</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">2</div><div class="sub">Urgent items still live</div></div>
+  </div>
+
+  <h3 class="section-label">Needs attention</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">Missing 140 lbs evaporated milk (10011) for sugar-free caramel</span><span class="summary">Only 2 cans on hand, need 140 lbs; BOM incorrect so item not staged; no WOs in NetSuite until December but needed today for trial.</span><span class="status">Kirk/Martin securing pickup, ETA 12:30 pm confirmed at 12:06; in transit at window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Katya Farnsworth</span><br><span>07:39 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">Sollich 3 metal detector keyhole damaged, must stop line for checks</span><span class="summary">MD keyhole damaged — someone stuck something in instead of using key; maintenance removed keyhole, now back to stopping line for every MD check.</span><span class="status">Keyhole removed at 08:45; line must stop for MD checks until replacement; Charity asked to follow up with techs on key-only policy.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Katya Farnsworth</span><br><span>08:45 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">Sollich 4 container mislabeled, unknown butter type</span><span class="summary">Container label shows item 10218 but product is butter with unknown type; QA and IMS notified.</span><span class="status">Reported at 15:23, QA and IMS notified; no resolution or follow-up by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Marcos Jimenez</span><br><span>15:23 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">Sollich 3 missing decorator return hose and elbow</span><span class="summary">Orange return hose for decorator missing; found replacement hose but no elbow and not heated/no plug.</span><span class="status">Replacement found at 00:07 but missing elbow and heating; no follow-up on sourcing correct parts or workaround by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">William Beattie</span><br><span>23:54 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">Sugar-free caramel WO had wrong ingredient list</span><span class="summary">WO for 20025 sugar-free caramel showed 20009 ingredients; new WO created but still missing evaporated milk.</span><span class="status">New WO created at 10:13 by Paula; team changed over to tomorrow&#x27;s product instead due to material shortage.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Katya Farnsworth</span><br><span>07:32 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">Sollich 3 low pistachio topping on finished pieces</span><span class="summary">Operator informed tops coming with too little pistachio, affecting appearance and final weight; adjustments made, verification in 20 minutes.</span><span class="status">Adjustments made at 07:42, said would verify in ~20 min; no verification result posted by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Ingrid Moreno Angarita</span><br><span>07:42 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">Sollich 2 Jar A labeling issues — wrinkled labels persist</span><span class="summary">Front label machine having issues with wrinkled labels; switched to Jar B, replaced rolls with lines, but issues resumed at 12:49.</span><span class="status">Maintenance and supervisor still inspecting machine and making adjustments as of 12:49; no clearance by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Mariela Gudino</span><br><span>10:43 MT</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line">Sollich 4 heavy cream pipe clogged from missed cleaning</span><span class="summary">Heavy cream pipe wasn&#x27;t cleaned yesterday, now clogged and delaying production.</span><span class="status">Mentioned at 11:07 alongside cold corn syrup issue; caramel production resumed but pipe clog resolution not explicitly confirmed.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">S4 Kitchen Tablet</span><br><span>11:07 MT</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line">Sollich 1 Matrix 10 piece count below minimum</span><span class="summary">Bags showing 80 pieces; standard requires minimum 85 pieces per bag.</span><span class="status">Kathleen flagged at 11:45, Justin said &quot;we will take care of this&quot; but no corrective action or verification posted by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Kathleen Gilbert</span><br><span>11:45 MT</span></td></tr><tr><td class="pri-col pri-num">10</td><td class="issue-cell"><span class="title-line">Sollich 1 final pieces with insufficient bottom chocolate</span><span class="summary">Final pieces coming with not enough chocolate on the bottom; operator says adding more would push weight above 6.07g max spec.</span><span class="status">Reported at 12:48 with current weight attached; operator concerned about exceeding max weight; no resolution or QA input by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Constanza Araya</span><br><span>12:48 MT</span></td></tr><tr><td class="pri-col pri-num">11</td><td class="issue-cell"><span class="title-line">Inline filter still pending results, lab issue</span><span class="summary">Inline filter awaiting test results due to lab issue.</span><span class="status">Still pending at 14:12; lab issue unresolved, no update by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Charity Young</span><br><span>14:12 MT</span></td></tr></tbody>
+</table>
+
+  <h3 class="section-label">Resolved in the last 24 hours</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">Sollich 3 Matrix 3/4/5 found with dirty spots during setup</span><span class="summary">Operators rotating machines for production noticed cookie residue on pouch arms, bottomer, and internal areas; machines had been covered with paper.</span><span class="resolution">Recleaned, passed ATP with 0 result, allergen test passed at 04:49 — lines ready for production (Rafael Vilchez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Luis Falcon</span><br><span>02:20 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">Sollich 2 capper belt stopped, needed level 2 clean after repair</span><span class="summary">Belt stopped at 06:00; maintenance estimated 1+ hour repair; line slowed to 1.2 and hand-capping lids until fixed.</span><span class="resolution">Capper fixed, cleaned, ATP approved at 07:52 — back in use (Victor Romero Sr.).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Joseph Scott</span><br><span>06:00 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">Sollich 3 Russell Finex clogged, enrober wire belt jammed with pistachios</span><span class="summary">Paused at 08:24 — running out of chocolate, Russell Finex not purging, pin broke; estimated 3 hours down for clearing and reheat/temper cycle.</span><span class="resolution">Russell Finex cleared and pin replaced by 09:49; removed bin and half 5-gal bucket of pistachios from wire belt tensioning roller; reheat complete and tempering started at 12:13; decorator good, enrober tempering (Katya Farnsworth, S3 Enrober).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Katya Farnsworth</span><br><span>08:24 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">Hapman lids &amp; cones failed cleaning, needed 3x reclean</span><span class="summary">Initial clean failed; required reclean 3 times with APC swab after each clean.</span><span class="resolution">First cleaning and ATP/APC tests performed and completed at 12:47 (Mary Montilla).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Charity Young</span><br><span>14:11 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">Sollich 3 metal detector failed visual inspection</span><span class="summary">MD failed visual with dirty spots; needed reclean before ATP and allergen swab could proceed.</span><span class="resolution">Recleaned and passed allergen test at 01:07 (Ebrima Dibba).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Jody Howse</span><br><span>00:22 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">Sollich 3 Russell Finex failed allergen 4 times</span><span class="summary">Non-allergen system filter failed allergen testing 4 times; not needed for nut system but had to be cleared for certification.</span><span class="resolution">Recleaned and passed allergen test at 01:08 (Rafael Vilchez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">William Beattie</span><br><span>00:29 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">Sollich 2 SCM hose clogged on 3rd shift</span><span class="summary">SCM pulling slowly as if cold but didn&#x27;t feel cold; hose pulled and cleaned.</span><span class="resolution">Hose cleaned, nothing big came out but started pumping normally after (Joseph Scott).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Joseph Scott</span><br><span>01:30 MT</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line">Sollich 3 packing area speed belts failed at startup</span><span class="summary">All speeds on control screen set to zero instead of recipe speed; line couldn&#x27;t start.</span><span class="resolution">Maintenance working, line running at 05:11 (Luis Falcon).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Luis Falcon</span><br><span>05:04 MT</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line">Sollich 3 C28 belt broke at startup due to wrong pin</span><span class="summary">Belt broke as soon as line started; person who assembled used red pin instead of correct green pin.</span><span class="resolution">Maintenance installed correct pin, belt ready to go at 05:25 (S3 Pack).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">S3 Pack</span><br><span>05:22 MT</span></td></tr><tr><td class="pri-col pri-num">10</td><td class="issue-cell"><span class="title-line">Sollich 2 Kitchen B low on caramel, SCM pulling slowly</span><span class="summary">Sweetened condensed milk taking long time to pull; kitchen at 13% and running low while line at 1.2 speed.</span><span class="resolution">Kitchen raised percentage to 100%, line speed increased to 1.35 at 07:46 (Victor Romero Sr.).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Joseph Scott</span><br><span>06:52 MT</span></td></tr><tr><td class="pri-col pri-num">11</td><td class="issue-cell"><span class="title-line">Plastic wrap for machines completely out</span><span class="summary">Thought delivery was yesterday but completely out again.</span><span class="resolution">Driver delivered 3 pallets to L1 by 08:41 (Ethan Bean).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Tiffanee Taylor</span><br><span>07:47 MT</span></td></tr><tr><td class="pri-col pri-num">12</td><td class="issue-cell"><span class="title-line">Sollich 4 cold corn syrup delayed caramel ~1 hour</span><span class="summary">Corn syrup cold, taking long to fill mixing tank; heavy cream pipe also clogged from missed cleaning; caramel delivered to conbar at 12:40 after delay.</span><span class="resolution">Cleared by 12:40 — caramel sent to conbar; pipe issue noted but production resumed (S4 Kitchen Tablet).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Katya Farnsworth</span><br><span>11:04 MT</span></td></tr><tr><td class="pri-col pri-num">13</td><td class="issue-cell"><span class="title-line">Sollich 2 Kitchen 2 temp unit 3 motor paused</span><span class="summary">Temperature unit motor paused, mechanics needed to reset.</span><span class="resolution">Reset and running (implied by continued production).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">S2 Enrober</span><br><span>07:14 MT</span></td></tr><tr><td class="pri-col pri-num">14</td><td class="issue-cell"><span class="title-line">Sollich 1 Matrix tech locked out of building</span><span class="summary">Matrix tech sitting in white Jeep outside, unable to get into building.</span><span class="resolution">Justin went to get him at 08:28 (Justin Garner).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="users"></i>Staffing</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Matt Hatch</span><br><span>08:11 MT</span></td></tr></tbody>
+</table>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>Evaporated milk (10011) shortage traced to incorrect BOM; item not called in NetSuite WOs until December but needed today for sugar-free caramel trial.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 1 — Caramel · Production briefing · 2026-10-06</span>
+    <span class="page-no">Page 2 of 4</span>
+  </div>
+</section>
+<!-- ========== SHEET 3 — Lindon 2 — Moulding ========== -->
+<section class="sheet">
+  <div class="plant-sheet-head">
+    <div>
+      <h1 class="plant-name">Lindon 2 — Moulding</h1>
+      <div class="plant-id">L2 · Production briefing</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>October 6, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">ML2 broken bars counted at 16 per minute at 22:15; demolding hammers adjusted but no confirmation of improvement by window close. ML3 ran steady after belt-before-curve issue cleared in 4 minutes. FFS film broke twice, both cleared inside 30 minutes. Graham cookies staged for 3rd shift after 18:48 delivery.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">9</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">4</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">1</div><div class="sub">Urgent items still live</div></div>
+  </div>
+
+  <h3 class="section-label">Needs attention</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">ML2 broken bars persist at 16 per minute after adjustments</span><span class="summary">Estimated 4 broken bars per mold at 14:42; Victor counted 16 broken in 1 minute at 22:15; demolding hammers and twist adjusted but no confirmation of improvement.</span><span class="status">Hammers adjusted from 2.2 to 1.9, then further adjustments to hammers and twist at 00:22; Victor asked to check for improvement but no follow-up posted by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Marlenis Fernandez</span><br><span>14:42 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">ML3 damaged belt may need replacement</span><span class="summary">Belt is damaged and may need to be replaced; Lance Harmon asked to coordinate with Fabiola.</span><span class="status">Flagged at 23:41 for Lance to address with Fabiola; no update on assessment or replacement plan by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Zack Kurtz</span><br><span>23:41 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">Display version mismatch — awaiting V2 approval</span><span class="summary">Item 41070-V2 listed in WO but only have V1 on hand (173,800 vs 218,700 needed); instruction to use V1 only until V2 approval, then move to CNC.</span><span class="status">Maria clarified at 10:17 to run V1 only, waiting on approval decision from Ira Robison; no approval by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Luis Pino</span><br><span>10:09 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">RTU sensor alarm resetting daily</span><span class="summary">Neighbor (Xceed) reports having to reset RTU alarm in riser room almost daily; Trent will notify each time it&#x27;s reset.</span><span class="status">William will replace sensor tomorrow afternoon (confirmed at 13:18); not yet replaced as of window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Alan Todd</span><br><span>13:16 MT</span></td></tr></tbody>
+</table>
+
+  <h3 class="section-label">Resolved in the last 24 hours</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">FFS film broke at machine</span><span class="summary">Film passed through machine, line down.</span><span class="resolution">Line running at 13:18 (VFFS).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">VFFS</span><br><span>12:56 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">FFS bags coming out open</span><span class="summary">Bags coming out open, cleaning machine to address.</span><span class="resolution">Cleaned and resolved (implied by continued production).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">VFFS</span><br><span>14:53 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">FFS film broken</span><span class="summary">Film broke, line down, maintenance called.</span><span class="resolution">Line running at 18:38 (Brandon Lance).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">VFFS</span><br><span>18:13 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">ML3 belt before curve having problems</span><span class="summary">Belt issue before the curve stopped line briefly.</span><span class="resolution">Line running again at 19:34, 4 minutes later (Molding Line 3 Pack).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Molding Line 3 Pack</span><br><span>19:30 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">ML3 chocolate buildup on ramp</span><span class="summary">Line stopped due to chocolate buildup on ramp.</span><span class="resolution">Line running again at 06:17, 2 minutes later (Molding Line 3 Pack).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Molding Line 3 Pack</span><br><span>06:14 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">ML2 mold jam</span><span class="summary">Line stopped for mold jam.</span><span class="resolution">Back up at 07:35 (Jeffrey Barney).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">ML2 FW</span><br><span>07:20 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">FFS green wire keeps getting removed during cleanings</span><span class="summary">Green wire for metallic bags keeps being removed; clarification needed on whether it&#x27;s for current thin plastic film.</span><span class="resolution">Clarified Raymond Fleming from 2nd shift added it for this film type; Zack now aware and will ensure team keeps it in place (Brandon Lance, Zack Kurtz).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Brandon Lance</span><br><span>15:06 MT</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line">Graham cookies needed staging for 3rd shift</span><span class="summary">Requested staging of graham cookies in FIFO for 3rd shift production.</span><span class="resolution">Item 10139 arrived at L2 at 18:48 and staged (Jovani Castellanos).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Brandon Lance</span><br><span>15:21 MT</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line">Machine wrap rolls on last half pallet</span><span class="summary">Running low on machine wrap rolls, need to order ASAP.</span><span class="resolution">PO 9366 confirmed for item 41339 at 09:37 (Ethan Bean).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Joey Michael Dudney</span><br><span>08:28 MT</span></td></tr></tbody>
+</table>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>Display version mismatch clarified: use V1 only until V2 approval received; CNC next if V1 runs out.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 2 — Moulding · Production briefing · 2026-10-06</span>
+    <span class="page-no">Page 3 of 4</span>
+  </div>
+</section>
+<!-- ========== SHEET 4 — Lindon 3 — Chocolate ========== -->
+<section class="sheet">
+  <div class="plant-sheet-head">
+    <div>
+      <h1 class="plant-name">Lindon 3 — Chocolate</h1>
+      <div class="plant-id">L3 · Production briefing</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>October 6, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <p class="plant-narrative">Truffle line replaced destroyed Cavanna 2 exit belt and worn roller; back online at 08:51 after 1-hour stop. ML4 chiller 2 faulting in protection mode, circuit 2 pressure issues unresolved at window close. ML1 PTL pressure spiking above 19 psi, chocolate flow stopping. Moulding ran steady aside from localized jams.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="eyebrow">Resolved</div><div class="num">13</div><div class="sub">Cleared in the last 24 hours</div></div>
+    <div class="stat"><div class="eyebrow">Needs attention</div><div class="num">9</div><div class="sub">Raised, not yet cleared</div></div>
+    <div class="stat"><div class="eyebrow">P1 open</div><div class="num">2</div><div class="sub">Urgent items still live</div></div>
+  </div>
+
+  <h3 class="section-label">Needs attention</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">ML1 PTL pressure rising above 19 psi, stopping chocolate flow</span><span class="summary">PTL pressure rising above 19 psi causing flow of chocolate to buffer to stop; valve opened to release water and lower pressure, maintenance notified.</span><span class="status">Pressure issue reported at 07:37, valve opened to release water, maintenance notified; no resolution or pressure stabilization confirmed by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Imperial</span><br><span>07:37 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">ML4 chiller 2 faulting in protection mode, circuit 2 pressure issues</span><span class="summary">Water pressure issues on depositor 2; circuit 2 keeps faulting; chiller 2 in protection mode with alarms; fault cleared but watching for recurrence.</span><span class="status">Chiller fault cleared at 11:25, watching for alarms; circuit 2 issue unresolved; Chris Givens involved but no final clearance by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>09:06 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">Truffle line getting large amounts of doubles</span><span class="summary">Getting large amounts of double-wrapped pieces; suspect issue stems from wrapped belt before guillotine.</span><span class="status">Reported at 03:33 with suspicion about wrapped belt; no diagnosis or fix confirmed by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine Enrober</span><br><span>03:33 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">Truffle chocolate pump spilling</span><span class="summary">Chocolate pump is spilling, maintenance working on it.</span><span class="status">Maintenance working as of 04:29; no clearance or completion message by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine Enrober</span><br><span>04:29 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">Truffle belts sliding off after cleaning, 30-min maintenance window</span><span class="summary">After cleaning cavannas, two belts at end started to slide off; stopped at 06:25, maintenance (Jose) said 30 minutes needed to work on belts.</span><span class="status">Line stopped at 06:25 for 30-min belt work; no explicit &quot;line running&quot; message after 30-min window, unclear if completed by 12:54 close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine FW</span><br><span>06:24 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">ML1 C4 belt tore, glycol level low</span><span class="summary">Conveyor C4 moved and tore to south; maintenance cut and burned belt; glycol level also getting low.</span><span class="status">Belt cut and burned at 10:20; glycol low flagged at 09:43 to Nathan; no confirmation of belt replacement or glycol refill by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Imperial</span><br><span>09:37 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">ML4 cookie weight high at 1.62g vs 1.46g target</span><span class="summary">First check shows cookie weight at 1.62g against 1.46g target; Ray says will do more checks, some variance expected; Anisa wants R&amp;D (Italu) involved.</span><span class="status">First check high at 10:31; more checks planned, R&amp;D involvement requested; no follow-up results or recipe adjustment by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Ray Garcia</span><br><span>10:31 MT</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line">Southeast door light burnt out</span><span class="summary">Reminder to William about southeast door light being burnt out or not working.</span><span class="status">Reminder sent at 04:18, William acknowledged with thumbs up; not yet replaced as of window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Nathan Gevenois</span><br><span>04:18 MT</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line">ML1 15 molds stuck in north washroom from 3rd shift</span><span class="summary">3rd shift left 15 molds stuck in north washroom.</span><span class="status">Discovered at 07:24 by 1st shift; flagged as handoff issue, no resolution or coaching follow-up by window close.</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Imperial</span><br><span>07:24 MT</span></td></tr></tbody>
+</table>
+
+  <h3 class="section-label">Resolved in the last 24 hours</h3>
+  
+<table class="actions entry-table">
+  <thead>
+    <tr>
+      <th class="pri-col">#</th>
+      <th>Issue</th>
+      <th>Category</th>
+      <th class="pri-cell">Priority</th>
+      <th>First raised</th>
+    </tr>
+  </thead>
+  <tbody><tr><td class="pri-col pri-num">1</td><td class="issue-cell"><span class="title-line">MF Matrix ran out of pouches mid-shift</span><span class="summary">Paused for lack of bags, no more on line to continue work.</span><span class="resolution">Up and running with pouches at 17:39, took downtime and lunches (Shane Olsen, mfmatrix).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="package"></i>Materials</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">mfmatrix</span><br><span>16:08 MT</span></td></tr><tr><td class="pri-col pri-num">2</td><td class="issue-cell"><span class="title-line">Truffle Cavanna 2 exit belt destroyed, roller worn</span><span class="summary">Exit belt fraying at Cavanna 2, discovered destroyed and needing replacement along with worn roller.</span><span class="resolution">Exit belt and roller replaced, cleaned/sanitized, line started at 08:51 (Rich Brierley, Grey Boscan, Mirella Mamani).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap error">P1</span></td><td class="raised-cell"><span class="author">TruffleLine FW</span><br><span>07:03 MT</span></td></tr><tr><td class="pri-col pri-num">3</td><td class="issue-cell"><span class="title-line">Truffle glycol spilling onto enrober</span><span class="summary">Glycol leak onto enrober, maintenance fixing.</span><span class="resolution">Leak fixed at 02:44 (TruffleLine Enrober).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">TruffleLine Enrober</span><br><span>02:39 MT</span></td></tr><tr><td class="pri-col pri-num">4</td><td class="issue-cell"><span class="title-line">ML4 cold stamp temperature low</span><span class="summary">After clearing chiller fault, cold stamp temperature needed 15 minutes to reach range.</span><span class="resolution">Cold stamp getting on temp at 11:38 (Itzel Chavez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap warning">P2</span></td><td class="raised-cell"><span class="author">Ray Garcia</span><br><span>11:29 MT</span></td></tr><tr><td class="pri-col pri-num">5</td><td class="issue-cell"><span class="title-line">Truffle Cavanna jaws needed adjustment, film change</span><span class="summary">Cute Cavanna running better after maintenance adjusted jaws and operator changed film roll.</span><span class="resolution">Running better at 13:45 (TruffleLine FW).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">TruffleLine FW</span><br><span>13:45 MT</span></td></tr><tr><td class="pri-col pri-num">6</td><td class="issue-cell"><span class="title-line">MF Matrix centerlines off not circled, missing total</span><span class="summary">Centerlines off that weren&#x27;t circled, no number for total out of centerline.</span><span class="resolution">Corrected at 15:57 (Shane Olsen).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Phillip Perez</span><br><span>15:08 MT</span></td></tr><tr><td class="pri-col pri-num">7</td><td class="issue-cell"><span class="title-line">Tots in walkway during shift exchange</span><span class="summary">Tots left in walkway creating obstruction during 1st to 2nd shift exchange.</span><span class="resolution">Removed at 17:29 (Phillip Perez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="triangle-alert"></i>Safety</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Phillip Perez</span><br><span>17:29 MT</span></td></tr><tr><td class="pri-col pri-num">8</td><td class="issue-cell"><span class="title-line">4 new beige carts missing</span><span class="summary">Looking for 4 new beige carts that may or may not be on site.</span><span class="resolution">PTL team put together, 2 at storage racks, Shawn had 1 upstairs; 5 total located by 09:00 (Itzel Chavez, Shawn Jewkes).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Shane Olsen</span><br><span>23:12 MT</span></td></tr><tr><td class="pri-col pri-num">9</td><td class="issue-cell"><span class="title-line">Truffle flow wrap silver line too wide on cute cavanna</span><span class="summary">Silver line on back of flow wrap packaging too wide on cute cavanna.</span><span class="resolution">Operator informed and making adjustments at 04:54 (Jordan Serna).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="shield-check"></i>Quality</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Jordan Serna</span><br><span>04:54 MT</span></td></tr><tr><td class="pri-col pri-num">10</td><td class="issue-cell"><span class="title-line">Banding tripping hazard</span><span class="summary">Banding out causing tripping hazard.</span><span class="resolution">Taken care of at 06:27 (Rich Brierley).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="triangle-alert"></i>Safety</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Rich Brierley</span><br><span>06:27 MT</span></td></tr><tr><td class="pri-col pri-num">11</td><td class="issue-cell"><span class="title-line">Truffle centerline data entry errors</span><span class="summary">Missed circling Tunnel 4 speed being off CL; bottomer De-Tailer written as 65 but entered 45 in QiSoft; chocolate exit temp numbers swapped.</span><span class="resolution">Shawn fixed settings, going over with Humberto for training (Grey Boscan).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Shawn Jewkes</span><br><span>07:39 MT</span></td></tr><tr><td class="pri-col pri-num">12</td><td class="issue-cell"><span class="title-line">ML4 depositor sensor fixed</span><span class="summary">Sensor issue on ML4, sign was up.</span><span class="resolution">Sensor fixed, taking sign off at 08:30 (Itzel Chavez).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="cog"></i>Machine</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>08:30 MT</span></td></tr><tr><td class="pri-col pri-num">13</td><td class="issue-cell"><span class="title-line">ML4 VideoJet tech visit coordinated</span><span class="summary">Needed VideoJet tech for ML1 work so TG4 printer could be returned.</span><span class="resolution">Chad brought tech over at 11:39, Nelson picked up at 11:48 (Chad Stone, Rose Smuin).</span></td><td class="cat-cell"><i class="cat-icon" data-lucide="info"></i>Other</td><td class="pri-cell"><span class="cap neutral">P3</span></td><td class="raised-cell"><span class="author">Itzel Chavez</span><br><span>10:40 MT</span></td></tr></tbody>
+</table>
+
+  <div class="floor-notes"><div class="eyebrow">Floor notes</div><ul><li>3rd shift left 15 molds stuck in north washroom; flagged for coaching.</li></ul></div>
+
+  <div class="sheet-footer">
+    <span class="doc">Lindon 3 — Chocolate · Production briefing · 2026-10-06</span>
+    <span class="page-no">Page 4 of 4</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-06",
+  "headline": {
+    "eyebrow": "Sanitation gaps",
+    "text": "L1 S3 Matrix residue found at startup after *4 allergen test failures* on Russel Finex \u2014 re-cleans completed, all passed by shift end."
+  },
+  "summary": "Five sanitation gaps across L1 \u2014 heavy cream pipe clogged from missed clean, metal detector failed visual, Matrix molds had residue at startup. All re-cleaned and released. Label quality issues on L1 S2 and S4; BOM error caused ingredient shortage on S4.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal detector keyhole damaged, reject bin access compromised",
+      "summary": "S3 metal detector keyhole damaged \u2014 someone forced it open instead of using key; maintenance removed keyhole, line now stops for every MD check until repaired.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-06T14:45:23.709Z"
+      },
+      "status": "Open \u2014 keyhole removed, line stops for checks; padlock functional per 1st shift tech but broken per maintenance."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 container label mismatch \u2014 butter type unknown",
+      "summary": "Container labeled item 10218 but contains butter of unknown type; QA and IMS notified at 15:23.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-05T21:23:18.866Z"
+      },
+      "status": "Open \u2014 QA notified, disposition pending."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 BOM error lists wrong ingredients for sugar free caramel",
+      "summary": "Work order for item 20025 (sugar free) contained BOM for 20009 (regular); caused 140 lb evaporated milk shortage, schedule pushed to next day.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-06T13:39:14.236Z"
+      },
+      "status": "New WO created, milk ordered ETA 12:30 pm 10/6."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar label wrinkles from defective roll stock",
+      "summary": "Label machine applying wrinkled labels; inspection found lines on some rolls causing wrinkles; defective rolls replaced, issue resolved by 11:57.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-06T16:43:24.985Z"
+      },
+      "status": "Resolved \u2014 defective rolls replaced, labels now clean."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 final piece chocolate coverage low, weight at upper limit",
+      "summary": "Final pieces insufficient chocolate on bottom; operator cited weight spec concern (current 6.07g, max 6.07g); QA flagged appearance issue at 12:48.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-10-06T18:48:47.64Z"
+      },
+      "status": "Open \u2014 operator declined adjustment citing weight limit."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bags sealing open",
+      "summary": "Bags coming out open at 14:53; machine cleaned, line restarted.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-05T20:53:41.121Z"
+      },
+      "status": "Resolved after cleaning."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 broken bar rate 16 per minute",
+      "summary": "QA counted 16 broken bars in one minute at 22:15; demolding hammers and twist adjusted, improvement requested.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Leandro",
+        "time_utc": "2026-10-06T04:15:30.976Z"
+      },
+      "status": "Adjustments made at 00:22 \u2014 follow-up count pending."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cookie weight 11% over target on first run",
+      "summary": "Long loop cookie first check 1.62g vs 1.46g target (11% high); R&D consulted for recipe adjustment.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ray Garcia",
+        "time_utc": "2026-10-06T16:31:31.821Z"
+      },
+      "status": "Open \u2014 R&D reviewing, additional checks planned."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Hapman lids & cones require 3x reclean with APC swab",
+      "summary": "Plant Standards: Hapman lids & cones flagged for reclean 3 times with APC swab after each clean; isolated for recleaning 1st shift 10/6.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-05T20:11:02.345Z"
+      },
+      "status": "Scheduled for recleaning 1st shift 10/6, isolation confirmed."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector failed visual inspection",
+      "summary": "3rd shift sent maintenance to assemble MD but QA failed visual; re-cleaned, ATP and allergen swab completed before assembly.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-06T06:23:01.746Z"
+      },
+      "status": "Resolved \u2014 re-cleaned and passed."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Matrix 3/4/5 residue found at setup, paper covering noted",
+      "summary": "Operators found cookie/product residue on pouch arms, bottomer, internal areas during mold rotation; paper coverings on machines origin unknown; re-cleaned, ATP all 0, allergen passed by 04:49.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-10-06T08:45:54.725Z"
+      },
+      "status": "Resolved \u2014 re-clean complete, ATP 0, allergen passed."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 capper belt required level 2 clean after repair",
+      "summary": "Capper belt repaired; QA required level 2 clean before use, ATP tested and approved at 07:52.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-06T12:55:32.8Z"
+      },
+      "status": "Resolved \u2014 cleaned and ATP approved."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 heavy cream pipe clogged \u2014 missed clean previous day",
+      "summary": "Heavy cream pipe clogged at startup 11:07; crew reported pipe not cleaned yesterday, causing 29-minute delay.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-06T17:07:18.27Z"
+      },
+      "status": "Resolved \u2014 pipe cleared, line running."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "S3 MM3 checkweigher & x-ray belts failed allergen test",
+      "summary": "Checkweigher and x-ray belts for MM3 failed allergen testing during overnight clean; re-cleaned, status included in summary report that MM4 & MM5 passed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-06T05:17:45.967Z"
+      },
+      "status": "Re-cleaned \u2014 final status not explicitly confirmed in window."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Russel Finex failed allergen test 4 times",
+      "summary": "Non-allergen system Russel Finex filter failed allergen testing 4 times starting 23:54; eventually re-cleaned and passed at 01:07.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-06T06:29:22.724Z"
+      },
+      "status": "Resolved \u2014 passed on 5th attempt after re-clean."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding post-shift cleaning verification to S4 startup checklist \u2014 today's heavy cream pipe clog from missed clean caused 29-minute delay and echoes similar gaps on S3 Matrix residue."
+    },
+    {
+      "plant": "L1",
+      "text": "Review label and BOM quality control at release \u2014 S2 jar labels (defective roll stock), S4 container label (item mismatch), and S4 BOM error (wrong ingredients) all reached production floor."
+    },
+    {
+      "plant": "L2",
+      "text": "Investigate ML2 demolding process consistency \u2014 16 broken bars per minute at 22:15 suggests mechanical or recipe issue worth root-causing."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider trial-batch weight verification before full ML4 production runs \u2014 today's long loop cookie 11% over target on first check."
+    }
+  ]
+}
