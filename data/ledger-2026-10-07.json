@@ -1,0 +1,326 @@
+{
+  "date": "2026-10-07",
+  "headline": {
+    "eyebrow": "Active issues",
+    "text": "L3 ML4 still troubleshooting depositor and filter issues at window close \u2014 *3 open items* on new line commissioning"
+  },
+  "per_plant_summary": {
+    "L1": "L1 S3 was down most of the window after repeated Russell Finex pin breaks and pistachio clogging \u2014 line back at 11:19 after draining chocolate, replacing C24 belt, and adjusting to prevent nut buildup. S4 and S2 ran steadily with brief label and caustic supply interruptions cleared by mid-shift.",
+    "L2": "L2 FFS ran with recurring bottom-fold and blade issues \u2014 each cleared within minutes but throughput stayed at 480 cases/hr against a 510 target at window close. ML2 added PTL recirculation valves. ML3 had frequent label breaks, all resolved quickly.",
+    "L3": "L3 ML4 commissioning continued with cold stamp, water pressure, and ingredient tank issues \u2014 depositor 2 agitator and ingredient tank 2 auto mode still unresolved at 13:20. ML1 nozzle plate repaired and running. Truffle line cleared Cavanna and probe issues. MF Matrix pouch-opening problem mentioned early shift with no clear resolution."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "ML4 vibration 4 horizontal unit has been broken for approximately 2 months per operator report \u2014 now flagged for WDS open-items list."
+    },
+    {
+      "plant": "L1",
+      "text": "S3 pistachio prevention measures in place: checking separating table height, verifying clusters don't climb belt, and removing detailing rod to clear nut buildup."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 enrober pin broke during production",
+      "summary": "Russell Finex enrober pin failed at 21:35, stopping the line.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-07T03:35:12.254Z"
+      },
+      "resolution": "Caleb York replaced pin. Shift used downtime to complete caustic wash due to high cook times (42-47 min)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Russell Finex repeatedly clogged with pistachios",
+      "summary": "Filter clogged four times between 01:54 and 04:51, pressure spiking and preventing temper.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-10-07T07:54:49.001Z"
+      },
+      "resolution": "Team drained all chocolate from enrober, flushed crystallizer, added fresh chocolate, and replaced another broken pin. Line running again at 06:22."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 labels not staged for FD product changeover",
+      "summary": "First shift discovered FD labels were at Springville warehouse, not in L1.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-07T12:34:37.424Z"
+      },
+      "resolution": "Jody retrieved labels from Springville and delivered to warehouse at 07:05; Troy completed setup by 07:22."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C24 belt shifted and frayed significantly",
+      "summary": "Belt shifted during first shift, rubbing against machine and creating fibers found in Matrix 3.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-10-07T13:22:14.716Z"
+      },
+      "resolution": "Maintenance replaced belt. ATP passed with result of 0 at 11:06. QA inspected area and pallet bags for fibers."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caustic shortage delayed kitchen wash",
+      "summary": "Only one caustic wash cycle completed when warehouse reported no caustic in L1 or building 2.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-07T13:40:33.83Z"
+      },
+      "resolution": "Marcos found 2 buckets of caustic and completed second wash cycle by 08:32."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 label printer cutting letters and code illegible",
+      "summary": "Label printer output had cut letters and poor code legibility after setup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-07T13:58:24.143Z"
+      },
+      "resolution": "Troy resolved ribbon issue by 08:34. 4.5 pallets of unlabeled jars accumulated during troubleshooting."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 tunnel 2 contaminated with fibers",
+      "summary": "QA and operations found fibers in tunnel 2 requiring cleaning before start-up.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-07T15:25:45.952Z"
+      },
+      "resolution": "Source identified as clogged filters. Chris J cleaned with compressed air; area cleaned and passed inspection by 10:04."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 label machine sensor not detecting gap",
+      "summary": "Sensor controlling label feed stopped sensing the gap between labels.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-07T18:27:03.872Z"
+      },
+      "resolution": "Cleared at 13:07 \u2014 Lolo looked up training instructions and got sensor working again (Troy Baxter)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouches coming out with bottom fold",
+      "summary": "Pouches had bottom fold defect, occurring three separate times during the window.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-07T12:11:07.567Z"
+      },
+      "resolution": "Each occurrence cleared by maintenance adjustments within 3-17 minutes. Last cleared at 08:47 after blade tightened."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label breaks recurring throughout shifts",
+      "summary": "Line went down for broken labels at 14:10, 15:53, 16:45, 20:09, and 21:42.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-06T20:10:07.767Z"
+      },
+      "resolution": "Each incident cleared within 1-3 minutes. Team cleaned line, tightened roller, and measured rolls."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp too tight on commissioning test",
+      "summary": "First 20-mold test failed because cold stamp clearance was too tight, molds sticking.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-06T20:37:21.495Z"
+      },
+      "resolution": "Marcel heated stamp, disconnected, adjusted mold guide distance, reconnected, cooled. 100 molds deposited successfully by 16:19."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tank 2 pump leaking",
+      "summary": "Pump on ingredient tank 2 developed leak during commissioning, team manually filled depositor 3 with buckets.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-06T23:22:27.033Z"
+      },
+      "resolution": "Gasket on ingredient tank 2 dep 3 replaced by 20:50."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line Cavanna vacuum areas clogged",
+      "summary": "Vacuum areas on Cavannas clogged during CILT, causing machine to operate improperly and 10 bins to accumulate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-07T13:40:05.009Z"
+      },
+      "resolution": "Cleaned; cute Cavanna also running. Grey reminded operators to clean vacuum areas during CILT going forward."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 water pressure faults on depositors",
+      "summary": "Depositor tempering devices not reaching temp, water pressure faults on multiple units.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-07T13:45:21.109Z"
+      },
+      "resolution": "Maintenance found water hoses crossed and screens clogged with hard water. Cleaned screens and corrected hoses; faults cleared by 10:46."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 nozzle plate damaged threads",
+      "summary": "Nozzle plate had 2 damaged threads requiring repair before line could start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-07T14:41:45.738Z"
+      },
+      "resolution": "Nathan repaired threads, reassembled, and passed ATP by 10:01. Line started depositing at 11:18."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line tempermeter not working",
+      "summary": "Newly replaced tempermeter failed, causing volatile temper readings.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-10-07T16:20:18.084Z"
+      },
+      "resolution": "Nathan replaced temperature probe at 13:06 with last unit in inventory \u2014 \"This is the last one in total inventory until more arrive.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna printer intermittent on some bars",
+      "summary": "Cavanna printer printed on some bars but not others.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-10-07T17:45:02.343Z"
+      },
+      "resolution": "Cleared by 12:41 \u2014 \"Cavanna's printer is working correctly.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line Cavanna cutter sensor incorrect",
+      "summary": "Cute Cavanna cutter had wrong sensor installed.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-07T17:56:11.021Z"
+      },
+      "resolution": "Nathan Ruiz installed proper sensor at 11:57."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "FFS throughput below target at window close",
+      "summary": "Line achieving 480 cases/hr vs 510 target despite multiple speed increases and machine fixes.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-10-07T18:36:00.482Z"
+      },
+      "status": "Speed bumped from 80 to 82 to 85. Jeffrey Barney to post hourly counts. Last reported 480 cases 11:30-12:30."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 tempergraph communication error unresolved",
+      "summary": "Tempergraph on AD1 broken with communication error; Jakob unable to fix remotely with programmer.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-06T21:07:39.919Z"
+      },
+      "status": "Jakob coming back at 17:00 to attempt fix again. Team using tempermeter in interim. DO NOT TOUCH TEMPERGRAPH PAGE per Jakob at 11:51."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 vibration 4 horizontal unit broken for 2 months",
+      "summary": "Horizontal vibration on depositor not working; operators report it's been damaged approximately 2 months.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-10-07T01:41:51.181Z"
+      },
+      "status": "Marcel identified during commissioning. Added to WDS open-items list for vendor visit. Rod end also broken and repaired at 07:49."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pouch opening and pick-up issues",
+      "summary": "Matrix experiencing problems with pouch opening, dumping chocolate outside pouches, and pick-up failures.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-07T13:56:24.956Z"
+      },
+      "status": "Issues reported at start of first shift (07:56). Maintenance called; line stopped multiple times overnight. No clear resolution by window close at 13:20."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 agitator not moving properly",
+      "summary": "One of the agitators on depositor 2 not moving like the other, maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-07T18:23:29.878Z"
+      },
+      "status": "Maintenance called at 12:23, no resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tank 2 not sending product in auto",
+      "summary": "Ingredient tank 2 only working in manual mode, not auto. Separate from earlier pump leak.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-07T18:44:26.781Z"
+      },
+      "status": "Maintenance looking at issue as of 12:44. Operators manually filling tank after running out of cream at 13:21."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate loading tearing film at infeed",
+      "summary": "Chocolate loading into flow wrapper tearing film; maintenance adjusting infeed belts and sensor B150.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-10-07T19:15:06.217Z"
+      },
+      "status": "Maintenance adjusting infeed belts and sensor B150 as of 13:15. No resolution posted by window close."
+    }
+  ]
+}

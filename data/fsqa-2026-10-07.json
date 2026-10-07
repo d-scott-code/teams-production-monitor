@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-07",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "Four foreign-material events across L1 and L3 \u2014 machine part missing at S4, belt fibers at S3, plastic connector at S3, *spatula in chocolate* at ML1 \u2014 plus one allergen cross-contact."
+  },
+  "summary": "Active hold: 4.5 pallets of unlabeled jars at L1 S2 pending disposition. Four foreign-material findings today required product inspection and area cleaning; all equipment accounted for by window close. One allergen wash area cross-contact at L1 S3.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "4.5 pallets unlabeled jars \u2014 S2 labeler failures",
+      "summary": "Label printer ribbon and sensor failures accumulated 4.5 pallets of filled jars without labels; printer operational by 08:38, jars on hold pending rework or disposition.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-07T14:06:14.689Z"
+      },
+      "status": "On hold pending QA disposition \u2014 printer resolved, unlabeled jars staged for rework."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Machine part broke, fragment missing \u2014 S4 Theegarten",
+      "summary": "Theegarten part came loose and broke; missing fragment searched in scrap bin and three boxes of finished product, likely discarded with scrap per shift lead.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-10-07T04:18:58.936Z"
+      },
+      "status": "Resolved \u2014 fragment not found in finished product, most likely discarded with scrap during Theegarten cleaning."
+    },
+    {
+      "plant": "L1",
+      "title": "C24 belt frayed, fibers in Matrix 3 \u2014 S3",
+      "summary": "Belt shifted and frayed significantly; fibers found in Matrix 3 area, maintenance replaced belt, QA ATP passed; checking pallet bags for foreign material.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-07T13:29:38.36Z"
+      },
+      "status": "Resolved \u2014 belt replaced and ATP passed at 11:06, area cleaned, pallet bags inspected for contamination."
+    },
+    {
+      "plant": "L3",
+      "title": "Spatula found in hardened chocolate \u2014 ML1 Sweco",
+      "summary": "Operators found spatula inside hardened chocolate during Sweco inspection; no product in process, tool accounted for before startup.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-07T16:22:14.153Z"
+      },
+      "status": "Resolved \u2014 spatula removed, no product exposure, Sweco cleaned and ATP passed before depositing resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "Plastic belt connector found at MM4 \u2014 S3",
+      "summary": "Blue-belt plastic connector found by first blue belt at MM4; verified as belt fastener, all current belts inspected and intact.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-10-07T03:49:40.852Z"
+      },
+      "status": "Resolved \u2014 connector identified as plastic belt fastener, all active belts verified intact."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Unsealed pistachio bag from supplier \u2014 S3",
+      "summary": "One bag in box not sealed by manufacturer; QA taste-tested for staleness, approved for use blended with sealed bags to dilute any quality variation.",
+      "severity": "low",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-07T00:19:38.538Z"
+      },
+      "status": "Resolved \u2014 QA approved for use mixed with sealed product after sensory evaluation."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Caustic wash incomplete due to supply outage \u2014 S4",
+      "summary": "Ran out of caustic mid-clean; only one caustic cycle completed instead of two, equipment ran after supervisor visual approval, second cycle completed once caustic sourced.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-07T13:40:33.83Z"
+      },
+      "status": "Resolved \u2014 second caustic cycle completed at 08:32 after caustic located in building, full cleaning protocol met."
+    },
+    {
+      "plant": "L1",
+      "title": "Fibers found in S4 tunnel 2 \u2014 cleaning-roller source",
+      "summary": "Lot of fibers discovered in tunnel 2; traced to clogged cooling-tunnel filters, maintenance cleaned with compressed air, replacement filters arrive tomorrow.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-07T15:25:45.952Z"
+      },
+      "status": "Resolved \u2014 tunnel cleaned, filters cleared with compressed air, QA inspected and cleared for startup."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna vacuum areas clogged \u2014 Truffle line CILT",
+      "summary": "Vacuum pickup areas on Cavannas not cleaned during CILT, causing machine jams and 10-bin accumulation; cleaned after line down, operators reminded of CILT scope.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-07T13:40:05.009Z"
+      },
+      "status": "Resolved \u2014 vacuum areas cleaned, Cavannas operational, CILT checklist reinforced with team."
+    },
+    {
+      "plant": "L1",
+      "title": "Food-contact labels left exposed \u2014 S4",
+      "summary": "Label roll for food-contact labels left out of protective bag on second shift; corrected immediately, exposed labels removed and discarded.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-06T22:10:06.939Z"
+      },
+      "status": "Resolved \u2014 exposed labels discarded, remaining roll returned to sealed bag."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Non-allergen wash area contaminated with pistachios \u2014 S3",
+      "summary": "Wash area 1 (designated non-allergen) used by S3 swing shift for pistachio equipment; area contaminated and flagged for re-cleaning before non-allergen use.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-07T13:05:05.217Z"
+      },
+      "status": "Open \u2014 area flagged for allergen cleaning, shift leads notified to review wash area assignments with operators."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding pre-startup inspection of Theegarten mechanical parts to S4 checklist \u2014 based on today's loose part that broke and required scrap-bin and finished-product searches."
+    },
+    {
+      "plant": "L1",
+      "text": "Review belt preventive-maintenance intervals for Matrix conveyor belts \u2014 based on S3 C24 belt fraying that released fibers into production area."
+    },
+    {
+      "plant": "L1",
+      "text": "Add wash-area allergen-zone training to onboarding and refresher \u2014 based on S3 team using non-allergen wash area 1 for pistachio equipment."
+    },
+    {
+      "plant": "L3",
+      "text": "Review tool accountability at depositor and Sweco areas \u2014 based on today's spatula found in hardened chocolate at ML1."
+    },
+    {
+      "plant": "L3",
+      "text": "Add Cavanna vacuum-area cleaning to Truffle CILT checklist as photo-verification step \u2014 based on today's clogged vacuum causing line jams."
+    }
+  ]
+}
