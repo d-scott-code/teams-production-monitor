@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-08",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S1 pretzel batch held for *oil contamination* \u2014 120 lb on boxes, source unknown, investigation open."
+  },
+  "summary": "One active hold: 120 lb pretzel slims at L1 S1 with oil residue on packaging, source unknown. One caramel hold (wrong corn syrup) was released after R&D approval. L1 S3 near-miss: 10-month-old chocolate barrel approved after QA inspection and mixing.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Pretzel slims held for oil contamination on packaging",
+      "summary": "120 lb of Item 10206 pretzel slims placed on hold after oil residue and odor found on boxes in first pallet row; source of oil spill unknown.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-10-08T03:46:47.809Z"
+      },
+      "status": "On hold pending investigation of oil source and disposition decision."
+    },
+    {
+      "plant": "L1",
+      "title": "Caramel batch made with non-GMO corn syrup substitution \u2014 released",
+      "summary": "850 lb caramel (one batch) made with regular corn syrup (10189) instead of specified non-GMO (10230); held pending R&D review, then approved for use and released.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-08T19:04:26.119Z"
+      },
+      "status": "Resolved \u2014 released from hold at 11:05 after Ira Robison confirmed approval for use with rest of production run."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "10-month-old chocolate barrel evaluated and approved",
+      "summary": "One barrel of chocolate with pistachios (shelf life ~9 months) had been stored since December 2025; QA found oil separation and oily taste, rejected initially, then approved after thorough mixing improved texture.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-08T00:28:54.971Z"
+      },
+      "status": "Resolved \u2014 Victor Mejia approved for use at 00:53 after mixing; operators instructed to mix thoroughly before adding to buffer tank."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 depositor gasket improperly installed",
+      "summary": "Depositor 1 nozzle plate gasket found not properly seated during troubleshooting of hard chocolate clogs; plate removed, cleaned, ATP verified, and reinstalled with correct gasket.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-08T13:37:59.995Z"
+      },
+      "status": "Resolved \u2014 nozzle plate cleaned, ATP passed at 15:00, new gasket installed, line restarted at 15:31."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 belt damage and replacement",
+      "summary": "Belt #7 on ML3 damaged, requiring line stop; maintenance replaced belt, QA performed ATP verification, line restarted.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-08T12:04:54.635Z"
+      },
+      "status": "Resolved \u2014 belt replaced, ATP verified, line running again as of 12:17."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding storage-date verification to ingredient staging checklist for extended-hold items \u2014 based on the 10-month-old chocolate barrel that required QA evaluation at S3 today."
+    },
+    {
+      "plant": "L1",
+      "text": "Review labeling and storage separation for corn syrup variants (GMO vs. non-GMO) in S4 kitchen \u2014 today's batch was made with wrong specification, caught only after cooking."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding gasket-seating inspection to ML4 depositor nozzle-plate reinstallation procedure \u2014 today's improperly seated gasket contributed to hard-chocolate clogs and extended downtime."
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-08",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 S3 Russell finex clogged twice in *12 hours* \u2014 second incident still in reheat at window close"
+  },
+  "per_plant_summary": {
+    "L1": "S3 line stopped twice for Russell finex clogs \u2014 first cleared by 02:05, second event at 07:31 forced partial reheat and deep clean, still tempering at 12:56. S4 recovered from wrong corn syrup in one caramel batch (QA approved for use). S1 ran pretzel thins at increased speed to 3.2 after tech coaching, but decorator reservoir chocolate clumped from low tank level and overnight settings were changed incorrectly (training scheduled). S2 mini tempering unit heating issue under investigation.",
+    "L2": "ML2 had three quick fixes \u2014 vacuum sensor replaced (wrapping resumed), dancing arm bolt replaced, bar jamming on ramp resolved by increasing vibrator settings. PTL heating remains unstable due to suspected Burkert valve failure (workaround in place). FFS down 6 minutes for long sealing replacement. ML3 down 12 minutes for belt #7 replacement.",
+    "L3": "ML4 fought hard chocolate all morning \u2014 depositors 1 and 4 sliders clogged repeatedly, nozzle plate washed after finding improperly installed gasket, cold stamp plates cleaned for damaged molds, backoff plow clogged at window close. Tempergraph still down after Jakob's visit (over-pressure event), he'll return tomorrow. Truffle line down 46 minutes for Cute Cavanna ink issue (includes 45 min accumulation pass). New coconut oil totes need different adapter."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Jakob (Sollich tech) and Dale (Matrix tech) coached S1 to increase pretzel thin line speed from 2.4 to 3.2 over the day \u2014 Matrix machines had over 50% available capacity."
+    },
+    {
+      "plant": "L1",
+      "text": "10-month-old chocolate barrel from December initially rejected for oil separation, approved after mixing and re-tasting \u2014 850 lb released from hold."
+    },
+    {
+      "plant": "L3",
+      "text": "Videojet tech visited ML4 TG4 and swapped printers with ML1 \u2014 ML1 now running its original printer, TG4's original printer returned."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 Russell finex first clogging event",
+      "summary": "Enrober operator manually purging Russell finex every 5-7 minutes before it fully clogged; line stopped at 01:19, cleaned filter and enrober, installed plastic scrub.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-10-08T06:52:53.561Z"
+      },
+      "resolution": "Cleared at 02:05 \u2014 \"Line start running at 1:50am. We put the plastic scrub on the Russel finex filter\" (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 one caramel batch made with GMO corn syrup instead of non-GMO",
+      "summary": "First batch (850 lb) cooked with item 10189 instead of 10230 non-GMO per updated recipe; batch placed on hold pending customer decision on Peru shipment vs. US use.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-08T13:30:15.415Z"
+      },
+      "resolution": "Cleared at 11:05 \u2014 viscosity test passed, Ira Robison approved: \"this caramel is approved for use with the rest of the product we can release from hold.\""
+    },
+    {
+      "plant": "L1",
+      "title": "S1 decorator reservoir chocolate clumped into ball",
+      "summary": "Chocolate in decorator's reservoir solidified into a single mass, blocking further fills; caused by tank level dropping to 50% at shift change instead of usual 80-90%.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-08T14:25:52.907Z"
+      },
+      "resolution": "Cleared by explanation at 09:08 \u2014 root cause identified as tank too low and too much chocolate added too fast, operators coached on maintaining 80-90% level."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 belt #7 damaged",
+      "summary": "Belt #7 failure stopped molding line 3; maintenance replaced belt, QA performed ATP, line restarted within 12 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-08T12:04:54.635Z"
+      },
+      "resolution": "Cleared at 06:16 \u2014 \"Maintenance replaced the belt, Quality performed the ATP, and the line is running again\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS long sealing fell off",
+      "summary": "Long sealing component detached, stopping VFFS line at 07:43; maintenance replaced and line restarted within 6 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-08T13:43:24.932Z"
+      },
+      "resolution": "Cleared at 07:49 \u2014 \"The line is running\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 wrapping stopped, vacuum sensor B58 failed",
+      "summary": "Bars not wrapping; maintenance replaced vacuum sensor B58 to restore flow wrap operation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-08T15:04:25.677Z"
+      },
+      "resolution": "Cleared at 09:04 \u2014 \"bars are getting wrapped after replacing the vacuum sensor B58\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 bars jamming on ramp conveyor into flow wrap",
+      "summary": "Bars coming off ramp conveyor and jamming entering flow wrap, likely due to bar shape; horizontal vibrators had been set to minimum for one-shot deposit.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-08T17:04:29.811Z"
+      },
+      "resolution": "Cleared at 11:32 \u2014 \"Production is running smoother now\" after increasing vibration on both horizontal vibrators (Jeffrey Barney)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cute Cavanna down for ink issues",
+      "summary": "Cute Cavanna flow wrap stopped with ink system problems; maintenance called at 04:59, line down 15 minutes for ink fix plus 45 minutes to pass accumulation and clean.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-08T10:59:41.432Z"
+      },
+      "resolution": "Cleared at 05:44 \u2014 \"Line started up again at 5:44. In total we paused for 45 minutes to pass accumulation, and 15 minute cleaning\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositors 1 and 4 sliders clogged with hard chocolate",
+      "summary": "Depositors 1 and 4 sliders and nozzles repeatedly clogging with solidified chocolate; depositor 1 nozzle plate removed, washed (gasket found improperly installed), ATP'd, reinstalled with new gasket.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-08T12:54:38.142Z"
+      },
+      "resolution": "Cleared at 12:06 \u2014 \"Running\" after multiple interventions including nozzle plate wash, hopper overheating, and purging depositor 4 (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp plates dirty causing damaged molds",
+      "summary": "Cold stamp plates accumulated dirt creating damaged molds; also had gondola jam at entrance requiring line stop for cleaning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-08T17:22:34.894Z"
+      },
+      "resolution": "Cleared by ~12:00 \u2014 cold stamp plates cleaned by Marcel, gondola jam cleared, line running within 40 minutes."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 Russell finex clogged second time, line in reheat",
+      "summary": "Russell finex clogged again at 07:31 after first clog earlier in shift; team cleaning finex, taking apart both ends of enrober, purging 6-8 buckets through pipes, doing partial reheat to reduce pistachio flow and pressure.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-10-08T13:31:13.87Z"
+      },
+      "status": "Reheat completed 12:22, tempering in progress, waiting for enrober temper as of 12:56 (Justin Garner)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 line and tempering settings changed incorrectly overnight",
+      "summary": "Jakob (Sollich tech) found several S1 line and tempering settings changed to values that don't make sense operationally; requesting 3rd shift stay until 08:00 for training session at 06:00.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jorge Carrillo",
+        "time_utc": "2026-10-08T16:57:51.631Z"
+      },
+      "status": "Training session scheduled for 06:00 tomorrow with 3rd shift operators (Jorge Carrillo at 10:57)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 mini tempering unit not heating correctly",
+      "summary": "Decorator connection replaced, but mini tempering unit heating failure discovered; Chris J and Jakob investigating root cause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-10-08T18:49:51.807Z"
+      },
+      "status": "Under investigation by Chris J and Jakob as of 12:49 (Justin Garner)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 PTL heating unstable, Burkert valve suspected",
+      "summary": "PTL expansion tank pressure too high, bleed valve must stay open introducing cold water and causing temperature instability; when water inlet ball valve closed, pressure holds steady at 16.8 psi, but jumps to 20.8 when opened \u2014 Burkert valve likely not stopping inlet flow.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-10-08T17:50:56.176Z"
+      },
+      "status": "Water inlet ball valve shut as workaround; if pressure drops to 14.4 psi, open until 17.5 then close again until Burkert valve fixed (Leon Brueger at 11:50)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Tempergraph down after over-pressure event",
+      "summary": "Jakob investigating Tempergraph when temper unit got over-pressure alarm, forcing reheat; Jakob unable to fix Tempergraph today, will return tomorrow \u2014 temper unit running but do not open Tempergraph page.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-08T12:56:22.857Z"
+      },
+      "status": "Tempergraph not fixed, Jakob returning tomorrow; temper unit operational but avoid opening Tempergraph page (Itzel Chavez at 08:17)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 backoff plow clogged with hard chocolate",
+      "summary": "Backoff plow clogged with solidified chocolate; line lead removing tank to clear blockage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 2",
+        "time_utc": "2026-10-08T18:51:00.097Z"
+      },
+      "status": "In progress \u2014 removing tank to clear hard chocolate from plow as of 12:51 (ML4 WDS Tablet 2)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle new coconut oil tote connection incompatible",
+      "summary": "New coconut oil totes (item 10013) arrived with different outlet connection; current valve adapter does not fit, need maintenance to source compatible adapter.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-08T17:14:10.79Z"
+      },
+      "status": "Using remaining totes with old connection for now; maintenance asked to find compatible adapter (Grey Boscan at 11:14)."
+    }
+  ]
+}
