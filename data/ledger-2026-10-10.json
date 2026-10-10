@@ -1,0 +1,182 @@
+{
+  "date": "2026-10-10",
+  "headline": {
+    "eyebrow": "Quality flag",
+    "text": "L1 Sollich 2 took *4 allergen attempts* to clear C1 belt after 3rd-shift cleaning gaps and unsigned paperwork \u2014 now running on rework pallets"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 started 1st shift with tunnel 3 not ready and discovered widespread cleaning paperwork failures from 3rd shift \u2014 C1 belt failed allergen 3 times before passing on the 4th attempt at 11:50, White Z belt found with chocolate residue and crossed-out paperwork. Running on regular pallets flagged as rework because all 300 PECO-HT Mexico pallets were misused by L3. Sollich 1 found a metal screw in product at 16:25, replaced and validated X-ray by 16:53. Sollich 3 cleaned jar area that was incorrectly marked green.",
+    "L2": "ML2 lost PTL pump at 13:30, replaced and back running by 16:53. White chocolate continues to clog the inclusion auger and cause blowoffs at the 2nd chicane despite cleaning the cross belt every 30 minutes. Marco from TG adjusted film wrapper speed from 900 to 700 to reduce breaks. ML3 had a brief HMI screen failure (13:45\u201314:00). FFS found a box label in the trash that was never entered into the system. Plant on level 2 cleaning only for 3rd shift.",
+    "L3": "ML4 had a 13-minute stop for a Gondola test (11:25\u201311:38). Truffle line completed the run and level 2 clean; 2 pallets of V3 film show in the system but can't be located. MF Matrix pouch weights running high \u2014 checkweigher max raised 5g to 480g but now adding 1\u20132 extra pieces per pouch, which may short the order. Truffle 1 and ML4 both lost temper simultaneously around 23:50, possibly from a power flicker."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Rain forecast Saturday afternoon through Tuesday; facilities will report leaks as they occur for repair after weather clears."
+    },
+    {
+      "plant": "L1",
+      "text": "Cleaning rags inventory: L1 220, L2 295, L3 720 as of 10/09."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Metal screw found in Sollich 1 X-ray",
+      "summary": "Screw detected in bag at 16:25 during routine X-ray check \u2014 maintenance and QA inspected line to locate source and validate X-ray rejection.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Penny Akins",
+        "time_utc": "2026-10-09T22:35:44.483Z"
+      },
+      "resolution": "Source identified (likely Eaglestone conveyor), screw replaced, X-ray validated with test washer at 16:53 \u2014 \"screw has been put back into place. Another X-Ray check was done and all bags were kicked out perfectly.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 jar area marked clean but not cleaned",
+      "summary": "Jar area was signed off green on the cleaning sheet but still had residue from the last level 4 clean.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T13:06:15.776Z"
+      },
+      "resolution": "Katya cleaned jar area manually and will skip MM cleaning until next week since MM's are not scheduled."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 tunnel 3 allergen clearance delay",
+      "summary": "Line started 07:06 but tunnel 3 had not passed visual inspection, ATP, or allergen \u2014 product held in tunnels while QA re-cleaned and re-tested.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-10-10T13:06:41.177Z"
+      },
+      "resolution": "Tunnel 3 allergen passed at 08:35 \u2014 \"Ready to run! She's all yours, good luck!\" (Joseph Scott)"
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 PTL pump fault",
+      "summary": "PTL pump faulted out at 13:30, line down while maintenance replaced the unit and brought it back to temp.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-09T20:20:38.463Z"
+      },
+      "resolution": "Pump reinstalled at 14:38, heated up, started running back through the flow wrapper at 16:53 (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 HMI screen failure",
+      "summary": "HMI screen turned off at 13:45, line stopped awaiting maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-09T19:45:39.003Z"
+      },
+      "resolution": "Line running at 14:00 \u2014 15-minute stop."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Gondola test stop",
+      "summary": "Stefan needed to run a test on the Gondola, line stopped at 11:25.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-10T17:30:16.043Z"
+      },
+      "resolution": "Running at 11:38 \u2014 13-minute stop for test."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "PECO-HT Mexico pallets missing \u2014 all 300 used by L3",
+      "summary": "Sollich 2 needs PECO-HT pallets with Mexico heat-treated stamp for export run; spec calls for them but warehouse discovered all 300 received 9/22 were used by L3 as regular Peco pallets.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T14:37:03.006Z"
+      },
+      "status": "Running on regular pallets flagged as rework \u2014 QA tagging each full pallet, product cannot leave plant. Brett ordering replacement pallets from Chicago. Kirk noted HT pallets ship from Chicago, not local like regular Peco."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 C1 belt allergen failures and cleaning gaps",
+      "summary": "C1 belt was signed off green by 3rd shift but never passed allergen test \u2014 failed 3 consecutive tests (09:41, 10:30, 11:26) before passing on the 4th attempt; C2 and C3 also not signed off by QA; White Z belt found with chocolate residue and crossed-out paperwork with no notes.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T14:53:45.546Z"
+      },
+      "status": "C1 allergen passed on 4th attempt at 11:50; QA inspecting White Z and doing preops. Curt, Jody, and Joseph scheduling meeting to review 3rd-shift paperwork failures."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 film breaking during filling",
+      "summary": "Flow wrapper film breaking when machine transitions to filling mode \u2014 Marco from TG believes machine not slowing down as programmed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ray Garcia",
+        "time_utc": "2026-10-09T22:23:43.431Z"
+      },
+      "status": "Marco adjusted intended speed during filling from 900 to 700 at 17:27. Checking with programmer on whether DW64 / DW65 settings are correct. Unclear if issue fully resolved."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 white chocolate flow and blowoff issues",
+      "summary": "Line continues to have problems with white chocolate flowing through the inclusion auger into the depositor, and frequent blowoffs after the 2nd chicane and at the twin belts despite cleaning cross conveyor every 30 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-10-10T01:11:08.24Z"
+      },
+      "status": "Auger clear as of 19:16 but buildup continues at magnet. Cross belt being cleaned every 30 min. Brandon noted correction \u2014 auger clear, just buildup at magnet."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS box label not entered into system",
+      "summary": "Inventory check found a box label in the trash that had not been scanned or entered into the system.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Martha Fonseca",
+        "time_utc": "2026-10-10T04:33:32.254Z"
+      },
+      "status": "Brandon will talk with line lead on Monday. Label documented and flagged for follow-up."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pouch weight variance may short order",
+      "summary": "Pouches running high on checkweigher (target 465\u2013470g), machine rejecting and causing rework \u2014 single piece weight at 14.8g; raising max weight to 480g now adds 1\u20132 extra pieces per pouch.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-09T21:22:50.829Z"
+      },
+      "status": "Checkweigher max raised by 5g to 480g at 16:39 to reduce rejects, but now overfilling pouches with extra pieces. Andrea said as of 18:52 we will likely fall short of completing the order. Truffle team asked to label WIP pallets with low/max weight \u2014 pallets arriving unlabeled."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle FW film pallets missing from inventory",
+      "summary": "2 pallets of V3 film (40201-V3) for Toffee bars show in the system but IMS cannot locate them in the warehouse.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-10T17:24:10.391Z"
+      },
+      "status": "V4 for Raspberry is on-site; 2 pallets V3 in system but physically missing as of 11:24. Rose flagged."
+    }
+  ]
+}

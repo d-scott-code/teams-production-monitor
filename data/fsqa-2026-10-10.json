@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-10",
+  "headline": {
+    "eyebrow": "Sanitation gaps",
+    "text": "L1 S2 allergen cleaning verification failed *3 times* on C1 belt before passing; White Z belt and jar area signed off but not cleaned; product on wrong pallets now on hold pending rework."
+  },
+  "summary": "Three active issues at L1: metal screw caught by X-ray on S1 (source identified, replaced), product on wrong pallets held for rework on S2, and multiple sanitation sign-off failures on S2 \u2014 C1 belt failed allergen 3\u00d7 before passing, White Z belt and jar area marked clean but found with residue.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 product on wrong pallets, held for rework",
+      "summary": "Product packed on US PECO pallets instead of Mexico PECO-HT pallets per spec; QA tagging each pallet as rework, product must not leave plant pending pallet swap.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T14:37:03.006Z"
+      },
+      "status": "Open \u2014 QA tagging pallets one by one, warehouse searching for correct pallets, new order placed."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal screw found in S1 bag via X-ray",
+      "summary": "X-ray rejected bag containing metal screw at 16:25; believed from Eaglestone conveyor, screw replaced, follow-up X-ray validation tests all passed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Penny Akins",
+        "time_utc": "2026-10-09T22:35:44.483Z"
+      },
+      "status": "Resolved \u2014 screw source identified and replaced, X-ray verified rejecting correctly."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "VFFS box label not scanned, found in trash",
+      "summary": "Inventory check found one box label in trash that was never entered into system; line lead to be coached Monday.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Martha Fonseca",
+        "time_utc": "2026-10-10T04:33:32.254Z"
+      },
+      "status": "Resolved \u2014 label recovered, line lead follow-up scheduled for Monday."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 C1 belt allergen test failed 3 times before passing",
+      "summary": "C1 belt signed off and marked green by 3rd shift but never passed allergen test; failed at 09:41, 10:30, and 11:26 before passing on 4th attempt at 11:50.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T14:53:45.546Z"
+      },
+      "status": "Resolved on 4th test \u2014 C1 passed allergen at 11:50, management meeting requested on sign-off process."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 White Z belt signed off but not cleaned",
+      "summary": "White Z belt crossed out on paperwork but found with chocolate residue and a piece of chocolate in framework; cleaned during 1st shift startup.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T17:34:57.504Z"
+      },
+      "status": "Resolved \u2014 belt cleaned and inspected, passed pre-ops before startup."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 jar area marked clean but not cleaned",
+      "summary": "Jar area marked green on level 4 clean but found not cleaned from last shift; cleaned during 1st shift startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T13:06:15.776Z"
+      },
+      "status": "Resolved \u2014 jar area cleaned during 1st shift, shifting focus to jar area over MMs for next week."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 C2/C3 belts could not validate cleaning",
+      "summary": "C2 and C3 belts not signed off by QA on 3rd shift; could not validate allergen testing was done, re-cleaned and tested during 1st shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T15:10:34.688Z"
+      },
+      "status": "Resolved \u2014 C2 and C3 re-cleaned, passed allergen testing, ready to run."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 cleaning book documentation gaps",
+      "summary": "Multiple pages crossed out on cleaning paperwork with no notes or validation; QA asked to review book to ensure no blanks.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T16:40:41.109Z"
+      },
+      "status": "Investigation ongoing \u2014 Charity Young requested QA review of cleaning book."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding a QA counter-signature requirement before marking equipment 'green' on cleaning checklists \u2014 based on 4 incidents today (C1, C2, C3 belts, White Z belt, S3 jar area) where production signed off equipment that had not passed or been tested."
+    },
+    {
+      "plant": "L1",
+      "text": "Review labeling and segregation of specialty pallets (PECO-HT Mexico vs US) \u2014 based on wrong pallets used on S2, now 300 pallets missing and product on rework hold."
+    }
+  ]
+}
