@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-11",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 lost *5 hours* dialing in Cavanna wrappers on new caramel product \u2014 back at target rate by 18:17."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran CPK caramel for Mexico with extended Cavanna wrapper tuning from 13:47 to 18:17, then hit 5.5 pallets per hour. Sollich 3 completed allergen sanitation for next product; two pieces still need Monday follow-up.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML4 completed Level 2 clean by 08:00 except for north Sweco \u2014 torn screen and embedded debris will need replacement Monday morning to avoid delaying temper unit 2 startup. Shutdown checklist not followed overnight; both compressors found off."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Warehouse located 28 international Peco pallets for CPK Mexico order; 15 more found overnight."
+    },
+    {
+      "plant": "L3",
+      "text": "Internet down at plant as of 08:03."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Cavanna 3 and 4 jaws misaligned, wrap bunching on CPK caramel startup",
+      "summary": "Both wrappers had film positioning and jaw height issues causing incomplete seals and bunched wrap; line paused 13:47 for extended troubleshooting with maintenance.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T19:46:54.001Z"
+      },
+      "resolution": "Cleared at 18:17 \u2014 Caleb adjusted film roll positions and jaw height on both machines; line restarted and \"running smoothly\" with fresh product by 18:47."
+    },
+    {
+      "plant": "L1",
+      "title": "Decorator and target depositor failed allergen swab on Sollich 3",
+      "summary": "Initial allergen failures on decorator (4 swabs) and target depositor during post-production sanitation verification.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T21:12:19.512Z"
+      },
+      "resolution": "Cleared at 15:58 \u2014 \"able to pass the decorator and the target depositor\" after additional cleaning (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "L1 out of heavy-duty paper towels during sanitation",
+      "summary": "No cleaning towels available mid-shift for sanitation crew.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-10T23:04:20.922Z"
+      },
+      "resolution": "Resolved by 17:47 \u2014 warehouse had stock in cage and Jose retrieved more from L2 (Estarli Ermisz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Depositor 2 mixer shaft broken on ML4",
+      "summary": "Mixer component fractured at mounting point during Level 2 clean.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-11T01:09:08.644Z"
+      },
+      "resolution": "Resolved by 19:46 \u2014 \"Robert exchanged it for another one from this depositor\" (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "Mold jam in cooling cabinet 2 during post-clean cycle test",
+      "summary": "Single mold jammed while cycling molds through cooler after ML4 Level 2 clean.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-11T13:49:31.252Z"
+      },
+      "resolution": "Cleared immediately \u2014 \"Once that was cleared, we cycled about 25 to 30 molds and had no other issues\" (Tyson Fausett, 07:49)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Z belt in pack area failed allergen swab 2X on Sollich 3",
+      "summary": "Conveyor passed sanitation visually but failed ATP allergen test twice; not needed for next product so deferred to Monday reclean.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-10T21:12:19.512Z"
+      },
+      "status": "Still open as of 15:58; reclean scheduled Monday with QA supervisor sign-off needed."
+    },
+    {
+      "plant": "L1",
+      "title": "Inclusion belt and hopper failed allergen swab on Sollich 3",
+      "summary": "Victor flagged allergen failure at 21:50; suspected insufficient rinse based on past similar issues.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-10-11T03:50:42.919Z"
+      },
+      "status": "Re-soaping and rinsing started at 22:04; no pass confirmation posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Break room card reader dead, no power",
+      "summary": "Electronic badge reader on break room door has no light and will not unlock.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-11T12:37:20.436Z"
+      },
+      "status": "Flagged at 06:37; Benjamin suggested maintenance or checking for loose wire, no update posted."
+    },
+    {
+      "plant": "L3",
+      "title": "North Sweco screen torn with embedded debris on ML4",
+      "summary": "Screen passed ATP but has visible tear and hard black chunks that won't come out; concern over contamination risk if reinstalled.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-11T11:23:37.31Z"
+      },
+      "status": "Sweco cleaned and covered, power turned off at 06:23 to prevent use. Replacement screen needed Monday morning before temper unit 2 can start; warehouse located spares but crew unable to retrieve and clean by shift end."
+    },
+    {
+      "plant": "L3",
+      "title": "Both ML4 compressors found off, shutdown checklist not followed",
+      "summary": "Tyson arrived to both compressors off (one appeared off for extended time); WDS not in night mode, heater left on, FSC on chiller still running.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-11T05:58:59.074Z"
+      },
+      "status": "Maintenance called at 23:58; no resolution update by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Internet down at L3 plant",
+      "summary": "Network connectivity lost plant-wide.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-11T14:03:16.526Z"
+      },
+      "status": "Reported at 08:03; no resolution or ETA posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Cooling cabinet 3 upper floor has new bubble in surface",
+      "summary": "QA noticed bubble in middle of upper cooling floor that neither she nor Tyson recall seeing in prior inspections.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-11T10:34:53.503Z"
+      },
+      "status": "Flagged to Chad and Rose at 04:34; no assessment or action posted."
+    }
+  ]
+}
