@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-12",
+  "headline": {
+    "eyebrow": "FM & equipment",
+    "text": "L1 belt damage, torn screen at L3, and foreign object on pallet \u2014 *three* equipment-integrity events flagged for investigation today."
+  },
+  "summary": "One hold released at L3 (CPK midnight flow-wrap). Three equipment-damage events with FM risk: L1 Matrix 10 belt hole, L3 ML4 Sweco screen torn with dark specs stuck, and foreign object found on L1 pallet by QA. L2 FFS fought pouch-fold issues all shift after weekend startup.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "CPK midnight flow-wrap hold released",
+      "summary": "Two LPNs of CPK midnight FW were released from hold after QA disposition \u2014 hold tags removed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-12T21:27:40.321Z"
+      },
+      "status": "Resolved \u2014 released back to production inventory."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Matrix 10 blue belt has hole",
+      "summary": "Blue belt (C5) feeding Matrix 10 has a small hole \u2014 maintenance notified, scraper disengaged per Eaglestone to prevent worsening until belt replacement.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-12T12:33:20.875Z"
+      },
+      "status": "Open \u2014 scraper disabled, belt still in use pending replacement."
+    },
+    {
+      "plant": "L1",
+      "title": "Foreign object found on pallet",
+      "summary": "Unidentified object found on one of the pallets \u2014 QA has the item for investigation.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-12T19:10:11.796Z"
+      },
+      "status": "Open \u2014 QA investigating, object type not yet identified."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Sweco screen torn with dark specs",
+      "summary": "North Sweco screen discovered with tear in center and dark specs stuck in mesh that could not be removed \u2014 ATP passed but screen not assembled due to condition.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-11T22:45:19.78Z"
+      },
+      "status": "Open \u2014 screen not assembled, awaiting new screen from warehouse (top rack, no forklift driver available overnight)."
+    },
+    {
+      "plant": "L1",
+      "title": "Towel used as stopper for ingredient",
+      "summary": "Sweetened condensed milk container found with towel used as stopper in warehouse \u2014 contamination risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-12T15:05:37.749Z"
+      },
+      "status": "Open \u2014 flagged to production and warehouse supervision for corrective action."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 X-ray rejecting many pouches",
+      "summary": "First shift X-ray inspection at S2 jar line rejecting high count of pouches \u2014 QA monitoring for root cause.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-10-12T21:26:56.75Z"
+      },
+      "status": "Open \u2014 QA following up to identify cause of rejections."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouch fold issues at startup",
+      "summary": "Fold along bottom and top of pouches after weekend \u2014 maintenance troubleshot repeatedly from 06:12 through 08:17, line finally stable mid-shift; second occurrence this startup pattern.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-12T12:08:02.95Z"
+      },
+      "status": "Resolved \u2014 line running, Alan Todd requested documentation of changes to prevent recurrence."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix weight 5g over spec",
+      "summary": "Mid-shift check found maximum piece weight 5 grams above standard \u2014 adjustments made and subsequent checks passing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-10-12T14:00:26.73Z"
+      },
+      "status": "Resolved \u2014 adjustments completed, weights back in spec."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 open corners on flow-wrap",
+      "summary": "Case with 403 pieces had 5 pieces open in corners \u2014 adjustments made, next case showed 1 open piece with some wrinkled corners but sealed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-10-12T14:07:52.411Z"
+      },
+      "status": "Resolved \u2014 adjustments made, subsequent checks within tolerance."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 centerline spec misses",
+      "summary": "Imperial depositor reported 3 centerlines out of spec, with 4 adjustments outside centerlines recorded on flow-wrap side.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-12T21:28:07.13Z"
+      },
+      "status": "Open \u2014 adjustments logged, monitoring ongoing."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Multiple corn syrup spills in warehouse",
+      "summary": "Multiple corn syrup spills flagged in main warehouse area from guillotine toward S4 kitchen \u2014 sanitation team notified for cleanup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-12T15:01:51.782Z"
+      },
+      "status": "Open \u2014 sanitation dispatched for cleanup."
+    },
+    {
+      "plant": "L1",
+      "title": "Open salt container, no tags",
+      "summary": "Salt on cart found with one container open and no identification tags in warehouse ingredient area.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-12T15:05:37.749Z"
+      },
+      "status": "Open \u2014 flagged to warehouse supervision for labeling and sealing."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review warehouse ingredient storage protocols (caps for corn syrup totes, proper sealing/labeling) \u2014 based on today's corn syrup spills and towel-stoppered condensed milk container."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider belt-integrity inspection cadence for Matrix conveyors \u2014 based on today's C5 belt hole discovered mid-shift on Matrix 10."
+    },
+    {
+      "plant": "L2",
+      "text": "Document FFS fold-adjustment sequence from today's startup troubleshooting \u2014 based on second consecutive Monday pouch-fold issue requiring 2+ hours of maintenance intervention."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding Sweco screen inspection (tear/contamination check) to ML4 pre-assembly checklist \u2014 based on today's torn screen with embedded dark specs discovered after cleaning."
+    }
+  ]
+}
