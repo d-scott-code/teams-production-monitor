@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-13",
+  "headline": {
+    "eyebrow": "Contamination risk",
+    "text": "L3 ML1 glycol hose failed during startup, leaking into chocolate hopper \u2014 *no product affected*, hopper cleaned before production."
+  },
+  "summary": "One active contamination event caught at L3 before production: glycol leaked into ML1 hopper after hose disconnected; hopper emptied, cleaned, and line restarted six hours later. Two date-printing errors caught and corrected at startup. One warehouse oil leak and one dirty-tooling storage flag at L1.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Glycol leak into ML1 chocolate hopper",
+      "summary": "Both ends of glycol cooling hose disconnected at 06:10, leaking glycol into depositor hopper; hopper emptied, disassembled, cleaned, and sanitized before production started \u2014 no product impacted.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jordan Serna",
+        "time_utc": "2026-10-13T12:30:04.507Z"
+      },
+      "status": "Resolved \u2014 hopper cleaned and reassembled, line restarted at 13:03; maintenance replaced faulty fitting and confirmed no further leaks."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "MF Matrix date printing illegible at startup",
+      "summary": "Printer produced illegible date at line start; line stopped immediately, printer cleaned, printing verified acceptable before resuming.",
+      "severity": "low",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-10-12T20:21:41.295Z"
+      },
+      "status": "Resolved \u2014 printer cleaned, date print quality verified in spec."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 date format printed incorrectly for Mexico market",
+      "summary": "Best-by date printed in MM/DD/YY format instead of DD/MM/YY required for Mexico; caught during pre-production checks, corrected before any product released.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-10-13T13:00:18.690Z"
+      },
+      "status": "Resolved \u2014 date format corrected and verified before production start."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Dirty Matrix cones stored in cabinet",
+      "summary": "Multiple Matrix cones found dirty inside gray storage cabinet; cones should be cleaned before storage to prevent cross-contamination risk.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-13T16:27:51.711Z"
+      },
+      "status": "Open \u2014 teams reminded to clean cones before storage; follow-up with shift leads ongoing."
+    },
+    {
+      "plant": "L2",
+      "title": "Oil tote leaking in warehouse staging area",
+      "summary": "Ingredient oil tote placed in staging area actively leaking; tote suspected damaged from forklift strike underneath; containment cardboard placed, tote flagged for removal.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-10-12T21:22:54.761Z"
+      },
+      "status": "Contained \u2014 cardboard placed under pallet, tote wrapped overnight to prevent further drips; warehouse to pull and inspect for damage."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review Matrix cone cleaning and storage SOP with S1 teams \u2014 based on dirty cones found stored in cabinet, suggesting cleanup step missed before return to storage."
+    },
+    {
+      "plant": "L2",
+      "text": "Review warehouse oil-tote handling procedures \u2014 based on today's leaking tote suspected damaged by forklift, risking contamination of nearby ingredient staging."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding glycol hose connection inspection to ML1 startup checklist \u2014 based on today's hose disconnect event and Chad Stone noting 'a couple weeks of downtime over the past 3 years due to issues with this glycol area.'"
+    }
+  ]
+}

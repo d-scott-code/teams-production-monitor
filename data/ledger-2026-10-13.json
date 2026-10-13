@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-13",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 was down *5.5 hours* for emergency glycol leak cleanup \u2014 hopper disassembled, washed, and reassembled, ready to restart by 13:52."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran all four Sollich lines. S1 dealt with a recurring chiller compressor fault that triggered three times but kept running. S3 paused for a Russell Finex overheat at midday, cleared after reheat. S4 had THG wrapper issues twice, resolved with an air pressure adjustment.",
+    "L2": "L2 ML2 replaced a pump at start of shift, then cycled through multiple CILs and a belt replacement. Post-metal-detector jams persisted despite the new belt; line slowed to 8 mpm and adjustments made. ML3 ran clean with no breaks.",
+    "L3": "L3 ML1 down from 06:10 to late afternoon after glycol hose failed and leaked into the hopper \u2014 no product impacted, full teardown and wash completed. Truffle Line buffer pump failed three times during the window. MF Matrix fought pouch-opening issues all morning with no clear fix. ML3 and ML4 ran with minor hiccups, all resolved."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Angel Lucero adjusted ML1 schedule due to extended downtime; work orders 44658 and 44659 need re-release with updated quantities."
+    },
+    {
+      "plant": "L1",
+      "text": "Warehouse working to locate heat-treated pallets on trailer P212 \u2014 non-HT pallets blocking access at end of shift."
+    },
+    {
+      "plant": "L1",
+      "text": "Matt Hatch requested project to hardline S1 final blue belt control after Eaglestone programmer added timer logic to reduce belt wear."
+    },
+    {
+      "plant": "L3",
+      "text": "Chad Stone requested project to address ML1 glycol area \u2014 estimated couple weeks of downtime lost over past 3 years due to recurring issues."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 THG wrapper not sealing caramel",
+      "summary": "Twist-hand-glove wrapper not wrapping caramel at 09:25; maintenance found pieces slightly too long (some over 30mm), made adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-13T15:25:45.584Z"
+      },
+      "resolution": "Piece size adjusted and running at 10:05. Line paused again at 12:10 for same issue; maintenance adjusted main air regulator from 3 to 5 bar, THG running at 12:41. Erandy adding pressure setting to maintenance centerlines (Justin Garner)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Russell Finex not purging",
+      "summary": "Russell Finex screen not purging at 09:47 despite 2 bar pressure and intact pin; suspected clog or overheat.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-13T15:47:38.931Z"
+      },
+      "resolution": "Maintenance determined unit overheated and may have caught on something internally. Reheat initiated at 10:23. Line back in production at 12:02 with good temper (S3 Enrober / Katya Farnsworth)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 chocolate pump failure",
+      "summary": "Pump went out at start of 3rd shift; line down while maintenance removed, reinstalled, and reheated pump.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-10-13T09:28:12.728Z"
+      },
+      "resolution": "Pump reinstalled and heating by 04:47; line running at 04:57 (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 metal detector outfeed belt replacement",
+      "summary": "Belt #8 past metal detector needed replacement at 07:39; line down for swap.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-13T13:39:14.074Z"
+      },
+      "resolution": "Belt replaced at 07:56, swabs passed. Line running but still experiencing jams; speed reduced to 8 mpm and chicane adjustments made at 09:31 to minimize jams (Alex Mendoza / Claudio Tovar)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML3 demolder sensor misalignment",
+      "summary": "Demolder stopped after one mold at 19:36 on 10/12; sensor faulting repeatedly, maintenance troubleshooting through evening.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-10-13T01:36:56.99Z"
+      },
+      "resolution": "Lock pin for cover under demolder plate had come off, misaligning prox sensor. Maintenance tightened sensor, adjusted sensitivity, and lubricated rails. Running again at 20:16 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol hose leak into hopper",
+      "summary": "Both glycol hose ends disconnected at 06:10, leaking glycol into the chocolate hopper; line was down for full disassembly, wash, and reassembly through afternoon shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jordan Serna",
+        "time_utc": "2026-10-13T12:30:04.507Z"
+      },
+      "resolution": "Maintenance replaced faulty locking seal on glycol fitting. Hopper, mixer auger, nozzle plate, pump block, rotary valve, and pistons washed and reinstalled. 20 molds removed to prevent contamination. Line ready to start by 13:52 per Grey Boscan."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at demolder",
+      "summary": "Stuck mold caused line stop at 13:05; maintenance called to diagnose and clear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-13T19:05:31.564Z"
+      },
+      "resolution": "Nelson Cook assisted; mold cleared and line running again at 13:22 (Itzel Chavez / ML4 WDS Tablet 1)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 chiller compressor faulting",
+      "summary": "One of two chiller compressors on Sollich 1 cooling tunnel faulting repeatedly \u2014 third fault by 09:00, impacting cooling capacity.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-10-13T14:42:29.656Z"
+      },
+      "status": "Maintenance contacted Sollich and Weisshaar for support. Checking if line can run on single chiller. Compressor faulted three times by 09:00. No resolution posted; line appears to continue running as of 13:52."
+    },
+    {
+      "plant": "L1",
+      "title": "Heat-treated pallet location issue",
+      "summary": "Split load on trailer P212 delivered with non-heat-treated pallets blocking access to heat-treated pallets needed for production.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tiffanee Taylor",
+        "time_utc": "2026-10-13T19:33:13.186Z"
+      },
+      "status": "Warehouse discovered non-HT pallets at trailer door at 13:33. Working to unload trailer to access HT pallets in nose. No resolution posted as of 13:52."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line buffer tank pump recurring failures",
+      "summary": "Chocolate feed pump from Melting Tank 2 to Buffer Tank failed three separate times during the window \u2014 overheating suspected due to hardened chocolate in piping.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-10-13T09:41:22.391Z"
+      },
+      "status": "Pump failed at 04:00, 09:29, and 13:33. Motor overheating each time. Nathan suspects hard chocolate caught in pipe causing overwork. New motor ordered as spare. Last failure at 13:33 with maintenance notified but no resolution posted as of 13:52."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pouches not opening correctly",
+      "summary": "Flow-wrap pouches failing to open during filling, resulting in high number of empty pouches throughout morning shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-10-13T14:17:32.457Z"
+      },
+      "status": "Issue reported at 08:17, maintenance on line. Problem persisted at 10:58 with operators noting still experiencing large number of empty pouches. No resolution or update posted after 10:58."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 auger mixer clogged with rice",
+      "summary": "Inclusion mixer auger clogged with rice crispies at 13:13; maintenance determining cause of issue, also working on infeed hopper sensor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-13T19:13:03.081Z"
+      },
+      "status": "Reported at 13:13 as line preparing to restart after glycol cleanup. Maintenance fixing infeed hopper sensor as of 13:38. No clear resolution posted as of 13:52."
+    }
+  ]
+}
