@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-15",
+  "headline": {
+    "eyebrow": "Metal detector",
+    "text": "L3 S3 metal detector failed test cards at start of shift \u2014 product buildup on rollers caused malfunction, cleaned and *passed retest* by mid-shift."
+  },
+  "summary": "One metal detector failure at L3 requiring cleaning and retest. Two active quality issues: L3 ML4 produced 2 barrels of product with missing white cream filling due to operator station error; L1 S4 scrapped soft caramel from overnight shift. Sanitation: multiple cleaning verification gaps at L3 including pistachio allergen residue.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Soft caramel from overnight shift",
+      "summary": "S4 3rd shift operator did not let caramel sit long enough before pushing to Conbar \u2014 soft texture caramel held for scrap, waiting for empty barrels from L2.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-15T14:17:20.689Z"
+      },
+      "status": "On hold pending scrap barrels \u2014 Brandon Hernandez to follow up with team tonight."
+    },
+    {
+      "plant": "L3",
+      "title": "Product with missing white cream filling",
+      "summary": "L3 ML4 depositor 2 operator left station off, resulting in molds deposited with no white cream filling \u2014 2 barrels of scrap accumulated, more product in cooling cabinet 3 pending verification.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-15T12:37:39.922Z"
+      },
+      "status": "Open \u2014 operator marking affected molds, Stefan to assess extent in cooling cabinet 3 on arrival."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Metal detector failed test-card verification",
+      "summary": "S3 metal detector did not close when test cards passed through at start of 1st shift \u2014 product buildup on rollers caused malfunction; production and maintenance cleaned rollers, detector passed retest at 10:35.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-15T13:22:49.999Z"
+      },
+      "status": "Resolved \u2014 detector cleaned, test cards pass correctly, production resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "Wire mesh broke on Truffle Line enrober",
+      "summary": "Truffle Line wire mesh broke at 07:32 \u2014 team assessed damage as minor and continued running through 1st shift with plan to replace during 3rd shift reheat; QA and supervisors approved continued operation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-10-15T13:31:08.509Z"
+      },
+      "status": "Open \u2014 running under supervision, wire mesh replacement scheduled for 3rd shift reheat."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 caramel dimensions below spec",
+      "summary": "All S4 caramel checked measured 14.95\u201315.44 mm, below required 17.3\u201317.9 mm spec \u2014 machine rejecting product; affected caramel removed, production restarted from combing stage after operator adjustments.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-10-15T10:13:19.139Z"
+      },
+      "status": "Resolved \u2014 dimensions corrected after adjustments, production resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "Double truffle in unsealed pouch",
+      "summary": "Truffle Line packaging inspection found 1 pouch with double truffle and not sealed in 250-piece box sample \u2014 QA flagged to operators to monitor flow wrap for doubles and open product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jordan Serna",
+        "time_utc": "2026-10-15T10:31:31.254Z"
+      },
+      "status": "Open \u2014 operators watching for recurrence."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 tray label format incorrect",
+      "summary": "S1 tray label printed in lowercase instead of uppercase per spec \u2014 IMS corrected format, QA approved use of lowercase labels already printed as long as BB date correct; future labels will use all-caps format.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-15T13:55:37.631Z"
+      },
+      "status": "Resolved \u2014 format corrected for future prints, existing stock approved for use."
+    },
+    {
+      "plant": "L1",
+      "title": "Cardboard box with pretzels under table",
+      "summary": "S1 Pre-Op Matrix 9 & 10 found cardboard box containing blue bag of pretzels underneath stainless steel table \u2014 product removed and disposed before Pre-Op approval.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-15T14:30:59.552Z"
+      },
+      "status": "Resolved \u2014 product disposed, Pre-Op passed."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 framework cleaning verification gap",
+      "summary": "S1 Level 2 cleaning paperwork missing sanitizer documentation for 2 retest locations (ingredient tank framework EM-S1-1, inclusion hopper framework EM-S1-15) \u2014 frameworks are non-product-contact but on retest list.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-15T11:51:43.179Z"
+      },
+      "status": "Open \u2014 Charity planning to swab today, needs confirmation frameworks were cleaned."
+    },
+    {
+      "plant": "L3",
+      "title": "Z-conveyors residue from previous product",
+      "summary": "ML1 light cleaning found significant S'mores cereal residue on blue Z-conveyors despite plastic wrap after previous cleaning \u2014 not used for current product; supervisor instructed to rewash and remove residue.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-10-14T22:51:37.416Z"
+      },
+      "status": "Open \u2014 supervisor cleaning conveyors again to remove residue."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector belt and roller dirty",
+      "summary": "ML1 metal detector inspection found dirty roller and belt section with chocolate on it \u2014 team leader instructed to clean again before use.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-10-14T22:55:51.143Z"
+      },
+      "status": "Open \u2014 cleaning rework in progress."
+    },
+    {
+      "plant": "L3",
+      "title": "Pistachio and chocolate in S3 die area",
+      "summary": "S3 upper die area inspection found pistachio and chocolate residue during cleaning verification \u2014 recleaning performed and reinspected; also found pistachio pieces on pallets above matrices and floor requiring cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-15T14:19:51.844Z"
+      },
+      "status": "Resolved for dies after recleaning \u2014 pallet and floor cleaning in progress."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "Pistachio residue found during S3 cleaning",
+      "summary": "S3 cleaning verification found pistachio pieces in upper die area, on pallets above matrices, and on floor in multiple areas \u2014 recleaning performed for dies, pallet and floor cleaning in progress.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-15T14:19:51.844Z"
+      },
+      "status": "Dies recleaned and passed \u2014 pallet and floor cleaning ongoing."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S1 Level 2 cleaning checklist to clarify framework cleaning scope \u2014 today's retest locations showed no sanitizer documentation."
+    },
+    {
+      "plant": "L1",
+      "text": "Add S4 caramel rest-time verification to Conbar push SOP \u2014 today's and yesterday's soft caramel both trace to operator not waiting long enough."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding metal detector roller cleaning to daily startup checklist \u2014 today's S3 product buildup caused test-card failure requiring mid-shift intervention."
+    },
+    {
+      "plant": "L3",
+      "text": "Review idle-equipment wrap/storage protocol \u2014 today's ML1 Z-conveyors held S'mores cereal residue despite plastic wrap after cleaning, requiring rework."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding depositor station status to ML4 operator handoff checklist \u2014 today's dep 2 station left off resulted in 2+ barrels of no-fill scrap."
+    }
+  ]
+}

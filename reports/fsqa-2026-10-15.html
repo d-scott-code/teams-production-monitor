@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSQA briefing — 2026-10-15 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
+.fsqa-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.fsqa-head h1 {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.fsqa-head .sub {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.fsqa-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.fsqa-head .meta img {
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Summary block ---------- */
+.fsqa-summary {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 14pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Stats strip ---------- */
+.fsqa-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8pt;
+  margin: 0 0 14pt 0;
+}
+.fsqa-stats .stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8pt 10pt;
+  text-align: left;
+}
+.fsqa-stats .stat .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fsqa-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 18pt; line-height: 1;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2pt;
+}
+
+/* ---------- Section blocks ---------- */
+.fsqa-section {
+  margin: 16pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.fsqa-section .sec-head {
+  display: flex; align-items: center; gap: 6pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 4pt; margin-bottom: 6pt;
+}
+.fsqa-section .sec-head h3 {
+  font-size: 10.5pt; font-weight: 700;
+  margin: 0; color: var(--fg-1);
+}
+.fsqa-section .sec-head .sec-icon {
+  width: 14px; height: 14px; color: var(--fg-2);
+}
+.fsqa-section .sec-head .sec-count {
+  margin-left: auto;
+  font-size: 8pt; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Entry rows ---------- */
+.fsqa-entry {
+  display: grid;
+  grid-template-columns: 26pt 1fr auto;
+  gap: 8pt;
+  align-items: start;
+  padding: 6pt 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.fsqa-entry:last-child { border-bottom: 0; }
+.fsqa-entry .sev-col { text-align: center; padding-top: 1pt; }
+.fsqa-entry .body { min-width: 0; }
+.fsqa-entry .title-line {
+  font-weight: 600; color: var(--fg-1);
+  font-size: 9.5pt; line-height: 1.3;
+}
+.fsqa-entry .plant-tag {
+  display: inline-block;
+  font-size: 7pt; font-weight: 700;
+  color: var(--fg-2);
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  padding: 1pt 6pt;
+  margin-right: 6pt;
+  vertical-align: 1pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fsqa-entry .summary {
+  display: block; font-size: 8.5pt; color: var(--fg-2);
+  margin-top: 2pt; line-height: 1.35;
+  text-wrap: pretty;
+}
+.fsqa-entry .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt; line-height: 1.4;
+  text-wrap: pretty;
+}
+.fsqa-entry .status::before {
+  content: "→ "; font-style: normal; color: var(--fg-3);
+}
+.fsqa-entry .raised {
+  font-size: 7.5pt; color: var(--fg-3);
+  text-align: right; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.fsqa-entry .raised .author { color: var(--fg-2); font-weight: 600; display: block; }
+
+/* ---------- Empty state ---------- */
+.fsqa-section .empty {
+  padding: 6pt 0 4pt 0;
+  font-style: italic; font-size: 9pt;
+  color: var(--fg-3);
+}
+
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+  margin: 18pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.opp-box {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 9pt 11pt 10pt 11pt;
+}
+.opp-box .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4pt;
+}
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
+}
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
+  color: var(--fg-1);
+  padding: 2pt 0;
+  text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<section class="sheet">
+  <div class="fsqa-head">
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>October 15, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Oct 14 11:52 MT → Oct 15 11:52 MT</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Audience</div><div class="v">FSQA Manager</div></div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Metal detector</div>
+    <p class="headline">L3 S3 metal detector failed test cards at start of shift — product buildup on rollers caused malfunction, cleaned and <span class="accent">passed retest</span> by mid-shift.</p>
+  </div>
+
+  <p class="fsqa-summary">One metal detector failure at L3 requiring cleaning and retest. Two active quality issues: L3 ML4 produced 2 barrels of product with missing white cream filling due to operator station error; L1 S4 scrapped soft caramel from overnight shift. Sanitation: multiple cleaning verification gaps at L3 including pistachio allergen residue.</p>
+
+  <div class="fsqa-stats"><div class="stat"><div class="eyebrow">Holds</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">Food safety</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">Quality</div><div class="num">4</div></div><div class="stat"><div class="eyebrow">Sanitation</div><div class="num">4</div></div><div class="stat"><div class="eyebrow">Allergen</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">High severity</div><div class="num">1</div></div></div>
+
+  <section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="package"></i><h3>Active holds</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Soft caramel from overnight shift</div><span class="summary">S4 3rd shift operator did not let caramel sit long enough before pushing to Conbar — soft texture caramel held for scrap, waiting for empty barrels from L2.</span><span class="status">On hold pending scrap barrels — Brandon Hernandez to follow up with team tonight.</span></div><div class="raised"><span class="author">Katya Farnsworth</span><span>08:17 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Product with missing white cream filling</div><span class="summary">L3 ML4 depositor 2 operator left station off, resulting in molds deposited with no white cream filling — 2 barrels of scrap accumulated, more product in cooling cabinet 3 pending verification.</span><span class="status">Open — operator marking affected molds, Stefan to assess extent in cooling cabinet 3 on arrival.</span></div><div class="raised"><span class="author">Itzel Chavez</span><span>06:37 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-alert"></i><h3>Food safety</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Metal detector failed test-card verification</div><span class="summary">S3 metal detector did not close when test cards passed through at start of 1st shift — product buildup on rollers caused malfunction; production and maintenance cleaned rollers, detector passed retest at 10:35.</span><span class="status">Resolved — detector cleaned, test cards pass correctly, production resumed.</span></div><div class="raised"><span class="author">Mariela Gudino</span><span>07:22 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Wire mesh broke on Truffle Line enrober</div><span class="summary">Truffle Line wire mesh broke at 07:32 — team assessed damage as minor and continued running through 1st shift with plan to replace during 3rd shift reheat; QA and supervisors approved continued operation.</span><span class="status">Open — running under supervision, wire mesh replacement scheduled for 3rd shift reheat.</span></div><div class="raised"><span class="author">TruffleLine Enrober</span><span>07:31 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-check"></i><h3>Quality flags</h3><span class="sec-count">4</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S4 caramel dimensions below spec</div><span class="summary">All S4 caramel checked measured 14.95–15.44 mm, below required 17.3–17.9 mm spec — machine rejecting product; affected caramel removed, production restarted from combing stage after operator adjustments.</span><span class="status">Resolved — dimensions corrected after adjustments, production resumed.</span></div><div class="raised"><span class="author">Rafael Vilchez</span><span>04:13 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Double truffle in unsealed pouch</div><span class="summary">Truffle Line packaging inspection found 1 pouch with double truffle and not sealed in 250-piece box sample — QA flagged to operators to monitor flow wrap for doubles and open product.</span><span class="status">Open — operators watching for recurrence.</span></div><div class="raised"><span class="author">Jordan Serna</span><span>04:31 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S1 tray label format incorrect</div><span class="summary">S1 tray label printed in lowercase instead of uppercase per spec — IMS corrected format, QA approved use of lowercase labels already printed as long as BB date correct; future labels will use all-caps format.</span><span class="status">Resolved — format corrected for future prints, existing stock approved for use.</span></div><div class="raised"><span class="author">Ingrid Moreno Angarita</span><span>07:55 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Cardboard box with pretzels under table</div><span class="summary">S1 Pre-Op Matrix 9 &amp; 10 found cardboard box containing blue bag of pretzels underneath stainless steel table — product removed and disposed before Pre-Op approval.</span><span class="status">Resolved — product disposed, Pre-Op passed.</span></div><div class="raised"><span class="author">Ingrid Moreno Angarita</span><span>08:30 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="spray-can"></i><h3>Sanitation</h3><span class="sec-count">4</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S1 framework cleaning verification gap</div><span class="summary">S1 Level 2 cleaning paperwork missing sanitizer documentation for 2 retest locations (ingredient tank framework EM-S1-1, inclusion hopper framework EM-S1-15) — frameworks are non-product-contact but on retest list.</span><span class="status">Open — Charity planning to swab today, needs confirmation frameworks were cleaned.</span></div><div class="raised"><span class="author">Charity Young</span><span>05:51 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Z-conveyors residue from previous product</div><span class="summary">ML1 light cleaning found significant S&#x27;mores cereal residue on blue Z-conveyors despite plastic wrap after previous cleaning — not used for current product; supervisor instructed to rewash and remove residue.</span><span class="status">Open — supervisor cleaning conveyors again to remove residue.</span></div><div class="raised"><span class="author">Alfonsina Gil</span><span>16:51 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML1 metal detector belt and roller dirty</div><span class="summary">ML1 metal detector inspection found dirty roller and belt section with chocolate on it — team leader instructed to clean again before use.</span><span class="status">Open — cleaning rework in progress.</span></div><div class="raised"><span class="author">Alfonsina Gil</span><span>16:55 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Pistachio and chocolate in S3 die area</div><span class="summary">S3 upper die area inspection found pistachio and chocolate residue during cleaning verification — recleaning performed and reinspected; also found pistachio pieces on pallets above matrices and floor requiring cleaning.</span><span class="status">Resolved for dies after recleaning — pallet and floor cleaning in progress.</span></div><div class="raised"><span class="author">Mary Montilla</span><span>08:19 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="triangle-alert"></i><h3>Allergen</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Pistachio residue found during S3 cleaning</div><span class="summary">S3 cleaning verification found pistachio pieces in upper die area, on pallets above matrices, and on floor in multiple areas — recleaning performed for dies, pallet and floor cleaning in progress.</span><span class="status">Dies recleaned and passed — pallet and floor cleaning ongoing.</span></div><div class="raised"><span class="author">Mary Montilla</span><span>08:19 MT</span></div></div></section>
+
+  <div class="opportunities-eyebrow">Opportunities — by plant</div><div class="opportunities-row"><div class="opp-box"><div class="eyebrow">L1</div><h4>L1 Caramel</h4><ul><li>Review S1 Level 2 cleaning checklist to clarify framework cleaning scope — today&#x27;s retest locations showed no sanitizer documentation.</li><li>Add S4 caramel rest-time verification to Conbar push SOP — today&#x27;s and yesterday&#x27;s soft caramel both trace to operator not waiting long enough.</li></ul></div><div class="opp-box"><div class="eyebrow">L2</div><h4>L2 Moulding</h4><p class="empty">No opportunities flagged today.</p></div><div class="opp-box"><div class="eyebrow">L3</div><h4>L3 Chocolate</h4><ul><li>Consider adding metal detector roller cleaning to daily startup checklist — today&#x27;s S3 product buildup caused test-card failure requiring mid-shift intervention.</li><li>Review idle-equipment wrap/storage protocol — today&#x27;s ML1 Z-conveyors held S&#x27;mores cereal residue despite plastic wrap after cleaning, requiring rework.</li><li>Consider adding depositor station status to ML4 operator handoff checklist — today&#x27;s dep 2 station left off resulted in 2+ barrels of no-fill scrap.</li></ul></div></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
+    Production briefing for the same day:
+    <a class="archive-link" href="2026-10-15.html">reports/2026-10-15.html</a> ·
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">FSQA briefing · 2026-10-15</span>
+    <span class="page-no">Page 1 of 1</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

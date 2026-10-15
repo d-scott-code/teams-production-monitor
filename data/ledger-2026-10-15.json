@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-15",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 depositor issues caused *3 hours down* through the night, compounded by white-cream quality miss"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 4 scraped undersized caramel and restarted from combing after dimensional failures. Sollich 2 ran out of flow wrap 8 pallets short of order. Sollich 1 started production mid-morning after software fix for recurring pump coupling failures and cleaning rework.",
+    "L2": "ML2 ran smoothly with routine mold jams. FFS web tracking caused multiple stops and heavy scrap; white line adjustments continued through first shift.",
+    "L3": "ML4 lost 3 hours overnight to depositor slider and water-filter issues, then discovered molds with missing white cream went to cooling cabinet. Truffle ran clean. ML1 had brief scale and chiller issues, both cleared."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Software interlock added to Sollich 1 buffer pump to prevent Lovejoy coupling failures when valve closed."
+    },
+    {
+      "plant": "L1",
+      "text": "Tapioca ingredient (10267) delivery moved up to Thursday 10am per scheduling team."
+    },
+    {
+      "plant": "L2",
+      "text": "Whole milk automatic filling pipe to Mixing Tank B clogged; continuing manual add until maintenance inspects."
+    },
+    {
+      "plant": "L3",
+      "text": "Cones placed around ML4 chiller fans after second night of accidental unplugging."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S1 buffer tank pump Lovejoy coupling broke (recurring)",
+      "summary": "Pump faulted when sending chocolate to buffer, Lovejoy coupling broken; replacement broke immediately, indicating programming or alignment issue.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-10-15T05:39:20.633Z"
+      },
+      "resolution": "Sollich updated software at 07:27 to interlock Sweco tank pump to valve \u2014 pump won't turn on if valve not open (Matt Hatch)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector belt stuck open, product falling into reject bin",
+      "summary": "MD belt remained open during operation, all product falling into MD bin instead of passing through.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-15T13:22:49.999Z"
+      },
+      "resolution": "Production and maintenance removed buildup from MD rollers at 10:35, tested with cards, opening and closing correctly (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caramel depositors D1 & D2 failed ATP after caustic wash",
+      "summary": "First caustic wash left depositors very dirty, required two additional caustic cycles before QA passed for production.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-14T17:57:40.095Z"
+      },
+      "resolution": "QA passed D1 & D2 after third caustic wash at 13:13, ready to start cooking (S4 Kitchen Tablet)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 blue Z-conveyors dirty with S'mores cereal residue",
+      "summary": "Conveyors wrapped in plastic after previous cleaning but had significant residue from S'mores, needed re-clean before use.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-10-14T22:51:37.416Z"
+      },
+      "resolution": "Supervisor instructed to clean again and remove residue. Alfonsina noted it will take longer (16:57)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 metal detector belt and roller had chocolate residue",
+      "summary": "Dirty roller and belt section with chocolate found during pre-op inspection.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-10-14T22:55:51.143Z"
+      },
+      "resolution": "Team leader informed to have it cleaned again (Alfonsina Gil 16:55)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 chocolate 10121 ran out on building",
+      "summary": "No chocolate 10121 inventory in building, melting tanks at 76% and 68%, MRC request submitted.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-10-15T10:30:12.184Z"
+      },
+      "resolution": "Chocolate arrived from Springville at 05:26 (Ricardo Tovar)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 blue belt tension rollers in wrong position",
+      "summary": "Belt running without tension rollers in correct spot, noticeably skipping.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Matt Hatch",
+        "time_utc": "2026-10-15T15:38:30.516Z"
+      },
+      "resolution": "Victor confirmed will speak to leader to ensure correct belt tension (09:42)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 capper back rail loose, jars not held tightly",
+      "summary": "Capper not holding jars tightly enough when entering capping station, back rail became loose.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-10-15T16:58:56.864Z"
+      },
+      "resolution": "Tightened back rail, tested 30 jars, looks good, running at 11:24 (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 chiller breaker tripped",
+      "summary": "Line stopped at 11:16 when chiller breaker tripped.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-10-15T17:16:12.926Z"
+      },
+      "resolution": "Matt Hatch reset breaker, everything working again, two good tempers, line running at 11:40 (S1 Enrober)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web tracking fault on white line",
+      "summary": "Line down at 23:09 due to web tracking issue, caused large scrap from reworking pouches and film tubes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-15T05:09:22.136Z"
+      },
+      "resolution": "Maintenance made adjustments, line running at 00:19 (VFFS). Scrap explained by Zack Kurtz 01:27."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 soft caramel texture in center",
+      "summary": "Caramel coming through with soft texture in center, team working to improve.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-10-14T21:20:43.12Z"
+      },
+      "resolution": "Fixed (Dakota Adair 15:21), Victor confirmed better at 15:27."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 3 slider A failure and water leak",
+      "summary": "Slider A faulted at 03:16, water filter found leaking into pan under depositor, o-ring replaced, tested and running by 06:10.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-15T09:16:00.634Z"
+      },
+      "resolution": "Leak fixed at 05:37 (Kavin Ayala), depositor tested at 06:07, line back up at 06:10 (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol level low",
+      "summary": "Glycol level dropping in system, maintenance requested at 14:22.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-14T20:22:55.083Z"
+      },
+      "resolution": "Nathan Ruiz refilled, reported \"nice and full again\" at 14:50."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 checkweigher tare incorrect causing product accumulation",
+      "summary": "Scale tare wrong, product accumulating, line stopped at 18:31 for maintenance to correct.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-10-15T00:31:55.676Z"
+      },
+      "resolution": "Maintenance changed tare, line running at 18:33 (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper spiked to 0.8",
+      "summary": "Raoul stopped depositing at 01:15 to make adjustments when temper read 0.8.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-15T07:22:28.436Z"
+      },
+      "resolution": "Temper back to 0.7 (yellow) at 01:30, started running back (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chiller fans unplugged, both compressors faulted",
+      "summary": "Someone stepped on cord, unplugged chiller fans, both compressors faulted at 06:17; operators caught before temper readings affected.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-15T12:17:49.151Z"
+      },
+      "resolution": "Fans reconnected, operators caught on time before temper readings impacted (ML4 TG 06:27). Cones placed to prevent recurrence (Itzel 07:24)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 caramel dimensions below spec, machine rejecting",
+      "summary": "All caramel measured 14.95\u201315.44 mm, below required 17.3\u201317.9 mm spec; machine rejecting product, restarted from combing stage.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Rafael Vilchez",
+        "time_utc": "2026-10-15T10:13:19.139Z"
+      },
+      "status": "Operator making continuous adjustments to hit spec as of 04:40 (Luis Falcon). Cover 16 still rejecting pieces even when dimensions in spec at 09:49 (Mary Montilla), maintenance reviewing."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 ran out of flow wrap, order short 6\u20138 pallets",
+      "summary": "Order required 270 pallets total, only had flow wrap for 28 of the 36 pallets needed at start of shift.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-15T12:55:22.405Z"
+      },
+      "status": "Packaged 28 pallets, came up short by 6 pallets per Daniel at 10:11. Customer/sales notified."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 soft caramel from 3rd shift operator error",
+      "summary": "3rd shift operator did not let caramel sit long enough before pushing to Conbar, resulting in soft caramel; trying to scrap but out of scrap barrels.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-15T14:17:20.689Z"
+      },
+      "status": "Waiting for L2 to send more scrap barrels as of 08:17. Brandon to follow up with team tonight (08:18)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 screw drive temperature sensor not reading correctly",
+      "summary": "Temperature sensor on screw drive showing incorrect readings.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-10-15T14:21:40.418Z"
+      },
+      "status": "Maintenance notified at 08:21, no resolution posted in window."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 whole milk automatic filling pipe clogged to Mixing Tank B",
+      "summary": "Pipe from Dairy Tank to Mixing Tank B clogged, unable to use automatic filling system.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-15T15:12:12.938Z"
+      },
+      "status": "Maintenance request submitted for pipe inspection when S2 Kitchen not running. Continuing manual add in meantime."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 pallets and floor above matrices have pistachio contamination",
+      "summary": "Pallets stored above matrices have pistachio pieces, floor has small pistachio pieces in different areas requiring thorough cleaning.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-15T16:51:26.498Z"
+      },
+      "status": "Flagged at 10:51, instructed to wash pallets and clean floor well. No completion confirmation in window."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS white line continues intermittent tracking issues",
+      "summary": "After initial fix at 00:19, white line required additional stops and adjustments at 06:39 and 10:05; still back-and-forth at 10:53.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-15T12:39:05.531Z"
+      },
+      "status": "Maintenance going through rollers at 06:39, fold adjusted, running at 10:33. VFFS reports white line \"still back and forth\" at 10:53."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 ran out of white cream, many molds affected",
+      "summary": "Operator on dep 2 had station off, hopper ran out of white cream, many molds went to cooling cabinet 3 with no filling; 2 barrels of scrap accumulated by 08:20 with more coming.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-15T12:37:39.922Z"
+      },
+      "status": "Itzel marking molds to track volume at 06:42, still checking how much went into cooling cabinet 3 with no white cream as of 08:20."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 3 circuit 2 temperature out of range",
+      "summary": "Temperature reading posted at 06:47 shows circuit 2 on depositor 3 out of normal range.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-15T12:47:20.287Z"
+      },
+      "status": "Maintenance called at 06:47, Nelson adjusted water pressure at 07:12, Itzel to post if temp gets better."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 tempermeter missing probe holder piece",
+      "summary": "Piece that sits on top of chocolate sample cup and holds temperature probe in place is missing from tempermeter.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-15T17:51:26.638Z"
+      },
+      "status": "Asked maintenance at 11:51 if they have replacement for this piece; no response in window."
+    }
+  ]
+}
