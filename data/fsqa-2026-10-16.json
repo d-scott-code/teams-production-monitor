@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-16",
+  "headline": {
+    "eyebrow": "Equipment failure",
+    "text": "L2 ML3 demolding plate and *bolt broke off* during run \u2014 metal detector test-verified before restart, no FM found in product."
+  },
+  "summary": "One active quality flag: L1 S1 pouches missing date/lot codes in last 10 minutes of window, operator coaching underway. L2 ML3 demoulder plate failure investigated and cleared; MD confirmed FM rejection capability.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "ML3 demoulder sliding plate broke off, bolt missing",
+      "summary": "Maintenance welded plate and searched line for missing bolt; FSQA tested sample metal pieces through MD \u2014 all rejected \u2014 line cleared to restart with enhanced monitoring.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-16T16:10:03.758Z"
+      },
+      "status": "Resolved \u2014 MD test confirmed detection, visual search completed, line restarted with monitoring plan."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S1 Matrix 9 Videojet printer failed mid-shift",
+      "summary": "Printer stopped working; maintenance swapped in newly commissioned unit from VideoJet, line resumed normal printing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-16T15:48:54.028Z"
+      },
+      "status": "Resolved \u2014 new printer installed and running."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 pouches missing date and lot code prints",
+      "summary": "Line leader observed several pouches in the last 10 minutes without date/batch prints; pack operators reminded to verify print on every pouch.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-16T17:14:03.431Z"
+      },
+      "status": "Open \u2014 coaching delivered to pack team at end of window."
+    },
+    {
+      "plant": "L2",
+      "title": "VFFS pouches folding at bottom seal",
+      "summary": "Seal defect caused pouch fold; all affected pouches pulled from line, maintenance corrected issue, QA verified seal quality restored.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-16T00:53:24.242Z"
+      },
+      "status": "Resolved \u2014 defective pouches removed, seal corrected and verified."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caramel cook times extended to 60 minutes",
+      "summary": "Investigation determined operators pausing cook cycle to manage reserve tank caused burn-on; OPL reviewed with all shifts to prevent pausing.",
+      "severity": "low",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-15T18:24:11.500Z"
+      },
+      "status": "Resolved \u2014 root cause identified, operators retrained on OPL."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 open pouches found in box inspection",
+      "summary": "QA box check found 3 open flow-wrap units (2 T3, 1 T4) in one box; flagged for line attention.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-10-16T16:31:10.873Z"
+      },
+      "status": "Resolved \u2014 caught during routine QA inspection."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 dirty molds left at end of 1st shift",
+      "summary": "Shift 1 team left unwashed molds; 2nd shift washed and ATP'd them before use; team reminded to clean and store molds at shift end.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-10-15T21:37:55.241Z"
+      },
+      "status": "Resolved \u2014 molds washed and ATP verified by 2nd shift."
+    },
+    {
+      "plant": "L2",
+      "title": "Mold washer area standing water cleared",
+      "summary": "Standing water in mold washer area cleaned up by mold washer lead; area verified dry.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-10-16T09:36:59.860Z"
+      },
+      "status": "Resolved \u2014 water removed, area dry."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "title": "Review S1 pack area line-of-sight to Videojet printers or add audible alarm for print failures \u2014 today's missing date/lot codes were caught by visual check 10 minutes after occurrence.",
+      "text": "Review S1 pack area line-of-sight to Videojet printers or add audible alarm for print failures \u2014 today's missing date/lot codes at 17:14 were caught by visual check after unknown duration."
+    },
+    {
+      "plant": "L1",
+      "title": "Consider adding S2 mold washing to end-of-shift checklist accountability \u2014 1st shift left dirty molds requiring 2nd shift cleanup.",
+      "text": "Consider adding S2 mold washing to end-of-shift checklist accountability \u2014 1st shift left dirty molds at 21:37 requiring 2nd shift cleanup and ATP."
+    },
+    {
+      "plant": "L2",
+      "title": "Consider adding spare demoulder sliding plates to ML3 critical spares inventory \u2014 today's plate failure had no replacement available, requiring welding repair.",
+      "text": "Consider adding spare demoulder sliding plates to ML3 critical spares inventory \u2014 today's plate failure at 16:06 had no replacement available, requiring welding repair."
+    }
+  ]
+}

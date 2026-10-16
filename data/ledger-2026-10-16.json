@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-16",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L3 had *3 line stoppages* for mechanical faults\u2014all cleared by mid-shift\u2014while L2 ML3 demoulder remains down *1.3 hours* into the window with no ETA."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran clean through the night. S1 cleared a Matrix 10 conveyor jam in 65 minutes early morning. S4 fought 60-minute cook times all day\u2014caustic cleaned both kettles and got caramel flowing again by 21:26. One quality flag on S1: chocolate coverage on piece bottoms needs operator attention.",
+    "L2": "L2 ML2 knocked out a PTL temperature fault and a bent door, both inside 2 hours. ML3 went down at 10:06 when the demoulder sliding plate fell off\u2014maintenance is welding and replacing bearings as of 11:21 with no restart time posted. FFS cleared a pouch-folding jam in 2.3 hours overnight.",
+    "L3": "L3 ML4 stopped for temper at 06:13, back running at 06:48. Gondola jams from cross-conveyor product drops were fixed by ramp adjustment at 08:25. Truffle wire mesh and tunnel belt both repaired before 06:00. ML1 camera fault at 10:13 has no follow-up. Cavanna 2 sensor rejection issue raised at 10:57, maintenance on-site. MF Matrix Z-conveyor VFD fault cleared in 20 minutes."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S4 identified root cause for slow cook times: operators pausing batches to avoid mixing kettles in reserve tank, causing caramel burn-on."
+    },
+    {
+      "plant": "L3",
+      "text": "Tim and guests toured the plant starting 08:54; Chad Stone reports plant showed well and all shifts were tour-ready."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 kitchen cook times at 60 minutes vs. 45-50 normal",
+      "summary": "Both kettles running 60-minute cook cycles all afternoon\u2014steam traps checked OK, suspected burn-on from earlier downtime when caramel couldn't drain.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-15T18:24:11.5Z"
+      },
+      "resolution": "Both kettles caustic cleaned starting 14:46. Caramel flowing to Conbar tower by 21:26. 'We finally have caramel at the conbar tower' (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Matrix 10 cross conveyor stopped",
+      "summary": "Matrix 10 cross conveyor stopped at 01:52; maintenance troubleshooting on-site, bins accumulating.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-16T07:52:16.194Z"
+      },
+      "resolution": "Conveyor repaired and accumulation passed by 02:57. 'Maintenence got the coveyor running again. We accumulated bins which we passed before starting the line again' (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Matrix 9 Videojet printer stopped",
+      "summary": "Videojet on Matrix 9 stopped working at 09:48; Troy and maintenance swapping in replacement printer.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-16T15:48:54.028Z"
+      },
+      "resolution": "Troy swapped in a commissioned printer at 10:12. 'I just swapped it out and everything is working again' (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 enrober paused for temper adjustment",
+      "summary": "Enrober paused at 18:40 for temper check and adjustment before resuming production.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-10-16T00:40:03.101Z"
+      },
+      "resolution": "Temper verified good and line resumed at 19:18. 'Line resumed' (S1 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 x-ray machine jamming bottles",
+      "summary": "Bottles jamming in x-ray at 20:04; line paused to pass accumulation and clear jam.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-16T02:01:13.394Z"
+      },
+      "resolution": "Jam cleared and line running again at 20:15. 'Line is running again' (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 separating table belt #16 crack concern",
+      "summary": "Belt #16 showing a crack at 15:35; second-shift maintenance asked to check replacement availability.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-15T21:35:34.946Z"
+      },
+      "resolution": "William Lopez inspected belt at 16:14 and confirmed still functional, no FM risk or active cracking. 'Belt for separating table #16 is still functional no issues with FM or cracking.'"
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouches folding at bottom seal",
+      "summary": "Pouches coming out with bottom folds at 18:53; line stopped, maintenance working to adjust forming and seal.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-16T00:53:24.242Z"
+      },
+      "resolution": "Maintenance adjusted seal and forming by 21:11. 'The pouch looks good' (Marlenis Fernandez at 21:11)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 PTL temperature dropping and faulted",
+      "summary": "PTL temperature fell and system faulted at 20:25; expansion tank pressure too low, melt head and pipeline stopped heating.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-10-16T02:23:59.841Z"
+      },
+      "resolution": "Alex Mendoza adjusted expansion tank pressure and brought system back to auto. 'Everything is back in auto and heating up' at 21:34."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cooler door bent and not closing",
+      "summary": "Cooler door bent and would not close at 22:40; maintenance responded immediately to straighten.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-10-16T04:39:01.648Z"
+      },
+      "resolution": "Maintenance bent door back into position by 22:44. 'Door was bent back somewhat and line is running' (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jam at demoulder",
+      "summary": "Mold jammed at demoulder at 07:07, brief line stop to clear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-10-16T13:07:29.664Z"
+      },
+      "resolution": "Jam cleared inside 3 minutes. 'The line is running back' at 07:10."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle tunnel 3 belt fraying",
+      "summary": "Tunnel 3 belt fraying on edge at 05:02; maintenance working to trim and seal to prevent FM risk.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-16T11:02:10.242Z"
+      },
+      "resolution": "Maintenance cut frayed edge, torched to seal, cleaned and QA verified by 05:58. 'Tunnel three is good to run' (Jordan Serna)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 line stopped for temper check",
+      "summary": "Depositor 1 temper flagged high; line paused at 06:13 for adjustment and capture test, back producing at 06:48.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-16T12:13:08.589Z"
+      },
+      "resolution": "Line resumed at 06:48 after temper adjustments and capture test verified good. 'Running at 6:48am' (Itzel Chavez); 'Running' (ML4 WDS Tablet 1)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix Z-conveyor stopped",
+      "summary": "Z-conveyor stopped moving at 07:36, product not rising to machine; maintenance on-site for VFD fault.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-10-16T13:36:48.722Z"
+      },
+      "resolution": "VFD fault cleared by 07:56. 'VFD fault needed to be cleared' (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle wire mesh issue",
+      "summary": "Wire mesh on truffle line needed repair at 04:28; maintenance responded immediately.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-16T10:28:25.692Z"
+      },
+      "resolution": "Wire mesh repaired by 04:57. 'Wire mesh has been fixed' (Jose Vasquez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola entrance jams from cross-conveyor drops",
+      "summary": "Six gondola jams reported between 07:17 and 08:01 caused by bites falling from TG3 cross conveyor onto gondola belt.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-16T13:17:23.559Z"
+      },
+      "resolution": "Stefan raised the TG3 ramp at 08:25 to seat product deeper into cross conveyor. 'It seems to be working' and 'Is still working better' confirmed at 08:48."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 tropical syrup cold, slowing tank fill",
+      "summary": "Tapioca/tropical syrup arrived cold at 09:50, slowing fill rate to mixing tank and delaying batch cycles.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-16T15:50:34.54Z"
+      },
+      "status": "Cold tapioca reported at 09:50 and 09:51, impacting fill speed. Katya mentioned at 10:25 'We lost some time for cold tapioca' but caramel flowing again. Unclear if tapioca temp fully resolved."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 chocolate coverage on piece bottoms",
+      "summary": "QA flagged at 10:44 that several pieces coming out with areas not covered by chocolate on the bottom; operator asked to improve enrober settings.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-16T16:44:47.204Z"
+      },
+      "status": "Operator asked to improve chocolate coverage on piece bottoms at 10:44. No follow-up posted by end of window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 demoulder sliding plate fell off",
+      "summary": "Demoulder sliding plate fell off at 10:06, line down; no replacement plates available, maintenance welding broken plate and replacing linear bearing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-16T16:06:14.992Z"
+      },
+      "status": "Maintenance welding plate and replacing linear bearing as of 11:21. Hervin and Alan tested loose metal pieces against MD\u2014all rejected. No ETA posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera fault",
+      "summary": "Camera fault reported at 10:13, maintenance notified; no follow-up in chat on cause or resolution.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-16T16:13:29.264Z"
+      },
+      "status": "Camera fault reported at 10:13, maintenance notified. No update posted by end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 sensor rejecting product",
+      "summary": "Cavanna 2 sensors rejecting excessive chocolate at 10:57; maintenance on-site working sensor adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-16T17:02:24.408Z"
+      },
+      "status": "Maintenance working on Cavanna 2 sensor tuning as of 10:57. No resolution posted by end of window."
+    }
+  ]
+}
