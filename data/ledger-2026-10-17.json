@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-17",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML3 demolder plate broke at 10:25 requiring emergency weld repair\u2014line back by 11:50\u2014and L3 Truffle stopped *5 times overnight* on equipment and temperature issues but all cleared by morning."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran a smooth milk-to-dark changeover and completed the 12,210-case BET Dark order by 10:01. Sollich 4 had a brief tapioca temperature delay. An extension cord for a heated tote sparked when pinched\u2014removed and replacement ordered.",
+    "L2": "ML3 demolder sliding plate broke at 10:25 with foreign material concerns; maintenance welded the plate and replaced a bearing, line back at 11:50. FFS had two brief bag-folding stops, both cleared same shift. ML2 depositor temps are slowly rising\u2014flagged for weekend monitoring.",
+    "L3": "Truffle line stopped five times overnight: Cavanna overheated and tripped on damaged cable (fixed 17:34), guillotine faulted twice (E-stop reset, power cycle), and low chocolate temperature required two reheats\u2014all cleared by 03:05. ML1 ran with two centerline adjustments off spec. ML4 depositor 3 missing bolt; auger weld scheduled Monday."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Sollich 1 down for end-of-week level 2 clean as scheduled."
+    },
+    {
+      "plant": "L2",
+      "text": "Fernando Flores installed new ASCO valve on PTL overnight."
+    },
+    {
+      "plant": "L3",
+      "text": "ML1 and MFM completed level 2 cleans; post-op ATP passed."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Heated tote extension cord sparked",
+      "summary": "Extension cord pinched and sparked when warehouse worker pulled it out at 13:59; cord removed, replacement ordered.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "William Lopez",
+        "time_utc": "2026-10-16T19:59:15.875Z"
+      },
+      "resolution": "Cleared at 13:59 \u2014 \"We removed it and will order a replacement\" (William Lopez)."
+    },
+    {
+      "plant": "L1",
+      "title": "IMS pallet wrapper lost power",
+      "summary": "Wrapper by IMS desks lost power at 19:47; Caleb York investigated and restored.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-17T01:47:06.543Z"
+      },
+      "resolution": "Cleared at 19:54 \u2014 \"It has the power\" (Caleb York)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 demolder sliding plate broke, bolt lost",
+      "summary": "Plate cracked and linear bearing failed at 10:25; maintenance welded plate and installed new bearing, metal detector tested for foreign material risk, line restored by 11:50.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-16T16:25:52.556Z"
+      },
+      "resolution": "Cleared at 11:50 \u2014 \"Line is back up\" after weld repair and bearing replacement (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bag folder bottom sealing issues",
+      "summary": "Bags coming out of folder with bottom defects at 15:22; maintenance adjusted folder, line running at 15:26.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-16T21:22:30.193Z"
+      },
+      "resolution": "Cleared at 15:26 \u2014 \"Line is running\" (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS double-layered fabric on back seal",
+      "summary": "Film feeding issue causing double layers on back seal at 17:17; remedied by 17:54.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-16T23:17:59.286Z"
+      },
+      "resolution": "Cleared at 17:54 \u2014 \"This has been remedied and the line is running\" (Mathew Draper)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 overheated, cable damaged",
+      "summary": "Cavanna tripped on overheating at 14:04, exposed cable found causing breaker trips and sensor failure; cable replaced and rerouted by 17:34, cooling system investigation underway.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-16T17:02:24.408Z"
+      },
+      "resolution": "Cleared at 17:34 \u2014 \"Cute Cavanna is now up and running I replaced the damaged cable with a new one and redid how it runs through the machine to prevent this from happening again\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle guillotine stopped, ultrasonic fault",
+      "summary": "Guillotine failed at 21:14 due to E-stop fault, then again at 22:36 with ultrasonic not working; E-stop reset and power cycle of main cabinet restored function.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-17T03:14:06.597Z"
+      },
+      "resolution": "Cleared at 22:10 \u2014 \"Truffle line it's back and running good. There's was a fault with an E-stop so I reset it\" (Efrain Rodriguez); second stop cleared with \"power cycled the main electrical cabinet\" (Kavin Ayala)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober low chocolate temperature",
+      "summary": "Line stopped twice (01:35 and 02:21) when chocolate temperature dropped too low and pipes built up; reheat and tempering cycles required.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-10-17T07:59:35.283Z"
+      },
+      "resolution": "Cleared at 03:05 \u2014 \"Line started at 3:05\" after tempering restarted at 02:50 (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 belt sliding off",
+      "summary": "Last belt on Cavanna 1 sliding to the side at 03:53; maintenance recentered and adjusted, 3 trays accumulated.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-17T09:53:30.775Z"
+      },
+      "resolution": "Cleared at 03:58 \u2014 \"Belt was recentered and adjusted, we accumulated 3 trays from it. Cavanna is running again!\" (TruffleLine FW)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "Item 10231 material shortage, 1000 lbs short",
+      "summary": "Luis Pino flagged at 10:43 that 5-shift run will be 1000 lbs short; 19,800 lbs in order status, shipment due but vendor whereabouts unknown.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Pino",
+        "time_utc": "2026-10-16T16:43:56.708Z"
+      },
+      "status": "Martin Carlos following up with vendor as of 14:36; shipment due today but location unconfirmed, no update in window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 depositor temps slowly rising",
+      "summary": "PTL and temper unit temps good, but depositor temps trending up slowly as of 07:00; Gustavo flagged for weekend monitoring.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-10-17T13:00:35.803Z"
+      },
+      "status": "Tempering devices hitting temps but depositor temps slowly coming up as of 07:00; may need check over weekend."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 3 missing bolt, auger damaged",
+      "summary": "Depositor 3 slider cap bolt missing at 10:02; damaged auger needs weld and seized pin still not found, repair scheduled Monday morning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-17T16:02:55.1Z"
+      },
+      "status": "Auger to be welded Monday morning, still searching for seized pin as of 10:23 (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 two centerline adjustments off spec",
+      "summary": "Flow-wrap reported two adjustments outside centerlines at shift start; tracked through day, still off spec at 22:24 shift end but within tolerance.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-10-16T22:25:24.029Z"
+      },
+      "status": "Ended shift with same two adjustments outside centerlines at 22:24; being tracked but operation continued."
+    }
+  ]
+}

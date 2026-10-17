@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-17",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L2 ML3 demolding plate broke, *bolt missing* \u2014 metal detector tested and holding, line released after monitoring."
+  },
+  "summary": "One active sanitation gap \u2014 L3 ML1 molds left in washroom pending ATP. L2 ML3 broken demolding plate and missing bolt resolved after metal detector verification; L3 ML4 has two damaged parts (missing depositor bolt, damaged auger with missing pin) pending Monday repair.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "FFS product removed for rework",
+      "summary": "Affected product pulled from line for rework \u2014 no disposition detail in window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-10-16T18:17:57.919Z"
+      },
+      "status": "Team is currently working on rework; no release time noted."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "ML3 demolding plate broke, bolt missing",
+      "summary": "Sliding plate broke, bolt not found after line search \u2014 maintenance welded plate back together; tested potential metal pieces through MD and all rejected; line released with monitoring protocol.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-16T16:25:52.556Z"
+      },
+      "status": "Resolved on shift \u2014 plate repaired, MD verified effective, line released at 11:50 with monitoring."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 damaged auger, missing seized pin",
+      "summary": "Auger damaged and will be welded Monday morning; seized pin still not located \u2014 potential metal shavings or pin fragments in product zone.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-10-17T16:23:35.241Z"
+      },
+      "status": "Open \u2014 weld scheduled Monday, pin search ongoing."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Depositor 3 missing bolt for slider caps",
+      "summary": "Food-contact equipment missing hardware \u2014 no action taken in window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-17T16:02:55.1Z"
+      },
+      "status": "Open, awaiting maintenance repair."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Truffle line packaging quality \u2014 opened bars",
+      "summary": "Conveyor belt not picking up debris, Cavanna discharging opened chocolate bars \u2014 maintenance called, issue ongoing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-17T01:12:46.896Z"
+      },
+      "status": "Open \u2014 maintenance investigating belt issue at window close."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 molds left in washroom pending ATP",
+      "summary": "Post-op level 2 cleaning complete on line, but molds left in washroom \u2014 QA will clean and ATP test tonight.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jordan Serna",
+        "time_utc": "2026-10-17T13:08:10.007Z"
+      },
+      "status": "Pending \u2014 molds awaiting cleaning and ATP verification."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L2",
+      "text": "Review demolding section preventive maintenance cadence \u2014 ML3 sliding plate failure and missing bolt suggest wear pattern worth tracking."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding food-contact equipment hardware inspection to ML4 startup checklist \u2014 today's missing depositor bolt and damaged auger with missing pin echo similar maintenance gaps."
+    },
+    {
+      "plant": "L3",
+      "text": "Review mold handling protocol for level 2 cleans \u2014 ML1 molds left in washroom creates gap between line release and mold clearance."
+    }
+  ]
+}
