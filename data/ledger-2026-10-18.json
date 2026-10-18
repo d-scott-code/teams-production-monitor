@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-18",
+  "headline": {
+    "eyebrow": "Cleanup weekend",
+    "text": "L3 ML4 has *5 open cleaning issues* flagged for Monday \u2014 L1 ran caramel through the weekend with minor equipment holds."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 ran dark caramel through second shift with a metal detector glitch at 15:20 that cleared by 15:24. Sollich 3 ran pecan clusters overnight; butter melter went cold at 21:44 but had enough caramel to finish the shift. Corn syrup pump motor failed on Sollich 2 and was scheduled for third-shift replacement. Weekend cleaning in progress across all lines.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "ML4 completed level 2 cleaning but has multiple open items flagged for Monday: drive shaft metal dust, gondola cleaning failure, bent belt door, and pre-heat cabinet chain out of sync. Truffle line cleaned successfully and passed all ATP tests. ML1 molds passed ATP."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Spatula storage safety reminder issued \u2014 team coached to place blade inward per standard."
+    },
+    {
+      "plant": "L1",
+      "text": "Macadamia inventory question raised for Monday \u2014 20112 showing zero stock but 20112-Costco available."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Metal detector repeatedly opening on Sollich 2",
+      "summary": "Metal detector on pack line kept triggering false rejects, halting flow.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-10-17T21:20:51.068Z"
+      },
+      "resolution": "Cleared at 15:24 \u2014 \"MD no longer opens, it is working correctly\" (Elizabeth Hernandez)."
+    },
+    {
+      "plant": "L1",
+      "title": "Russel Finex filter clog caused low enrober pressure on Sollich 3",
+      "summary": "First shift left return pump on manual while purging the clog, draining the enrober and causing abnormally low pressure at second shift start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-17T22:01:14.244Z"
+      },
+      "resolution": "Cleared by shift start at 16:01 \u2014 \"Everything seems to be working as it should now\" (William Beattie)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Corn syrup pump motor defective on Sollich 2",
+      "summary": "Pump motor failed inspection at 10:56; maintenance confirmed defective unit requiring replacement but shutting off water supply.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-17T16:56:21.611Z"
+      },
+      "status": "Running manually per Curt's direction at 11:55; replacement scheduled for third shift, no confirmation of completion."
+    },
+    {
+      "plant": "L1",
+      "title": "Butter melting tank heater offline on Sollich 3",
+      "summary": "Kitchen operator noticed tank no longer heating around 20:30; enough caramel inventory remained to run until 22:20 without impact.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-18T03:44:42.546Z"
+      },
+      "status": "William Lopez investigating as of 21:44; production unaffected for second shift."
+    },
+    {
+      "plant": "L1",
+      "title": "Label machine printer error on Sollich 2",
+      "summary": "Printer error during MMK caramel dark label setup that maintenance could not clear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-10-18T13:29:04.068Z"
+      },
+      "status": "Error persists as of 07:29; Troy Baxter notified."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal detector installation incomplete on Sollich 3",
+      "summary": "Metal detector installation requires two maintenance techs but only one available during weekend cleaning.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-10-18T13:27:21.152Z"
+      },
+      "status": "Installation deferred to Monday; check weigher, label machine, capper, and x-ray passed ATP and ready."
+    },
+    {
+      "plant": "L3",
+      "title": "Drive shaft producing metal dust on ML4",
+      "summary": "Maintenance traced metal dust contamination to the drive shaft; repair requires first shift expertise.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-18T01:18:48.315Z"
+      },
+      "status": "Source identified as of 19:18; Nelson Cook and Nathan Ruiz tagged to address Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "Fine dust observed on strips after demolding on ML4",
+      "summary": "Significant amounts of fine dust still visible on chocolate strips following demolding step.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-10-18T11:08:39.654Z"
+      },
+      "status": "Observed during visual inspection at 05:08; no corrective action taken."
+    },
+    {
+      "plant": "L3",
+      "title": "Pre-heating cabinet chain unsynchronized on ML4",
+      "summary": "Chain synchronization issue prevented completion of pre-heating cabinet cleaning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-18T14:00:57.985Z"
+      },
+      "status": "Unable to finish cleaning as of 08:00."
+    },
+    {
+      "plant": "L3",
+      "title": "Belt to TG5 bent and won't close on ML4",
+      "summary": "Exit belt door from gondola to TG4/TG5 is bent and does not close properly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-18T14:36:03.759Z"
+      },
+      "status": "Bent door noted at 08:36 and confirmed by Kavin at 09:40; flagged for Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "Gondola failed cleaning inspection on ML4",
+      "summary": "Gondola section did not pass visual due to excess chocolate and improperly cleaned belts; ATP test not performed but unit reassembled per supervisor direction for Monday testing.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-18T15:03:30.794Z"
+      },
+      "status": "Failed visual at 09:03; gondola belts not reassembled and require Monday completion per Kavin at 09:40."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow-wrap centerlines not matching on Truffle Line",
+      "summary": "Total centerlines 4 showing misalignment on flow-wrap machine.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-17T20:48:17.925Z"
+      },
+      "status": "Centerline mismatch noted at 14:48 and again at 22:27; no corrective action logged."
+    },
+    {
+      "plant": "L3",
+      "title": "Tube holder does not fit plastic liner opening",
+      "summary": "Stainless steel tube holder for pump tube is too large to fit through the plastic liner opening.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-10-17T21:59:32.992Z"
+      },
+      "status": "Fitment issue documented at 15:59 with photos; no workaround or fix identified."
+    },
+    {
+      "plant": "L3",
+      "title": "Vibration 4 and preheat 2 failed visual inspection on ML4",
+      "summary": "PTL pump #2 components did not pass visual during level 2 cleaning; team had already left site.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-18T05:15:00.085Z"
+      },
+      "status": "Area pending as of 23:15; cleaning team offsite."
+    }
+  ]
+}

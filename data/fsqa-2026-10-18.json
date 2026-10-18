@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-18",
+  "headline": {
+    "eyebrow": "Metal contamination",
+    "text": "L3 ML4 metal dust from drive shaft visible on product strips \u2014 source identified, *first shift* deferred to Monday for repair."
+  },
+  "summary": "One active metal-contamination risk at L3 ML4: drive shaft shedding metal dust onto product post-demold. L3 also has two cleaning failures \u2014 gondola assembled despite failing visual/ATP, vibration 4 and preheat 2 left pending after crew departure. L1 S2 metal detector malfunctioned briefly on second shift, self-resolved within minutes.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Metal dust from ML4 drive shaft visible on product",
+      "summary": "Drive shaft shedding metal dust; visible on strips after demolding at 05:08 \u2014 maintenance deferred repair to first shift Monday due to complexity.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-18T01:18:48.315Z"
+      },
+      "status": "Open \u2014 source identified as drive shaft, maintenance awaiting first shift Monday for repair; no indication product was isolated."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector malfunction",
+      "summary": "Metal detector intermittently opening (false rejects) on second shift at 15:20 \u2014 self-resolved by 15:24 with no maintenance intervention.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-10-17T21:20:51.068Z"
+      },
+      "status": "Resolved on shift \u2014 functioning correctly by 15:24, no further issues reported."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 vibration 4 and preheat 2 cleaning verification incomplete",
+      "summary": "Vibration 4 and preheat 2 failed visual inspection during post-op; cleaning team offsite, area left pending at 23:15.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-18T05:15:00.085Z"
+      },
+      "status": "Pending \u2014 preheat 2 subsequently passed at 05:40; vibration 4 status unconfirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola failed visual and ATP, assembled anyway",
+      "summary": "Gondola section failed visual (excess chocolate, belts not clean) and ATP not performed \u2014 supervisor directed assembly for Monday testing despite cleaning failure.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-18T15:03:30.794Z"
+      },
+      "status": "Open \u2014 gondola belts require reassembly Monday morning per maintenance; cleaning verification incomplete."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider logging S2 metal-detector self-clears in maintenance system \u2014 today's 4-minute event resolved without root cause investigation."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding drive-shaft inspection to ML4 pre-start checklist \u2014 today's metal-dust event marks the second maintenance deferral noted in this shift's communications."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 post-op cleaning hand-off protocol \u2014 gondola assembled for production despite failing visual and ATP, creating Monday startup risk."
+    }
+  ]
+}
