@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-19",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L1 cleared *4 machine problems* but still waiting on hot water capacity and a labeler fix \u2014 L2 and L3 each have one active jam."
+  },
+  "per_plant_summary": {
+    "L1": "Four equipment problems resolved inside the shift \u2014 corn syrup pump, demolder sensor, X-ray detection, and butter tank heating. Two remain open: dishwashing hot water capacity shortfall and a labeler in Sollich 2 awaiting vendor support.",
+    "L2": "Both lines started clean. FFS had two brief stoppages for film and alignment, both cleared in minutes. ML2 cross conveyor is jamming every 20 minutes with no fault code \u2014 Dave Ruff investigating at window close.",
+    "L3": "ML1 and ML4 both ran through the window. ML1 has a belt alignment flag at 13:07 waiting on maintenance. ML4 replaced a ripped sweco screen and cleared a foreign-material find during install."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "X-ray test cards not detecting on Sollich 2",
+      "summary": "System failed verification with test cards at 08:06; product already on line was held for re-inspection.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-19T14:06:00.373Z"
+      },
+      "resolution": "Troy performed corrective maintenance, passed 30 consecutive test-card runs, held product being re-inspected at 08:19."
+    },
+    {
+      "plant": "L1",
+      "title": "Butter tank heating plate not working on Sollich 3",
+      "summary": "Plate calling for hot water but not receiving it; system unable to heat butter reserve.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-19T17:58:55.122Z"
+      },
+      "resolution": "Cleared at 12:29 \u2014 \"Found that circuit breaker was tripped and had to be reset. Everything is heating up like it should now.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Corn syrup pump not working, filled manually",
+      "summary": "Kitchen 2 pump failed overnight; missing gray roller on one side prevented automatic filling.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-19T11:04:33.918Z"
+      },
+      "resolution": "Troy replaced missing roller at 05:20 \u2014 \"I have fixed this. the problem was that there wasn't a roller on the one side.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Demolder sensor fell out on Sollich 2",
+      "summary": "Sensor dislodged before startup; Justin reinstalled and line was ready to run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-19T11:06:56.824Z"
+      },
+      "resolution": "Cleared at 05:06 \u2014 \"Justin fixed and line is ready\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L1",
+      "title": "Cap machine rejecting all jars on Sollich 2",
+      "summary": "Lid applicator rejected every jar starting at 08:26; Troy and maintenance responded.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-19T14:26:01.213Z"
+      },
+      "resolution": "Cleared at 08:51 \u2014 \"The cap machine is no longer rejecting\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line down for loose film roll",
+      "summary": "Roll came loose; crew added a film frame to secure it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-19T13:00:07.766Z"
+      },
+      "resolution": "Cleared at 07:04 \u2014 \"line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line stopped to adjust white line alignment",
+      "summary": "Registration adjustment needed during run; brief stoppage.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-10-19T16:59:57.5Z"
+      },
+      "resolution": "Cleared at 11:01 \u2014 \"Line is back up and running\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L3",
+      "title": "North sweco screen ripped on ML4",
+      "summary": "Screen failed during operation; replacement needed from spare inventory.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-19T17:06:56.832Z"
+      },
+      "resolution": "Replaced at 12:13 \u2014 \"Screen done \u2705 side north\" (Mirella Mamani). Spare pulled from aisle 11-60E."
+    },
+    {
+      "plant": "L3",
+      "title": "Foreign material found in ML4 sweco during install",
+      "summary": "Cookie pieces discovered inside bagged and ATP-passed sweco screen at 13:01; FSQA and Kevin Del Valle called.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-10-19T19:01:34.505Z"
+      },
+      "resolution": "Cleared at 13:15 \u2014 Kevin inspected, confirmed cookie pieces, \"the EE clean it and removed all the pieces before installing it.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Butter system found off, butter and coconut hose frozen in Kitchen 1",
+      "summary": "System was turned off overnight; butter in reserve tank solidified and coconut line also froze, delaying caramel cooking at startup.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Kitchen",
+        "time_utc": "2026-10-19T11:40:56.173Z"
+      },
+      "status": "Reported at 05:40 with photos; no follow-up resolution posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Labeler Area A producing wrinkled labels on Sollich 2",
+      "summary": "Labels coming out wrinkled; Chris Jeffs working on machine, Troy submitted service request to All Fill vendor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-19T14:50:48.504Z"
+      },
+      "status": "Service request submitted at 12:32, awaiting vendor response as of window close."
+    },
+    {
+      "plant": "L1",
+      "title": "No hot water in dishwashing area 2",
+      "summary": "Dishwashing station not receiving hot water; investigation found plant pulling too much hot water across all lines, insufficient capacity for wash area.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-19T17:37:45.422Z"
+      },
+      "status": "Root cause identified at 11:56 \u2014 boiler pressure check shows demand exceeds supply. No fix posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cross conveyor belt stopping intermittently, no fault code",
+      "summary": "Belt stops every 20 minutes causing chocolate bars to pile up; HMI shows gray (no fault), ramp conveyor stays down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-10-19T17:07:05.506Z"
+      },
+      "status": "Dave Ruff on-site monitoring as of 11:54, unsure why belt stops without fault. Line running but issue recurring."
+    },
+    {
+      "plant": "L3",
+      "title": "Belt C6 shifted, alarm triggered on ML1 flow-wrap",
+      "summary": "Conveyor belt misaligned, triggering monitoring alarm; maintenance adjustment required.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-10-19T19:07:23.221Z"
+      },
+      "status": "Alarm triggered at 13:07, maintenance called. No follow-up posted by window close."
+    }
+  ]
+}

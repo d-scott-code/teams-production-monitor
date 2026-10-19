@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-19",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S2 jar line held for *X-ray failure* \u2014 test cards not detected, product re-inspection underway."
+  },
+  "summary": "One active hold at L1 S2 after X-ray system failed to detect test cards at startup; Troy repaired and verified 30 consecutive passes, 100% of suspect product undergoing re-inspection. Three foreign material flags today: L3 ML4 found cookie pieces in a cleaned sweco before installation, L1 S4 belt lamination peeling at seam, and cardboard box staged in L1 S4 open production area.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 jar line X-ray failure \u2014 product held for re-inspection",
+      "summary": "X-ray system failed to detect test cards correctly at startup; maintenance repaired and re-verified, 100% of product that passed through during the fault window is being re-inspected through the X-ray before QA release.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-19T14:06:00.373Z"
+      },
+      "status": "On hold pending completion of 100% re-inspection and QA disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 THG belt lamination peeling at seam",
+      "summary": "Lamination coming off THG Belt #1 where it was seamed, creating potential foreign material risk; Lolo trimmed the sticking area, sanitized, and released to operations; maintenance aware of ongoing belt issue.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Lolo Bencomo",
+        "time_utc": "2026-10-19T13:07:23.601Z"
+      },
+      "status": "Trimmed and sanitized for continued use; maintenance tracking for replacement."
+    },
+    {
+      "plant": "L3",
+      "title": "Foreign material found in cleaned sweco before installation",
+      "summary": "ML4 crew found cookie pieces inside a north sweco screen that had passed ATP and visual inspection; Kevin inspected and confirmed cookie pieces, equipment operator cleaned and removed all pieces before installing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-10-19T19:01:34.505Z"
+      },
+      "status": "Resolved \u2014 foreign material removed before equipment placed in service."
+    },
+    {
+      "plant": "L1",
+      "title": "Cardboard box in S4 open production area",
+      "summary": "Mary flagged cardboard box in open candy production area as foreign material risk and requested removal.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-19T13:37:44.953Z"
+      },
+      "status": "Open \u2014 removal requested from supervisor."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S2 product left on line and printers running over weekend",
+      "summary": "Day shift found final product left on S2 line and Matrix 6-8 printers not shut down over weekend; Brandon clarified product was intentionally held pending Monday order decision but printers should have been off.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-19T11:20:34.324Z"
+      },
+      "status": "Resolved for this instance; supervisor coaching overnight team on shutdown procedures."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 kitchen area dirty after overnight shift",
+      "summary": "S1 Kitchen found dirty with sticky floor at day-shift startup; butter system was off and coconut hose not cleaned, both frozen; Brandon confirmed will address with overnight team.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S1 Kitchen",
+        "time_utc": "2026-10-19T11:46:41.797Z"
+      },
+      "status": "Resolved for production; supervisor follow-up scheduled with overnight crew."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 kettles overflowed and burned after caustic wash",
+      "summary": "Marcos found recently washed kettles with burned material on outside, indicating overflow during or after caustic cleaning; root cause under investigation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-19T13:53:46.083Z"
+      },
+      "status": "Open \u2014 investigation ongoing with kitchen and sanitation teams."
+    },
+    {
+      "plant": "L1",
+      "title": "No hot water in wash area 2 during production",
+      "summary": "Dishwashing area 2 lost hot water supply; maintenance investigation found plant-wide hot water demand exceeded boiler capacity, starving sanitation areas.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-19T17:37:45.422Z"
+      },
+      "status": "Root cause identified as capacity constraint; production adjusting usage to restore sanitation supply."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 butter tank heating plate dirty",
+      "summary": "Katya and maintenance found butter tank heating plate dirty while troubleshooting non-working heater; circuit breaker had tripped.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-19T17:58:55.122Z"
+      },
+      "status": "Heating resolved via breaker reset; plate cleanliness flagged for sanitation follow-up."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review weekend shutdown checklist to explicitly include product removal and printer shutdown verification \u2014 based on S2 product and running printers found Monday morning."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider installing flow monitors or low-pressure alarms on dishwashing hot water supply \u2014 based on today's discovery that production demand starved wash area 2 without immediate detection."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding a final visual inspection immediately before equipment installation, even after cleaning verification passes \u2014 based on ML4 sweco foreign material that bypassed ATP and initial visual checks."
+    }
+  ]
+}
