@@ -1,0 +1,227 @@
+{
+  "date": "2026-10-20",
+  "headline": {
+    "eyebrow": "Metal in product",
+    "text": "L1 Matrix 9 *screw* caught by X-ray after bagging \u2014 investigation open on equipment source."
+  },
+  "summary": "Two metal events at L1: screw found in bagged product from Matrix 9, and S3 metal detector non-functional for 36 minutes during production. Six sanitation re-cleans across L1 and L3 after failed ATP or visible residue.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Kirkland date code error \u2014 6 pallets",
+      "summary": "Wrong best-by date printed on flow-wrap (31.03.26 vs correct 20.07.27); 6 pallets isolated pending rework decision.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-20T13:39:52.944Z"
+      },
+      "status": "On hold; quantity and rework plan under review."
+    },
+    {
+      "plant": "L2",
+      "title": "Plastic container in supplier cookie box",
+      "summary": "Grinding team found plastic container inside inbound cookie box; assumed supplier filling tool; box isolated.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-10-20T06:03:45.183Z"
+      },
+      "status": "Box on hold; supplier notification pending."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S3 metal detector non-functional 36 minutes",
+      "summary": "Air system turned off during belt inspection; metal detector did not reject from 08:01 to 08:37 during production run.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-10-20T14:39:32.142Z"
+      },
+      "status": "Resolved at 08:37; 36 minutes of product ran without metal detection. Disposition TBD."
+    },
+    {
+      "plant": "L1",
+      "title": "Screw in Matrix 9 bagged product",
+      "summary": "X-ray caught screw in flow-wrapped bag from Matrix 9 during QA check; line lead inspecting equipment for source.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-20T16:00:49.977Z"
+      },
+      "status": "Investigation open; equipment inspection in progress to locate source."
+    },
+    {
+      "plant": "L3",
+      "title": "Cookie debris in cleaned sweco",
+      "summary": "ML4 crew found cookie pieces inside sweco during installation; sweco was bagged with passed ATP/visual tag; cleaned before install.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-10-19T19:01:34.505Z"
+      },
+      "status": "Resolved \u2014 QA inspected, crew removed all debris before installation."
+    },
+    {
+      "plant": "L3",
+      "title": "Belt fraying before ML4 metal detector",
+      "summary": "Significant fraying observed on conveyor belt upstream of metal detector; potential for fiber/belt material entry into product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-20T12:23:53.759Z"
+      },
+      "status": "Maintenance working on replacement at window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 metal detector constant false rejects",
+      "summary": "Metal detector continuously triggering and rejecting product; no metal confirmed on inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-19T20:36:12.527Z"
+      },
+      "status": "Ongoing \u2014 line supervisor notified for troubleshooting."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 guillotine cut variation",
+      "summary": "Intermittent piece-size variation on one THG row; belts too close together and guillotine belt slightly crooked.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-20T16:21:54.403Z"
+      },
+      "status": "Belts gapped, rollers cleaned; awaiting test run to confirm fix."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 insufficient chocolate coverage",
+      "summary": "Multiple pieces showing thin/bare spots on bottom; operator adjusting enrober settings.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-20T15:41:21.867Z"
+      },
+      "status": "Operator making real-time adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycogen gauge stuck at 1",
+      "summary": "Glycogen gauge reading only 1; maintenance called to troubleshoot sensor or connection.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-20T11:21:28.609Z"
+      },
+      "status": "Open \u2014 maintenance notified."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 Matrix 3 multiple ATP failures",
+      "summary": "Matrix 3 failed ATP three times on bottom-of-mold testing after initial sign-off; re-cleaned each time.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Penny Akins",
+        "time_utc": "2026-10-20T00:59:06.121Z"
+      },
+      "status": "Resolved after third clean; root cause of repeated failure unknown."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Matrix 5 ATP failure",
+      "summary": "Matrix 5 failed ATP on bottom-of-mold after initial pass-off; re-cleaned and retested.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Penny Akins",
+        "time_utc": "2026-10-20T01:00:04.533Z"
+      },
+      "status": "Resolved after re-clean."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 pistachio residue after cleaning",
+      "summary": "Pistachios visible on Matrix top area after cleaning sign-off; area re-cleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-20T07:25:34.634Z"
+      },
+      "status": "Resolved \u2014 area re-cleaned and confirmed clear."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 refrigerator 2 not cleaned",
+      "summary": "Cooling cabinet 3 (listed as refrigerator filling 2) marked complete but not cleaned; discovered at 3rd shift startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-20T06:19:05.884Z"
+      },
+      "status": "Resolved \u2014 QA passed after 1st shift completed clean."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 pre-heat cabinet incomplete clean",
+      "summary": "Pre-heat cabinet marked complete but visible residue remained; 3rd shift had to re-clean before startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-20T06:52:07.568Z"
+      },
+      "status": "Resolved \u2014 cabinet re-cleaned and passed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chocolate flush failures \u2014 3 totes",
+      "summary": "Oil flush on changeover failed QA twice (still showing dark chocolate); required third tote of oil to clear system.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-20T08:24:45.521Z"
+      },
+      "status": "Resolved after third flush; passed QA and moved to chocolate push."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "S3 Tunnel 1 allergen test passed",
+      "summary": "Tunnel 1 belt held pending allergen verification after cleaning; test passed, released to production.",
+      "severity": "low",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-20T05:02:00.673Z"
+      },
+      "status": "Resolved \u2014 allergen test passed, line released."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding daily metal-detector air-system confirmation to S3 pre-op \u2014 today's 36-minute non-function resulted from air being turned off during belt inspection."
+    },
+    {
+      "plant": "L1",
+      "text": "Review Matrix ATP procedure after three failures on Matrix 3 and one on Matrix 5 following initial sign-off \u2014 bottom-of-mold testing scope may need clarification."
+    },
+    {
+      "plant": "L1",
+      "text": "Add Matrix 9 hardware inspection to startup checklist \u2014 today's screw in bagged product suggests equipment integrity check gap."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 cleaning sign-off process \u2014 two sections marked complete but not cleaned (pre-heat cabinet, cooling cabinet 3) delayed 3rd shift startup."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider oil-flush target spec or visual standard for ML4 chocolate changeovers \u2014 three totes required today vs typical one or two."
+    }
+  ]
+}

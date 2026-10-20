@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-20",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 1 chiller breaker tripped at 18:14, forcing a *2.5-hour reheat* \u2014 back in production at 20:37."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 1 chiller failure drove the longest outage. Sollich 3 had a 36-minute gap where the metal detector wasn't rejecting after air was turned off during belt inspection. Sollich 4 cutting variation partially addressed. Six date-code and foreign-material quality issues are open.",
+    "L2": "Quiet shift. Belt fraying flagged before the metal detector on ML2; maintenance working. Supplier sent a plastic container inside a cookie box \u2014 isolated and on hold.",
+    "L3": "ML4 startup delayed to 2nd shift after 1st-shift cleaning quality misses and repeated oil-flush failures. ML1 completed the 35g-to-60g changeover. MFM sealer was down 90 minutes but sealing defects continue post-restart."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "L3 will send 4 employees Tuesday for label rework, 7 Wednesday through Friday to clear the pecan backlog."
+    },
+    {
+      "plant": "L2",
+      "text": "Emergency order placed for WIP reusable boxes (41123); using substitute 40402 in the interim."
+    },
+    {
+      "plant": "L3",
+      "text": "One spare sweco screen pulled from inventory; four 30-inch and five 40-inch screens remain on aisle 11-60E."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 chiller breaker tripped, forced reheat",
+      "summary": "Main breaker tripped at 18:14, HMI went dark; chocolate solidified and required two reheat cycles before stirrer would turn.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-10-20T00:14:28.872Z"
+      },
+      "resolution": "Caleb reset breaker at 18:24; Dakota completed reheats and brought chocolate back into program by 20:33; line running and in temper at 20:37."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 THG bent fingers flinging caramel",
+      "summary": "Caramel being flung inside the THG; maintenance found bent fingers and one crooked holder.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-20T03:43:02.163Z"
+      },
+      "resolution": "Caleb replaced 5 outer, 2 inner fingers and 1 holder; reassembled and tested by 22:52; Delia confirmed \"working properly\" at 23:00."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 circuit breaker tripped on heating",
+      "summary": "Circuit breaker tripped; equipment wasn't heating.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-19T18:29:38.081Z"
+      },
+      "resolution": "Breaker reset at 12:29; \"everything is heating up like it should now.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Expired condensed milk (10071) disposed",
+      "summary": "Most inventory expired August/September; only 173 gallons usable with tomorrow's expiration for the next work order.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-10-19T22:16:35.801Z"
+      },
+      "resolution": "Angelica disposed of 8 LPNs (Aug/Sep dates) and extended 2 LPNs (R428977, R425906) to 10/20; enough for tomorrow's WO."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 stuck POP-UP on kitchen screen",
+      "summary": "Kitchen screen POP-UP wouldn't close; \"No\" button held an off signal from old unlatch bit in the logic.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-10-20T03:12:46.709Z"
+      },
+      "resolution": "Leon removed the unlatch bit at 21:12 \u2014 \"it works, the pop-up closed.\""
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 pistachio pieces on matrix top after clean",
+      "summary": "QA found pistachio residue on S3 matrix top post-sanitation.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-20T07:25:34.634Z"
+      },
+      "resolution": "Team re-cleaned the area; Luis confirmed \"we already re-clean that area\" at 03:44."
+    },
+    {
+      "plant": "L2",
+      "title": "Supplier foreign material in cookie box",
+      "summary": "Plastic container found inside a cookie box; appears to be a supplier filling tool.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jose Cabrera",
+        "time_utc": "2026-10-20T06:03:45.183Z"
+      },
+      "resolution": "Box placed on hold at 00:03."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM sealer not reaching temperature",
+      "summary": "Sealer temp wouldn't climb high enough to seal pouches; line down from start of shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-19T23:01:40.735Z"
+      },
+      "resolution": "Maintenance adjusted tightness and cleaned heads; Shane reported \"line is up and running now\" at 18:49."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 north-side sweco foreign material at install",
+      "summary": "Cookie pieces found inside a sweco during installation despite passing ATP and being bagged/tagged.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-10-19T19:01:34.505Z"
+      },
+      "resolution": "Kevin inspected; EE cleaned and removed all pieces before installing at 13:15."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 buffer tank milk-chocolate carryover",
+      "summary": "Dark chocolate flush showed milk chocolate streaks; prior shift did white-chocolate reheat before cleaning pipes.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-19T21:32:26.673Z"
+      },
+      "resolution": "Daniel reported \"no longer seeing milk chocolate during the flush\" at 18:07."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM conveyor C9 stopped",
+      "summary": "Conveyor C9 not moving at start of 1st shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-10-20T12:38:34.548Z"
+      },
+      "resolution": "Nathan power-cycled the VFD at 06:39 \u2014 \"VFD fault and needed to be power cycled.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 metal detector constantly triggering",
+      "summary": "Metal detector continuously rejecting product into the bin.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-19T20:36:12.527Z"
+      },
+      "status": "Line supervisor notified at 14:36; no resolution posted."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 wrong best-by date on 6 pallets",
+      "summary": "Both Matrix 9 and Matrix 10 coded bags with incorrect BB dates; 6 pallets affected.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-20T13:34:54.773Z"
+      },
+      "status": "Team beginning rework; date error identified at 07:34."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 Kirkland date-code mismatch on hold",
+      "summary": "Bag printed 31.03.26; tray label shows correct date 20.07.27; discrepancy discovered during QA check.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-20T13:39:52.944Z"
+      },
+      "status": "Affected product on HOLD; determining quantity and corrective action as of 07:39."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 metal detector down 36 minutes at start",
+      "summary": "Air pressure was turned off during overnight belt inspection; production ran 08:01\u201308:37 without metal-detector rejection.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-10-20T14:33:23.111Z"
+      },
+      "status": "Maintenance turned air back on; detector rejecting again by 08:37, but 36 minutes of product ran without coverage."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 screw found in Matrix 9 pouch",
+      "summary": "X-ray check caught a screw in one bag during inspection; fell into reject bin as check was conducted.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-20T16:00:49.977Z"
+      },
+      "status": "Area lead examining equipment to determine origin; investigation ongoing as of 10:00."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 labeler malfunction",
+      "summary": "Labeler generating wrinkled labels; causing accumulation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-10-19T18:32:48.436Z"
+      },
+      "status": "Troy submitted All Fill service request at 12:32; labels improved but not fully resolved by 03:03."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 THG caramel weight/measurement issues",
+      "summary": "Caramel weight out of range; THG measurement variability affecting depositing.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-10-20T10:40:23.188Z"
+      },
+      "status": "Operator working on it; maintenance still addressing measures as of 04:40."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 international pallets shortage",
+      "summary": "No international pallets on-site; 5 pallets of rework waiting for materials.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-20T14:11:11.054Z"
+      },
+      "status": "Trailer in lot; Tiff working to get pallets delivered as of 08:11."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 product cutting variation on one row",
+      "summary": "Intermittent variation in piece size on one cutting row; could be belt movement or program settings.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-20T16:21:54.403Z"
+      },
+      "status": "Erandy opened belt gap, team cleaned rollers/scrapers at 11:31; guillotine belt slightly crooked on east side, maintenance alignment needed."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 belt fraying before metal detector",
+      "summary": "Significant fraying observed on conveyor belt upstream of metal detector during inspection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-20T12:23:53.759Z"
+      },
+      "status": "Maintenance working on it as of 06:23."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 startup delayed to 2nd shift",
+      "summary": "1st-shift cleaning misses (pre-heat cabinet, refrigerator 2) and repeated oil-flush QA failures; on 2nd tote, still step 2 as of 03:39.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-20T06:52:07.568Z"
+      },
+      "status": "Rose announced 2nd shift will start CNC at 09:23; 1st shift finishing south-side push and pre-heat inspection."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tank 1 left unplugged overnight",
+      "summary": "Tank at Dep 3 found cold; dark cream solidified inside, sliders stuck.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-19T21:00:48.697Z"
+      },
+      "status": "Plugged in to warm; 3rd shift washing tonight; using ingredient tank 2 instead."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM ongoing sealing defects post-restart",
+      "summary": "Sealer back online but still producing bags with inadequate seals; operators hand-inspecting to remove defects.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-10-20T01:12:00.383Z"
+      },
+      "status": "Maintenance adjustments made some improvement, but defects continue as of 19:12; staff manually removing bad units."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 belt fraying before metal detector",
+      "summary": "Significant fraying on TG5 belt before metal detector noticed during inspection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-20T12:23:53.759Z"
+      },
+      "status": "Maintenance working on it as of 06:23."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycogen gauge reading 1",
+      "summary": "Glycogen gauge stuck at 1; not reading properly.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-20T11:21:28.609Z"
+      },
+      "status": "Maintenance called at 05:21; no update posted."
+    }
+  ]
+}
