@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-21",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 truffle line was down *7 hours* on wire mesh failure \u2014 back online by 11:42 after full replacement."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel cluster on Sollich 4 with jamming resolved by tunnel temp adjustment at 22:38. Sollich 4 kitchen ran out of caramel twice due to 55-minute cook times and steamer system faults \u2014 back cooking by 08:00. Third shift started KKL macadamia clusters on Sollich 3 with brief steam/caramel shortage, cleared by 07:52. Recurring salt spec issue flagged on one pallet sent to rework.",
+    "L2": "L2 started up for Hershey 8g truffles on third shift with chocolate push complete by 03:31. First shift deposited with caramel starting 09:31, paused briefly at 09:49 for clogged nozzles and at 11:02 for blade check \u2014 both cleared inside 20 minutes.",
+    "L3": "L3 molding line 1 ran 35g product with brief V1/V2 display mismatch, cleared by 10:20 when warehouse delivered correct version. Truffle line down from 02:08 to 11:42 on wire mesh failure \u2014 three breaks found, full mesh replaced, fuses replaced. ML4 changeover to Feastables consumed most of the window with mold jams, inclusion mixer faults, and depositor 4 heating issues \u2014 plain bars depositing by 08:32."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Foreign material found on Sollich 3 \u2014 hard plastic fragment, possibly from tray edge, during KKL mac cluster run at 02:52."
+    },
+    {
+      "plant": "L3",
+      "text": "During truffle line wire mesh replacement, maintenance found 1/2 inch chocolate buildup on return trough."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 depositor 4 still showing tempering device faults at end of window; MLC was reset at 11:24."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 Kitchen S3 steam issue causing caramel shortage",
+      "summary": "Circuit overload tripped and kettle 1 lid not fully closed; 25 minutes of caramel remaining.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-21T13:02:57.244Z"
+      },
+      "resolution": "Cleared at 07:52 \u2014 have caramel and line up and running (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 East-side lines jamming before cutter",
+      "summary": "Two lines kept flopping over and jamming; pieces too tall due to tunnel temperature too low.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-21T03:55:00.736Z"
+      },
+      "resolution": "Cleared at 22:38 \u2014 operator raised Tunnel 1 temperature and issue improved (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 Kitchen S4 steamer system not working",
+      "summary": "Ran out of caramel twice due to 55-minute cook times, then steamer system failed during caustic clean; motor turning off and on.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-10-21T08:27:42.668Z"
+      },
+      "resolution": "Cleared by 08:00 \u2014 QA passed carastar and kettler approved to begin cooking (Mary Montilla)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 clogged nozzles at depositor",
+      "summary": "Stopped depositing with caramel due to a few clogged nozzles.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-21T15:49:32.65Z"
+      },
+      "resolution": "Cleared at 10:08 \u2014 back depositing (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 line down for blade check",
+      "summary": "Line down for maintenance to check the blades.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-21T17:02:38.208Z"
+      },
+      "resolution": "Cleared at 11:06 \u2014 line back up (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jams in pre-heating cabinet",
+      "summary": "Bent rails in pre-heat cabinet causing mold jams during Feastables changeover.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-20T21:04:59.678Z"
+      },
+      "resolution": "Cleared at 00:55 \u2014 mold jam fixed, aligned both sides rails, replaced bent rails (Jose Vasquez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line wire mesh broken in enrober",
+      "summary": "Wire mesh broken in 2-3 places during reheat; line down from 02:08, maintenance replaced individual wires then determined full mesh replacement needed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-10-21T08:08:04.242Z"
+      },
+      "resolution": "Cleared at 11:42 \u2014 new wire mesh installed, fuses replaced on enrober, product at enrober (Rich Brierley)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 heating cabinet evacuation chain position lost",
+      "summary": "Heating cabinet evacuation conveyor lost zero and wouldn't jog manually during changeover to Feastables.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-10-20T21:48:01.352Z"
+      },
+      "resolution": "Cleared at 07:06 \u2014 heating cabinet back in good position, ran 15 indexes properly (Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 inclusion mixer not running in auto",
+      "summary": "Inclusion mixer (brabender) giving faults when trying to run in auto mode, blocking capture test.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-21T05:46:25.135Z"
+      },
+      "resolution": "Cleared at 07:15 \u2014 inclusion system now working in auto, performing capture test; line lead started system as regular and everything worked (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 display version mismatch V1 vs V2",
+      "summary": "Displays received were V1 but pallet label said V2; QA required V2, line had to stop until correct version found.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-21T16:01:16.503Z"
+      },
+      "resolution": "Cleared at 10:20 \u2014 warehouse brought V2 displays, depositing chocolate again (Grey Boscan)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 recurring salt specification miss",
+      "summary": "Pallet from third shift had very little salt per spec, going to rework to be sent to L3 for blending; Curt notes this is the second time this issue has occurred.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-21T15:06:44.567Z"
+      },
+      "status": "Pallet placed in rework status as of 09:06; Curt asked for corrective action plan at 10:51."
+    }
+  ]
+}

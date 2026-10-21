@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-21",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "Hard plastic fragment found in *L1 S3 jar* during production \u2014 personnel caught it, investigation open."
+  },
+  "summary": "Two active holds: L1 pallet with low salt (second occurrence this month) held for rework at L3, and L1 V2 Mexico macadamia labels held for regulatory non-compliance. L3 truffle line down most of 3rd shift for wire mesh replacement after 1/2 inch chocolate build-up caused equipment failure.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "V2 Mexico macadamia labels on regulatory hold",
+      "summary": "All V2 labels for Mexico macadamia clusters fail Mexico labeling requirements and cannot be used; affected LPNs flagged in NetSuite, QA hold tags requested.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-10-21T13:13:04.375Z"
+      },
+      "status": "Hold tags pending; L1 will run V1 labels then switch to US market to avoid using non-compliant V2."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 pallet held for low salt content",
+      "summary": "Third-shift pallet flagged by day-shift QA for salt below spec; will be mixed with adequate-salt product at L3 for rework \u2014 this is the second occurrence this month.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-21T15:06:44.567Z"
+      },
+      "status": "On hold pending rework at L3."
+    },
+    {
+      "plant": "L2",
+      "title": "Chocolate barrels in heating cabinet pending QA inspection",
+      "summary": "Multiple barrels of item 10200 in ML2 heating cabinet require one-by-one QA inspection after one barrel was rejected for wrong appearance and discarded.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-10-21T14:19:42.638Z"
+      },
+      "status": "Barrels still cold; QA will inspect each when pulled to line."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Hard plastic fragment found in S3 jar",
+      "summary": "Production personnel identified foreign material \u2014 hard plastic, possibly from tray edge \u2014 inside a jar during run; QA notified, piece isolated.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karen Velastegui",
+        "time_utc": "2026-10-21T08:52:44.577Z"
+      },
+      "status": "Investigation open; no contamination path identified yet."
+    },
+    {
+      "plant": "L3",
+      "title": "Wrong flowwrap roll found on ML4 TG5",
+      "summary": "Previous product's flowwrap film still mounted on TG5 at start of new run; removed before any product wrapped.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-10-21T14:50:26.872Z"
+      },
+      "status": "Resolved \u2014 roll removed, no product affected."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 chocolate barrels rejected for quality",
+      "summary": "One barrel of item 10200 rejected and discarded for wrong appearance; compatible chocolate 10226 substituted, new WO created.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-21T12:27:05.412Z"
+      },
+      "status": "Rejected barrel discarded; additional barrels in heating cabinet await inspection."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 east-side lines: recurring height variance",
+      "summary": "Two lines on S4 east side ran tall pieces causing jams and rejects; operator raised tunnel temp and resolved, but this is a recurring issue.",
+      "severity": "low",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-21T03:55:00.736Z"
+      },
+      "status": "Resolved by raising Tunnel 1 temperature."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 checkweigher rejecting bags weighed 2-at-a-time",
+      "summary": "Checkweigher accuracy issue causing false rejects; maintenance adjusted arm speed during pause to clear accumulation.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-21T12:40:26.425Z"
+      },
+      "status": "Adjustment made; 6 bins of accumulation remained when makeup ran out on matrix 6."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Truffle line: 1/2 inch chocolate build-up caused wire mesh failure",
+      "summary": "During wire mesh replacement, maintenance discovered 1/2 inch chocolate build-up on return trough \u2014 cleaning gap led to mesh snagging and breaking in 6+ places.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-10-21T14:43:12.397Z"
+      },
+      "status": "Resolved \u2014 new wire mesh installed, build-up cleaned; line down 3rd shift into 1st shift for repair."
+    },
+    {
+      "plant": "L1",
+      "title": "Cleaning area found dirty at shift start",
+      "summary": "Sanitation staging area found in unsatisfactory condition by incoming crew; photo documented.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-21T13:14:20.13Z"
+      },
+      "status": "Open \u2014 supervisors notified."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding salt content verification to S4 line startup or early-run QA sampling protocol \u2014 based on today's pallet hold and Curt's note that this is the second low-salt occurrence this month."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider visual inspection protocol for barrel chocolate before use \u2014 based on today's rejection and discard of item 10200 barrels for wrong appearance at ML2."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding enrober return trough inspection to truffle line cleaning checklist \u2014 based on today's wire mesh failure caused by 1/2 inch chocolate build-up that went undetected during cleaning."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding film verification to ML4 TG changeover checklist \u2014 based on today's wrong flowwrap roll found still mounted on TG5 at product start."
+    }
+  ]
+}
