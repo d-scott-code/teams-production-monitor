@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-22",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "Plastic shavings found at *two* lines \u2014 L2 ML2 mold wear and L1 S3 bin-frame contact \u2014 both addressed with cleaning and process controls."
+  },
+  "summary": "One active hold for insufficient salt on L1 S4. Two foreign-material events: L2 ML2 found plastic shavings from mold wear in catch trays, cleaned and monitored; L1 S3 chocolate buildup caused MD bin scraping, producing plastic shavings, floor cleaned and added to CILT. One sanitation gap: L1 cleaning crew missed lower pipe removal.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Partial pallet held for insufficient salt",
+      "summary": "Partial pallet of S4 product placed on hold due to insufficient salt distribution on finished pieces.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-22T06:28:52.347Z"
+      },
+      "status": "On hold pending QA disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Plastic shavings from MD bin scraping metal frame",
+      "summary": "S3 metal detector bin scraping against frame due to chocolate buildup on floor under wheels, causing plastic to break off and fall into bin; product runs through MD again after rejection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-22T14:14:47.942Z"
+      },
+      "status": "Floor cleaned, buildup removed, bin clearance restored; added to CILT checklist to prevent recurrence."
+    },
+    {
+      "plant": "L2",
+      "title": "Plastic shavings from mold wear found in catch trays",
+      "summary": "Plastic pieces found at bottom of ML2 catch trays near demolder, believed to be shavings from mold wear; no product contamination observed as material was outside mold area.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-22T10:29:16.819Z"
+      },
+      "status": "Catch trays cleaned out, line running, monitoring frequency increased per FSQA direction."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S4 pump speed changed below spec by operator",
+      "summary": "Unidentified Kitchen operator reduced caramel pump speed (Hz) below established parameters, causing cooling in hopper and intermittent emptying with excessive holes in caramel.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-10-22T16:05:16.772Z"
+      },
+      "status": "Resolved \u2014 pump settings restored to correct values, system running properly."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle guillotine cutting issue causing misshapen pieces",
+      "summary": "Guillotine not cutting properly, pieces moving out of place causing doubles and misshapen pieces affecting Cavannas; operators suspect temperature too cold.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-22T15:38:53.703Z"
+      },
+      "status": "Resolved \u2014 tunnel 1 temperature increased, belt wear identified as root cause per maintenance."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 broken bars at demolder",
+      "summary": "Broken bars demolding on ML4; pulse duration adjusted from 350ms to 320ms; EE inspection stations in place after demolder and Gandola, checkweigher verified to reject underweight broken bars.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-22T02:47:16.057Z"
+      },
+      "status": "Controlled \u2014 pulse duration adjusted, multi-layer inspection and weight rejection in place."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Lower pipes not removed during cleaning",
+      "summary": "Lower pipes on line equipment were not removed during cleaning shift as required by SOP.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-10-22T13:20:09.735Z"
+      },
+      "status": "Open \u2014 flagged to Dakota Adair and Jody Howse for follow-up with cleaning crew."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding MD bin area floor cleaning to daily CILT \u2014 based on today's plastic shavings event where chocolate buildup caused bin-frame contact."
+    },
+    {
+      "plant": "L1",
+      "text": "Review Kitchen operator training on pump speed parameter limits \u2014 based on today's unauthorized adjustment that caused caramel quality issues on S4."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider visual mold wear inspection at start of ML2 shift \u2014 based on today's plastic shavings found in catch trays believed to be from mold degradation."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 demolder pulse duration settings and add to startup verification \u2014 based on today's broken bars issue that required mid-shift adjustment."
+    }
+  ]
+}
