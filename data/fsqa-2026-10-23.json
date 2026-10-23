@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-23",
+  "headline": {
+    "eyebrow": "Packaging breach",
+    "text": "Unwrapped truffle found on L3 line \u2014 *one* piece escaped flow wrapper, caught before case pack."
+  },
+  "summary": "One unwrapped truffle discovered at L3 packaging 07:03 MT; operator caught before case pack. Eight pallets misprint labels on hold at L1 Sollich 3. Changeover sanitation gap at L1 Sollich 2 left product remnants under belts.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "8 pallets misprint labels",
+      "summary": "Labeler photoeye misalignment caused wrong label placement on Sollich 3; 8 pallets isolated, additional pallets at Springville warehouse status unknown.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-23T06:19:49.184Z"
+      },
+      "status": "On hold pending warehouse review and relabel/rework disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Unwrapped truffle on line",
+      "summary": "Single flow-wrapped truffle found without wrapper at pack area 07:03 MT; operator caught before case pack, isolated immediately.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-10-23T13:00:06.092Z"
+      },
+      "status": "Resolved \u2014 piece removed, no product released; root cause unknown, single occurrence."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Missing filling in ML4 bars",
+      "summary": "Low-weight caddies on ML4 packaging area \u2014 bars missing dark filling layer; all underweight 10-bar caddies pulled aside for inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-23T11:04:49.195Z"
+      },
+      "status": "Operators monitoring for missing-fill rejects; isolated caddies held pending QA disposition."
+    },
+    {
+      "plant": "L1",
+      "title": "Insufficient salt on S4 caramels",
+      "summary": "3rd shift flagged caramels from 2nd shift with insufficient salt topping; shift lead inspected pallet and noted issue.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-10-23T05:59:57.398Z"
+      },
+      "status": "Pallet checked by 3rd shift lead; no formal hold, FYI flag only."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Product remnants under Sollich 2 belts",
+      "summary": "12-gram candies and bags found under Matrix 6, 7, 8 belts during 23-gram changeover; prior product not fully cleared before restart.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-23T14:55:19.736Z"
+      },
+      "status": "Resolved \u2014 area cleaned before resuming production; changeover checklist gap flagged."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review Sollich 2 changeover checklist to include under-belt inspection before restart \u2014 based on 12g remnants found during today's 23g setup."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider adding label position verification step after labeler sensor adjustments on Sollich 3 \u2014 based on 8 pallets misprinted after photoeye was knocked back."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding flow-wrap integrity check to ML4 de-molding station checklist \u2014 based on today's unwrapped piece that escaped detection until pack area."
+    }
+  ]
+}
