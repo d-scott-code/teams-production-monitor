@@ -1,0 +1,418 @@
+{
+  "date": "2026-10-24",
+  "headline": {
+    "eyebrow": "Material shortage",
+    "text": "L2 flow-wrap changeover delayed to Monday on missing part; L1 Sollich 2 ran out of wrap stock and will finish *140,000 pieces short* of order"
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran out of jars at 17:26, paused for 90 minutes until Orem warehouse delivery arrived. Sollich 2 exhausted flow wrap inventory mid-shift and will finish 140,000 pieces short of the 302,000-piece order due to on-hold material in Springville. Sollich 4 had a salt spill at 22:14 that required line pause and CILTs; 4 boxes scrapped. Water gun in dishwashing area 2 is splitting and poses a safety risk.",
+    "L2": "Molding Line 2 flow-wrap changeover to Caramel Hearts is incomplete \u2014 maintenance missing a bracket bar that should have been in the kit. Line will not run Saturday; changeover deferred to Monday. Molding Line 3 had recurring label-switch issues through 2nd shift (sensor couldn't read wide rolls); PG19 adjustment at 17:26 resolved. FFS pouch line experienced brief film-adhesion trouble at end of 2nd shift.",
+    "L3": "ML4 depositor 4 consistently built up sensor residue requiring multiple cleaning pauses. Mold insertion tilting issue resolved overnight by limiting fill to half-capacity. At 07:31 1st shift discovered depositor 4 stopped sending dark chocolate inclusion \u2014 more than half the cooler affected, product scrapped. 53 caddies rejected for underweight bars at 01:17, current product back in range. ML1 C1 belt has a significant tear; maintenance checking for spare. Truffle line received coconut oil totes with incompatible valve fittings; 9 of 17 totes can't connect without adapters."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "South tray printer on Sollich 3 was knocked over at 14:18, breaking the sensor connector; Troy replaced with spare and flagged ~12 trays for rework."
+    },
+    {
+      "plant": "L1",
+      "text": "New jar lids arrived warped and initially wouldn't run on the capper; later boxes performed better and issue appears isolated."
+    },
+    {
+      "plant": "L2",
+      "text": "Saturday schedule email attachment shows outdated content from July; Maria/Daniel to correct."
+    },
+    {
+      "plant": "L3",
+      "text": "Sweco on ML1 is showing micro holes and wear; Nathan flagged for monitoring and future replacement."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 jar shortage halted line for 90 minutes",
+      "summary": "Line exhausted jar inventory at 17:26 and sent team to lunch while waiting for emergency delivery from Orem warehouse.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-23T23:08:26.511Z"
+      },
+      "resolution": "Jars arrived from Orem at 19:34, line restarted \u2014 \"Jars are here. We are starting the line again now.\" (William Beattie)"
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 tempering unit fault blocked caramel drain",
+      "summary": "Drain pipe wouldn't heat at 00:03; when attempting to push at 23:00 PSI spiked to 300 and tempering unit 1 faulted.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-24T06:03:53.903Z"
+      },
+      "resolution": "Cleared at 01:25 \u2014 Maintenance reset the fault, pipes reheated, caramel drained successfully and level 2 clean began."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 south tray printer sensor broken in fall",
+      "summary": "Printer was knocked over and landed on the sensor connector, breaking it; approximately 12 trays printed incorrectly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-10-23T20:18:10.629Z"
+      },
+      "resolution": "Cleared at 14:18 \u2014 Troy replaced sensor with spare on hand; flagged affected trays for rework."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 salt spill contaminated product in tunnel",
+      "summary": "Operator dropped salt jar on conveyor belt, covering a batch with excessive salt; line paused for cleanup and CILTs.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-10-24T04:14:48.558Z"
+      },
+      "resolution": "Cleared at 22:29 \u2014 Supervisor pulled all affected product from tunnel 1; 4 boxes packaged were scrapped, no hold inventory."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 caramels bouncing and flipping on belt",
+      "summary": "Caramels transitioning from enrober to pack were bouncing and standing on end, causing Cavanna jams and accumulation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-24T07:46:44.494Z"
+      },
+      "resolution": "Cleared at 01:47 \u2014 Maintenance dropped line speed from 34 to 25 mpm; operator paused to clear bins, then resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 labeler A incompatible with current jars",
+      "summary": "Labeler A wasn't working well with the jar and label combination for MMK caramels.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-10-24T15:33:24.914Z"
+      },
+      "resolution": "Cleared at 09:33 \u2014 \"We have set up labeler B for the MMK caramels for S2 and it's running better.\" (Justin Garner)"
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label-switch sensor couldn't read wide film rolls",
+      "summary": "Flow-wrap sensor repeatedly failed to detect eye-marks on wider-than-spec label rolls (PG11), causing line stops through 2nd shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-23T20:36:04.018Z"
+      },
+      "resolution": "Cleared at 17:49 \u2014 Maintenance adjusted PG19 at 17:26; \"First roll switch after the adjustment goes well.\""
+    },
+    {
+      "plant": "L2",
+      "title": "FFS pouch machine lost correct cut on new film roll",
+      "summary": "After installing a new roll of film at ~15:52, the machine wouldn't assume the correct pouch cut length.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-23T21:52:52.962Z"
+      },
+      "resolution": "Cleared at 16:03 \u2014 \"The pouch looks better!\" after maintenance intervention; no defective product packaged (Marlenis)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 leaking chocolate at nozzle plate",
+      "summary": "Depositor 4 leaked chocolate at the nozzle plate gasket; tightening the bolt didn't stop the leak.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-23T21:32:22.494Z"
+      },
+      "resolution": "Cleared at 16:00 \u2014 Line stopped to check gasket, refilled and tested with no leaks; \"QA checked as well we are starting up.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold insertion tilting and jamming line",
+      "summary": "Mold insertion assembly motor and bracket broke free, causing tilting, back-door opening, and repeated line stops starting at 19:59.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-24T01:59:32.559Z"
+      },
+      "resolution": "Cleared at 02:02 \u2014 Maintenance marked a half-capacity fill line on the chute; \"Issue with mold insertion resolved. New instructions are to not fill new molds beyond half-way mark.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jam at demolding section",
+      "summary": "Line stopped at 11:44 due to mold jam in the demolding area.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-10-23T17:44:24.639Z"
+      },
+      "resolution": "Cleared at 11:48 \u2014 \"Area its clean and mold jam it's fixed. Line star running again.\" (ML4 TG)"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 53 caddies rejected for underweight bars",
+      "summary": "Roughly 53 ten-bar caddies were auto-rejected due to low weight; some bars appeared underweight.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-24T07:17:43.444Z"
+      },
+      "resolution": "Cleared at 01:36 \u2014 \"Current bars coming out of the Demolding belt are within weight range. Operator is making sure none of the low weight caddies make it to the master case.\" (Gina)"
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 hopper seal out of place during inspection",
+      "summary": "Maintenance inspecting the Imperial hopper for leaks found the seal displaced; hopper was removed and washed.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-10-24T12:37:23.111Z"
+      },
+      "resolution": "Cleared at 06:37 \u2014 \"They removed the hopper and washed it and seal was replaced.\" (Jose Vasquez)"
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 multiple brief gondola entrance jams",
+      "summary": "Gondola entrance jammed twice during 1st shift, each time cleared within 2\u20133 minutes.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-24T14:33:56.707Z"
+      },
+      "resolution": "Cleared at 09:39 \u2014 Technicians tested and verified, line back running."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 ran out of flow wrap, will finish 140k short",
+      "summary": "No flow-wrap stock remains in L1; 130,000 pieces available in Springville are on hold due to quality (material breaks easily, weak adhesive). Line will finish ~160,000 of the 302,000-piece order.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-24T09:35:04.421Z"
+      },
+      "status": "Team will run remaining inventory then prepare line for MMK jars. 140,000-piece shortfall confirmed as of 03:52."
+    },
+    {
+      "plant": "L1",
+      "title": "Damaged ingredient containers blocking stir on Sollich 4",
+      "summary": "Multiple ingredient totes arrived with damaged frames and torn netting, making it unsafe or impossible to stir contents.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-10-23T17:21:12.794Z"
+      },
+      "status": "Katya noted at 12:35 that warehouse may need training on handling; no vendor contact or replacement totes confirmed."
+    },
+    {
+      "plant": "L1",
+      "title": "Cooling tunnel 1 belt tear on Sollich 2",
+      "summary": "Lead noticed an issue in tunnel 1 belt at 05:05 on 2nd shift; no details on severity or location.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-24T11:05:48.674Z"
+      },
+      "status": "Photo posted at 05:05; no maintenance response or work order visible in window."
+    },
+    {
+      "plant": "L1",
+      "title": "Dishwashing area 2 water gun splitting, safety risk",
+      "summary": "The water gun in dishwashing area 2 is splitting and could pose a safety hazard to operators.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-24T14:16:57.888Z"
+      },
+      "status": "Maintenance called at 08:16; no follow-up posted in the window."
+    },
+    {
+      "plant": "L1",
+      "title": "Nuts found on floor in surrounding area",
+      "summary": "Charity flagged nuts on the floor in a surrounding area at 12:16.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-23T18:16:43.882Z"
+      },
+      "status": "No follow-up cleanup confirmation or root-cause posted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow-wrap changeover incomplete, missing bracket bar",
+      "summary": "Maintenance cannot finish the flow-wrap changeover for Caramel Hearts because a mounting bar is missing from the kit; part should have been in the box but wasn't found.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-10-24T12:40:36.142Z"
+      },
+      "status": "Maintenance reached out to Dave Ruff; no resolution by end of shift. Changeover deferred to Monday per Gustavo at 07:12."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS one film roll failed adhesive bond at shift end",
+      "summary": "A single roll of film at the end of 2nd shift did not hold to the adhesive strips on the pouch machine.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Brandon Lance",
+        "time_utc": "2026-10-24T03:54:57.877Z"
+      },
+      "status": "Brandon placed defective roll sample on Ethan Bean's desk for vendor follow-up."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow-wrap vacuum missing two mounting bolts",
+      "summary": "Two bolts are missing from the vacuum assembly on the flow-wrap machine.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-10-24T08:58:09.574Z"
+      },
+      "status": "Reported at 02:58 with photo; no maintenance response in window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 stopped sending dark chocolate inclusion",
+      "summary": "At 07:31 1st shift discovered depositor 4 was not dispensing dark chocolate cookie inclusion into bars; over half the cooler affected and being scrapped.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-24T12:44:42.29Z"
+      },
+      "status": "Team drained all inclusion hopper and depositor to start fresh at 06:44. Preston at 08:26 reminded team to fully purge depositor during downtime. More than half cooler scrapped as of 08:18."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line coconut oil totes have incompatible valves",
+      "summary": "9 of 17 new coconut oil totes arrived with a different valve configuration than the two existing types; team cannot connect them without adapters.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-10-24T00:04:05.802Z"
+      },
+      "status": "Tyson added action at 18:13; Angel will send photos and details to Preston for procurement follow-up Monday. 8 totes usable, 9 blocked."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker machine not working correctly",
+      "summary": "The sticker applicator is malfunctioning; line was down at 18:24.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-24T00:24:34.74Z"
+      },
+      "status": "Shane posted line down at 18:24; no follow-up resolution or maintenance update in window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 many molds not demolding fully",
+      "summary": "Operators seeing high volume of molds returned because product is not demolding completely.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-24T05:49:18.197Z"
+      },
+      "status": "Reported at 23:49 by 3rd shift; no corrective action or root cause posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 screws loose, over-depositing chocolate",
+      "summary": "Loose screws on depositor 4 caused it to pour excessive chocolate into molds.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-24T10:02:07.693Z"
+      },
+      "status": "Reported at 04:02; operator noticed while depositing. No tightening or inspection follow-up posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bad molds not auto-rejecting on TG",
+      "summary": "A few defective molds that were marked in the system did not get rejected by the vision system.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-24T10:12:30.53Z"
+      },
+      "status": "Kimberly posted photos of marked-but-not-rejected molds at 04:12; no QA or maintenance investigation visible."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 belt has significant tear",
+      "summary": "The belt after the metal detector (C1 belt) on ML1 has a good-sized tear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jordan Serna",
+        "time_utc": "2026-10-24T10:57:55.056Z"
+      },
+      "status": "Jose Vasquez in maintenance notified at 04:57; checking for spare belt on hand. No confirmation of availability."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line chocolate exit temp running above standard",
+      "summary": "Chocolate exit temperature climbed 0.3\u00b0C since start of shift and is now at 26.3\u00b0C, outside the 25.5\u00b0C standard.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-24T07:03:29.641Z"
+      },
+      "status": "Shawn at 07:45 says action exists to adjust mixing water to keep between 25\u201326\u00b0C; at 26.3 product likely okay but needs monitoring."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sweco screen showing wear with micro holes",
+      "summary": "The sweco screen is starting to show wear with visible micro holes; not yet a concern but should be monitored for replacement timing.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-10-24T09:08:47.416Z"
+      },
+      "status": "Nathan flagged at 03:08 for future watch; no inspection interval or replacement criteria posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola C6 belt tracking to north side",
+      "summary": "The C6 conveyor belt in the gondola has tracked north twice; Peter adjusted but suspects dirty rollers or belt may be the root cause.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-24T16:05:27.101Z"
+      },
+      "status": "Itzel posted at 10:05 that Peter adjusted but cleaning may be needed; no follow-up cleaning scheduled."
+    }
+  ]
+}

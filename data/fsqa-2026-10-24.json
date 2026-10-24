@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-24",
+  "headline": {
+    "eyebrow": "Active holds",
+    "text": "L3 ML4 bars on hold for *over-mixed* dark filling \u2014 sensory detected less white chocolate, pallets isolated pending disposition."
+  },
+  "summary": "One quality hold at L3 ML4 for appearance and taste deviation. L3 ML1 belt tear after metal detector flagged as food-safety concern; maintenance notified. L1 S4 salt spill caught and contained, 4 boxes scrapped.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "ML4 dark-filling bars on hold for over-mixing",
+      "summary": "Bars came out darker on top due to over-mixing; sensory testing shows less white chocolate taste despite correct weight \u2014 pallets isolated for disposition.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-10-24T11:36:39.271Z"
+      },
+      "status": "On hold pending disposition \u2014 nothing discarded yet, awaiting release decision from QA."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S4 excessive salt spill on conveyor",
+      "summary": "Operator dropped salt jar onto conveyor belt, spilling large quantity; entire affected batch pulled from Tunnel 1 and 4 boxes scrapped \u2014 no product released.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-10-24T04:14:48.558Z"
+      },
+      "status": "Resolved \u2014 line paused, all affected product removed and scrapped, no hold needed."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow-wrap vacuum missing two bolts",
+      "summary": "Two bolts missing from vacuum assembly on flow-wrap machine \u2014 potential loose-hardware risk if bolts fell into product zone.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-10-24T08:58:09.574Z"
+      },
+      "status": "Open \u2014 no follow-up posted on whether bolts were recovered or product inspected."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 belt tear on C1 (post metal detector)",
+      "summary": "Good-size tear found on belt after metal detector; belt is in food-contact zone and could shed material into product stream \u2014 maintenance notified to check for spare.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jordan Serna",
+        "time_utc": "2026-10-24T10:57:55.056Z"
+      },
+      "status": "Open \u2014 maintenance checking for replacement belt; production impact and interim containment not yet posted."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Warped jar lids from new supplier lot",
+      "summary": "New lids (105,000 received) are warped and don't run properly on capper; may be isolated to one box but supplier contacted.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-10-23T17:37:20.706Z"
+      },
+      "status": "Investigation ongoing \u2014 testing other pallets, supplier notified by procurement."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 underweight caddies rejected",
+      "summary": "Approximately 53 caddies (10 bars each) rejected due to low caddie weight; appears some bars were underweight \u2014 operator confirmed current bars are in range.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-24T07:17:43.444Z"
+      },
+      "status": "Resolved \u2014 underweight caddies diverted, current production within spec."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 marked molds bypassed rejection",
+      "summary": "A few bad molds that were flagged in the system did not auto-reject; production team caught them before master case.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-24T10:12:30.530Z"
+      },
+      "status": "Resolved \u2014 operator intercepted before packaging, no bad product shipped."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tray printer knocked over",
+      "summary": "South tray printer fell, broke sensor connector; approximately a dozen trays need to be re-printed or reworked.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-10-23T20:18:10.629Z"
+      },
+      "status": "Resolved \u2014 sensor replaced, trays flagged for rework."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 macadamia and pistachio clusters on floor",
+      "summary": "Clusters found on jar-area floor during shift; team cleaned immediately.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-24T13:16:43.141Z"
+      },
+      "status": "Resolved \u2014 area cleaned on shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial hopper seal out of place",
+      "summary": "Seal found displaced during leak inspection; hopper removed, washed, and seal replaced before reinstallation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-10-24T12:37:23.111Z"
+      },
+      "status": "Resolved \u2014 hopper re-washed and seal replaced, now back in service."
+    },
+    {
+      "plant": "L1",
+      "title": "Nuts on floor in surrounding area",
+      "summary": "Nuts found on floor in general production area; flagged for cleanup.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-23T18:16:43.882Z"
+      },
+      "status": "Resolved \u2014 cleanup completed per posted photos."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider requiring two-hand salt application or spill guards on S4 salter station \u2014 based on today's jar-drop salt spill that required batch scrap."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding mold auto-reject verification step to ML4 startup checklist \u2014 based on today's marked molds bypassing rejection."
+    },
+    {
+      "plant": "L3",
+      "text": "Review belt inspection frequency on ML1 post-metal-detector zone \u2014 based on today's C1 belt tear discovered mid-shift."
+    }
+  ]
+}
