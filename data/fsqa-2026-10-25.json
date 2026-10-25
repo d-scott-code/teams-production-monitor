@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-25",
+  "headline": {
+    "eyebrow": "Equipment flag",
+    "text": "L3 Truffle Line bottomer mesh found *broken* during Level 2 clean final inspection \u2014 requires repair before next run."
+  },
+  "summary": "Three sanitation gaps surfaced today: broken mesh at L3 Truffle, moisture intrusion at L1 Sollich 1 tunnel head, and a replaced conveyor belt at L3 ML1 sent to production without cleaning verification. One quality issue \u2014 6 pallets at L1 S2 need re-labeling.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Bottomer mesh broken during cleaning inspection",
+      "summary": "Truffle Line bottomer mesh found broken during final inspection after Level 2 clean \u2014 flagged for repair before next production run to prevent potential metal fragments or contamination.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-25T12:48:02.869Z"
+      },
+      "status": "Open, awaiting maintenance repair before next startup."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "6 pallets require re-labeling after labeler malfunction",
+      "summary": "S2 A-side labeler failure forced shift to slower B-side unit \u2014 6 pallets produced during transition need re-labeling before release.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-24T19:07:55.934Z"
+      },
+      "status": "On hold pending re-labeling; tech support scheduled for Monday."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Moisture detected at Sollich 1 Tunnel 1 head",
+      "summary": "Cleaning inspection found moisture traces on refrigeration filter and damp dust under conveyor belt at tunnel head \u2014 source under investigation before area release.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Johan Hernandez",
+        "time_utc": "2026-10-25T08:06:11.323Z"
+      },
+      "status": "Open, under investigation to determine moisture source before tunnel released."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 conveyor belt replaced without cleaning verification",
+      "summary": "Maintenance replaced C1 belt but did not clean or ATP test before releasing to production \u2014 QA flagged and required cleaning plus ATP completion before startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-25T13:24:00.34Z"
+      },
+      "status": "Resolved \u2014 cleaning and ATP completed before line started."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding mandatory cleaning verification sign-off to maintenance work-order closeout checklist \u2014 based on ML1 C1 belt replacement that reached production floor without cleaning or ATP."
+    }
+  ]
+}

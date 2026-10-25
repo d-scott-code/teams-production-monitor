@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-25",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 2 was down *35 minutes* overnight when heating-loop valves were found closed \u2014 cleared at 16:34, cooking resumed."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 had two stoppages \u2014 kitchen valve HMI mismatch cleared at 14:09, then heating loop valves found closed at shift change causing a 35-minute cook delay. A-side labeler remains down; 6 pallets await re-work and tech visit scheduled Monday. Sollich 1 cleaning found possible moisture at Tunnel 1 head under investigation.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "Truffle ran strong to 523,500 pieces and completed level 2 clean; bottomer mesh found broken during final inspection and needs repair. ML1 C1 conveyor belt replaced by maintenance but still needs cleaning and ATP before next run."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Kitchen valve/HMI mismatch blocking caramel flow",
+      "summary": "Valves showed open on HMI but were closed physically, stopping product flow to kitchen; hard reset allowed manual valve control.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-24T19:17:18.858Z"
+      },
+      "resolution": "Cleared at 14:09 \u2014 \"After hard reset was performed, we were able to start the valves manually... Caramel is at the Conbar right now\" (Katya Farnsworth)."
+    },
+    {
+      "plant": "L1",
+      "title": "Heating loop valves closed on corn syrup and SCM lines",
+      "summary": "Steam lines and heating loop valves found closed at shift change, pipes cold, ingredients unable to send to mixing tank; delayed cooking ~35 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-10-24T22:02:44.958Z"
+      },
+      "resolution": "Cleared at 16:34 \u2014 \"system is now at a better temperature because the ingredients are being sent to the mixer faster. We're starting to cook again\" (Francisco Gudino Torres). Caramel sending resumed at 17:43."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "A-side labeler down, 6 pallets require re-work",
+      "summary": "A-side labeler failing, running on slower B-side; 6 pallets produced need re-labeling; label supplier issue similar to prior pecan label problem.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-24T19:07:55.934Z"
+      },
+      "status": "Tech could not be reached Friday; follow-up scheduled for Monday. Supplier label quality issue noted by Curt Willis at 13:11."
+    },
+    {
+      "plant": "L1",
+      "title": "Moisture detected at Sollich 1 Tunnel 1 head during cleaning",
+      "summary": "Traces of moisture found on refrigeration filter and damp dust under conveyor belt at tunnel head; reported during final cleaning phase.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Johan Hernandez",
+        "time_utc": "2026-10-25T08:06:11.323Z"
+      },
+      "status": "Reported at 02:06 for further inspection to determine moisture source and ensure sanitary conditions before area release. Only Tunnel 1 remains to be cleaned."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 conveyor belt needs cleaning and ATP before run",
+      "summary": "Maintenance replaced C1 conveyor belt but did not clean it; ATP test required before starting production run.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-25T13:24:00.34Z"
+      },
+      "status": "Kimberly flagged at 07:24; Jose added tracking requirement at 07:33; Rose reminded Grey Boscan at 09:56. No completion confirmation as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line bottomer mesh broken",
+      "summary": "Bottomer mesh found broken during final inspection after level 2 clean; needs repair before next run.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-25T12:48:02.869Z"
+      },
+      "status": "Discovered at 06:48 during post-clean inspection. Level 2 clean otherwise complete. Line finished production at 523,500 pieces."
+    }
+  ]
+}
