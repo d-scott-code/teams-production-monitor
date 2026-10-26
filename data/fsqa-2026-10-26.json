@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-26",
+  "headline": {
+    "eyebrow": "Sanitation gaps",
+    "text": "L1 sanitation findings repeat \u2014 swecos dirty again, *pallets left outside* creating pest risk, pest control device damaged."
+  },
+  "summary": "Three recurring sanitation gaps at L1 flagged today: swecos found dirty again on S1, night shift leaving pallets outside creating pest harborage (repeat issue), and pest control device 72 damaged awaiting replacement. One hold under investigation \u2014 L1 S1 cooling tunnel moisture reported but not confirmed on inspection.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S1 cooling tunnel moisture investigation",
+      "summary": "Moisture in cooling tunnel 1 triggered hold inquiry; day shift inspected line twice (morning and 09:15) and found no moisture or signs of moisture.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-10-26T11:50:48.953Z"
+      },
+      "status": "Investigation complete \u2014 no moisture found on repeated inspections; hold disposition pending FSQA confirmation."
+    }
+  ],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Truffle Line chocolate exposure",
+      "summary": "One piece per row showing chocolate exposure (ganache visible through coating); enrober operator making adjustments to coverage.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-10-26T18:40:54.68Z"
+      },
+      "status": "Open \u2014 operator adjusting enrober settings."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 swecos found dirty again",
+      "summary": "Swecos (vibratory screens) found dirty at S1 line startup \u2014 recurring finding indicating cleaning verification gap.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-10-26T11:00:46.894Z"
+      },
+      "status": "Open \u2014 line operator re-cleaned; root cause of recurring failure not addressed."
+    },
+    {
+      "plant": "L1",
+      "title": "Pest control device 72 damaged",
+      "summary": "Pest control monitoring device 72 is damaged and needs replacement; maintenance and pest control vendor notified.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-26T12:07:18.148Z"
+      },
+      "status": "Open \u2014 awaiting vendor replacement."
+    },
+    {
+      "plant": "L1",
+      "title": "Pallets placed outside creating pest harborage",
+      "summary": "Night shift garbage crew repeatedly leaving pallets outside warehouse, creating risk of bugs, rodents, feces exposure to warehouse and returned pallets \u2014 recurring issue despite previous coaching.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Tiffanee Taylor",
+        "time_utc": "2026-10-26T16:12:00.822Z"
+      },
+      "status": "Open \u2014 plant manager escalation requested for recurring noncompliance."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding sweco cleanliness to S1 pre-op checklist with photo documentation \u2014 today's 'found dirty again' message suggests cleaning verification is not catching failures before startup."
+    },
+    {
+      "plant": "L1",
+      "text": "Review waste handling training and supervision for night shift sanitation crew \u2014 pallets left outside creating pest risk is a repeat escalation from warehouse despite previous coaching."
+    }
+  ]
+}
