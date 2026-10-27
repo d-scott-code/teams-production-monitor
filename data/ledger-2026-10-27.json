@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-27",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML1 battled *low temper* for 2.5 hours before recovering; L3 ML4 recurring jams and depositor overflows slowed throughput"
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran all four Sollich lines. Sol1 recovered from chiller/compressor shutdown early morning. Sol3 stopped at 12:24 for belt fraying on Cross Conveyor 3\u2014maintenance removing fibers and cleaning. Sol4 held 27 boxes for color evaluation and reported piece weight running thin.",
+    "L2": "L2 ran ML2 and ML3 with minimal breaks. ML3 cleared two label-break stoppages on second shift. Sol2 accumulated jars waiting on boxes mid-shift; boxes arrived and packing resumed.",
+    "L3": "L3 ML1 struggled with low temper from 03:45 to 06:19\u2014adjusted crystallization twice, eventually started. ML4 saw recurring overhead conveyor jams and depositor 1 overflows; max fill limit lowered to 70%. Truffle line reheated buffer tank and started at 06:09."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Third-shift operator brought floor drain covers from ML1 to south wash room for cleaning; redirected to clean in place."
+    },
+    {
+      "plant": "L3",
+      "text": "Shawn and Rich troubleshot ML4 spiral conveyor metering; identified sensor out of position and coached operators on caddie spacing requirements."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sol1 chiller shut off, lost start temp",
+      "summary": "Chiller and pump shut down completely at 05:04; went to reheat to regain start temp.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-27T11:04:42.897Z"
+      },
+      "resolution": "Cleared at 06:26 \u2014 \"We are at starting temp in program and tempering the chocolate\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol3 line paused to pass accumulation",
+      "summary": "Multiple pauses (15:48, 17:55, 18:30) to clear packer backlog; resumed each time.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-26T21:48:12.346Z"
+      },
+      "resolution": "Last pause cleared at 18:30 \u2014 \"Line is running again\" (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol3 macadamia residual by Sol2",
+      "summary": "Macadamia pieces found near Sol2; needed immediate removal for allergen control.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-10-26T23:26:00.06Z"
+      },
+      "resolution": "Cleared at 18:00 \u2014 William Beattie swept up and posted photo."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol4 packer rails in wrong position",
+      "summary": "Rails handed off open; operators found and corrected position at shift start.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "S4 Pack Tablet",
+        "time_utc": "2026-10-27T07:35:11.673Z"
+      },
+      "resolution": "Cleared at 01:35 \u2014 operators fixed and posted photo (S4 Pack Tablet)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label breaking on packer",
+      "summary": "Label broke at top when switching rolls; line stopped at 14:31 for reinstall.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-26T20:31:02.295Z"
+      },
+      "resolution": "Cleared at 14:36 \u2014 \"Line is running again, we reinstalled the label and do a small lubrication on the rollers\" (Molding Line 3 Pack). Broke again at 14:55, cleared at 14:57."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 rejections from stuck chocolate on vacuum",
+      "summary": "Chocolate piece lodged in vacuum caused moving pieces to be rejected; stopped 6 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-26T22:43:36.212Z"
+      },
+      "resolution": "Cleared at 16:43 \u2014 removed stuck piece, \"running good again\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 mold jam\u2014screws loose",
+      "summary": "Two screws came loose from nozzle plate at 13:40, jamming molds; maintenance removed molds and tightened bolts.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-26T19:48:54.871Z"
+      },
+      "resolution": "Cleared at 14:05 \u2014 \"Removed both molds with no damage, tightened up the plate bolts and replaced the bent one\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp door sensor failed",
+      "summary": "Machine detected door open when all doors closed; sensor failure stopped line at 16:40.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-26T22:40:19.277Z"
+      },
+      "resolution": "Cleared at 18:08 \u2014 \"Sensor was just replaced on this door\" (Chad Stone); line restarted."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line kitchen buffer temp drop",
+      "summary": "Buffer chocolate temp dropped at 05:25; put on reheat, tempering process delayed line start.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-27T11:25:53.481Z"
+      },
+      "resolution": "Cleared at 06:12 \u2014 \"Line started at 6:09\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 inclusion hopper not suctioning rice",
+      "summary": "Hopper failed to pull rice during Crunch changeover startup; suspected flap inside blocking vacuum.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-27T16:40:11.374Z"
+      },
+      "resolution": "Cleared at 10:51 \u2014 maintenance lowered hopper, addressed flap, line resumed (Rose Smuin)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 belt C6 shifted and triggered alarm",
+      "summary": "Belt tracking alarm at flow-wrap; maintenance adjusted and centered the belt.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-10-27T12:49:48.994Z"
+      },
+      "resolution": "Cleared at 07:02 \u2014 \"C6 belt is centered and running well at this time\" (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober tank frozen causing bad coverage",
+      "summary": "Chocolate tank froze; coverage out of spec at 08:10; operator cleaned tank.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-10-27T14:10:25.258Z"
+      },
+      "resolution": "Cleared at 08:12 \u2014 \"Now it's looks better. Thank you Grey Boscan\" (Mirella Mamani); exit temp at 26.0\u00b0C."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sol3 belt fraying on cross conveyor 3",
+      "summary": "Cross Conveyor 3 belt fraying along edge at 12:24; line shut down to remove fibers and inspect product for contamination.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-27T18:24:55.296Z"
+      },
+      "status": "Maintenance removing fibers with heat; equipment will be cleaned with soap/water and ATP tested before restart. QA inspecting hopper and return conveyor product. Charity noted small frays on return belts will be addressed after inspection complete."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol4 chiller compressor 1 low refrigerant",
+      "summary": "Compressor 1 refrigerant low; tech scheduled for 10:00\u201310:30 fill, arrived at 12:31 and filling R-134A.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chris Jeffs",
+        "time_utc": "2026-10-26T21:01:56.729Z"
+      },
+      "status": "Tech filling compressor 1 with refrigerant as of 12:31. Curt asked if correct refrigerant; Chris confirmed R-134A in use."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol3 caramel cook time slow on C2",
+      "summary": "C2 cooking at ~72 minutes, C1 at ~32 minutes; line may need to pause for caramel before end of second shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-27T03:09:02.876Z"
+      },
+      "status": "C2 caustic cleaned at 21:46; line ran at reduced speed through shift end. Cook times remain elevated."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol4 27 boxes WIP held for color evaluation",
+      "summary": "Third-shift candy (item 21167) has darker appearance than normal; flavor and smoothness acceptable but color appears out of spec.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-27T13:58:59.12Z"
+      },
+      "status": "27 boxes on hold awaiting QA evaluation of color tone. Katya, Justin, and Charity tagged."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol4 piece weight inconsistencies\u2014thinner during cutting",
+      "summary": "Pieces coming out thinner, causing weight variations near lower acceptable limit; dimensions in range but weight drifting.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-27T17:56:38.734Z"
+      },
+      "status": "Still in spec as of 11:58; Justin acknowledged and said team will work on fixing. Pieces remain acceptable but trending low."
+    },
+    {
+      "plant": "L1",
+      "title": "Sol2 jars accumulated awaiting boxes",
+      "summary": "Two pallets of jars accumulated because boxes were unavailable; boxes arrived at 12:20 and packing resumed.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-10-27T18:20:04.369Z"
+      },
+      "status": "Boxes arrived, working on packing all jars as of 12:20. Justin, Curt, and Katya tagged."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 overhead conveyor jams recurring",
+      "summary": "Five separate jam stoppages on overhead spiral conveyor between 22:24 and 04:43; Shawn and Rich identified sensor and caddie spacing issues.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-27T04:24:28.989Z"
+      },
+      "status": "Sensor adjusted at 08:47; operators coached on maintaining full caddie-length gaps. Jams continued through third shift (01:02, 01:58, 02:15, 04:38)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 temper low for 2.5 hours, multiple adjustments",
+      "summary": "Temper readings stuck at -0.9 to -1.0 from 03:45 through 06:10 despite two crystallization adjustments; line could not start until temper reached -0.4.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-10-27T10:20:26.98Z"
+      },
+      "status": "Line started at 06:19 after crystallization raised to 79.2, but further adjustments needed through morning (decreased to 79.1 at 07:00, then 78.0 at 11:46)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 layflat caddie printing issues",
+      "summary": "Lot code change at 00:21 revealed persistent print quality problems; videojet swapped at 09:06 but print still inconsistent.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-27T06:21:49.375Z"
+      },
+      "status": "Maintenance swapped videojet and replaced printhead module; roller has ink buildup causing smearing. Printing better but operators watching for accumulation as of 05:49."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 overflows recurring",
+      "summary": "Depositor 1 overflowed three times (03:51, 04:54, 06:34) due to mixing auger continuing when stopped; sensors cleaned.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-27T09:51:25.871Z"
+      },
+      "status": "Max fill limit lowered to 70% at 06:59 as workaround. Shawn notes mixing auger runs even without new chocolate/cookies added, causing overfill during downtime."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line sensor B142 broken",
+      "summary": "Sensor B142 at flow-wrap not working; maintenance confirms broken and needs replacement.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-10-27T12:50:29.07Z"
+      },
+      "status": "Maintenance contacted; sensor confirmed broken and requires replacement. No immediate impact on operation noted."
+    }
+  ]
+}

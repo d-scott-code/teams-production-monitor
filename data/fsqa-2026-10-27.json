@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-27",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S4 holding *27 boxes* of caramel\u2014color tone outside spec\u2014plus two foreign-material events at L3 resolved after inspection."
+  },
+  "summary": "One active quality hold on L1 S4 caramel pending color evaluation. Two foreign-material catches at L3: depositor screws jammed molds (no product contamination found), and conveyor belt fraying triggered line stop and product inspection. Both resolved; no contaminated product released.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Caramel color hold\u201427 boxes WIP",
+      "summary": "Item 21167 candy produced by third shift appears darker than normal; flavor and texture acceptable but color tone flagged as outside spec pending QA disposition.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-27T13:58:59.12Z"
+      },
+      "status": "On hold pending QA evaluation of color tone."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Depositor 4 screws jammed molds\u2014no metal found in product",
+      "summary": "Two screws came loose from ML4 depositor 4 nozzle plate at 13:40, jamming molds; maintenance removed both molds undamaged, tightened plate bolts, replaced bent screw; no metal detected in product stream.",
+      "severity": "high",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-26T19:48:54.871Z"
+      },
+      "status": "Resolved\u2014maintenance tightened all nozzle plate fasteners; no contaminated product identified."
+    },
+    {
+      "plant": "L3",
+      "title": "Conveyor belt fraying\u2014fibers detected, product inspected",
+      "summary": "Cross Conveyor #3 belt frayed along one edge; operator detected fibers, line shut down at 12:24; product from return system and hopper inspected; maintenance torched fibers, cleaned with soap and water, ATP pending.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-27T18:24:55.296Z"
+      },
+      "status": "Line paused\u2014maintenance cleaning and ATP verification in progress; small frays on return belts also being addressed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Caramel piece weight trending low\u2014still in spec",
+      "summary": "S4 caramel pieces coming out thinner during cutting, causing weight variation near lower acceptable limit; dimensions within range but weights inconsistent.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-27T17:56:38.734Z"
+      },
+      "status": "Open\u2014Justin Garner working on adjustment; pieces remain in spec."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle enrober frozen tank\u2014bad coverage",
+      "summary": "Truffle line enrober chocolate tank froze, causing poor coverage; operator cleaned tank, production team removed defective parts; coverage restored after cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-10-27T14:10:25.258Z"
+      },
+      "status": "Resolved\u2014tank cleaned, coverage back in spec; defective parts scrapped."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Sweco required additional clean cycle",
+      "summary": "Sweco with blue z belt had only two of three required clean swabs on file; third clean cycle and swab completed before release.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-26T22:44:27.521Z"
+      },
+      "status": "Resolved\u2014third clean and swab completed; all three cycles verified."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "Almond residue on rice pot\u2014cleaned and test passed",
+      "summary": "During ML1 changeover from Milk to Crunch, almond residue found around legs at bottom of rice pot; QA performed allergen test after cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-27T16:08:32.079Z"
+      },
+      "status": "Resolved\u2014allergen test passed; line cleared to run Crunch."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review cleaning verification workflow for multi-step sanitation\u2014Sweco released after two cleans when three required, caught at QA gate."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding conveyor belt inspection to pre-shift checklist\u2014today's Cross Conveyor #3 fraying triggered line stop and product review."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding nozzle plate fastener torque check to ML4 depositor startup routine\u2014based on today's loose screws jamming molds at depositor 4."
+    }
+  ]
+}
