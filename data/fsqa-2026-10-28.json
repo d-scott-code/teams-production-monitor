@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-28",
+  "headline": {
+    "eyebrow": "Metal-in-product",
+    "text": "L1 S3 metal detector caught *ferrous fragment* between biscuit and caramel \u2014 investigation open; L3 ML4 metal shavings from damaged cleaning blade; two active holds across L1 S4 and L3 MFM."
+  },
+  "summary": "Three metal-related events today: L1 S3 metal detector rejection (fragment between layers, source unknown), L3 ML4 metal shavings from damaged cleaning-roller blade, and L2 ML3 degrading plastic paddle removed. Two holds active: L1 S4 underweight caramel (2 pallets), L3 MFM mixed lots (3 pallets).",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Two pallets held for underweight caramel",
+      "summary": "S4 line placed two pallets on hold between 02:30 and 03:10 due to low caramel weight; average piece weight ranged 9.8\u201310.2 g.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-28T11:27:07.698Z"
+      },
+      "status": "On hold pending QA disposition."
+    },
+    {
+      "plant": "L3",
+      "title": "Three FG pallets held for mixed lots",
+      "summary": "MF Matrix discovered mixed lot codes in finished-goods pallets after pallet with different dates entered hopper; three pallets segregated.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-28T14:40:52.413Z"
+      },
+      "status": "On hold; QA preparing formal rework instructions."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal fragment in S3 product caught by detector",
+      "summary": "QA found magnetic metal fragment between biscuit base and caramel layer during weight check; metal detector rejected the piece; maintenance investigating source.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-28T17:27:32.458Z"
+      },
+      "status": "Investigation ongoing \u2014 maintenance unable to identify origin; ferrous, caught at detector."
+    },
+    {
+      "plant": "L3",
+      "title": "Metal shavings on ML4 TG5 conveyor belt",
+      "summary": "Metal shavings found on end conveyor belt of TG5 during level 3 clean; suspected source is damaged cleaning-roller blade from earlier incident.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-28T07:41:51.517Z"
+      },
+      "status": "Resolved \u2014 no metal found in drain strainer post-clean; blade replaced, equipment ATP-cleared."
+    },
+    {
+      "plant": "L2",
+      "title": "Degrading plastic paddle removed from ML3",
+      "summary": "Plastic tool used to push chocolate into PTL showed wear and was shedding particles; removed from line to prevent foreign material contamination.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-10-28T02:32:43.827Z"
+      },
+      "status": "Resolved \u2014 tool removed from service; no product impact identified."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 lid tightener fell off during operation",
+      "summary": "Lid tightener fell off and line continued running without it before crew re-installed; potential for loose lids in that window.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-10-28T02:22:10.953Z"
+      },
+      "status": "Resolved \u2014 tightener re-installed; no formal count of affected product taken."
+    },
+    {
+      "plant": "L1",
+      "title": "Six deformed jars flagged on S2 jar line",
+      "summary": "Second-shift team caught six jars that appeared very deformed and thin; samples placed on Charity's desk for review.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-10-28T03:38:13.606Z"
+      },
+      "status": "Resolved \u2014 six jars out of millions purchased; samples saved for supplier review."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML1 rice-test filters 5 and 6 missing",
+      "summary": "QA unable to perform rice-capture test on ML1 because filters 5 and 6 were missing from line and dishwasher area; later found by end of shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-10-28T10:42:56.628Z"
+      },
+      "status": "Resolved \u2014 filters located and test performed."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Add lid-tightener presence check to S2 startup and post-jam checklist \u2014 today's unit fell off and ran undetected until crew noticed."
+    },
+    {
+      "plant": "L2",
+      "text": "Inspect all plastic hand tools at ML3 for wear and create replacement schedule \u2014 today's degrading paddle was shedding particles into food-contact zone."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding cleaning-roller blade inspection to ML4 startup checklist \u2014 today's damaged blade and possible metal shavings echo the need for pre-shift verification."
+    },
+    {
+      "plant": "L3",
+      "text": "Review metal-detector rice-test filter storage protocol \u2014 second shift and third shift both reported filters 5 and 6 missing from ML1 staging area."
+    }
+  ]
+}

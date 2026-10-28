@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-28",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 S2 enrober wire belt damaged during cleaning\u2014*4 hours down* for level 3 clean and mesh replacement, cleared by 12:45."
+  },
+  "per_plant_summary": {
+    "L1": "S2 enrober wire belt damaged at 07:32 due to chocolate buildup on front plate, required level 3 clean and mesh replacement, back online by 12:45. S1 breaker replacement scheduled tomorrow 14:00-16:30. S3 metal fragment detected in product between biscuit and caramel, investigating source with maintenance. S4 ran caramel with low weights early shift, adjustments made and pallets placed on hold. Tapioca material received for warming.",
+    "L2": "ML2 ran chocolate and caramel with multiple mold jams in cooler and vibration section, all cleared same shift. Cooler fan found off at 17:14, automatic start was shut off, both corrected and line running by 18:01. ML3 had recurring label breaks during roll switches, twin belts stopped at 18:46 due to chocolate buildup, cleaned and running by 00:57. Big Joe #7 locked out for hydraulic leak, repaired and back in service by 11:34. Door sensor issue at ML2 cleared in under 3 minutes.",
+    "L3": "ML4 completed level 3 clean and chocolate push from white to Hershey milk on both north and south sides, temper adjusted throughout, running production by afternoon. Metal shavings found on TG5 conveyor belt end\u2014ferrous, on inside of belt, no product contact risk, source under investigation. ML1 ran with temper challenges early shift, PTL tank sensor replaced, rice pot vacuum system unable to keep pot full. MF Matrix had pouch-opening issues resolved with cam adjustments, then discovered mixed lot codes in hopper, 3 FG pallets on hold."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Martin Carlos confirmed 3,000 lbs tapioca arriving Thursday morning, 9,000 lbs Friday morning direct to Lindon 1."
+    },
+    {
+      "plant": "L2",
+      "text": "Jeffrey Barney distributed OPL and training sheets after another item was washed; teams reminded to review startup procedures."
+    },
+    {
+      "plant": "L3",
+      "text": "Fredy Montalvan flagged inventory challenge with 1,000 pallets of chocolate 10169 in system\u2014no space to physically verify, requested warehouse scan staging area and production deliver used pallet labels to IMS."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 enrober wire belt damaged during cleaning",
+      "summary": "Wire belt shifted and tore when chocolate buildup (approximately 1 foot on front heated plate) caused misalignment; maintenance replaced belt, performed level 3 clean, filtered drainage for metal (none found), and reinstalled mesh.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-10-28T13:32:25.235Z"
+      },
+      "resolution": "Cleared at 12:45\u2014\"The wire mesh is installed. We are completing the assembly of the enrober.\" (Justin Garner)"
+    },
+    {
+      "plant": "L1",
+      "title": "S2 lid tightener fell off during operation",
+      "summary": "Lid tightener on S2 pack line fell off and was left running without it; maintenance re-installed the component.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-10-28T02:22:10.953Z"
+      },
+      "resolution": "Cleared at 20:22\u2014component re-installed and line resumed (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 low caramel deposit weights 02:30-03:10",
+      "summary": "Two pallets placed on hold due to low caramel weight, average piece weight 9.8-10.2 grams (below spec); operator adjustments made.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-10-28T08:27:20.99Z"
+      },
+      "resolution": "Cleared at 03:10\u2014\"Adjustments was made for the operator\" (Luis Falcon)."
+    },
+    {
+      "plant": "L1",
+      "title": "Tapioca material inventory critically low",
+      "summary": "Down to last two pallets in warehouse with full week of scheduled runs; material requires plugging before use.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ricardo Tovar",
+        "time_utc": "2026-10-28T09:03:14.67Z"
+      },
+      "resolution": "Cleared at 11:54\u20143,000 lbs received at Springville, transfer set up for warming (Nisheena Etcitty)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 cooler fan off, automatic start disabled",
+      "summary": "Chocolate was warm in molds; inspection found cooler fan off and automatic start shut off, both systems supposed to be on during operation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mathew Draper",
+        "time_utc": "2026-10-27T23:14:57.778Z"
+      },
+      "resolution": "Cleared at 18:01\u2014automatic start turned back on, molds left in cooler 20 minutes, \"Line is running\" (Brandon Lance)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 twin belts stopped due to chocolate buildup",
+      "summary": "White twin belts stopped running at 18:46 due to chocolate buildup before and on the belts; line cleaned buildup and restarted.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-28T00:45:50.369Z"
+      },
+      "resolution": "Cleared at 00:57\u2014buildup cleaned, \"Line running again\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 mold jams in cooler entrance and vibration",
+      "summary": "Mold jumped a tooth at cooler entrance at 16:00, then jam in vibration section at 16:07; both cleared by operators.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-10-27T22:00:00.163Z"
+      },
+      "resolution": "Cleared within minutes each time, line continued running (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "Big Joe #7 hydraulic fluid leak",
+      "summary": "Fork lift leaking hydraulic fluid on floor creating slip hazard; locked out per Alan Todd's instruction, HOJ service called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-10-28T00:40:13.264Z"
+      },
+      "resolution": "Cleared at 11:34\u2014solenoid to hydraulic fluid was loose, James from HOJ tightened and degreased, \"Big Joe #7 is back in service\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 plastic PTL push tool degraded",
+      "summary": "Plastic tool used to push chocolate into PTL shows wear and sheds particles, posing foreign material contamination risk.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Marlenis Fernandez",
+        "time_utc": "2026-10-28T02:32:43.827Z"
+      },
+      "resolution": "Cleared at 20:32\u2014tool removed from line (Marlenis Fernandez). Jose Cabrera confirmed at 05:20 shovel was cleaned, sanitized, ATP passed, no foreign material risk."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 air hose fitting came loose",
+      "summary": "Air hose came loose on ML3, line down; maintenance replaced the fitting.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-28T16:35:58.8Z"
+      },
+      "resolution": "Cleared at 10:45\u2014fitting replaced, \"Line is back up\" (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 door sensor fault at startup",
+      "summary": "One of the doors on ML2 would not register as shut, preventing line start.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-28T18:48:10.411Z"
+      },
+      "resolution": "Cleared at 12:50\u2014\"Line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol level dropped to 0.4",
+      "summary": "Glycol level on ML1 cooling system measured at 0.4, below operating range; maintenance called to raise level.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-28T11:01:46.165Z"
+      },
+      "resolution": "Cleared at 05:04\u2014\"Glycol level is back to 1.5\" (Phillip Perez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 product sticking to molds at startup",
+      "summary": "Product reached metal detector but many pieces were sticking to molds at line start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-28T12:51:55.553Z"
+      },
+      "resolution": "Cleared at 06:55\u2014\"The product is now demolding properly\" (Grey Boscan)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 PTL valve closed, pot wrongly installed",
+      "summary": "Could not send chocolate by 3rd shift; PTL valve was closed and pot was incorrectly installed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-28T12:53:10.675Z"
+      },
+      "resolution": "Cleared at 06:53\u2014valve opened, pot re-installed correctly (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 PTL tank level sensor malfunctioning",
+      "summary": "Tank overflowed even though display indicated 60% level; sensor not reading correctly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-28T12:56:51.696Z"
+      },
+      "resolution": "Cleared at 08:35\u2014\"Swapped out the tank product level sensor on the PTL and seems to be working as it should now\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix machine not opening pouches properly",
+      "summary": "Machine not opening pouches correctly, preventing proper fill with correct amount of product.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-10-28T13:12:47.275Z"
+      },
+      "resolution": "Cleared at 07:17\u2014\"Made minor cam adjustments and changed the zip opening to the outside. It's running pretty smoothly now\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 chocolate feed to hopper stopped",
+      "summary": "Feeding of chocolate to hopper stopped at 09:31, all values were in good parity so stoppage seemed odd.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-28T15:31:21.521Z"
+      },
+      "resolution": "Cleared at 09:39\u2014\"The feeding of chocolate to the hopper begins\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola piece fell, maintenance on-site",
+      "summary": "Piece fell from gondola during level 3 clean, maintenance working to reattach.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-28T09:40:01.752Z"
+      },
+      "resolution": "Cleared at 03:45\u2014\"Back in place\" (Kavin Ayala)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 breaker replacement scheduled tomorrow 14:00-16:30",
+      "summary": "Breaker continues to trip on S1; planned downtime tomorrow 14:00-16:30 (2.5 hours) for replacement, otherwise will face unplanned trips daily all week.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-10-28T01:10:52.13Z"
+      },
+      "status": "Scheduled for tomorrow at 14:00, plan to restart by 16:30; downtime communicated to Daniel Bringas and Amy Hadrich."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal fragment detected in finished product",
+      "summary": "Metal detector rejected one bar; metal fragment found between biscuit base and caramel layer, confirmed ferrous/magnetic, appears to be electrical wiring residue (copper with tin).",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-10-28T17:27:32.458Z"
+      },
+      "status": "Maintenance consulted but did not recognize the source; Mary Montilla noted it may have come from supplier. Team on the lookout as of 11:58."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 metal shavings found on conveyor belt",
+      "summary": "Metal shavings discovered on end conveyor belt of TG5 during level 3 clean; shavings are ferrous and located on inside of belt.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-28T07:41:51.517Z"
+      },
+      "status": "Nathan Gevenois confirmed at 02:30 shavings are on inside of belt, bars are packaged by this point so no product contact risk; Kimberly asked to contact maintenance to establish source and correct it. No source identified as of end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 rice pot vacuum system unable to maintain fill",
+      "summary": "Rice pot constantly emptying; vacuum system cannot keep it full, requiring operator to manually fill the pot.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-28T13:46:02.688Z"
+      },
+      "status": "Chad Stone suggested checking % of crisp at 07:56, indicating abnormality points to another underlying issue; no resolution as of 07:56."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix mixed lot codes in hopper, 3 FG pallets on hold",
+      "summary": "Pallet with different date codes mixed in hopper; after checking, 3 finished goods pallets found with mixed lot codes and placed on hold for rework.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-28T14:17:03.291Z"
+      },
+      "status": "Preston Tregaskis at 09:32 asked Itzel to discuss with quality team before decisions; quality team placing pallets on hold and preparing formal rework instructions. Hold product segregated from line as of 09:32."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 missing filters 5 and 6 for rice capture test",
+      "summary": "Cannot perform rice capture test because filters 5 and 6 required for the test are missing from line and dishwasher area.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-10-28T10:42:56.628Z"
+      },
+      "status": "Nathan Gevenois confirmed 2nd shift had same issue at 04:53; proceeding with capture test to check % correctness but unable to complete rice test. Isis Oses found screens 5 and 6 at 11:04."
+    }
+  ]
+}
