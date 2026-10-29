@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-29",
+  "headline": {
+    "eyebrow": "Equipment assembly gap",
+    "text": "L3 ML4 ingredient tank improperly installed after washing with *damaged gasket* \u2014 caught before production start."
+  },
+  "summary": "Three equipment and process gaps across L1 and L3 \u2014 all caught during pre-production checks or by operators mid-run. No product on hold at window close.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tank improperly assembled after cleaning",
+      "summary": "Ingredient 1 tank found incorrectly installed post-wash with damaged gasket during pre-production inspection \u2014 caught before product contact, line had not started.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-29T17:07:08.919Z"
+      },
+      "status": "Caught during startup troubleshooting before ML4 began production \u2014 packaging team sent home, no product made."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 wrong recipe settings discovered mid-run",
+      "summary": "Recipe still set to Allfill and Matrixes parameters instead of current product \u2014 line stopped, accumulation passed, restarted with correct settings.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-10-29T00:04:57.098Z"
+      },
+      "status": "Resolved \u2014 line stopped, accumulation cleared, correct recipe loaded and production resumed."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 Depositor 1 failed visual inspection after cleaning",
+      "summary": "Depositor 1 did not pass visual inspection on first attempt \u2014 EEs went over areas needing additional cleaning, re-inspected and passed before loading.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gina Vazquez",
+        "time_utc": "2026-10-29T10:23:02.643Z"
+      },
+      "status": "Resolved \u2014 re-cleaned, passed visual and ATP by 04:34, molds loaded and line started at 06:05."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review recipe change protocol for S2 line \u2014 recipe still set to previous product (Allfill/Matrixes) when current run started, caught mid-shift by operator."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding post-cleaning assembly verification checklist for ML4 ingredient tanks \u2014 today's improperly installed tank with damaged gasket was caught by operator inspection during troubleshooting rather than a formal check."
+    }
+  ]
+}

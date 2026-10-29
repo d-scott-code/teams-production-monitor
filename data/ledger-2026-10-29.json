@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-29",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 down *12 hours* on depositor and cooler faults \u2014 packaging team sent home, still troubleshooting at 12:11."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 2 had a 30-minute stop when checkweigher belts were set wrong, then ran caustic and restarted by 09:42. Sollich 4 ran caustic and is back up. Sollich 1 began depositing at 12:31. Time clock in lunch room is out of order with a server fault.",
+    "L2": "ML2 had a sensor fault at shift start, fixed in 27 minutes. FFS completed a changeover to 15.5oz variety and restarted at 11:30, then had a 7-minute stop for checkweigher blow-offs. Both lines running at window close.",
+    "L3": "ML4 has been down since overnight with depositor 2 faults, cooler filling issues, mold jams, and depositor 1 slider registration problems. Packaging team sent home at 12:11. ML1 started at 06:05 and ran all day with minor temper adjustments. Truffle line restarted after a morning stop. MF Matrix had a suction cup shortage resolved quickly."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 checkweigher infeed belts running slow",
+      "summary": "Line stopped because infeed belts to checkweigher were set up wrong and going very slow; recipe still set to Allfill and Matrixes instead of current product.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-10-28T23:32:56.189Z"
+      },
+      "resolution": "Cleared at 18:05 \u2014 \"The recipe was still set to Allfill and Matrixes\" identified by Caleb York, accumulation passed, line restarted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 sensor B299 misaligned at shift start",
+      "summary": "Sensor preventing line start; maintenance found alignment issue and corrected it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-10-28T20:46:31.656Z"
+      },
+      "resolution": "Cleared at 14:55 \u2014 \"Maintenance adjusted sensor B299\" and \"Line is running\" (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS changeover to 15.5oz variety product",
+      "summary": "Planned changeover from 11-piece pouches to 15.5oz variety; line stopped at 07:19 after completing work order.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-29T13:19:44.326Z"
+      },
+      "resolution": "Cleared at 11:30 \u2014 \"Line has been running since 1130\" (Jeffrey Barney) after dialing in the new product."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix suction cup shortage",
+      "summary": "Only one suction cup remaining, then another broke during shift; no spares in stock.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-10-28T20:54:31.251Z"
+      },
+      "resolution": "Cleared at 11:32 \u2014 \"Supervisor brought over 10 suction cups for both upper and bottom\" and \"This was fixed in 4 min.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 2 caramel pieces with feet and Cavanna feed issues",
+      "summary": "Seeing feet on caramels, pieces having hard time going into Cavannas; rails to Cavanna 4 opened up, discharge belt for Cavanna 3 needs trimming.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-29T18:07:18.905Z"
+      },
+      "status": "Line paused at 12:07 to pass accumulation; maintenance working with operators on adjustments."
+    },
+    {
+      "plant": "L1",
+      "title": "Time clock in lunch room out of order",
+      "summary": "Time clock showing \"no communication with server\" fault, preventing employees from clocking in/out.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "William Lopez",
+        "time_utc": "2026-10-29T18:44:28.989Z"
+      },
+      "status": "Reported at 12:44; no follow-up or resolution posted by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS checkweigher blow-offs for highs and lows",
+      "summary": "Line stopped at 12:24 due to too many blow-offs on weight checks after changeover restart.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-10-29T18:24:50.156Z"
+      },
+      "status": "Line back up at 12:32 after 7-minute adjustment; monitoring ongoing."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 broken spare vacuum for 60g Feastables",
+      "summary": "Spare vacuum unit for 60g product found broken during CIL; missing the broken part that might be weldable.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Halladay",
+        "time_utc": "2026-10-29T12:56:58.22Z"
+      },
+      "status": "Reported at 06:56; no replacement ordered or repair initiated by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 2 faults and cooler filling issues",
+      "summary": "Depositor 2 showing faults at 05:41, turned off to bypass and load molds; cooler 2 not filling properly at 06:22; WDS programmer called in remotely multiple times; mold jam on cooler 2 at 10:13; depositor 1 sliders not purging correctly at 12:10.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-29T11:41:28.821Z"
+      },
+      "status": "Packaging team sent home at 12:11. Shawn identified depositor 1 slider registration issue at 12:45 (registered as type 7 instead of type 3, causing open position to stop at 70 degrees instead of 109). Pump system being cleaned and reinstalled."
+    }
+  ]
+}
