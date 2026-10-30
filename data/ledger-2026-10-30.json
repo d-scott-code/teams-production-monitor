@@ -1,0 +1,370 @@
+{
+  "date": "2026-10-30",
+  "headline": {
+    "eyebrow": "Active issues",
+    "text": "L3 ML4 battled wrapper rejections and alignment faults for *5 hours*\u2014TG4 still rejecting at window close, TG3 awaiting belt swap."
+  },
+  "per_plant_summary": {
+    "L1": "S3 cleared a metal detector valve, belt tension fault, and depositor clumps to approve product by midday. S2 and S4 ran with minor labeler ripples and slow caramel cook times. S1 held centerline all day.",
+    "L2": "ML3 ran clean after a vacuum CIL stop. FFS fought scale timing for 2 hours, stabilized by 3rd shift. ML2 missed midshift on a 25-minute CIL and chocolate jams but recovered.",
+    "L3": "ML4 burned 5 hours on TG4 rejections and TG3 cross-belt overlaps\u2014TG4 filter cleaned at 04:28 but still rejecting at 03:12, TG3 needs belt swap for folded edges. Truffle Line and ML1 each started 3+ hours late on chiller and pipe blockages. ML1 lost Qisoft at shift start."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Ray Garcia identified open TG connector after cleaning as root cause for gondola routing fault\u2014cleared by 20:24."
+    },
+    {
+      "plant": "L3",
+      "text": "Nelson Cook noted TG3 belt vendor sent belts with edges that fold over, causing rejects. Ordering direct from Theegarten next time."
+    },
+    {
+      "plant": "L1",
+      "text": "S3 cooling tunnel chiller settings were missing from recipe after program switch\u2014Erandy corrected and saved."
+    },
+    {
+      "plant": "L2",
+      "text": "Graham supplier sent 2 shipments in individual boxes instead of totes to maintain supply. Future shipments revert to totes."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 cross conveyor 2 belt no tension",
+      "summary": "Cross conveyor 2 stopped running due to loss of belt tension; crew worked on tensioning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Karla Uribe",
+        "time_utc": "2026-10-30T15:24:14.439Z"
+      },
+      "resolution": "Belt tensioned and running. No further updates, implied resolved."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector reject actuator valve stuck",
+      "summary": "Reject valve stuck on metal detector, unable to eject test cards; maintenance replaced actuator.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-30T15:26:44.018Z"
+      },
+      "resolution": "Valve replaced at 09:40. \"Tests conducted with all cards\u2026rejects correctly. Equipment operating normally\" (Ingrid Moreno Angarita)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 target depositor not dispensing nuts",
+      "summary": "Target depositor clogged with large nut clumps, 3 nozzles blocked; crew broke clumps and unclogged.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-30T15:39:28.313Z"
+      },
+      "resolution": "\"Big clumps removed\u2026one EE breaking clumps before loading\" (Erandy Garcilazo Ceja, 10:03). Running."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 cooling tunnel temps high, soft caramel in pack",
+      "summary": "Tunnel 2 temps high, causing soft caramel; chiller settings were missing from recipe after program switch.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-30T16:17:51.393Z"
+      },
+      "resolution": "Chiller settings corrected and saved to recipe by 10:32 (Erandy Garcilazo Ceja). Pre-piece weights good after adjustment."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 salt distribution on pieces",
+      "summary": "Quality flagged pieces with heavy salt coverage; team reviewed distribution against spec.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-30T13:19:32.607Z"
+      },
+      "resolution": "\"Salt has good distribution; we are within specifications\" (Mary Montilla, 07:56)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS overprinter print mark fault",
+      "summary": "Overprinter threw print mark and overprint mark faults; ribbon replaced.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-10-29T22:43:17.586Z"
+      },
+      "resolution": "Print ribbon changed at 16:54. \"FFS is running\" (Fernando Flores, 16:48). Ribbon changed again at 17:01, stable after."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 vacuums dirty during CIL, line paused 5 min",
+      "summary": "Vacuums found dirty during CIL check, required cleaning before restart.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-29T23:42:27.155Z"
+      },
+      "resolution": "\"Vacuums were dirty and required a clean, line is running again\" (Molding Line 3 Pack, 17:42)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 aligner skipping rows, scrapping good product",
+      "summary": "Aligner skipped rows and sent good product to scrap at 25 mpm; TG techs dropped speed to 18 mpm and system stabilized.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-10-30T00:24:49.554Z"
+      },
+      "resolution": "Speed reduced from 25 to 18 mpm at TG request. \"Found the issue\u2026drop down to 18 vs 25 mpm\" (Shane Olsen, 18:54). Line stable by 20:53."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola routing fault\u2014all chocolate to TG5, none to TG4",
+      "summary": "Gondola sent all chocolate to TG5 instead of splitting to TG4 and TG5; setting checked, connector found open.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-30T00:59:48.201Z"
+      },
+      "resolution": "Cleared at 20:24\u2014\"connector was open after cleaning which caused issues\" (Ray Garcia). All 3 TGs running by 20:59."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola faulting every couple minutes",
+      "summary": "Gondola threw recurring error, stopping line every few minutes; maintenance traced to cross-belt automatic speed control.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-10-30T08:28:48.05Z"
+      },
+      "resolution": "Resolved at 02:39\u2014\"turned on automatic speed control\u2026bars falling off\u2026causing disorganized faults\" (Kavin Ayala). Reverted setting."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 cooler temperature spike, chocolate sticking in mold",
+      "summary": "Cooler temp rose at 13:21, chocolate stuck in mold; chiller was off, operator restarted it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-29T19:21:33.656Z"
+      },
+      "resolution": "Chiller restarted; line ran one cycle to release stuck chocolate. Glycol good by 18:30, running smoothly."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 mold alarm, line paused twice",
+      "summary": "Mold alarm at 15:38 and 15:46, maintenance contacted; line restarted after clearing stuck molds.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-29T21:38:36.359Z"
+      },
+      "resolution": "Cleared stuck molds and restarted. \"We are now running\" (Imperial, 15:52)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 demolding jam, repeated twice",
+      "summary": "Demolding jammed at 20:02, cleared and ran briefly, jammed again at 20:18; mallet used to clear.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-10-30T02:02:55.227Z"
+      },
+      "resolution": "\"Jam has been fixed. Up and running\" (Marcos Montano, 20:22)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 film tearing on wrapper",
+      "summary": "Film tore on TG5 wrapper due to ridge on south forming fin; packages rejected for seal integrity.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-30T03:36:48.847Z"
+      },
+      "resolution": "\"Ridge on south forming fin causing it to cut the film\" sanded down. TG5 running good by 01:33 (Kavin Ayala)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line chicane belt misalignment",
+      "summary": "Belt after guillotine out of position at start of shift; maintenance adjusted alignment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-30T13:18:22.558Z"
+      },
+      "resolution": "\"All Cavanna chicane belts aligned and running good now\" (Nathan Ruiz, 09:24)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line enrober bottom plate misinstalled",
+      "summary": "Operator noticed enrober bottom plate not installed correctly during startup; maintenance corrected.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rich Brierley",
+        "time_utc": "2026-10-30T13:58:44.306Z"
+      },
+      "resolution": "\"Operator notified maintenance and it's now installed correctly\" (Rich Brierley, 07:58)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 Tropica cold, Carastar cook times at 53 minutes",
+      "summary": "Tropica unit found cold at shift start despite being plugged in; Carastar D1 and D2 taking 53 min to cook vs. normal times.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-10-30T14:57:28.981Z"
+      },
+      "status": "Katya asked to check kettles one at a time before cooking. No resolution posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 labeler ripples and bubbles on jars",
+      "summary": "Labeler A down, B in use but producing wrinkles and bubbles along bottom of label; 30 min of adjustments did not resolve.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-10-30T15:40:27.21Z"
+      },
+      "status": "Troy and Chris J spent 30+ minutes adjusting. \"Very close, but still get wrinkling and bubbles along bottom\u2026right in front\" (Troy Baxter, 10:15)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 final piece weights low, chocolate needs increase",
+      "summary": "Pre-piece weights good after tunnel adjustments, but final piece at metal detector weigh low end of spec.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janell Scharrer",
+        "time_utc": "2026-10-30T17:16:23.944Z"
+      },
+      "status": "Flagged at 11:16. Awaiting chocolate pump adjustment. Product approved for release at 12:22 but adjustment needed for target."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caramel scrap bin overflowing",
+      "summary": "Caramel scrap accumulation overflowing the collection bin.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-10-30T17:10:56.217Z"
+      },
+      "status": "Flagged at 11:10. No response or resolution posted."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS scale timing causing pauses and blow-offs",
+      "summary": "FFS running at 50 ppm but averaging 32 ppm with frequent pauses; maintenance adjusting scale timing.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-10-29T21:18:23.051Z"
+      },
+      "status": "Stabilized by 15:36 2nd shift. 3rd shift reported blow-offs first 2 hours but \"under control, making up ground\" by 02:42."
+    },
+    {
+      "plant": "L2",
+      "title": "Graham packaging format change requires process review",
+      "summary": "Unground grahams arriving in individual 6-bag boxes instead of totes for 2 shipments; increased contamination risk during handling.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-10-30T05:46:44.039Z"
+      },
+      "status": "Kirk confirmed temporary\u20142 shipments from alternate plant, then back to totes. Process evaluation needed for interim handling."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 90\u00b0 belt has hole, needs replacement",
+      "summary": "Long belt 90\u00b0 section has a hole; belt ready to swap when time permits.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dave Ruff",
+        "time_utc": "2026-10-30T11:48:20.084Z"
+      },
+      "status": "Rollers cleaned and ready for new belts as of 07:02. Belt change deferred to available window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 excessive product rejection",
+      "summary": "TG4 wrapper rejecting high volume of product; vacuum hoses and filter cleaned at 04:28 but still rejecting as of 03:12.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-10-30T05:18:20.029Z"
+      },
+      "status": "Maintenance cleaned vacuum hoses/filter at 04:28, reported \"running good.\" Reposted at 02:19 and 03:12 still rejecting. Awaiting further diagnosis."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Qisoft system down entire shift",
+      "summary": "Qisoft not working since 2nd shift start at 15:31; operators using old paper temper graph as workaround.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-29T21:31:16.058Z"
+      },
+      "status": "Still down at window close. Crew marking tempers on old graph with Qi-soft's usual target for reference."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 cross-belt bars overlapping, belt edges folding",
+      "summary": "TG3 cross conveyor belts causing bars to overlap and jam gondola entrance; vendor belt quality issue\u2014edges fold over.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-10-30T06:27:47.993Z"
+      },
+      "status": "Belt replacement needed\u2014\"edges folding over, causing rejects. Known vendor issue\" (Ray Garcia, 10:57). Belt at Nelson's desk as of 12:28, swap scheduled after 14:30 cleaning. Not yet installed at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line flavor injection pipe clogged",
+      "summary": "Pipe where flavor flows clogged with chocolate and crystallized sugar; prevented kitchen from starting until 10:06.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-30T15:31:34.499Z"
+      },
+      "status": "Chris removed sections, washing last piece as of 12:15. Temper good, employees diverted to Matrix 1 while maintenance finishes."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 9 centerlines out of spec",
+      "summary": "9 centerline parameters don't match the centerline spec sheet; using old sheet, may need updated targets.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-29T21:57:25.209Z"
+      },
+      "status": "Flagged at 15:57, same report at 22:20. No updated sheet provided yet."
+    }
+  ]
+}

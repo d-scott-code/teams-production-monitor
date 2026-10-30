@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-30",
+  "headline": {
+    "eyebrow": "Cross-contact",
+    "text": "Seven Feastables *60g molds* found mixed into ML4 snack-size tote \u2014 caught during mold inspection, removed from line before use."
+  },
+  "summary": "One active hold for label rework on S2. Cross-contact event at ML4 caught by operators. Multiple quality flags across L3 \u2014 glycol level low, centerlines off-spec, vendor belt quality driving TG3 rejects. Sanitation gaps driving equipment issues: glue buildup tearing film on ML3, operator spill on ML4 depositor check.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 label rework \u2014 incorrect best by dates",
+      "summary": "Two pallets item 30732 with wrong best-by dates on box labels placed in rework status by packaging supervisor.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-10-30T15:28:58.291Z"
+      },
+      "status": "On hold pending label replacement."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Feastables molds mixed into snack-size totes",
+      "summary": "Seven 60g Feastables molds found in ML4 snack-size mold totes during pre-insertion inspection \u2014 operators removing all before magazine load.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-30T14:16:32.575Z"
+      },
+      "status": "Operators inspecting every mold before insertion; no foreign molds entered production."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 caramel soft at pack due to tunnel temps",
+      "summary": "Soft caramel observed in pack area \u2014 cooling tunnel 2 temps high, chiller settings missing from recipe loaded at startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-30T16:17:51.393Z"
+      },
+      "status": "Resolved \u2014 chiller settings corrected and saved to recipe, product firming up."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 display boxes missing adhesive",
+      "summary": "Display boxes found with no adhesive on bottom fold \u2014 quality notified, investigating batch.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-10-30T02:22:21.390Z"
+      },
+      "status": "Open \u2014 team tracking count of affected boxes through end of shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 film tears \u2014 forming fin damage",
+      "summary": "TG5 cutting film due to ridge on south forming fin \u2014 maintenance smoothed ridge, running clean since 01:33.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angel Cabrera",
+        "time_utc": "2026-10-30T03:36:48.847Z"
+      },
+      "status": "Resolved \u2014 forming fin corrected, no further tears."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 rejecting product \u2014 vendor belt issue",
+      "summary": "TG3 270 belts folding at edges causing product rejects \u2014 TG techs identified wrong vendor, will replace belts and reorder from OEM.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-10-30T06:27:47.993Z"
+      },
+      "status": "Open \u2014 running with rejects until belt change; Nelson ordering correct vendor stock."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol level below spec",
+      "summary": "Glycol measured at 1.2 vs 1.5 target \u2014 maintenance contacted to refill, potential impact on cooling performance.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-30T11:25:46.279Z"
+      },
+      "status": "Maintenance addressing; waiting for confirmation of correction."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 salt distribution flagged then cleared",
+      "summary": "Quality flagged heavy salt on some pieces at startup \u2014 kitchen adjusted, follow-up check confirmed within spec.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-10-30T13:19:32.607Z"
+      },
+      "status": "Resolved \u2014 salt distribution confirmed acceptable after adjustment."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar label quality \u2014 wrinkling and bubbles",
+      "summary": "Label applicator producing wrinkled labels with bubbles along bottom edge \u2014 maintenance adjusted 30 min, issue persists.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-10-30T15:40:27.210Z"
+      },
+      "status": "Open \u2014 running with cosmetic defect; maintenance escalating to vendor for root cause."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 centerlines off-spec at shift start",
+      "summary": "Nine centerline parameters out of spec on old sheet at 2nd shift handoff \u2014 operator working adjustments.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-10-29T21:57:25.209Z"
+      },
+      "status": "Resolved \u2014 adjustments completed, line running within spec by mid-shift."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "ML3 vacuum cleaning reminder \u2014 CIL gap",
+      "summary": "Shift handoff note that vacuums not being left clean during CIL \u2014 impacting all shifts, causing line stops and extended CIL times.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-30T12:48:09.864Z"
+      },
+      "status": "Open \u2014 supervisor reminder posted to all shifts; monitoring compliance."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film tears \u2014 glue buildup on rollers",
+      "summary": "Flow-wrap film tearing repeatedly at forming station \u2014 glue residue found on rollers driving failures.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-10-30T13:06:35.614Z"
+      },
+      "status": "Open \u2014 operators cleaning rollers; recurring issue suggests cleaning frequency gap."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Dep 2 spill \u2014 filter checked while running",
+      "summary": "Operator checked depositor filter during equipment operation per startup checklist step 2, causing product spill \u2014 supervisor requesting checklist update to clarify shutdown required.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-10-30T05:42:54.776Z"
+      },
+      "status": "Open \u2014 Shawn acknowledged good callout; checklist revision pending."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle flavor pipe clogged",
+      "summary": "Flavor delivery pipe clogged with chocolate and crystallized sugar \u2014 maintenance disassembled and cleaning sections, delaying startup.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-10-30T15:31:34.499Z"
+      },
+      "status": "Open \u2014 final section being washed; root cause of contamination under review."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "S2 allergen containers in non-allergen area",
+      "summary": "Red allergen-labeled containers found staged in S2 production area during non-allergen MMK jar run \u2014 QA flagged for removal.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-10-30T15:37:56.885Z"
+      },
+      "status": "Resolved \u2014 containers relocated by production team after QA notification."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S3 recipe save/load procedure \u2014 today's soft caramel from missing chiller settings suggests recipe integrity check needed at line start."
+    },
+    {
+      "plant": "L2",
+      "text": "Review ML3 vacuum cleaning standards and add to CIL verification checklist \u2014 today's shift handoff notes that dirty vacuums are impacting all three shifts with line stops and extended CIL."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding 'equipment must be stopped' callout to ML4 Depositor 2 startup checklist step 2 (filter check) \u2014 today's spill from checking filter while running echoes procedure ambiguity."
+    },
+    {
+      "plant": "L3",
+      "text": "Add mold visual inspection step to ML4 startup checklist before magazine loading \u2014 today's seven Feastables molds in snack-size totes were caught only because operator chose to inspect."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding TG belt vendor and part number to ML4 spare parts spec \u2014 today's TG3 reject issue traced to wrong vendor belt purchased outside OEM channel."
+    }
+  ]
+}
