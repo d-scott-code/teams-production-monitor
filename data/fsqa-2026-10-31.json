@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-31",
+  "headline": {
+    "eyebrow": "Foreign material risk",
+    "text": "L3 Truffle Line belt found folded and *cut* after cleaning \u2014 running but damage severe; L3 ML4 filter vacuum incomplete at startup."
+  },
+  "summary": "One active foreign-material concern \u2014 damaged conveyor belt with visible cut at L3 Truffle Line is running but flagged for Monday resolution. Two cleaning gaps: L3 ML4 filter vacuum not completed (linked to rejected chocolate), L1 non-allergen items deferred to Monday after barrel wash took over the area.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Damaged belt with cut running on Truffle Line",
+      "summary": "Speed-up table belt (after Gallatin) found folded over with visible cut during post-clean inspection; currently running but damage severe enough to warrant weekend replacement discussion.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-10-31T13:12:45.209Z"
+      },
+      "status": "Open \u2014 belt is running as of 07:12; management asked for weekend repair assessment."
+    },
+    {
+      "plant": "L3",
+      "title": "Inclusion hopper vacuum dropped during cleaning, wire ripped",
+      "summary": "Vacuum for ML1 inclusion hopper dropped when ring clamp popped open while moving; wire torn off during fall; maintenance repaired wire and bracket by 04:42.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-31T09:16:56.156Z"
+      },
+      "status": "Resolved on shift \u2014 wire fixed by Kavin, hopper reassembled and back in service."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "Inkjet code date doesn't fit inside flow wrap on ML2",
+      "summary": "12g changeover completed except inkjet printer setup \u2014 code date prints outside flow-wrap boundary; line lead unable to adjust, maintenance also unable to resolve.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-10-31T11:38:01.658Z"
+      },
+      "status": "Open, deferred to Monday startup \u2014 staged for production but coding issue unresolved."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Non-allergen items not cleaned after barrel wash took over area",
+      "summary": "Non-allergen wash area used all night for 48 barrels; some non-allergen items unable to be cleaned as a result and deferred to Monday completion.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-10-31T13:28:38.382Z"
+      },
+      "status": "Open \u2014 cleaning incomplete at shift end, scheduled for Monday finish."
+    },
+    {
+      "plant": "L3",
+      "title": "Sprayer tool from drain area found in washroom",
+      "summary": "Sprayer used on drains was moved to ML1 washroom; flagged to prevent return to equipment service without proper identification and sanitization.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-10-30T22:03:31.942Z"
+      },
+      "status": "Resolved on shift \u2014 sprayer segregated in washroom."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 filter vacuum not completed during cleaning",
+      "summary": "Filter vacuum on TG4 was skipped during level-2 clean; operator flagged it as root cause of rejected chocolate issues and completed it during day shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-10-31T10:57:50.545Z"
+      },
+      "status": "Resolved on shift \u2014 filter vacuum cleaned during 3rd shift before production start."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review labeling on sanitation tools \u2014 the sprayer used on drains nearly went back into equipment service at ML1."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider capacity planning for wash-area conflicts \u2014 tonight's barrel backlog prevented completion of non-allergen item cleaning."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding ring-clamp safety pins to inclusion hopper handling SOP \u2014 today's vacuum drop at ML1 cited missing safety pin as cause, echoing need for fall-prevention hardware."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 level-2 checklist to include filter vacuum as mandatory sign-off \u2014 today's skip was linked by the operator to ongoing rejected-chocolate issues."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-31",
+  "headline": {
+    "eyebrow": "Belt damage",
+    "text": "L3 Truffle speed-up belt found with *severe fold and cut* \u2014 running for now, maintenance reviewing options for Monday."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran caramel products across all lines with two brief stoppages on Sollich 4 \u2014 both cleared inside 20 minutes. Level 2 cleans completed overnight.",
+    "L2": "L2 cleared a film tear on FFS in 15 minutes but left two changeover issues open for Monday: snack-size parts unknown and an inkjet alignment problem on ML2.",
+    "L3": "L3 completed level 2 cleans on ML1, ML4, and Truffle. A Truffle belt was found folded over with a cut at 07:12 \u2014 severe damage but still running, awaiting maintenance decision."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Scissor lift died during tarp removal work and was put on charge."
+    },
+    {
+      "plant": "L2",
+      "text": "Warehouse staged three different lots of cases for FFS Monday start \u2014 Zack labeled them for crew visibility."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 caramel tangling causing double pieces",
+      "summary": "Caramel on the line tangled and caused double pieces at the pack end; operators cleared it inside 20 minutes.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Penny Akins",
+        "time_utc": "2026-10-30T22:07:21.151Z"
+      },
+      "resolution": "Cleared at 16:26 \u2014 \"Problem fixed. Thank you\" (Penny Akins)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 THG wrapper stopping intermittently",
+      "summary": "The THG wrapper kept stopping for unknown reasons; Caleb York and Bryant diagnosed and re-taught the wrapper gap print detect sensor.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-10-30T23:05:09.967Z"
+      },
+      "resolution": "Fixed at 17:14 \u2014 sensor re-taught, wrapper running (Caleb York)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS film tore inside machine",
+      "summary": "Film tore on the shoulder and had to be re-routed; operators took the line down to re-thread and brought it back up in 15 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-10-31T00:44:47.465Z"
+      },
+      "resolution": "Line up at 18:59 \u2014 \"Line is up\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 line down, all servos turned on",
+      "summary": "The line stopped at 12:58 with all servos turning on; crew reset and had it running again inside 9 minutes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-10-30T19:01:00.013Z"
+      },
+      "resolution": "Running at 13:07 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 inclusion hopper vacuum dropped and wire damaged",
+      "summary": "The ring clamp popped open while moving the hopper vacuum, causing it to drop and rip the wire off; Kavin repaired the wire on-site.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-31T09:16:56.156Z"
+      },
+      "resolution": "Fixed at 04:42 \u2014 \"The wire on the inclusion hopper has been fixed by Kavin\" (Phillip Perez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle chicane belt tracking alarm during post-clean check",
+      "summary": "Belt tracking alarm sounded 13 minutes into the post-clean belt run; Jose adjusted tracking and ran an additional 15 minutes with no issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-10-31T11:49:19.335Z"
+      },
+      "resolution": "Cleared after adjustment \u2014 ran 15 more minutes, no issues (Phillip Perez, 05:49)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 rice hopper sensor bracket bent, reading incorrectly",
+      "summary": "The sensor bracket was bent and the sensor wasn't reading correctly; Kavin adjusted the bracket back into place.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-10-31T12:16:33.645Z"
+      },
+      "resolution": "Fixed at 06:42 \u2014 \"Got back into place\" (Kavin Ayala)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "ML2 speed roller belts bottomed out on tension adjustment",
+      "summary": "Speed roller belts are all loose as if not the same size; Fernando adjusted them to get them running but the adjustments are maxed out with no room left.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-10-30T23:30:30.697Z"
+      },
+      "status": "Belts running as of 18:48 but \"bottomed out on the adjustments\" \u2014 no margin remaining."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS changeover to snack size incomplete, parts unknown",
+      "summary": "Lance was unsure which parts are needed to complete the snack-size changeover; Zack elected to wait until Monday rather than guess and risk further delay.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-10-31T11:36:16.318Z"
+      },
+      "status": "Chocolate and film staged, one pallet of cases on hand, changeover incomplete as of 05:36."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 inkjet printer code date won't fit inside flow-wrap",
+      "summary": "Maintenance couldn't adjust the inkjet to fit the code date inside the wrapper boundary; line lead can adjust it manually but issue needs addressing Monday.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-10-31T11:38:01.658Z"
+      },
+      "status": "Changeover to 12g otherwise complete; line lead workaround available, setup needs fixing at Monday startup."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle speed-up belt folded over with severe cut",
+      "summary": "The belt on the speed-up table after the Gallatin was found folded over with a cut during post-clean inspection; damage described as severe but belt is running.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-10-31T13:12:45.209Z"
+      },
+      "status": "Running as of 07:12 but \"damage is severe\" \u2014 Rose asked Blake and Chris for thoughts at 09:11, no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 filter vacuum cleaning not finished, causing rejects",
+      "summary": "The filter vacuum was left incomplete from the prior clean; operator noted this is why the line has issues with rejected chocolate and will clean it this time.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-10-31T10:57:50.545Z"
+      },
+      "status": "Operator flagged at 04:57, will clean during this cycle."
+    }
+  ]
+}
