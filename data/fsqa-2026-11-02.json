@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-02",
+  "headline": {
+    "eyebrow": "Equipment failure",
+    "text": "L3 ML1 metal detector rejecting *all test cards* after maintenance; root cause unknown, line running with compromised detection."
+  },
+  "summary": "Two metal detector issues today: L3 ML1 rejecting all test cards (unresolved, line running), L2 S2 unit down at shift end. L3 ML4 Sweco gasket installed incorrectly\u2014outside screen instead of on it\u2014compromising ingredient screening. L1 S3 paused for belt-on-metal debris; QA cleared, no product affected.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "S2 metal detector not working",
+      "summary": "Metal detector reported not working at 14:34 MT; maintenance called to site.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-02T21:34:39.467Z"
+      },
+      "status": "Open\u2014maintenance notified, no follow-up posted by shift end."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Sweco gasket installed incorrectly",
+      "summary": "Sweco gasket positioned on outside of screen rather than on screen itself, compromising ingredient screening integrity.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-02T12:37:16.034Z"
+      },
+      "status": "Resolved\u2014gasket reinstalled correctly, Sweco and magnet verified clean and damage-free by QA at 05:37 MT."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector rejecting all test cards",
+      "summary": "Metal detector continues to reject all test cards after maintenance work; root cause unknown and line is running with compromised metal detection capability.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-02T21:08:03.548Z"
+      },
+      "status": "Open\u2014Shawn Jewkes asked for details at 14:08 MT, no resolution posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 heavy cream pump water leak",
+      "summary": "Water leak at heavy cream transfer pump in Kitchen 2; pressure-regulating valve assembly replaced, samples compared cross-kitchen, water activity tested.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-02T18:23:40.294Z"
+      },
+      "status": "Resolved\u2014maintenance replaced pipe assembly, QA tested water activity and viscosity, all within spec (aW 0.6391\u20130.6657, viscosity 11750\u201316480)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 belt rubbing metal cover, debris on floor",
+      "summary": "Cross conveyor 2 belt rubbing metal cover with visible debris on floor; line paused for food-safety investigation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-02T19:49:22.709Z"
+      },
+      "status": "Resolved\u2014QA verified no product affected, maintenance adjusted belt, production cleaned area, ATP passed (3 sites), line released at 13:36 MT."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 inkjet print outside designated box",
+      "summary": "Printer faulting repeatedly; switched to inkjet but print falls outside designated area on flow-wrap.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-11-02T19:04:59.997Z"
+      },
+      "status": "Resolved\u2014Hervin Herrera and Candon Watt approved running with print slightly outside box; QA signed off at 12:27 MT."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 double and triple pieces in pouches",
+      "summary": "Many double and triple pieces observed in pouches; product being inspected to remove affected units.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-11-02T20:47:26.741Z"
+      },
+      "status": "Open\u2014line leads and QA notified at 13:47 MT, inspection ongoing at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bars broken coming out of gondola",
+      "summary": "Bars with broken/exposed appearance coming from gondola; technician adjusting, sorters removing bad units.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-02T15:37:23.237Z"
+      },
+      "status": "Resolved\u2014adjustments made, appearance improved and within standards by 10:27 MT; residual defects minimal by 13:32 MT."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "ML4 cleaning roller 1 not turned on",
+      "summary": "Cleaning roller 1 found not running at startup\u2014operator oversight on checklist.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-11-02T22:00:17.899Z"
+      },
+      "status": "Resolved\u2014roller turned on, no follow-up issues posted."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L1",
+      "title": "Wrong allergen cart color on S3 line",
+      "summary": "Allergen cart with incorrect color for current product found in S3 line area.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-11-02T22:15:48.174Z"
+      },
+      "status": "Open\u2014Victor Mejia asked line leads to remove or replace at 15:15 MT; no confirmation posted by window close."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review allergen cart color-coding and staging discipline\u2014today's S3 had wrong-color cart in line area at shift end."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding metal-detector test-card verification to post-maintenance checklist and require FSQA sign-off before release\u2014today's ML1 unit rejected all cards after maintenance yet line ran."
+    },
+    {
+      "plant": "L3",
+      "text": "Review Sweco assembly training and add gasket-position photo to startup checklist\u2014today's ML4 gasket was installed outside the screen instead of on it."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding cleaning-roller status (on/off) to ML4 startup verification\u2014today's roller 1 was found off at 15:00 MT."
+    }
+  ]
+}
