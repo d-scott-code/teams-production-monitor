@@ -1,0 +1,250 @@
+{
+  "date": "2026-11-03",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML2 was down *95 minutes* on folding disk belt and blade work \u2014 cleared by 12:13, running clean since"
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran S2 and S3 with minor interruptions. S2 ultrasonic jammed the cutter at 04:51, cleared by 06:04. S1 cooling tunnel belt replacement in progress; enrober communication fault unresolved at window close. S4 received cold tapioca totes at 06:27, delaying startup.",
+    "L2": "L2 ML2 lost 95 minutes to folding disk belt and blade shimming; back up at 12:13. FFS X-ray fault at 15:52 cleared by 16:12. ML3 sensor faults at 19:39 and 20:30 each resolved inside 20 minutes. Big Joe #7 leaking hydraulic oil again, parked.",
+    "L3": "L3 ML4 ran clean after belt adjustments cleared at 13:04. ML1 managed chocolate deposition issues with pump speed tweaks throughout shift. Truffle line paused at 11:47 for CILT and guillotine belt; weight and oil ratio still being dialed in at window close. MF Matrix lot code mix at 23:16 addressed before 1st shift."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S2 printer warnings (Cavannas, Matrix 6/7/8) flagged at end of shift \u2014 improper shutdown alerts."
+    },
+    {
+      "plant": "L1",
+      "text": "S3 target depositor clumps from unsorted nuts during shift change caused downtime for 1st shift."
+    },
+    {
+      "plant": "L2",
+      "text": "Hershey's Peco delivery delayed to 11:00; used 18 pallets of CandyCo Peco as bridge."
+    },
+    {
+      "plant": "L3",
+      "text": "MF Matrix operator direction gap noted \u2014 lot codes mixed in hopper due to lack of handoff clarity."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 ultrasonic sensor jam at cutter",
+      "summary": "Ultrasonic stopped working, caused major jam at cutter; line paused, maintenance reset in cabinet.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-03T11:51:25.858Z"
+      },
+      "resolution": "Cleared at 06:04 \u2014 \"Maintenance reset the ultrasonic in the cabinet and it started working again\" (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 tunnel 3 belt threads",
+      "summary": "Belt threads on tunnel 3 flagged as needing immediate attention; maintenance cut threads and reported to QA.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-03T15:52:27.624Z"
+      },
+      "resolution": "Cleared at 09:24 \u2014 \"We have cut all the threads\u2014regards from the Belt\u2014and it has been reported to QA\" (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS X-ray detector not rejecting test samples",
+      "summary": "X-ray machine failed to reject test cards; maintenance troubleshot and cleared fault, verified 10 test passes.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-02T22:56:15.783Z"
+      },
+      "resolution": "Cleared at 16:12 \u2014 \"The X-ray detector issue was resolved by Maintenance. Test cards were passed through the detector 10 times\" (Wilson Amaris Cabrera)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 folding disk belt failure and blade shimming",
+      "summary": "Folding disk stopped spinning, flow-wrap bunching; maintenance replaced belt, shimmed blades, replaced broken roll pin.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-03T13:57:25.763Z"
+      },
+      "resolution": "Cleared at 12:13 \u2014 \"Line is running. No doubles or folds\" (Jeffrey Barney). Total downtime ~95 minutes."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS gusset seal and bag quality",
+      "summary": "Flow-wrap bunching at folding disks; maintenance cleaned blades, adjusted cut mark and gusset seal.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-03T01:38:29.542Z"
+      },
+      "resolution": "Cleared at 19:09 \u2014 \"The bottom part of the pouch is coming out well; both corners are sealed\" (Marlenis Fernandez)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sensor PG303 loose, line faulted",
+      "summary": "Sensor PG303 came loose, caused PG304 to shut off and line to fault; maintenance tightened sensor, cleared fault.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-03T02:39:35.177Z"
+      },
+      "resolution": "Cleared at 19:53 \u2014 \"Line start running\" after sensor tightened and fault reset (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sensor PG300 loose wire, second fault",
+      "summary": "Sensors went out again 24 minutes after first fix; loose wire on PG300 found, tightened, system power-cycled.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-03T03:31:07.167Z"
+      },
+      "resolution": "Cleared at 20:49 \u2014 \"Line is running\" after wire tightened and reset (Mathew Draper)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 chicane support arms loose",
+      "summary": "Second chicane support arms loose, dragging on belt below; maintenance tightened.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-03T06:56:02.164Z"
+      },
+      "resolution": "Cleared at 00:03 \u2014 \"Line is up\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS roll spindle deflated and tracked off",
+      "summary": "Roll spindle deflated, roll tracked off; maintenance re-threaded and restarted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-03T16:03:56.041Z"
+      },
+      "resolution": "Cleared at 09:12 \u2014 \"Line is back up\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix lot code mixed in hopper",
+      "summary": "Previous and new lot codes mixed in hopper during shift change; team separated product, emptied matrix.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-03T06:16:28.073Z"
+      },
+      "resolution": "Addressed before 1st shift \u2014 date change verified at 04:42, visual inspection confirmed scales and chutes clear (Jordan Serna)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 2 arm blocking exit",
+      "summary": "Cavanna 2 pusher arm moving excessively, blocking chocolate exit; maintenance adjusted and tightened.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-03T13:46:28.987Z"
+      },
+      "resolution": "Cleared at 09:20 \u2014 \"Maintenance has adjusted the arm, and it is now working properly\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 belt adjustments before gondola",
+      "summary": "Intermittent stops for technician to adjust conveyor belt before gondola; line ran clean once work completed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-03T15:39:39.686Z"
+      },
+      "resolution": "Cleared at 13:04 \u2014 \"Running\" (ML4 WDS)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 cooling tunnel belt replacement in progress",
+      "summary": "Initial belt repair on cooling tunnel 1 failed; C&E replacing entire belt, waiting for belt delivery from SV2.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Lopez",
+        "time_utc": "2026-11-02T22:41:07.117Z"
+      },
+      "status": "Belt replacement in progress as of 20:19; awaiting part delivery from SV2."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 enrober communication fault",
+      "summary": "Enrober stopped communicating with other systems after power cycle; Jakob contacted, issue unresolved at window close.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-11-02T22:51:47.114Z"
+      },
+      "status": "Programmer messaged at 16:12; enrober still showing communication errors at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 cold tapioca totes delaying startup",
+      "summary": "Both tapioca totes cold when filling mixing tank; warehouse reported all remaining totes also cold.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-03T13:27:15.835Z"
+      },
+      "status": "Warehouse confirmed all tapioca totes cold at 06:50; no warming solution documented."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 printer improper shutdown warnings",
+      "summary": "Both Cavanna printers and Matrix 6/7/8 showing improper shutdown warnings at end of shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Chris Jeffs",
+        "time_utc": "2026-11-03T19:43:35.001Z"
+      },
+      "status": "Warnings flagged at 12:43 and 12:56; no resolution documented."
+    },
+    {
+      "plant": "L2",
+      "title": "Big Joe #7 leaking hydraulic oil",
+      "summary": "Forklift Big Joe #7 leaking hydraulic oil again; parked by heating cabinet, HOJ scheduled for tomorrow.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-03T16:48:39.754Z"
+      },
+      "status": "Parked and out of service; HOJ visit scheduled for next day."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle guillotine belt slipping and product weight low",
+      "summary": "Guillotine belt slipping, product coming out runny and underweight; line paused at 11:47 for CILT and belt work, adjusting oil ratio.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-03T17:06:48.326Z"
+      },
+      "status": "CILT in progress at 12:07; capture test at 12:13 showed 23.0% oil (target 22.6\u201322.8%); adjustments ongoing at window close."
+    }
+  ]
+}

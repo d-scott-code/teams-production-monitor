@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-03",
+  "headline": {
+    "eyebrow": "X-ray failure",
+    "text": "L2 FFS X-ray failed to reject test samples for *45 minutes* \u2014 maintenance resolved, 10-card verification passed."
+  },
+  "summary": "One active hold on L3 MF Matrix for lot-code mix in hopper; product being separated. L1 S2 Tunnel 3 belt threads reported to QA after discovery. L2 X-ray detector restored and verified after test-sample rejection failure.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "MF Matrix lot-code mix in hopper",
+      "summary": "Mixed lot codes discovered in hopper; line stopped, pouches opened for separation, matrix emptied.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-03T06:16:28.073Z"
+      },
+      "status": "Investigation ongoing \u2014 product being manually separated, matrix emptied per Nathan Gevenois."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "FFS X-ray not rejecting test samples",
+      "summary": "X-ray detector failed to reject Fe/SS test cards; maintenance called, line stopped until resolved.",
+      "severity": "high",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-02T22:56:15.783Z"
+      },
+      "status": "Resolved \u2014 maintenance fixed detector, 10 test cards passed for verification, line running (Wilson Amaris Cabrera, 23:12 MT)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Tunnel 1 roof peeling in repair area",
+      "summary": "Roof peeling observed in area where tunnel was previously repaired; foreign material risk if pieces fall.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-03T14:46:50.06Z"
+      },
+      "status": "Open \u2014 flagged to management, no repair action logged at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Tunnel 3 belt threads in product zone",
+      "summary": "Belt threads discovered on Tunnel 3; maintenance cut all threads and reported to QA.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-03T15:52:27.624Z"
+      },
+      "status": "Resolved on shift \u2014 threads removed, QA notified (Victor Romero, 09:24 MT)."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 four unlabeled MMK Milk pallets found",
+      "summary": "Four pallets of MMK Milk discovered with no labels, no rework paperwork, and unreported.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-11-03T19:32:16.234Z"
+      },
+      "status": "Open \u2014 flagged to Justin Garner, Curt Willis, Elizabeth Hernandez, Joseph Scott; no disposition logged."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line underweight product",
+      "summary": "Two box piece checks showed 284 and 286 pieces (target ~300); operator made adjustments at 11:27 MT.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-11-03T18:29:56.233Z"
+      },
+      "status": "Resolved on shift \u2014 pre-piece weight returned to target after operator adjustment (Jenny Medina, 11:38 MT)."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 metal detector area poor cleaning",
+      "summary": "Product residue observed on exterior surfaces, platform, and floor around metal detector; shift handoff flag.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-03T14:43:10.185Z"
+      },
+      "status": "Open \u2014 flagged at shift start, no corrective action logged at window close."
+    },
+    {
+      "plant": "L1",
+      "title": "White sanitation buckets misused",
+      "summary": "Kathleen Gilbert asked what white buckets are for in sanitation; Curt Willis directed daily bucket-usage checks.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-11-03T19:49:25.482Z"
+      },
+      "status": "Resolved \u2014 Curt directed Justin, Dakota, Jody to add bucket checks to daily routine."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review Tunnel 3 belt maintenance schedule and add visual inspection for fraying to pre-shift checklist \u2014 based on today's thread discovery requiring QA escalation."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider labeling or color-coding sanitation buckets by use (equipment vs. drain) and adding photo aids to cleaning stations \u2014 based on today's white-bucket confusion flagged by Kathleen Gilbert."
+    },
+    {
+      "plant": "L2",
+      "text": "Add X-ray test-card verification to startup checklist after any maintenance work or power cycle \u2014 based on today's 45-minute detector failure requiring 10-card revalidation."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding lot-code handoff checklist to MF Matrix shift-change protocol \u2014 based on today's hopper mix requiring full line stop, pouch opening, and manual separation."
+    }
+  ]
+}
