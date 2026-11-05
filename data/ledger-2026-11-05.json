@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-05",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "14 issues cleared in 24 hours; L1 marshmallow commissioning continues tuning, and *3 material or quality holds* remain active."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran production across S2, S3, and S4 with brief pauses for a caramel shortage and capper adjustment\u2014both cleared same-shift. S1 commissioning hit marshmallow density challenges; recipe change allowed the pump to work but parameters still need dialing. Bequet cellophane arrived midday. Coconut cashews down to final 3.5 hours of material.",
+    "L2": "L2 ran FFS and three moulding lines with no prolonged stoppages. ML2 paused for a laser printer fix during changeover to bulk SKU; approved and running by 00:06. FFS stopped briefly for X-ray calibration.",
+    "L3": "L3 Truffle line was down 1 hour 42 minutes for belt slipping\u2014cleared by adding tension and deep-cleaning rollers. Flow wrap on Truffle flagged defective rolls with glue out of position; QA placed on hold. ML1 flush delayed by de-crystallizer valve issue at window close; maintenance on-site."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S2 kitchen ran out of caramel",
+      "summary": "SCM was colder than expected, taking longer to fill; kitchen exhausted caramel supply and line paused 20 minutes to catch up.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-05T10:18:38.767Z"
+      },
+      "resolution": "Team found and switched to a warmer tote by 03:20; line resumed."
+    },
+    {
+      "plant": "L1",
+      "title": "Bequet cellophane shortage",
+      "summary": "S1 had 10 rolls of Bequet FW left (~3 hours); vendor missed Friday shipment, FedEx delivery scheduled for Thursday.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-11-04T23:01:42.621Z"
+      },
+      "resolution": "FedEx shipment (41273) arrived to SV at 13:00 per Ethan Bean."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 enrober not filled with chocolate",
+      "summary": "Enrober on S1 was empty at shift start; operator got PSI alarm and pump fault trying to fill, traced to infeed pipe on wrong side of enrober.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-11-05T00:57:39.109Z"
+      },
+      "resolution": "First shift lead changed the pipe to correct side and filled enrober by 18:10."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 target depositor clog",
+      "summary": "Line paused to unclog the target depositor and perform CILT work.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-05T05:07:57.113Z"
+      },
+      "resolution": "Line running again at 22:37 per William Beattie."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 Allfill capper timing delayed on jams",
+      "summary": "When caps stuck, white tamping block took too long to activate and clear the jam; cap chute high eye was on all the time, delaying the tamping cycle start.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-11-05T15:20:35.331Z"
+      },
+      "resolution": "Leon adjusted the cap chute high eye by removing wing nut; timing looks better."
+    },
+    {
+      "plant": "L1",
+      "title": "Water hose crack in dishwashing area 3",
+      "summary": "Hose had a crack and was spraying water throughout the dishwashing area.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-05T19:08:40.467Z"
+      },
+      "resolution": "William repaired the hose by 13:08; working without leaks."
+    },
+    {
+      "plant": "L1",
+      "title": "Kitchen staffing request for S1 marshmallow commissioning",
+      "summary": "Two kitchens (Kitchen 1 and Marshmallow Kitchen 1) required simultaneous operation; single operator struggling to keep up with mixing and cooking across both locations.",
+      "priority": "P3",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Jorge Carrillo",
+        "time_utc": "2026-11-05T18:39:30.793Z"
+      },
+      "resolution": "Justin confirmed kitchen operators already assigned to work with Marcos at 11:44."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 laser printer issue during changeover to bulk 100",
+      "summary": "Packing changeover to bulk 100 completed but laser printer needed maintenance work before approval to run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-05T05:56:21.295Z"
+      },
+      "resolution": "Hervin approved print quality at 23:46, water test passed at 23:57, line running at 00:06."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line stopped for X-ray calibration",
+      "summary": "Line paused while X-ray machine was being calibrated.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-04T22:48:55.497Z"
+      },
+      "resolution": "Line running at 16:18 per Mathew Draper."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line belt slipping",
+      "summary": "Line down at 06:32; belt slipping despite previous tension adjustment, requiring deep cleaning of scraper, rollers, and belt underside plus additional tension.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-11-05T13:32:40.884Z"
+      },
+      "resolution": "Kavin and Blake added tension, cleaned buildup; line started at 08:14 per Rich at 1.75 ppm."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 defective flow-wrap roll with silver outline",
+      "summary": "One flow-wrap roll found defective near end of roll; lettering had silver-colored outline, failing QA standards.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-05T15:32:18.917Z"
+      },
+      "resolution": "Roll replaced and already-packaged chocolate unwrapped and repackaged per 08:32 message."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line inspection conveyor stopping",
+      "summary": "One of the conveyors where product is inspected before packaging kept stopping; drive belt found to be bad and not in inventory.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-05T16:17:29.43Z"
+      },
+      "resolution": "Nathan reported \"Dorner is running again\" at 10:08."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 down for chain adjustment",
+      "summary": "TG5 stopped at 09:20 for Peter to make adjustments to the chain.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-05T16:35:52.247Z"
+      },
+      "resolution": "TG5 running back at 09:40; was actually loose brush inside forming parts, not chain, per 10:03 update."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS stopped by gondola work",
+      "summary": "Marco did something in the gondola that stopped WDS at 11:51.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-05T18:53:42.982Z"
+      },
+      "resolution": "Running at 11:55 per Itzel; operators used pause to unclog water drain on depositor 2."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 marshmallow production parameters out of spec",
+      "summary": "Hyfoama pumping/dosing system issues prevented hitting density and water activity targets; recipe change test at 10:36 allowed pump to work, but kitchen parameters need further dialing before marshmallow can be made correctly.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-11-04T23:36:51.116Z"
+      },
+      "status": "Recipe change successful in allowing pump operation; Volker needs to dial in kitchen parameters before final confirmation, as of 10:36."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 coconut cashews material running low",
+      "summary": "Down to last 2 pallets of coconut cashews with approximately 3.5 hours of run time remaining plus whatever is on the bed.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-05T20:23:15.024Z"
+      },
+      "status": "Last 2 pallets flagged at 13:23; no inbound delivery confirmation by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 reed switches/proximity sensors on MM9/10 pulled from position",
+      "summary": "Reed switches and proximity sensors on MM9/10 were found pulled out from their proper location; no explanation or resolution posted.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-11-04T23:56:58.132Z"
+      },
+      "status": "Caleb flagged sensors out of position at 16:56; no follow-up by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle flow wrap rolls with glue in wrong position",
+      "summary": "Some flow wrap rolls have glue in the wrong position; QA has been notified and rolls will be placed on hold at end of shift.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-05T19:27:53.991Z"
+      },
+      "status": "QA notified at 12:27; rolls to be held at shift end per operator message."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 de-crystallizer valve failure preventing flush",
+      "summary": "Unable to perform scheduled flush at 13:20 due to issues with the de-crystallizer valve; maintenance on-site working to resolve.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-05T20:40:42.498Z"
+      },
+      "status": "Maintenance on-site working on valve as of 13:40; flush still pending at window close."
+    }
+  ]
+}

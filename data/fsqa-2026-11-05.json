@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-05",
+  "headline": {
+    "eyebrow": "Packaging quality",
+    "text": "L3 flagged *two* flow-wrap defects in 24 hours \u2014 glue misposition on Truffle, silver-outline print on ML4 \u2014 both caught before shipment."
+  },
+  "summary": "Two separate flow-wrap quality issues on L3 lines. Truffle flow-wrap rolls with wrong glue position identified and will be held at end of shift. ML4 discovered defective roll near end with silver lettering outline mid-run; already-packaged chocolate was unwrapped and repackaged. No product shipped.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "Flow-wrap rolls \u2014 wrong glue position",
+      "summary": "Truffle line identified flow-wrap rolls with glue in wrong position; QA notified, rolls to be placed on hold at end of shift.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-05T19:27:53.991Z"
+      },
+      "status": "Hold pending at end of shift."
+    }
+  ],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 flow-wrap roll \u2014 defective print",
+      "summary": "One flow-wrap roll found defective near end of roll with silver-colored outline on lettering; packaging does not meet QA standards, roll replaced, already-packaged chocolate unwrapped and repackaged.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-05T15:32:18.917Z"
+      },
+      "status": "Resolved \u2014 defective roll removed, affected product repackaged."
+    }
+  ],
+  "sanitation": [],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding flow-wrap roll visual inspection to startup checklist \u2014 based on today's two separate packaging film defects on Truffle and ML4."
+    }
+  ]
+}
