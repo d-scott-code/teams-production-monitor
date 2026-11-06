@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-06",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 1 depositor rod broke at 10:58 \u2014 *2 hours down* for repair, still offline at window close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran three lines. Sollich 1 broke a depositor rod at 10:58 and was down for the rest of the shift. Sollich 3 hit over-pressure alarms at 17:13, cleared after reheat and equipment faults, then shut down after hitting order. Sollich 4 had a 9-minute cook-time overage and dry texture in candy as of 12:21 \u2014 both still open at window close. Facilities noted water leaks in IMS area and a broken cable tray on Big Joe #4.",
+    "L2": "L2 ran two lines with no breaks. ML2 completed a changeover to 10-count displays at 03:10 and ran clean through the window. FFS ran pouches all shift with routine quality checks. Upstairs temperature reported cold \u2014 facilities to check.",
+    "L3": "L3 ran four lines. Matrix sealing issue at 02:38 is still open; no-combination faults cleared by 05:33 after flap adjustments. Truffle line brought weight and appearance back to spec by 07:49 after operator adjustments. ML1 completed startup and temper checks with no issues. ML4 ran depositors 1 and 4; depositor 1 stopped at 12:50. Roof leak upstairs \u2014 facilities aware."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Warehouse delivered Sollich 4 flow wrap 20 minutes late; line started cooking at 17:20."
+    },
+    {
+      "plant": "L2",
+      "text": "One LPN for item 10175 not entered by previous shift; discovered during inventory at 23:22."
+    },
+    {
+      "plant": "L3",
+      "text": "Incorrect centerline sheet used on Matrix for two days; operator corrected at 12:53."
+    },
+    {
+      "plant": "L3",
+      "text": "Leon completed Cavanna infeed photo-eye improvement work on ML1."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 over-pressure alarms and equipment faults",
+      "summary": "Enrober threw over-pressure alarms at 17:13; line stopped. After reheat, screw drive, wire belt, and return pump all faulted at 19:26.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-06T00:13:48.217Z"
+      },
+      "resolution": "Fixed at 19:28 \u2014 \"It's fixed and running\" (Caleb York). Order hit and line shut down for cleaning at 19:37."
+    },
+    {
+      "plant": "L1",
+      "title": "Flow wrap materials delay for Sollich 4",
+      "summary": "Warehouse did not deliver flow wrap by 17:03; line could not start cooking until materials arrived.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Curt Willis",
+        "time_utc": "2026-11-06T00:03:39.494Z"
+      },
+      "resolution": "Flow wrap arrived at 17:20 and line started cooking (Dakota Adair)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 checkweigher issues during Matrix setup",
+      "summary": "Checkweigher had issues during setup for Matrix 9 and 10; maintenance troubleshooting at 09:00.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-06T16:00:25.04Z"
+      },
+      "resolution": "Setup completed and line started running at 09:25 (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 mixing rod sensor not reading",
+      "summary": "Mixing rod would not mix at 09:55; maintenance called to troubleshoot sensor failure.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-06T16:55:56.076Z"
+      },
+      "resolution": "Sensor corrected at 10:01 \u2014 \"The sensor was not reading correctly, we are mixing the ingredients now\" (Karla Uribe)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 high PSI and temperature stack 1 off",
+      "summary": "Pressure spiked above 120 PSI; Marcos flushed pipe and restarted, then found Stack 1 at 120\u00b0F instead of 180\u00b0F.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-11-06T17:54:25.087Z"
+      },
+      "resolution": "Pipe flushed and restarted; temperature stack found off and corrected at 11:02 (Chris Jeffs)."
+    },
+    {
+      "plant": "L1",
+      "title": "Work order 44684 not released in NetSuite",
+      "summary": "S4 Kitchen could not find WO #44684 in system to start production.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-06T00:45:30.267Z"
+      },
+      "resolution": "Work order released at 19:59 \u2014 \"The WO is released\" (Nidia Lopez Corea)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 floor sanitization after drain water",
+      "summary": "Drain water affected floor areas; production was busy and sanitizer not yet applied as of 22:05.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-11-06T05:05:12.612Z"
+      },
+      "resolution": "Area sanitization completed at 23:06 (Angelica Perez)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix machine auto-stopping on start",
+      "summary": "Machine would start then automatically switch to \"stop\" mode at 07:08, preventing operation.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-06T14:08:10.102Z"
+      },
+      "resolution": "Nathan manually cycled machine at 07:10 \u2014 \"running again.\" Root cause found at 12:38: over-discharge setting was off (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix no-combination fault causing line stops",
+      "summary": "Line stopped repeatedly with \"no combination fault\" overnight; machine unable to find acceptable weight buckets to fill pouches.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-06T11:29:46.821Z"
+      },
+      "resolution": "Kavin adjusted orange flaps at 05:33 \u2014 pieces per bucket dropped from 3-5 to 1-3, line running. \"Nice. That makes sense\" (Shawn Jewkes, 05:36)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line weight and appearance out of spec",
+      "summary": "Line handed off at shift change with final weight outside spec and appearance out of spec at 06:53.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-11-06T13:53:06.311Z"
+      },
+      "resolution": "Operator made adjustments; weight check passed at 07:49 and organoleptic test passed \u2014 \"appearance looks good\" (David Zuniaga)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle flow-wrap hold inspection",
+      "summary": "Found two unlabeled bags of flow wrap on same pallet as defective rolls placed on hold; unclear if defective.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-06T15:35:43.232Z"
+      },
+      "resolution": "All six partial rolls used without any issues at 12:08 \u2014 \"All six rolls ran perfectly\" (Grey Boscan)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S1 depositor rod broken",
+      "summary": "Rod that moves the depositor broke at 10:58; Matt and Jakob working repair with 2-hour estimate.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jorge Carrillo",
+        "time_utc": "2026-11-06T17:58:25.546Z"
+      },
+      "status": "Estimated back online at 13:30 per Jorge at 11:24. Still down at window close (12:57)."
+    },
+    {
+      "plant": "L1",
+      "title": "Big Joe #4 cable tray broken, cables exposed",
+      "summary": "Cable tray broken with exposed cables; unit tagged out of service, key removed to Curt's desk.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-11-06T11:21:16.403Z"
+      },
+      "status": "Unit tagged out at 04:21, no repair timeline posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 dry texture in candy and slow cook times",
+      "summary": "Very dry texture detected starting from first line pause at 12:21; pots taking 54 minutes to cook vs 45-minute normal at 12:39.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-06T19:21:09.904Z"
+      },
+      "status": "Mary asked if cook time needs adjustment and requested maintenance check at 12:39; no follow-up by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Water leaking in IMS area and stagnant water near Trap #70",
+      "summary": "Ebrima found water leaking in IMS area and stagnant water around pest-control Trap #70 during walkthrough.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-11-06T08:59:24.458Z"
+      },
+      "status": "Reported at 01:59 to facilities and production leads; no response by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Condensation from fridge pipe ongoing",
+      "summary": "Jody reports condensation dripping from pipe going into fridge is an ongoing issue; area dried but keeps returning.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jody Howse",
+        "time_utc": "2026-11-06T09:45:53.759Z"
+      },
+      "status": "Area dried at 02:45, no permanent fix identified."
+    },
+    {
+      "plant": "L2",
+      "title": "L2 upstairs temperature cold",
+      "summary": "Thermostat shows 72\u00b0F but employees report it is still cold upstairs.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-11-06T17:20:15.554Z"
+      },
+      "status": "William Lopez to check later this afternoon as of 11:21."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pouches not sealing",
+      "summary": "Pouches not sealing at 02:38; maintenance requested to line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-06T09:37:21.458Z"
+      },
+      "status": "Maintenance called at 02:38; no resolution or follow-up posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Roof leak upstairs dripping near white pipe",
+      "summary": "Shawn and Angel heard dripping upstairs; found drip coming from where white pipe enters roof.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-11-06T15:30:51.523Z"
+      },
+      "status": "William Lopez to check at L3 later this afternoon as of 11:22."
+    }
+  ]
+}

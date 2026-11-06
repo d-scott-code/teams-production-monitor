@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-06",
+  "headline": {
+    "eyebrow": "Equipment issue",
+    "text": "L1 S1 checkweigher malfunctioned during rework \u2014 maintenance troubleshooting, *line status unknown* at window close."
+  },
+  "summary": "One active food-safety equipment issue (L1 S1 checkweigher), one quality flag (L1 S4 extended cook time), and two sanitation concerns (L1 drain overflow resolved, IMS standing water flagged). L3 MFM ran wrong centerline for 2 days; L3 flow-wrap hold expanded after unlabeled rolls discovered.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "Expired chocolate melting on ML1",
+      "summary": "Imperial reported melting chocolate with LPN that QA is aware is expired; one pallet melted per Shawn's direction, buffer tank left at 25%.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-06T14:35:54.843Z"
+      },
+      "status": "On hold pending disposition \u2014 QA aware, only one pallet processed, no further melting authorized."
+    },
+    {
+      "plant": "L3",
+      "title": "Flow-wrap rolls \u2014 defective adhesive placement",
+      "summary": "Rolls placed on hold yesterday for adhesive in wrong position; today 2 additional unlabeled bags found on same pallet, inspected, and released after testing 6 partial rolls with no issues.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-06T15:35:43.232Z"
+      },
+      "status": "Resolved \u2014 6 partial rolls tested and ran perfectly, no defect found."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S1 checkweigher malfunction during BEQ rework",
+      "summary": "Checkweigher having issues during rework operation at 09:00; maintenance called to troubleshoot, no resolution posted by window close.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-06T16:00:25.040Z"
+      },
+      "status": "Open \u2014 maintenance troubleshooting, line status unknown at 12:57."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "MFM \u2014 wrong centerline used 2 days",
+      "summary": "Incorrect centerline sheet used past 2 days on assorted product; Shawn corrected team to use 'MFM - 16.25oz Mixed Truf' at 07:41.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-11-06T14:41:39.176Z"
+      },
+      "status": "Resolved \u2014 correct centerline identified and posted by 12:53."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 \u2014 dry texture in candy, pieces culled",
+      "summary": "Very dry texture detected in candy starting from first line pause; supervisor notified, production removing affected pieces at pack.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-06T19:21:09.904Z"
+      },
+      "status": "Open \u2014 culling ongoing, cause under investigation."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 \u2014 extended cook time flagged",
+      "summary": "Caramel pots taking 54 minutes vs. normal 45 minutes; QA asked if adjustment or maintenance check needed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-06T19:39:27.052Z"
+      },
+      "status": "Open \u2014 awaiting production or maintenance review."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 drain overflow \u2014 floor sanitization",
+      "summary": "Drain water overflowed onto S1 floor; Angelica Perez flagged at 22:05 that affected areas were dried but sanitizer not yet applied.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-11-06T05:05:12.612Z"
+      },
+      "status": "Resolved \u2014 area sanitization completed and confirmed by 23:06 same day."
+    },
+    {
+      "plant": "L1",
+      "title": "IMS area \u2014 standing water, pest risk",
+      "summary": "Water leaking in IMS area and stagnant water around Trap #70 (between Wash Area #4 and main wall) flagged during pest control inspection; risk of pest activity and microbial growth.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-11-06T08:59:24.458Z"
+      },
+      "status": "Open \u2014 flagged to facilities and production leadership, no resolution posted."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding 'check drain function and dry floor' to S1 pre-shift sanitation checklist \u2014 based on today's overflow requiring mid-shift re-sanitization."
+    },
+    {
+      "plant": "L1",
+      "text": "Investigate S4 cook-time drift (54 min vs. 45 min standard) and dry-texture candy issue \u2014 both flagged same shift, may share root cause in heating or ingredient moisture."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding hold-tag and labeling protocol for partial flow-wrap rolls to prevent unlabeled material mixing with active holds \u2014 based on today's discovery of 2 unmarked bags on the same pallet as yesterday's adhesive-defect hold."
+    },
+    {
+      "plant": "L3",
+      "text": "Review MFM centerline posting and shift-handoff checklist \u2014 wrong centerline used 2 consecutive days before correction, suggesting gap in setup verification."
+    }
+  ]
+}
