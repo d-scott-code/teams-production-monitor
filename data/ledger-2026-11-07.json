@@ -1,0 +1,294 @@
+{
+  "date": "2026-11-07",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L1 Sollich 4 lost *3 hours* on a forming issue that needed tunnel scrap \u2014 back up by 23:12."
+  },
+  "per_plant_summary": {
+    "L1": "L1 Sollich 4 had texture and temperature swings through first shift, then a forming/dimension issue at 21:57 forced a 1-hour fix and tunnel scrap \u2014 cleared by 23:12. Sollich 1 commissioning continued with 2 hours down for depositor repairs in the morning, depositing by 13:31. A drain overflow at 16:20 was traced to volume, not a clog. Sollich 3 staged materials and passed ATP for Monday's Heath trial.",
+    "L2": "L2 FFS had a 5-minute stop at 22:37 when the top packing belt jumped its sprocket \u2014 maintenance tightened and removed a link, back up by 22:42. ML3 had three brief pauses (fill issue, label break, sensor cleaning) totaling under 30 minutes. Hand wash sink water temperature adjusted after EE feedback.",
+    "L3": "L3 Truffle Line flavor pump faulted at 18:46 without triggering the alarm, forcing a hold on 1.5 pallets (26-687) \u2014 pump cleared organoleptic by 18:58 and ran monitored every 30 minutes for the rest of the window. Spring table reported issues at 02:10 but line continued. ML4 had both WDS sensors damaged during cleaning; TG3 fixed, TG4 awaiting spare. A safety-flagged blue ladder and a cable trip hazard were called out; cable was taped down by 05:11."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Sollich 3 staged all components for Monday Heath cluster trial; z-cereal belt passed ATP at 19:36."
+    },
+    {
+      "plant": "L1",
+      "text": "Cleaning rags inventory as of 06/Nov: L1 = 240, L2 = 334, L3 = 640."
+    },
+    {
+      "plant": "L2",
+      "text": "Hand wash timer buttons installed and working; teams reminded to use 20-second timers."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 depositor down for repairs",
+      "summary": "At 11:24, depositor down for estimated 2 hours, targeting 13:30 for test depositing.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jorge Carrillo",
+        "time_utc": "2026-11-06T18:24:57.798Z"
+      },
+      "resolution": "Depositing started by 13:31 (Erandy photo). Tails/stringing significantly improved by 14:41 (Italu Martinez)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 high dimension rejections and forming issue",
+      "summary": "70% parts correct dimensions, 30% too high at 21:57; operator suspected caramel misalignment; maintenance called, pause taken.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-11-07T04:57:52.314Z"
+      },
+      "resolution": "Maintenance estimated 1 hour; tunnels 1 and 2 scrapped for level 2 clean. TG fixed by 23:12 \u2014 \"TG was fixed about 15mins ago\" (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 dry caramel texture at line start",
+      "summary": "Very dry texture detected in candy from first pause; production removed pieces.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-06T19:21:09.904Z"
+      },
+      "resolution": "Cleared by 13:33 after checking \u2014 \"improved elasticity, no longer looks dry, continue to run\" (Mary Montilla)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 drain overflow near marshmallow area",
+      "summary": "Drain reported clogged at 16:20; water backing up in S1 marshmallow area.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-11-06T23:20:30.268Z"
+      },
+      "resolution": "Curt at 16:38 determined not a clog \u2014 volume of water from both S1 kitchen and marshmallow area exceeded drain capacity. Environmental samples collected before/after cleaning at 21:33."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 4 caramel too soft causing deformation",
+      "summary": "Caramel too soft at 18:38, pieces deforming in cutter and overweight; operator cutting caramel, pause taken.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-11-07T01:38:35.197Z"
+      },
+      "resolution": "Operator adjusted temperatures and checked conbar tower; by 19:02 \"good weight, consistency better\" (Alfonsina Gil)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 z-cereal belt ready for ATP",
+      "summary": "Z-cereal belt staged for ATP testing at 19:27 as part of Monday trial prep.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-07T02:27:02.615Z"
+      },
+      "resolution": "ATP passed at 19:36 \u2014 \"ATP passed\" (Victor Mejia)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS top packing belt off sprocket",
+      "summary": "Line down at 22:37; top packing belt off its sprocket.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-07T05:37:58.813Z"
+      },
+      "resolution": "Back up at 22:42 (Gustavo). Fernando at 23:10: \"belt was loose, took a link off, also cleaned video jet and installed new filters.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 fill not dispensing correctly",
+      "summary": "8-minute stop at 15:17 because fill wasn't coming out right.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-06T22:17:16.552Z"
+      },
+      "resolution": "Line running again at 15:46 (Molding Line 3 Filler)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 label break during label switch",
+      "summary": "Line down at 16:35 when label broke on bottom during label changeover.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-06T23:35:16.705Z"
+      },
+      "resolution": "Line running again at 16:39 (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "Hand wash sink water temperature too hot",
+      "summary": "At 14:28, EEs reported hand wash water too hot; request to regulate to correct temperature.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-06T21:28:56.042Z"
+      },
+      "resolution": "William Lopez checked at 16:09 \u2014 changed schedule from auto to \"Heat only\" and set to Hold; roof top unit working fine, gas on."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 CIL cleaning around chocolate sensors",
+      "summary": "Line down at 19:08 for CIL cleaning around chocolate sensors.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-11-07T02:08:01.984Z"
+      },
+      "resolution": "Line running again at 19:11 (Molding Line 3 Filler)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line flavor pump fault without alarm trigger",
+      "summary": "Flavor pump faulted at 18:46 but did not trigger alarm on temper unit; 1 full pallet + 1 partial placed on hold (26-687).",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-11-07T01:46:14.039Z"
+      },
+      "resolution": "Organoleptic passed at 18:58 (Angel Cabrera). Pump monitored every 30 minutes through end of window with no further issues \u2014 \"working properly\" (Itzel, 08:49)."
+    },
+    {
+      "plant": "L3",
+      "title": "Blower motor #4 shorted connection tripping breaker",
+      "summary": "Shorted connection at blower motor #4 caused main breaker to trip.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William  Lopez",
+        "time_utc": "2026-11-06T22:42:58.625Z"
+      },
+      "resolution": "Rewired connector and tested unit at 15:42 \u2014 \"don't see any more problems with unit #4\" (William Lopez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Cable trip hazard near ML4 end packaging",
+      "summary": "EE called out exposed cable as trip hazard near pallet wrapper.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-07T11:56:00.088Z"
+      },
+      "resolution": "Taped down at 05:11 \u2014 \"problem has been resolved\" (Phillip Perez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Heavy cream tote leaking significantly",
+      "summary": "One heavy cream tote leaking significantly at 05:35; request to transfer product to another tote to prevent further leakage.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-11-07T12:35:25.684Z"
+      },
+      "status": "Request posted to Jody and Brandon at 05:35; no response or action confirmed in the window."
+    },
+    {
+      "plant": "L1",
+      "title": "Missing conveyor rollers from Sollich 1",
+      "summary": "Jakob missing 4 conveyor rollers left next to inclusion depositor yesterday, plus additional rollers from elsewhere; floor asked to search.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Erandy Garcilazo Ceja",
+        "time_utc": "2026-11-06T20:31:38.758Z"
+      },
+      "status": "Search request posted at 13:31 and escalated at 14:14; Jody at 22:42 reports one cart of rollers by zbelt/enrober left alone last night, but missing set not yet located."
+    },
+    {
+      "plant": "L1",
+      "title": "Bolt found under Sollich 1 flow-wrap exit belt",
+      "summary": "Operator found bolt underneath FW exit belt at 00:37; maintenance checked jaw assembly, other bolts marked same way but none missing.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-07T07:37:58.839Z"
+      },
+      "status": "Maintenance thinks bolt could be left over from 12g to 60g changeover; origin not confirmed."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS LPN not scanned into system before use",
+      "summary": "At 23:07, Haydee found LPN R470971 (item 21139) not entered into system by previous shift; same issue occurred yesterday with another label.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Haydee Hidalgo Gonzales",
+        "time_utc": "2026-11-07T06:07:22.756Z"
+      },
+      "status": "Gustavo asked Mathew to follow up with team at 23:11; process training needed to prevent recurrence."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS seal jaw blade requires new cleaning procedure",
+      "summary": "At 04:54, maintenance had rough time removing blade from seal jaw \u2014 considerable burnt-on product buildup when running snack size pouch.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-07T11:54:27.909Z"
+      },
+      "status": "Gustavo recommends cleaning blade once per shift for snack size pouch; new SOP or schedule change needed."
+    },
+    {
+      "plant": "L3",
+      "title": "Blue ladder flagged as safety hazard",
+      "summary": "William Lopez called out blue ladder near L3 breather pipe area at 15:35 in all-caps: \"PLEASE DISPOSE OF THAT BLUE LADDER IT IS A SAFETY HAZARD.\"",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "William  Lopez",
+        "time_utc": "2026-11-06T22:35:35.3Z"
+      },
+      "status": "Request posted at 15:35; no confirmation of removal in the window."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS TG4 sensor broken, awaiting spare",
+      "summary": "Both TG3 and TG4 sensors damaged by cleaning team at 08:41; operators forced sensors instead of handling carefully. TG3 fixed by Peter, TG4 broken.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-07T15:43:03.564Z"
+      },
+      "status": "TG3 ready to go as of 08:41; TG4 broken, Nelson Cook checking for spares as of same time."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line spring table experiencing issues",
+      "summary": "Spring table reported issues at 02:10; no detail on symptoms or cause.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-07T09:10:53.438Z"
+      },
+      "status": "Issue noted at 02:10; line continued running with no clear resolution or follow-up."
+    }
+  ]
+}
