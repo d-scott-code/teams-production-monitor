@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-08",
+  "headline": {
+    "eyebrow": "Quiet 24 hours",
+    "text": "All L3 cleaning verification passed ATP \u2014 one Truffle Line weight deviation caught and corrected on shift, Sweco screen installation flagged for *assembly review* despite clean result."
+  },
+  "summary": "L3 Truffle Line completed weekend cleaning with all ATP passes. One weight/count deviation during production was caught by QA and corrected same shift. QA flagged Sweco screen installation for review despite successful ATP \u2014 potential assembly gap.",
+  "holds": [],
+  "food_safety": [],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Truffle Line weight/count deviation corrected on shift",
+      "summary": "Individual piece weights increased from spec, dropping box count to 236\u2013238 pieces; operator adjusted and stabilized weights at 14.1\u201314.7 g, restoring count to 253\u2013255 pieces.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-11-08T00:58:12.349Z"
+      },
+      "status": "Resolved on shift \u2014 line continues within spec, no outstanding deviations."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Sweco screen installation flagged for review after ATP pass",
+      "summary": "Level 2 final cleaning passed visual inspection and ATP verification; QA suggested reviewing Sweco screen installation despite clean result \u2014 potential assembly or fit concern.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-11-08T14:29:20.973Z"
+      },
+      "status": "Open \u2014 ATP passed, installation review recommended for Monday."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding assembly verification step to Sweco screen cleaning checklist \u2014 today's Level 2 clean passed ATP but QA flagged installation for review, suggesting fit or assembly may not be visually obvious during routine checks."
+    },
+    {
+      "plant": "L3",
+      "text": "Review centerline count documentation handoff between shifts \u2014 Truffle Line enrober centerline discrepancies reported as 6, then 9, then 15 within same product run with no operator adjustments, suggesting measurement standardization or reconciliation gap."
+    }
+  ]
+}

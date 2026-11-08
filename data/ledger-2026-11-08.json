@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-08",
+  "headline": {
+    "eyebrow": "Quality escalation",
+    "text": "L3 truffle line enrober centerline variance climbed from 9 to *15* with no operator adjustment by window close."
+  },
+  "per_plant_summary": {
+    "L1": "No activity in the last 24 hours.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "Truffle line ran production through 2nd shift with multiple quality and machine issues. Enrober centerline variance escalated from 9 to 15 without resolution. Weight variance and TG4 belt problems were both resolved during the shift. Line completed Level 2 cleaning and declared ready for Monday."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "TG4 belt creased causing false blow-off triggers",
+      "summary": "TG4C12 belt had crease down one side lifting during rotation, triggering blow-off sensor and rejecting good bars; tech planned replacement but belt was spun to use good side instead.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-07T23:58:38.743Z"
+      },
+      "resolution": "Belt spun to use undamaged side at 16:58, tech adjusted rollers for new direction, preventing replacement cost (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle weight variance causing low piece count per box",
+      "summary": "Individual piece weights drifted high (14.1-14.7g) dropping box count to 236-238 pieces; operator adjusted and stabilized at 253-255 pieces per spec.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Lorena Abreu",
+        "time_utc": "2026-11-08T00:58:12.349Z"
+      },
+      "resolution": "Operator made adjustments at 17:58, successfully stabilizing weights between 14.1-14.7g and restoring count to 253-255 pieces per box \u2014 \"line continues to operate properly, with no outstanding deviations\" (Lorena Abreu)."
+    },
+    {
+      "plant": "L3",
+      "title": "Coconut oil tote still solid, not warmed",
+      "summary": "Coconut oil remained in block form and unusable; warehouse needed to supply a warmed replacement tote from warm room following FIFO.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-08T01:08:37.292Z"
+      },
+      "resolution": "Warehouse coordinated at 18:20-18:21 to pull warm tote from warm room per IMS direction, following FIFO (Marcos Montano)."
+    },
+    {
+      "plant": "L3",
+      "title": "Cooling tunnel 1 glycol leak below unit",
+      "summary": "Leak detected under tunnel 1 during cleaning; maintenance found loose union pipe fitting as root cause.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-08T13:24:32.595Z"
+      },
+      "resolution": "Maintenance tightened loose union fitting during cleaning window at 06:24; line declared ready for Monday by 07:36 (Kimberly Morales)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L3",
+      "title": "Enrober centerline variance escalating without adjustment",
+      "summary": "Enrober centerline difference started at 9 (vs. 3 on 1st shift handoff), climbed to 15 by 16:13; kitchen operator reported no changes made and running as received.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-07T22:15:16.616Z"
+      },
+      "status": "Centerline variance at 15 as of 16:13, operator stated running unchanged from shift handoff, no corrective action documented in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Flavor pump dropped out of auto mode during operation",
+      "summary": "Flavor pump had been running normally all shift, then kicked itself out of automatic mode at 21:25 immediately after operator check.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-08T04:25:16.052Z"
+      },
+      "status": "Auto mode dropout at 21:25, supervisor acknowledged catch was important, no resolution or return to auto mode documented by window close."
+    }
+  ]
+}
