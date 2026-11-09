@@ -1,0 +1,270 @@
+{
+  "date": "2026-11-09",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 truffle line guillotine belt stopped *twice* for buildup \u2014 maintenance flagged worn scrapers and peeling belt at shift end"
+  },
+  "per_plant_summary": {
+    "L1": "S4 ran most of the shift after clearing early maintenance issues on back-end equipment and a 55-minute salt contamination hold. S2 and S3 had minor kitchen and equipment flags. S3 hosted the Heath Cluster trial startup in the afternoon.",
+    "L2": "ML2 and ML3 ran with brief stops for a demolder jam and CIL intervention, both under 10 minutes. FFS had a gusset jam mid-shift that cleared quickly, then went down again at 13:11 for blade cleaning with no restart logged by window close.",
+    "L3": "ML4 cleared an early ingredient pump clog and tension issue but TG5 fought linked bars all day \u2014 tech adjusted upper bracket at 15:47. Truffle line's guillotine belt stopped at 11:03 and again at 15:11; second stop revealed worn scrapers and a peeling belt still in progress at window end."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Heath Cluster trial ran from mid-morning through early afternoon with marshmallow deposit performing well per Katya at 10:49."
+    },
+    {
+      "plant": "L2",
+      "text": "Chocolate adjustments logged for second shift on ML2 and ML3 at shift start."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 brought centerline violations from 49 at shift start down to 22 by end of first shift after WDS adjustments."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Excess salt detected on S4 conveyor belt",
+      "summary": "FSQA detected excess salt on the conveyor at 10:47, production stopped and all affected caramel removed from the line.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Diana Vazquez",
+        "time_utc": "2026-11-09T17:47:45.471Z"
+      },
+      "resolution": "Cleared at 11:25 \u2014 \"All caramel containing excess salt was removed from the line. Production resumed once the caramel was confirmed to be within specifications\" (Diana Vazquez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 back-end equipment down on wrong parameter setting",
+      "summary": "Line stopped at 08:39 because back of line had problems; maintenance found PG 303 set to 16 when it should be 18 and corrected it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-09T15:39:24.467Z"
+      },
+      "resolution": "Cleared at 09:22 \u2014 \"We are back up and running\" after maintenance adjusted PG 303 to correct setting (Karla Uribe)."
+    },
+    {
+      "plant": "L1",
+      "title": "Two soap dispensers in L1 not working",
+      "summary": "Operators reported two soap dispensers down; sanitation checked and found one needed batteries, the other needed full replacement.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-09T18:09:33.231Z"
+      },
+      "resolution": "Cleared at 15:35 \u2014 \"One dispenser was replaced, and the bottle was changed on the other one because the battery was not working. All dispensers were left operational and in use\" (Estarli Ermisz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 molding jam in demolder",
+      "summary": "Line stopped at 07:09 for a molding jam blocking the demolder; operators cleared it and restarted within 9 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-09T14:09:59.493Z"
+      },
+      "resolution": "Cleared at 07:18 \u2014 \"The line is running back\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS hose jammed with gusset waste",
+      "summary": "The hose had gusset waste stuck inside at 12:48, causing a brief stoppage while the operator cleared it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-09T19:48:22.992Z"
+      },
+      "resolution": "Cleared at 12:58 \u2014 \"The line is running\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 line down for CIL intervention",
+      "summary": "Line stopped for 5 minutes to address a CIL issue, then restarted immediately.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-09T22:43:29.951Z"
+      },
+      "resolution": "Cleared at 15:43 \u2014 \"We are running again\" (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tank 2 pump clogged",
+      "summary": "Tank 2 making noise and not sending cream to depositor 3 at 04:44; line paused at 05:48 when pump confirmed clogged.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-09T11:44:57.675Z"
+      },
+      "resolution": "Cleared at 06:09 \u2014 \"Issue is fixed, we filling up depositor 3 to start\" at 06:01, then \"Running\" at 06:09 (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 belts slipping on low tension",
+      "summary": "TG3 down at 06:58, blowing all bars to discharge; maintenance found belts didn't have enough tension and were slipping.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-09T13:58:35.873Z"
+      },
+      "resolution": "Cleared at 07:18 \u2014 \"It was working properly the belts didn't have enough tension and were slipping\" (Nelson Cook)."
+    },
+    {
+      "plant": "L3",
+      "title": "Chocolate aligner malfunction on truffle line",
+      "summary": "Flow wrapper had problems with the chocolate aligner at 07:15; maintenance was already working on it when reported.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-09T14:15:17.413Z"
+      },
+      "resolution": "Cleared at 08:12 \u2014 \"Settings have been adjusted accordingly and it's now working as should\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line guillotine belt stopped from dirt buildup",
+      "summary": "Belt stopped at 11:03, maintenance called; cleaning revealed the belt was dirty enough to cause the stoppage after only 5 hours of runtime.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-09T18:03:53.051Z"
+      },
+      "resolution": "Cleared at 11:15 \u2014 \"The belt was dirty once it was cleaned it started to work again\" and \"The line is running again\" (Nelson Cook, Grey Boscan)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 THG fingers bent and belts misaligned",
+      "summary": "Fingers on the Theegarten are bent and separating belt and guillotine belts not aligned, causing inconsistent piece size; maintenance working on it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-09T16:37:09.637Z"
+      },
+      "status": "Maintenance adjusted rails at 10:33 which were misaligned; no clear confirmation that finger bending or all alignment issues fully resolved."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 kitchen filter hose clogged from unwashed piping",
+      "summary": "The filter hose on line 3 kitchen wasn't washed and became clogged; operator notes this happens when internal piping isn't washed properly.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-09T12:19:08.246Z"
+      },
+      "status": "Reported at 05:19 with photos; no resolution message logged."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 belt installed incorrectly, left on outside",
+      "summary": "Kitchen tablet reported the belt wasn't installed correctly at shift start and was left on the outside; no follow-up logged.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-09T12:22:22.009Z"
+      },
+      "status": "Reported at 05:22; no resolution or follow-up message in the window."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 kitchen C1 front panel won't close",
+      "summary": "Maintenance needed to reset the program on Kitchen 3 unit C1 because the front panel won't close.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-09T12:58:59.734Z"
+      },
+      "status": "Reported at 05:58; no maintenance response logged in window."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 mixing tank A heavy cream valve gasket leaking",
+      "summary": "The gasket on the heavy cream valve for mixing tank A is leaking and needs replacement according to the enrober operator.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S2 Enrober",
+        "time_utc": "2026-11-09T13:58:31.819Z"
+      },
+      "status": "Reported at 06:58; no maintenance response or repair logged by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS line down for blade cleaning",
+      "summary": "Line went down at 13:11 to clean the blade; operator posted a photo but no restart message appears in the window.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-09T20:11:32.858Z"
+      },
+      "status": "Down at 13:11 for blade cleaning; no \"running\" message by window close at 15:59."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line guillotine belt worn scrapers and peeling",
+      "summary": "Belt stopped again at 15:11; maintenance found scrapers worn or improperly positioned removing too much chocolate, and the belt began peeling from the inner side by 15:53.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-09T22:11:37.002Z"
+      },
+      "status": "Began chocolate deposition process at 15:42 per 15:57 message, but scraper wear and belt peeling noted 15:23-15:53 remain unresolved at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 FW not cutting properly, sending linked bars",
+      "summary": "TG5 down at 08:15 with flow wrapper not cutting properly and sending bars in a link; issue persisted on and off all day despite adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-09T15:15:03.394Z"
+      },
+      "status": "Tech adjusted upper bracket at 15:47 saying it was fixed, but unclear if fully resolved; line ran steady after mid-shift per 12:35 update."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 adjustments in progress at shift end",
+      "summary": "Line stopped temporarily at 15:54 for tech to make adjustments on TG4 and TG5; TG5 came back up but TG4 still being adjusted at 15:57.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-09T22:54:24.093Z"
+      },
+      "status": "TG5 up and running at 15:57, but TG4 still being adjusted by tech as of last message at window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 preheating 3 has fused bulb",
+      "summary": "Preheating unit 3 has one fused bulb that needs replacement according to the operator.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-09T16:28:35.805Z"
+      },
+      "status": "Reported at 09:28; no maintenance response or bulb replacement logged."
+    }
+  ]
+}

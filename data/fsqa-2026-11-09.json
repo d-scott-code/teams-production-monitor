@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-09",
+  "headline": {
+    "eyebrow": "Chemical control",
+    "text": "Passivation chemical bottle found in L1 general production area \u2014 *no food-contact use*, returned to fab shop."
+  },
+  "summary": "One active hold resolved \u2014 L1 S4 excess-salt caramel removed and released within 55 minutes. Chemical control gap at L1: passivation bottle misplaced in production area. Five sanitation flags across L1 and L3, all resolved same-shift.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Excess salt in S4 caramel",
+      "summary": "Caramel on S4 conveyor belt tested out of spec for salt at 10:30 AM; all affected product removed from line and production restarted at 11:25 AM after verification.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Diana Vazquez",
+        "time_utc": "2026-11-09T17:47:45.471Z"
+      },
+      "status": "Resolved \u2014 product removed, caramel confirmed in spec, production resumed at 11:25 AM."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Passivation chemical in production area",
+      "summary": "Unlabeled bottle of passivation chemical (fabrication shop use only) found in L1 general production area; maintenance confirmed not for general access and removed.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-09T16:33:23.463Z"
+      },
+      "status": "Resolved \u2014 chemical identified as fab-shop passivation agent, removed from production floor by 09:45 AM."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 checkweigher out of calibration",
+      "summary": "S2 checkweigher flagged as not calibrated at 08:58 AM; maintenance called to recalibrate.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-09T15:58:44.507Z"
+      },
+      "status": "Open \u2014 maintenance called, calibration status at window close unknown."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle guillotine belt peeling",
+      "summary": "Guillotine belt on Truffle line showing inner-side peeling after two fouling stops in one shift; belt was replaced recently and now exhibiting abnormal wear.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-09T22:53:12.511Z"
+      },
+      "status": "Open \u2014 line running, belt peeling documented, investigation ongoing."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM4 exposed pieces",
+      "summary": "3 exposed caramel pieces out of 28 observed on MM4 during Heath Cluster trial at 14:40 MT.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-11-09T21:40:42.039Z"
+      },
+      "status": "Trial in progress \u2014 acceptable rate for trial phase, monitoring continues."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 MM5 doubles and broken pieces",
+      "summary": "1 double, 2 broken pieces out of 604 observed on MM5 during Heath Cluster trial at 15:11 MT.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Delia Zambrano",
+        "time_utc": "2026-11-09T22:11:51.488Z"
+      },
+      "status": "Trial in progress \u2014 acceptable rate for trial phase, monitoring continues."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bar appearance \u2014 staining",
+      "summary": "3\u20135 pieces per mold on ML4 showing appearance stains at 07:56 AM; operator made adjustments.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-11-09T14:56:02.38Z"
+      },
+      "status": "Resolved \u2014 adjustments made, no recurrence noted."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S3 filter hose not washed",
+      "summary": "S3 kitchen filter hose found clogged at startup (05:19 AM); internal piping not washed during prior cleaning cycle.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-09T12:19:08.246Z"
+      },
+      "status": "Resolved \u2014 hose cleaned, line started."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle guillotine belt fouling",
+      "summary": "Guillotine belt stopped twice in one shift (11:03 AM and 15:11 PM) due to chocolate buildup; belt dirty enough to halt operation after 5 hours runtime.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-09T18:03:53.051Z"
+      },
+      "status": "Resolved \u2014 belt cleaned both times, scrapers found worn or mispositioned, tunnel temps being adjusted to centerline."
+    },
+    {
+      "plant": "L1",
+      "title": "Milk spill not cleaned after tote move",
+      "summary": "Milk tote moved from S3 pack area left floor uncleaned at 08:47 AM; warehouse team cleaned Friday but tote continued leaking over weekend.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-09T15:47:03.481Z"
+      },
+      "status": "Resolved \u2014 tote identified in S4 kitchen by 09:45 AM, area cleaned."
+    },
+    {
+      "plant": "L1",
+      "title": "Soap dispensers non-functional",
+      "summary": "Two soap dispensers in L1 non-functional at 11:09 AM; one needed batteries, one required replacement.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-09T18:09:33.231Z"
+      },
+      "status": "Resolved \u2014 one dispenser replaced, one bottle changed, both operational by 15:35 PM."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 rollers fouled with wrap",
+      "summary": "TG5 rollers inside box found with affogato wrap rolled into them at 14:00 MT; operator cleared.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-09T21:00:08.396Z"
+      },
+      "status": "Resolved \u2014 wrap removed, rollers cleaned."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review chemical storage and labeling procedures \u2014 passivation chemical bottle found unsecured in general production area, suggesting control gap for non-food-grade materials."
+    },
+    {
+      "plant": "L1",
+      "text": "Add filter-hose inspection to S3 startup checklist \u2014 today's clogged hose traced to incomplete internal-piping wash on prior shift."
+    },
+    {
+      "plant": "L3",
+      "text": "Investigate guillotine belt specification and installation procedure \u2014 replacement belt on Truffle line fouling twice in 8 hours and now peeling, suggesting material or setup issue."
+    }
+  ]
+}
