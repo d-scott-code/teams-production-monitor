@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-10",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L1 Sollich 3 re-cleaned for metal; labeler belt replaced. L3 time clock is offline. Most other issues cleared in *under an hour*."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 found metal and nuts in the enrober during startup and re-cleaned, delaying the line roughly 45 minutes. An All-Fill labeler belt failed and was replaced by midday. Sollich 1 ran the Hershey marshmallow trial; cookies clogged the Sweco and inclusion depositor but the team removed the magnet per customer approval and continued. A metal detector test was skipped due to maintenance unavailability.",
+    "L2": "Molding Line 2 stopped twice\u2014first for a bad B1 sensor, then for a broken chain spring\u2014but both repairs finished within the hour. FFS took 90 minutes to adjust the printer during the case-5 changeover. Otherwise smooth.",
+    "L3": "Molding Line 4 cleared a lot-code printer issue and a depositor drain clog, both in under 10 minutes. Truffle line had a mower-belt jam that cleared in 30 minutes and a dosing-pump fault that reset immediately. The time clock lost internet and is still offline. The Matrix pallet-wrapper roller was bent removing stuck plastic."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Sollich 1 ran the first Hershey trial; team worked around cookie-clogging by removing the magnet with customer sign-off."
+    },
+    {
+      "plant": "L3",
+      "text": "Truffle tunnel temps are being held out of centerline intentionally to prevent soft product; production and quality aligned."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 metal and nuts found in enrober at startup",
+      "summary": "Metal powder and nut pieces appeared in the enrober wire mesh during initial run; production requested a second Level 4 clean.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Karla Uribe",
+        "time_utc": "2026-11-10T16:51:32.912Z"
+      },
+      "resolution": "Re-clean completed and cleared at 10:35 \u2014 visual and QA sign-off (Charity Young)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 reserve-tank caramel dark and bitter",
+      "summary": "Caramel held in the reserve tank since 20:10 the previous evening was off-spec; QA tested and advised disposal.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Chris Whitaker",
+        "time_utc": "2026-11-10T06:39:29.116Z"
+      },
+      "resolution": "Decision at 23:39 \u2014 \"should be thrown out\" (Chris Whitaker)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 All-Fill labeler top-trap belt damaged",
+      "summary": "Belt damage caused pouch wrinkles; All-Fill tech replaced the belt and adjusted speeds to eliminate wrinkles.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-11-10T16:02:51.786Z"
+      },
+      "resolution": "Belt replaced and tested by 12:10 \u2014 \"last 30-40 jars had no wrinkles at all\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 cookies clogging Sweco and magnet",
+      "summary": "Graham cookies stuck in Sweco screen and magnet; Hershey approved magnet removal to continue the trial run.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jorge Carrillo",
+        "time_utc": "2026-11-10T16:59:44.83Z"
+      },
+      "resolution": "Magnet removed at 10:01 \u2014 approved by Hershey QA, trial continued (Justin Garner)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 B1 sensor failed",
+      "summary": "Bad B1 sensor stopped the line; maintenance replaced it and performed a CIL during the stoppage.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-10T17:02:36.931Z"
+      },
+      "resolution": "Replaced and running at 10:27 (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 broken spring on chain",
+      "summary": "Chain spring broke shortly after the sensor repair; Justin located a replacement and tightened loose springs on adjacent links.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-10T17:38:11.463Z"
+      },
+      "resolution": "Replaced at 10:49 \u2014 \"tightened a few others that were loose\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS printer misaligned during case-5 changeover",
+      "summary": "Printer would not adjust laterally and was only printing on half the box; maintenance worked through alignment and settings.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-10T19:09:55.01Z"
+      },
+      "resolution": "Adjusted and running at 13:15 (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 vacuum infeed twin belts not tracking",
+      "summary": "Belts were misaligned; maintenance performed a hard reset to restore tracking.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-10T18:40:21.734Z"
+      },
+      "resolution": "Reset and running at 11:45 (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle mower belt problem",
+      "summary": "Belt issue on the mower caused a line stop; operators and maintenance addressed the jam.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-10T05:26:10.195Z"
+      },
+      "resolution": "Running at 22:56 \u2014 \"The line is running smoothly\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor #2 water drain clogged",
+      "summary": "Drain hose blocked, water filling; operators paused to unclog and restarted within 5 minutes.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-10T13:48:08.028Z"
+      },
+      "resolution": "Cleared at 06:53 \u2014 \"working correctly,\" 3-minute solution time (ML4 TG)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 tempering machine breaker tripped",
+      "summary": "Alarm active on tempering unit; maintenance called and reset the breaker, returned machine to melting mode.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-10T14:46:23.73Z"
+      },
+      "resolution": "Reset at 07:50 \u2014 \"now back in melting mode\" (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 lot-code printer not showing number",
+      "summary": "Printer roll was not pushed all the way back; maintenance diagnosed it as a training issue and corrected the installation.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-10T07:33:22.18Z"
+      },
+      "resolution": "Maintenance fixed at 00:38 \u2014 roll repositioned, \"Training\" noted (ML4 WDS)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle dosing pump faulted out",
+      "summary": "Flavor dosing pump threw a fault during production; quick reset restored operation.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-11-10T11:44:07.728Z"
+      },
+      "resolution": "Reset at 04:44 \u2014 \"with no issues\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "Scissor lift blocking electrical panel",
+      "summary": "Lift was parked in front of a panel, obstructing airflow; operator moved it immediately when flagged.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-11-10T14:21:12.878Z"
+      },
+      "resolution": "Moved at 07:33 (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Chain broken link on pallet conveyor",
+      "summary": "Maintenance identified and repaired a broken chain link when asked to inspect.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Benjamin Hicks",
+        "time_utc": "2026-11-10T14:25:44.398Z"
+      },
+      "resolution": "Fixed at 07:40 (Itzel Chavez)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 metal detector final test missed at 06:30",
+      "summary": "Unable to perform the scheduled final metal detector test due to mechanical issues on Sollich 3 and maintenance unavailability.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Chris Featherstone",
+        "time_utc": "2026-11-10T14:40:09.562Z"
+      },
+      "status": "Test skipped at 06:30; no reschedule time posted (Chris Featherstone)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Level 4 clean areas not signed off",
+      "summary": "QA found that certain areas listed in the Level 4 clean book were not documented or signed off as completed.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-10T18:33:04.677Z"
+      },
+      "status": "Flagged at 11:33; no closure or sign-off confirmation posted."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 blue plastic shavings on belt C19",
+      "summary": "QA spotted blue plastic shavings during the post-clean inspection; Z conveyor ran for 2 minutes with no recurrence, but monitoring was requested.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-10T18:47:50.339Z"
+      },
+      "status": "Observed at 11:47; Z conveyor tested clean, monitoring ongoing (Constanza Araya)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 pretzels found on bed during Hershey trial",
+      "summary": "Operator found pretzels on the molding bed; no explanation or corrective action posted.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-11-10T19:01:18.31Z"
+      },
+      "status": "Reported at 12:01; no follow-up action posted in the chat."
+    },
+    {
+      "plant": "L3",
+      "title": "Time clock not connected to internet",
+      "summary": "The plant time clock lost its network connection; employees cannot clock in or out digitally.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Spencer Andrus",
+        "time_utc": "2026-11-10T06:11:34.63Z"
+      },
+      "status": "Offline as of 23:11; no IT or maintenance response posted."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pallet wrapper roller bent",
+      "summary": "Plastic got stuck between the rollers; when operators removed it, one roller was bent and needs repair or replacement.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jose Vasquez",
+        "time_utc": "2026-11-10T13:17:08.389Z"
+      },
+      "status": "Roller bent at 06:17; no maintenance resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 toffee allergen test pending for ZS Heath trial",
+      "summary": "Trial requires allergen test results on toffee bits before pouching can resume; test requested, results awaited as of 13:24.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-10T19:58:49.711Z"
+      },
+      "status": "Allergen test requested at 12:58, waiting for QA results as of 13:24 (Jenny Medina)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle tunnel temps held out of centerline",
+      "summary": "Operators are intentionally running tunnel temperatures outside the centerline range to avoid soft product; production and quality are aligned on the variance.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-10T14:31:29.465Z"
+      },
+      "status": "Variance explained at 07:31; Shawn approved the adjusted range for this flavor (Grey Boscan, Shawn Jewkes)."
+    }
+  ]
+}

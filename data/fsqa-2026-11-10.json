@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-10",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "S1 and S3 enrobers both found metal and nuts during startup, required *re-clean* and ATP verification before release."
+  },
+  "summary": "Two Lindon 1 enrobers flagged foreign material (metal, nuts, metallic powder) at startup and were re-cleaned. One S2 caramel batch was rejected as dark/bitter and held for disposition. ML1 allergen test for toffee-bit screen still pending at window close.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Excess salt in S4 product",
+      "summary": "Operator detected excess salt in caramel at 10:30 on 11/09; all affected product removed from line and production restarted at 11:25.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Diana Vazquez",
+        "time_utc": "2026-11-09T20:37:43.856Z"
+      },
+      "status": "Resolved on shift \u2014 product removed and line restarted."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 reserve-tank caramel dark and bitter",
+      "summary": "Caramel held in reserve tank since 8:10 PM evaluated by QA at 11:39 PM as dark and bitter; QA advised to discard.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chris Whitaker",
+        "time_utc": "2026-11-10T06:39:29.116Z"
+      },
+      "status": "On hold pending disposition \u2014 QA rejected for quality."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal and nuts in S1 NEW enrober",
+      "summary": "Startup inspection at 09:51 found metal, nuts, and blue plastic shavings in enrober; line stopped, enrober re-cleaned, QA visual and ATP passed before release.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Karla Uribe",
+        "time_utc": "2026-11-10T16:51:32.912Z"
+      },
+      "status": "Resolved \u2014 enrober re-cleaned, ATP passed, released to production."
+    },
+    {
+      "plant": "L1",
+      "title": "Metal and nuts in S3 enrober",
+      "summary": "Mary found metallic powder mixed with oil in screw and nuts in wire mesh at startup; production requested re-clean before release.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-10T17:13:08.696Z"
+      },
+      "status": "Resolved \u2014 enrober re-cleaned and released after second verification."
+    },
+    {
+      "plant": "L1",
+      "title": "Nuts in S3 enrober drain",
+      "summary": "Charity found nuts in drain adjacent to enrober during re-clean inspection; flagged to maintenance and FSQA.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-10T17:36:22.03Z"
+      },
+      "status": "Open \u2014 drain contamination documented, awaiting cleaning confirmation."
+    },
+    {
+      "plant": "L1",
+      "title": "Pretzels found on S1 NEW bed",
+      "summary": "Italu found pretzels on bed during Hershey graham-cookie trial; potential allergen cross-contact from prior run.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Italu Martinez",
+        "time_utc": "2026-11-10T19:01:18.31Z"
+      },
+      "status": "Resolved \u2014 pretzels removed; bed inspected before trial restart."
+    },
+    {
+      "plant": "L1",
+      "title": "Blue plastic shavings on S1 NEW belt C19",
+      "summary": "Constanza noticed blue plastic shavings on belt C19 during cleaning inspection; Z conveyor run for 2 minutes showed no additional shavings.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-10T18:47:50.339Z"
+      },
+      "status": "Resolved \u2014 shavings removed; belt monitored during startup with no recurrence."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 metal detector test missed at 06:30",
+      "summary": "Chris unable to perform final metal detector verification at 06:30 due to S3 mechanical issues and maintenance unavailability.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chris Featherstone",
+        "time_utc": "2026-11-10T14:40:09.562Z"
+      },
+      "status": "Open \u2014 test deferred; no alternate time confirmed on record."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle tunnel temps out of centerline",
+      "summary": "Grey reported tunnel temps out of CL; yesterday's adjustment made product too soft, so he elected not to bring back to CL today to finish order.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-10T14:31:29.465Z"
+      },
+      "status": "Open \u2014 deviation documented; Shawn acknowledged and will adjust CL range for this flavor."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG position-sensor targets retrained without escalation",
+      "summary": "Shawn found TG position-indicator sensors retrained across all three machines; values that ran perfectly last week now fault \u2014 changes made without communication.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-11-10T15:28:38.313Z"
+      },
+      "status": "Open \u2014 Shawn escalated to Ray and updated centerline sheets; root cause of retraining unknown."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 lot number not printing on TG4",
+      "summary": "WDS operator called maintenance at 00:33; lot number missing because film roll not pushed all the way back \u2014 training issue flagged.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-10T07:33:22.18Z"
+      },
+      "status": "Resolved \u2014 maintenance fixed; operator coached on roll installation."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 NEW Level 4 clean not signed off",
+      "summary": "Charity flagged that several Level 4 clean areas have not been documented or signed off as completed in the book.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-10T18:33:04.677Z"
+      },
+      "status": "Open \u2014 areas awaiting sign-off before next production run."
+    }
+  ],
+  "allergen": [
+    {
+      "plant": "L3",
+      "title": "ML1 toffee-bit screen allergen test pending",
+      "summary": "Grey requested allergen test for almond-bit screen being used for ZS Heath toffee trial; Jenny reported at 13:24 still waiting for results.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-10T19:58:49.711Z"
+      },
+      "status": "Open, awaiting QA allergen verification before screen use."
+    }
+  ],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding final foreign-material inspection step to S1 and S3 enrober startup checklists \u2014 today both found metal/nuts/powder at first startup requiring re-clean."
+    },
+    {
+      "plant": "L1",
+      "text": "Review Level 4 clean sign-off process on S1 NEW \u2014 Charity found multiple areas completed but not documented in logbook."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider formalizing ML4 centerline change-approval workflow \u2014 Shawn found TG sensor targets retrained across all three machines without escalation or documentation."
+    }
+  ]
+}

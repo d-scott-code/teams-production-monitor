@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSQA briefing — 2026-11-10 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
+.fsqa-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.fsqa-head h1 {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.fsqa-head .sub {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.fsqa-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.fsqa-head .meta img {
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Summary block ---------- */
+.fsqa-summary {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 14pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Stats strip ---------- */
+.fsqa-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8pt;
+  margin: 0 0 14pt 0;
+}
+.fsqa-stats .stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8pt 10pt;
+  text-align: left;
+}
+.fsqa-stats .stat .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fsqa-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 18pt; line-height: 1;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2pt;
+}
+
+/* ---------- Section blocks ---------- */
+.fsqa-section {
+  margin: 16pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.fsqa-section .sec-head {
+  display: flex; align-items: center; gap: 6pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 4pt; margin-bottom: 6pt;
+}
+.fsqa-section .sec-head h3 {
+  font-size: 10.5pt; font-weight: 700;
+  margin: 0; color: var(--fg-1);
+}
+.fsqa-section .sec-head .sec-icon {
+  width: 14px; height: 14px; color: var(--fg-2);
+}
+.fsqa-section .sec-head .sec-count {
+  margin-left: auto;
+  font-size: 8pt; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Entry rows ---------- */
+.fsqa-entry {
+  display: grid;
+  grid-template-columns: 26pt 1fr auto;
+  gap: 8pt;
+  align-items: start;
+  padding: 6pt 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.fsqa-entry:last-child { border-bottom: 0; }
+.fsqa-entry .sev-col { text-align: center; padding-top: 1pt; }
+.fsqa-entry .body { min-width: 0; }
+.fsqa-entry .title-line {
+  font-weight: 600; color: var(--fg-1);
+  font-size: 9.5pt; line-height: 1.3;
+}
+.fsqa-entry .plant-tag {
+  display: inline-block;
+  font-size: 7pt; font-weight: 700;
+  color: var(--fg-2);
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  padding: 1pt 6pt;
+  margin-right: 6pt;
+  vertical-align: 1pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fsqa-entry .summary {
+  display: block; font-size: 8.5pt; color: var(--fg-2);
+  margin-top: 2pt; line-height: 1.35;
+  text-wrap: pretty;
+}
+.fsqa-entry .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt; line-height: 1.4;
+  text-wrap: pretty;
+}
+.fsqa-entry .status::before {
+  content: "→ "; font-style: normal; color: var(--fg-3);
+}
+.fsqa-entry .raised {
+  font-size: 7.5pt; color: var(--fg-3);
+  text-align: right; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.fsqa-entry .raised .author { color: var(--fg-2); font-weight: 600; display: block; }
+
+/* ---------- Empty state ---------- */
+.fsqa-section .empty {
+  padding: 6pt 0 4pt 0;
+  font-style: italic; font-size: 9pt;
+  color: var(--fg-3);
+}
+
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+  margin: 18pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.opp-box {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 9pt 11pt 10pt 11pt;
+}
+.opp-box .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4pt;
+}
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
+}
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
+  color: var(--fg-1);
+  padding: 2pt 0;
+  text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<section class="sheet">
+  <div class="fsqa-head">
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>November 10, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Nov 9 13:28 MT → Nov 10 13:28 MT</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Audience</div><div class="v">FSQA Manager</div></div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Foreign material</div>
+    <p class="headline">S1 and S3 enrobers both found metal and nuts during startup, required <span class="accent">re-clean</span> and ATP verification before release.</p>
+  </div>
+
+  <p class="fsqa-summary">Two Lindon 1 enrobers flagged foreign material (metal, nuts, metallic powder) at startup and were re-cleaned. One S2 caramel batch was rejected as dark/bitter and held for disposition. ML1 allergen test for toffee-bit screen still pending at window close.</p>
+
+  <div class="fsqa-stats"><div class="stat"><div class="eyebrow">Holds</div><div class="num">2</div></div><div class="stat"><div class="eyebrow">Food safety</div><div class="num">5</div></div><div class="stat"><div class="eyebrow">Quality</div><div class="num">4</div></div><div class="stat"><div class="eyebrow">Sanitation</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">Allergen</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">High severity</div><div class="num">2</div></div></div>
+
+  <section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="package"></i><h3>Active holds</h3><span class="sec-count">2</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Excess salt in S4 product</div><span class="summary">Operator detected excess salt in caramel at 10:30 on 11/09; all affected product removed from line and production restarted at 11:25.</span><span class="status">Resolved on shift — product removed and line restarted.</span></div><div class="raised"><span class="author">Diana Vazquez</span><span>13:37 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S2 reserve-tank caramel dark and bitter</div><span class="summary">Caramel held in reserve tank since 8:10 PM evaluated by QA at 11:39 PM as dark and bitter; QA advised to discard.</span><span class="status">On hold pending disposition — QA rejected for quality.</span></div><div class="raised"><span class="author">Chris Whitaker</span><span>23:39 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-alert"></i><h3>Food safety</h3><span class="sec-count">5</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Metal and nuts in S1 NEW enrober</div><span class="summary">Startup inspection at 09:51 found metal, nuts, and blue plastic shavings in enrober; line stopped, enrober re-cleaned, QA visual and ATP passed before release.</span><span class="status">Resolved — enrober re-cleaned, ATP passed, released to production.</span></div><div class="raised"><span class="author">Karla Uribe</span><span>09:51 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Metal and nuts in S3 enrober</div><span class="summary">Mary found metallic powder mixed with oil in screw and nuts in wire mesh at startup; production requested re-clean before release.</span><span class="status">Resolved — enrober re-cleaned and released after second verification.</span></div><div class="raised"><span class="author">Mary Montilla</span><span>10:13 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Nuts in S3 enrober drain</div><span class="summary">Charity found nuts in drain adjacent to enrober during re-clean inspection; flagged to maintenance and FSQA.</span><span class="status">Open — drain contamination documented, awaiting cleaning confirmation.</span></div><div class="raised"><span class="author">Charity Young</span><span>10:36 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Pretzels found on S1 NEW bed</div><span class="summary">Italu found pretzels on bed during Hershey graham-cookie trial; potential allergen cross-contact from prior run.</span><span class="status">Resolved — pretzels removed; bed inspected before trial restart.</span></div><div class="raised"><span class="author">Italu Martinez</span><span>12:01 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Blue plastic shavings on S1 NEW belt C19</div><span class="summary">Constanza noticed blue plastic shavings on belt C19 during cleaning inspection; Z conveyor run for 2 minutes showed no additional shavings.</span><span class="status">Resolved — shavings removed; belt monitored during startup with no recurrence.</span></div><div class="raised"><span class="author">Constanza Araya</span><span>11:47 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-check"></i><h3>Quality flags</h3><span class="sec-count">4</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S2 metal detector test missed at 06:30</div><span class="summary">Chris unable to perform final metal detector verification at 06:30 due to S3 mechanical issues and maintenance unavailability.</span><span class="status">Open — test deferred; no alternate time confirmed on record.</span></div><div class="raised"><span class="author">Chris Featherstone</span><span>07:40 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Truffle tunnel temps out of centerline</div><span class="summary">Grey reported tunnel temps out of CL; yesterday&#x27;s adjustment made product too soft, so he elected not to bring back to CL today to finish order.</span><span class="status">Open — deviation documented; Shawn acknowledged and will adjust CL range for this flavor.</span></div><div class="raised"><span class="author">Grey Boscan</span><span>07:31 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 TG position-sensor targets retrained without escalation</div><span class="summary">Shawn found TG position-indicator sensors retrained across all three machines; values that ran perfectly last week now fault — changes made without communication.</span><span class="status">Open — Shawn escalated to Ray and updated centerline sheets; root cause of retraining unknown.</span></div><div class="raised"><span class="author">Shawn Jewkes</span><span>08:28 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML4 lot number not printing on TG4</div><span class="summary">WDS operator called maintenance at 00:33; lot number missing because film roll not pushed all the way back — training issue flagged.</span><span class="status">Resolved — maintenance fixed; operator coached on roll installation.</span></div><div class="raised"><span class="author">ML4 WDS</span><span>00:33 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="spray-can"></i><h3>Sanitation</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>S1 NEW Level 4 clean not signed off</div><span class="summary">Charity flagged that several Level 4 clean areas have not been documented or signed off as completed in the book.</span><span class="status">Open — areas awaiting sign-off before next production run.</span></div><div class="raised"><span class="author">Charity Young</span><span>11:33 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="triangle-alert"></i><h3>Allergen</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML1 toffee-bit screen allergen test pending</div><span class="summary">Grey requested allergen test for almond-bit screen being used for ZS Heath toffee trial; Jenny reported at 13:24 still waiting for results.</span><span class="status">Open, awaiting QA allergen verification before screen use.</span></div><div class="raised"><span class="author">Grey Boscan</span><span>12:58 MT</span></div></div></section>
+
+  <div class="opportunities-eyebrow">Opportunities — by plant</div><div class="opportunities-row"><div class="opp-box"><div class="eyebrow">L1</div><h4>L1 Caramel</h4><ul><li>Consider adding final foreign-material inspection step to S1 and S3 enrober startup checklists — today both found metal/nuts/powder at first startup requiring re-clean.</li><li>Review Level 4 clean sign-off process on S1 NEW — Charity found multiple areas completed but not documented in logbook.</li></ul></div><div class="opp-box"><div class="eyebrow">L2</div><h4>L2 Moulding</h4><p class="empty">No opportunities flagged today.</p></div><div class="opp-box"><div class="eyebrow">L3</div><h4>L3 Chocolate</h4><ul><li>Consider formalizing ML4 centerline change-approval workflow — Shawn found TG sensor targets retrained across all three machines without escalation or documentation.</li></ul></div></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
+    Production briefing for the same day:
+    <a class="archive-link" href="2026-11-10.html">reports/2026-11-10.html</a> ·
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">FSQA briefing · 2026-11-10</span>
+    <span class="page-no">Page 1 of 1</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>
