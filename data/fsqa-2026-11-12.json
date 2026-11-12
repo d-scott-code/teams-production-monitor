@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-12",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L1 S2 matrix finger missing from 04:30\u2014*X-ray caught test cards* but actual finger remained in product path until found 16 hours later."
+  },
+  "summary": "Two metal-in-product events: S2 jar line finger missing 04:30\u201320:45, S3 X-ray failed test-card verification at 07:30. Both lines placed product on hold. S3 Russell Finex pin and fan blade broke\u2014all pieces accounted for.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 jar line\u2014product from 04:30 for missing finger",
+      "summary": "Matrix 7 bag-opening finger missing, last verified present at 04:30; all product from that time held pending investigation.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-12T13:43:21.682Z"
+      },
+      "status": "Resolved at 20:45\u2014finger found at end of conveyor C15, no product contact confirmed."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 jar line\u2014pallets back to last X-ray check",
+      "summary": "X-ray failed to reject test cards during routine verification; all pallets from previous passing check placed on hold.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-12T14:31:03.859Z"
+      },
+      "status": "Open, awaiting maintenance resolution and pallet inspection."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 jar line\u20145 pallets for salt coverage",
+      "summary": "Five pallets held due to salt loss on finished caramel pieces; tunnel and temper adjustments made, later product within spec.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-11-12T05:26:28.99Z"
+      },
+      "status": "On hold pending salt-coverage inspection and disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 matrix bag-opening finger missing 16 hours",
+      "summary": "Matrix 7 finger missing from 04:30, not found during shift searches; X-ray detected test finger but actual part remained in product path until 20:45.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-12T13:43:21.682Z"
+      },
+      "status": "Resolved\u2014finger found at conveyor discharge C15 at 20:45, outside product contact zone."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 X-ray not rejecting test cards",
+      "summary": "X-ray failed to reject test cards with metal inserts during QA verification at 07:30; root cause unknown.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-12T14:29:56.146Z"
+      },
+      "status": "Open, maintenance troubleshooting, all product since last passing test on hold."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Russell Finex pin and fan blade broke",
+      "summary": "Vibrating-screen drive pin and motor-fan blade fractured during operation; pieces could have entered chocolate system.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-12T17:25:15.675Z"
+      },
+      "status": "Resolved\u2014all broken pieces accounted for, filter inspected and cleared, production resumed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S2 caramel salt not adhering",
+      "summary": "Heavy salt loss observed on finished salted-caramel pieces; tunnel temp raised and temper adjusted, 5 pallets held for inspection.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-12T04:44:19.918Z"
+      },
+      "status": "Line adjustments made\u2014later product meeting spec, early pallets on hold pending review."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 blooming on chocolate bars",
+      "summary": "1 bar per 2 molds showing bloom at 09:31; supervisors adjusting depositor and tunnel temps, frequency decreased to 1 per 8\u201310 molds by 10:21.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-11-12T09:31:26.814Z"
+      },
+      "status": "Resolved on shift\u2014bloom size decreased, defective bars removed at demolding, no pallets held."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 slip sheets oversized",
+      "summary": "Newly delivered slip sheets (same item number) are larger than those in use; could affect pallet stability if used as-is.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-11-12T02:25:46.416Z"
+      },
+      "status": "Open\u2014QA asked whether to trim to correct size or place on hold."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Sanitizer bottle not in 5S location",
+      "summary": "Floor sanitizer bottle found out of designated shadow-board location during GMP walkthrough.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-12T06:38:15.144Z"
+      },
+      "status": "Flagged to supervisors for corrective action."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding matrix bag-finger inspection to S2 startup checklist\u2014today's 16-hour missing-finger event (04:30\u201320:45) went undetected despite X-ray verification because the test card passed while the actual part was already in the product path."
+    },
+    {
+      "plant": "L1",
+      "text": "Review X-ray verification frequency and escalation triggers at S3\u2014today's test-card failure was caught by QA but root cause unknown, suggesting PM or calibration gap."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML4 bloom-control SOP\u2014today's event resolved by operators adjusting tunnel and temper settings, but formal troubleshooting steps may reduce response time."
+    }
+  ]
+}
