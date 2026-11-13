@@ -1,0 +1,294 @@
+{
+  "date": "2026-11-13",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML2 fought jams past metal detector for *4 hours* \u2014 finally stable at 12:40, plus L1 scrambled on a Celtic salt shortage that forced a product switch."
+  },
+  "per_plant_summary": {
+    "L1": "S1 ran pretzels with a cam-setting fix on MM10. S2 changed to NIC dark caramel and hit chocolate tank capacity, will use drums. S3 finished one order, caustic-cleaned, and started the next. S4 ran salt & caramel but scrambled when Celtic salt ran out \u2014 switched to CRU for the remainder.",
+    "L2": "ML2 spent the morning battling jams and door faults, finally stable after lunch. ML3 ran chocolate bars with recurring label-roll issues. FFS and panning ran smoothly aside from a missing LPN in staging.",
+    "L3": "ML1 ran Hershey trial (Janell: Hershey super pleased), then cleaned for next product. Truffle line reheated overnight, fixed wire mesh at 06:42, ran all day. ML4 deep-cleaned for format change. MFM toggled between BEQ Canada and Assorted after schedule confusion."
+  },
+  "notes": [
+    {
+      "plant": "L3",
+      "text": "Hershey zero sugar toffee trial exceeded expectations \u2014 Janell thanked the team at 19:31."
+    },
+    {
+      "plant": "L2",
+      "text": "Zack found emergency exit blocked by barrels (one leaking oil) at start of third shift \u2014 team cleared and cleaned."
+    },
+    {
+      "plant": "L1",
+      "text": "Pretzel thins arriving 8 layers high instead of 5 due to special shipments; December deliveries should return to normal stack height."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Celtic salt shortage forced S4 product change",
+      "summary": "Only 3 bags Celtic salt remaining for S4, inventory shows 820 lbs vs 1,657 expected, no more inbound before run end.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-11-12T23:39:43.605Z"
+      },
+      "resolution": "Switched product at 08:35 \u2014 changed S4 to CRU (which has all materials), new WO 2,592 cases (Daniel Bringas)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 MM10 not opening pouches",
+      "summary": "MM10 cam setting window too narrow (90-150 vs MM9's 350-150), failing to detect pouch pickup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-11-13T15:54:39.778Z"
+      },
+      "resolution": "Cleared at 08:54 \u2014 changed MM10 to match MM9 settings, \"working well now\" (Troy Baxter)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 C19 belt sensor regulator damaged",
+      "summary": "Regulator for sensor on C19 belt failed, maintenance searching for spare parts.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-13T19:16:44.327Z"
+      },
+      "resolution": "Repaired at 12:57 \u2014 \"This is repaired\" (Chris Jeffs)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 weighing machine decimal issue on new product",
+      "summary": "Recipe for new product can't set 23.4g (reverts to 23.0), using 23.5g instead \u2014 0.1g difference from spec.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-11-12T23:45:11.903Z"
+      },
+      "resolution": "Approved at 17:16 \u2014 Charity Young authorized the 0.1g variance (Angelica Perez)."
+    },
+    {
+      "plant": "L2",
+      "title": "Emergency exit blocked by barrels",
+      "summary": "Multiple pallets of barrels blocking L2 emergency exit at third-shift start, one barrel cracked and leaking oil.",
+      "priority": "P1",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-11-13T11:52:57.708Z"
+      },
+      "resolution": "Cleared at 04:52 \u2014 team contained spill, cleaned area, and cleared exit immediately (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 jams past metal detector",
+      "summary": "Line fought jams and door faults from 09:13 through lunch, maintenance adjusted sensor b299 and long belts, slowed speed to 10.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-13T16:13:28.476Z"
+      },
+      "resolution": "Cleared at 12:40 \u2014 \"as of 12:40 the line is running a lot better\" (Alex Mendoza at 13:08)."
+    },
+    {
+      "plant": "L2",
+      "title": "Internet down at L2",
+      "summary": "Plant-wide internet outage reported at 12:12.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-13T19:12:29.974Z"
+      },
+      "resolution": "Restored at 12:32 \u2014 \"It is working for me again\" (Jeffrey Barney)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle bottomer wire mesh damaged",
+      "summary": "Wire belt damaged at 05:58, maintenance (Kavin, Jose) called immediately.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-13T12:58:41.648Z"
+      },
+      "resolution": "Fixed at 06:42 \u2014 \"Wire mesh has been fixed\" (Jose Vasquez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamps found dirty",
+      "summary": "Cold stamps discovered dirty at 12:13 during changeover setup.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-13T19:13:54.675Z"
+      },
+      "resolution": "Cleaned and passed at 13:08 \u2014 \"Cold stamp pass visual and ATP\" (Kevin Del Valle)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 wrapper machine cover missing",
+      "summary": "Wrapping machine roll cover missing, employee noticed while wrapping scrap pallets.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-12T21:29:54.218Z"
+      },
+      "resolution": "Located at 16:29 \u2014 part taken to fix MFM wrapper but not used due to bent roller, can swap back (Tyson Fausett)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S3 nail found in pouch at X-Ray",
+      "summary": "MM4 X-Ray rejected pouch containing a nail at 09:30.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-13T17:41:07.571Z"
+      },
+      "status": "Foreign material detected and rejected by X-Ray; no investigation or source identified by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 kitchen floor samples collected",
+      "summary": "Quality collected samples from S2 kitchen floor at 16:12, photo attached.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Angelica Perez",
+        "time_utc": "2026-11-12T23:12:35.492Z"
+      },
+      "status": "Samples collected and flagged to Dakota, Charity, Conner, Elizabeth; no analysis results by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 tall caramel pieces causing scrap",
+      "summary": "Pack area scrapping lot of caramel due to pieces too tall at 16:36, operator adjusted Tunnel 1 temps and belt speeds.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-12T23:36:06.003Z"
+      },
+      "status": "Adjustments made at 16:36, will advise when conditions improve, but no update by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Slip sheets wrong size, cutting to fit",
+      "summary": "Item 40711 slip sheets \u2014 only 2 pallets left, larger than spec, team cutting them down, rest of inventory on hold.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-11-13T02:41:50.53Z"
+      },
+      "status": "Ethan working with supplier on next order as of 08:20, team continuing to cut down oversized sheets as workaround."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 metal detector full of chocolate",
+      "summary": "MD found full of chocolate at 07:39, should have been cleaned during changeover but was skipped.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-13T14:39:41.135Z"
+      },
+      "status": "Line paused to clean at 07:39, resumed later, but root cause (why skipped in changeover) not addressed."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 broken pretzels on conveyor",
+      "summary": "Significant number of broken pretzels visible on belt at 09:22, flagged to supervisors.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-11-13T16:22:03.988Z"
+      },
+      "status": "Flagged to Mary and Victor at 09:22, no follow-up by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 can't find safety chain for item 30909",
+      "summary": "Supervisor Luis unable to start safety chain for item 30909 at 06:18, asked Amy for help.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-11-13T13:18:40.797Z"
+      },
+      "status": "Request sent to Amy at 06:18, no response by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "Three scales out of commission",
+      "summary": "Jorel found three scales tagged out of commission at 10:12, asked if they can be removed.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-11-13T17:12:34.157Z"
+      },
+      "status": "Asked Katya at 10:12 whether to discard, no response by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 seeing empty, open, and double pieces",
+      "summary": "Quality issues persist on ML2 \u2014 empty/open/double pieces observed, plus 816-count box (target 800) at 10:13 while maintenance still working.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-11-13T17:13:56.171Z"
+      },
+      "status": "Jams resolved by 12:40 but quality variances (empty/open/doubles) not explicitly cleared by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS LPN not entered into system",
+      "summary": "After staging inventory for item 21139, found LPN R473833 was never entered into the system.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Haydee Hidalgo Gonzales",
+        "time_utc": "2026-11-13T06:43:19.777Z"
+      },
+      "status": "Pallet discovered missing from system at 23:43; Zack asked which shift responsible and if cycled off or over-produced, no resolution by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 PTL filter and pipe not cleaned properly",
+      "summary": "PTL moved to line at 13:37, operator found filter gasket, base, and pipe still had hardened chocolate \u2014 not cleaned during changeover.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-13T20:37:16.29Z"
+      },
+      "status": "Sending employee to clean at 13:37, flagged to Rose, Marcos, Bojana; no completion update by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 item 10322 couldn't load into system",
+      "summary": "Item 10322 failed to load at 14:40, IMS has been notified.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-12T21:40:52.555Z"
+      },
+      "status": "IMS notified at 14:40, no resolution posted by window close."
+    }
+  ]
+}

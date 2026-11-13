@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-13",
+  "headline": {
+    "eyebrow": "FM event",
+    "text": "L3 S3 X-ray detected *nail* inside finished pouch\u2014rejected successfully, MD missed during changeover clean."
+  },
+  "summary": "Two active food-safety events: nail found in L3 S3 pouch (X-ray caught, MD did not), and L3 S3 metal detector skipped during changeover. Three sanitation gaps across L3 lines required rework. One L2 FFS pallet discovered outside system control.",
+  "holds": [
+    {
+      "plant": "L2",
+      "title": "FFS pallet missing from system",
+      "summary": "LPN R473833 (Item 21139) discovered in staging after inventory but never entered into WMS\u2014disposition pending.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Haydee Hidalgo Gonzales",
+        "time_utc": "2026-11-13T06:43:19.777Z"
+      },
+      "status": "Open, pending investigation into which shift consumed or why not logged."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Metal detector skipped in changeover",
+      "summary": "L3 S3 metal detector found full of chocolate at startup\u2014cleaning step missed during NIC changeover.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-13T14:39:41.135Z"
+      },
+      "status": "Resolved\u2014line paused, MD cleaned out before production resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "Nail detected in finished pouch",
+      "summary": "X-ray at L3 S3 MM4 rejected one pouch containing a nail at 10:41 MT\u2014metal detector upstream did not catch.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-13T17:41:07.571Z"
+      },
+      "status": "Resolved\u2014pouch rejected, investigation open on MD sensitivity."
+    }
+  ],
+  "quality": [],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Allergen swab failure on shakers",
+      "summary": "L3 ML1 shakers area failed allergen test at 09:31 MT\u2014re-cleaned and passed on second attempt.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-11-13T16:31:35.527Z"
+      },
+      "status": "Resolved\u2014area re-cleaned, allergen swab passed."
+    },
+    {
+      "plant": "L3",
+      "title": "PTL components not cleaned before install",
+      "summary": "L3 ML1 PTL filter gasket, base, and pipe had hardened chocolate when moved from washroom to line for installation.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-13T20:37:16.29Z"
+      },
+      "status": "Resolved\u2014parts sent back for cleaning before installation."
+    },
+    {
+      "plant": "L1",
+      "title": "Metaquat in cage not visible to operators",
+      "summary": "L1 S2 kitchen used Metaquat from cage but operators reported not seeing it initially\u2014chemical control gap.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-12T22:39:09.859Z"
+      },
+      "status": "Resolved\u2014chemical used correctly, visibility addressed."
+    },
+    {
+      "plant": "L3",
+      "title": "Cold stamps found dirty at ML4",
+      "summary": "L3 ML4 cold stamps discovered dirty during changeover setup\u2014washed before use.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-13T19:13:54.675Z"
+      },
+      "status": "Resolved\u2014stamps washed, passed visual and ATP."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding PTL filter gasket, base, and pipe to ML1 cleaning checklist\u2014today's parts arrived at install with hardened chocolate still present."
+    },
+    {
+      "plant": "L3",
+      "text": "Review S3 changeover checklist to ensure metal detector cleaning is verified before startup\u2014MD was found full of chocolate this morning."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding mixer auger emptying step to ML1 end-of-run checklist\u2014excess chocolate inside auger increased cleaning time and difficulty today."
+    }
+  ]
+}
