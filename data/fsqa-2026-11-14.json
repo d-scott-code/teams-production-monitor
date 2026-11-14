@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-14",
+  "headline": {
+    "eyebrow": "FM risk",
+    "text": "Three damaged belts flagged across L1 and L3 \u2014 *plastic fragments* could enter product if not addressed."
+  },
+  "summary": "Three belt damage findings: L1 S1 blue conveyor and inclusion hopper belts developing holes, L3 MFM plastic cover flipped proactively. Four pallets from L3 Truffle Line on hold for hard texture after coconut oil outage. Three sanitation gaps: L3 ML1 PTL parts left dirty by washroom, Sweco reinstalled dirty, and L2 environmental swab OOS.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "4 pallets held for hard texture after oil outage",
+      "summary": "Coconut oil ran out at Truffle Line; centers deposited without oil for ~30 minutes, resulting in harder texture on final product \u2014 organoleptic testing flagged texture as off.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-11-14T08:23:42.680Z"
+      },
+      "status": "On hold pending Monday evaluation by Preston and Kathleen."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Blue belt developing holes on S1 M9/M10 conveyor",
+      "summary": "Short blue belt immediately after white U-shaped belt above Matrices 9 & 10 showing deterioration and developing holes \u2014 potential plastic contamination hazard if fragments detach.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Johan Hernandez",
+        "time_utc": "2026-11-14T07:42:48.727Z"
+      },
+      "status": "Escalated to E&C; maintenance cannot repair this belt type \u2014 replacement required."
+    },
+    {
+      "plant": "L1",
+      "title": "Inclusion hopper blue belt also damaged",
+      "summary": "Inclusion hopper belt on S1 showing similar damage \u2014 maintenance will trim the damaged section as temporary fix.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Johan Hernandez",
+        "time_utc": "2026-11-14T07:50:53.407Z"
+      },
+      "status": "Maintenance trimming belt; permanent replacement needed."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM plastic cover flipped to prevent FM risk",
+      "summary": "Plastic cover on MFM showing wear and tear that could cause plastic fragments to fall into bags \u2014 cover flipped upside down proactively, replacement ordered.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-14T11:11:40.236Z"
+      },
+      "status": "Resolved on shift \u2014 cover flipped, replacement on order."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Truffle centers too hard after oil outage",
+      "summary": "Coconut oil supply exhausted at Truffle Line for approximately 30 minutes; centers deposited without oil resulted in harder texture that failed organoleptic testing.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-11-14T13:22:55.454Z"
+      },
+      "status": "Line recovered after oil refilled and 40-minute mix; 4 pallets held for Monday review."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Environmental swab OOS requires 3x cleaning",
+      "summary": "Out-of-spec environmental swab result flagged; protocol requires clean, vector, clean, vector, clean, vector before release.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-14T01:21:51.504Z"
+      },
+      "status": "Investigation ongoing \u2014 first cleaning completed, awaiting vector results."
+    },
+    {
+      "plant": "L3",
+      "title": "PTL filter/pipes left dirty after washroom clean",
+      "summary": "PTL filter gasket, base, and pipe moved from washroom to ML1 line still had hardened chocolate on them \u2014 parts sent back for cleaning before install.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-13T20:37:16.290Z"
+      },
+      "status": "Resolved \u2014 parts recleaned, ATP tested, and installed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Sweco dirty at startup, reinstalled dirty",
+      "summary": "Sweco found dirty during 1st-shift startup; removed, cleaned, and reinstalled \u2014 indicates missed step during prior cleaning.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-14T16:00:16.212Z"
+      },
+      "status": "Resolved \u2014 Sweco cleaned and reinstalled; visual inspection and ATP passed."
+    },
+    {
+      "plant": "L1",
+      "title": "Water intrusion by QA area",
+      "summary": "Water seeping in near QA area during rain event; spill kit placed and water mopped up.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-14T09:21:42.749Z"
+      },
+      "status": "Resolved on shift \u2014 door seal replacement scheduled for next week."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding belt-wear inspection to pre-op checklist for S1 \u2014 today's two damaged blue belts (M9/M10 conveyor and inclusion hopper) both presented FM contamination risk."
+    },
+    {
+      "plant": "L3",
+      "text": "Review washroom cleaning verification procedure for complex assemblies \u2014 PTL filter/pipe left with hardened chocolate after cleaning suggests gap in inspection or final rinse."
+    },
+    {
+      "plant": "L3",
+      "text": "Add visual check for Sweco cleanliness to ML1 pre-startup checklist \u2014 equipment reinstalled dirty today, requiring mid-shift removal and re-clean."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider oil-level monitoring or low-level alarm for Truffle Line coconut oil tank \u2014 30-minute oil outage resulted in 4 pallets on hold for texture defects."
+    }
+  ]
+}

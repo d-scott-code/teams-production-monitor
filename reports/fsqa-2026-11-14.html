@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FSQA briefing — 2026-11-14 · CandyCo</title>
+<link rel="stylesheet" href="../assets/design-system/colors_and_type.css">
+<link rel="stylesheet" href="../assets/design-system/report-template/report.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+/* All cards are neutral — meaning lives in the data, not the chrome.
+   No top/left accent stripes per the CandyCo design system. */
+
+/* ---------- FSQA cover band (logo lockup at 42px) ---------- */
+.fsqa-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 10pt; margin-bottom: 12pt;
+}
+.fsqa-head h1 {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--fg-1);
+}
+.fsqa-head .sub {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em;
+  margin: 4pt 0 0 0;
+  text-transform: uppercase;
+}
+.fsqa-head .meta {
+  text-align: right;
+  font-size: 8.5pt; color: var(--fg-2);
+  line-height: 1.4;
+}
+.fsqa-head .meta img {
+  height: 42px; width: auto; display: block;
+  margin: -2px 0 4pt auto;
+}
+
+/* ---------- Summary block ---------- */
+.fsqa-summary {
+  font-family: var(--font-serif);
+  font-size: 11pt;
+  line-height: 1.5;
+  color: var(--fg-1);
+  margin: 0 0 14pt 0;
+  text-wrap: pretty;
+}
+
+/* ---------- Stats strip ---------- */
+.fsqa-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8pt;
+  margin: 0 0 14pt 0;
+}
+.fsqa-stats .stat {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8pt 10pt;
+  text-align: left;
+}
+.fsqa-stats .stat .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+.fsqa-stats .stat .num {
+  font-family: var(--font-display);
+  font-size: 18pt; line-height: 1;
+  color: var(--fg-1);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2pt;
+}
+
+/* ---------- Section blocks ---------- */
+.fsqa-section {
+  margin: 16pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.fsqa-section .sec-head {
+  display: flex; align-items: center; gap: 6pt;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 4pt; margin-bottom: 6pt;
+}
+.fsqa-section .sec-head h3 {
+  font-size: 10.5pt; font-weight: 700;
+  margin: 0; color: var(--fg-1);
+}
+.fsqa-section .sec-head .sec-icon {
+  width: 14px; height: 14px; color: var(--fg-2);
+}
+.fsqa-section .sec-head .sec-count {
+  margin-left: auto;
+  font-size: 8pt; color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Entry rows ---------- */
+.fsqa-entry {
+  display: grid;
+  grid-template-columns: 26pt 1fr auto;
+  gap: 8pt;
+  align-items: start;
+  padding: 6pt 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.fsqa-entry:last-child { border-bottom: 0; }
+.fsqa-entry .sev-col { text-align: center; padding-top: 1pt; }
+.fsqa-entry .body { min-width: 0; }
+.fsqa-entry .title-line {
+  font-weight: 600; color: var(--fg-1);
+  font-size: 9.5pt; line-height: 1.3;
+}
+.fsqa-entry .plant-tag {
+  display: inline-block;
+  font-size: 7pt; font-weight: 700;
+  color: var(--fg-2);
+  background: var(--shadow-grey-50);
+  border-radius: var(--radius-sm);
+  padding: 1pt 6pt;
+  margin-right: 6pt;
+  vertical-align: 1pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fsqa-entry .summary {
+  display: block; font-size: 8.5pt; color: var(--fg-2);
+  margin-top: 2pt; line-height: 1.35;
+  text-wrap: pretty;
+}
+.fsqa-entry .status {
+  display: block;
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 8pt; color: var(--fg-2);
+  margin-top: 3pt; line-height: 1.4;
+  text-wrap: pretty;
+}
+.fsqa-entry .status::before {
+  content: "→ "; font-style: normal; color: var(--fg-3);
+}
+.fsqa-entry .raised {
+  font-size: 7.5pt; color: var(--fg-3);
+  text-align: right; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.fsqa-entry .raised .author { color: var(--fg-2); font-weight: 600; display: block; }
+
+/* ---------- Empty state ---------- */
+.fsqa-section .empty {
+  padding: 6pt 0 4pt 0;
+  font-style: italic; font-size: 9pt;
+  color: var(--fg-3);
+}
+
+/* ---------- Opportunities (per-plant boxes — neutral cards) ---------- */
+.opportunities-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+  margin: 18pt 0 12pt 0;
+  page-break-inside: avoid;
+}
+.opp-box {
+  background: var(--bg-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 9pt 11pt 10pt 11pt;
+}
+.opp-box .eyebrow {
+  font-size: 7pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 4pt;
+}
+.opp-box h4 {
+  font-size: 9.5pt; font-weight: 700;
+  margin: 0 0 5pt 0; color: var(--fg-1);
+}
+.opp-box ul { margin: 0; padding-left: 12pt; }
+.opp-box li {
+  font-size: 8.5pt; line-height: 1.4;
+  color: var(--fg-1);
+  padding: 2pt 0;
+  text-wrap: pretty;
+}
+.opp-box .empty {
+  font-style: italic; font-size: 8.5pt;
+  color: var(--fg-3); margin: 0;
+}
+.opportunities-eyebrow {
+  font-size: 8pt; color: var(--fg-3);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: 18pt 0 2pt 0;
+}
+
+/* ---------- Misc ---------- */
+.archive-link { color: var(--steel-blue); }
+.section-label { margin-top: 14pt; }
+</style>
+</head>
+<body>
+<div class="doc-frame">
+
+<section class="sheet">
+  <div class="fsqa-head">
+    <div>
+      <h1>FSQA briefing</h1>
+      <div class="sub">Food safety · Quality · Sanitation · Allergen</div>
+    </div>
+    <div class="meta">
+      <img src="../assets/design-system/assets/logo/candyco-logo-black.png" alt="CandyCo">
+      <div>November 14, 2026</div>
+      <div>08:00 America/Denver</div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="item"><div class="eyebrow">Window</div><div class="v">Nov 13 11:50 MT → Nov 14 11:50 MT</div></div>
+    <div class="item"><div class="eyebrow">Plants in scope</div><div class="v">L1 · L2 · L3</div></div>
+    <div class="item"><div class="eyebrow">Audience</div><div class="v">FSQA Manager</div></div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">FM risk</div>
+    <p class="headline">Three damaged belts flagged across L1 and L3 — <span class="accent">plastic fragments</span> could enter product if not addressed.</p>
+  </div>
+
+  <p class="fsqa-summary">Three belt damage findings: L1 S1 blue conveyor and inclusion hopper belts developing holes, L3 MFM plastic cover flipped proactively. Four pallets from L3 Truffle Line on hold for hard texture after coconut oil outage. Three sanitation gaps: L3 ML1 PTL parts left dirty by washroom, Sweco reinstalled dirty, and L2 environmental swab OOS.</p>
+
+  <div class="fsqa-stats"><div class="stat"><div class="eyebrow">Holds</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">Food safety</div><div class="num">3</div></div><div class="stat"><div class="eyebrow">Quality</div><div class="num">1</div></div><div class="stat"><div class="eyebrow">Sanitation</div><div class="num">4</div></div><div class="stat"><div class="eyebrow">Allergen</div><div class="num">0</div></div><div class="stat"><div class="eyebrow">High severity</div><div class="num">2</div></div></div>
+
+  <section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="package"></i><h3>Active holds</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>4 pallets held for hard texture after oil outage</div><span class="summary">Coconut oil ran out at Truffle Line; centers deposited without oil for ~30 minutes, resulting in harder texture on final product — organoleptic testing flagged texture as off.</span><span class="status">On hold pending Monday evaluation by Preston and Kathleen.</span></div><div class="raised"><span class="author">Nathan Gevenois</span><span>01:23 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-alert"></i><h3>Food safety</h3><span class="sec-count">3</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Blue belt developing holes on S1 M9/M10 conveyor</div><span class="summary">Short blue belt immediately after white U-shaped belt above Matrices 9 &amp; 10 showing deterioration and developing holes — potential plastic contamination hazard if fragments detach.</span><span class="status">Escalated to E&amp;C; maintenance cannot repair this belt type — replacement required.</span></div><div class="raised"><span class="author">Johan Hernandez</span><span>00:42 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap error">HIGH</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Inclusion hopper blue belt also damaged</div><span class="summary">Inclusion hopper belt on S1 showing similar damage — maintenance will trim the damaged section as temporary fix.</span><span class="status">Maintenance trimming belt; permanent replacement needed.</span></div><div class="raised"><span class="author">Johan Hernandez</span><span>00:50 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>MFM plastic cover flipped to prevent FM risk</div><span class="summary">Plastic cover on MFM showing wear and tear that could cause plastic fragments to fall into bags — cover flipped upside down proactively, replacement ordered.</span><span class="status">Resolved on shift — cover flipped, replacement on order.</span></div><div class="raised"><span class="author">Kimberly Morales</span><span>04:11 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="shield-check"></i><h3>Quality flags</h3><span class="sec-count">1</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>Truffle centers too hard after oil outage</div><span class="summary">Coconut oil supply exhausted at Truffle Line for approximately 30 minutes; centers deposited without oil resulted in harder texture that failed organoleptic testing.</span><span class="status">Line recovered after oil refilled and 40-minute mix; 4 pallets held for Monday review.</span></div><div class="raised"><span class="author">Raoul Lubain</span><span>06:22 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="spray-can"></i><h3>Sanitation</h3><span class="sec-count">4</span></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L2</span>Environmental swab OOS requires 3x cleaning</div><span class="summary">Out-of-spec environmental swab result flagged; protocol requires clean, vector, clean, vector, clean, vector before release.</span><span class="status">Investigation ongoing — first cleaning completed, awaiting vector results.</span></div><div class="raised"><span class="author">Hervin Herrera</span><span>18:21 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>PTL filter/pipes left dirty after washroom clean</div><span class="summary">PTL filter gasket, base, and pipe moved from washroom to ML1 line still had hardened chocolate on them — parts sent back for cleaning before install.</span><span class="status">Resolved — parts recleaned, ATP tested, and installed.</span></div><div class="raised"><span class="author">Grey Boscan</span><span>13:37 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap warning">MED</span></div><div class="body"><div class="title-line"><span class="plant-tag">L3</span>ML1 Sweco dirty at startup, reinstalled dirty</div><span class="summary">Sweco found dirty during 1st-shift startup; removed, cleaned, and reinstalled — indicates missed step during prior cleaning.</span><span class="status">Resolved — Sweco cleaned and reinstalled; visual inspection and ATP passed.</span></div><div class="raised"><span class="author">Imperial</span><span>09:00 MT</span></div></div><div class="fsqa-entry"><div class="sev-col"><span class="cap neutral">LOW</span></div><div class="body"><div class="title-line"><span class="plant-tag">L1</span>Water intrusion by QA area</div><span class="summary">Water seeping in near QA area during rain event; spill kit placed and water mopped up.</span><span class="status">Resolved on shift — door seal replacement scheduled for next week.</span></div><div class="raised"><span class="author">Charity Young</span><span>02:21 MT</span></div></div></section><section class="fsqa-section"><div class="sec-head"><i class="sec-icon" data-lucide="triangle-alert"></i><h3>Allergen</h3><span class="sec-count">0</span></div><p class="empty">No allergen events.</p></section>
+
+  <div class="opportunities-eyebrow">Opportunities — by plant</div><div class="opportunities-row"><div class="opp-box"><div class="eyebrow">L1</div><h4>L1 Caramel</h4><ul><li>Consider adding belt-wear inspection to pre-op checklist for S1 — today&#x27;s two damaged blue belts (M9/M10 conveyor and inclusion hopper) both presented FM contamination risk.</li></ul></div><div class="opp-box"><div class="eyebrow">L2</div><h4>L2 Moulding</h4><p class="empty">No opportunities flagged today.</p></div><div class="opp-box"><div class="eyebrow">L3</div><h4>L3 Chocolate</h4><ul><li>Review washroom cleaning verification procedure for complex assemblies — PTL filter/pipe left with hardened chocolate after cleaning suggests gap in inspection or final rinse.</li><li>Add visual check for Sweco cleanliness to ML1 pre-startup checklist — equipment reinstalled dirty today, requiring mid-shift removal and re-clean.</li><li>Consider oil-level monitoring or low-level alarm for Truffle Line coconut oil tank — 30-minute oil outage resulted in 4 pallets on hold for texture defects.</li></ul></div></div>
+
+  <p style="font-size: 7.5pt; color: var(--fg-3); margin-top: 18pt;">
+    Production briefing for the same day:
+    <a class="archive-link" href="2026-11-14.html">reports/2026-11-14.html</a> ·
+    <a class="archive-link" href="../index.html">Archive of past briefings</a>
+  </p>
+
+  <div class="sheet-footer">
+    <span class="doc">FSQA briefing · 2026-11-14</span>
+    <span class="page-no">Page 1 of 1</span>
+  </div>
+</section>
+
+</div>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

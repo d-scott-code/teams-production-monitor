@@ -1,0 +1,270 @@
+{
+  "date": "2026-11-14",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 Truffle Line ran out of coconut oil and was down *5 hours* \u2014 back online at 10:55 with 4 pallets on hold."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 1 flagged blue conveyor belt damage above matrices 9 & 10 as a potential foreign material risk; E&C will be needed to replace. Sollich 3 regulator sensor was damaged and then repaired in 40 minutes. Otherwise routine weekend cleaning across all lines.",
+    "L2": "ML2 had brief jams past the metal detector that cleared by midshift. ML3 recovered from a drive roller belt snap and a riser pump leak, both fixed inside 20 minutes. Environmental swab came back out of spec; first of three cleanings underway.",
+    "L3": "Truffle Line stopped at 06:12 after running out of coconut oil \u2014 Preston and team developed a recovery protocol and restarted at 10:55, with 4 pallets on hold for Monday evaluation. ML4's TG5 fin wheels are not moving; Kavin flagged it at 06:14 with no resolution by window close. MFM and ML1 (Imperial) ran routine changeover and tempering work."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Water leak by QA area \u2014 door seal will be replaced next week (William Lopez)."
+    },
+    {
+      "plant": "L2",
+      "text": "Water seeping at grinding emergency door during rain; seals scheduled for replacement Monday."
+    },
+    {
+      "plant": "L3",
+      "text": "Grey Boscan ran MFM with Truffle Line employees while TL was down for the coconut oil issue."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 3 C19 belt sensor regulator damaged",
+      "summary": "Regulator for the sensor on the C19 belt is damaged; maintenance looking for spare parts.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-13T19:16:44.327Z"
+      },
+      "resolution": "Repaired by 12:57 \u2014 Chris Jeffs confirmed \"This is repaired.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 drive roller belt snapped",
+      "summary": "One of the drive roller belts broke, stopping the line; maintenance went to get a replacement.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-13T23:30:44.274Z"
+      },
+      "resolution": "Line running again at 16:42 \u2014 belt replaced in 12 minutes."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 bad temper on dark chocolate",
+      "summary": "Temper check came back at 0.5, then 0.2; line stopped until temper improved.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-11-14T00:42:29.415Z"
+      },
+      "resolution": "Last check 0.1 at 17:56 \u2014 \"line running again\" with acceptable temper."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 jams past metal detector",
+      "summary": "Line jammed repeatedly just after the metal detector; slowed to speed 10 but continued jamming every minute or two.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-13T19:28:07.416Z"
+      },
+      "resolution": "Cleared by 13:08 \u2014 Alex Mendoza reported \"the line is running a lot better.\""
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 sensor B298 not sensing turned product",
+      "summary": "Sensor failed to detect turned product and therefore did not blow it off the line.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 Depositor",
+        "time_utc": "2026-11-13T21:49:43.848Z"
+      },
+      "resolution": "Fernando Flores adjusted the sensor at 18:17 and it is functioning properly (Alan Todd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 riser pump leak",
+      "summary": "Riser pump started leaking; maintenance troubleshooting the issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-13T23:50:51.922Z"
+      },
+      "resolution": "Maintenance tightened clamp at 16:57 \u2014 \"no more leaks\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "Internet outage",
+      "summary": "Internet connectivity lost across L2.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-13T19:12:29.974Z"
+      },
+      "resolution": "Back up by 12:32 \u2014 Jeffrey reported \"it is working for me again.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 sensor connector failure",
+      "summary": "Inclusion hopper sensor connector is bad; maintenance notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-14T01:16:05.909Z"
+      },
+      "resolution": "Fixed by 19:32 \u2014 Spencer Andrus: \"Sensor is fixed.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 video jet not printing",
+      "summary": "End-pack video jet on ML4 not printing at all.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-14T05:36:40.3Z"
+      },
+      "resolution": "Fixed by 04:43 \u2014 Kimberly Morales confirmed \"Jet printer has been fixed.\""
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line oil leak in kitchen",
+      "summary": "Oil leaking in the kitchen area; maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-11-14T08:15:53.397Z"
+      },
+      "resolution": "Fixed at 01:23 \u2014 \"Maintenance (Kavin) fixed the leak\" (Raoul Lubain)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator missing",
+      "summary": "Sticker applicator needs to be installed; single maintenance tech on shift doesn't have time.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-11-14T10:51:16.232Z"
+      },
+      "resolution": "Swapped out by 08:41 \u2014 Nathan Ruiz completed the installation."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Sweco found dirty during startup",
+      "summary": "The Sweco was discovered to be dirty during chocolate startup and needed cleaning before proceeding.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-14T16:00:16.212Z"
+      },
+      "resolution": "Uninstalled, cleaned, and reinstalled by 09:58 \u2014 \"The Sweco is clean and installed.\""
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 enrober screwdrive fault",
+      "summary": "Enrober faulted with a pop sound while running in reheat mode; operators tried restarting with same result.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-11-14T06:07:49.565Z"
+      },
+      "status": "Maintenance checked drive roller at 05:40, ran it forward and reverse with no fault. Unable to reproduce issue. Brandon Hernandez escalated for further investigation."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 blue belt damage above matrices 9 & 10",
+      "summary": "Short blue conveyor belt after the white U-shaped belt is developing holes and deteriorating \u2014 potential physical contamination hazard from plastic fragments.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Johan Hernandez",
+        "time_utc": "2026-11-14T07:42:48.727Z"
+      },
+      "status": "Maintenance cannot fix; requires E&C due to belt type. Escalated to manager. QC recommends evaluating potentially affected product per food safety procedures."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 2 allergen clean incomplete",
+      "summary": "Allergen clean on jar area almost done but setup will need to be completed on 1st shift Monday; 12 absent EEs impacted cleaning progress.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-11-14T14:32:50.558Z"
+      },
+      "status": "Cleaning almost complete as of 07:32, but setup tasks remain for Monday 1st shift. Troy Baxter planning to come in early."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 inclusion hopper blue belt damage",
+      "summary": "Blue belt on inclusion hopper showing wear and damage.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Johan Hernandez",
+        "time_utc": "2026-11-14T07:50:53.407Z"
+      },
+      "status": "Maintenance will trim the belt as of 01:08 (Brandon Hernandez)."
+    },
+    {
+      "plant": "L2",
+      "title": "Environmental swab out of spec",
+      "summary": "Environmental monitoring swab came back out of spec; requires three cleanings with vector swabs before and after each.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-14T01:21:51.504Z"
+      },
+      "status": "Working on exact location identification and first cleaning as of 18:24. Kathleen Gilbert directing vector swab protocol."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 fin wheels not moving",
+      "summary": "When running film only, the fin wheels don't move at all; chain and pre-take-off motors run but fault out for speed mismatch.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kavin Ayala",
+        "time_utc": "2026-11-14T13:14:47.3Z"
+      },
+      "status": "Kavin checked motors, electrical cabinet, and power-cycled with no success as of 06:14. Unsure of root cause; escalated to Blake Heward, Nelson Cook, Rose Smuin, and Chad Stone."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line ran out of coconut oil",
+      "summary": "Line stopped at 06:12 to change oil and discovered they had run out; ~30 minutes of production without oil in the depositor.",
+      "priority": "P1",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-11-14T13:22:55.454Z"
+      },
+      "status": "Line restarted at 10:55 after adding oil and mixing for 40 minutes. Organoleptic tests acceptable, 4 pallets on hold for evaluation Monday with Kathleen Gilbert. Enhanced testing protocol in place."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG 3 & 4 changeover incomplete",
+      "summary": "King-size tooling changeover on TG 3 and 4 is only 50% complete; parts were found dirty mid-changeover and cleaning caused delay.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-13T23:07:56.196Z"
+      },
+      "status": "Peter and Efrain working on changeover as of 09:43; Efrain estimated 2 hours to completion. Needed for Monday morning startup."
+    }
+  ]
+}
