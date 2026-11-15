@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-15",
+  "headline": {
+    "eyebrow": "Quiet 24 hours",
+    "text": "L3 truffle line ran production through a scheduled clean \u2014 wire mesh belt monitored and repaired by outside techs, no downtime."
+  },
+  "per_plant_summary": {
+    "L1": "No production activity in the last 24 hours. Waiting on overdue brown sugar delivery and kraft box shipment, both expected Monday.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "Truffle line ran 14-gram Bite Dark SS through the shift with all quality checks passing. Overnight crew completed level 2 weekend clean and ATP validation. Wire mesh belt monitored throughout shift, repaired by outside techs during clean window."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Brown sugar truck overdue from last week \u2014 85,000 lbs expected Monday, pending supplier confirmation."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 belts laser-marked to prevent size mismatches after recurring incorrect installations."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "Enrober wire mesh belt gap monitored and repaired",
+      "summary": "Belt held stable through production shift, outside techs arrived early and completed repair during scheduled clean window.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-14T23:56:18.081Z"
+      },
+      "resolution": "Cleared at 04:13 \u2014 \"Enrober wire mesh fixed\" (Raoul Lubain). Belt ran with maintenance for 15 minutes post-repair."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line level 2 weekend clean",
+      "summary": "Full teardown clean of depositor, tunnels, enrober, packaging equipment completed and ATP-validated.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Raoul Lubain",
+        "time_utc": "2026-11-15T05:41:06.377Z"
+      },
+      "resolution": "Cleared at 06:22 \u2014 \"Level 2 clean completed and passed off ATP\" (Raoul Lubain). All equipment cleaned, inspected, and run-tested."
+    }
+  ],
+  "needs_attention": []
+}
