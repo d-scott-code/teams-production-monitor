@@ -1,0 +1,402 @@
+{
+  "date": "2026-11-16",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L3 ML4 Theegarten wrappers were down *1\u20132 hours* for a software issue \u2014 techs brought them back by noon."
+  },
+  "per_plant_summary": {
+    "L1": "S1 delayed start until 11:37 for EM-positive drain cleaning and swabbing. S3 tunnel belt replaced air suppressor and ran by 10:12. S4 coconut oil motor faulted overnight, reset by 07:48. Two unresolved: compressor 2 low-pressure alarm and broken decorator hose.",
+    "L2": "ML2 metal detector blow-offs cleared after chicane and belt adjustments \u2014 ran well rest of shift. FFS web frame and film break both resolved same shift. No open issues at window close.",
+    "L3": "ML4 Theegarten wrappers all failed 08:15 on incomplete format change and software fault, back by 11:31 after remote support. ML1 had recurring metal detector belt tracking issues and multiple minor stops. Five items still need attention: TG product blowing off, buffer tank leak, gondola breaking bars, air knife setup, and glycol level low."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Kitchen 2 HMI upgrades completed with new admin password requirement for login."
+    },
+    {
+      "plant": "L2",
+      "text": "365-day safety celebration with food truck 09:30\u201311:00 for first shift."
+    },
+    {
+      "plant": "L3",
+      "text": "Tim and Bob on-site for plant walk; small tour planned for tomorrow."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 coconut oil motor not building pressure",
+      "summary": "Pump protection activated overnight after heating zone turned off over weekend, solidifying oil in the line.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-16T12:25:39.71Z"
+      },
+      "resolution": "Cleared at 07:48 \u2014 VFD reset, heating zone restarted, pump protection cleared, back up and running (Marcos Jimenez)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tunnel 1 belt turning on then stopping",
+      "summary": "Belt cycled on and immediately stopped, holding line down from 09:25 while maintenance diagnosed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-16T13:49:07.75Z"
+      },
+      "resolution": "Cleared at 10:12 \u2014 maintenance replaced air suppressor, line back up and running (Justin Garner)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 EM-positive drain delayed start for cleaning",
+      "summary": "Drain near S1 marshmallow mixing tested positive for environmental monitoring pathogen, requiring pre-start cleaning, vector swabbing, and second post-clean swabs before line could run.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-11-16T02:38:00.711Z"
+      },
+      "resolution": "Cleared at 11:37 \u2014 Mary completed second swab collection, floor sanitized, and S1 started running (S1 Enrober, Mary Montilla)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 Russell Finex filter clogged on arrival",
+      "summary": "Filter found clogged at shift start, preventing caramel flow to line.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-16T13:00:24.339Z"
+      },
+      "resolution": "Cleared same shift \u2014 operator unclogged filter and manually purged 3 buckets (S3 Enrober)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 separating table 1 flaps removed causing nut buildup",
+      "summary": "Covers removed from separating table allowing nut accumulation underneath; root cause for removal unknown.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-16T22:12:51.093Z"
+      },
+      "resolution": "Cleared at 15:24 \u2014 maintenance re-installed flaps, should see less nut buildup now (Caleb York)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 metal detector blow-offs and jams",
+      "summary": "High scrap rate (200 lbs by 06:56) from bars blowing off and jamming past metal detector, requiring multiple maintenance interventions.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-16T12:52:29.762Z"
+      },
+      "resolution": "Cleared by end of shift \u2014 adjusted 2nd chicane, speed/long belts, and cross conveyors; Dave confirmed \"worked well all day\" at 13:50."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS web frame out of range",
+      "summary": "Line down at shift start for web frame positioning error, Justin working on adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-16T13:16:15.519Z"
+      },
+      "resolution": "Cleared at 06:46 \u2014 \"line is running\" (Jeffrey Barney, VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS film broken",
+      "summary": "Film break took line down at 12:07.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-16T19:07:46.396Z"
+      },
+      "resolution": "Cleared at 12:31 \u2014 \"the line is running\" (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 wrapper machine knife problems",
+      "summary": "Line stopped at 14:55 for recurring issues with wrapper knives.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-16T21:55:32.566Z"
+      },
+      "resolution": "Cleared at 15:28 \u2014 \"line is running\" (Mathew Draper)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Theegarten wrappers software failure",
+      "summary": "All three TG wrappers stopped working at 08:15 \u2014 belts not moving, incomplete gondola format change from prior shift, software issue across all units requiring remote support from Konstantin.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-16T15:15:34.651Z"
+      },
+      "resolution": "Cleared at 11:31 \u2014 TG3 and TG4 ready, hoppers filled, depositing on dep 1 again (Itzel Chavez, ML4 TG)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 1 exit belt issues",
+      "summary": "Exit belt on Cavanna 1 repeatedly faulting and shutting line down at 06:38, again at 09:07; recurring mechanical issue requiring multiple tension adjustments.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-16T13:38:06.486Z"
+      },
+      "resolution": "Cleared by end of shift \u2014 tension adjusted at 06:47, loosened again at 12:21, belt speed reduced 195 to 185 at 12:54 (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 1 product appearance out of spec",
+      "summary": "Chocolate bars coming out with bad appearance, production removing at demold to prevent packing; temper and circuit temps stable but line stopped to verify all temps.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-11-16T14:31:22.378Z"
+      },
+      "resolution": "Cleared at 07:42 \u2014 \"bars are looking better,\" appearance within spec, cleared to pack; all off-spec product removed at demold (Itzel Chavez, David Zuniaga)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial valve air jam preventing purge",
+      "summary": "Chocolate would not purge from pipeline when operator tried; suspected air pressure issue with valve not opening.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-16T16:46:53.16Z"
+      },
+      "resolution": "Cleared at 10:20 \u2014 air jam on valve cleared (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Imperial high temper",
+      "summary": "Stopped sending chocolate to hopper after temper spiked into red zone; operator took second temper before adjusting while line was down.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-16T18:34:25.297Z"
+      },
+      "resolution": "Cleared at 11:45 \u2014 adjustment made, starting back up (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C1 conveyor stopping frequently",
+      "summary": "Conveyor belt faulting and stopping repeatedly throughout morning, maintenance in line working on root cause.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-16T18:54:01.824Z"
+      },
+      "resolution": "Cleared at 13:14 \u2014 \"since 1:14 conveyor belt C1 has not stopped again\" (Imperial at 13:47)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 bars with hole in corner from wrapper",
+      "summary": "33% of bars (3 out of 10) had holes in corner; line stopped at 12:50 for maintenance adjustment.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-11-16T19:42:09.483Z"
+      },
+      "resolution": "Cleared at 13:16 \u2014 cut and film position needed adjustment (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 licking roller 2 pump not working",
+      "summary": "Pump failure caused bin to fill with chocolate, stopping line; same issue as last week.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-16T20:38:25.771Z"
+      },
+      "resolution": "Cleared at 15:15 \u2014 breaker tripped, maintenance found and reset it, pump working (Shane Olsen, Efrain Rodriguez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 centerlines out of spec (5 readings)",
+      "summary": "Five centerline measurements out of specification range, flagged to Shawn for adjustment.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-16T22:17:39.655Z"
+      },
+      "resolution": "Cleared at 15:32 \u2014 lower crystallization by 0.2 per Shawn's direction, adjustment confirmed (Shawn Jewkes, Bojana McLeod)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line QiSoft photo function failing",
+      "summary": "System kicking operator out when attempting to take required hourly photo for production check.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-16T20:50:45.715Z"
+      },
+      "resolution": "Cleared at 14:26 \u2014 Shawn fixed it, now letting them take photos (Shawn Jewkes, TruffleLine FW)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 Carastar send alarm blocking batch transfer",
+      "summary": "Alarm preventing kitchen from sending finished batch to Carastar system; screenshot shows error but no diagnostic or workaround posted.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-16T19:42:54.973Z"
+      },
+      "status": "Blocking batch send as of 12:42; Chris Jeffs tagged but no response by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 compressor 2 low pressure alarm",
+      "summary": "Compressor 2 found in red with low-pressure alarm at shift start; no follow-up on cause or resolution posted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-11-16T12:01:45.465Z"
+      },
+      "status": "Flagged at 05:01; no update from maintenance or operators by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 decorator hose broken",
+      "summary": "Hose on decorator found broken; Justin asked how or when it happened but no response or repair status posted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Justin Garner",
+        "time_utc": "2026-11-16T12:40:28.813Z"
+      },
+      "status": "Reported at 05:40; no update on replacement or impact to production."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 cross conveyor 1 motor replacement in progress",
+      "summary": "Cross conveyor not running even though HMI shows on; maintenance began motor replacement at 07:37 but no completion confirmation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S3 Enrober",
+        "time_utc": "2026-11-16T13:48:02.411Z"
+      },
+      "status": "Maintenance replacing motor as of 07:37 (Justin Garner); line ran without it but no final status posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 air knife configuration causing line faults",
+      "summary": "Four air knives installed causing excessive air draw and low-pressure faults; Nathan reduced to one knife to run but asked Chris Givens for proper solution at 11:31.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-11-16T15:19:29.459Z"
+      },
+      "status": "Workaround in place (one knife plugged); permanent fix pending Chris Givens input as of 11:31."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna air pressure issues",
+      "summary": "Cavanna wrapper experiencing air pressure problems at 10:22, maintenance working on it but no resolution posted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-11-16T17:22:17.037Z"
+      },
+      "status": "Maintenance working as of 10:22; no update on cause or completion."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG wrappers blowing off product",
+      "summary": "All TG units blowing off full bars at 12:10; Peter working on it, root cause found on TG5 as motor installed incorrectly after cleaning, but no confirmation all three units resolved.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-16T19:10:52.455Z"
+      },
+      "status": "TG5 motor issue found and Blake working on it as of 12:48 (Ray Garcia); no update on TG3 or TG4 status."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 buffer tank 1 depositor 2 leaking",
+      "summary": "Tank leaking, Blake called at 12:40 but no follow-up on severity or repair.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-11-16T19:40:39.032Z"
+      },
+      "status": "Blake Heward tagged at 12:40; no update on leak source or containment."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola breaking bars intermittently",
+      "summary": "Bars coming out of gondola broken; production person stationed to remove defective pieces at TG4 to protect quality, but gondola issue not fixed.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-11-16T20:45:55.479Z"
+      },
+      "status": "Mitigation in place (manual sorting) as of 13:45; Mirella flagged broken pieces again at 15:22; root cause unresolved."
+    },
+    {
+      "plant": "L3",
+      "title": "Plant entry door not locking, badge reader bypassed",
+      "summary": "Main entry door allowing employees to walk in without badges; both production floor door and main lobby door affected.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-11-16T20:48:14.724Z"
+      },
+      "status": "Benjamin asked William Lopez to check at 13:50 before calling Stone Security; Preston flagged lobby door not closing at 15:12; no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 wrapper safety door opens during roll rotation",
+      "summary": "Safety door on wrapper machine repeatedly opening every time film roll rotates; maintenance notified at 13:49 but no fix posted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-16T20:49:10.617Z"
+      },
+      "status": "Maintenance notified at 13:49; no update on adjustment or sensor issue."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol level dropping to low mark",
+      "summary": "Glycol level almost at \"sad face\" indicator at 14:00, still low at 14:27; maintenance called but no refill or leak check confirmation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-16T21:00:03.202Z"
+      },
+      "status": "Flagged twice (14:00 and 14:27); Rose, Blake, and Nathan tagged but no response by window close."
+    }
+  ]
+}

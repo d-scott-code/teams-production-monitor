@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-16",
+  "headline": {
+    "eyebrow": "Environmental monitoring",
+    "text": "L1 S1 drain tested *EM positive* \u2014 cleaning and vector swabbing completed, line back in production after 6:30 AM delay."
+  },
+  "summary": "One environmental monitoring positive at L1 Sollich 1 required morning cleaning delay; swabbing completed and line released. L3 ML1 metal detector belt flipped twice in one shift despite maintenance adjustments. L2 panning rejected foreign material successfully.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "EM positive drain near S1 marshmallow mixing",
+      "summary": "Environmental monitoring swab returned positive; production delayed S1 startup, cleaned drain and surrounding floor, collected before/after vector swabs, and released line at 11:36 AM.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Jorel Gourdin",
+        "time_utc": "2026-11-16T02:38:00.711Z"
+      },
+      "status": "Resolved \u2014 cleaning completed, after-swabs collected, line running, no backup observed in kitchen drain by end of shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector belt flipped twice during shift",
+      "summary": "Belt suddenly shifted and flipped at 14:25 and again at 14:27 despite maintenance adjustments; both shift leaders witnessed second incident, which occurred within seconds.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-11-16T15:49:43.876Z"
+      },
+      "status": "Open \u2014 maintenance adjusted belt twice, but root cause of sudden tracking failures not identified by window close."
+    },
+    {
+      "plant": "L2",
+      "title": "Foreign material rejected at panning/sorting",
+      "summary": "Panning line detected and rejected foreign material; all FM removed from product stream.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-11-16T15:23:59.903Z"
+      },
+      "status": "Resolved \u2014 all foreign material rejected, no product released with contamination."
+    },
+    {
+      "plant": "L3",
+      "title": "S3 metal detector container scraping material into bin",
+      "summary": "Metal detector container too tight, causing material to scrape off and fall into reject bin; line leader informed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-11-16T18:46:56.335Z"
+      },
+      "status": "Open \u2014 floor cleaned with scraper, but container clearance issue not resolved by window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "ML4 chocolate appearance out of spec at startup",
+      "summary": "Depositor 1 produced chocolate with bad appearance at 07:31; temper stable, all off-spec product scrapped at demolding, appearance recovered after adjustments.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-11-16T14:31:22.378Z"
+      },
+      "status": "Resolved \u2014 mold temperature increased, all off-spec chocolate rejected, product appearance within spec by 07:42."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 film tears causing holes in bar corners",
+      "summary": "Bars coming through with holes in corners at 33% rate (3 out of 10); line stopped, maintenance adjusted cut and film position.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-11-16T19:42:09.483Z"
+      },
+      "status": "Resolved \u2014 maintenance adjusted film, issue corrected, line running."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line missing Saturday hourly QiSoft checks",
+      "summary": "Production did not submit hourly coconut oil organoleptic checks during Saturday run as required.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-11-16T19:57:10.835Z"
+      },
+      "status": "Open \u2014 gap identified, no checks recorded for Saturday production; process accountability unclear."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Vacuum cleaner not being emptied after shifts",
+      "summary": "Vacuum cleaner found not cleaned after first shift and CIL; reminder issued to empty after each shift and CIL cleaning.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-16T22:07:06.929Z"
+      },
+      "status": "Resolved \u2014 reminder issued to first and second shift teams."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding TG wrapper motor orientation verification to post-cleaning checklist \u2014 based on TG5 motor installed incorrectly after cleaning, causing line-down and product blow-off issues until 12:48."
+    },
+    {
+      "plant": "L3",
+      "text": "Review ML1 metal detector belt tracking procedure and maintenance frequency \u2014 belt flipped suddenly twice in one shift (14:25, 14:27) despite adjustments, with second failure witnessed occurring within seconds."
+    },
+    {
+      "plant": "L3",
+      "text": "Implement accountability mechanism for Saturday production QiSoft checks on Truffle Line \u2014 based on missing hourly coconut oil organoleptic verifications during 2026-11-15 weekend run."
+    }
+  ]
+}
