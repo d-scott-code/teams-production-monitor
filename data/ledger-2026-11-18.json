@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-18",
+  "headline": {
+    "eyebrow": "System outage",
+    "text": "Label printer system failed at *10:05* across all three plants \u2014 hardware replacement underway, estimated *3-5 hours* to restore."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran through brown sugar and Celtic salt shortages with workarounds. Sollich 3 lost an hour at startup fixing decorator speed and frozen nozzles but recovered. Sollich 4 had a 12-minute vacuum cleaning stop.",
+    "L2": "ML3 demolding plate came off its bracket at 02:18 \u2014 maintenance replaced hardware and had the line back by 05:19. FFS ran clean after a planned blade cleaning. Vacuum filter found packed with chocolate buildup.",
+    "L3": "ML1 stopped for 2 hours to replace 43 broken conveyor links and worn sprockets. ML4 saw 26+ preheating faults through the day \u2014 maintenance troubleshooting recurring issue. MFM started with underweight pouches, corrected and running."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Brown sugar delivered at 09:27 after overnight substitute approval; Celtic salt (300 lbs) arriving Thursday morning."
+    },
+    {
+      "plant": "L3",
+      "text": "Board tour completed at 09:11 \u2014 plant was clean, organized, and ML4 impressed visitors."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 decorator startup failure",
+      "summary": "Decorator wouldn't start after changeover \u2014 speed set too high at 285, then chocolate nozzle pins frozen shut from cold chocolate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-17T22:03:32.041Z"
+      },
+      "resolution": "Lowered speed to 150 to start, raised back to 285. Torched nozzles to free pins. Good temper and running by 16:11."
+    },
+    {
+      "plant": "L1",
+      "title": "Brown sugar shortage overnight",
+      "summary": "Three Sollich lines exhausted brown sugar supply with no delivery \u2014 stopped cooking at 17:29 until substitute approved.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-11-17T23:44:30.321Z"
+      },
+      "resolution": "Quality and leadership approved Non-GMO brown sugar substitute at 17:58. Cooking resumed. Delivery arrived 09:27."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 chiller compressor fault",
+      "summary": "Chiller #2 faulted overnight with low pressure, likely due to cold ambient temp and fans running at 100%.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-11-18T02:53:44.83Z"
+      },
+      "resolution": "Reset successfully at 19:53. Maintenance planning temporary fan control solution."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 vacuum system transfer delay",
+      "summary": "Vacuum transfer to kettles running slow, risking additional stops \u2014 12-minute pause at 09:50 to clean mixing tank and filter.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-11-18T16:49:55.825Z"
+      },
+      "resolution": "Cleaned filter and mixing tank. Total process took 12 minutes, line resumed."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 demolding plate bracket failure",
+      "summary": "Turning plate came off bracket at 02:18, stopping the line for 3 hours while maintenance replaced bracket and rail slides with new hardware.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-18T09:18:06.253Z"
+      },
+      "resolution": "New plate installed and adjusted by 05:19 \u2014 \"Line is running, plate is moving smooth\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 flow wrapper door sensor faults",
+      "summary": "Multiple door sensor faults stopped the line at 03:04 \u2014 sensor behind door was loose, then main door sensor faulted.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-18T11:03:55.123Z"
+      },
+      "resolution": "Tightened loose sensor, performed hard resets. \"Start line\" at 03:34 (ML2 FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 U-shaped conveyor broken links",
+      "summary": "Conveyor kept stopping due to 43 damaged links causing noise and jams, line down from 10:36 while maintenance replaced links and worn sprockets.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-18T17:36:43.855Z"
+      },
+      "resolution": "43 links replaced and sprockets swapped by 13:54 \u2014 \"no more clicking noise\" (Nathan Ruiz). Line resumed at 12:48."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM underweight pouches at startup",
+      "summary": "Pouches rejecting for low weight at 15:07 start \u2014 counts showed 8-10 caramel pieces instead of target, left side underweight.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-17T22:07:16.513Z"
+      },
+      "resolution": "Shawn adjusted Yamato. Line restarted at 15:55 \u2014 \"i think we're good\" (Shawn Jewkes)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Label printer system outage across all plants",
+      "summary": "All three Lindon locations lost ability to print FG and case labels at ~10:05 due to server hardware failure.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nidia Lopez Corea",
+        "time_utc": "2026-11-18T17:05:47.903Z"
+      },
+      "status": "IT working hardware replacement and data migration. Estimated 3-5 hours for fix as of 12:02 (Goose Fredrikson, Chad Stone)."
+    },
+    {
+      "plant": "L1",
+      "title": "Celtic salt inventory critically low",
+      "summary": "Only salt remaining is what's on the S3 line \u2014 estimated 5 hours remaining as of 12:30, with 1.5 bags left.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-11-18T19:25:57.569Z"
+      },
+      "status": "Cooking stopped at 12:31 to preserve salt. 300 lbs arriving Thursday morning, 200 lbs Friday 11/20 (Martin Carlos 13:35)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 walkway roof leak",
+      "summary": "Significant leak reported in middle of Sollich 4 walkway at 17:03 \u2014 water pooling on floor.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-18T00:03:59.176Z"
+      },
+      "status": "William Lopez committed to check next day. \"Luckily it will not rain\" (20:45)."
+    },
+    {
+      "plant": "L1",
+      "title": "Heavy cream shortage projected through Friday",
+      "summary": "Need 4,300 gallons from now through Friday 3rd shift but only have 3,300 gallons on hand \u2014 1,000 gallon shortfall.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Francisco Gudino Torres",
+        "time_utc": "2026-11-18T19:48:52.28Z"
+      },
+      "status": "Reported to Kirk Nickel at 12:48. No delivery ETA provided in window."
+    },
+    {
+      "plant": "L2",
+      "title": "Foreign product found in ingredient super sacks",
+      "summary": "Second consecutive night finding foreign items inside ingredient sacks \u2014 cherry kisses tonight, pretzels last night.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-11-18T06:37:20.122Z"
+      },
+      "status": "Reported to Jose, Alan, Hervin. No corrective action documented in window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 vacuum filter packed with chocolate",
+      "summary": "Vacuum elbow and filter found full of chocolate causing flow-outs on wrapper \u2014 both top and filter heavily contaminated with milk and white mix.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-18T13:49:29.411Z"
+      },
+      "status": "Dave Ruff cleaned at 07:48. Recommended daily 20-minute cleaning plus deep clean Fridays. Hasn't been cleaned properly \"for a while.\""
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS recurring preheating faults",
+      "summary": "WDS stopped 15 times for Preheating 2 since start of shift, then 11 more stops between 12:19-12:29 \u2014 persistent issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-18T18:35:30.149Z"
+      },
+      "status": "Blake Heward checking preheating 2 as of 12:42. Ray Garcia asked about re-racking the card \u2014 new module won't deliver today."
+    }
+  ]
+}
