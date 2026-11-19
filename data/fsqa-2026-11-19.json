@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-19",
+  "headline": {
+    "eyebrow": "Foreign material",
+    "text": "Truffle Line buffer tank drained after towel + metal found in chocolate path; *no additional FM* recovered during flush"
+  },
+  "summary": "Three metal-related events across L3: bearing & fastener in Truffle Line chocolate gears (likely from supplier), towel wrapped in buffer valve, and ML4 depositor bolts removed from magnet tray. ML1 metal detector B100 malfunctioned for ~1 hour rejecting all product. All events contained; no finished-good escapes confirmed.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "ML1 metal detector sensor B100 rejecting all product",
+      "summary": "Sensor B100 malfunction caused line stop from 20:33 to 21:33; maintenance notified, sensor issue isolated, 186 lbs diverted to rework.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-11-19T03:32:14.985Z"
+      },
+      "status": "Resolved \u2014 sensor repaired, line resumed production after maintenance clearance."
+    },
+    {
+      "plant": "L3",
+      "title": "Bearing and fastener found in Truffle Line chocolate gears",
+      "summary": "Maintenance discovered bearing and unidentified fastener in riser pump gears during troubleshooting; likely origin Classen chocolate supply based on equipment inspection.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-11-19T15:58:23.161Z"
+      },
+      "status": "Resolved \u2014 buffer tank fully drained with inline screens, flushed with oil, permanent inline screen installed to prevent future FM from reaching pump."
+    },
+    {
+      "plant": "L3",
+      "title": "Towel found wrapped around Truffle Line buffer tank valve",
+      "summary": "Riser pump failure investigation revealed towel stuck in valve preventing rotation; tank drained through screened transfer, no additional FM found during drainage or oil flush.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Nathan Ruiz",
+        "time_utc": "2026-11-19T16:27:04.209Z"
+      },
+      "status": "Resolved \u2014 system emptied, flushed, inline screen added, all temporary equipment ATP-tested before use."
+    },
+    {
+      "plant": "L2",
+      "title": "Chain lube oil found on ML3 splice box rollers",
+      "summary": "Operator noticed oil from splice box; investigation found chain lube oil had been used to clean rollers instead of food-grade lubricant, residue cleaned.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-19T14:53:19.459Z"
+      },
+      "status": "Resolved \u2014 oil residue cleaned, QA approved line restart at 07:58."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor 4 bolts removed from magnet tray",
+      "summary": "Maintenance removed bolts from depositor 4 magnet tray during shift; bolts had been visible at start of 3rd shift, removed and secured at 23:40.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-11-19T06:40:29.887Z"
+      },
+      "status": "Resolved \u2014 bolts removed and secured, production resumed."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Wrong case boxes used on S3 \u2014 previous shift + 2 current-shift pallets",
+      "summary": "Label verification at 23:59 discovered wrong boxes on all previous shift output plus 2 pallets from 3rd shift; rework initiated before next order.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-11-19T06:59:24.988Z"
+      },
+      "status": "Open \u2014 rework underway, as much as possible completed before changeover."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 product bad bottoms \u2014 holes, exposed cream",
+      "summary": "Three bars with out-of-spec bottom appearance removed from south side at 08:42; root cause vibration rail buildup after depositor 4, cleaned and chocolate deposit increased.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-11-19T15:42:09.690Z"
+      },
+      "status": "Resolved \u2014 QA monitored at demold through restart, appearance stable after adjustments, no further defects observed."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 pallet wrap plastic too thick, poor adhesion on ~3 pallets",
+      "summary": "Warehouse flagged that new pallet-wrap plastic is thicker than usual and not adhering properly; wrapping team reports increasing tension would bend trays, 3 pallets reworked.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-11-19T05:27:05.609Z"
+      },
+      "status": "Open \u2014 rework completed on affected pallets, next shift instructed to monitor wrapping quality."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Dirty funnel stored in S1 Matrix cabinet",
+      "summary": "Victor found dirty funnel inside Matrix equipment cabinet during 1st shift; operators reminded that tools must be cleaned before storage.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-11-19T17:19:01.894Z"
+      },
+      "status": "Resolved \u2014 funnel removed for cleaning, Matrix operators re-trained on tool storage standards."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider lot-code verification at S3 case setup or first-pallet check \u2014 today's wrong-box error carried over from previous shift suggests setup verification gap."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider supplier audit or receiving inspection protocol for Classen chocolate \u2014 today's bearing and fastener in Truffle Line gears suggest upstream FM risk."
+    },
+    {
+      "plant": "L3",
+      "text": "Review tool and towel accountability at Truffle Line \u2014 today's towel in buffer valve indicates gap in accountability for cleaning materials in production zones."
+    },
+    {
+      "plant": "L3",
+      "text": "Add metal detector function verification to ML1 startup checklist \u2014 today's B100 sensor malfunction went undetected until production run, causing 186 lbs rework."
+    }
+  ]
+}

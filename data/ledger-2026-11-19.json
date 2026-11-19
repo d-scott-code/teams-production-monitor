@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-19",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "ML4 stopped *10 hours* on a failed preheating sensor\u2014running on workaround after probe broke, January delivery."
+  },
+  "per_plant_summary": {
+    "L1": "S3 bag shortage and metal detector work cleared by 3rd shift. S2 Cavannas not ready at 1st shift start\u2014rails, sensors, and rollers all needed work\u2014back online 09:16.",
+    "L2": "ML2 belt tracking and nozzle jams resolved. ML3 oil contamination (chain lube used on rollers) and flow wrapper collar freed same shift. Printer server crashed 15:00, restored 19:37, labeling caught up by morning.",
+    "L3": "ML4 down from 21:59 to 08:09 on bad temp probe in preheating 2\u2014probe broke during troubleshooting, supplier says January delivery. Truffle line down most of 1st shift to drain buffer tank after towel wrapped pump valve. ML1 temper struggled all morning; 11 molds didn't demold, recurring daily issue."
+  },
+  "notes": [
+    {
+      "plant": "L2",
+      "text": "FFS finished salted caramel WIP, started changeover to 3oz Caramel ZS at 13:13."
+    },
+    {
+      "plant": "L3",
+      "text": "Bearing and unidentified fastener found in truffle line gears, likely from Classen chocolate supplier. Inline screen added to prevent future FM from reaching pump."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S3 metal detector maintenance",
+      "summary": "Line paused at 18:49 to pass accumulation while maintenance worked on metal detector.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-19T01:49:38.455Z"
+      },
+      "resolution": "Maintenance finished, QA passed test cards, line running at 22:29\u2014\"Line is running again\" (William Beattie)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 ran out of bags",
+      "summary": "Packaging ran out of bags at 23:55, label issue also identified on boxes from prior shift plus 2 pallets from 3rd.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-11-19T06:55:25.455Z"
+      },
+      "resolution": "Bags arrived, line running at 01:42. Labels reworked before next order start (Luis Falcon)."
+    },
+    {
+      "plant": "L2",
+      "title": "Printer server crash stopped labeling",
+      "summary": "Server failure blocked all FG and case label printing across L2 and L3 starting around 15:00; pallets staged without labels.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "Nidia Lopez Corea",
+        "time_utc": "2026-11-19T00:24:04.014Z"
+      },
+      "resolution": "TechLegion replaced server, printing restored 19:37 (slow at first). Fully caught up 08:39 next morning\u2014\"now fully caught up with pallet labeling\" (Nidia Lopez Corea)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 depositor nozzle plate clogged",
+      "summary": "Nozzle plate clog stopped 3rd shift line at start; depositor also not filling.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-19T07:44:36.238Z"
+      },
+      "resolution": "Cleared at 01:10\u2014\"Line is running. Operator adjusted max level from 20% to 40%, will monitor\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 oil from splice box\u2014chain lube used on rollers",
+      "summary": "Operator saw oil from splice box; chain lube oil mistakenly used to clean rollers, residue on product contact surface.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-19T14:53:19.459Z"
+      },
+      "resolution": "Cleaned residue, QA approved to continue at 07:58\u2014\"Line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 blue belt tracking and chocolate jams",
+      "summary": "Belt drifting operator-side caused jams and blowoffs; roller cleaned, belt adjusted, blowoff nozzles leveled.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-11-18T23:41:37.855Z"
+      },
+      "resolution": "Line running at 16:45 after adjustments. CIL at 18:53 brought jams down sharply\u2014only 2 jams in next 36 minutes (Mathew Draper, 19:55)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 FW jams at forming plates",
+      "summary": "Flow wrapper kept jamming at forming plates, line down to clean.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-19T11:51:20.306Z"
+      },
+      "resolution": "Cleaned, back up at 04:56\u2014\"We are back up\" (Gustavo Rodas, 04:56)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 flow wrapper roller collar seized",
+      "summary": "One collar on flow wrapper roller wouldn't spin, line stopped at 09:45.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-19T16:45:02.763Z"
+      },
+      "resolution": "Maintenance broke it loose at 10:12\u2014\"We are running again\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS blade cleaning",
+      "summary": "Line down for routine blade cleaning mid-shift.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-19T15:37:46.715Z"
+      },
+      "resolution": "Cleaned, running again at 08:54\u2014\"The lines is running\" (VFFS)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 Cavannas not ready at 1st shift start",
+      "summary": "Product arrived at pack 07:00 but stations not ready, no boxes. Found rails improper, sensors pointed at metal, screws loose, belt misaligned, rollers not rotating (water inside), tape machine not set up.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Victor Romero Sr.",
+        "time_utc": "2026-11-19T14:07:23.889Z"
+      },
+      "status": "Setup completed, maintenance replaced rollers, running 09:16. Later pause 11:27 for more roller replacement in Cavanna 3 (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 WDS preheating sensor failure\u201410 hours down",
+      "summary": "Preheating 2 temp probe failed at line start, wouldn't clear. Maintenance and WDS helpline escalated; probe broke during troubleshooting, supplier delivery January. Tech deleted alarm priorities to run without sensor.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-19T04:59:19.343Z"
+      },
+      "status": "Line restarted 08:09 on workaround. Ran Matrix 1&2 overnight. Probe broken, ordered, ETA January (Kavin Ayala, 02:53 and 03:42)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line towel wrapped pump valve, FM in gears",
+      "summary": "Riser pump jammed; towel wrapped around valve, bearing and fastener found in chocolate stream (likely Classen supplier). Buffer tank drained via inline screen, oil flush performed.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-11-19T14:38:38.653Z"
+      },
+      "status": "Tank emptied, all FM flushed out by 14:16. Adding inline screen to prevent future FM from reaching pump. Reassembling as of 14:32 (Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 molds not demolding\u2014recurring daily issue",
+      "summary": "11 full molds plus 6 partial molds didn't demold on 1st shift. Operator noted this happens daily, may be temperature-related.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-19T14:33:16.612Z"
+      },
+      "status": "1st shift operator coming in early tomorrow (04:00) to investigate temp or other root cause. Recurring daily problem (Grey Boscan, 07:33)."
+    }
+  ]
+}
