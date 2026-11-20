@@ -1,0 +1,342 @@
+{
+  "date": "2026-11-20",
+  "headline": {
+    "eyebrow": "Quality flag",
+    "text": "L3 ML4 running with chocolate appearance outside spec \u2014 defective pieces pulled manually at demold while team works the issue"
+  },
+  "per_plant_summary": {
+    "L1": "L1 cleared a pouch shortage on S2 by shuttling V1 material from Springville, fixed a case label date error, and resolved a jar label format question on S3. Wrong chocolate (10121 vs. 10226) was caught and corrected on S3, with Curt requesting follow-up on scanning discipline.",
+    "L2": "L2 ML2 cleared a bent FW roller and chiller faults. ML3 replaced burnt-out barrel pumps overnight but still has a leaking PTL pump and a blown gasket on the warming tank pump after a test run. FFS dialed in weight checker settings and fixed bag sealing after the Zero Sugar changeover. Grinding area has temporary weatherstripping on the door after rain water seeped in; permanent fix coming Tuesday.",
+    "L3": "L3 ML4 continues producing chocolate with appearance outside spec \u2014 operators manually removing defects at demold. ML4 also has a cold stamp not fully covering the left cavity. Truffle Line cleared a QIS camera issue (server RAM) and completed the UTT-to-CPK changeover, but is running with 5 centerlines out, a cooling issue on one row, and tank levels at 60%. ML1 came up 130 boxes short on Crunch bars due to flow wrap depletion."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Curt requested corrective action with Jody after an operator on S3 used chocolate without scanning the pallet."
+    },
+    {
+      "plant": "L2",
+      "text": "Alan reminded all shifts that a tour is possible and to keep the plant tour-ready."
+    },
+    {
+      "plant": "L3",
+      "text": "Chad Stone led a customer tour through L3, ML1, and Truffle Line mid-morning."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "V1 pouch shortage on S2",
+      "summary": "Only V2 pouches staged in L1 for Favorite Day changeover; V1 pouches required and located in Springville.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-20T11:20:13.166Z"
+      },
+      "resolution": "Jody shuttled V1 pouches from Springville. Arrived at 05:06 and line started at conbar (Ricardo Tovar)."
+    },
+    {
+      "plant": "L1",
+      "title": "Case label Best By date incorrect on S2",
+      "summary": "One pallet of Favorite Day Milk SS Caramel 11 oz had wrong Best By below barcode (261120 instead of 271120).",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-11-20T14:44:23.696Z"
+      },
+      "resolution": "Victor Romero confirmed at 07:54 that labels fixed and boxes from previous shift sorted out."
+    },
+    {
+      "plant": "L1",
+      "title": "Wrong chocolate used on S3",
+      "summary": "Line had 10121 chocolate staged and in use; BOM called for 10226. One pallet already consumed, not scanned in.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-20T15:00:14.438Z"
+      },
+      "resolution": "Katya asked IMS to update WO at 08:43. Curt requested Jody follow up on corrective actions for not scanning."
+    },
+    {
+      "plant": "L1",
+      "title": "Jar label format question on S3",
+      "summary": "MMK pecan jar labels printed CAD: DD/MM/YYYY not shown in spec; line stopped pending QC approval.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Brandon Hernandez",
+        "time_utc": "2026-11-20T09:30:15.11Z"
+      },
+      "resolution": "Charity Young approved at 02:44 \u2014 \"Yes keep running.\" Luis confirmed line running at 03:11."
+    },
+    {
+      "plant": "L2",
+      "title": "Both barrel/oil pumps burnt out on ML3",
+      "summary": "Cannot batch maltitol; both barrel and oil pumps failed overnight.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-11-20T06:55:52.876Z"
+      },
+      "resolution": "Alan left new pump in Shift Exchange Room by 03:44. Zack reported at 02:13 that team batched all isomalt possible using buckets while maintenance worked the issue."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 ramp conveyor stuck",
+      "summary": "Line down, ramp conveyor not going down after hard reset; Dave and Justin troubleshooting.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-20T19:32:30.335Z"
+      },
+      "resolution": "Alex reported line back up at 12:43 \u2014 resolved in 11 minutes."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS weight checker blow-offs after changeover",
+      "summary": "High blow-offs on both heavy and light after changeover to Zero Sugar 3 oz; chocolate bars heavier than expected for piece count.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Jeffrey Barney",
+        "time_utc": "2026-11-20T00:07:29.142Z"
+      },
+      "resolution": "Alan made adjustments at 00:49. Wilson updated weight card max to 103g at 19:44 per QA direction (Hervin)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS bag sealing issue",
+      "summary": "Bags coming out with very thick seal line; line stopped, maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-20T10:12:10.368Z"
+      },
+      "resolution": "Maintenance arranged seal, line running again at 03:33 (VFFS)."
+    },
+    {
+      "plant": "L2",
+      "title": "Bent FW roller after CIL on ML2",
+      "summary": "CIL complete but one FW roller bent; maintenance working on it, line paused.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-20T13:44:18.564Z"
+      },
+      "resolution": "Line started running at 06:57 (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS scale maintenance",
+      "summary": "Line down, maintenance working on the scale.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "VFFS",
+        "time_utc": "2026-11-20T14:55:30.624Z"
+      },
+      "resolution": "Line running at 08:06 (VFFS). Claudio thanked Cy Everett for the fix."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 chiller faulting out",
+      "summary": "Chiller keeps faulting; maintenance called to troubleshoot recurring alarm.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-20T15:27:39.041Z"
+      },
+      "resolution": "William checked at 09:36 and reported it's due to colder weather outside; compressor kicked on and stayed on with no fault."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS automatic web tracking off",
+      "summary": "Automatic web tracking found turned off after changeover; likely causing bag alignment struggles visible in prior shifts' photos.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-20T10:38:23.653Z"
+      },
+      "resolution": "Gustavo turned it back on at 03:38 and noted he'll add automatic web tracking as a check on centerlines."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM tray shortage",
+      "summary": "Line stopped as team ran out of trays again due to new EEs building trays too slowly.",
+      "priority": "P2",
+      "category": "Staffing",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-20T12:32:34.34Z"
+      },
+      "resolution": "Kimberly reported at 05:32 they'll work on building trays for first shift. Line resumed production."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line QIS camera not working",
+      "summary": "Cannot use camera function in QIS program for organoleptic assessment; tablet configuration issue suspected.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-20T15:37:27.924Z"
+      },
+      "resolution": "Robert Villarreal fixed at 10:53 \u2014 \"You should be able to attach pictures again!\" Server RAM issue, they added more RAM but server still at 89% capacity."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line inventory discrepancy",
+      "summary": "Three pallets of item 10257 (LPNs R452508, R453657, R454052) consumed by third shift but not recorded in system; only one label found in trash.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-11-20T15:46:33.955Z"
+      },
+      "resolution": "Fredy reported at 08:46 they will proceed with adjustment based on actual inventory count performed."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "ML3 warming tank pump blew gasket",
+      "summary": "Testing York mix pumping from warming tank; pump ran briefly then blew gasket downstream of pump.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-20T20:28:08.934Z"
+      },
+      "status": "Alan reported at 13:29 they got it to run, then it blew a gasket after the pump. No further update."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 PTL pump leaking",
+      "summary": "PTL pump still leaking dark chocolate despite cleaning Monday or Tuesday; recurring issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-11-20T06:38:49.29Z"
+      },
+      "status": "Zack flagged at 23:38 with photo showing fresh leak. No follow-up showing resolution."
+    },
+    {
+      "plant": "L2",
+      "title": "Grinding area water seepage through door",
+      "summary": "Rain water seeping in along multiple points at base of outer wall where it meets floor; QA concern during grinding operations.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-11-20T09:11:04.822Z"
+      },
+      "status": "William added weatherstrip to door frame at 11:38 as temporary fix. Permanent repair materials on order, ETA Tuesday. Jose confirmed area cleaned before resuming grinding."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chocolate appearance outside spec",
+      "summary": "Chocolate continues coming out with appearance outside product specifications despite mostly good pieces; production team manually removing defective chocolate at demold.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "David Zuniaga",
+        "time_utc": "2026-11-20T20:51:03.4Z"
+      },
+      "status": "David reported at 13:51 \"chocolate continues to come out with the appearance outside the product specifications, the production guys continue to take the defective chocolate off the line in the demolding area.\" Issue ongoing as of end of window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line centerlines out of spec",
+      "summary": "Received line from third shift with 6 centerlines out; first shift operator working to bring within spec but still at 5 out as of mid-morning.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-20T15:03:15.781Z"
+      },
+      "status": "Operator reported 6 centerlines out at 08:03, working adjustments. At 09:43 reported \"Now 5 centerline out.\" No further updates showing full resolution."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line tank level at 60%",
+      "summary": "Enrober operator receiving tank at 60% for the past two days; recurring issue affecting production handoff.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-20T15:59:59.639Z"
+      },
+      "status": "Flagged at 08:59 to Rose, Tyson, and Raoul. No response or resolution shown in window."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line cooling issue",
+      "summary": "One row of pre-piece not cooling enough and looks a little liquid; operator notified to work on it.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mirella Mamani",
+        "time_utc": "2026-11-20T17:28:18.439Z"
+      },
+      "status": "Mirella flagged at 10:28. Kevin Del Valle responded \"I'm on my way right now\" but no follow-up showing resolution."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 flow wrap depletion",
+      "summary": "Ran out of flow wrap with 130 boxes remaining on Crunch bar order; insufficient material staged.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-20T17:28:57.622Z"
+      },
+      "status": "Grey reported at 10:28 finished all available flow wrap, employees going to lunch. Final count: 262 boxes completed, 130 short due to lack of FW."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp not covering cavity fully",
+      "summary": "Cold stamp not covering the full cavity on the left side of the mold.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-20T20:44:58.218Z"
+      },
+      "status": "Reported at 13:44. No follow-up showing resolution or workaround."
+    },
+    {
+      "plant": "L3",
+      "title": "MFM pallet wrapper locked out",
+      "summary": "Pallet wrapper in MFM locked out or out of service; creating bottleneck as only Matrix wrapper available.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Andrea Diaz",
+        "time_utc": "2026-11-19T22:38:27.629Z"
+      },
+      "status": "Andrea flagged at 15:38. Marcos reported at 16:06 maintenance working on it. No clear resolution shown."
+    },
+    {
+      "plant": "L3",
+      "title": "Big Joe 5 handle broken",
+      "summary": "Handle came off Big Joe 5; needs repair.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-20T01:27:52.765Z"
+      },
+      "status": "Shane posted photo at 18:27. Tagged German, Rose, and Marcos. No follow-up on repair."
+    }
+  ]
+}

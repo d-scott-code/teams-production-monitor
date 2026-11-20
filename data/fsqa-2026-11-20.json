@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-20",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L1 S2 jar pallet held for *mislabeled* Best By date \u2014 1 pallet segregated pending disposition."
+  },
+  "summary": "One active hold at L1 S2 for case label error (wrong Best By date on 1 pallet). Foreign material found during batching at L2 ML3 (paper fragments from powder packaging) \u2014 teams reminded to verify batches before use. Wrong chocolate used at L1 S3 without scanning; IMS corrected WO retroactively.",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "S2 case label Best By date mismatch",
+      "summary": "One pallet of Favorite Day Milk SS Caramel 11 oz produced on 3rd shift has incorrect Best By date below barcode (261120 instead of 271120); top of label and spec are correct.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ingrid Moreno Angarita",
+        "time_utc": "2026-11-20T14:44:23.696Z"
+      },
+      "status": "On hold pending disposition \u2014 labels corrected for ongoing production, sorting of affected boxes from previous shift underway."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L2",
+      "title": "Paper fragments in ML3 mint powder batch",
+      "summary": "Paper fragments from powder packaging found in one batch during York peppermint production; batch flagged before use.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Maria Caldera",
+        "time_utc": "2026-11-20T18:37:22.297Z"
+      },
+      "status": "Resolved \u2014 batch not used; production teams reminded to check for foreign material during batching."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "S3 wrong chocolate item used without scan",
+      "summary": "1 pallet of item 10121 chocolate used on MMK pecan line instead of BOM-specified 10226; not scanned at issue, caught by QA walkthrough.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Katya Farnsworth",
+        "time_utc": "2026-11-20T15:00:14.438Z"
+      },
+      "status": "Resolved \u2014 IMS updated work order retroactively; Jody to follow up with operator on scanning requirement."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 marshmallow drain 2nd clean completed",
+      "summary": "Second marshmallow drain clean completed on 1st shift with pre-swab collection; post-clean ATP and visual passed.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-20T15:21:48.141Z"
+      },
+      "status": "Resolved \u2014 ATP passed, waiting for swab results; 3rd clean planned for 2nd or 3rd shift."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 FW roller bent during CIL cleaning",
+      "summary": "One flow-wrap cleaning roller found bent when CIL completed on 1st shift; maintenance replaced before line restart.",
+      "severity": "low",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-20T13:44:18.564Z"
+      },
+      "status": "Resolved \u2014 roller replaced, line restarted at 13:57 MT."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Reinforce ingredient scanning requirement at S3 \u2014 1 pallet of wrong chocolate used without scan today, requiring retroactive WO correction."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider adding automatic web tracking verification to FFS centerlines \u2014 found disabled during 3rd shift, contributing to bag alignment struggles since changeover."
+    },
+    {
+      "plant": "L2",
+      "text": "Review batching FM prevention at ML3 \u2014 today's paper fragments from mint powder packaging echo need for visual checks before tipping ingredients."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding automatic web tracking on/off check to ML1 startup checklist \u2014 today's shift received line with tracking disabled."
+    }
+  ]
+}
