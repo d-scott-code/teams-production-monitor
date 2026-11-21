@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-21",
+  "headline": {
+    "eyebrow": "Sanitation gap",
+    "text": "L1 *hot water failure* from 04:00 prevented completion of equipment cleaning; both boilers shut down instead of one."
+  },
+  "summary": "Hot water outage at L1 since 04:00 left cleaning incomplete and three wash areas with ice-cold water only. L3 ML4 Depositor #2 turned over dirty at shift change. L1 S3 checkweigher reading \u00b12g after calibration; multiple quality issues across L3.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S3 checkweigher accuracy \u00b12g after calibration",
+      "summary": "Checkweigher still reading \u00b12g variance after calibration; suspect scale levelness and contact issues (one scale missing foot earlier).",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-11-21T00:34:27.443Z"
+      },
+      "status": "Open \u2014 team monitoring weighing method and scale condition; infeed belt speed at 78 ft/min (within 90 ft/min limit)."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 chocolate melting issues with specific lot",
+      "summary": "Pallet on carousel struggling to melt; operator mixing with good pallet to right of PTL; two lots being combined.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-11-21T05:15:09.202Z"
+      },
+      "status": "Open \u2014 QA to follow up with lead Monday; problematic pallet identified on carousel."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG4 lot number ejode placement issue",
+      "summary": "TG4 ejode not placing lot number on bars correctly; maintenance working on repair.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-21T08:49:39.638Z"
+      },
+      "status": "Resolved \u2014 maintenance completed repair; lot number printing correctly."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle bottom appearance out of spec",
+      "summary": "Truffle bottoms not uniform rectangular shape per spec; Preston requested adjustments and monitoring.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Preston Tregaskis",
+        "time_utc": "2026-11-21T16:39:17.183Z"
+      },
+      "status": "Adjustments made and improvement seen at 10:11; continued monitoring requested for drift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 broken bars at gondola exit after belt jam",
+      "summary": "Bars breaking at gondola exit on opposite side from previous incidents; EE posted to remove broken bars; belt to TG4 wasn't moving and had dirty rollers.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-11-21T19:25:45.867Z"
+      },
+      "status": "Open \u2014 EE monitoring discharge through end of run; root cause under investigation (bars fell off belt, piled up)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line \u2014 5 opened pieces in final box",
+      "summary": "Visual inspection found 5 opened pieces out of 258 total in final box (1.9% defect rate).",
+      "severity": "low",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-11-21T10:02:29.859Z"
+      },
+      "status": "Resolved \u2014 defects identified and removed at inspection."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "Hot water failure from 04:00 \u2014 cleaning incomplete",
+      "summary": "Both boilers drained instead of one; no hot water since 04:00; bins, trays, and matrixes (mm3, 4, 5) not fully finished; only wash area 1 had warm water.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-21T12:29:19.703Z"
+      },
+      "status": "Open \u2014 one boiler being refilled; parts cleaned but unassembled in totes; second boiler inspection Monday afternoon."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Depositor #2 turned over dirty at shift change",
+      "summary": "Depositor #2 handed off dirty from 2nd to 3rd shift; operator reminded to ensure cleanliness at every shift handover.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML4 WDS Tablet 1",
+        "time_utc": "2026-11-21T05:43:46.489Z"
+      },
+      "status": "Resolved \u2014 3rd shift cleaned depositor before startup."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 mixing tank not blending correctly",
+      "summary": "Mixing tank at 40hz not mixing ingredients as fast as previous day; resolved by emptying, hosing out sugar residue, and cleaning filter.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-11-21T00:38:46.776Z"
+      },
+      "status": "Resolved \u2014 tank rinsed, filter checked, mixing restored; screen and magnet check recorded in SafetyChain."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review boiler shutdown procedures to ensure one remains operational during inspections \u2014 based on both boilers drained overnight causing 9+ hour hot water outage."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider reviewing S3 checkweigher scale maintenance (levelness, feet, contact clearance) \u2014 based on persistent \u00b12g variance after calibration at 00:34."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding depositor cleanliness verification to ML4 shift-handover checklist \u2014 based on Depositor #2 turned over dirty at 05:43."
+    }
+  ]
+}

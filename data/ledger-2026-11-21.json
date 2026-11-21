@@ -1,0 +1,282 @@
+{
+  "date": "2026-11-21",
+  "headline": {
+    "eyebrow": "Materials & maintenance",
+    "text": "L3 posted *6 resolved issues* across ML4 and truffle line, but has broken bars at TG5 discharge and an air pressure fault still being worked."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran all three Sollich lines through the weekend. Both boilers were mistakenly drained overnight causing a 4-hour hot water outage from 04:00 to ~08:00, leaving some cleaning incomplete for Monday. S3 and S4 had brief equipment issues that cleared same-shift.",
+    "L2": "L2 had a productive night across ML2, ML3, and FFS. ML2 replaced a twin belt (26 minutes down) and has a butterfly valve that needs repair Monday. FFS changeover to 5.1oz was incomplete and will finish over the weekend.",
+    "L3": "L3 truffle line stopped 35 minutes at 02:20 for cavana and chocolate bin accumulation, cleared by 02:55. ML4 TG5 had a gondola crash at 11:40 causing broken bars; line restarted at 11:55 but broken-bar monitoring continues. TG5 air pressure fault at 07:56 has no posted resolution. MF Matrix had a late start on 2nd shift due to tray shortage."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Boiler inspection scheduled Monday afternoon; only boiler 2 should be offline."
+    },
+    {
+      "plant": "L1",
+      "text": "Francisco reports 400 lbs Celtic salt on hand (300 received yesterday plus 100 existing)."
+    },
+    {
+      "plant": "L3",
+      "text": "Fredy flagged pallet R474377 consumed by 3rd shift but not loaded into system, causing inventory discrepancies."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S4 enrober cable broken",
+      "summary": "Cable for S4 enrober frayed and broke during 2nd shift.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-11-21T04:57:08.994Z"
+      },
+      "resolution": "Cable replaced by 22:11 \u2014 \"Cable replaced\" (Bryant McCormick)."
+    },
+    {
+      "plant": "L1",
+      "title": "Hot water outage from both boilers drained",
+      "summary": "Both boilers mistakenly drained overnight instead of only one; plant out of hot water from 04:00 until ~08:00.",
+      "priority": "P1",
+      "category": "Other",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-21T12:29:19.703Z"
+      },
+      "resolution": "Boilers refilled and hot water restored by mid-morning; one boiler back online \u2014 \"We will have 1 boiler so we will have hot water\" (Curt Willis 09:28:28)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 checkweigher rejecting jars incorrectly",
+      "summary": "Checkweigher reading \u00b12g after calibration; reports of CW working incorrectly even after calibration.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Caleb York",
+        "time_utc": "2026-11-21T00:34:27.443Z"
+      },
+      "resolution": "Calibration completed and significant reduction in rejected jars observed \u2014 \"After the calibration we've seen a significant reduction in rejected jars\" (Conner Boyd 18:21:59)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 mixing tank stirring slowly",
+      "summary": "Mixing tank at 40 hz not blending ingredients as fast as previous day; sugar clumping and not mixing evenly.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-11-21T00:38:46.776Z"
+      },
+      "resolution": "Mixer rinsed and filter checked at 19:51; stirring much better \u2014 \"They've rinsed the mixer, and now it's stirring much better\" (Conner Boyd)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 labeler roller 9 gummed up",
+      "summary": "Roller 9 gummed up causing labeler issues and accumulation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-11-21T01:57:23.387Z"
+      },
+      "resolution": "Paused 15 minutes to pass accumulation and clean roller; labeler running great again \u2014 \"Roller 9 was gummed up, the labeler is now running great again\" (Conner Boyd)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 twin belt issue",
+      "summary": "One of the twin belts had problems causing line down at 15:56.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-20T22:56:45.908Z"
+      },
+      "resolution": "Belt replaced and line running again at 16:22 \u2014 \"Line running again\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 brief line stoppage at 18:42",
+      "summary": "Line stopped at 18:42 for unspecified reason.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-21T01:42:34.526Z"
+      },
+      "resolution": "Line back running at 18:46 \u2014 \"Line running again\" (ML2 FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line cavana and chocolate bin accumulation",
+      "summary": "Line stopped at 02:20 with 34 bins of chocolate accumulated and no extra bins available; accumulation passed during pause.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-21T09:23:56.392Z"
+      },
+      "resolution": "Line restarted at 02:55 after passing accumulation \u2014 \"Line started back up at 2:55\" (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 chocolate jam at gondola infeed",
+      "summary": "TG5 threw code and stopped at 03:53; chocolate jam found at gondola infeed.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-21T10:53:26.149Z"
+      },
+      "resolution": "Jam cleared and line back up at 04:04 \u2014 \"Line is back up\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola crash throwing bars to floor",
+      "summary": "Gondola exit belt stopped moving at 11:40, bars piled up and fell to floor; dirty rollers found on exit belt to TG4.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-21T18:44:33.866Z"
+      },
+      "resolution": "Exit belt cleaned and line back running at 11:55 \u2014 \"Running\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix pause for box shortage",
+      "summary": "Line paused at 15:11 due to lack of corrugate boxes.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-11-20T22:11:56.319Z"
+      },
+      "resolution": "Boxes arrived and line restarted at 15:26 \u2014 restart visible in production log."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 upside-down mold in heating cabinet",
+      "summary": "Mold found upside down in heating cabinet blocking flow.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 TG",
+        "time_utc": "2026-11-21T06:16:48.964Z"
+      },
+      "resolution": "Mold cleared and line started \u2014 \"Upside down Mold in heating cabinet. Mold cleared and Line started\" (ML4 TG)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 bins and trays cleaning incomplete",
+      "summary": "Unable to finish all bins and trays for Sol2 due to hot water outage from 04:00 onwards.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-21T14:23:21.09Z"
+      },
+      "status": "Cleaning incomplete as of 07:23; will need to be finished Monday."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 matrix cleaning incomplete",
+      "summary": "MM3, MM4, MM5 clean but not assembled; parts wrapped in totes due to hot water outage.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-21T15:03:36.155Z"
+      },
+      "status": "Parts clean but need assembly Monday; wrapped and stored in totes as of 08:03."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 butterfly valve rounded out",
+      "summary": "Butterfly valve shaft square and good but valve part rounded out; valve will not turn.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-11-21T07:59:08.359Z"
+      },
+      "status": "Valve identified as needing replacement at 00:59; no repair action posted."
+    },
+    {
+      "plant": "L2",
+      "title": "FFS changeover to 5.1oz incomplete",
+      "summary": "Changeover to 5.1oz not complete; will need to be done over the weekend or Monday morning.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-21T13:29:26.697Z"
+      },
+      "status": "Changeover incomplete as of 06:29; scheduled to finish over weekend or Monday morning."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 no air pressure",
+      "summary": "TG5 has no air pressure, maintenance working on it as of 07:56.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "ML4 WDS",
+        "time_utc": "2026-11-21T14:56:48.983Z"
+      },
+      "status": "Maintenance working on air pressure issue as of 07:56; no resolution posted."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix no trays to start BEQ 2nd shift",
+      "summary": "No trays available to start BEQ on 2nd shift; late start to catch up on making trays.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-20T21:30:00.587Z"
+      },
+      "status": "Late start on 2nd shift to make trays; no update on when production resumed."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line M5 motor leaking",
+      "summary": "M5 motor leaking, maintenance has been called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-11-21T07:56:57.193Z"
+      },
+      "status": "Maintenance called at 00:56; no resolution posted as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG5 broken bars at gondola discharge",
+      "summary": "After gondola crash and restart at 11:55, broken bars appearing at exit; EE posted to monitor and remove broken bars while root cause investigated.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-11-21T19:25:45.867Z"
+      },
+      "status": "EE monitoring discharge and removing broken bars as of 12:28; Preston asked to continue monitoring until end of run at 12:50."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line pallet not loaded into system",
+      "summary": "Pallet R474377 consumed by 3rd shift but not loaded into system, causing inventory discrepancies.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Fredy Montalvan",
+        "time_utc": "2026-11-21T17:42:36.713Z"
+      },
+      "status": "Fredy flagged to leads at 10:42 requesting staff be reminded of labeling importance due to many inventory discrepancies."
+    }
+  ]
+}
