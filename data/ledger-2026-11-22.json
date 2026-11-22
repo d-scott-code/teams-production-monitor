@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-22",
+  "headline": {
+    "eyebrow": "Net closure",
+    "text": "L3 cleared *7 items* including a belt replacement and Truffle Line buildup that cut attainment short \u2014 3 open items remain."
+  },
+  "per_plant_summary": {
+    "L1": "No activity in the last 24 hours.",
+    "L2": "No activity in the last 24 hours.",
+    "L3": "Busy weekend run across ML1, ML4, and Truffle Line. ML4 belt replacement and TG3 conveyor repair cleared same-day. Truffle Line stopped depositing early at 21:50 to address Cavanna 1 chocolate buildup impacting seal quality \u2014 cleaning completed overnight and line ready for Monday. C4 belt drifting north remains a recurring issue tied to worn scrapers."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L3",
+      "title": "TG4C12 belt ripped down center on ML4",
+      "summary": "M270 belt torn with risk of fiber contamination to chocolate bars \u2014 Rose approved replacement if spare available.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-22T00:34:45.124Z"
+      },
+      "resolution": "Cleared at 20:00 \u2014 \"TG4C12 (M270) belt has been replaced\" (Spencer Andrus). 4 M270 belts remain in spare inventory."
+    },
+    {
+      "plant": "L3",
+      "title": "Cavanna 1 chocolate buildup on rails preventing proper FW seals",
+      "summary": "Heavy chocolate buildup on Cavanna 1 rails blocking individual piece sealing and preventing attainment goal \u2014 2nd shift stopped depositing at 21:50 for early shutdown and deep clean.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-22T02:55:59.629Z"
+      },
+      "resolution": "Cleared overnight \u2014 line completed level 2 cleaning, passed all ATP tests, and ready for Monday startup by 07:10 (Janeth Sanchez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Bent water connection on ML1 pump block preventing hopper installation",
+      "summary": "Water connection bent and blocking fit \u2014 maintenance notified and hopper installation completed within 1 hour.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-21T20:29:20.98Z"
+      },
+      "resolution": "Cleared at 14:36 \u2014 \"The installation of the hopper was completed\" (Imperial)."
+    },
+    {
+      "plant": "L3",
+      "title": "Pallet placed on unapproved racking",
+      "summary": "Pallet loaded on racking not yet approved by fire marshal or city \u2014 needed immediate removal to maintain safety compliance.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Chad Stone",
+        "time_utc": "2026-11-21T22:08:06.207Z"
+      },
+      "resolution": "Cleared at 16:53 \u2014 \"The pallet was pulled down\" (Marcos Montano)."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 Z-conveyor needs repair on ML4",
+      "summary": "Z-conveyor flagged for repair during 2nd shift \u2014 maintenance called and issue addressed.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-22T04:21:50.131Z"
+      },
+      "resolution": "Cleared at 22:35 \u2014 \"TG3 belts are running well\" (Spencer Andrus)."
+    },
+    {
+      "plant": "L3",
+      "title": "TG3 M159 belt drifting south during startup on ML4",
+      "summary": "Belt drifting during 15-minute test run on 3rd shift \u2014 maintenance called to adjust tracking.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-11-22T13:50:48.715Z"
+      },
+      "resolution": "Cleared at 07:37 \u2014 \"TG3 belt tested for 15 min\" after maintenance adjustment (Phillip Perez)."
+    },
+    {
+      "plant": "L3",
+      "title": "10264 salted cream inventory missing on ML4",
+      "summary": "Shift exchange listed wrong item number (10256 vs. 10264) causing confusion about expiring pallet location.",
+      "priority": "P3",
+      "category": "Other",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-11-22T06:08:16.863Z"
+      },
+      "resolution": "Cleared at 23:36 \u2014 Tyson verified the pallet pulled earlier was correct 10264 expiring 11/29; shift exchange had typo."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L3",
+      "title": "Truffle Line C4 belt drifting north repeatedly",
+      "summary": "C4 belt shifted north at least 5 times on 2nd shift \u2014 root cause identified as worn scrapers beneath C3 and C4 allowing chocolate buildup on rollers, but scrapers not yet replaced.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-21T21:36:10.114Z"
+      },
+      "status": "Maintenance called multiple times; Bojana identified worn scrapers and buildup as root cause at 15:07, but no scraper replacement initiated by end of shift."
+    },
+    {
+      "plant": "L3",
+      "title": "Dry ice pellets unavailable for ML4",
+      "summary": "Preston unable to source dry ice pellets in time \u2014 needed before Wednesday night, recommended MRCs reach out to purchasing Monday.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Rose Smuin",
+        "time_utc": "2026-11-21T21:37:26.764Z"
+      },
+      "status": "Confirmed unavailable at 16:23; Shane to follow up with purchasing Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "Damaged 35 gram mold on ML1",
+      "summary": "One 35 gram mold found damaged during 2nd shift \u2014 no mention of replacement or removal from service.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-21T22:59:33.927Z"
+      },
+      "status": "Reported at 15:59 with photo; no follow-up posted."
+    }
+  ]
+}

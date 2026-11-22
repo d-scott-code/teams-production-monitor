@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-22",
+  "headline": {
+    "eyebrow": "FM risk",
+    "text": "L3 ML4 ripped belt caught before production \u2014 *fiber contamination* concern resolved with replacement, gum found on motor."
+  },
+  "summary": "One high-severity event: ripped M270 belt on ML4 TG4C12 posed fiber contamination risk \u2014 caught during cleaning, replaced before restart. Gum found on ML4 motor removed immediately. Truffle Line scrapers need replacement.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Ripped belt on TG4C12 posed fiber contamination risk",
+      "summary": "M270 belt discovered with center rip during 2nd shift cleaning; concern raised about fibers transferring to chocolate bars; belt replaced before production restart.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-22T00:34:45.124Z"
+      },
+      "status": "Resolved \u2014 belt replaced by maintenance at 20:00 MT; production ready."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Worn scrapers causing belt drift and sealing issues on Truffle Line",
+      "summary": "C4 and C3 scrapers worn; chocolate buildup on rollers triggered five belt-shift alarms and contributed to Cavanna 1 rail buildup affecting flow wrap sealing quality.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-21T22:07:28.302Z"
+      },
+      "status": "Open \u2014 scrapers replacement needed; line CILT cleaning performed, production ready for Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "Damaged 35g mold identified on ML1",
+      "summary": "One 35g mold found damaged during 2nd shift mold installation; removed from service.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-21T22:59:33.927Z"
+      },
+      "status": "Resolved \u2014 mold removed from service."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L3",
+      "title": "Chewing gum attached to M307 motor",
+      "summary": "Gum found stuck to M307 motor on ML4 during 2nd shift cleaning; hygiene violation in production area.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-22T02:10:27.543Z"
+      },
+      "status": "Resolved \u2014 gum removed at 19:11 MT."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L3",
+      "text": "Consider adding conveyor belt inspection to ML4 startup checklist \u2014 based on today's ripped M270 belt that posed fiber contamination risk before discovery during cleaning."
+    },
+    {
+      "plant": "L3",
+      "text": "Review scraper replacement schedule for Truffle Line C3/C4 conveyors \u2014 based on worn scrapers causing five belt-shift alarms and chocolate buildup affecting sealing quality today."
+    }
+  ]
+}
