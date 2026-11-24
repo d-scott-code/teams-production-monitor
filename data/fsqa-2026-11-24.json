@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-24",
+  "headline": {
+    "eyebrow": "Equipment integrity",
+    "text": "L3 ML4 found *two bolts* from TG5 on floor; L1 S2 kettles hold burnt residue that could yield black particles in caramel."
+  },
+  "summary": "Two active food-safety flags: unaccounted hardware at L3 ML4 and kettle cleanliness at L1 S2 requiring re-clean before cook. Quality challenges on L3 Truffle (skirts/tails) and L2 ML3 (two cream batches scrapped for viscosity). L3 ML4 blooming resolved after hopper drain and circuit adjustments.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "S2 kettles hold burnt residue at bottom",
+      "summary": "QA flagged kettles A1 and A2 after L4 clean \u2014 A1 shows significant burnt-on residue that could yield black particles when cooking resumes.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-24T19:32:26.246Z"
+      },
+      "status": "Open \u2014 QA recommended re-clean with caustic before first cook."
+    },
+    {
+      "plant": "L3",
+      "title": "Two bolts found on ML4 floor near TG5",
+      "summary": "Operator found two bolts from TG5; unknown if they fell into product zone or when they detached.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-24T14:10:16.289Z"
+      },
+      "status": "Open, no disposition posted by window close."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML3 scrapped two cream batches for viscosity",
+      "summary": "Second shift tossed two batches: one went 86k\u2192123k (rock hard) after water addition, the other 70k\u219237k (fail); line paused 90 minutes total for QA retests.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Zack Kurtz",
+        "time_utc": "2026-11-24T03:35:57.348Z"
+      },
+      "status": "Resolved \u2014 third batch passed and line resumed."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 pieces coming with leaks in the top",
+      "summary": "Hervin flagged leaking pieces at end of first shift; Alex acknowledged and said he would investigate.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-24T23:00:29.176Z"
+      },
+      "status": "Open, investigation ongoing as of window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 blooming on north-side bars",
+      "summary": "Blooming observed on end bars (north side of mold) intermittently across second and third shifts; team drained dep 1 hopper, scraped buildup, adjusted mold temps.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-11-24T09:22:17.788Z"
+      },
+      "status": "Resolved by 15:59 \u2014 Shane and Preston confirmed no more blooming after hopper drain and circuit adjustments."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line: skirts, feet, tails on truffles",
+      "summary": "Quality manager requested additional sampling after first-shift organoleptic test showed skirts/feet/tails on truffles and chocolate not glossy; production made adjustments.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-11-24T21:15:26.699Z"
+      },
+      "status": "Resolved on shift \u2014 Jenny Medina confirmed adjustments in progress, no further flags posted."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 wrong recipe loaded at startup",
+      "summary": "Operator selected 'milk plain' (old) instead of 'milk plain new' at startup, causing temper instability; team changed recipe mid-shift and restarted tempering.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-24T13:34:28.412Z"
+      },
+      "status": "Resolved \u2014 Shawn committed to delete old recipe to prevent recurrence."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S1 condensed milk container left full overnight",
+      "summary": "Cleaning crew found condensed milk container full during morning setup; QA confirmed product not good, disposed in barrels (not down drain).",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Marcos Jimenez",
+        "time_utc": "2026-11-24T19:27:08.838Z"
+      },
+      "status": "Resolved \u2014 product disposed correctly; Marcos requested operators be informed when production ends to prevent unused ingredients sitting."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 Sweco screen clogged twice with cream return",
+      "summary": "North Sweco overflowed twice (01:57 and 03:29) due to scraper-return chocolate and cream residue; screen removed, washed, and passed ATP retest.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-11-24T08:57:35.569Z"
+      },
+      "status": "Resolved \u2014 Janeth confirmed Sweco, scraper, and screen pass visual and ATP at 04:16 and 04:20."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding kettle-bottom inspection to S2 pre-cook checklist \u2014 today's burnt residue flag after L4 clean suggests buildup can survive standard cleaning, based on QA finding significant char in A1 at 12:32."
+    },
+    {
+      "plant": "L1",
+      "text": "Operators must be informed when S1 production is finished \u2014 today's condensed milk container left full overnight shows communication gap at shift handoff, based on Marcos's note at 12:27."
+    },
+    {
+      "plant": "L1",
+      "text": "Reinforce reporting of damaged equipment on S2 \u2014 Leon found unreported chute damage (cut risk) during cart swap, suggesting operators are not flagging hazards when they occur, based on his report at 06:36."
+    },
+    {
+      "plant": "L2",
+      "text": "Reinforce hopper purging procedure when ML3 is down >20 minutes \u2014 today's two cream-viscosity failures (86k\u2192123k, 70k\u219237k) match the pattern Alan flagged when asking operators to purge every 20 minutes during downtime."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider deleting obsolete recipes from ML1 tempering unit \u2014 today's wrong-recipe incident echoes operator confusion when multiple versions exist, based on Imperial selecting 'milk plain' instead of 'milk plain new' at 06:34."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding scraper blade inspection to ML4 startup checklist \u2014 today's cream buildup and sweco clogs echo Tyson's observation that scraper was digging too deep and exposing cream, based on events at 01:57 and 03:29."
+    }
+  ]
+}

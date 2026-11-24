@@ -1,0 +1,317 @@
+{
+  "date": "2026-11-24",
+  "headline": {
+    "eyebrow": "Blade & bloom",
+    "text": "L2 wrapper blade hit *3 outages* for doubles overnight\u2014final replacement at 04:34 cleared it. ML4 blooming recurred twice; purging depositor 1 helped both times."
+  },
+  "per_plant_summary": {
+    "L1": "Sollich 3 ran FD Pecan Cluster after a 3:50am changeover, back up by 05:05. Sollich 1 stopped at 04:00 for pretzel cleanout after chocolate buffer ran dry. Sollich 4 had a chiller PSI issue at 08:01 requiring a pipe wash.",
+    "L2": "ML2 hit doubles three times overnight (blade shimming twice, replacement once)\u2014all cleared by 04:34. ML3 tossed 2 creme batches for viscosity, handled jams and doubles throughout the day, all resolved except possible top leaks flagged at 16:01.",
+    "L3": "ML1 started with wrong recipe (old vs. new Milk Plain), corrected and depositing by 06:07. ML4 saw blooming on north-side bars twice\u2014purging depositor 1 and clearing buildup resolved both. Truffle Line cleared 30-bin backup from shifted Cavanna belt by 14:23."
+  },
+  "notes": [],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 chiller not working, PSI problem",
+      "summary": "Chiller malfunction and PSI issue required washing the pipe to restore flow and resume cooking.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-24T14:27:43.096Z"
+      },
+      "resolution": "Cleared at 08:01 \u2014 \"The caramel got sent to the conbar at 8am\" after pipe wash (S4 Kitchen Tablet)."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 3 paused for chocolate buffer & melting tank",
+      "summary": "Buffer tank nearly empty, melting tank chocolate too cold to turn on stirrer; paused line to catch up on chocolate supply.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "William Beattie",
+        "time_utc": "2026-11-24T22:21:39.159Z"
+      },
+      "resolution": "Cleared at 15:55 \u2014 \"Production resumed at 3:55pm\" (William Beattie)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 stuck pieces from loose chain",
+      "summary": "Many stuck pieces coming out at 18:44; maintenance found chain was loose, adjusted it.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-24T01:44:58.999Z"
+      },
+      "resolution": "Cleared at 19:16 \u2014 \"The chain was loose it's cutting now\" (Fernando Flores)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 creme viscosity too high, 2 batches tossed",
+      "summary": "Line stopped at 20:30 waiting for QA; two batches failed viscosity (86k and 70k), were scrapped; new batch passed and line resumed.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-11-24T03:30:45.253Z"
+      },
+      "resolution": "Cleared at 20:48 \u2014 \"Line running again\" after new batch passed QA (Molding Line 3 Filler)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 wrapper doubles\u2014blade shimming (1st outage)",
+      "summary": "Line down at 23:27 for double wraps; maintenance shimmed blades, line back up at 00:04.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-24T06:27:27.562Z"
+      },
+      "resolution": "Cleared at 00:04 \u2014 \"Start line\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 wrapper doubles\u2014blade shimming (2nd outage)",
+      "summary": "Line down again at 00:18 for continued doubles; maintenance shimmed blades again, line up at 01:11.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-24T07:18:54.904Z"
+      },
+      "resolution": "Cleared at 01:11 \u2014 \"Start line\" (ML2 FW)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 wrapper doubles\u2014blade replacement (3rd outage)",
+      "summary": "Line down at 03:30 for doubles again; maintenance took blade to shop, replaced it, line up at 04:34.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-24T10:30:49.788Z"
+      },
+      "resolution": "Cleared at 04:34 \u2014 \"Line is up. Maintenance took one of the blades to the shop and replaced it\" (Gustavo Rodas)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 mold jam in cooler",
+      "summary": "Mold jumped a tooth causing jam in cooler at 09:52; mold repositioned correctly.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-24T16:52:09.187Z"
+      },
+      "resolution": "Cleared at 09:53 \u2014 \"Mold jam cleared, mold was positioned correctly. Line is back up\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 doubles/triples from forming plate",
+      "summary": "Line down at 12:40 for doubles and triples; team performed CIL on forming plate and vacuum.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-24T19:40:44.372Z"
+      },
+      "resolution": "Cleared at 12:54 \u2014 \"Line is back up. No more doubles or triples. Did a CIL on the forming plate and vacuum\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 FW touchscreen frozen",
+      "summary": "Flow wrapper touchscreen not responding to touch at 14:59; maintenance replaced screen, rebooted system.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-24T21:47:40.009Z"
+      },
+      "resolution": "Cleared at 15:21 \u2014 \"Line is running\" after screen reset and film breaks cleared (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 accumulation belt trim by maintenance",
+      "summary": "Long accumulation belt needed trimming; line down at 15:11, maintenance trimmed belt and team performed CIL.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-24T22:11:01.29Z"
+      },
+      "resolution": "Cleared at 15:29 \u2014 \"Line is back up. Maintenance trimmed belt and team performed CIL\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 doubles/triples on pack",
+      "summary": "Many doubles and triples coming through at 18:44; maintenance adjusted PG330.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-24T01:44:58.999Z"
+      },
+      "resolution": "Cleared at 19:21 \u2014 \"Made adjustments to pg330\" (Fernando Flores)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 right bobine not securing rolls",
+      "summary": "Right bobine failed to secure wrapper rolls properly; maintenance addressed immediately.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-24T12:45:09.757Z"
+      },
+      "resolution": "Cleared at 05:46 \u2014 \"Lance already fixed it\" (ML2 FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 temper unit 2 no flow at shift start",
+      "summary": "Temper unit 2 had no flow at 04:51; troubleshot, performed reheat, got flow throughout unit.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-24T11:51:57.322Z"
+      },
+      "resolution": "Cleared at 05:21 \u2014 \"We got a flow throughout temper unit 2, waiting on temper\" (Kimberly Morales)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sweco north overfilled (1st time)",
+      "summary": "North sweco overfilled at 01:57, thought to be creme residue from scraper return; Tyson cleaned screen, working fine.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Phillip Perez",
+        "time_utc": "2026-11-24T08:57:35.569Z"
+      },
+      "resolution": "Cleared same minute \u2014 \"it is working fine now\" after screen cleaning (Phillip Perez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 blooming on north-side bars (1st occurrence)",
+      "summary": "Blooming observed on north-side bars at 01:44; stopped after Tyson emptied depositor 1 hopper, no more blooming by 01:36.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-11-24T09:22:17.788Z"
+      },
+      "resolution": "Cleared at 01:36 \u2014 \"No more signs of blooming. Good call on emptying on Depositor 1 Kimberly\" (Tyson Fausett)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sweco north overfilled (2nd time)",
+      "summary": "North sweco overfilled again at 03:29; removed screen to wash creme residue and scraper bin.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-24T10:29:36.823Z"
+      },
+      "resolution": "Cleared at 04:20 \u2014 catch bin and screen passed level 1 cleaning per Jordan (Jordan Serna)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 wrong temper recipe selected initially",
+      "summary": "Operator selected old 'Milk Plain' recipe instead of 'Milk Plain New' at startup; temper results were off (slope 0.8-1.0).",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-24T13:34:28.412Z"
+      },
+      "resolution": "Cleared at 06:40 \u2014 \"We have changed it and will continue tempering and start when we have good results\" (Imperial); depositing at 06:47."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 received hopper on dep 1 overheating & empty",
+      "summary": "Hopper received in overheating state and empty at shift start; team waited on temps to drop before filling.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-24T13:41:05.146Z"
+      },
+      "resolution": "Cleared at 06:47 \u2014 \"The line started at 6:47am\" after temps dropped and hopper filled (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line Cavanna 2 exit belt shifted",
+      "summary": "Exit belt on Cavanna 2 shifted at 14:02 causing 22-bin accumulation; maintenance adjusted belt, line running well by 14:23.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-24T21:02:15.744Z"
+      },
+      "resolution": "Cleared at 14:23 \u2014 \"The line is running well now; maintenance adjusted the belt\" (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line paused 20 min to clear bin accumulation",
+      "summary": "Stopped depositing at 14:10 with 30 bins accumulated from earlier Cavanna belt issue; gave 2nd shift time to clear bins.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Grey Boscan",
+        "time_utc": "2026-11-24T21:25:48.179Z"
+      },
+      "resolution": "Cleared at 15:10 \u2014 \"We are done with accumulation!\" (Bojana McLeod)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 blooming on north-side bars (2nd occurrence)",
+      "summary": "Blooming reappeared at 14:57 on 2 bars per mold, north side; Shane found lot of buildup in dep 1 hopper and circuit 1 briefly spiked to 107\u00b0F.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-11-24T21:56:15.883Z"
+      },
+      "resolution": "Cleared at 15:57 \u2014 \"I have Preston and marcos here and all bars are good\" after purging depositor and clearing buildup (Shane Olsen)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Sollich 1 stopped for pretzel cleanout, buffer empty",
+      "summary": "Stopped loading chocolate at 04:00 when buffer hit 21%, line stopped ~15 min later to empty pretzels from system.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-24T13:05:34.424Z"
+      },
+      "status": "Both buffers at 0%, emptying pretzels from line as of 06:37 (Joseph Scott)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 pieces coming with leaks in top",
+      "summary": "Hervin flagged pieces with leaks in the top at 16:00; Alex acknowledged and said he'd check.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-24T23:00:29.176Z"
+      },
+      "status": "Alex going to look at 16:01 (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Line skirts/feet on some truffles",
+      "summary": "Kathleen flagged skirts, feet, and tails on truffles in photo at 14:15; production making adjustments, Jenny reported pair of skirts in each row at 14:32.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Kathleen Gilbert",
+        "time_utc": "2026-11-24T21:15:26.699Z"
+      },
+      "status": "Production making adjustments as of 14:32; Jenny reported \"pair of skirts in each row\" (Jenny Medina)."
+    }
+  ]
+}
