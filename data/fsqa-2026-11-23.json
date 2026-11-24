@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-23",
+  "headline": {
+    "eyebrow": "Active hold",
+    "text": "L3 ML4 held 8 cases for *blooming* at startup Monday morning \u2014 resolved after operator adjustments, product now acceptable."
+  },
+  "summary": "One active quality hold. Two sanitation gaps flagged: S3 left with product residue on floor and S4 metal detector uncleaned at shift handoff. Bent plow component at ML4 warrants follow-up for potential metal generation.",
+  "holds": [
+    {
+      "plant": "L3",
+      "title": "8 cases held for blooming appearance",
+      "summary": "ML4 startup Monday produced bars with blooming; 8 cases isolated pending QA disposition, appearance corrected after operator adjustments.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-11-23T13:54:47.613Z"
+      },
+      "status": "On hold pending QA disposition."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Bent plow component at ML4",
+      "summary": "Back-off plow piece found bent at 08:06; warrants inspection for potential metal shavings or blade damage entering product zone.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T15:06:08.410Z"
+      },
+      "status": "Open \u2014 Shawn Jewkes flagged for Blake Heward to schedule detachment and straightening."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L2",
+      "title": "ML2 belt cooler found off at shift handoff",
+      "summary": "Second-shift operator Jacob found belt cooler off upon receiving the line at 14:53; turned on immediately.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "ML2 FW",
+        "time_utc": "2026-11-23T21:53:03.451Z"
+      },
+      "status": "Resolved \u2014 cooler restarted, product temp monitoring confirmed in-spec."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 center caramel line sticking at cutter",
+      "summary": "Center caramel pieces exiting cutter stuck together at 11:08; operator inspecting and removing damaged pieces inline.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-11-23T18:08:52.845Z"
+      },
+      "status": "Open \u2014 operator monitoring and culling, root cause not yet identified."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 cream viscosity out of spec",
+      "summary": "All batched cream measured viscosity too high at 17:38; line paused to batch fresh cream meeting spec.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Alan Todd",
+        "time_utc": "2026-11-24T00:38:11.831Z"
+      },
+      "status": "Resolved \u2014 fresh cream batched and line resumed within shift."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 broken bars at demolding",
+      "summary": "Bars breaking at demolding (not gondola); maintenance adjusted table after mold turner at 11:13, monitoring continued.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-11-23T18:04:50.360Z"
+      },
+      "status": "Resolved after adjustment \u2014 Jenny Medina confirmed no broken bars observed post-fix."
+    },
+    {
+      "plant": "L3",
+      "title": "160 damaged caddies discarded",
+      "summary": "Two full boxes (80 ea) of item caddies arrived damaged and unusable; Ethan Bean notified for supplier follow-up.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T20:52:02.958Z"
+      },
+      "status": "Resolved \u2014 caddies discarded, supplier notified."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna 2 centerline points OOS",
+      "summary": "Flow-wrap operator posted 2 data points outside centerline at 14:04; adjustments made to center film and avoid scrap.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-11-23T21:04:28.930Z"
+      },
+      "status": "Resolved \u2014 operator adjusted wrapper, film now centered."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S4 metal detector left uncleaned from 1st shift",
+      "summary": "Second-shift operator posted photo at 07:11 showing metal detector belt area not cleaned during 1st-shift handoff.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-23T14:11:12.320Z"
+      },
+      "status": "Resolved \u2014 second shift cleaned before startup."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 line left with product residue",
+      "summary": "Mary Montilla inspection found floor of top matrices and bucket area unclean \u2014 pieces of last product and chocolate on floor and stairs.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Charity Young",
+        "time_utc": "2026-11-23T22:16:33.873Z"
+      },
+      "status": "Open \u2014 Conner Boyd notified, cleaning required before next run."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review metal detector cleaning protocol at S4 \u2014 today's shift-handoff gap suggests checklist enforcement or signoff verification may be needed."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider adding line-cleanliness inspection to S3 shutdown checklist \u2014 Charity's report of product residue and chocolate on floor/stairs indicates end-of-shift cleaning not completed to standard."
+    },
+    {
+      "plant": "L2",
+      "text": "Review belt cooler status verification at ML2 shift handoff \u2014 today's cooler found off suggests equipment state checklist may need enhancement."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding cleaning-roller blade inspection to ML4 startup checklist \u2014 today's bent back-off plow piece and possible metal shavings echo concerns about equipment integrity in product zones."
+    }
+  ]
+}

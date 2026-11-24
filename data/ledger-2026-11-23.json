@@ -1,0 +1,306 @@
+{
+  "date": "2026-11-23",
+  "headline": {
+    "eyebrow": "Line down",
+    "text": "L2 ML3 depositor was down *90 minutes* on startup faults \u2014 cleared at 07:26 after correcting backwards rollers and nozzle plate."
+  },
+  "per_plant_summary": {
+    "L1": "L1 S1 cleared a high-pressure alarm after two reheats and started by 07:37. S4 replaced a mixer sensor and fixed a metal detector belt, both resolved by mid-shift.",
+    "L2": "L2 ML3 had a rough start \u2014 RFID sensor, ramp conveyor, and depositor faults took 90 minutes to clear, then ran into piston faults again in second shift but recovered with nozzle plate work. ML2 cleared infeed jams caused by backwards rollers inside 30 minutes. FFS shut down at 14:21 for staffing support to ML3 and grinding.",
+    "L3": "L3 ML4 cleared ingredient tank clogs, cold stamp faults, and multiple mold jams through first shift, then dealt with TG3 roller and sticker applicator issues in second shift. Truffle line fixed aligner bar misalignment. No line was down longer than 20 minutes after startup."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Sollich 1 tent removal completed at 10:31; construction crew removed curtain and line restarted after sanitization."
+    },
+    {
+      "plant": "L2",
+      "text": "Immersion blenders ordered, arriving tomorrow per Alan Todd at 10:55."
+    },
+    {
+      "plant": "L3",
+      "text": "Master shippers for KS salted cream arrived at 17:12 after brief shortage; rework pallets staged during wait."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "S1 temper unit high-pressure alarm prevented startup",
+      "summary": "Enrober temper unit would not start after 5:00 reheat due to high-pressure alarm, requiring two additional reheats to clear.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S1 Enrober",
+        "time_utc": "2026-11-23T12:38:49.896Z"
+      },
+      "resolution": "Cleared at 06:49 after second reheat; temper taken and line started at 07:37 (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 mixer sensor failure blocked startup",
+      "summary": "Sensor on mixing machine not working, preventing operation at start of shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Karla Uribe",
+        "time_utc": "2026-11-23T13:27:45.301Z"
+      },
+      "resolution": "Maintenance replaced sensor; line started at 07:20 (Karla Uribe)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 metal detector belt black mark and unusual noise",
+      "summary": "Metal detector belt had a black mark and was making unusual noise, flagged for maintenance inspection.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-11-23T14:42:59.541Z"
+      },
+      "resolution": "Cleared at 08:17 \u2014 \"Maintenance made an adjustment and cleaned the area. The belt is now operating properly\" (Mariela Gudino)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 chiller alarm red light",
+      "summary": "Chiller showing red alarm light, maintenance called to investigate.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-23T18:11:54.076Z"
+      },
+      "resolution": "Fixed at 11:32 \u2014 \"They've already fixed\" (S4 Kitchen Tablet)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 depositor faults / programming plate loose",
+      "summary": "Depositor went down at 14:41 with lift table z-axis fault and servo drive fault on slider A; piston faults persisted through afternoon, requiring nozzle plate removal.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Filler",
+        "time_utc": "2026-11-23T21:41:52.947Z"
+      },
+      "resolution": "Cleared by 17:25 \u2014 programming plate found loose and repositioned at 16:12, nozzle plate cleaned and reinstalled. ATP passed at 17:14, cream viscosity corrected and new batch started by 17:38 (Alan Todd, Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 RFID sensor bent, ramp conveyor not lowering",
+      "summary": "RFID tag not found faults and piston faults at startup, plus ramp conveyor belt would not go down on first attempts.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-23T12:47:09.45Z"
+      },
+      "resolution": "Cleared at 06:05 \u2014 \"Line is running. The sensor was bent. Dave has repaired it\" (Jeffrey Barney). Ramp issue cycled twice but running by 07:08."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 infeed jam fault / backwards rollers",
+      "summary": "Infeed jam fault would not clear; bars entering flow wrap sideways due to loose vacuum belt, then persistent faults traced to two rollers installed backwards.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-23T13:05:13.643Z"
+      },
+      "resolution": "Cleared at 07:26 \u2014 M159 roller and roller under twin infeed vacuum belts both positioned correctly; \"Line is running after both rollers were position correctly\" (Alex Mendoza)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 ingredient tanks clogged at startup",
+      "summary": "Both ingredient tanks clogged and not sending product to hoppers, waiting on maintenance.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T11:50:51.752Z"
+      },
+      "resolution": "Unclogged at 05:04 \u2014 \"They are unclogged now. Doing capture test to start\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 cold stamp not lifting all 3 tables",
+      "summary": "Cold stamp skipping 1 or 2 tables during cycle, not all 3 lifting consistently.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T12:26:52.65Z"
+      },
+      "resolution": "Fixed at 05:43 \u2014 \"This issue has been fixed\" (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 depositor circuit 2 temps out of control",
+      "summary": "Circuit 2 flow and return temps too low on depositor 1, outside centerline at startup.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shawn Jewkes",
+        "time_utc": "2026-11-23T13:41:25.068Z"
+      },
+      "resolution": "Corrected at 07:34 \u2014 Nelson Cook closed hand valve partially to slow heat exchanger flow, bringing temps into CL. Ongoing monitoring required to prevent overheating (Nelson Cook, Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 blooming on first bars out of tunnel",
+      "summary": "First chocolate bars at demolding showed blooming appearance, product quality concern at startup.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Isis Oses",
+        "time_utc": "2026-11-23T13:50:41.234Z"
+      },
+      "resolution": "Cleared at 06:52 \u2014 first 8 cases rejected, appearance improved immediately. \"Product appearance no blooming observed\" at 07:11 (Itzel Chavez, Isis Oses)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 door and belts down",
+      "summary": "TG3 door not closing properly, two blue belts not moving, exit belt to TG4 not moving.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T13:52:46.743Z"
+      },
+      "resolution": "Cleared at 08:10 \u2014 door fixed at 07:05, TG5 working at 08:10. Nathan Ruiz found loose tooth spring on infeed chain and straightened bent safety door frame at 08:05 (Nathan Ruiz, ML4 WDS)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 scraper alarm at 07:55",
+      "summary": "Line down at 07:52 with scraper alarm, cross scraper torque at 170%.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T14:55:51.844Z"
+      },
+      "resolution": "Running at 08:01 \u2014 cleared and cross scraper torque increased to 200% per Shawn's recommendation (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 broken bars at demolding",
+      "summary": "Bars breaking at demolding (not in gondola), operator inspecting and removing damaged pieces.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Jenny Medina",
+        "time_utc": "2026-11-23T18:04:50.36Z"
+      },
+      "resolution": "Cleared at 11:17 \u2014 Itzel adjusted table after mold turner; \"After the adjustment I haven't seen any broken bar\" (Jenny Medina)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 gondola entrance jam and belt faults",
+      "summary": "Gondola entrance jam at 11:54, belts before gondola would not start, then C3 belt tracking error after demolding.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T18:56:11.467Z"
+      },
+      "resolution": "Cleared at 12:04 for initial jam, 12:37 for gondola belt \u2014 \"Running\" after each issue cleared. Belt needed slight alignment (Nathan Ruiz, Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle aligner bar not lining up truffles",
+      "summary": "Aligner bar not lining up truffles correctly, maintenance working on timing or belt speed adjustment.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Bojana McLeod",
+        "time_utc": "2026-11-23T21:55:36.417Z"
+      },
+      "resolution": "Adjusted at 17:18 \u2014 \"I made a couple adjustments to the aligner to get it more consistent\" (Shawn Jewkes)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold jams in magazine",
+      "summary": "Repeated mold jams at mold magazine between 08:16 and 08:24, requiring multiple operator interventions.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T15:20:42.519Z"
+      },
+      "resolution": "Cleared by 08:24 \u2014 jams cleared each time within 1-2 minutes, chocolate scraped from silicone mold magazine (ML4 TG)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S4 center caramel line stuck at cutter",
+      "summary": "Center caramel line coming out stuck together at cutter; operator inspecting and removing damaged pieces.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-11-23T18:08:52.845Z"
+      },
+      "status": "Reported at 11:08, operator manually inspecting and removing defects. No root cause or correction posted by window close."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 tray for discarding labels broken",
+      "summary": "Tray used for discarding labels is broken, Katya following up with operators on what happened.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "S3 Pack",
+        "time_utc": "2026-11-23T13:09:37.132Z"
+      },
+      "status": "Reported at 06:09, no resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 TG3 twin belt roller seized",
+      "summary": "TG3 twin belt roller seized, Nelson Cook working on replacement.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T21:04:13.089Z"
+      },
+      "status": "Reported at 14:04, Nelson Cook working on it. No resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle M3 and M4 belts moving improperly",
+      "summary": "M3 and M4 belts are moving when they should not be, maintenance working on the issue.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-23T21:07:05.144Z"
+      },
+      "status": "Reported at 14:07, maintenance working. No resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator malfunction",
+      "summary": "Sticker applicator having issues, Nathan Ruiz called to address.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T21:09:17.204Z"
+      },
+      "status": "Reported at 14:09, Nathan Ruiz on-site. No resolution posted by window close."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 damaged caddies received from supplier",
+      "summary": "Two full boxes of caddies (80 each, 160 total) arrived damaged and had to be discarded.",
+      "priority": "P3",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-23T20:52:02.958Z"
+      },
+      "status": "Reported to Ethan Bean at 13:52 for supplier follow-up. 160 caddies discarded."
+    }
+  ]
+}
