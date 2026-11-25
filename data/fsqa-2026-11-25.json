@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-25",
+  "headline": {
+    "eyebrow": "Active holds",
+    "text": "Four pallets on L1 S2 held after *metal-detector malfunction*; expired ingredient on hold at L2 ML3 pending disposition."
+  },
+  "summary": "Two active holds across L1 and L2. Metal detector on L1 S2 belt-slip issue caught by QA; CILT completed and equipment back in service. Cracked spatula removed from L2 ML3 before foreign material risk materialized. Multiple quality flags: wrong pouch version caught on L1 S1/S3, label defects on L1 S3, blooming on L3 ML4 bars through 2nd shift (EE stationed at demolder, issue resolved by 1st shift).",
+  "holds": [
+    {
+      "plant": "L1",
+      "title": "Four pallets held after metal detector malfunction",
+      "summary": "Metal detector belt slipping caused timing issue; test cards not falling through gap properly\u2014four pallets from affected window placed on hold pending recheck back to last good verification.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-25T12:39:20.725Z"
+      },
+      "status": "On hold pending QA disposition\u2014CILT completed, detector now passing all three cards."
+    },
+    {
+      "plant": "L2",
+      "title": "Expired chocolate barrels on hold",
+      "summary": "One barrel of item 10228 dark chocolate pulled from warming cabinet after shift change discovered expiration date passed; pallet split and placed on hold pending Kathleen Gilbert disposition decision.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-25T11:51:44.816Z"
+      },
+      "status": "On hold awaiting FSQA decision to use or discard."
+    }
+  ],
+  "food_safety": [
+    {
+      "plant": "L1",
+      "title": "Metal detector belt-slip caused timing fault",
+      "summary": "QA check at L1 S2 discovered metal detector belt slipping, causing test cards to miss rejection gap\u2014line paused for CILT, detector now detects and dumps all three cards.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-25T12:39:20.725Z"
+      },
+      "status": "Resolved\u2014CILT complete at 06:42, detector verified functional; four pallets from affected window on hold."
+    },
+    {
+      "plant": "L2",
+      "title": "Cracked spatula removed to prevent foreign material",
+      "summary": "Peppermint-mixing spatula found cracked during 2nd shift ML3; operator flagged risk of foreign material, spatula removed from line and disposed of before contamination occurred.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-11-25T21:42:23.537Z"
+      },
+      "status": "Resolved\u2014equipment removed and discarded; no product contamination."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L1",
+      "title": "Label wrinkles and missing best-by dates on jars",
+      "summary": "L1 S3 labeler producing wrinkled labels with missing best-by date on some jars; line stopped multiple times through 3rd shift for labeler troubleshooting, machine functional by 00:52.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Alfonsina Gil",
+        "time_utc": "2026-11-25T04:53:43.639Z"
+      },
+      "status": "Resolved\u2014labeler repaired, operator set up labeler B as backup."
+    },
+    {
+      "plant": "L1",
+      "title": "Wrong pouch version (V2 instead of V1) in use",
+      "summary": "QA component check on L1 S1/S3 found production using pouch item 40674-V2 when spec and BoM call for V1; warehouse has V1 inventory, correct version being brought to line.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-25T14:24:00.871Z"
+      },
+      "status": "Resolved\u2014correct V1 pouches delivered to line; QA coaching operators on pre-use inspection."
+    },
+    {
+      "plant": "L3",
+      "title": "Blooming defect on ML4 chocolate bars",
+      "summary": "L3 ML4 intermittent blooming on shell through 2nd and 3rd shifts; EE stationed at demolder removing affected bars\u2014circuit 1 overheated to 107\u00b0F at one point, blooming not observed on 1st shift after overnight temper adjustments.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Melissa Zavala",
+        "time_utc": "2026-11-24T23:27:27.702Z"
+      },
+      "status": "Resolved\u2014no blooming observed on 1st shift; temper unit adjustments holding."
+    },
+    {
+      "plant": "L1",
+      "title": "Nine pallets require plastic-wrap reinforcement",
+      "summary": "L1 S2 third-shift pallets had inadequate wrapping that could fail during transport to SV; production assigned operator to rewrap before shipment.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mary Montilla",
+        "time_utc": "2026-11-25T15:17:29.883Z"
+      },
+      "status": "Resolved\u2014pallets rewrapped before transport."
+    },
+    {
+      "plant": "L1",
+      "title": "Soft caramel losing shape on S4",
+      "summary": "L1 S4 caramel too soft at 09:03, pieces losing shape; operator making temperature adjustments.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-11-25T16:03:13.215Z"
+      },
+      "status": "Resolved\u2014flow wrap acceptable by 13:22 after temperature correction."
+    },
+    {
+      "plant": "L1",
+      "title": "One pouch 21 pieces (below 22-piece minimum)",
+      "summary": "L1 S2 pouch check at 20:50 found one pouch with 21 pieces; additional checks showed 23-piece minimum met\u2014production notified to monitor and adjust.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Diana Vazquez",
+        "time_utc": "2026-11-25T20:50:08.355Z"
+      },
+      "status": "Open\u2014production monitoring, additional pouches within spec."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L2",
+      "title": "Debris and wood on production floor",
+      "summary": "Hervin walked L2 plant, found debris and wood on floor in area needing clearance; coaching given to 2nd shift to clean up after themselves.",
+      "severity": "low",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-25T20:58:24.701Z"
+      },
+      "status": "Open\u2014area flagged for cleanup, coaching delivered to shift leads."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Consider adding metal-detector belt-tension check to S2 startup and mid-shift QA verification\u2014today's slip caused timing fault that required CILT and four-pallet hold."
+    },
+    {
+      "plant": "L1",
+      "text": "Review incoming-component inspection procedure for S1/S3 pouches\u2014today V2 was used instead of spec'd V1, caught only during in-line QA check."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider visual aid or color coding for ML3 peppermint-area utensils\u2014today's cracked spatula was flagged by operator before FM risk materialized, but proactive replacement criteria would prevent close calls."
+    },
+    {
+      "plant": "L2",
+      "text": "Review FIFO enforcement for warming-cabinet staging at ML3\u2014today one expired barrel of 10228 was pulled for use before expiration noticed, now on hold pending disposition."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider dewpoint and circuit-temperature trend monitoring on ML4 WDS during shell deposit\u2014today's intermittent blooming correlated with circuit 1 overheating to 107\u00b0F and dewpoint dips around 20:30\u201321:30."
+    }
+  ]
+}

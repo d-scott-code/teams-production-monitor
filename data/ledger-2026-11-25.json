@@ -1,0 +1,378 @@
+{
+  "date": "2026-11-25",
+  "headline": {
+    "eyebrow": "Quiet 24 hours",
+    "text": "All three plants ran production through the window with routine machine stops cleared same-shift \u2014 no open P1 issues at close."
+  },
+  "per_plant_summary": {
+    "L1": "L1 ran all four Sollich lines. Both boilers lost pressure at 21:47 due to a clogged strainer; maintenance cleared it and restored steam by 00:05. S2 had a metal detector belt slip resolved with a CILT by 06:42. S1 cut a belt to prevent loss and resumed. S3 cleared box shortages and completed the order. S4 brought a chiller back online.",
+    "L2": "L2 moulding lines ran filled chocolate bars. ML3 saw doubles three separate times across the shift; each was cleared with jaw cleaning or chain cleaning, longest stop under 15 minutes. An expired barrel pallet remains on hold pending QA decision. FFS finished the 5.1oz order and completed changeover to 3oz.",
+    "L3": "L3 ran molding and truffle. ML4 managed intermittent blooming on shell bars by stationing an EE at demold to remove affected product; no blooming observed by end of shift. ML1 cleared a mold alarm, camera fault, and printer jam. Truffle line cycled through a belt stop and accumulation pause, both resolved same-shift."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "S1 schedule notes L4 cleaning will complete Monday with 6 hours scheduled; S3 completed order and is set for the long weekend shutdown."
+    },
+    {
+      "plant": "L2",
+      "text": "FFS over-produced by 165 cases on the 5.1oz order; 3oz changeover complete and ready for Monday startup."
+    },
+    {
+      "plant": "L3",
+      "text": "ML4 shut down at 14:10 for the holiday weekend; Sollich tech began work on the main chiller."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Both boilers lost pressure",
+      "summary": "Steam pressure dropped plant-wide at 21:47, slowing caramel cooking on S1 and affecting all lines.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Dakota Adair",
+        "time_utc": "2026-11-25T04:47:50.436Z"
+      },
+      "resolution": "Cleared at 00:05 \u2014 maintenance pulled and cleaned the strainer, boilers returned to pressure (Caleb York)."
+    },
+    {
+      "plant": "L1",
+      "title": "S3 ran out of corrugated boxes",
+      "summary": "Line stopped making finished goods at 03:04; warehouse could not locate boxes, production made WIP to keep line running.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Luis Falcon",
+        "time_utc": "2026-11-25T10:04:10.398Z"
+      },
+      "resolution": "Cleared at 03:49 \u2014 warehouse delivered boxes to the line (Ricardo Tovar)."
+    },
+    {
+      "plant": "L1",
+      "title": "S2 metal detector belt slipping, timing off",
+      "summary": "Belt slip caused metal detection cards to miss the gap during QA check at 05:39.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-25T12:39:20.725Z"
+      },
+      "resolution": "Cleared at 06:42 \u2014 CILT completed, detector now dumps all three cards (Joseph Scott)."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 chiller not working",
+      "summary": "Chiller failed at 07:09, impacting caramel cooling.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-25T14:07:49.876Z"
+      },
+      "resolution": "Cleared at 07:44 \u2014 maintenance repaired, chiller now running (S4 Kitchen Tablet)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 wrong pouch version staged",
+      "summary": "Production was using Item 40674-V2 pouches but spec and BoM call for V1; QA caught during component check at 07:24.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Constanza Araya",
+        "time_utc": "2026-11-25T14:24:00.871Z"
+      },
+      "resolution": "Cleared at 07:39 \u2014 warehouse confirmed V1 pouches in stock and delivered to line (Victor Romero Sr.)."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 temper climbed during CILT pause",
+      "summary": "Line stopped at 06:30 for accumulation and CILT; temper rose to 1.2 during the pause.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Joseph Scott",
+        "time_utc": "2026-11-25T14:19:39.048Z"
+      },
+      "resolution": "Cleared at 07:22 \u2014 operator adjusted mass cooling and water mixing stage down 3 points, temper recovered (S1 Enrober)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 doubles and triples on pack",
+      "summary": "Doubles observed at 05:52, line paused for CIL; recurred at 09:28 and 10:08 on separate occasions.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Claudio Tovar",
+        "time_utc": "2026-11-25T12:52:55.992Z"
+      },
+      "resolution": "Cleared at 10:18 \u2014 cleaned jaws, increased jaw pressure by half turn, cleaned chain; no more doubles reported (Alex Mendoza)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 film jams",
+      "summary": "Line stopped at 09:28 due to film issues.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-25T16:28:35.11Z"
+      },
+      "resolution": "Cleared at 09:36 \u2014 line running (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 cracked spatula removed from peppermint mixing",
+      "summary": "Spatula showed crack at 14:42; QA flagged to prevent foreign material risk.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-11-25T21:42:23.537Z"
+      },
+      "resolution": "Cleared at 15:07 \u2014 equipment removed from line and disposed of (Zack Kurtz)."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sensor error stopping pack line",
+      "summary": "Sensor fault appeared 5 times on screen at 15:15, line down.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 3 Pack",
+        "time_utc": "2026-11-25T22:15:02.709Z"
+      },
+      "resolution": "Cleared at 15:25 \u2014 running in under 5 minutes (Molding Line 3 Pack)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 circuit 1 overheated to 107\u00b0F",
+      "summary": "Refrigerator circuit 1 spiked to 107\u00b0F at 15:38 while line was stopped for depositor scraping.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Shane Olsen",
+        "time_utc": "2026-11-24T22:38:12.051Z"
+      },
+      "resolution": "Cleared at 15:48 \u2014 temperature dropped very quickly when put into cooling mode (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 bars feeding sideways into wrapper",
+      "summary": "Bars going into Theegarten 4 machine sideways at 20:53.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Marcos Montano",
+        "time_utc": "2026-11-25T03:53:55.26Z"
+      },
+      "resolution": "Cleared at 21:07 \u2014 chocolate buildup scraped from infeed, bars tracking correctly (Shane Olsen)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 sticker applicator belt failed",
+      "summary": "Sticker machine belt bad, causing issues with caddie stickering; line down at 22:55 and again at 03:37.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Kimberly Morales",
+        "time_utc": "2026-11-25T06:55:46.858Z"
+      },
+      "resolution": "Cleared at 04:00 \u2014 running line (ML4 WDS Tablet 1)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle Cavanna 1 exit belt keeps stopping",
+      "summary": "Exit belt on Cavanna 1 stopped multiple times starting at 02:09, causing rapid product accumulation.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-11-25T09:04:27.709Z"
+      },
+      "resolution": "Cleared at 02:29 \u2014 extended belt running good now (TruffleLine FW)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle line stopped for accumulation",
+      "summary": "Line stopped at 04:40 for accumulation and cleaning; 29 bins staged.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine Enrober",
+        "time_utc": "2026-11-25T11:43:03.178Z"
+      },
+      "resolution": "Cleared at 06:07 \u2014 depositing restarted, line running (TruffleLine Enrober)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 licking roller 1 not heating",
+      "summary": "Licking roller 1 not heating, causing chocolate buildup at 08:28.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Itzel Chavez",
+        "time_utc": "2026-11-25T15:28:00.275Z"
+      },
+      "resolution": "Cleared at 08:28 \u2014 plug was disconnected, Nelson Cook reconnected it (Itzel Chavez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 Cavanna printer code printing cut off",
+      "summary": "Line stopped at 11:03 to clean Cavanna printer; code was printing cut off.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Molding Line 1 Flow-Wrap",
+        "time_utc": "2026-11-25T18:03:47.789Z"
+      },
+      "resolution": "Cleared at 11:10 \u2014 printer cleaned, problem solved (Molding Line 1 Flow-Wrap)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 camera fault on vision system",
+      "summary": "Camera fault flagged at 13:53, vision system not reading.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-25T20:53:58.643Z"
+      },
+      "resolution": "Cleared at 14:02 \u2014 camera lens was dirty, cleaned with microfiber cloth (Nathan Ruiz)."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle AB1 chocolate pump flow sensor wired wrong",
+      "summary": "Chocolate pump kept running when coconut oil pump was down with no flow; flow sensor not changing state.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Leon Brueger",
+        "time_utc": "2026-11-25T20:56:44.79Z"
+      },
+      "resolution": "Cleared at 13:56 \u2014 relay was wired incorrectly, removed relay and set sensor correctly; pump now stops when no flow (Leon Brueger)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 mold alarm",
+      "summary": "Mold alarm triggered at 15:19, maintenance notified.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-25T22:19:02.912Z"
+      },
+      "resolution": "Cleared at 15:27 \u2014 started back up (Imperial)."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "S2 four pallets on hold from metal detector issue",
+      "summary": "Four pallets placed on hold at 08:10 as a result of the MD belt slip earlier in the shift.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-11-25T15:10:39.016Z"
+      },
+      "status": "On hold as of 08:10; QA flagged product back to last good check for review."
+    },
+    {
+      "plant": "L1",
+      "title": "S4 caramel too soft, pieces losing shape",
+      "summary": "Caramel texture too soft at 09:03, causing pieces to lose shape during handling.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Mariela Gudino",
+        "time_utc": "2026-11-25T16:03:13.215Z"
+      },
+      "status": "Operator making temperature adjustments as of 09:03; flow wrap acceptable by 13:22 but no confirmation on texture fix."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Yamoto scale setup issues",
+      "summary": "Vibrating plates not clipped in on MM9 and MM10, funnels not properly fitted into slots at 21:31.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Conner Boyd",
+        "time_utc": "2026-11-25T04:31:24.011Z"
+      },
+      "status": "Issues identified during startup; no follow-up message indicating correction."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 rubber fingers starving MM9 and MM10 buckets",
+      "summary": "Rubber fingers block product from reaching front and back buckets; 5-6 buckets starved, limiting efficiency at 13:35.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Troy Baxter",
+        "time_utc": "2026-11-25T20:35:03.133Z"
+      },
+      "status": "Design issue impacting throughput; no corrective action posted."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 expired chocolate barrels on hold",
+      "summary": "One barrel of 10228 dark chocolate pulled from warming cabinet at 04:51; pallet discovered to be expired, split into two pallets and placed on hold.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-25T11:51:44.816Z"
+      },
+      "status": "On hold as of 04:51 pending Kathleen Gilbert decision on use or discard."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 ingredient tank showing buildup along bottom and sides",
+      "summary": "Warming tank pumping York mass into WDS hopper ran 24 hours straight with no clogging, but buildup observed along bottom and sides at 10:46.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Alex Mendoza",
+        "time_utc": "2026-11-25T17:46:49.62Z"
+      },
+      "status": "Maintenance recommends modifying scraper to reduce buildup; no work order posted."
+    },
+    {
+      "plant": "L2",
+      "title": "L2 plant area needs clearing",
+      "summary": "Debris and wood on floor flagged by Hervin at 13:58 as safety and housekeeping issue.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-25T20:58:24.701Z"
+      },
+      "status": "Flagged to Alex Mendoza and Jeffrey Barney to coach team on cleanup; no completion confirmation."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle kitchen temper unit not holding setpoints",
+      "summary": "Temper unit not keeping in line with settings since yesterday; fluctuating throughout the shift at 23:14.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-11-25T06:14:43.812Z"
+      },
+      "status": "Still seeing issues as of 23:14; Chad Stone asked for Marcos (L1) to troubleshoot at 05:20, no follow-up posted."
+    },
+    {
+      "plant": "L3",
+      "title": "Truffle sensor B120 not functioning correctly",
+      "summary": "Sensor B120 not functioning at 06:45, maintenance called.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "TruffleLine FW",
+        "time_utc": "2026-11-25T13:45:38.943Z"
+      },
+      "status": "Maintenance called at 06:45; no resolution message posted."
+    }
+  ]
+}
