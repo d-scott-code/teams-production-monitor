@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-26",
+  "headline": {
+    "eyebrow": "Quiet holiday prep",
+    "text": "All three plants shut down clean for the long weekend with *6 items* flagged for Monday follow-up and no line-down events in the 24 hours."
+  },
+  "per_plant_summary": {
+    "L1": "L1 completed kitchen shutdowns across Sollich 1, 2, and 4 with no production incidents. A few cleaning areas were flagged and re-worked before close. Materials planning flagged low inventory on two ingredients ahead of next week's schedule.",
+    "L2": "L2 stopped depositing at 17:15 and ran level 2 cleans on ML2, ML3, and FFS. ML2 cleared a drive roller bearing issue. ML3 cleaned up a 120-pound chocolate spill at the sweco during shift change but two ingredient tank issues remain open.",
+    "L3": "L3 ran production through second shift, then executed level 2 cleans on ML1, ML4, and MF Matrix. A shipping miscommunication was resolved by staging product for Saturday. ML1 had roller cleaning concerns that cleared by final inspection, but a few operational flags remain for Monday."
+  },
+  "notes": [
+    {
+      "plant": "L1",
+      "text": "Thanksgiving greetings posted by Curt Willis at 08:47."
+    },
+    {
+      "plant": "L2",
+      "text": "Zack Kurtz posted 5S reminder to keep checkweigher clearance zone free of bins to prevent inaccurate weight readings."
+    },
+    {
+      "plant": "L3",
+      "text": "Second shift completed depositor assembly installation on ML1 before close."
+    }
+  ],
+  "resolved": [
+    {
+      "plant": "L1",
+      "title": "Sollich 4 D1 caustic process not recorded on level 2 paperwork",
+      "summary": "Third shift completed caustic wash on D1 but did not log it on level 2 documentation, raising traceability concern.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-26T06:00:44.296Z"
+      },
+      "resolution": "Charity Young confirmed documentation requirement at 07:38, Luis Falcon completed and recorded the work by 07:40."
+    },
+    {
+      "plant": "L1",
+      "title": "Sollich 1 metal detector belt, top matrix floor, and tunnels 1 & 2 cleaning failures",
+      "summary": "Pre-inspection flagged multiple areas needing re-clean before holiday shutdown.",
+      "priority": "P3",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-11-26T13:48:47.989Z"
+      },
+      "resolution": "Joseph Scott dispatched sanitation team at 06:53, posted completion photos by 07:50."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 sweco chocolate overflow at shift change",
+      "summary": "Operators walked into filler room at shift change and found chocolate flowing down the sweco.",
+      "priority": "P1",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-26T05:04:18.481Z"
+      },
+      "resolution": "120 pounds of chocolate lost, sweco cleaned, tested at 06:48 with no issues observed (Gustavo Rodas). Flagged to retest Monday morning before tempering."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 drive roller belt rubbing due to loose bearing housing",
+      "summary": "Bearing and housing came loose causing belt contact during 5-belt changeout.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Fernando Flores",
+        "time_utc": "2026-11-26T03:39:15.747Z"
+      },
+      "resolution": "Maintenance tightened housing with 1/8 inch gap, line ran smooth with no concerns for Monday per Zack Kurtz at 22:31."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 mold washer failed visual with screws found inside",
+      "summary": "Pre-operational inspection found screws inside mold washer and failed cleanliness check.",
+      "priority": "P1",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-11-26T11:32:43.232Z"
+      },
+      "resolution": "Re-cleaned and passed visual inspection and ATP at 05:03 (Janeth Sanchez)."
+    },
+    {
+      "plant": "L3",
+      "title": "ML4 chiller technician needed lockout lock",
+      "summary": "Contractor working on chiller over the holiday needed LOTO hardware.",
+      "priority": "P2",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Matt Hatch",
+        "time_utc": "2026-11-26T01:02:01.554Z"
+      },
+      "resolution": "Spencer Andrus confirmed at 18:28 tech has spare lock marked 'A' from maintenance shop, will return Monday."
+    },
+    {
+      "plant": "L3",
+      "title": "MF Matrix paused for box shortage",
+      "summary": "Line stopped at 20:11 due to lack of corrugate boxes.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "mfmatrix",
+        "time_utc": "2026-11-26T03:11:23.945Z"
+      },
+      "resolution": "Production resumed; lot and BB date change approved at 20:12, level 2 clean completed by 04:48."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 conveyor roller not fully cleaned",
+      "summary": "Visual inspection failed on C6 belt because rollers were not disassembled for full cleaning, leaving chocolate residue.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-11-26T05:52:10.179Z"
+      },
+      "resolution": "Belts pulled and re-cleaned; final level 2 cleaning passed visual and ATP at 05:13 (Janeth Sanchez)."
+    },
+    {
+      "plant": "L3",
+      "title": "Springville transfer load missed cutoff due to miscommunication",
+      "summary": "Full trailer of 30703 and 30944 ready to ship, but Springville cutoff already passed despite earlier confirmation that transfers could be sent.",
+      "priority": "P2",
+      "category": "Other",
+      "first_raised": {
+        "author": "Thomas Mcpherson",
+        "time_utc": "2026-11-26T06:24:02.489Z"
+      },
+      "resolution": "Trailer unloaded and staged by docks per German Cervantes at 23:37; 30703 ships Saturday, remaining items Monday morning."
+    }
+  ],
+  "needs_attention": [
+    {
+      "plant": "L1",
+      "title": "Low inventory on Bequet flow wrap and tapioca ahead of Tuesday run",
+      "summary": "Flow wrap of Bequet (41273) down to last 1.5 pallets and tapioca (10267) down to last 3 pallets, both scheduled for production Tuesday.",
+      "priority": "P2",
+      "category": "Materials",
+      "first_raised": {
+        "author": "Ricardo Tovar",
+        "time_utc": "2026-11-26T09:58:26.862Z"
+      },
+      "status": "Posted at 02:58 with no inbound confirmation in the window; needs materials planning follow-up before Tuesday."
+    },
+    {
+      "plant": "L2",
+      "title": "ML3 ingredient tank visual inspection failed with peppermint residue",
+      "summary": "Victor Mejia and Marlenis Fernandez found peppermint in the center of the ingredient tank during pre-shift inspection.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-11-26T05:21:06.857Z"
+      },
+      "status": "Failed visual at 22:21, no re-clean or clearance posted by end of window."
+    },
+    {
+      "plant": "L2",
+      "title": "ML2 ingredient tank #1 leak",
+      "summary": "Leak observed on ingredient tank #1 during third shift.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Gustavo Rodas",
+        "time_utc": "2026-11-26T05:46:49.028Z"
+      },
+      "status": "Reported at 22:46 with note that maintenance would take a look; no update posted by shutdown."
+    },
+    {
+      "plant": "L3",
+      "title": "Twist wrap pallet received with mixed expiration dates",
+      "summary": "Pallet of twist wraps from other building has mixed BB dates with no way to identify changeover point, impacting traceability.",
+      "priority": "P2",
+      "category": "Quality",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-11-26T11:19:43.181Z"
+      },
+      "status": "Posted at 04:19 with recommendation to contact supplier building; no resolution or corrective action confirmed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 glycol low",
+      "summary": "Glycol level low on ML1 during second shift production.",
+      "priority": "P3",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Imperial",
+        "time_utc": "2026-11-26T01:30:38.488Z"
+      },
+      "status": "Flagged at 18:30, no refill or maintenance response posted by end of shift."
+    },
+    {
+      "plant": "L3",
+      "title": "Unlocked door found during holiday walk-around",
+      "summary": "Tyson Fausett found an unlocked door during pre-holiday facility check.",
+      "priority": "P3",
+      "category": "Safety",
+      "first_raised": {
+        "author": "Tyson Fausett",
+        "time_utc": "2026-11-26T14:55:38.241Z"
+      },
+      "status": "Reported at 07:55 with photo; no confirmation of lock status or root cause posted."
+    }
+  ]
+}

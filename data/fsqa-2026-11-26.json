@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-26",
+  "headline": {
+    "eyebrow": "FM risk",
+    "text": "L3 ML4 mold washer failed visual \u2014 *screws found inside* equipment during 3rd shift cleaning verification, re-cleaned and passed."
+  },
+  "summary": "One foreign material flag resolved: screws found inside L3 ML4 mold washer, cleaned and cleared by shift end. Six sanitation re-clean requests across L1 and L2 \u2014 all resolved same shift. L3 traceability gap: twist wrap pallet received with mixed expiration dates from L1.",
+  "holds": [],
+  "food_safety": [
+    {
+      "plant": "L3",
+      "title": "Screws found inside ML4 mold washer during cleaning",
+      "summary": "Janeth Sanchez found screws inside mold washer equipment during 3rd shift cleaning verification at 04:32 MT \u2014 visual inspection failed, equipment re-cleaned, passed ATP and visual by 05:03 MT.",
+      "severity": "high",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-11-26T11:32:43.232Z"
+      },
+      "status": "Resolved \u2014 mold washer re-cleaned and passed visual inspection and ATP test."
+    }
+  ],
+  "quality": [
+    {
+      "plant": "L3",
+      "title": "Twist wrap pallet received with mixed expiration dates",
+      "summary": "Nathan Gevenois flagged inbound pallet from L1 with mixed Best By dates \u2014 cannot identify when day codes changed except by rough quantity estimate, traceability compromised for this product.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Nathan Gevenois",
+        "time_utc": "2026-11-26T11:19:43.181Z"
+      },
+      "status": "Open \u2014 Nathan requested L1 contact to prevent future mixed-date pallets for traceability."
+    }
+  ],
+  "sanitation": [
+    {
+      "plant": "L1",
+      "title": "S4 depositor D1 required second caustic cycle",
+      "summary": "Kitchen tablet reported D1 depositor failed first caustic clean cycle at 23:00 MT, required second cycle to pass \u2014 recorded as 'no clean' on first attempt.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "S4 Kitchen Tablet",
+        "time_utc": "2026-11-26T06:00:44.296Z"
+      },
+      "status": "Resolved \u2014 second caustic cycle completed, no carryover to Level 2 paperwork initially but Charity Young requested documentation."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Top Matrix floor flagged for re-clean",
+      "summary": "Ebrima Dibba reported Top Matrix floor needs re-cleaning during 1st shift QA walkthrough at 06:48 MT \u2014 sanitation dispatched operator to address.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-11-26T13:48:47.989Z"
+      },
+      "status": "Resolved \u2014 Joseph Scott confirmed operator dispatched, area cleared."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 metal detector belt flagged for re-clean",
+      "summary": "Chris Featherstone reported metal detector belt still needs cleaning during 1st shift QA walkthrough at 06:50 MT \u2014 sanitation dispatched operator to address.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Chris Featherstone",
+        "time_utc": "2026-11-26T13:50:37.817Z"
+      },
+      "status": "Resolved \u2014 Joseph Scott confirmed operator dispatched, area cleared."
+    },
+    {
+      "plant": "L1",
+      "title": "S1 Tunnels 1 & 2 flagged for re-clean",
+      "summary": "Ebrima Dibba reported Tunnels 1 and 2 need re-cleaning during 1st shift QA walkthrough at 07:05 MT \u2014 third re-clean flag on S1 same walkthrough.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Ebrima Dibba",
+        "time_utc": "2026-11-26T14:05:58.119Z"
+      },
+      "status": "Resolved \u2014 Joseph Scott posted photos confirming areas cleared by 07:50 MT."
+    },
+    {
+      "plant": "L2",
+      "title": "Peppermint residue found in ML3 ingredients tank center",
+      "summary": "Victor Mejia and Marlenis Fernandez found peppermint in center of ingredients tank during 3rd shift inspection at 22:21 MT \u2014 visual inspection failed.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Victor Mejia",
+        "time_utc": "2026-11-26T05:21:06.857Z"
+      },
+      "status": "Resolved \u2014 Zack Kurtz clarified this was ingredients tank, cleaning addressed."
+    },
+    {
+      "plant": "L3",
+      "title": "ML1 C6 conveyor belt failed visual \u2014 dirty roller",
+      "summary": "Janeth Sanchez reported C6 belt failed visual inspection at 22:52 MT \u2014 roller found dirty because line was not disassembled for full roller cleaning during Level 2 clean, later passed ATP after adjustment.",
+      "severity": "medium",
+      "first_raised": {
+        "author": "Janeth Sanchez",
+        "time_utc": "2026-11-26T05:52:10.179Z"
+      },
+      "status": "Resolved \u2014 Angel Cabrera noted rollers not fully disassembled; belt cleared and passed ATP by 23:43 MT."
+    }
+  ],
+  "allergen": [],
+  "opportunities": [
+    {
+      "plant": "L1",
+      "text": "Review S1 Level 2 cleaning verification sequence \u2014 based on three separate re-clean flags (metal detector belt, matrix floor, tunnels) during same QA walkthrough suggesting first-pass effectiveness gap."
+    },
+    {
+      "plant": "L1",
+      "text": "Consider packaging traceability controls for twist wrap palletizing \u2014 based on L3 receiving mixed Best By dates on inbound pallet where day code transitions cannot be identified."
+    },
+    {
+      "plant": "L2",
+      "text": "Consider visual inspection protocol for ingredient tank interiors after product changeovers \u2014 based on peppermint residue found in ML3 tank center during 3rd shift inspection."
+    },
+    {
+      "plant": "L3",
+      "text": "Consider adding mold washer interior inspection to ML4 post-cleaning checklist \u2014 based on screws found inside equipment during today's 3rd shift cleaning verification."
+    },
+    {
+      "plant": "L3",
+      "text": "Review conveyor roller disassembly requirements in ML1 Level 2 cleaning SOPs \u2014 based on C6 dirty roller flag where Angel Cabrera noted rollers weren't fully freed from chocolate residue."
+    }
+  ]
+}
