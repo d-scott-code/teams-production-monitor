@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-27",
+  "headline": {
+    "eyebrow": "Quiet 24 hours",
+    "text": "L2 reported active alarms on PTL and depositor screen at *10:12* \u2014 no resolution in window."
+  },
+  "per_plant_summary": {
+    "L1": "No activity in the last 24 hours.",
+    "L2": "Active alarms flagged on PTL and depositor screen at 10:12; buffer tank running normally. No resolution by window close.",
+    "L3": "No activity in the last 24 hours."
+  },
+  "notes": [],
+  "resolved": [],
+  "needs_attention": [
+    {
+      "plant": "L2",
+      "title": "Active alarms on PTL and depositor screen",
+      "summary": "PTL and depositor screen showing active alarms as of 10:12; buffer tank operating normally.",
+      "priority": "P2",
+      "category": "Machine",
+      "first_raised": {
+        "author": "Hervin Herrera",
+        "time_utc": "2026-11-27T17:12:42.523Z"
+      },
+      "status": "Active alarms reported at 10:12; no resolution by window close."
+    }
+  ]
+}
